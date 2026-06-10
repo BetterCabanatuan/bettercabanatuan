@@ -1,0 +1,53 @@
+{
+  "site_name": "Lapu Lapu City Portal",
+  "site_description": "A community-run portal for the Lapu Lapu City",
+  "hero": {
+    "title": "Welcome to BetterGov.ph",
+    "subtitle": "A community-run portal to find information of the Lapu Lapu City Government",
+    "nationalId": "National ID",
+    "birthCertificate": "Birth Certificate",
+    "businessRegistration": "Business Registration"
+  },
+  "services": {
+    "title": "Services & Information",
+    "governmentServices": "Government Services",
+    "description": "Access official government services quickly and easily. Find what you need for citizenship, business, education, and more.",
+    "viewAll": "View All Services",
+    "viewAllCategory": "View All"
+  },
+  "governmentActivity": {
+    "title": "Government Activity",
+    "description": "Stay updated with the latest government activities and announcements."
+  },
+  "weather": {
+    "title": "Weather Updates"
+  },
+  "forex": {
+    "title": "Foreign Exchange Rates"
+  },
+  "news": {
+    "title": "Latest News & Updates"
+  },
+  "footer": {
+    "copyright": "© 2025 BetterGov. All content is public domain unless otherwise specified."
+  },
+  "navbar": {
+    "government": "Your Government",
+    "services": "Services",
+    "hotlines": "Hotlines",
+    "holidays": "Holidays"
+  },
+  "joinUs": {
+    "stripTitle": "🚀 Join the #CivicTech Revolution",
+    "stripSubtitle": "Help build the future of the Philippines and governance through technology",
+    "joinNow": "Join Now",
+    "discord": "Discord",
+    "bannerTitle": "Join the #CivicTech Revolution",
+    "bannerSubtitle": "Help build the future of the Philippines and governance through technology.",
+    "bannerHighlight": "Volunteer-led. Open source. Community-driven.",
+    "joinMovement": "Join Our Movement",
+    "or": "or",
+    "joinDiscord": "Join Discord",
+    "features": "🚀 Infrastructure • 💡 Mentorship • 🤝 Community • 🏢 Office Space"
+  }
+}

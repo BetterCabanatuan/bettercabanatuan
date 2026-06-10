@@ -1,0 +1,94 @@
+/* Custom DatePicker dark mode styles */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.dark .react-datepicker {
+  background-color: #1f2937 !important;
+  border-color: #4b5563 !important;
+  color: #f9fafb !important;
+}
+
+.dark .react-datepicker__header {
+  background-color: #111827 !important;
+  border-bottom-color: #4b5563 !important;
+}
+
+.dark .react-datepicker__current-month,
+.dark .react-datepicker__day-name {
+  color: #f9fafb !important;
+}
+
+.dark .react-datepicker__day {
+  color: #e5e7eb !important;
+}
+
+.dark .react-datepicker__day:hover {
+  background-color: #4b5563 !important;
+  color: #f9fafb !important;
+}
+
+.dark .react-datepicker__day--selected {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+}
+
+.dark .react-datepicker__day--keyboard-selected {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+}
+
+.dark .react-datepicker__day--today {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+.dark .react-datepicker__day--outside-month {
+  color: #6b7280 !important;
+}
+
+.dark .react-datepicker-time__header {
+  color: #ffffff !important;
+}
+
+.dark .react-datepicker__day--disabled {
+  color: #6b7280 !important;
+}
+
+.react-datepicker__current-month {
+  align-items: center;
+}
+
+.dark .react-datepicker__navigation {
+  border-color: #4b5563 !important;
+}
+
+.dark .react-datepicker__navigation:hover {
+  border-color: #9ca3af !important;
+}
+
+.dark .react-datepicker__time-container {
+  border-left-color: #4b5563 !important;
+}
+
+.dark .react-datepicker__time {
+  background-color: #1f2937 !important;
+}
+
+.dark .react-datepicker__time-box {
+  background-color: #1f2937 !important;
+}
+
+.dark .react-datepicker__time-list-item {
+  color: #e5e7eb !important;
+}
+
+.dark .react-datepicker__time-list-item:hover {
+  background-color: #4b5563 !important;
+  color: #f9fafb !important;
+}
+
+.dark .react-datepicker__time-list-item--selected {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+}

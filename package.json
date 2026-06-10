@@ -1,0 +1,80 @@
+{
+  "name": "betterlocalgov",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "convert-yaml": "node scripts/yaml-to-json.js",
+    "dev:yaml": "npm run convert-yaml && npm run dev",
+    "setup": "node scripts/setup-starter-kit.js"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@editorjs/code": "^2.9.3",
+    "@editorjs/editorjs": "^2.31.0",
+    "@editorjs/header": "^2.8.8",
+    "@editorjs/image": "^2.10.3",
+    "@editorjs/list": "^2.0.8",
+    "@editorjs/paragraph": "^2.11.7",
+    "@editorjs/table": "^2.4.5",
+    "@tailwindcss/typography": "^0.5.18",
+    "@types/js-yaml": "^4.0.9",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.2",
+    "i18next": "^25.5.2",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-http-backend": "^3.0.2",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^0.544.0",
+    "nuqs": "^2.6.0",
+    "react": "^19.1.1",
+    "react-datepicker": "^8.7.0",
+    "react-dom": "^19.1.1",
+    "react-i18next": "^15.7.3",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.9.2",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.3.1",
+    "use-debounce": "^10.0.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.2",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "less": "^4.4.2",
+    "lint-staged": "^16.1.6",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.43.0",
+    "vite": "^7.1.6"
+  }
+}
