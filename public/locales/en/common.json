@@ -1,9 +1,9 @@
 {
-  "site_name": "Lapu Lapu City Portal",
-  "site_description": "A community-run portal for the Lapu Lapu City",
+  "site_name": "Cabanatuan City Portal",
+  "site_description": "A community-run portal for the Cabanatuan City",
   "hero": {
     "title": "Welcome to BetterGov.ph",
-    "subtitle": "A community-run portal to find information of the Lapu Lapu City Government",
+    "subtitle": "A community-run portal to find information of the Cabanatuan City Government",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
     "businessRegistration": "Business Registration"
@@ -29,7 +29,7 @@
     "title": "Latest News & Updates"
   },
   "footer": {
-    "copyright": "© 2025 BetterGov. All content is public domain unless otherwise specified."
+    "copyright": "© 2026 BetterGov. All content is public domain unless otherwise specified."
   },
   "navbar": {
     "government": "Government",
