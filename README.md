@@ -177,7 +177,7 @@ src/
 
 ## 👥 Contributors
 
-- **[joshuagemvicente](https://github.com/joshuagemvicente)** — Project creator and Maintainer
+- **[joshuagemvicente](https://github.com/joshuagemvicente)** — Project creator and maintainer
 - **[iampoll](https://github.com/iampoll)** — Maintainer
 
 ## 🤝 Contributing
