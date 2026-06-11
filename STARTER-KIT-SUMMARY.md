@@ -21,11 +21,11 @@
 - Internationalization framework
 - Responsive design system
 
-### ❌ **Lapu-Lapu City Specific Content (15 files identified)**
+### ❌ **Cabanatuan City Specific Content (15 files identified)**
 
 **Files that need to be made generic:**
 
-- All service content files contain "Lapu-Lapu City" references
+- All service content files contain "Cabanatuan City" references
 - City-specific hospital names and facilities
 - Local government officials and programs
 - City-specific contact information
@@ -81,7 +81,7 @@ betterlocalgov/
 
 ### **Immediate Actions Needed:**
 
-1. **Replace Lapu-Lapu Content with Templates**
+1. **Replace Cabanatuan Content with Templates**
    - Create generic content templates
    - Remove city-specific references
    - Add placeholder content with instructions
@@ -288,4 +288,4 @@ betterlocalgov/
 
 ---
 
-**This starter kit transforms the current Lapu-Lapu City website into a reusable template that any local government can use to create their own professional, accessible, and multilingual website in just a few hours.**
+**This starter kit transforms the current Cabanatuan City website into a reusable template that any local government can use to create their own professional, accessible, and multilingual website in just a few hours.**

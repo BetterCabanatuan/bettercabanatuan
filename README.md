@@ -23,7 +23,7 @@ A modern, multilingual, and accessible website template designed specifically fo
 ### Installation
 
 1. **Fork the repository**
-   - Visit https://github.com/iyanski/betterlocalgov
+   - Visit <https://github.com/iyanski/betterlocalgov>
    - Click the "Fork" button in the top right
    - This creates your own copy of the repository
 
@@ -89,7 +89,7 @@ A modern, multilingual, and accessible website template designed specifically fo
 ## ⚡ Quick Setup (3-5 hours to live website)
 
 1. **Fork & Clone** (5 minutes)
-   - Fork the repository on GitHub (click "Fork" at https://github.com/iyanski/betterlocalgov)
+   - Fork the repository on GitHub (click "Fork" at <https://github.com/iyanski/betterlocalgov>)
    - Clone your fork:
 
    ```bash
@@ -177,8 +177,8 @@ src/
 
 ## 👥 Contributors
 
-- **[iyanski](https://github.com/iyanski)** — Project creator and maintainer
-- **[Nicu Listana](https://github.com/niculistana)** — Contributor
+- **[joshuagemvicente](https://github.com/joshuagemvicente)** — Project creator and maintainer
+- **[iampoll](https://github.com/iampoll)** — Maintainer
 
 ## 🤝 Contributing
 
@@ -231,7 +231,7 @@ We welcome contributions from everyone! Whether you're a developer, government o
 
 #### Content Contributors (Basic Technical)
 
-1. **Fork the repository** on GitHub (click "Fork" at https://github.com/iyanski/betterlocalgov)
+1. **Fork the repository** on GitHub (click "Fork" at <https://github.com/iyanski/betterlocalgov>)
 2. **Clone your fork**: `git clone https://github.com/YOUR-USERNAME/betterlocalgov.git`
 3. **Add upstream remote**: `git remote add upstream https://github.com/iyanski/betterlocalgov.git`
 4. **Create a content branch**: `git checkout -b content/update-health-services`
@@ -241,7 +241,7 @@ We welcome contributions from everyone! Whether you're a developer, government o
 
 #### Developers
 
-1. **Fork the repository** on GitHub (click "Fork" at https://github.com/iyanski/betterlocalgov)
+1. **Fork the repository** on GitHub (click "Fork" at <https://github.com/iyanski/betterlocalgov>)
 2. **Clone your fork**: `git clone https://github.com/YOUR-USERNAME/betterlocalgov.git`
 3. **Add upstream remote**: `git remote add upstream https://github.com/iyanski/betterlocalgov.git`
 4. **Create a feature branch**: `git checkout -b feature/new-component`
