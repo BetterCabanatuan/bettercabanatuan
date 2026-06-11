@@ -43,8 +43,8 @@ In your Vercel project dashboard:
 ```env
 VITE_GOVERNMENT_NAME=Your City/Municipality Name
 VITE_GOVERNMENT_TYPE=City
-VITE_REGION=Region VII
-VITE_PROVINCE=Cebu
+VITE_REGION=Region III
+VITE_PROVINCE=Nueva Ecija
 VITE_WEBSITE_URL=https://your-project.vercel.app
 VITE_CONTACT_EMAIL=info@your-city.gov.ph
 VITE_CONTACT_PHONE=(032) 123-4567
