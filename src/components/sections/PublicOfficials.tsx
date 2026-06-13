@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
@@ -14,15 +13,7 @@ import {
   Building2,
 } from 'lucide-react';
 
-interface PublicOfficialsProps {
-  title?: string;
-  description?: string;
-}
-
-export default function PublicOfficials({
-  title,
-  description,
-}: PublicOfficialsProps) {
+export default function PublicOfficials() {
   const [searchQuery, setSearchQuery] = useState('');
   const [positionFilter, setPositionFilter] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'name' | 'position'>('position');
@@ -94,12 +85,6 @@ export default function PublicOfficials({
 
   return (
     <div>
-      <Heading level={2}>{title || 'Public Officials'}</Heading>
-      <Text className="text-gray-600 mb-6">
-        {description ||
-          `Meet the elected officials of ${import.meta.env.VITE_GOVERNMENT_NAME} for the 2025-2028 term.`}
-      </Text>
-
       {/* Filters */}
       <div className="flex flex-col sm:flex-row gap-4 mb-8">
         <div className="relative flex-1">

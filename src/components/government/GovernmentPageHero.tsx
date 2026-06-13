@@ -34,11 +34,11 @@ export default function GovernmentPageHero({
           items={breadcrumbs}
         />
         <div className="flex items-start gap-4">
-          {Icon && (
+          {/* {Icon && (
             <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/15 text-white shrink-0">
               <Icon className="h-6 w-6" aria-hidden="true" />
             </span>
-          )}
+          )} */}
           <div>
             <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
               {eyebrow}
