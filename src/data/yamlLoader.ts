@@ -30,6 +30,7 @@ export interface CategoryIndexData {
 // Import the YAML file as raw text
 import servicesYamlContent from './services.yaml?raw';
 import governmentActivitiesYamlContent from './government.yaml?raw';
+import barangaysYamlContent from './barangays.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -70,11 +71,41 @@ export const governmentCategories: CategoryData = yaml.load(
   governmentActivitiesYamlContent
 ) as CategoryData;
 
+export const barangaysData: BarangaysData = yaml.load(
+  barangaysYamlContent
+) as BarangaysData;
+
+export const allBarangays: Barangay[] = barangaysData.barangays || [];
+
+export function getBarangayBySlug(slug: string): Barangay | undefined {
+  return allBarangays.find(b => b.slug === slug);
+}
+
 export interface CategoryIndex {
   title?: string;
   description?: string;
   layout: 'grid' | 'list';
   pages: Subcategory[];
+}
+
+export interface Barangay {
+  name: string;
+  slug: string;
+  description: string;
+  classification: 'Urban' | 'Rural';
+  psgc_code: string;
+  correspondence_code: string;
+  old_name?: string;
+  status?: string;
+  population: {
+    2015: number;
+    2020: number;
+    2024: number;
+  };
+}
+
+export interface BarangaysData {
+  barangays: Barangay[];
 }
 
 // Function to load category index data
