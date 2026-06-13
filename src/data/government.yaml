@@ -2,6 +2,9 @@
 # This file contains all the local government activity data for the local government portal
 # Non-technical users can easily edit this file to add, remove, or modify local government activity
 
+title: 'Government Activity'
+description: 'Explore government sections for Cabanatuan City — departments, officials, barangays, news, and transparency documents.'
+
 categories:
   - category: 'Public Officials'
     slug: 'officials'
@@ -11,15 +14,10 @@ categories:
     slug: 'departments'
     description: 'Explore local government departments, agencies, and offices with their mandates, services, and contact details.'
     icon: 'Building2'
-    subcategories:
-      - name: 'City Planning and Development Office (CPDO)'
-        slug: 'executive'
-      - name: 'City Social Welfare and Development Office (CSWDO)'
-        slug: 'legislative'
-      - name: 'City Disaster Risk Reduction and Management Office (CDRRMO)'
-        slug: 'department-of-education'
-      - name: 'City Human Resource Management Office'
-        slug: 'department-of-health'
+  - category: 'Projects'
+    slug: 'projects'
+    description: 'Track ongoing, planned, and completed infrastructure and community development projects across the city.'
+    icon: 'HardHat'
   - category: 'Barangays'
     slug: 'barangays'
     description: 'Explore all barangays of Cabanatuan City, including their classifications, descriptions, and local information.'
