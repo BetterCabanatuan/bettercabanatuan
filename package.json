@@ -29,6 +29,7 @@
     "@bettergov/kapwa": "^1.2.4",
     "@tailwindcss/typography": "^0.5.18",
     "@types/js-yaml": "^4.0.9",
+    "axios": "^1.17.0",
     "clsx": "^2.1.1",
     "dotenv": "^17.2.2",
     "i18next": "^25.5.2",

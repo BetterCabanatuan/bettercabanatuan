@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
               About BetterGov
             </a>
             <a
-              href="https://www.gov.ph"
+              href="https://www.cabanatuancity.gov.ph"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
             >
