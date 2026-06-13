@@ -43,20 +43,32 @@ export default function GovernmentActivitySection({
 
   return (
     <Section id="#government">
-      <Heading level={2}>{title || t('title')}</Heading>
+      <Heading level={2}>{title || t('governmentActivity.title')}</Heading>
       <Text className="text-gray-600 mb-6">
         {description || t('governmentActivity.description')}
       </Text>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {displayedCategories.map(category => (
+        {displayedCategories.map(category => {
+          const href =
+            category.slug === 'officials'
+              ? '/government/officials'
+              : category.slug === 'barangays'
+                ? '/government/barangays'
+                : category.slug === 'departments'
+                  ? '/government/departments'
+                  : category.slug === 'projects'
+                    ? '/government/projects'
+                    : `/government/${category.slug}`;
+
+          return (
           <Card
             key={category.slug}
             hoverable
             className="border-t-4 border-primary-500"
           >
             <Link
-              to={`/government/${category.slug}`}
+              to={href}
               className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
             >
               <CardContent className="flex flex-col h-full p-6">
@@ -73,7 +85,8 @@ export default function GovernmentActivitySection({
               </CardContent>
             </Link>
           </Card>
-        ))}
+          );
+        })}
       </div>
     </Section>
   );
