@@ -2,16 +2,30 @@ import { NuqsAdapter } from 'nuqs/adapters/react';
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import Home from './pages/Home';
 import ScrollToTop from './components/ui/ScrollToTop';
-import Services from './pages/Services';
-import Document from './pages/Document';
-import Government from './pages/Government';
-import About from './pages/About';
-import Barangays from './pages/Barangays';
-import BarangayDetail from './pages/BarangayDetail';
-import OfficialsPage from './pages/government/officials';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import HomePage from './pages/home';
+import AboutPage from './pages/about';
+import ContactPage from './pages/contact';
+import StatisticsPage from './pages/statistics';
+
+import ServicesIndexPage from './pages/services/index';
+import ServiceCategoryPage from './pages/services/$categoryId';
+import ServiceDocumentPage from './pages/services/$categoryId/$documentSlugId';
+
+import GovernmentIndexPage from './pages/government/index';
+import GovernmentCategoryPage from './pages/government/$categoryId';
+import GovernmentDocumentPage from './pages/government/$categoryId/$documentSlugId';
+import OfficialsPage from './pages/government/officials/index';
+import BarangaysPage from './pages/government/barangays/index';
+import BarangayDetailPage from './pages/government/barangays/$barangaySlugId';
+import DepartmentsPage from './pages/government/departments/index';
+import DepartmentDetailPage from './pages/government/departments/$departmentSlugId';
+import ProjectsPage from './pages/government/projects/index';
+import ProjectDetailPage from './pages/government/projects/$projectSlugId';
+import SitemapPage from './pages/sitemap/index';
+import { Hotline } from './components/layout/Hotline';
 
 function App() {
   return (
@@ -19,37 +33,58 @@ function App() {
       <Router>
         <NuqsAdapter>
           <div className="min-h-screen flex flex-col">
+            <Hotline />
             <Navbar />
             <ScrollToTop />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<HomePage />} />
+
               <Route
-                path="/services/:category/:documentSlug"
-                element={<Document categoryType="service" />}
+                path="/services/:categoryId/:documentSlugId"
+                element={<ServiceDocumentPage />}
               />
-              <Route path="/services/:category" element={<Services />} />
-              <Route path="/services" element={<Services />} />
-              {/* Officials */}
-              <Route path="/government/officials" element={<OfficialsPage />} />
-              {/* Barangay */}
-              <Route path="/government/barangays" element={<Barangays />} />
               <Route
-                path="/government/barangays/:barangaySlug"
-                element={<BarangayDetail />}
+                path="/services/:categoryId"
+                element={<ServiceCategoryPage />}
               />
-              {/* Departments */}
+              <Route path="/services" element={<ServicesIndexPage />} />
+
+              <Route
+                path="/government/officials"
+                element={<OfficialsPage />}
+              />
+              <Route
+                path="/government/barangays/:barangaySlugId"
+                element={<BarangayDetailPage />}
+              />
+              <Route path="/government/barangays" element={<BarangaysPage />} />
+              <Route
+                path="/government/departments/:departmentSlugId"
+                element={<DepartmentDetailPage />}
+              />
               <Route
                 path="/government/departments"
-                element={<BarangayDetail />}
+                element={<DepartmentsPage />}
               />
               <Route
-                path="/government/:category/:documentSlug"
-                element={<Document categoryType="government" />}
+                path="/government/projects/:projectSlugId"
+                element={<ProjectDetailPage />}
               />
-              <Route path="/government" element={<Government />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/:lang/:documentSlug" element={<Document />} />
-              <Route path="/:documentSlug" element={<Document />} />
+              <Route path="/government/projects" element={<ProjectsPage />} />
+              <Route
+                path="/government/:categoryId/:documentSlugId"
+                element={<GovernmentDocumentPage />}
+              />
+              <Route
+                path="/government/:categoryId"
+                element={<GovernmentCategoryPage />}
+              />
+              <Route path="/government" element={<GovernmentIndexPage />} />
+
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/statistics" element={<StatisticsPage />} />
+              <Route path="/sitemap" element={<SitemapPage />} />
             </Routes>
             <Footer />
           </div>

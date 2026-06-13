@@ -1,12 +1,12 @@
 import { useParams, Link } from 'react-router-dom';
-import { Heading } from '../components/ui/Heading';
-import { Text } from '../components/ui/Text';
-import Section from '../components/ui/Section';
-import SEO from '../components/SEO';
-import Breadcrumbs from '../components/ui/Breadcrumbs';
+import { Heading } from '../../../components/ui/Heading';
+import { Text } from '../../../components/ui/Text';
+import Section from '../../../components/ui/Section';
+import SEO from '../../../components/SEO';
+import Breadcrumbs from '../../../components/ui/Breadcrumbs';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
-import { getBarangayBySlug, allBarangays } from '../data/yamlLoader';
+import { getBarangayBySlug, allBarangays } from '../../../data/yamlLoader';
 import {
   MapPin,
   Building2,
@@ -19,8 +19,8 @@ import {
 } from 'lucide-react';
 
 const BarangayDetail: React.FC = () => {
-  const { barangaySlug } = useParams<{ barangaySlug: string }>();
-  const barangay = barangaySlug ? getBarangayBySlug(barangaySlug) : undefined;
+  const { barangaySlugId } = useParams<{ barangaySlugId: string }>();
+  const barangay = barangaySlugId ? getBarangayBySlug(barangaySlugId) : undefined;
 
   if (!barangay) {
     return (
