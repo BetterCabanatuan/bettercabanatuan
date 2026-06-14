@@ -15,7 +15,9 @@ interface DepartmentDetailProps {
   department: Department;
 }
 
-export default function DepartmentDetail({ department }: DepartmentDetailProps) {
+export default function DepartmentDetail({
+  department,
+}: DepartmentDetailProps) {
   const Icon = getIconComponent(department.icon);
 
   return (
@@ -32,7 +34,10 @@ export default function DepartmentDetail({ department }: DepartmentDetailProps) 
             { label: 'Home', href: '/' },
             { label: 'Government', href: '/government' },
             { label: 'Departments', href: '/government/departments' },
-            { label: department.name, href: `/government/departments/${department.slug}` },
+            {
+              label: department.name,
+              href: `/government/departments/${department.slug}`,
+            },
           ]}
         />
 
@@ -55,7 +60,9 @@ export default function DepartmentDetail({ department }: DepartmentDetailProps) 
                   {department.acronym} · {department.branch}
                 </span>
                 <Heading className="mb-2">{department.name}</Heading>
-                <Text className="text-gray-600 mb-0">{department.description}</Text>
+                <Text className="text-gray-600 mb-0">
+                  {department.description}
+                </Text>
               </div>
             </div>
 
@@ -82,7 +89,6 @@ export default function DepartmentDetail({ department }: DepartmentDetailProps) 
                 </CardContent>
               </Card>
             )}
-
           </div>
 
           <Card className="h-fit border-t-4 border-primary-500">

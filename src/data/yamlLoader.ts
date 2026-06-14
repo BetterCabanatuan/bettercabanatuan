@@ -132,6 +132,7 @@ export interface Barangay {
 }
 
 export interface BarangaysData {
+  description?: string;
   barangays: Barangay[];
 }
 
