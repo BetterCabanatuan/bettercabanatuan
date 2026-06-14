@@ -1,6 +1,6 @@
 import Section from '../ui/Section';
-import * as LucideIcons from 'lucide-react';
 import { Heading } from '../ui/Heading';
+import { getIconComponent } from '../../lib/iconMap';
 import { Text } from '../ui/Text';
 import { useTranslation } from '../../hooks/useTranslation';
 import { Card, CardContent } from '@bettergov/kapwa/card';
@@ -32,31 +32,41 @@ export default function GovernmentActivitySection({
 }: GovernmentActivitySectionProps = {}) {
   const { t } = useTranslation();
 
-  const getIcon = (category: string) => {
-    const IconComponent = LucideIcons[
-      category as keyof typeof LucideIcons
-    ] as React.ComponentType<{ className?: string }>;
-    return IconComponent ? <IconComponent className="h-6 w-6" /> : null;
+  const getIcon = (iconName: string) => {
+    const IconComponent = getIconComponent(iconName);
+    return <IconComponent className="h-6 w-6" />;
   };
 
   const displayedCategories = governmentCategories.categories as Category[];
 
   return (
     <Section id="#government">
-      <Heading level={2}>{title || t('title')}</Heading>
+      <Heading level={2}>{title || t('governmentActivity.title')}</Heading>
       <Text className="text-gray-600 mb-6">
         {description || t('governmentActivity.description')}
       </Text>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {displayedCategories.map(category => (
+        {displayedCategories.map(category => {
+          const href =
+            category.slug === 'officials'
+              ? '/government/officials'
+              : category.slug === 'barangays'
+                ? '/government/barangays'
+                : category.slug === 'departments'
+                  ? '/government/departments'
+                  : category.slug === 'projects'
+                    ? '/government/projects'
+                    : `/government/${category.slug}`;
+
+          return (
           <Card
             key={category.slug}
             hoverable
             className="border-t-4 border-primary-500"
           >
             <Link
-              to={`/government/${category.slug}`}
+              to={href}
               className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
             >
               <CardContent className="flex flex-col h-full p-6">
@@ -73,7 +83,8 @@ export default function GovernmentActivitySection({
               </CardContent>
             </Link>
           </Card>
-        ))}
+          );
+        })}
       </div>
     </Section>
   );

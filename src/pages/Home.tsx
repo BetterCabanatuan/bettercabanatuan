@@ -1,6 +1,8 @@
 import Hero from '../components/sections/Hero';
 import ServicesSection from '../components/home/ServicesSection';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
+import CityStats from '../components/home/CityStats';
+import Map from '../components/home/Map';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -13,8 +15,10 @@ const Home: React.FC = () => {
       />
       <main className="flex-grow">
         <Hero />
+        <CityStats />
         <ServicesSection />
         <GovernmentActivitySection />
+        <Map />
       </main>
     </>
   );
