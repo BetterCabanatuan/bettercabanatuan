@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import * as LucideIcons from 'lucide-react';
 import { ArrowRight, Building2 } from 'lucide-react';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import type { Department } from '../../../data/yamlLoader';
@@ -9,10 +8,6 @@ interface DepartmentCardProps {
 }
 
 export default function DepartmentCard({ department }: DepartmentCardProps) {
-  const Icon = (LucideIcons[
-    department.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>) || Building2;
-
   return (
     <Link
       to={`/government/departments/${department.slug}`}
@@ -25,7 +20,7 @@ export default function DepartmentCard({ department }: DepartmentCardProps) {
         <CardContent className="p-6 flex flex-col h-full">
           <div className="flex items-start justify-between gap-3 mb-4">
             <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary-50 text-primary-600 shrink-0">
-              <Icon className="h-5 w-5" aria-hidden="true" />
+              <Building2 className="h-5 w-5" aria-hidden="true" />
             </span>
             <span className="inline-flex px-2.5 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-700">
               {department.acronym}

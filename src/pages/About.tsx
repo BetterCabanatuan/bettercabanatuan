@@ -18,7 +18,7 @@ export default function AboutPage() {
         description={`About the ${siteConfig.governmentName} community portal — ${cityStats.totalBarangays} barangays, ${services.length} service areas, and local government information.`}
         keywords="about, community portal, local government, Cabanatuan City, Nueva Ecija, civic tech"
       />
-      <main className="flex-grow">
+      <main className="grow">
         <AboutHero />
         <AboutMissionSection />
         <AboutLeadershipSection />

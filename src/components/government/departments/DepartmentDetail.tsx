@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, ArrowLeft } from 'lucide-react';
-import * as LucideIcons from 'lucide-react';
-import { Building2 } from 'lucide-react';
 import { Heading } from '../../ui/Heading';
+import { getIconComponent } from '../../../lib/iconMap';
 import { Text } from '../../ui/Text';
 import Section from '../../ui/Section';
 import Breadcrumbs from '../../ui/Breadcrumbs';
@@ -16,10 +15,10 @@ interface DepartmentDetailProps {
   department: Department;
 }
 
-export default function DepartmentDetail({ department }: DepartmentDetailProps) {
-  const Icon = (LucideIcons[
-    department.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>) || Building2;
+export default function DepartmentDetail({
+  department,
+}: DepartmentDetailProps) {
+  const Icon = getIconComponent(department.icon);
 
   return (
     <>
@@ -35,7 +34,10 @@ export default function DepartmentDetail({ department }: DepartmentDetailProps) 
             { label: 'Home', href: '/' },
             { label: 'Government', href: '/government' },
             { label: 'Departments', href: '/government/departments' },
-            { label: department.name, href: `/government/departments/${department.slug}` },
+            {
+              label: department.name,
+              href: `/government/departments/${department.slug}`,
+            },
           ]}
         />
 
@@ -58,7 +60,9 @@ export default function DepartmentDetail({ department }: DepartmentDetailProps) 
                   {department.acronym} · {department.branch}
                 </span>
                 <Heading className="mb-2">{department.name}</Heading>
-                <Text className="text-gray-600 mb-0">{department.description}</Text>
+                <Text className="text-gray-600 mb-0">
+                  {department.description}
+                </Text>
               </div>
             </div>
 
@@ -85,7 +89,6 @@ export default function DepartmentDetail({ department }: DepartmentDetailProps) 
                 </CardContent>
               </Card>
             )}
-
           </div>
 
           <Card className="h-fit border-t-4 border-primary-500">

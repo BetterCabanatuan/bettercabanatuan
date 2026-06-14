@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import * as LucideIcons from 'lucide-react';
-import { ArrowRight, HardHat } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@bettergov/kapwa/card';
+import { getIconComponent } from '../../../lib/iconMap';
 import type { Project } from '../../../data/yamlLoader';
 import ProjectStatusBadge from './ProjectStatusBadge';
 
@@ -10,9 +10,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const Icon = (LucideIcons[
-    project.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>) || HardHat;
+  const Icon = getIconComponent(project.icon);
 
   return (
     <Link

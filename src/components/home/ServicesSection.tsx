@@ -1,6 +1,6 @@
 import Section from '../ui/Section';
-import * as LucideIcons from 'lucide-react';
 import { Heading } from '../ui/Heading';
+import { getIconComponent } from '../../lib/iconMap';
 import { Text } from '../ui/Text';
 import { useTranslation } from '../../hooks/useTranslation';
 import { Card, CardContent } from '@bettergov/kapwa/card';
@@ -30,11 +30,9 @@ export default function ServicesSection({
 }) {
   const { t } = useTranslation();
 
-  const getIcon = (category: string) => {
-    const IconComponent = LucideIcons[
-      category as keyof typeof LucideIcons
-    ] as React.ComponentType<{ className?: string }>;
-    return IconComponent ? <IconComponent className="h-6 w-6" /> : null;
+  const getIcon = (iconName: string) => {
+    const IconComponent = getIconComponent(iconName);
+    return <IconComponent className="h-6 w-6" />;
   };
 
   const displayedCategories = serviceCategories.categories as Category[];
