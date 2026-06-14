@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, ArrowLeft } from 'lucide-react';
-import * as LucideIcons from 'lucide-react';
-import { Building2 } from 'lucide-react';
 import { Heading } from '../../ui/Heading';
+import { getIconComponent } from '../../../lib/iconMap';
 import { Text } from '../../ui/Text';
 import Section from '../../ui/Section';
 import Breadcrumbs from '../../ui/Breadcrumbs';
@@ -17,9 +16,7 @@ interface DepartmentDetailProps {
 }
 
 export default function DepartmentDetail({ department }: DepartmentDetailProps) {
-  const Icon = (LucideIcons[
-    department.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>) || Building2;
+  const Icon = getIconComponent(department.icon);
 
   return (
     <>

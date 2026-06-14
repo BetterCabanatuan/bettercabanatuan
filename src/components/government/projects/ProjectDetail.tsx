@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, Building2, Wallet } from 'lucide-react';
-import * as LucideIcons from 'lucide-react';
-import { HardHat } from 'lucide-react';
 import { Heading } from '../../ui/Heading';
+import { getIconComponent } from '../../../lib/iconMap';
 import { Text } from '../../ui/Text';
 import Section from '../../ui/Section';
 import Breadcrumbs from '../../ui/Breadcrumbs';
@@ -17,9 +16,7 @@ interface ProjectDetailProps {
 }
 
 export default function ProjectDetail({ project }: ProjectDetailProps) {
-  const Icon = (LucideIcons[
-    project.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>) || HardHat;
+  const Icon = getIconComponent(project.icon);
 
   return (
     <>

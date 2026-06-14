@@ -5,7 +5,6 @@ import Section from '../components/ui/Section';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import SEO from '../components/SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
-import * as LucideIcons from 'lucide-react';
 import {
   Globe,
   Heart,
@@ -18,6 +17,7 @@ import {
   AlertTriangle,
   ExternalLink,
 } from 'lucide-react';
+import { getIconComponent } from '../lib/iconMap';
 import {
   siteConfig,
   cityStats,
@@ -52,10 +52,8 @@ const values = [
 ];
 
 const getIcon = (iconName: string) => {
-  const Icon = LucideIcons[
-    iconName as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
-  return Icon ? <Icon className="h-6 w-6" aria-hidden="true" /> : null;
+  const Icon = getIconComponent(iconName);
+  return <Icon className="h-6 w-6" aria-hidden="true" />;
 };
 
 const About: React.FC = () => {

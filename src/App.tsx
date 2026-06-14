@@ -49,10 +49,7 @@ function App() {
               />
               <Route path="/services" element={<ServicesIndexPage />} />
 
-              <Route
-                path="/government/officials"
-                element={<OfficialsPage />}
-              />
+              <Route path="/government/officials" element={<OfficialsPage />} />
               <Route
                 path="/government/barangays/:barangaySlugId"
                 element={<BarangayDetailPage />}
