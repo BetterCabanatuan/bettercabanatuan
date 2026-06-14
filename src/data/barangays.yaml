@@ -1,0 +1,1163 @@
+# Cabanatuan City Barangays
+# Generated from PSGC data with population figures (2015, 2020, 2024)
+# Total barangays: 89
+
+description: 'Explore all barangays of Cabanatuan City, including their classifications, descriptions, and local information. The city is divided into urban and rural barangays, each with its own character and community.'
+
+barangays:
+  - name: 'Aduas Centro'
+    slug: 'aduas-centro'
+    description: 'Aduas Centro is a urban barangay in Cabanatuan City. Formerly known as Aduas. As of 2024, it has a population of 5,151.'
+    classification: 'Urban'
+    psgc_code: '0304903002'
+    correspondence_code: '034903002'
+    old_name: 'Aduas'
+    status: ''
+    population:
+      2015: 5116
+      2020: 5116
+      2024: 5151
+
+  - name: 'Bagong Sikat'
+    slug: 'bagong-sikat'
+    description: 'Bagong Sikat is a urban barangay in Cabanatuan City. As of 2024, it has a population of 5,469.'
+    classification: 'Urban'
+    psgc_code: '0304903003'
+    correspondence_code: '034903003'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4599
+      2020: 5272
+      2024: 5469
+
+  - name: 'Bagong Buhay'
+    slug: 'bagong-buhay'
+    description: 'Bagong Buhay is a rural barangay in Cabanatuan City. As of 2024, it has a population of 1,176.'
+    classification: 'Rural'
+    psgc_code: '0304903005'
+    correspondence_code: '034903005'
+    old_name: ''
+    status: ''
+    population:
+      2015: 852
+      2020: 934
+      2024: 1176
+
+  - name: 'Bakero'
+    slug: 'bakero'
+    description: 'Bakero is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,653.'
+    classification: 'Rural'
+    psgc_code: '0304903006'
+    correspondence_code: '034903006'
+    old_name: ''
+    status: ''
+    population:
+      2015: 3073
+      2020: 3359
+      2024: 3653
+
+  - name: 'Bakod Bayan'
+    slug: 'bakod-bayan'
+    description: 'Bakod Bayan is a urban barangay in Cabanatuan City. As of 2024, it has a population of 9,683.'
+    classification: 'Urban'
+    psgc_code: '0304903007'
+    correspondence_code: '034903007'
+    old_name: ''
+    status: ''
+    population:
+      2015: 7659
+      2020: 9981
+      2024: 9683
+
+  - name: 'Balite'
+    slug: 'balite'
+    description: 'Balite is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,464.'
+    classification: 'Rural'
+    psgc_code: '0304903008'
+    correspondence_code: '034903008'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2141
+      2020: 2307
+      2024: 2464
+
+  - name: 'Bangad'
+    slug: 'bangad'
+    description: 'Bangad is a urban barangay in Cabanatuan City. As of 2024, it has a population of 9,106.'
+    classification: 'Urban'
+    psgc_code: '0304903009'
+    correspondence_code: '034903009'
+    old_name: ''
+    status: ''
+    population:
+      2015: 7596
+      2020: 7688
+      2024: 9106
+
+  - name: 'Bantug Bulalo'
+    slug: 'bantug-bulalo'
+    description: 'Bantug Bulalo is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,474.'
+    classification: 'Rural'
+    psgc_code: '0304903010'
+    correspondence_code: '034903010'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2390
+      2020: 2009
+      2024: 2474
+
+  - name: 'Bantug Norte'
+    slug: 'bantug-norte'
+    description: 'Bantug Norte is a urban barangay in Cabanatuan City. As of 2024, it has a population of 8,967.'
+    classification: 'Urban'
+    psgc_code: '0304903011'
+    correspondence_code: '034903011'
+    old_name: ''
+    status: ''
+    population:
+      2015: 8695
+      2020: 8686
+      2024: 8967
+
+  - name: 'Barlis'
+    slug: 'barlis'
+    description: 'Barlis is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,313.'
+    classification: 'Rural'
+    psgc_code: '0304903012'
+    correspondence_code: '034903012'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2066
+      2020: 2258
+      2024: 2313
+
+  - name: 'Barrera District'
+    slug: 'barrera-district'
+    description: 'Barrera District is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 5,217.'
+    classification: 'Urban'
+    psgc_code: '0304903013'
+    correspondence_code: '034903013'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 5374
+      2020: 5290
+      2024: 5217
+
+  - name: 'Bernardo District'
+    slug: 'bernardo-district'
+    description: 'Bernardo District is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,000.'
+    classification: 'Urban'
+    psgc_code: '0304903015'
+    correspondence_code: '034903015'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1233
+      2020: 1144
+      2024: 1000
+
+  - name: 'Bitas'
+    slug: 'bitas'
+    description: 'Bitas is a urban barangay in Cabanatuan City. As of 2024, it has a population of 5,630.'
+    classification: 'Urban'
+    psgc_code: '0304903016'
+    correspondence_code: '034903016'
+    old_name: ''
+    status: ''
+    population:
+      2015: 5779
+      2020: 5513
+      2024: 5630
+
+  - name: 'Bonifacio District'
+    slug: 'bonifacio-district'
+    description: 'Bonifacio District is a rural barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 3,127.'
+    classification: 'Rural'
+    psgc_code: '0304903017'
+    correspondence_code: '034903017'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 2917
+      2020: 3041
+      2024: 3127
+
+  - name: 'Buliran'
+    slug: 'buliran'
+    description: 'Buliran is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,588.'
+    classification: 'Rural'
+    psgc_code: '0304903018'
+    correspondence_code: '034903018'
+    old_name: ''
+    status: ''
+    population:
+      2015: 3322
+      2020: 3461
+      2024: 3588
+
+  - name: 'Caalibangbangan'
+    slug: 'caalibangbangan'
+    description: 'Caalibangbangan is a urban barangay in Cabanatuan City. As of 2024, it has a population of 11,879.'
+    classification: 'Urban'
+    psgc_code: '0304903019'
+    correspondence_code: '034903019'
+    old_name: ''
+    status: ''
+    population:
+      2015: 11112
+      2020: 11104
+      2024: 11879
+
+  - name: 'Cabu'
+    slug: 'cabu'
+    description: 'Cabu is a urban barangay in Cabanatuan City. As of 2024, it has a population of 5,657.'
+    classification: 'Urban'
+    psgc_code: '0304903020'
+    correspondence_code: '034903020'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4054
+      2020: 5182
+      2024: 5657
+
+  - name: 'Campo Tinio'
+    slug: 'campo-tinio'
+    description: 'Campo Tinio is a urban barangay in Cabanatuan City. As of 2024, it has a population of 12,343.'
+    classification: 'Urban'
+    psgc_code: '0304903022'
+    correspondence_code: '034903022'
+    old_name: ''
+    status: ''
+    population:
+      2015: 11449
+      2020: 11917
+      2024: 12343
+
+  - name: 'Kapitan Pepe'
+    slug: 'kapitan-pepe'
+    description: 'Kapitan Pepe is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 5,145.'
+    classification: 'Urban'
+    psgc_code: '0304903023'
+    correspondence_code: '034903023'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 4425
+      2020: 4795
+      2024: 5145
+
+  - name: 'Cinco-Cinco'
+    slug: 'cinco-cinco'
+    description: 'Cinco-Cinco is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,464.'
+    classification: 'Rural'
+    psgc_code: '0304903024'
+    correspondence_code: '034903024'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1816
+      2020: 2163
+      2024: 2464
+
+  - name: 'City Supermarket'
+    slug: 'city-supermarket'
+    description: 'City Supermarket is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 80.'
+    classification: 'Urban'
+    psgc_code: '0304903025'
+    correspondence_code: '034903025'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 172
+      2020: 95
+      2024: 80
+
+  - name: 'Caudillo'
+    slug: 'caudillo'
+    description: 'Caudillo is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,129.'
+    classification: 'Rural'
+    psgc_code: '0304903026'
+    correspondence_code: '034903026'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1614
+      2020: 1920
+      2024: 2129
+
+  - name: 'Communal'
+    slug: 'communal'
+    description: 'Communal is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,566.'
+    classification: 'Rural'
+    psgc_code: '0304903027'
+    correspondence_code: '034903027'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1451
+      2020: 1791
+      2024: 2566
+
+  - name: 'Cruz Roja'
+    slug: 'cruz-roja'
+    description: 'Cruz Roja is a urban barangay in Cabanatuan City. As of 2024, it has a population of 6,755.'
+    classification: 'Urban'
+    psgc_code: '0304903028'
+    correspondence_code: '034903028'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4145
+      2020: 5354
+      2024: 6755
+
+  - name: 'Daang Sarile'
+    slug: 'daang-sarile'
+    description: 'Daang Sarile is a urban barangay in Cabanatuan City. As of 2024, it has a population of 8,137.'
+    classification: 'Urban'
+    psgc_code: '0304903029'
+    correspondence_code: '034903029'
+    old_name: ''
+    status: ''
+    population:
+      2015: 7191
+      2020: 8030
+      2024: 8137
+
+  - name: 'Dalampang'
+    slug: 'dalampang'
+    description: 'Dalampang is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,277.'
+    classification: 'Rural'
+    psgc_code: '0304903030'
+    correspondence_code: '034903030'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2057
+      2020: 2202
+      2024: 2277
+
+  - name: 'Dicarma'
+    slug: 'dicarma'
+    description: 'Dicarma is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 4,471.'
+    classification: 'Urban'
+    psgc_code: '0304903031'
+    correspondence_code: '034903031'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 4480
+      2020: 4344
+      2024: 4471
+
+  - name: 'Dimasalang'
+    slug: 'dimasalang'
+    description: 'Dimasalang is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,075.'
+    classification: 'Urban'
+    psgc_code: '0304903032'
+    correspondence_code: '034903032'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1421
+      2020: 1281
+      2024: 1075
+
+  - name: 'Dionisio S. Garcia'
+    slug: 'dionisio-s-garcia'
+    description: 'Dionisio S. Garcia is a urban barangay in Cabanatuan City. As of 2024, it has a population of 7,488.'
+    classification: 'Urban'
+    psgc_code: '0304903033'
+    correspondence_code: '034903033'
+    old_name: ''
+    status: ''
+    population:
+      2015: 7076
+      2020: 7405
+      2024: 7488
+
+  - name: 'Fatima'
+    slug: 'fatima'
+    description: 'Fatima is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 555.'
+    classification: 'Urban'
+    psgc_code: '0304903035'
+    correspondence_code: '034903035'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 886
+      2020: 777
+      2024: 555
+
+  - name: 'General Luna'
+    slug: 'general-luna'
+    description: 'General Luna is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,488.'
+    classification: 'Urban'
+    psgc_code: '0304903036'
+    correspondence_code: '034903036'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1548
+      2020: 1516
+      2024: 1488
+
+  - name: 'Ibabao Bana'
+    slug: 'ibabao-bana'
+    description: 'Ibabao Bana is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,200.'
+    classification: 'Rural'
+    psgc_code: '0304903037'
+    correspondence_code: '034903037'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2313
+      2020: 2662
+      2024: 3200
+
+  - name: 'Imelda District'
+    slug: 'imelda-district'
+    description: 'Imelda District is a urban barangay in Cabanatuan City. As of 2024, it has a population of 3,717.'
+    classification: 'Urban'
+    psgc_code: '0304903038'
+    correspondence_code: '034903038'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4001
+      2020: 3639
+      2024: 3717
+
+  - name: 'Isla'
+    slug: 'isla'
+    description: 'Isla is a rural barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 2,562.'
+    classification: 'Rural'
+    psgc_code: '0304903039'
+    correspondence_code: '034903039'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 2081
+      2020: 2340
+      2024: 2562
+
+  - name: 'Calawagan'
+    slug: 'calawagan'
+    description: 'Calawagan is a rural barangay in Cabanatuan City. Formerly known as Kalawagan. As of 2024, it has a population of 2,050.'
+    classification: 'Rural'
+    psgc_code: '0304903040'
+    correspondence_code: '034903040'
+    old_name: 'Kalawagan'
+    status: ''
+    population:
+      2015: 1757
+      2020: 1836
+      2024: 2050
+
+  - name: 'Kalikid Norte'
+    slug: 'kalikid-norte'
+    description: 'Kalikid Norte is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,790.'
+    classification: 'Rural'
+    psgc_code: '0304903041'
+    correspondence_code: '034903041'
+    old_name: ''
+    status: ''
+    population:
+      2015: 3344
+      2020: 3585
+      2024: 3790
+
+  - name: 'Kalikid Sur'
+    slug: 'kalikid-sur'
+    description: 'Kalikid Sur is a urban barangay in Cabanatuan City. As of 2024, it has a population of 6,907.'
+    classification: 'Urban'
+    psgc_code: '0304903042'
+    correspondence_code: '034903042'
+    old_name: ''
+    status: ''
+    population:
+      2015: 5056
+      2020: 6210
+      2024: 6907
+
+  - name: 'Lagare'
+    slug: 'lagare'
+    description: 'Lagare is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,769.'
+    classification: 'Rural'
+    psgc_code: '0304903043'
+    correspondence_code: '034903043'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2366
+      2020: 2715
+      2024: 2769
+
+  - name: 'M. S. Garcia'
+    slug: 'm-s-garcia'
+    description: 'M. S. Garcia is a urban barangay in Cabanatuan City. As of 2024, it has a population of 6,581.'
+    classification: 'Urban'
+    psgc_code: '0304903044'
+    correspondence_code: '034903044'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4670
+      2020: 6148
+      2024: 6581
+
+  - name: 'Mabini Extension'
+    slug: 'mabini-extension'
+    description: 'Mabini Extension is a urban barangay in Cabanatuan City. As of 2024, it has a population of 3,280.'
+    classification: 'Urban'
+    psgc_code: '0304903046'
+    correspondence_code: '034903046'
+    old_name: ''
+    status: ''
+    population:
+      2015: 3314
+      2020: 3208
+      2024: 3280
+
+  - name: 'Mabini Homesite'
+    slug: 'mabini-homesite'
+    description: 'Mabini Homesite is a urban barangay in Cabanatuan City. As of 2024, it has a population of 5,540.'
+    classification: 'Urban'
+    psgc_code: '0304903047'
+    correspondence_code: '034903047'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4317
+      2020: 5501
+      2024: 5540
+
+  - name: 'Macatbong'
+    slug: 'macatbong'
+    description: 'Macatbong is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,634.'
+    classification: 'Rural'
+    psgc_code: '0304903048'
+    correspondence_code: '034903048'
+    old_name: ''
+    status: ''
+    population:
+      2015: 3378
+      2020: 3623
+      2024: 3634
+
+  - name: 'Magsaysay District'
+    slug: 'magsaysay-district'
+    description: 'Magsaysay District is a urban barangay in Cabanatuan City. As of 2024, it has a population of 4,208.'
+    classification: 'Urban'
+    psgc_code: '0304903049'
+    correspondence_code: '034903049'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4492
+      2020: 4242
+      2024: 4208
+
+  - name: 'Matadero'
+    slug: 'matadero'
+    description: 'Matadero is a rural barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,069.'
+    classification: 'Rural'
+    psgc_code: '0304903050'
+    correspondence_code: '034903050'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1123
+      2020: 1010
+      2024: 1069
+
+  - name: 'Lourdes'
+    slug: 'lourdes'
+    description: 'Lourdes is a rural barangay in Cabanatuan City. Formerly known as Matungal-tungal. As of 2024, it has a population of 2,580.'
+    classification: 'Rural'
+    psgc_code: '0304903051'
+    correspondence_code: '034903051'
+    old_name: 'Matungal-tungal'
+    status: ''
+    population:
+      2015: 2457
+      2020: 2478
+      2024: 2580
+
+  - name: 'Mayapyap Norte'
+    slug: 'mayapyap-norte'
+    description: 'Mayapyap Norte is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,780.'
+    classification: 'Rural'
+    psgc_code: '0304903052'
+    correspondence_code: '034903052'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2288
+      2020: 2750
+      2024: 2780
+
+  - name: 'Mayapyap Sur'
+    slug: 'mayapyap-sur'
+    description: 'Mayapyap Sur is a urban barangay in Cabanatuan City. As of 2024, it has a population of 5,950.'
+    classification: 'Urban'
+    psgc_code: '0304903053'
+    correspondence_code: '034903053'
+    old_name: ''
+    status: ''
+    population:
+      2015: 5473
+      2020: 5904
+      2024: 5950
+
+  - name: 'Melojavilla'
+    slug: 'melojavilla'
+    description: 'Melojavilla is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 429.'
+    classification: 'Urban'
+    psgc_code: '0304903054'
+    correspondence_code: '034903054'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 654
+      2020: 387
+      2024: 429
+
+  - name: 'Obrero'
+    slug: 'obrero'
+    description: 'Obrero is a rural barangay in Cabanatuan City. As of 2024, it has a population of 4,587.'
+    classification: 'Rural'
+    psgc_code: '0304903055'
+    correspondence_code: '034903055'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4361
+      2020: 4360
+      2024: 4587
+
+  - name: 'Padre Crisostomo'
+    slug: 'padre-crisostomo'
+    description: 'Padre Crisostomo is a rural barangay in Cabanatuan City. As of 2024, it has a population of 4,276.'
+    classification: 'Rural'
+    psgc_code: '0304903056'
+    correspondence_code: '034903056'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4018
+      2020: 4298
+      2024: 4276
+
+  - name: 'Pagas'
+    slug: 'pagas'
+    description: 'Pagas is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,205.'
+    classification: 'Rural'
+    psgc_code: '0304903057'
+    correspondence_code: '034903057'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2997
+      2020: 3261
+      2024: 3205
+
+  - name: 'Palagay'
+    slug: 'palagay'
+    description: 'Palagay is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,005.'
+    classification: 'Rural'
+    psgc_code: '0304903058'
+    correspondence_code: '034903058'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2221
+      2020: 2648
+      2024: 3005
+
+  - name: 'Pamaldan'
+    slug: 'pamaldan'
+    description: 'Pamaldan is a rural barangay in Cabanatuan City. As of 2024, it has a population of 4,301.'
+    classification: 'Rural'
+    psgc_code: '0304903059'
+    correspondence_code: '034903059'
+    old_name: ''
+    status: ''
+    population:
+      2015: 3870
+      2020: 4203
+      2024: 4301
+
+  - name: 'Pangatian'
+    slug: 'pangatian'
+    description: 'Pangatian is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,914.'
+    classification: 'Rural'
+    psgc_code: '0304903060'
+    correspondence_code: '034903060'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2815
+      2020: 3290
+      2024: 3914
+
+  - name: 'Patalac'
+    slug: 'patalac'
+    description: 'Patalac is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,519.'
+    classification: 'Rural'
+    psgc_code: '0304903061'
+    correspondence_code: '034903061'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2349
+      2020: 2417
+      2024: 2519
+
+  - name: 'Polilio'
+    slug: 'polilio'
+    description: 'Polilio is a rural barangay in Cabanatuan City. As of 2024, it has a population of 3,202.'
+    classification: 'Rural'
+    psgc_code: '0304903063'
+    correspondence_code: '034903063'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2605
+      2020: 2913
+      2024: 3202
+
+  - name: 'Pula'
+    slug: 'pula'
+    description: 'Pula is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,001.'
+    classification: 'Rural'
+    psgc_code: '0304903064'
+    correspondence_code: '034903064'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1708
+      2020: 1306
+      2024: 2001
+
+  - name: 'Quezon District'
+    slug: 'quezon-district'
+    description: 'Quezon District is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,381.'
+    classification: 'Urban'
+    psgc_code: '0304903065'
+    correspondence_code: '034903065'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1949
+      2020: 1648
+      2024: 1381
+
+  - name: 'Rizdelis'
+    slug: 'rizdelis'
+    description: 'Rizdelis is a rural barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 804.'
+    classification: 'Rural'
+    psgc_code: '0304903066'
+    correspondence_code: '034903066'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 789
+      2020: 784
+      2024: 804
+
+  - name: 'Samon'
+    slug: 'samon'
+    description: 'Samon is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,195.'
+    classification: 'Rural'
+    psgc_code: '0304903067'
+    correspondence_code: '034903067'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1713
+      2020: 1806
+      2024: 2195
+
+  - name: 'San Isidro'
+    slug: 'san-isidro'
+    description: 'San Isidro is a urban barangay in Cabanatuan City. As of 2024, it has a population of 6,299.'
+    classification: 'Urban'
+    psgc_code: '0304903068'
+    correspondence_code: '034903068'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4996
+      2020: 6277
+      2024: 6299
+
+  - name: 'San Josef Norte'
+    slug: 'san-josef-norte'
+    description: 'San Josef Norte is a rural barangay in Cabanatuan City. As of 2024, it has a population of 4,867.'
+    classification: 'Rural'
+    psgc_code: '0304903071'
+    correspondence_code: '034903071'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4442
+      2020: 4684
+      2024: 4867
+
+  - name: 'San Josef Sur'
+    slug: 'san-josef-sur'
+    description: 'San Josef Sur is a urban barangay in Cabanatuan City. As of 2024, it has a population of 7,531.'
+    classification: 'Urban'
+    psgc_code: '0304903072'
+    correspondence_code: '034903072'
+    old_name: ''
+    status: ''
+    population:
+      2015: 6793
+      2020: 7785
+      2024: 7531
+
+  - name: 'San Juan Pob.'
+    slug: 'san-juan-pob'
+    description: 'San Juan Pob. is a urban barangay in Cabanatuan City. Formerly known as Acofa. As of 2024, it has a population of 8,666.'
+    classification: 'Urban'
+    psgc_code: '0304903073'
+    correspondence_code: '034903073'
+    old_name: 'Acofa'
+    status: ''
+    population:
+      2015: 6687
+      2020: 8772
+      2024: 8666
+
+  - name: 'San Roque Norte'
+    slug: 'san-roque-norte'
+    description: 'San Roque Norte is a urban barangay in Cabanatuan City. As of 2024, it has a population of 877.'
+    classification: 'Urban'
+    psgc_code: '0304903074'
+    correspondence_code: '034903074'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1128
+      2020: 944
+      2024: 877
+
+  - name: 'San Roque Sur'
+    slug: 'san-roque-sur'
+    description: 'San Roque Sur is a rural barangay in Cabanatuan City. As of 2024, it has a population of 1,578.'
+    classification: 'Rural'
+    psgc_code: '0304903075'
+    correspondence_code: '034903075'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1356
+      2020: 1314
+      2024: 1578
+
+  - name: 'Sanbermicristi'
+    slug: 'sanbermicristi'
+    description: 'Sanbermicristi is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,270.'
+    classification: 'Urban'
+    psgc_code: '0304903076'
+    correspondence_code: '034903076'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1331
+      2020: 1298
+      2024: 1270
+
+  - name: 'Sangitan'
+    slug: 'sangitan'
+    description: 'Sangitan is a urban barangay in Cabanatuan City. As of 2024, it has a population of 1,465.'
+    classification: 'Urban'
+    psgc_code: '0304903077'
+    correspondence_code: '034903077'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2015
+      2020: 1566
+      2024: 1465
+
+  - name: 'Santa Arcadia'
+    slug: 'santa-arcadia'
+    description: 'Santa Arcadia is a urban barangay in Cabanatuan City. As of 2024, it has a population of 6,064.'
+    classification: 'Urban'
+    psgc_code: '0304903078'
+    correspondence_code: '034903078'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4598
+      2020: 5751
+      2024: 6064
+
+  - name: 'Sumacab Norte'
+    slug: 'sumacab-norte'
+    description: 'Sumacab Norte is a rural barangay in Cabanatuan City. As of 2024, it has a population of 4,916.'
+    classification: 'Rural'
+    psgc_code: '0304903079'
+    correspondence_code: '034903079'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4698
+      2020: 4869
+      2024: 4916
+
+  - name: 'Valdefuente'
+    slug: 'valdefuente'
+    description: 'Valdefuente is a urban barangay in Cabanatuan City. As of 2024, it has a population of 4,635.'
+    classification: 'Urban'
+    psgc_code: '0304903082'
+    correspondence_code: '034903082'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4321
+      2020: 4216
+      2024: 4635
+
+  - name: 'Valle Cruz'
+    slug: 'valle-cruz'
+    description: 'Valle Cruz is a urban barangay in Cabanatuan City. As of 2024, it has a population of 7,321.'
+    classification: 'Urban'
+    psgc_code: '0304903083'
+    correspondence_code: '034903083'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4856
+      2020: 6503
+      2024: 7321
+
+  - name: 'Vijandre District'
+    slug: 'vijandre-district'
+    description: 'Vijandre District is a rural barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,097.'
+    classification: 'Rural'
+    psgc_code: '0304903084'
+    correspondence_code: '034903084'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1376
+      2020: 1096
+      2024: 1097
+
+  - name: 'Villa Ofelia-Caridad'
+    slug: 'villa-ofelia-caridad'
+    description: 'Villa Ofelia-Caridad is a rural barangay in Cabanatuan City. As of 2024, it has a population of 1,533.'
+    classification: 'Rural'
+    psgc_code: '0304903085'
+    correspondence_code: '034903085'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1319
+      2020: 1315
+      2024: 1533
+
+  - name: 'Zulueta District'
+    slug: 'zulueta-district'
+    description: 'Zulueta District is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 1,801.'
+    classification: 'Urban'
+    psgc_code: '0304903086'
+    correspondence_code: '034903086'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 1558
+      2020: 1495
+      2024: 1801
+
+  - name: 'Nabao'
+    slug: 'nabao'
+    description: 'Nabao is a rural barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 966.'
+    classification: 'Rural'
+    psgc_code: '0304903087'
+    correspondence_code: '034903087'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 730
+      2020: 703
+      2024: 966
+
+  - name: 'Padre Burgos'
+    slug: 'padre-burgos'
+    description: 'Padre Burgos is a urban barangay in Cabanatuan City. Located in the poblacion (city center) area. As of 2024, it has a population of 301.'
+    classification: 'Urban'
+    psgc_code: '0304903088'
+    correspondence_code: '034903088'
+    old_name: ''
+    status: 'Pob.'
+    population:
+      2015: 324
+      2020: 328
+      2024: 301
+
+  - name: 'Talipapa'
+    slug: 'talipapa'
+    description: 'Talipapa is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,469.'
+    classification: 'Rural'
+    psgc_code: '0304903089'
+    correspondence_code: '034903089'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1726
+      2020: 2498
+      2024: 2469
+
+  - name: 'Aduas Norte'
+    slug: 'aduas-norte'
+    description: 'Aduas Norte is a urban barangay in Cabanatuan City. As of 2024, it has a population of 5,976.'
+    classification: 'Urban'
+    psgc_code: '0304903090'
+    correspondence_code: '034903090'
+    old_name: ''
+    status: ''
+    population:
+      2015: 5546
+      2020: 5755
+      2024: 5976
+
+  - name: 'Aduas Sur'
+    slug: 'aduas-sur'
+    description: 'Aduas Sur is a urban barangay in Cabanatuan City. As of 2024, it has a population of 7,616.'
+    classification: 'Urban'
+    psgc_code: '0304903091'
+    correspondence_code: '034903091'
+    old_name: ''
+    status: ''
+    population:
+      2015: 6745
+      2020: 7640
+      2024: 7616
+
+  - name: 'Hermogenes C. Concepcion, Sr.'
+    slug: 'hermogenes-c-concepcion-sr'
+    description: 'Hermogenes C. Concepcion, Sr. is a urban barangay in Cabanatuan City. As of 2024, it has a population of 4,867.'
+    classification: 'Urban'
+    psgc_code: '0304903092'
+    correspondence_code: '034903092'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4039
+      2020: 4756
+      2024: 4867
+
+  - name: 'Sapang'
+    slug: 'sapang'
+    description: 'Sapang is a rural barangay in Cabanatuan City. As of 2024, it has a population of 1,577.'
+    classification: 'Rural'
+    psgc_code: '0304903093'
+    correspondence_code: '034903093'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1382
+      2020: 1590
+      2024: 1577
+
+  - name: 'Sumacab Este'
+    slug: 'sumacab-este'
+    description: 'Sumacab Este is a urban barangay in Cabanatuan City. As of 2024, it has a population of 4,698.'
+    classification: 'Urban'
+    psgc_code: '0304903094'
+    correspondence_code: '034903094'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4118
+      2020: 4517
+      2024: 4698
+
+  - name: 'Sumacab South'
+    slug: 'sumacab-south'
+    description: 'Sumacab South is a urban barangay in Cabanatuan City. As of 2024, it has a population of 6,115.'
+    classification: 'Urban'
+    psgc_code: '0304903095'
+    correspondence_code: '034903095'
+    old_name: ''
+    status: ''
+    population:
+      2015: 4487
+      2020: 5776
+      2024: 6115
+
+  - name: 'Caridad'
+    slug: 'caridad'
+    description: 'Caridad is a rural barangay in Cabanatuan City. As of 2024, it has a population of 1,923.'
+    classification: 'Rural'
+    psgc_code: '0304903096'
+    correspondence_code: '034903096'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1885
+      2020: 1905
+      2024: 1923
+
+  - name: 'Magsaysay South'
+    slug: 'magsaysay-south'
+    description: 'Magsaysay South is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,585.'
+    classification: 'Rural'
+    psgc_code: '0304903097'
+    correspondence_code: '034903097'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2800
+      2020: 2419
+      2024: 2585
+
+  - name: 'Maria Theresa'
+    slug: 'maria-theresa'
+    description: 'Maria Theresa is a rural barangay in Cabanatuan City. As of 2024, it has a population of 987.'
+    classification: 'Rural'
+    psgc_code: '0304903098'
+    correspondence_code: '034903098'
+    old_name: ''
+    status: ''
+    population:
+      2015: 930
+      2020: 969
+      2024: 987
+
+  - name: 'Sangitan East'
+    slug: 'sangitan-east'
+    description: 'Sangitan East is a urban barangay in Cabanatuan City. As of 2024, it has a population of 1,465.'
+    classification: 'Urban'
+    psgc_code: '0304903099'
+    correspondence_code: '034903099'
+    old_name: ''
+    status: ''
+    population:
+      2015: 2050
+      2020: 1531
+      2024: 1465
+
+  - name: 'Santo Niño'
+    slug: 'santo-nino'
+    description: 'Santo Niño is a rural barangay in Cabanatuan City. As of 2024, it has a population of 2,244.'
+    classification: 'Rural'
+    psgc_code: '0304903100'
+    correspondence_code: '034903100'
+    old_name: ''
+    status: ''
+    population:
+      2015: 1807
+      2020: 1946
+      2024: 2244
