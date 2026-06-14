@@ -1,6 +1,7 @@
 import SEO from '../components/SEO';
 import AboutHero from '../components/about/AboutHero';
 import AboutMissionSection from '../components/about/AboutMissionSection';
+import AboutHistorySection from '../components/about/AboutHistorySection';
 import AboutLeadershipSection from '../components/about/AboutLeadershipSection';
 import AboutServicesSection from '../components/about/AboutServicesSection';
 import AboutGovernmentSection from '../components/about/AboutGovernmentSection';
@@ -21,6 +22,7 @@ export default function AboutPage() {
       <main className="grow">
         <AboutHero />
         <AboutMissionSection />
+        <AboutHistorySection />
         <AboutLeadershipSection />
         <AboutServicesSection />
         <AboutGovernmentSection />
