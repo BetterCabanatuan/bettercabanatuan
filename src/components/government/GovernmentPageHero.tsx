@@ -20,7 +20,7 @@ export default function GovernmentPageHero({
   eyebrow,
   title,
   description,
-  icon: Icon,
+  // icon: Icon,
   breadcrumbs,
 }: GovernmentPageHeroProps) {
   return (
