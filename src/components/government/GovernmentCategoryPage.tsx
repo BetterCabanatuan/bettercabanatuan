@@ -8,8 +8,8 @@ import {
   type Subcategory,
   type CategoryIndex,
 } from '../../data/yamlLoader';
-import * as LucideIcons from 'lucide-react';
 import Breadcrumbs from '../ui/Breadcrumbs';
+import { getIconComponent } from '../../lib/iconMap';
 import SEO from '../SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
@@ -35,9 +35,7 @@ export default function GovernmentCategoryPage({
   const categoryData = governmentCategories.categories.find(
     c => c.slug === categoryId
   );
-  const Icon = LucideIcons[
-    categoryData?.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
+  const Icon = getIconComponent(categoryData?.icon);
 
   useEffect(() => {
     if (categoryId && categoryData) {
