@@ -129,10 +129,10 @@ const pages: Array<{
   },
   {
     name: 'Project detail',
-    route: '/government/projects/central-transport-terminal',
+    route: '/government/projects/sangitan-public-market',
     routePattern: '/government/projects/:projectSlugId',
     Component: ProjectDetailPage,
-    heading: /Central Transport Terminal Modernization/i,
+    heading: /Sangitan Public Market/i,
   },
   {
     name: 'Sitemap',

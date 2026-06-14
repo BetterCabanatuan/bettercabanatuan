@@ -41,9 +41,7 @@ describe('yamlLoader lookups', () => {
   });
 
   it('finds projects by slug', () => {
-    expect(getProjectBySlug('central-transport-terminal')?.status).toBe(
-      'ongoing'
-    );
+    expect(getProjectBySlug('sangitan-public-market')?.status).toBe('ongoing');
     expect(getProjectBySlug('unknown')).toBeUndefined();
   });
 
