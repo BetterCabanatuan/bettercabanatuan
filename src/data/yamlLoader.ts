@@ -17,7 +17,8 @@ export interface Category {
 
 export interface CategoryData {
   categories: Category[];
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 export interface CategoryIndexData {
@@ -30,6 +31,9 @@ export interface CategoryIndexData {
 // Import the YAML file as raw text
 import servicesYamlContent from './services.yaml?raw';
 import governmentActivitiesYamlContent from './government.yaml?raw';
+import barangaysYamlContent from './barangays.yaml?raw';
+import departmentsYamlContent from './departments.yaml?raw';
+import projectsYamlContent from './projects.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -70,11 +74,105 @@ export const governmentCategories: CategoryData = yaml.load(
   governmentActivitiesYamlContent
 ) as CategoryData;
 
+export const barangaysData: BarangaysData = yaml.load(
+  barangaysYamlContent
+) as BarangaysData;
+
+export const departmentsData: DepartmentsData = (() => {
+  try {
+    return yaml.load(departmentsYamlContent) as DepartmentsData;
+  } catch (error) {
+    console.error('Failed to parse departments.yaml:', error);
+    return { description: '', departments: [] };
+  }
+})();
+
+export const projectsData: ProjectsData = yaml.load(
+  projectsYamlContent
+) as ProjectsData;
+
+export const allDepartments: Department[] = departmentsData.departments || [];
+export const allProjects: Project[] = projectsData.projects || [];
+
+export function getDepartmentBySlug(slug: string): Department | undefined {
+  return allDepartments.find(d => d.slug === slug);
+}
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return allProjects.find(p => p.slug === slug);
+}
+
+export const allBarangays: Barangay[] = barangaysData.barangays || [];
+
+export function getBarangayBySlug(slug: string): Barangay | undefined {
+  return allBarangays.find(b => b.slug === slug);
+}
+
 export interface CategoryIndex {
   title?: string;
   description?: string;
   layout: 'grid' | 'list';
   pages: Subcategory[];
+}
+
+export interface Barangay {
+  name: string;
+  slug: string;
+  description: string;
+  classification: 'Urban' | 'Rural';
+  psgc_code: string;
+  correspondence_code: string;
+  old_name?: string;
+  status?: string;
+  population: {
+    2015: number;
+    2020: number;
+    2024: number;
+  };
+}
+
+export interface BarangaysData {
+  barangays: Barangay[];
+}
+
+export interface Department {
+  name: string;
+  slug: string;
+  acronym: string;
+  branch: string;
+  description: string;
+  head: string;
+  phone: string;
+  email: string;
+  office: string;
+  icon: string;
+  services: string[];
+}
+
+export interface DepartmentsData {
+  description: string;
+  departments: Department[];
+}
+
+export type ProjectStatus = 'ongoing' | 'planned' | 'completed';
+
+export interface Project {
+  name: string;
+  slug: string;
+  status: ProjectStatus;
+  category: string;
+  description: string;
+  department: string;
+  location: string;
+  budget: string;
+  startDate: string;
+  endDate: string;
+  icon: string;
+}
+
+export interface ProjectsData {
+  description: string;
+  projects: Project[];
 }
 
 // Function to load category index data
@@ -122,4 +220,16 @@ export async function getCategorySubcategories(
 /** Returns true if a slug has a registered index in categoryIndexMap */
 export function isNestedCategory(slug: string): boolean {
   return slug in categoryIndexMap;
+}
+
+/** Synchronously parse pages from a category index YAML (for sitemap, etc.) */
+export function getCategoryPagesSync(categorySlug: string): Subcategory[] {
+  const yamlContent = categoryIndexMap[categorySlug];
+  if (!yamlContent) return [];
+  try {
+    const indexData = yaml.load(yamlContent) as CategoryIndexData;
+    return indexData.pages || [];
+  } catch {
+    return [];
+  }
 }

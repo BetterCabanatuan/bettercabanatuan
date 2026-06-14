@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
-import {
-  X,
-  Menu,
-  ChevronDown,
-  Globe,
-  Search,
-  CheckCircle2,
-} from 'lucide-react';
+import { X, Menu, ChevronDown, Globe, Search } from 'lucide-react';
 import { mainNavigation } from '../../data/navigation';
 import type { LanguageType } from '../../types/index';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGES } from '../../i18n/languages';
+import BetterCabanatuanLogo from '/LogoLight.svg';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +53,7 @@ const Navbar: React.FC = () => {
               About BetterGov
             </a>
             <a
-              href="https://www.gov.ph"
+              href="https://www.cabanatuancity.gov.ph"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
             >
@@ -96,20 +90,16 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <CheckCircle2 className="h-12 w-12 mr-3" />
+              <img
+                src={BetterCabanatuanLogo}
+                alt="BetterGov Logo"
+                className="h-16 w-auto mr-3"
+              />
               {/* <img
                 src="/ph-logo.webp"
                 alt="Philippines Coat of Arms"
                 className="h-12 w-12 mr-3"
               /> */}
-              <div>
-                <div className="text-black font-bold">
-                  {import.meta.env.VITE_GOVERNMENT_NAME}
-                </div>
-                <div className="text-xs text-gray-800">
-                  {t('site_description')}
-                </div>
-              </div>
             </Link>
           </div>
 
@@ -117,15 +107,15 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-8 pr-24">
             {mainNavigation.map(item => (
               <div key={item.label} className="relative group">
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
                 >
                   {t(`navbar.${item.label.replace(' ', '').toLowerCase()}`)}
                   {item.children && (
                     <ChevronDown className="ml-1 h-4 w-4 text-gray-800 group-hover:text-primary-600 transition-colors" />
                   )}
-                </a>
+                </Link>
                 {item.children && (
                   <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div
@@ -155,6 +145,12 @@ const Navbar: React.FC = () => {
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
               About
+            </Link>
+            <Link
+              to="/contact"
+              className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
+            >
+              Contact
             </Link>
             <Link
               to="/search"
@@ -235,6 +231,13 @@ const Navbar: React.FC = () => {
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
             About
+          </Link>
+          <Link
+            to="/contact"
+            onClick={closeMenu}
+            className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
+          >
+            Contact
           </Link>
           <Link
             to="/search"

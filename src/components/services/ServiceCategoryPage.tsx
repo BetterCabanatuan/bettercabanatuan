@@ -1,23 +1,30 @@
-import Section from '../components/ui/Section';
+import Section from '../ui/Section';
 import { useParams, Link } from 'react-router-dom';
-import { Heading } from '../components/ui/Heading';
-import { Text } from '../components/ui/Text';
+import { Heading } from '../ui/Heading';
+import { Text } from '../ui/Text';
 import {
   serviceCategories,
   getCategorySubcategories,
   type Subcategory,
   type CategoryIndex,
-} from '../data/yamlLoader';
-import * as LucideIcons from 'lucide-react';
-import Breadcrumbs from '../components/ui/Breadcrumbs';
-import ServicesSection from '../components/home/ServicesSection';
-import SEO from '../components/SEO';
+} from '../../data/yamlLoader';
+import Breadcrumbs from '../ui/Breadcrumbs';
+import { getIconComponent } from '../../lib/iconMap';
+import SEO from '../SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
 
-const Services: React.FC = () => {
-  const { category } = useParams();
+interface ServiceCategoryPageProps {
+  categoryId?: string;
+}
+
+export default function ServiceCategoryPage({
+  categoryId: fixedCategoryId,
+}: ServiceCategoryPageProps) {
+  const { categoryId: paramCategoryId } = useParams();
+  const categoryId = fixedCategoryId ?? paramCategoryId;
+
   const [categoryIndex, setCategoryIndex] = useState<CategoryIndex>({
     layout: 'list',
     pages: [],
@@ -25,41 +32,22 @@ const Services: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const subcategories: Subcategory[] = categoryIndex.pages;
 
-  const getCategory = () => {
-    return serviceCategories.categories.find(c => c.slug === category);
-  };
-
-  const categoryData = getCategory();
-  const Icon = LucideIcons[
-    categoryData?.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
+  const categoryData = serviceCategories.categories.find(
+    c => c.slug === categoryId
+  );
+  const Icon = getIconComponent(categoryData?.icon);
 
   useEffect(() => {
-    if (category && categoryData) {
+    if (categoryId && categoryData) {
       setLoading(true);
-      getCategorySubcategories(category)
+      getCategorySubcategories(categoryId)
         .then(setCategoryIndex)
         .catch(console.error)
         .finally(() => setLoading(false));
     }
-  }, [category, categoryData]);
+  }, [categoryId, categoryData]);
 
-  if (!category) {
-    return (
-      <>
-        <SEO
-          title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
-          keywords="government services, public services, local government, civic services"
-        />
-        <ServicesSection
-          title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
-        />
-      </>
-    );
-  }
-  if (!categoryData) {
+  if (!categoryId || !categoryData) {
     return (
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" />
@@ -76,14 +64,14 @@ const Services: React.FC = () => {
   return (
     <>
       <SEO
-        title={categoryData.category || category}
+        title={categoryData.category || categoryId}
         description={categoryData.description}
         keywords={`${categoryData.category}, government services, public services, local government`}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" />
         <Icon className="h-8 w-8 mb-4 text-primary-600 rounded-md" />
-        <Heading>{categoryData.category || category}</Heading>
+        <Heading>{categoryData.category || categoryId}</Heading>
         <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
 
         {loading ? (
@@ -105,7 +93,7 @@ const Services: React.FC = () => {
                 {subcategories.map(subcategory => (
                   <Link
                     key={subcategory.slug}
-                    to={`/services/${category}/${subcategory.slug}`}
+                    to={`/services/${categoryId}/${subcategory.slug}`}
                   >
                     <Card
                       hoverable
@@ -121,7 +109,7 @@ const Services: React.FC = () => {
                           </p>
                         )}
                         <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || category}
+                          {categoryData.category || categoryId}
                         </span>
                       </CardContent>
                     </Card>
@@ -133,7 +121,7 @@ const Services: React.FC = () => {
                 {subcategories.map(subcategory => (
                   <Link
                     key={subcategory.slug}
-                    to={`/services/${category}/${subcategory.slug}`}
+                    to={`/services/${categoryId}/${subcategory.slug}`}
                   >
                     <Card hoverable className="mb-4">
                       <CardContent>
@@ -146,7 +134,7 @@ const Services: React.FC = () => {
                           </p>
                         )}
                         <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || category}
+                          {categoryData.category || categoryId}
                         </span>
                       </CardContent>
                     </Card>
@@ -159,6 +147,4 @@ const Services: React.FC = () => {
       </Section>
     </>
   );
-};
-
-export default Services;
+}

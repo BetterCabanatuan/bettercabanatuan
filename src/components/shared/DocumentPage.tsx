@@ -1,7 +1,7 @@
-import Section from '../components/ui/Section';
-import Breadcrumbs from '../components/ui/Breadcrumbs';
-import { Heading } from '../components/ui/Heading';
-import { Text } from '../components/ui/Text';
+import Section from '../ui/Section';
+import Breadcrumbs from '../ui/Breadcrumbs';
+import { Heading } from '../ui/Heading';
+import { Text } from '../ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -10,10 +10,10 @@ import remarkGfm from 'remark-gfm';
 import {
   loadMarkdownContent,
   type MarkdownContent,
-} from '../lib/markdownLoader';
-import { createMarkdownComponents } from '../lib/markdownComponents';
+} from '../../lib/markdownLoader';
+import { createMarkdownComponents } from '../../lib/markdownComponents';
 import { Card, CardContent, CardHeader } from '@bettergov/kapwa/card';
-import { getTypographyTheme } from '../lib/typographyThemes';
+import { getTypographyTheme } from '../../lib/typographyThemes';
 import {
   serviceCategories,
   governmentCategories,
@@ -21,19 +21,19 @@ import {
   isNestedCategory,
   type Subcategory,
   type CategoryIndex,
-} from '../data/yamlLoader';
-import SEO from '../components/SEO';
+} from '../../data/yamlLoader';
+import SEO from '../SEO';
 
-interface DocumentProps {
+interface DocumentPageProps {
   theme?: string;
   categoryType?: 'service' | 'government';
 }
 
-export default function Document({
+export default function DocumentPage({
   theme: initialTheme = 'default',
   categoryType,
-}: DocumentProps) {
-  const { documentSlug, category } = useParams();
+}: DocumentPageProps) {
+  const { documentSlugId, categoryId } = useParams();
   const [markdownContent, setMarkdownContent] =
     useState<MarkdownContent | null>(null);
   const [nestedIndex, setNestedIndex] = useState<CategoryIndex | null>(null);
@@ -49,7 +49,7 @@ export default function Document({
   ]);
 
   useEffect(() => {
-    if (!documentSlug || !category || !categoryType) {
+    if (!documentSlugId || !categoryId || !categoryType) {
       setError('No document specified');
       setLoading(false);
       return;
@@ -66,30 +66,29 @@ export default function Document({
           : serviceCategories.categories;
         const sectionLabel = isGovernment ? 'Government' : 'Services';
         const sectionHref = isGovernment ? '/government' : '/services';
-        const categoryData = categories.find(c => c.slug === category);
+        const categoryData = categories.find(c => c.slug === categoryId);
 
-        // If the slug maps to its own index, render it as a nested listing
-        if (isNestedCategory(documentSlug)) {
-          const index = await getCategorySubcategories(documentSlug);
+        if (isNestedCategory(documentSlugId)) {
+          const index = await getCategorySubcategories(documentSlugId);
           setNestedIndex(index);
           setBreadcrumbs([
             { label: 'Home', href: '/' },
             { label: sectionLabel, href: sectionHref },
             {
-              label: categoryData?.category ?? category,
-              href: `${sectionHref}/${category}`,
+              label: categoryData?.category ?? categoryId,
+              href: `${sectionHref}/${categoryId}`,
             },
             {
-              label: documentSlug,
-              href: `${sectionHref}/${category}/${documentSlug}`,
+              label: documentSlugId,
+              href: `${sectionHref}/${categoryId}/${documentSlugId}`,
             },
           ]);
           return;
         }
 
         const content = await loadMarkdownContent(
-          documentSlug,
-          category,
+          documentSlugId,
+          categoryId,
           categoryType
         );
         setMarkdownContent(content);
@@ -98,12 +97,12 @@ export default function Document({
           { label: 'Home', href: '/' },
           { label: sectionLabel, href: sectionHref },
           {
-            label: categoryData?.category ?? category,
-            href: `${sectionHref}/${category}`,
+            label: categoryData?.category ?? categoryId,
+            href: `${sectionHref}/${categoryId}`,
           },
           {
-            label: content.title ?? documentSlug,
-            href: `${sectionHref}/${category}/${documentSlug}`,
+            label: content.title ?? documentSlugId,
+            href: `${sectionHref}/${categoryId}/${documentSlugId}`,
           },
         ]);
       } catch (err) {
@@ -116,7 +115,7 @@ export default function Document({
     };
 
     loadContent();
-  }, [documentSlug, category, categoryType]);
+  }, [documentSlugId, categoryId, categoryType]);
 
   if (loading) {
     return (
@@ -145,8 +144,8 @@ export default function Document({
     return (
       <>
         <SEO
-          title={documentSlug}
-          keywords={`${documentSlug}, government services, local government`}
+          title={documentSlugId}
+          keywords={`${documentSlugId}, government services, local government`}
         />
         <Section className="p-3 mb-12">
           <Breadcrumbs className="mb-8" items={breadcrumbs} />
@@ -205,12 +204,12 @@ export default function Document({
   return (
     <>
       <SEO
-        title={markdownContent.title || documentSlug}
+        title={markdownContent.title || documentSlugId}
         description={
           markdownContent.description ||
-          `Government service information for ${documentSlug}`
+          `Government service information for ${documentSlugId}`
         }
-        keywords={`${documentSlug}, government services, public services, local government`}
+        keywords={`${documentSlugId}, government services, public services, local government`}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" items={breadcrumbs} />

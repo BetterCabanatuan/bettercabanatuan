@@ -23,7 +23,11 @@ export const mainNavigation: NavigationItem[] = [
   },
   {
     label: 'Government',
-    href: '/government/departments',
+    href: '/government',
+  },
+  {
+    label: 'Statistics',
+    href: '/statistics',
   },
 ];
 
@@ -36,7 +40,7 @@ export const footerNavigation = {
         // { label: 'Privacy Policy', href: '/privacy' },
         // { label: 'Terms of Use', href: '/terms' },
         { label: 'Accessibility', href: '/accessibility' },
-        { label: 'Contact Us', href: '/about' },
+        { label: 'Contact Us', href: '/contact' },
         { label: 'Community Discord', href: '/discord' },
       ],
     },
@@ -57,6 +61,9 @@ export const footerNavigation = {
     {
       title: 'Government',
       links: [
+        { label: 'Government', href: '/government' },
+        { label: 'Public Officials', href: '/government/officials' },
+        { label: 'Barangays', href: '/government/barangays' },
         { label: 'Open Data', href: 'https://data.gov.ph' },
         { label: 'Freedom of Information', href: 'https://www.foi.gov.ph' },
         {
@@ -71,9 +78,9 @@ export const footerNavigation = {
     },
   ],
   socialLinks: [
-    { label: 'Facebook', href: 'https://facebook.com/govph' },
-    { label: 'Twitter', href: 'https://twitter.com/govph' },
-    { label: 'Instagram', href: 'https://instagram.com/govph' },
-    { label: 'YouTube', href: 'https://youtube.com/govph' },
+    { label: 'Facebook', href: 'https://facebook.com/bettercabanatuan' },
+    { label: 'Twitter', href: 'https://twitter.com/bettercabanatuan' },
+    { label: 'Instagram', href: 'https://instagram.com/bettercabanatuan' },
+    { label: 'Government Website', href: 'www.cabanatuancity.gov.ph' },
   ],
 };

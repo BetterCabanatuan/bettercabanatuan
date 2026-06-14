@@ -87,6 +87,7 @@
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-in: slideIn 0.5s ease-out;
+  --animate-stat-rise: statRise 0.55s ease-out both;
 
   @keyframes fadeIn {
     0% {
@@ -106,6 +107,25 @@
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  @keyframes statRise {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.97);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe\:animate-fade-in,
+  .motion-safe\:animate-slide-in,
+  .motion-safe\:animate-stat-rise {
+    animation: none !important;
   }
 }
 

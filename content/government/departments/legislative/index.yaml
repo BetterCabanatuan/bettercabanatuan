@@ -1,9 +1,10 @@
-# legislative Department Pages
+# Legislative Department
 # This file contains all the pages/governments/departments/legislative available under the Department
 #
 layout: grid
 title: 'Legislative Department'
-description: 'Page Description'
+description: 'Information about the Sangguniang Panlungsod (City Council) and the legislative process of Cabanatuan City.'
 pages:
-  - name: 'Councilor A'
-    description: 'Description'
+  - name: 'About the City Council'
+    slug: 'about-city-council'
+    description: 'Learn about the Sangguniang Panlungsod, its composition, and legislative functions.'
