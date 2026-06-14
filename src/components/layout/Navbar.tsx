@@ -4,7 +4,7 @@ import { mainNavigation } from '../../data/navigation';
 import type { LanguageType } from '../../types/index';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { LANGUAGES } from '../../i18n/languages';
+import { SUPPORTED_LANGUAGES } from '../../i18n/languages';
 import BetterCabanatuanLogo from '/LogoLight.svg';
 
 const Navbar: React.FC = () => {
@@ -43,21 +43,21 @@ const Navbar: React.FC = () => {
               className="text-xs text-primary-600 hover:text-primary-700 font-semibold transition-colors"
               target="_blank"
             >
-              🚀 Join Us
+              {t('navbar.joinUs')}
             </a>
             <a
               href="https://bettergov.ph/about"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
             >
-              About BetterGov
+              {t('navbar.aboutBetterGov')}
             </a>
             <a
               href="https://www.cabanatuancity.gov.ph"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
             >
-              Official Gov.ph
+              {t('navbar.officialGov')}
             </a>
 
             <a
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Hotlines
+              {t('navbar.hotlines')}
             </a>
             <div className="hidden md:block">
               <select
@@ -74,8 +74,8 @@ const Navbar: React.FC = () => {
                 onChange={e => changeLanguage(e.target.value as LanguageType)}
                 className="text-xs border border-gray-300 rounded px-2 py-1 bg-white text-gray-700 hover:border-primary-600 focus:outline-none focus:ring-1 focus:ring-primary-600 focus:border-primary-600"
               >
-                {Object.entries(LANGUAGES).map(([code, lang]) => (
-                  <option key={code} value={code}>
+                {SUPPORTED_LANGUAGES.map(lang => (
+                  <option key={lang.code} value={lang.code}>
                     {lang.nativeName}
                   </option>
                 ))}
@@ -144,20 +144,20 @@ const Navbar: React.FC = () => {
               to="/about"
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
-              About
+              {t('navbar.about')}
             </Link>
             <Link
               to="/contact"
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
-              Contact
+              {t('navbar.contact')}
             </Link>
             <Link
               to="/search"
               className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
               <Search className="h-4 w-4 mr-1" />
-              Search
+              {t('navbar.search')}
             </Link>
             {/* <Link
               to="/sitemap"
@@ -173,7 +173,7 @@ const Navbar: React.FC = () => {
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t('navbar.openMainMenu')}</span>
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
               ) : (
@@ -223,35 +223,35 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-semibold text-primary-600 hover:bg-primary-50 hover:text-primary-700"
           >
-            🚀 Join Us
+            {t('navbar.joinUs')}
           </Link>
           <Link
             to="/about"
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            About
+            {t('navbar.about')}
           </Link>
           <Link
             to="/contact"
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Contact
+            {t('navbar.contact')}
           </Link>
           <Link
             to="/search"
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Search
+            {t('navbar.search')}
           </Link>
           <Link
             to="/sitemap"
             onClick={closeMenu}
             className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
-            Sitemap
+            {t('navbar.sitemap')}
           </Link>
           <div className="px-4 py-3 border-t border-gray-200">
             <div className="flex items-center">
@@ -261,8 +261,8 @@ const Navbar: React.FC = () => {
                 onChange={e => changeLanguage(e.target.value as LanguageType)}
                 className="text-sm border border-gray-300 rounded px-2 py-1 bg-white text-gray-700 hover:border-primary-600 focus:outline-none focus:ring-1 focus:ring-primary-600 focus:border-primary-600"
               >
-                {Object.entries(LANGUAGES).map(([code, lang]) => (
-                  <option key={code} value={code}>
+                {SUPPORTED_LANGUAGES.map(lang => (
+                  <option key={lang.code} value={lang.code}>
                     {lang.nativeName}
                   </option>
                 ))}

@@ -1,0 +1,108 @@
+# Official city government department contact numbers
+# Source: City Government of Cabanatuan contact directory
+# Lines are open for calls and text messages Monday–Friday, 8:00 AM – 5:00 PM
+
+officeHours: 'Lines are open for calls and text messages from Monday to Friday, 8:00 AM – 5:00 PM.'
+
+contacts:
+  - name: "City Mayor's Office - Admin"
+    phone: '0919-081-3749'
+    departmentSlug: executive
+
+  - name: "City Mayor's Office - Community Affairs"
+    phone: '0919-081-3983'
+    departmentSlug: executive
+
+  - name: "City Mayor's Office - PESO"
+    phone: '0919-081-1300'
+    departmentSlug: peso
+
+  - name: 'Human Resource Management Office'
+    phone: '0919-081-3135'
+    departmentSlug: chrmo
+
+  - name: "City Treasurer's Office"
+    phone: '0919-089-9849'
+    departmentSlug: city-treasurers-office
+
+  - name: 'City Engineering Office'
+    phone: '0919-081-3694'
+
+  - name: 'City Budget Office'
+    phone: '0919-081-3199'
+    departmentSlug: budget-office
+
+  - name: 'Office of the City Accountant'
+    phone: '0919-081-3215'
+    departmentSlug: accounting-office
+
+  - name: 'City Planning and Development Office'
+    phone: '0919-081-3219'
+    departmentSlug: cpdo
+
+  - name: "City Assessor's Office"
+    phone: '0919-089-9867'
+    departmentSlug: assessors-office
+
+  - name: 'General Services Office'
+    phone: '0919-089-9887'
+
+  - name: 'Local Civil Registry Office'
+    phone: '0919-081-4548'
+    departmentSlug: lcro
+
+  - name: 'City Social Welfare and Development Office - Main'
+    phone: '0919-081-1345'
+    departmentSlug: cswdo
+
+  - name: 'CSWDO - Educational, Medical and Burial Assistance'
+    phone: '0919-081-0246'
+    departmentSlug: cswdo
+
+  - name: 'City Economic Enterprise and Public Utilities Management Office'
+    phone: '0919-081-2785'
+
+  - name: 'City Legal Office'
+    phone: '0919-081-0213'
+
+  - name: 'City Veterinary Office'
+    phone: '0919-089-9906'
+
+  - name: 'City Agriculture Office'
+    phone: '0919-089-9925'
+    departmentSlug: city-agriculture-office
+
+  - name: 'City Livelihood and Cooperatives Development Office'
+    phone: '0919-089-9875'
+
+  - name: 'City Information and Tourism Office'
+    phone: '0919-089-9862'
+
+  - name: 'City Environment and Natural Resources Office'
+    phone: '0919-081-4509'
+
+  - name: 'City Business Licensing and Investment Promotion Office'
+    phone: '0919-089-9869'
+    departmentSlug: bplo
+
+  - name: 'City Motor Pool Office'
+    phone: '0919-081-3218'
+
+  - name: "Vice Mayor's Office / Sangguniang Panlungsod"
+    phone: '0919-081-3730'
+    departmentSlug: legislative
+
+  - name: 'CHO - City Epidemiology Surveillance Supervisor'
+    phone: '0919-081-1508'
+    departmentSlug: cho
+
+  - name: 'City Health Center Supervisor (#2, #3, #5 & #8)'
+    phone: '0919-081-1400'
+    departmentSlug: cho
+
+  - name: 'City Health Center Supervisor (#1, #4, #6 & #7)'
+    phone: '0919-081-2789'
+    departmentSlug: cho
+
+  - name: 'Office of the City Building Official'
+    phone: '0919-081-1394'

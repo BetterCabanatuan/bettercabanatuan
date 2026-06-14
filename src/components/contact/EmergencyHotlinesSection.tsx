@@ -1,13 +1,13 @@
+import { Trans, useTranslation } from 'react-i18next';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Phone, ExternalLink } from 'lucide-react';
-import {
-  emergencyHotlines,
-  formatPhoneForTel,
-} from '../../data/hotlines';
+import { emergencyHotlines, formatPhoneForTel } from '../../data/hotlines';
 
 export default function EmergencyHotlinesSection() {
+  const { t } = useTranslation('common');
+
   return (
     <section
       id="emergency-hotlines"
@@ -17,14 +17,13 @@ export default function EmergencyHotlinesSection() {
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-red-600 mb-1">
-            24/7 Response
+            {t('hotlines.section.eyebrow')}
           </p>
           <Heading level={2} id="emergency-hotlines-heading" className="mb-2">
-            Emergency Hotlines
+            {t('hotlines.section.title')}
           </Heading>
           <Text className="text-gray-600 mb-0 max-w-2xl">
-            For crimes, fires, rescue operations, and urgent community matters.
-            Tap a number to call directly from your phone.
+            {t('hotlines.section.description')}
           </Text>
         </div>
         <a
@@ -33,7 +32,7 @@ export default function EmergencyHotlinesSection() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 min-h-[44px] text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200 shrink-0"
         >
-          National hotlines
+          {t('hotlines.section.nationalLink')}
           <ExternalLink className="h-4 w-4" aria-hidden="true" />
         </a>
       </div>
@@ -58,8 +57,10 @@ export default function EmergencyHotlinesSection() {
                     </Heading>
                     <Text className="text-gray-500 text-sm mb-0">
                       {hotline.phones.length > 1
-                        ? `${hotline.phones.length} contact numbers`
-                        : 'Direct line'}
+                        ? t('hotlines.section.multipleNumbers', {
+                            count: hotline.phones.length,
+                          })
+                        : t('hotlines.section.directLine')}
                     </Text>
                   </div>
                 </div>
@@ -91,15 +92,17 @@ export default function EmergencyHotlinesSection() {
       <Card className="mt-6 bg-red-50 border-red-200">
         <CardContent className="p-5">
           <Text className="text-sm text-gray-700 mb-0">
-            For non-emergency city services and permits, contact the{' '}
-            <a
-              href="#contact-offices"
-              className="text-primary-600 hover:underline font-medium"
-            >
-              city government offices
-            </a>{' '}
-            during regular business hours. In life-threatening situations, call
-            the nearest hotline above immediately.
+            <Trans
+              i18nKey="hotlines.section.disclaimer"
+              components={{
+                1: (
+                  <a
+                    href="#contact-offices"
+                    className="text-primary-600 hover:underline font-medium"
+                  />
+                ),
+              }}
+            />
           </Text>
         </CardContent>
       </Card>

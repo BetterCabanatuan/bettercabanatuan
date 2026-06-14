@@ -1,0 +1,299 @@
+{
+  "site_name": "Portal ng Lungsod ng Cabanatuan",
+  "site_description": "Ang inyong one-stop portal para sa lahat ng serbisyo at impormasyon ng Pamahalaang Lungsod ng Cabanatuan. Ma-access ang mga serbisyo, balita, at impormasyon sa isang lugar.",
+  "common": {
+    "home": "Home",
+    "about": "Tungkol",
+    "contact": "Makipag-ugnayan",
+    "search": "Maghanap",
+    "location": "Lokasyon",
+    "cityMayor": "Punong Lungsod",
+    "viceMayor": "Bise Punong Lungsod",
+    "term": "Termino {{term}}",
+    "communityPortal": "Portal ng Komunidad",
+    "fastFacts": "Mabilis na Impormasyon",
+    "dateCreated": "Petsa ng Pagkakatatag",
+    "enablingLaw": "Batas na Nagtatag",
+    "cityHall": "City Hall: {{address}}"
+  },
+  "hero": {
+    "title": "Welcome to BetterGov.ph",
+    "eyebrow": "Mas Mahusay na Cabanatuan",
+    "badge": "Portal ng komunidad na pinapatakbo ng volunteers",
+    "headlineAccent": "Malinaw na serbisyo ng pamahalaan.",
+    "subtitle": "Hanapin ang mga serbisyo, barangay, at halal na opisyal sa isang lugar — inayos para sa mga residente, negosyo, at bisita.",
+    "exploreServices": "Tingnan Lahat ng Serbisyo",
+    "learnMore": "Tungkol sa Portal na Ito",
+    "startHere": "Magsimula rito",
+    "popularTopics": "Popular ngayon",
+    "nationalId": "National ID",
+    "birthCertificate": "Birth Certificate",
+    "businessRegistration": "Business Registration",
+    "intent": {
+      "findService": {
+        "title": "Maghanap ng Serbisyo",
+        "description": "Permit, kalusugan, edukasyon, at iba pa"
+      },
+      "exploreBarangays": {
+        "title": "Tuklasin ang mga Barangay",
+        "description": "{{count}} komunidad · {{urban}} urban"
+      },
+      "meetOfficials": {
+        "title": "Kilalanin ang mga Opisyal",
+        "description": "Mayor, vice mayor, at city council"
+      },
+      "getInTouch": {
+        "title": "Makipag-ugnayan",
+        "description": "City hall, email, at suporta sa portal"
+      }
+    },
+    "topics": {
+      "healthServices": "Serbisyong Pangkalusugan",
+      "education": "Edukasyon",
+      "businessPermits": "Business Permit"
+    }
+  },
+  "services": {
+    "title": "Mga Serbisyo at Impormasyon",
+    "governmentServices": "Serbisyo ng Pamahalaan",
+    "description": "Ma-access nang mabilis at madali ang opisyal na serbisyo ng pamahalaan. Hanapin ang kailangan ninyo para sa citizenship, negosyo, edukasyon, at iba pa.",
+    "viewAll": "Tingnan Lahat ng Serbisyo",
+    "viewAllCategory": "Tingnan Lahat"
+  },
+  "governmentActivity": {
+    "title": "Aktibidad ng Pamahalaan",
+    "description": "Manatiling updated sa pinakabagong aktibidad at anunsyo ng pamahalaan."
+  },
+  "weather": {
+    "title": "Update sa Panahon"
+  },
+  "forex": {
+    "title": "Foreign Exchange Rates"
+  },
+  "news": {
+    "title": "Pinakabagong Balita at Update"
+  },
+  "footer": {
+    "copyright": "© 2026 BetterGov. Lahat ng nilalaman ay public domain maliban kung may ibang nakasaad."
+  },
+  "navbar": {
+    "government": "Pamahalaan",
+    "services": "Mga Serbisyo",
+    "statistics": "Estadistika",
+    "hotlines": "Hotlines",
+    "holidays": "Holiday",
+    "about": "Tungkol",
+    "contact": "Makipag-ugnayan",
+    "search": "Maghanap",
+    "joinUs": "Sumali",
+    "aboutBetterGov": "Tungkol sa BetterGov",
+    "officialGov": "Opisyal na Gov.ph",
+    "openMainMenu": "Buksan ang main menu",
+    "sitemap": "Sitemap"
+  },
+  "joinUs": {
+    "stripTitle": "🚀 Sumali sa #CivicTech Revolution",
+    "stripSubtitle": "Tumulong sa pagbuo ng kinabukasan ng Pilipinas at pamamahala sa pamamagitan ng teknolohiya",
+    "joinNow": "Sumali Ngayon",
+    "discord": "Discord",
+    "bannerTitle": "Sumali sa #CivicTech Revolution",
+    "bannerSubtitle": "Tumulong sa pagbuo ng kinabukasan ng Pilipinas at pamamahala sa pamamagitan ng teknolohiya.",
+    "bannerHighlight": "Pinamumunuan ng volunteers. Open source. Community-driven.",
+    "joinMovement": "Sumali sa Kilusan",
+    "or": "o",
+    "joinDiscord": "Sumali sa Discord",
+    "features": "🚀 Infrastructure • 💡 Mentorship • 🤝 Community • 🏢 Office Space"
+  },
+  "cityStats": {
+    "badge": "Cabanatuan City sa Isang Sulyap",
+    "title": "Mahalagang Impormasyon Tungkol sa Lungsod",
+    "subtitle": "Mabilis na estadistika at mahalagang impormasyon tungkol sa {{city}}",
+    "city": "Lungsod",
+    "cityDescription": "Lalawigan ng Nueva Ecija",
+    "totalPopulation": "Kabuuang Populasyon",
+    "populationDescription": "Ayon sa 2020 Census",
+    "barangays": "Mga Barangay",
+    "barangaysDescription": "Urban at Rural",
+    "landArea": "Lawak ng Lupain",
+    "landAreaDescription": "Kabuuang Lawak ng Lupain"
+  },
+  "map": {
+    "title": "Bisitahin ang City Hall"
+  },
+  "hotlines": {
+    "banner": {
+      "ariaLabel": "Emergency hotlines",
+      "label": "Emergency Hotlines",
+      "labelShort": "Hotlines"
+    },
+    "section": {
+      "eyebrow": "24/7 na Tugon",
+      "title": "Emergency Hotlines",
+      "description": "Para sa krimen, sunog, rescue operation, at urgent na usapin ng komunidad. I-tap ang numero para tumawag direkta mula sa telepono ninyo.",
+      "nationalLink": "Pambansang hotlines",
+      "multipleNumbers": "{{count}} contact number",
+      "directLine": "Direktang linya",
+      "disclaimer": "Para sa non-emergency na serbisyo at permit ng lungsod, makipag-ugnayan sa <1>mga opisina ng pamahalaang lungsod</1> sa regular na oras ng trabaho. Sa life-threatening na sitwasyon, tumawag agad sa pinakamalapit na hotline sa itaas.",
+      "cityOfficesLink": "mga opisina ng pamahalaang lungsod"
+    }
+  },
+  "departmentContacts": {
+    "eyebrow": "Directory ng Opisina",
+    "title": "Contact Number ng mga Departamento",
+    "description": "Direktang mobile line para sa mga opisina ng lungsod — para sa permit, record, social service, at iba pang non-emergency na tanong sa oras ng trabaho.",
+    "searchPlaceholder": "Maghanap ng opisina o numero…",
+    "officeColumn": "Opisina",
+    "numberColumn": "Contact Number",
+    "viewDepartment": "Tingnan ang department page",
+    "noResults": "Walang opisina na tumugma sa inyong paghahanap.",
+    "showing": "Ipinapakita ang {{count}} sa {{total}} opisina"
+  },
+  "contact": {
+    "seoTitle": "Makipag-ugnayan",
+    "seoDescription": "Makipag-ugnayan sa {{city}} — telepono, email, address ng city hall, at suporta sa community portal.",
+    "eyebrow": "Makipag-ugnayan",
+    "title": "Makipag-ugnayan sa Amin",
+    "subtitle": "Makipag-ugnayan sa pamahalaan ng {{city}} o sa volunteer team sa likod ng community portal na ito. Nandito kami para tulungan kayong makahanap ng tamang opisina at impormasyon.",
+    "channels": {
+      "cityGovernment": {
+        "title": "Pamahalaang Lungsod",
+        "description": "Para sa opisyal na transaksyon, permit, at serbisyo ng lungsod.",
+        "linkLabel": "Opisyal na website ng lungsod"
+      },
+      "mayorsOffice": {
+        "title": "Opisina ng Punong Lungsod"
+      },
+      "communityPortal": {
+        "title": "Community Portal",
+        "description": "I-report ang outdated na impormasyon, mag-suggest ng pagpapabuti, o mag-volunteer sa Better Cabanatuan.",
+        "linkLabel": "Mag-contribute sa GitHub"
+      }
+    },
+    "cityHallLocation": {
+      "title": "Lokasyon ng City Hall",
+      "cityHall": "City Hall ng {{city}}",
+      "openMaps": "Buksan sa Google Maps"
+    },
+    "officeHours": {
+      "title": "Oras ng Opisina at Tugon",
+      "cityOffices": "Mga Opisina ng Pamahalaang Lungsod",
+      "cityHours": "Lunes hanggang Biyernes, 8:00 AM – 5:00 PM (Philippine Standard Time). Sarado sa pambansa at lokal na holiday.",
+      "portalInquiries": "Mga Tanong sa Portal",
+      "portalResponse": "Tumutugon ang community volunteers sa mga mensahe tungkol sa portal sa loob ng 2–3 araw ng trabaho. Para sa urgent na opisyal na usapin, makipag-ugnayan direkta sa pamahalaang lungsod."
+    },
+    "connectOnline": "Kumonekta Online",
+    "social": {
+      "facebook": "Facebook",
+      "officialWebsite": "Opisyal na Website"
+    },
+    "findOffice": {
+      "title": "Hanapin ang Tamang Opisina",
+      "description": "Mag-browse sa mga seksyon ng pamahalaan para mahanap ang departamento o impormasyong kailangan ninyo."
+    },
+    "disclaimer": "Bahagi ng Better Cabanatuan community portal ang contact page na ito, hindi opisyal na sistema ng pamahalaan. Para sa verified na transaksyon at opisyal na record, gamitin palaging ang <1>opisyal na website ng {{city}}</1> o bumisita sa City Hall nang personal."
+  },
+  "about": {
+    "seoTitle": "Tungkol",
+    "seoDescription": "Tungkol sa community portal ng {{city}} — {{barangays}} barangay, {{services}} service area, at impormasyon ng lokal na pamahalaan.",
+    "hero": {
+      "eyebrow": "Portal ng Komunidad",
+      "title": "Tungkol sa {{city}}",
+      "subtitle": "Isang independiyente at volunteer-led na portal na tumutulong sa mga residente na mag-navigate sa {{serviceCount}} service area, {{govCount}} seksyon ng pamahalaan, at {{barangayCount}} barangay sa buong {{province}}."
+    },
+    "mission": {
+      "title": "Aming Misyon",
+      "body1": "Ang portal na ito ay isang independiyente at volunteer-led na proyekto na ginawa para tulungan ang mga residente ng {{city}} na makahanap ng tumpak na impormasyon tungkol sa serbisyo ng pamahalaan, departamento, at pampublikong programa — nang mabilis at sa simpleng wika.",
+      "body2": "Naniniwala kami na mas magandang access sa impormasyon ang magdadala sa mas aktibong mamamayan, mas malakas na komunidad, at mas responsableng pamamahala.",
+      "location": "Lokasyon",
+      "locationMeta": "{{type}} · {{area}} km² lawak ng lupain",
+      "stats": {
+        "population": "Populasyon",
+        "populationNote": "2020 Census",
+        "barangays": "Mga Barangay",
+        "barangaysNote": "{{urban}} urban · {{rural}} rural",
+        "serviceAreas": "Service Area",
+        "serviceAreasNote": "Mula sa services catalog",
+        "electedOfficials": "Halal na Opisyal",
+        "electedOfficialsNote": "{{count}} councilor"
+      }
+    },
+    "history": {
+      "title": "Kasaysayan ng Lungsod ng Cabanatuan",
+      "description": "Mula sa pagkakatatag bilang pueblo noong 1777 hanggang sa charter bilang lungsod noong 1950 — ang kwento ng Cabanatuan City sa Nueva Ecija.",
+      "paragraphs": [
+        "Ang Lungsod ng Cabanatuan ay isa sa mga chartered city sa bansa na nasa unahan ng pambansang pagsisikap para sa pag-unlad ng lipunan at ekonomiya. Ito ay hindi maihihiwalay sa \"Rice Granary\" ng Pilipinas, na umusbong bilang tipikal na komunidad sa tabi ng Ilog Pampanga. Sa kasalukuyan, hindi maaaring balewalain ang mga potensyal ng Lungsod ng Cabanatuan dahil nakamit na nito ang malaking pag-unlad sa sosyal, ekonomiya, pisikal, pulitika, at kultural na larangan.",
+        "May ilang bersyon ang pinagmulan ng pangalang Cabanatuan, ngunit tatlo ang popular na tinatanggap. Una ay mula sa salitang Tagalog na KABATUHAN, na nangangahulugang lugar na may masaganang bato. Ang isa pa ay KABAN NG TUWA na nangangahulugang kaban ng kasiyahan. At ang pinakabagong pinagmulan ay ang pangalang KABANATUAN ay nagmula sa BANATU, isang matibay na baging na dating sagana sa maputik na pampang ng Ilog Pampanga.",
+        "Alinman sa tatlong bersyon ang tama ay hindi mahalaga sa ngayon, sapagkat ang Lungsod ng Cabanatuan at ang mga mamamayan nito ay namuhay nang tapat sa mga bersyong ito ng pinagmulan ng pangalan. Tunay nga, naging matibay na haligi ang Cabanatuan para sa pambansang pag-unlad, at sa kasalukuyan ay nagsisikap ang mga tao na maging mas self-reliant — pinapakinabangan ang lahat ng potensyal dahil ang lungsod ay may sapat na likas na yaman; mataba at produktibo ang mga lupang sakahan; malikhain at masipag ang mga tao; at nanatiling matatag ang diwa ng mga Cabanatueño.",
+        "Karamihan sa mga unang naninirahan sa Cabanatuan ay nagmula sa Bulacan at Morong (Lalawigan ng Rizal). Ang iba pang maagang taga-settle ay nagmula sa Pampanga at Tayabas (ngayon ay Lalawigan ng Quezon). Ang mga unang barrio ng Cabanatuan nang maging munisipalidad ay Sangitan, Mayapyap, Talipapa, Samon, Aduas, at Cabu. Tagalog ang naninirahan sa mga barrio sa kanlurang bahagi habang ang paligid ng Sangitan ay settlement ng mga Pampangueno at Ilokano.",
+        "Sa pagliko ng siglo, ang malawak na Distrito ng Parang ay naging lugar ng migrasyon. Ang matatag at determinadong mga Ilokano na naghahanap ng bagong lupain ay nanirahan sa mayamang virgin plains na binubuo ng mga barrio ng Mataas Na Kahoy, Sapang Kawayan, Belen Balangkare, Talabutab Norte at Sur, Picaleon, Balaring, Sampalok, Platero, at Piñahan. Ang mas mapangahas na grupo ay umabot hanggang Macatbong, Kalawagan, at Kalikid.",
+        "Noong 1959, sa pamamagitan ng Republic Act 1863, nilikha ang Munisipalidad ng General Natividad na nagbigay-buhay sa hiwalay at independiyenteng political subdivision. Ang bagong munisipalidad, sa pamamagitan ng R.A. 1863, ay sumasaklaw sa mga barrio ng Mataas Na Kahoy, Balangkare Norte, Balangkare Sur, Belen, Picaleon, Piñahan, Platero, Kabulihan, Pasong Hari, Sapang Bato, Pulang Singkamas, Balaring, Panaksak, Bravo Miller, Acasia, Tila Patio, Pula, at Carimay. Binawasan ng halos kalahati ang laki ng Cabanatuan dahil sa batas na ito.",
+        "Nagsimula ang Cabanatuan bilang maliit na barrio ng Munisipalidad ng Gapan noong panahon ng Espanyol na Military Governor na si Colonel Monet. Ginawa itong pueblo o bayan ni Monet noong Hulyo 14, 1777. Noon ay bahagi pa ng hurisdiksiyon ng Tayabas ang Nueva Ecija. Kalaunan, nang hatiin ang Tayabas at ang hilagang-silangan ng subdivision ay isinama sa silangang bahagi ng Pangasinan, nabuo ang Lalawigan ng Nueva Ecija na may Baler bilang kabisera.",
+        "Sa huling bahagi ng 1785 inilipat ang sentro ng pamahalaan sa Bongabon at di-nagtagal naging kabisera ng lalawigan ang Cabanatuan.",
+        "Isang malaking sunog ang tumama sa bayan noong 1816, tinupok ang lahat ng pampublikong gusali at inilipat ang kabisera sa San Isidro, na noon ay umuunlad na munisipalidad. Pinamahalaan ng mga Recollect ang parokya hanggang ibinigay ito sa mga secular noong 1864. Isang lindol ang sumira sa lumang simbahan ng bayan noong 1880. Kaya, pinamunuan ni Padre Mariano Rivas ang muling pagtatayo ng bagong simbahan habang ipinagawa ni Padre P. J. La Fuente ang parochial house. Matapos makabawi mula sa matinding sunog noong 1816, muling naging kabisera ng Lalawigan ng Nueva Ecija ang Cabanatuan.",
+        "Noong panahon ng Espanyol, ang nangungunang opisyal ng bayan ay tinatawag na gobernadorcillo. Kalaunan, pinalitan ang titulo ng Capitan Municipal.",
+        "Sa ilalim ni Heneral Manuel Tinio, tumugon ang mga tao ng Cabanatuan sa Northern Luzon Central Command ng Filipino Revolutionary Forces noong 1896. Kalaunan, pagkatapos mahulog ang Calumpit at Malolos sa Bulacan, inokupa ng mga kawal ni Heneral Emilio Aguinaldo ang mga estratehikong posisyon sa Nueva Ecija, at ang Cabanatuan noong Mayo 9, 1896 ang pansamantalang sentro ng pamahalaan hanggang inilipat ang pambansang kabisera sa Bamban, Tarlac. Kabilang sa mga kilalang pangalan na inambag ng Cabanatuan sa rebolusyonaryong layunin sina Jose Tombo, Ramon Tombo, at Mariano Apan, bukod sa iba pa.",
+        "Sa kumbento ng Simbahan ng Cabanatuan, taksil na pinatay si Heneral Antonio Luna ni Kapitan Pedro Janolino, na dating inalis ni Luna sa armas sa Polo, Bulacan dahil sa insubordination. Patay din ang kanyang aide na si Koronel Francisco \"Paco\" Roman noong Hunyo 5, 1899 — bahagi na ito ng kasaysayan ng Pilipinas. Sinabi raw na inilibing ang mga labi ng mga bayaning ito sa kasalukuyang lugar ng Cabanatuan City Supermarket, na noon ay sementeryo.",
+        "Sa pagdating ng American Rule, ipinagpatuloy ang Cabanatuan bilang political subdivision at nagsimulang gumana ang munisipal na pamahalaan noong 1901. Simula noon, malaki ang pinag-unlad ng Cabanatuan sa sosyal, ekonomiya, kultural, at pulitikal na larangan.",
+        "Ang pagpapalawig ng linya ng Manila Railroad sa Cabanatuan noong 1904 ay ginawang sentro ng kalakalan at industriya ang bayan at muling ginawang kabisera ng lalawigan ang munisipalidad noong 1912. Mabilis ang paglago ng negosyo, ngunit naantala ang tuloy-tuloy na pag-unlad nang sumiklab ang Pacific War noong Disyembre 8, 1941.",
+        "Inokupa ng Japanese Military Forces ang Cabanatuan noong Disyembre 29, 1941, at halos isang buwan, sinunog ang mga bahay at gusali. Napakalawak ng pinsalang dulot ng occupying army at hindi mabilang ang paghihirap ng mga tao.",
+        "Dalawang lugar sa Lungsod ang itinuturing na sagradong lugar bilang malungkot na paalala ng kalupitan ng kaaway: ang dating lokasyon ng Nueva Ecija Chinese School sa General Luna Street, kung saan ikinulong, tinorture, pinutol ang mga bahagi ng katawan, at pinatay ng Japanese Kempeitai ang mga miyembro ng underground at mga pinaghihinalaang anti-Japanese; at ang Camp Pangatian, na bago ang digmaan ay kampo ng pagsasanay militar para sa mga 20-taong gulang. Ginawa itong Prisoner of War (POW) camp para sa mga nakaligtas sa Death March mula Bataan at Corregidor noong Abril–Mayo 1942.",
+        "Sa gabi ng Enero 30, 1945, iniligtas ng mga elemento ng 6th Ranger Battalion, Filipino guerrillas, at US Army ang 513 bilanggo mula sa kampo, kabilang ang 486 Amerikano, 23 British mula Singapore, 3 Netherlander, at 1 Norwegian. Sila ang natitirang bahagi ng orihinal na hukbo na may humigit-kumulang 10,000 tao noong 1942. Ang iba ay namatay sa malnutrisyon, sakit, at torture habang ang iba ay inilipat sa ibang concentration camp.",
+        "Di-nagtagal pagkatapos ng pagpapalaya, muling itinatag ang munisipal na pamahalaan sa tulong ng 485th Counter-Intelligence Corp. (CIC) Detachment at Philippines Civil Affairs Unit (PCAU) No. 3.",
+        "Inokupa ng mga Amerikano ang bayan noong Pebrero 1, 1945. Dalawang uri ng pamahalaan ang itinatag: ang HUKS na nag-organisa ng sariling headquarters at staff, at ang mga Amerikano sa ilalim ni Kapitan John L. Evans na muling nagtatag ng civil government na may sina Ricardo T. Jimenez at Ricardo G. Carlos bilang mayor at vice mayor.",
+        "Sa pamamagitan ng Republic Act No. 526 na isinponsor ni Kongresista Jesus Ilagan, ginawang chartered city ang Cabanatuan noong Hunyo 16, 1950. Opisyal itong nagsimulang gumana bilang lungsod noong Hulyo 14, 1950 ngunit ang opisyal na inauguration ay ginanap noong Pebrero 3, 1951.",
+        "Ang Cabanatuan ngayon ay isang metropolis na may mahigit dalawandaang libong naninirahan. Malaki ang pangako ng lungsod, hindi lamang sa likas na yaman kundi pati sa agri-based industries na tumutulong sa mahalagang papel nito sa agrikultural na produksyon. Pinabilis pa ng pagdating ng mga financial lending institution at bagong negosyo ang komersyo at kalakalan sa lungsod.",
+        "Tatlong (3) unibersidad, labing-isang (11) kolehiyo, at labing-apat (14) iba't ibang vocational school kasama ang mga pampublikong secondary school ang nagbibigay ng malawak na pagkakataon sa edukasyon para sa mga residente at estudyante mula sa kalapit na munisipalidad at lalawigan.",
+        "Tulad ng proverbial na \"phoenix,\" bumangon ang Lungsod ng Cabanatuan mula sa abo ng kilalang raid at sunog ng City Hall Building noong Hunyo 4, 1980 (ibinenta ang lugar sa Central Bank of the Philippines — kamakailan ay itinayo roon ang Regional Office ng Central Bank), na nagdulot ng malaking pinsala sa pampubliko at pribadong ari-arian."
+      ],
+      "fastFacts": {
+        "dateCreated": "Petsa ng Pagkakatatag",
+        "enablingLaw": "Batas na Nagtatag"
+      }
+    },
+    "leadership": {
+      "title": "Pamumuno ng Lungsod",
+      "description": "Mga halal na opisyal na naglilingkod sa {{city}} para sa kasalukuyang termino.",
+      "cityMayor": "Punong Lungsod",
+      "viceMayor": "Bise Punong Lungsod",
+      "viewAll": "Tingnan ang lahat ng {{count}} pampublikong opisyal"
+    },
+    "services": {
+      "title": "Mga Serbisyo at Impormasyon",
+      "description": "Mag-browse ng mga kategorya ng serbisyo mula sa aming local government catalog."
+    },
+    "government": {
+      "title": "Aktibidad ng Pamahalaan",
+      "description": "Tuklasin ang mga departamento, barangay, transparency document, at iba pa."
+    },
+    "values": {
+      "title": "Ang Aming Pinaninindigan",
+      "openInformation": {
+        "title": "Bukas na Impormasyon",
+        "description": "Pampublikong data at serbisyo, inayos nang malinaw."
+      },
+      "communityDriven": {
+        "title": "Pinapatakbo ng Komunidad",
+        "description": "Ginawa ng volunteers, pinapanatili para sa mga residente."
+      },
+      "civicEngagement": {
+        "title": "Pakikilahok sa Sibil",
+        "description": "Hinihikayat ang partisipasyon at transparency."
+      },
+      "alwaysImproving": {
+        "title": "Patuloy na Pagpapabuti",
+        "description": "Patuloy na ina-update at open source."
+      }
+    },
+    "disclaimer": {
+      "title": "Paalala: Independiyenteng Proyekto",
+      "body1": "Ang portal na ito ay community-run na proyekto at hindi opisyal na website ng pamahalaan. Ang impormasyon ay kinuha mula sa pampublikong source at opisyal na channel sa abot ng aming kaalaman.",
+      "body2": "Para sa opisyal na transaksyon, verification, at pinakabagong requirements, makipag-ugnayan direkta sa pamahalaang lungsod sa <1>{{email}}</1> o bisitahin ang <2>opisyal na website ng {{city}}</2>."
+    },
+    "contribute": {
+      "title": "Tulungan Kaming Mag-improve",
+      "body": "May outdated na impormasyon? May suggestion? Open source ang proyektong ito at tinatanggap ang kontribusyon mula sa komunidad.",
+      "github": "Mag-contribute sa GitHub",
+      "contact": "Makipag-ugnayan sa Amin"
+    }
+  }
+}

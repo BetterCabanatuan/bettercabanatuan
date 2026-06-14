@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import AboutHero from '../components/about/AboutHero';
 import AboutMissionSection from '../components/about/AboutMissionSection';
@@ -12,11 +13,17 @@ import { cityStats, services, siteConfig } from '../lib/siteConfig';
 import Map from '../components/home/Map';
 
 export default function AboutPage() {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <SEO
-        title="About"
-        description={`About the ${siteConfig.governmentName} community portal — ${cityStats.totalBarangays} barangays, ${services.length} service areas, and local government information.`}
+        title={t('about.seoTitle')}
+        description={t('about.seoDescription', {
+          city: siteConfig.governmentName,
+          barangays: cityStats.totalBarangays,
+          services: services.length,
+        })}
         keywords="about, community portal, local government, Cabanatuan City, Nueva Ecija, civic tech"
       />
       <main className="grow">

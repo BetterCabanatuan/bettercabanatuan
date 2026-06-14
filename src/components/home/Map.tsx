@@ -8,6 +8,7 @@ import { MapPin } from 'lucide-react';
 import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import { cityHallLocation, siteConfig } from '../../lib/siteConfig';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const cityHallMarkerIcon = L.icon({
@@ -21,15 +22,16 @@ const cityHallMarkerIcon = L.icon({
 });
 
 export default function Map() {
+  const { t } = useTranslation('common');
   const position: [number, number] = [
     cityHallLocation.latitude,
     cityHallLocation.longitude,
   ];
 
   return (
-    <Section className="bg-gray-50">
+    <Section className="">
       <div className="text-center mb-8">
-        <Heading level={2}>Visit City Hall</Heading>
+        <Heading level={2}>{t('map.title')}</Heading>
         <p className="text-gray-600 mt-2 flex items-center justify-center gap-2 max-w-2xl mx-auto">
           <MapPin className="w-4 h-4 shrink-0" />
           <Link
