@@ -1,9 +1,16 @@
 {
   "site_name": "Cabanatuan City Portal",
-  "site_description": "A community-run portal for the Cabanatuan City",
+  "site_description": "Your one-stop portal for all things Cabanatuan City Government. Access services, news, and information in one place.",
   "hero": {
     "title": "Welcome to BetterGov.ph",
-    "subtitle": "A community-run portal to find information of the Cabanatuan City Government",
+    "eyebrow": "Better Cabanatuan",
+    "badge": "Community-run civic portal",
+    "headlineAccent": "Government, made clear.",
+    "subtitle": "Find services, barangays, and elected officials in one place — organized for residents, businesses, and visitors.",
+    "exploreServices": "Browse All Services",
+    "learnMore": "About This Portal",
+    "startHere": "Start here",
+    "popularTopics": "Popular right now",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
     "businessRegistration": "Business Registration"
@@ -34,6 +41,7 @@
   "navbar": {
     "government": "Government",
     "services": "Services",
+    "statistics": "Statistics",
     "hotlines": "Hotlines",
     "holidays": "Holidays"
   },
