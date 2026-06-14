@@ -2,6 +2,8 @@
 # Generated from PSGC data with population figures (2015, 2020, 2024)
 # Total barangays: 89
 
+description: 'Explore all barangays of Cabanatuan City, including their classifications, descriptions, and local information. The city is divided into urban and rural barangays, each with its own character and community.'
+
 barangays:
   - name: 'Aduas Centro'
     slug: 'aduas-centro'

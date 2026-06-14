@@ -32,7 +32,10 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             { label: 'Home', href: '/' },
             { label: 'Government', href: '/government' },
             { label: 'Projects', href: '/government/projects' },
-            { label: project.name, href: `/government/projects/${project.slug}` },
+            {
+              label: project.name,
+              href: `/government/projects/${project.slug}`,
+            },
           ]}
         />
 
@@ -58,7 +61,9 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                   </span>
                 </div>
                 <Heading className="mb-2">{project.name}</Heading>
-                <Text className="text-gray-600 mb-0">{project.description}</Text>
+                <Text className="text-gray-600 mb-0">
+                  {project.description}
+                </Text>
               </div>
             </div>
           </div>

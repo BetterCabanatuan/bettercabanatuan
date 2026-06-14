@@ -24,11 +24,13 @@ interface Category {
 interface GovernmentActivitySectionProps {
   title?: string;
   description?: string;
+  showHeader?: boolean;
 }
 
 export default function GovernmentActivitySection({
   title,
   description,
+  showHeader = true,
 }: GovernmentActivitySectionProps = {}) {
   const { t } = useTranslation();
 
@@ -39,12 +41,16 @@ export default function GovernmentActivitySection({
 
   const displayedCategories = governmentCategories.categories as Category[];
 
-  return (
-    <Section id="#government">
-      <Heading level={2}>{title || t('governmentActivity.title')}</Heading>
-      <Text className="text-gray-600 mb-6">
-        {description || t('governmentActivity.description')}
-      </Text>
+  const content = (
+    <>
+      {showHeader && (
+        <>
+          <Heading level={2}>{title || t('governmentActivity.title')}</Heading>
+          <Text className="text-gray-600 mb-6">
+            {description || t('governmentActivity.description')}
+          </Text>
+        </>
+      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {displayedCategories.map(category => {
@@ -60,32 +66,38 @@ export default function GovernmentActivitySection({
                     : `/government/${category.slug}`;
 
           return (
-          <Card
-            key={category.slug}
-            hoverable
-            className="border-t-4 border-primary-500"
-          >
-            <Link
-              to={href}
-              className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+            <Card
+              key={category.slug}
+              hoverable
+              className="border-t-4 border-primary-500"
             >
-              <CardContent className="flex flex-col h-full p-6">
-                <div className="flex gap-2">
-                  <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
-                    {getIcon(category.icon)}
-                  </div>
+              <Link
+                to={href}
+                className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+              >
+                <CardContent className="flex flex-col h-full p-6">
+                  <div className="flex gap-2">
+                    <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                      {getIcon(category.icon)}
+                    </div>
 
-                  <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
-                    {category.category}
-                  </h3>
-                </div>
-                <Text className="text-gray-800">{category.description}</Text>
-              </CardContent>
-            </Link>
-          </Card>
+                    <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                      {category.category}
+                    </h3>
+                  </div>
+                  <Text className="text-gray-800">{category.description}</Text>
+                </CardContent>
+              </Link>
+            </Card>
           );
         })}
       </div>
-    </Section>
+    </>
   );
+
+  if (showHeader) {
+    return <Section id="#government">{content}</Section>;
+  }
+
+  return content;
 }
