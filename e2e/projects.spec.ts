@@ -8,9 +8,7 @@ test.describe('Projects', () => {
     await expect(
       page.getByRole('heading', { level: 1, name: 'Government Projects' })
     ).toBeVisible();
-    await expect(
-      page.getByText('Central Transport Terminal Modernization')
-    ).toBeVisible();
+    await expect(page.getByText('Sangitan Public Market')).toBeVisible();
   });
 
   test('opens project detail page', async ({ page }) => {
@@ -18,11 +16,11 @@ test.describe('Projects', () => {
     await page.waitForLoadState('networkidle');
 
     await page
-      .locator('a[href="/government/projects/central-transport-terminal"]')
+      .locator('a[href="/government/projects/sangitan-public-market"]')
       .click();
 
     await expect(page).toHaveURL(
-      /\/government\/projects\/central-transport-terminal$/
+      /\/government\/projects\/sangitan-public-market$/
     );
     await expect(page.getByText('Project Details')).toBeVisible();
     await expect(page.getByText('Ongoing')).toBeVisible();

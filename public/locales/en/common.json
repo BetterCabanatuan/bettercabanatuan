@@ -1,6 +1,21 @@
 {
   "site_name": "Cabanatuan City Portal",
   "site_description": "Your one-stop portal for all things Cabanatuan City Government. Access services, news, and information in one place.",
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "search": "Search",
+    "location": "Location",
+    "cityMayor": "City Mayor",
+    "viceMayor": "Vice Mayor",
+    "term": "Term {{term}}",
+    "communityPortal": "Community Portal",
+    "fastFacts": "Fast Facts",
+    "dateCreated": "Date Created",
+    "enablingLaw": "Enabling Law",
+    "cityHall": "City Hall: {{address}}"
+  },
   "hero": {
     "title": "Welcome to BetterGov.ph",
     "eyebrow": "Better Cabanatuan",
@@ -13,7 +28,30 @@
     "popularTopics": "Popular right now",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Business Registration"
+    "businessRegistration": "Business Registration",
+    "intent": {
+      "findService": {
+        "title": "Find a Service",
+        "description": "Permits, health, education, and more"
+      },
+      "exploreBarangays": {
+        "title": "Explore Barangays",
+        "description": "{{count}} communities · {{urban}} urban"
+      },
+      "meetOfficials": {
+        "title": "Meet Officials",
+        "description": "Mayor, vice mayor, and city council"
+      },
+      "getInTouch": {
+        "title": "Get in Touch",
+        "description": "City hall, email, and portal support"
+      }
+    },
+    "topics": {
+      "healthServices": "Health Services",
+      "education": "Education",
+      "businessPermits": "Business Permits"
+    }
   },
   "services": {
     "title": "Services & Information",
@@ -43,7 +81,15 @@
     "services": "Services",
     "statistics": "Statistics",
     "hotlines": "Hotlines",
-    "holidays": "Holidays"
+    "holidays": "Holidays",
+    "about": "About",
+    "contact": "Contact",
+    "search": "Search",
+    "joinUs": "Join Us",
+    "aboutBetterGov": "About BetterGov",
+    "officialGov": "Official Gov.ph",
+    "openMainMenu": "Open main menu",
+    "sitemap": "Sitemap"
   },
   "joinUs": {
     "stripTitle": "🚀 Join the #CivicTech Revolution",
@@ -57,5 +103,172 @@
     "or": "or",
     "joinDiscord": "Join Discord",
     "features": "🚀 Infrastructure • 💡 Mentorship • 🤝 Community • 🏢 Office Space"
+  },
+  "cityStats": {
+    "badge": "Cabanatuan City at a Glance",
+    "title": "Key Facts About Our City",
+    "subtitle": "Quick statistics and essential information about {{city}}",
+    "city": "City",
+    "cityDescription": "Province of Nueva Ecija",
+    "totalPopulation": "Total Population",
+    "populationDescription": "As of 2020 Census",
+    "barangays": "Barangays",
+    "barangaysDescription": "Urban & Rural",
+    "landArea": "Land Area",
+    "landAreaDescription": "Total Land Area"
+  },
+  "map": {
+    "title": "Visit City Hall"
+  },
+  "hotlines": {
+    "banner": {
+      "ariaLabel": "Emergency hotlines",
+      "label": "Emergency Hotlines",
+      "labelShort": "Hotlines"
+    },
+    "section": {
+      "eyebrow": "24/7 Response",
+      "title": "Emergency Hotlines",
+      "description": "For crimes, fires, rescue operations, and urgent community matters. Tap a number to call directly from your phone.",
+      "nationalLink": "National hotlines",
+      "multipleNumbers": "{{count}} contact numbers",
+      "directLine": "Direct line",
+      "disclaimer": "For non-emergency city services and permits, contact the <1>city government offices</1> during regular business hours. In life-threatening situations, call the nearest hotline above immediately.",
+      "cityOfficesLink": "city government offices"
+    }
+  },
+  "departmentContacts": {
+    "eyebrow": "Office Directory",
+    "title": "Department Contact Numbers",
+    "description": "Direct mobile lines for city offices — for permits, records, social services, and other non-emergency inquiries during business hours.",
+    "searchPlaceholder": "Search offices or numbers…",
+    "officeColumn": "Office",
+    "numberColumn": "Contact Number",
+    "viewDepartment": "View department page",
+    "noResults": "No offices match your search.",
+    "showing": "Showing {{count}} of {{total}} offices"
+  },
+  "contact": {
+    "seoTitle": "Contact",
+    "seoDescription": "Contact {{city}} — phone, email, city hall address, and community portal support.",
+    "eyebrow": "Get in Touch",
+    "title": "Contact Us",
+    "subtitle": "Reach the {{city}} government or the volunteer team behind this community portal. We're here to help you find the right office and information.",
+    "channels": {
+      "cityGovernment": {
+        "title": "City Government",
+        "description": "For official transactions, permits, and city services.",
+        "linkLabel": "Official city website"
+      },
+      "mayorsOffice": {
+        "title": "City Mayor's Office"
+      },
+      "communityPortal": {
+        "title": "Community Portal",
+        "description": "Report outdated information, suggest improvements, or volunteer with Better Cabanatuan.",
+        "linkLabel": "Contribute on GitHub"
+      }
+    },
+    "cityHallLocation": {
+      "title": "City Hall Location",
+      "cityHall": "{{city}} City Hall",
+      "openMaps": "Open in Google Maps"
+    },
+    "officeHours": {
+      "title": "Office Hours & Response",
+      "cityOffices": "City Government Offices",
+      "cityHours": "Monday to Friday, 8:00 AM – 5:00 PM (Philippine Standard Time). Closed on national and local holidays.",
+      "portalInquiries": "Portal Inquiries",
+      "portalResponse": "Community volunteers respond to portal-related messages within 2–3 business days. For urgent official matters, contact the city government directly."
+    },
+    "connectOnline": "Connect Online",
+    "social": {
+      "facebook": "Facebook",
+      "officialWebsite": "Official Website"
+    },
+    "findOffice": {
+      "title": "Find the Right Office",
+      "description": "Browse government sections to find the department or information you need."
+    },
+    "disclaimer": "This contact page is part of the Better Cabanatuan community portal, not an official government system. For verified transactions and official records, always use the <1>official {{city}} website</1> or visit City Hall in person."
+  },
+  "about": {
+    "seoTitle": "About",
+    "seoDescription": "About the {{city}} community portal — {{barangays}} barangays, {{services}} service areas, and local government information.",
+    "hero": {
+      "eyebrow": "Community Portal",
+      "title": "About {{city}}",
+      "subtitle": "An independent, volunteer-led portal helping residents navigate {{serviceCount}} service areas, {{govCount}} government sections, and {{barangayCount}} barangays across {{province}}."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "body1": "This portal is an independent, volunteer-led project built to help residents of {{city}} find accurate information about government services, departments, and public programs — quickly and in plain language.",
+      "body2": "We believe that better access to information leads to more engaged citizens, stronger communities, and more accountable governance.",
+      "location": "Location",
+      "locationMeta": "{{type}} · {{area}} km² land area",
+      "stats": {
+        "population": "Population",
+        "populationNote": "2020 Census",
+        "barangays": "Barangays",
+        "barangaysNote": "{{urban}} urban · {{rural}} rural",
+        "serviceAreas": "Service Areas",
+        "serviceAreasNote": "From services catalog",
+        "electedOfficials": "Elected Officials",
+        "electedOfficialsNote": "{{count}} councilors"
+      }
+    },
+    "history": {
+      "title": "History of Cabanatuan City",
+      "description": "From its founding as a pueblo in 1777 to its charter as a city in 1950 — the story of Cabanatuan City in Nueva Ecija.",
+      "fastFacts": {
+        "dateCreated": "Date Created",
+        "enablingLaw": "Enabling Law"
+      }
+    },
+    "leadership": {
+      "title": "City Leadership",
+      "description": "Elected officials serving {{city}} for the current term.",
+      "cityMayor": "City Mayor",
+      "viceMayor": "Vice Mayor",
+      "viewAll": "View all {{count}} public officials"
+    },
+    "services": {
+      "title": "Services & Information",
+      "description": "Browse service categories curated from our local government catalog."
+    },
+    "government": {
+      "title": "Government Activity",
+      "description": "Explore departments, barangays, transparency documents, and more."
+    },
+    "values": {
+      "title": "What We Stand For",
+      "openInformation": {
+        "title": "Open Information",
+        "description": "Public data and services, organized clearly."
+      },
+      "communityDriven": {
+        "title": "Community Driven",
+        "description": "Built by volunteers, maintained for residents."
+      },
+      "civicEngagement": {
+        "title": "Civic Engagement",
+        "description": "Encouraging participation and transparency."
+      },
+      "alwaysImproving": {
+        "title": "Always Improving",
+        "description": "Continuously updated and open source."
+      }
+    },
+    "disclaimer": {
+      "title": "Independent Project Disclaimer",
+      "body1": "This portal is a community-run project and is not an official government website. Information is gathered from public sources and official channels to the best of our knowledge.",
+      "body2": "For official transactions, verification, and the most current requirements, please contact the city government directly at <1>{{email}}</1> or visit the <2>official {{city}} website</2>."
+    },
+    "contribute": {
+      "title": "Help Us Improve",
+      "body": "Found outdated information? Have a suggestion? This project is open source and welcomes contributions from the community.",
+      "github": "Contribute on GitHub",
+      "contact": "Contact Us"
+    }
   }
 }

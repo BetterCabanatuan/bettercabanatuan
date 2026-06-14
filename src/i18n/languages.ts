@@ -21,4 +21,10 @@ export const LANGUAGES: Record<LanguageType, LanguageInfo> = {
   mdh: { code: 'mdh', name: 'Maranao', nativeName: 'Meranaw' },
 };
 
+/** Languages with complete UI translations available */
+export const SUPPORTED_LANGUAGES: LanguageInfo[] = [
+  LANGUAGES.en,
+  LANGUAGES.fil,
+];
+
 export const DEFAULT_LANGUAGE: LanguageType = 'en';

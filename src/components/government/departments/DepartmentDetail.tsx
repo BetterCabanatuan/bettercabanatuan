@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, MapPin, Phone, ArrowLeft } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone, ArrowLeft } from 'lucide-react';
 import { Heading } from '../../ui/Heading';
 import { getIconComponent } from '../../../lib/iconMap';
 import { Text } from '../../ui/Text';
@@ -10,6 +10,11 @@ import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import type { Department } from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
+import {
+  departmentContactsData,
+  getContactsForDepartment,
+} from '../../../data/departmentContacts';
+import { formatPhoneForTel } from '../../../data/hotlines';
 
 interface DepartmentDetailProps {
   department: Department;
@@ -19,6 +24,7 @@ export default function DepartmentDetail({
   department,
 }: DepartmentDetailProps) {
   const Icon = getIconComponent(department.icon);
+  const officialContacts = getContactsForDepartment(department.slug);
 
   return (
     <>
@@ -102,16 +108,56 @@ export default function DepartmentDetail({
                 </p>
                 <p className="text-sm text-gray-900">{department.head}</p>
               </div>
-              <a
-                href={`tel:${department.phone.replace(/\D/g, '')}`}
-                className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
-              >
-                <Phone
-                  className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
-                  aria-hidden="true"
-                />
-                <span>{department.phone}</span>
-              </a>
+
+              {officialContacts.length > 0 ? (
+                <div className="space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                    Direct Lines
+                  </p>
+                  <ul className="space-y-2">
+                    {officialContacts.map(contact => (
+                      <li key={`${contact.name}-${contact.phone}`}>
+                        <p className="text-xs text-gray-500 mb-1">
+                          {contact.name}
+                        </p>
+                        <a
+                          href={`tel:${formatPhoneForTel(contact.phone)}`}
+                          className="flex items-center gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
+                        >
+                          <Phone
+                            className="h-4 w-4 text-primary-600 shrink-0"
+                            aria-hidden="true"
+                          />
+                          <span className="text-sm font-medium">
+                            {contact.phone}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex items-start gap-2 rounded-lg bg-primary-50/60 border border-primary-100 p-3">
+                    <Clock
+                      className="h-4 w-4 text-primary-600 shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    />
+                    <p className="text-xs text-gray-600 leading-relaxed">
+                      {departmentContactsData.officeHours}
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <a
+                  href={`tel:${formatPhoneForTel(department.phone)}`}
+                  className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
+                >
+                  <Phone
+                    className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  />
+                  <span>{department.phone}</span>
+                </a>
+              )}
+
               <a
                 href={`mailto:${department.email}`}
                 className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200 break-all"
@@ -129,6 +175,14 @@ export default function DepartmentDetail({
                 />
                 <span className="text-sm">{department.office}</span>
               </div>
+              {officialContacts.length > 0 && (
+                <Link
+                  to="/contact#department-contacts"
+                  className="inline-flex items-center min-h-[44px] text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md"
+                >
+                  View all department contacts
+                </Link>
+              )}
             </CardContent>
           </Card>
         </div>

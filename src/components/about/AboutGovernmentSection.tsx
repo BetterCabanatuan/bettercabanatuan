@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
@@ -15,13 +16,15 @@ function getGovernmentHref(slug: string) {
 }
 
 export default function AboutGovernmentSection() {
+  const { t } = useTranslation('common');
+
   return (
     <Section>
       <Heading level={2} className="mb-2">
-        Government Activity
+        {t('about.government.title')}
       </Heading>
       <Text className="text-gray-600 mb-8">
-        Explore departments, barangays, transparency documents, and more.
+        {t('about.government.description')}
       </Text>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {governmentSections.map(section => (
