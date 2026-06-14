@@ -25,6 +25,7 @@ import {
 } from '../lib/siteConfig';
 import type { Category } from '../data/yamlLoader';
 import EmergencyHotlinesSection from '../components/contact/EmergencyHotlinesSection';
+import { formatPhoneForTel } from '../data/hotlines';
 
 const contactChannels = [
   {
@@ -92,16 +93,13 @@ export default function ContactPage() {
             <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
               Get in Touch
             </p>
-            <Heading
-              id="contact-heading"
-              className="text-white mb-3 max-w-3xl"
-            >
+            <Heading id="contact-heading" className="text-white mb-3 max-w-3xl">
               Contact Us
             </Heading>
             <Text className="text-white/85 max-w-2xl text-base md:text-lg mb-0">
               Reach the {siteConfig.governmentName} government or the volunteer
-              team behind this community portal. We&apos;re here to help you find
-              the right office and information.
+              team behind this community portal. We&apos;re here to help you
+              find the right office and information.
             </Text>
           </div>
         </section>
@@ -137,7 +135,7 @@ export default function ContactPage() {
                   <div className="space-y-3 mt-auto">
                     {channel.phone && (
                       <a
-                        href={`tel:${channel.phone.replace(/\s/g, '')}`}
+                        href={`tel:${formatPhoneForTel(channel.phone)}`}
                         className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
                       >
                         <Phone
