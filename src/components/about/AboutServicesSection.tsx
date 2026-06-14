@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
@@ -8,14 +9,15 @@ import { services } from '../../lib/siteConfig';
 import { getLucideIcon } from './utils';
 
 export default function AboutServicesSection() {
+  const { t } = useTranslation('common');
+
   return (
     <Section>
       <Heading level={2} className="mb-2">
-        Services & Information
+        {t('about.services.title')}
       </Heading>
       <Text className="text-gray-600 mb-8">
-        {serviceCategories.description ||
-          'Browse service categories curated from our local government catalog.'}
+        {serviceCategories.description || t('about.services.description')}
       </Text>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map(category => (

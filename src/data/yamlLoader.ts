@@ -34,6 +34,7 @@ import governmentActivitiesYamlContent from './government.yaml?raw';
 import barangaysYamlContent from './barangays.yaml?raw';
 import departmentsYamlContent from './departments.yaml?raw';
 import projectsYamlContent from './projects.yaml?raw';
+import aboutYamlContent from './about.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -90,6 +91,24 @@ export const departmentsData: DepartmentsData = (() => {
 export const projectsData: ProjectsData = yaml.load(
   projectsYamlContent
 ) as ProjectsData;
+
+export interface AboutFastFact {
+  label: string;
+  value: string;
+}
+
+export interface AboutHistory {
+  title: string;
+  description?: string;
+  paragraphs: string[];
+  fastFacts?: AboutFastFact[];
+}
+
+export interface AboutData {
+  history: AboutHistory;
+}
+
+export const aboutData: AboutData = yaml.load(aboutYamlContent) as AboutData;
 
 export const allDepartments: Department[] = departmentsData.departments || [];
 export const allProjects: Project[] = projectsData.projects || [];

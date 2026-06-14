@@ -27,7 +27,8 @@ export default function SEO({
     import.meta.env.VITE_SITE_KEYWORDS ||
     'government, local government, services, public services, civic services';
 
-  const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
+  // const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
+  const fullTitle = title ? `${title} | BetterCabanatuan.org` : defaultTitle;
   const fullDescription = description || defaultDescription;
   const fullKeywords = keywords || defaultKeywords;
   const fullUrl = url || import.meta.env.VITE_WEBSITE_URL || '';

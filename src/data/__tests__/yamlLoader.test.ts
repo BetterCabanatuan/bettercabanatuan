@@ -7,6 +7,7 @@ import {
   getCategoryPagesSync,
   getDepartmentBySlug,
   getProjectBySlug,
+  aboutData,
   governmentCategories,
   isNestedCategory,
   serviceCategories,
@@ -27,6 +28,12 @@ describe('yamlLoader data', () => {
     expect(allProjects.length).toBeGreaterThan(0);
   });
 
+  it('loads city history from about.yaml', () => {
+    expect(aboutData.history.title).toBe('History of Cabanatuan City');
+    expect(aboutData.history.paragraphs.length).toBeGreaterThan(0);
+    expect(aboutData.history.fastFacts).toHaveLength(2);
+  });
+
   it('loads barangays with population data', () => {
     expect(allBarangays.length).toBeGreaterThan(0);
     expect(allBarangays[0].population['2024']).toBeTypeOf('number');
@@ -41,9 +48,7 @@ describe('yamlLoader lookups', () => {
   });
 
   it('finds projects by slug', () => {
-    expect(getProjectBySlug('central-transport-terminal')?.status).toBe(
-      'ongoing'
-    );
+    expect(getProjectBySlug('sangitan-public-market')?.status).toBe('ongoing');
     expect(getProjectBySlug('unknown')).toBeUndefined();
   });
 

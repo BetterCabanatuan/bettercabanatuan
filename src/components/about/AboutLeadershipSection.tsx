@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Crown, ExternalLink, Landmark } from 'lucide-react';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Heading } from '../ui/Heading';
@@ -7,6 +8,8 @@ import Section from '../ui/Section';
 import { leadership, siteConfig } from '../../lib/siteConfig';
 
 export default function AboutLeadershipSection() {
+  const { t } = useTranslation('common');
+
   if (!leadership.mayor && !leadership.viceMayor) {
     return null;
   }
@@ -14,30 +17,26 @@ export default function AboutLeadershipSection() {
   return (
     <Section>
       <Heading level={2} className="mb-2">
-        City Leadership
+        {t('about.leadership.title')}
       </Heading>
       <Text className="text-gray-600 mb-8">
-        Elected officials serving {siteConfig.governmentName} for the current
-        term.
+        {t('about.leadership.description', { city: siteConfig.governmentName })}
       </Text>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {leadership.mayor && (
           <Card className="border-t-4 border-yellow-500">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Crown
-                  className="h-6 w-6 text-yellow-600"
-                  aria-hidden="true"
-                />
+                <Crown className="h-6 w-6 text-yellow-600" aria-hidden="true" />
                 <span className="text-sm font-medium text-yellow-800 bg-yellow-100 px-2 py-0.5 rounded-full">
-                  City Mayor
+                  {t('about.leadership.cityMayor')}
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">
                 {leadership.mayor.name}
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Term {leadership.mayor.term}
+                {t('common.term', { term: leadership.mayor.term })}
               </p>
               <p className="text-sm text-gray-700">
                 {leadership.mayor.description}
@@ -54,14 +53,14 @@ export default function AboutLeadershipSection() {
                   aria-hidden="true"
                 />
                 <span className="text-sm font-medium text-primary-800 bg-primary-100 px-2 py-0.5 rounded-full">
-                  Vice Mayor
+                  {t('about.leadership.viceMayor')}
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">
                 {leadership.viceMayor.name}
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Term {leadership.viceMayor.term}
+                {t('common.term', { term: leadership.viceMayor.term })}
               </p>
               <p className="text-sm text-gray-700">
                 {leadership.viceMayor.description}
@@ -75,7 +74,7 @@ export default function AboutLeadershipSection() {
           to="/government/officials"
           className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md"
         >
-          View all {leadership.totalOfficials} public officials
+          {t('about.leadership.viewAll', { count: leadership.totalOfficials })}
           <ExternalLink className="h-4 w-4" aria-hidden="true" />
         </Link>
       </div>
