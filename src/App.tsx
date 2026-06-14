@@ -5,8 +5,8 @@ import Footer from './components/layout/Footer';
 import ScrollToTop from './components/ui/ScrollToTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import HomePage from './pages/home';
-import AboutPage from './pages/about';
+import HomePage from './pages/Home';
+import AboutPage from './pages/About';
 import ContactPage from './pages/contact';
 import StatisticsPage from './pages/statistics';
 
