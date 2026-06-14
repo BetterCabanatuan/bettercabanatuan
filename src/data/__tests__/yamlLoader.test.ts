@@ -7,6 +7,7 @@ import {
   getCategoryPagesSync,
   getDepartmentBySlug,
   getProjectBySlug,
+  aboutData,
   governmentCategories,
   isNestedCategory,
   serviceCategories,
@@ -25,6 +26,12 @@ describe('yamlLoader data', () => {
 
   it('loads projects from projects.yaml', () => {
     expect(allProjects.length).toBeGreaterThan(0);
+  });
+
+  it('loads city history from about.yaml', () => {
+    expect(aboutData.history.title).toBe('History of Cabanatuan City');
+    expect(aboutData.history.paragraphs.length).toBeGreaterThan(0);
+    expect(aboutData.history.fastFacts).toHaveLength(2);
   });
 
   it('loads barangays with population data', () => {
