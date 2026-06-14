@@ -21,13 +21,17 @@ interface Category {
   icon: string;
 }
 
+interface ServicesSectionProps {
+  title?: string;
+  description?: string;
+  showHeader?: boolean;
+}
+
 export default function ServicesSection({
   title,
   description,
-}: {
-  title?: string;
-  description?: string;
-}) {
+  showHeader = true,
+}: ServicesSectionProps = {}) {
   const { t } = useTranslation();
 
   const getIcon = (iconName: string) => {
@@ -37,12 +41,16 @@ export default function ServicesSection({
 
   const displayedCategories = serviceCategories.categories as Category[];
 
-  return (
-    <Section>
-      <Heading level={2}>{title || t('services.title')}</Heading>
-      <Text className="text-gray-600 mb-6">
-        {description || t('services.description')}
-      </Text>
+  const content = (
+    <>
+      {showHeader && (
+        <>
+          <Heading level={2}>{title || t('services.title')}</Heading>
+          <Text className="text-gray-600 mb-6">
+            {description || t('services.description')}
+          </Text>
+        </>
+      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {displayedCategories.map(category => (
@@ -71,6 +79,12 @@ export default function ServicesSection({
           </Card>
         ))}
       </div>
-    </Section>
+    </>
   );
+
+  if (showHeader) {
+    return <Section>{content}</Section>;
+  }
+
+  return content;
 }

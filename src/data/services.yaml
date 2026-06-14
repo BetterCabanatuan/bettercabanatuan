@@ -3,6 +3,9 @@
 # Each category's index.yaml file is automatically located at content/services/{slug}/index.yaml
 # Non-technical users can easily edit this file to add, remove, or modify service categories
 
+title: 'Government Services'
+description: 'Browse all local government services for Cabanatuan City — health, education, business, social welfare, and more.'
+
 categories:
   # Health Services
   - category: 'Health Services'

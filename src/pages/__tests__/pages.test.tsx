@@ -57,7 +57,7 @@ const pages: Array<{
     name: 'Services index',
     route: '/services',
     Component: ServicesIndexPage,
-    heading: 'All local government services',
+    heading: /Government Services/i,
   },
   {
     name: 'Service category',
