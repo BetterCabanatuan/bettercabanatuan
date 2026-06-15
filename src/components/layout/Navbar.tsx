@@ -68,6 +68,13 @@ const Navbar: React.FC = () => {
             >
               {t('navbar.hotlines')}
             </a>
+            <a
+              href="https://www.cabanatuancity.gov.ph"
+              className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
+              target="_blank"
+            >
+              {t('navbar.transparency')}
+            </a>
             <div className="hidden md:block">
               <select
                 value={i18n.language}

@@ -76,6 +76,10 @@ export const footerNavigation = {
         },
       ],
     },
+    {
+      title: 'Transparency',
+      links: [{ label: 'Transparency', href: '/transparency' }],
+    },
   ],
   socialLinks: [
     { label: 'Facebook', href: 'https://facebook.com/bettercabanatuan' },
