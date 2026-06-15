@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { screen } from '@testing-library/react';
 import { renderWithProviders } from '../../test/test-utils';
 
-import HomePage from '../Home';
-import AboutPage from '../About';
+import HomePage from '../home';
+import AboutPage from '../about';
 import ContactPage from '../contact';
 import StatisticsPage from '../statistics';
 import ServicesIndexPage from '../services/index';

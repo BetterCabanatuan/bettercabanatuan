@@ -44,6 +44,7 @@
     "leaflet": "^1.9.4",
     "lucide-react": "^0.575.0",
     "nuqs": "^2.6.0",
+    "openmeteo": "^1.2.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-helmet-async": "^3.0.0",

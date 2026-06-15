@@ -65,7 +65,31 @@
     "description": "Stay updated with the latest government activities and announcements."
   },
   "weather": {
-    "title": "Weather Updates"
+    "title": "Weather Updates",
+    "subtitle": "Live conditions for {{city}}.",
+    "now": "Right now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "high": "High",
+    "low": "Low",
+    "rainChance": "Rain chance",
+    "nextHours": "Next few hours",
+    "updated": "Updated {{time}} {{timezone}}",
+    "error": "Weather data is temporarily unavailable.",
+    "retry": "Try again",
+    "attribution": "Weather data by Open-Meteo.",
+    "conditions": {
+      "clear": "Clear skies",
+      "partlyCloudy": "Partly cloudy",
+      "cloudy": "Overcast",
+      "fog": "Foggy",
+      "drizzle": "Light drizzle",
+      "rain": "Rainy",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorms",
+      "unknown": "Variable conditions"
+    }
   },
   "forex": {
     "title": "Foreign Exchange Rates"

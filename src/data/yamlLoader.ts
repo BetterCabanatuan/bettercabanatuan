@@ -174,12 +174,18 @@ export interface DepartmentsData {
   departments: Department[];
 }
 
-export type ProjectStatus = 'ongoing' | 'planned' | 'completed';
+export const KNOWN_PROJECT_STATUSES = [
+  'ongoing',
+  'planned',
+  'completed',
+] as const;
+
+export type KnownProjectStatus = (typeof KNOWN_PROJECT_STATUSES)[number];
 
 export interface Project {
   name: string;
   slug: string;
-  status: ProjectStatus;
+  status?: string;
   category: string;
   description: string;
   department: string;

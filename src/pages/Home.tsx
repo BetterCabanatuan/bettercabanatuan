@@ -3,6 +3,7 @@ import ServicesSection from '../components/home/ServicesSection';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
 import CityStats from '../components/home/CityStats';
 import Map from '../components/home/Map';
+import Weather from '../components/home/Weather';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -18,7 +19,10 @@ const Home: React.FC = () => {
         <CityStats />
         <ServicesSection />
         <GovernmentActivitySection />
-        <Map />
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
+          <Map />
+          <Weather />
+        </div>
       </main>
     </>
   );

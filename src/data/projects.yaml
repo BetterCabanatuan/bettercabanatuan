@@ -102,7 +102,6 @@ projects:
 
   - name: 'Funeraria de Cabanatuan'
     slug: 'funeraria-de-cabanatuan'
-    status: 'ongoing'
     category: 'Social Welfare'
     description: 'Construction of a city-run funeral facility to provide affordable mortuary and wake services for Cabanatuan City residents.'
     department: 'City General Services Office / City Engineering Office'

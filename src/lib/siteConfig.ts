@@ -63,3 +63,9 @@ export const cityHallLocation = {
   longitude: Number(env.VITE_CITY_HALL_LNG) || 120.9519476,
   zoom: Number(env.VITE_CITY_HALL_MAP_ZOOM) || 17,
 };
+
+/** Open-Meteo weather location — separate from map pin coordinates */
+export const weatherLocation = {
+  latitude: Number(env.VITE_WEATHER_LAT) || 15.4859,
+  longitude: Number(env.VITE_WEATHER_LNG) || 120.9665,
+};
