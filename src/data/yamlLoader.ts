@@ -35,6 +35,8 @@ import barangaysYamlContent from './barangays.yaml?raw';
 import departmentsYamlContent from './departments.yaml?raw';
 import projectsYamlContent from './projects.yaml?raw';
 import aboutYamlContent from './about.yaml?raw';
+import transparencyYamlContent from './transparency.yaml?raw';
+import floodControlsYamlContent from './flood-controls.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -109,6 +111,53 @@ export interface AboutData {
 }
 
 export const aboutData: AboutData = yaml.load(aboutYamlContent) as AboutData;
+
+export interface TransparencyResource {
+  title: string;
+  description: string;
+  href: string;
+  icon?: string;
+  external?: boolean;
+}
+
+export interface TransparencySection {
+  id: string;
+  title: string;
+  description: string;
+  resources: TransparencyResource[];
+}
+
+export interface TransparencyData {
+  description: string;
+  sections: TransparencySection[];
+}
+
+export const transparencyData: TransparencyData = yaml.load(
+  transparencyYamlContent
+) as TransparencyData;
+
+export interface FloodControlProject {
+  slug: string;
+  title: string;
+  location: string;
+  contractor: string;
+  cost: string;
+  completionDate: string;
+  reportUrl?: string;
+}
+
+export interface FloodControlsData {
+  title: string;
+  description: string;
+  projects: FloodControlProject[];
+}
+
+export const floodControlsData: FloodControlsData = yaml.load(
+  floodControlsYamlContent
+) as FloodControlsData;
+
+export const allFloodControlProjects: FloodControlProject[] =
+  floodControlsData.projects || [];
 
 export const allDepartments: Department[] = departmentsData.departments || [];
 export const allProjects: Project[] = projectsData.projects || [];

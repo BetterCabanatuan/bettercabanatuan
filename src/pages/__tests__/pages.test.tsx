@@ -21,6 +21,8 @@ import ProjectsPage from '../government/projects/index';
 import ProjectDetailPage from '../government/projects/$projectSlugId';
 import SitemapPage from '../sitemap/index';
 import SearchPage from '../search';
+import TransparencyPage from '../transparency/index';
+import FloodControlsPage from '../transparency/flood-controls/index';
 import { allBarangays } from '../../data/yamlLoader';
 
 const pages: Array<{
@@ -146,6 +148,18 @@ const pages: Array<{
     route: '/search?q=health+services',
     Component: SearchPage,
     heading: /Search the Portal/i,
+  },
+  {
+    name: 'Transparency',
+    route: '/transparency',
+    Component: TransparencyPage,
+    heading: 'On This Portal',
+  },
+  {
+    name: 'Flood Controls',
+    route: '/transparency/flood-controls',
+    Component: FloodControlsPage,
+    heading: 'Flood Control Projects',
   },
   {
     name: 'Sitemap',

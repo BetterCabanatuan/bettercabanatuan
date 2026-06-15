@@ -104,6 +104,7 @@
     "government": "Government",
     "services": "Services",
     "statistics": "Statistics",
+    "transparency": "Transparency",
     "hotlines": "Hotlines",
     "holidays": "Holidays",
     "about": "About",
@@ -114,6 +115,26 @@
     "officialGov": "Official Gov.ph",
     "openMainMenu": "Open main menu",
     "sitemap": "Sitemap"
+  },
+  "transparency": {
+    "title": "Transparency",
+    "description": "Access Freedom of Information releases, public documents, and accountability resources for Cabanatuan City.",
+    "eyebrow": "Open Government",
+    "intro": "Browse public documents, reports, and open-government resources for {{city}}. Links on this portal open here unless marked as external.",
+    "external": "External",
+    "viewResource": "View resource"
+  },
+  "projects": {
+    "floodControls": {
+      "count": "{{count}} featured flood control and drainage projects",
+      "source": "Source: Sumbong sa Pangulo",
+      "columns": {
+        "project": "Project",
+        "contractor": "Contractor",
+        "cost": "Cost",
+        "completed": "Completion date"
+      }
+    }
   },
   "search": {
     "title": "Search the Portal",

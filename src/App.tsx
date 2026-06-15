@@ -10,6 +10,9 @@ import AboutPage from './pages/about';
 import ContactPage from './pages/contact';
 import StatisticsPage from './pages/statistics';
 
+import TransparencyPage from './pages/transparency';
+import FloodControlsPage from './pages/transparency/flood-controls';
+
 import ServicesIndexPage from './pages/services/index';
 import ServiceCategoryPage from './pages/services/$categoryId';
 import ServiceDocumentPage from './pages/services/$categoryId/$documentSlugId';
@@ -78,6 +81,11 @@ function App() {
                 element={<GovernmentCategoryPage />}
               />
               <Route path="/government" element={<GovernmentIndexPage />} />
+              <Route
+                path="/transparency/flood-controls"
+                element={<FloodControlsPage />}
+              />
+              <Route path="/transparency" element={<TransparencyPage />} />
 
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />

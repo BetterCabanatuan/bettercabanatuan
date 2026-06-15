@@ -104,6 +104,7 @@
     "government": "Pamahalaan",
     "services": "Mga Serbisyo",
     "statistics": "Estadistika",
+    "transparency": "Transparency",
     "hotlines": "Hotlines",
     "holidays": "Holiday",
     "about": "Tungkol",
@@ -114,6 +115,26 @@
     "officialGov": "Opisyal na Gov.ph",
     "openMainMenu": "Buksan ang main menu",
     "sitemap": "Sitemap"
+  },
+  "transparency": {
+    "title": "Transparency",
+    "description": "I-access ang mga FOI release, pampublikong dokumento, at accountability resources para sa Cabanatuan City.",
+    "eyebrow": "Bukas na Pamahalaan",
+    "intro": "Mag-browse ng pampublikong dokumento, ulat, at open-government resources para sa {{city}}. Ang mga link sa portal na ito ay dito bubukas maliban kung may markang external.",
+    "external": "Panlabas",
+    "viewResource": "Tingnan ang resource"
+  },
+  "projects": {
+    "floodControls": {
+      "count": "{{count}} featured na flood control at drainage projects",
+      "source": "Pinagmulan: Sumbong sa Pangulo",
+      "columns": {
+        "project": "Proyekto",
+        "contractor": "Kontratista",
+        "cost": "Halaga",
+        "completed": "Petsa ng pagkakumpleto"
+      }
+    }
   },
   "search": {
     "title": "Maghanap sa Portal",

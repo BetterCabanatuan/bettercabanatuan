@@ -29,6 +29,10 @@ export const mainNavigation: NavigationItem[] = [
     label: 'Statistics',
     href: '/statistics',
   },
+  {
+    label: 'Transparency',
+    href: '/transparency',
+  },
 ];
 
 export const footerNavigation = {

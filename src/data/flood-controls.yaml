@@ -1,0 +1,69 @@
+# Flood control and drainage projects — Cabanatuan City
+# Page: /transparency/flood-controls
+
+title: 'Flood Control Projects'
+description: 'Flood mitigation structures, drainage canals, and related infrastructure completed across Cabanatuan City barangays.'
+
+projects:
+  - slug: flood-mitigation-pampanga-pagas-2025
+    title: 'Construction of Flood Mitigation Structure along Pampanga River, Barangay Pagas, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 95,052,371.10'
+    completionDate: '2025-05-23'
+
+  - slug: flood-control-dalampang-2025
+    title: 'Construction of Flood Control Structure, Barangay Dalampang, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'DGSARM BUILDERS INC. (FORMERLY: D.G. SARMENTA CONSTRUCTION)'
+    cost: 'PHP 71,072,250.00'
+    completionDate: '2025-02-07'
+
+  - slug: drainage-magsaysay-norte-2024
+    title: 'Construction of Drainage Structure, Barangay Magsaysay Norte, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 9,792,146.27'
+    completionDate: '2024-11-14'
+
+  - slug: flood-mitigation-baca-mayapyap-2024
+    title: 'Construction of Flood Mitigation Structure including Drainage System along Baca River, Barangay Mayapyap, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'FRAMECON BUILDERS'
+    cost: 'PHP 75,650,574.13'
+    completionDate: '2024-09-20'
+
+  - slug: flood-mitigation-pampanga-ibabao-bana-2024
+    title: 'Construction of Flood Mitigation Structure along Pampanga River, Barangay Ibabao Bana, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'DGSARM BUILDERS INC. (FORMERLY: D.G. SARMENTA CONSTRUCTION)'
+    cost: 'PHP 86,849,964.84'
+    completionDate: '2024-08-06'
+
+  - slug: drainage-kapitan-pepe-2024
+    title: 'Construction of Drainage Canal, Brgy. Kapitan Pepe, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 4,873,904.40'
+    completionDate: '2024-07-26'
+
+  - slug: flood-mitigation-pampanga-pagas-2024
+    title: 'Construction of Flood Mitigation Structure along Pampanga River, Barangay Pagas, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 86,849,907.06'
+    completionDate: '2024-07-16'
+
+  - slug: drainage-aduas-centro-2023
+    title: 'Construction of Drainage Canal, Brgy. Aduas Centro, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 4,890,460.80'
+    completionDate: '2023-09-06'
+
+  - slug: drainage-valle-cruz-2023
+    title: 'Construction of Drainage Canal, Barangay Valle Cruz, Cabanatuan City, Nueva Ecija'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 5,791,378.53'
+    completionDate: '2023-06-02'
