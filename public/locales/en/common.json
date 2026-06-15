@@ -91,6 +91,26 @@
     "openMainMenu": "Open main menu",
     "sitemap": "Sitemap"
   },
+  "search": {
+    "title": "Search the Portal",
+    "eyebrow": "Find Anything",
+    "formLabel": "Site search",
+    "inputLabel": "Search services, barangays, and government pages",
+    "placeholder": "Try health services, business permits, or a barangay name…",
+    "submit": "Search",
+    "filterLabel": "Filter results by section",
+    "filters": {
+      "all": "All"
+    },
+    "resultCount": "{{count}} results for \"{{query}}\"",
+    "resultsLabel": "Search results",
+    "suggestionsTitle": "Popular searches",
+    "suggestionsDescription": "Start with a common topic, or enter your own keywords above.",
+    "noResultsTitle": "No matches found",
+    "noResultsDescription": "We couldn't find anything for \"{{query}}\". Try different keywords or browse a suggested topic below.",
+    "external": "External",
+    "seoWithQuery": "Search results for \"{{query}}\" on the {{city}} community portal."
+  },
   "joinUs": {
     "stripTitle": "🚀 Join the #CivicTech Revolution",
     "stripSubtitle": "Help build the future of the Philippines and governance through technology",
