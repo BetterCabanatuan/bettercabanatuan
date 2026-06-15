@@ -91,6 +91,26 @@
     "openMainMenu": "Buksan ang main menu",
     "sitemap": "Sitemap"
   },
+  "search": {
+    "title": "Maghanap sa Portal",
+    "eyebrow": "Hanapin ang Anumang Kailangan",
+    "formLabel": "Paghahanap sa site",
+    "inputLabel": "Maghanap ng serbisyo, barangay, at pahina ng pamahalaan",
+    "placeholder": "Subukan ang health services, business permits, o pangalan ng barangay…",
+    "submit": "Maghanap",
+    "filterLabel": "I-filter ang resulta ayon sa seksyon",
+    "filters": {
+      "all": "Lahat"
+    },
+    "resultCount": "{{count}} resulta para sa \"{{query}}\"",
+    "resultsLabel": "Mga resulta ng paghahanap",
+    "suggestionsTitle": "Mga popular na paghahanap",
+    "suggestionsDescription": "Magsimula sa karaniwang paksa, o maglagay ng sariling keyword sa itaas.",
+    "noResultsTitle": "Walang nahanap na tugma",
+    "noResultsDescription": "Walang nahanap para sa \"{{query}}\". Subukan ang ibang keyword o pumili ng mungkahing paksa sa ibaba.",
+    "external": "Panlabas",
+    "seoWithQuery": "Mga resulta ng paghahanap para sa \"{{query}}\" sa community portal ng {{city}}."
+  },
   "joinUs": {
     "stripTitle": "🚀 Sumali sa #CivicTech Revolution",
     "stripSubtitle": "Tumulong sa pagbuo ng kinabukasan ng Pilipinas at pamamahala sa pamamagitan ng teknolohiya",
