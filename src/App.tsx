@@ -25,6 +25,7 @@ import DepartmentDetailPage from './pages/government/departments/$departmentSlug
 import ProjectsPage from './pages/government/projects/index';
 import ProjectDetailPage from './pages/government/projects/$projectSlugId';
 import SitemapPage from './pages/sitemap/index';
+import SearchPage from './pages/search';
 import { Hotline } from './components/layout/Hotline';
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/statistics" element={<StatisticsPage />} />
+              <Route path="/search" element={<SearchPage />} />
               <Route path="/sitemap" element={<SitemapPage />} />
             </Routes>
             <Footer />
