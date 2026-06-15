@@ -20,6 +20,7 @@ import DepartmentDetailPage from '../government/departments/$departmentSlugId';
 import ProjectsPage from '../government/projects/index';
 import ProjectDetailPage from '../government/projects/$projectSlugId';
 import SitemapPage from '../sitemap/index';
+import SearchPage from '../search';
 import { allBarangays } from '../../data/yamlLoader';
 
 const pages: Array<{
@@ -133,6 +134,18 @@ const pages: Array<{
     routePattern: '/government/projects/:projectSlugId',
     Component: ProjectDetailPage,
     heading: /Sangitan Public Market/i,
+  },
+  {
+    name: 'Search',
+    route: '/search',
+    Component: SearchPage,
+    heading: /Search the Portal/i,
+  },
+  {
+    name: 'Search with query',
+    route: '/search?q=health+services',
+    Component: SearchPage,
+    heading: /Search the Portal/i,
   },
   {
     name: 'Sitemap',
