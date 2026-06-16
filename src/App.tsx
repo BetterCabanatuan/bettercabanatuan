@@ -5,10 +5,13 @@ import Footer from './components/layout/Footer';
 import ScrollToTop from './components/ui/ScrollToTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import HomePage from './pages/Home';
-import AboutPage from './pages/About';
+import HomePage from './pages/home';
+import AboutPage from './pages/about';
 import ContactPage from './pages/contact';
 import StatisticsPage from './pages/statistics';
+
+import TransparencyPage from './pages/transparency';
+import FloodControlsPage from './pages/transparency/flood-controls';
 
 import ServicesIndexPage from './pages/services/index';
 import ServiceCategoryPage from './pages/services/$categoryId';
@@ -78,6 +81,11 @@ function App() {
                 element={<GovernmentCategoryPage />}
               />
               <Route path="/government" element={<GovernmentIndexPage />} />
+              <Route
+                path="/transparency/flood-controls"
+                element={<FloodControlsPage />}
+              />
+              <Route path="/transparency" element={<TransparencyPage />} />
 
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />

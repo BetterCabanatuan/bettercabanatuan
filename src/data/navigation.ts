@@ -29,6 +29,10 @@ export const mainNavigation: NavigationItem[] = [
     label: 'Statistics',
     href: '/statistics',
   },
+  {
+    label: 'Transparency',
+    href: '/transparency',
+  },
 ];
 
 export const footerNavigation = {
@@ -75,6 +79,10 @@ export const footerNavigation = {
           href: 'https://www.officialgazette.gov.ph',
         },
       ],
+    },
+    {
+      title: 'Transparency',
+      links: [{ label: 'Transparency', href: '/transparency' }],
     },
   ],
   socialLinks: [

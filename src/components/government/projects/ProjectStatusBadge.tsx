@@ -1,7 +1,7 @@
-import type { ProjectStatus } from '../../../data/yamlLoader';
+import { KNOWN_PROJECT_STATUSES } from '../../../data/yamlLoader';
 
-const statusStyles: Record<
-  ProjectStatus,
+const knownStatusStyles: Record<
+  (typeof KNOWN_PROJECT_STATUSES)[number],
   { label: string; className: string }
 > = {
   ongoing: {
@@ -18,18 +18,37 @@ const statusStyles: Record<
   },
 };
 
-interface ProjectStatusBadgeProps {
-  status: ProjectStatus;
+function formatStatusLabel(status: string): string {
+  return status
+    .split(/[\s_-]+/)
+    .filter(Boolean)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
 }
 
-export default function ProjectStatusBadge({ status }: ProjectStatusBadgeProps) {
-  const config = statusStyles[status];
+interface ProjectStatusBadgeProps {
+  status?: string;
+}
+
+export default function ProjectStatusBadge({
+  status,
+}: ProjectStatusBadgeProps) {
+  if (!status?.trim()) {
+    return null;
+  }
+
+  const normalized = status.trim().toLowerCase();
+  const knownConfig =
+    knownStatusStyles[normalized as keyof typeof knownStatusStyles];
+
+  const label = knownConfig?.label ?? formatStatusLabel(status);
+  const className = knownConfig?.className ?? 'bg-gray-100 text-gray-700';
 
   return (
     <span
-      className={`inline-flex px-2.5 py-1 text-xs font-semibold rounded-full ${config.className}`}
+      className={`inline-flex px-2.5 py-1 text-xs font-semibold rounded-full ${className}`}
     >
-      {config.label}
+      {label}
     </span>
   );
 }

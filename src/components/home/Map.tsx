@@ -1,15 +1,17 @@
+import { useEffect, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import { MapPin } from 'lucide-react';
 import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import { cityHallLocation, siteConfig } from '../../lib/siteConfig';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+
+export const MAP_PANEL_HEIGHT = 400;
 
 const cityHallMarkerIcon = L.icon({
   iconUrl: markerIcon,
@@ -21,48 +23,86 @@ const cityHallMarkerIcon = L.icon({
   shadowSize: [41, 41],
 });
 
+const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${cityHallLocation.latitude},${cityHallLocation.longitude}`;
+
+function MapResizeHandler() {
+  const map = useMap();
+
+  useEffect(() => {
+    const resize = () => map.invalidateSize();
+    resize();
+    const timeoutId = window.setTimeout(resize, 150);
+    window.addEventListener('resize', resize);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      window.removeEventListener('resize', resize);
+    };
+  }, [map]);
+
+  return null;
+}
+
 export default function Map() {
   const { t } = useTranslation('common');
+  const [isMounted, setIsMounted] = useState(false);
   const position: [number, number] = [
     cityHallLocation.latitude,
     cityHallLocation.longitude,
   ];
 
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
-    <Section className="">
-      <div className="text-center mb-8">
+    <Section className="h-full !py-8">
+      <div className="text-center mb-4">
         <Heading level={2}>{t('map.title')}</Heading>
-        <p className="text-gray-600 mt-2 flex items-center justify-center gap-2 max-w-2xl mx-auto">
-          <MapPin className="w-4 h-4 shrink-0" />
-          <Link
+        <p className="text-gray-600 mt-2 flex items-center justify-center gap-2 max-w-2xl mx-auto text-sm">
+          <MapPin className="w-4 h-4 shrink-0" aria-hidden="true" />
+          <a
             className="hover:underline text-primary-600"
-            to="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjY-rLh1YSVAxUAAAAAHQAAAAAQFw..i&sca_esv=9773526fc95a52cb&pvq=CgwvZy8xaGMydGh6Y3I&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=ph&sa=X&ftid=0x339728f23e83546d:0xfa3d267b6c7aa1c1"
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {cityHallLocation.address}
-          </Link>
+          </a>
         </p>
       </div>
 
-      <div className="relative isolate z-0 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
-        <MapContainer
-          center={position}
-          zoom={cityHallLocation.zoom}
-          scrollWheelZoom={false}
-          className="relative z-0"
-          style={{ height: '400px', width: '100%' }}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      <div
+        className="relative z-0 rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-gray-100"
+        style={{ height: MAP_PANEL_HEIGHT }}
+      >
+        {isMounted ? (
+          <MapContainer
+            center={position}
+            zoom={cityHallLocation.zoom}
+            scrollWheelZoom={false}
+            className="h-full w-full z-0"
+            style={{ height: MAP_PANEL_HEIGHT, width: '100%' }}
+          >
+            <MapResizeHandler />
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position} icon={cityHallMarkerIcon}>
+              <Popup>
+                <strong>{siteConfig.governmentName}</strong>
+                <br />
+                {cityHallLocation.address}
+              </Popup>
+            </Marker>
+          </MapContainer>
+        ) : (
+          <div
+            className="h-full w-full animate-pulse bg-gray-200"
+            aria-hidden="true"
           />
-          <Marker position={position} icon={cityHallMarkerIcon}>
-            <Popup>
-              <strong>{siteConfig.governmentName}</strong>
-              <br />
-              {cityHallLocation.address}
-            </Popup>
-          </Marker>
-        </MapContainer>
+        )}
       </div>
     </Section>
   );

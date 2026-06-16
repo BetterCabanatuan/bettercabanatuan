@@ -1,0 +1,73 @@
+# Transparency hub — /transparency
+# Curated links to local portal sections and national open-government resources
+
+description: 'Access Freedom of Information releases, public documents, reports, and accountability resources for Cabanatuan City.'
+
+sections:
+  - id: portal
+    title: 'On This Portal'
+    description: 'Transparency content published through the Cabanatuan City community portal.'
+    resources:
+      - title: 'Transparency Documents'
+        description: 'Freedom of Information releases and accountability documents from the city government.'
+        href: '/government/transparency-documents'
+        icon: 'FileText'
+      - title: 'Reports and Statistics'
+        description: 'Local government reports, performance data, and statistical publications.'
+        href: '/government/reports-and-statistics'
+        icon: 'ChartBar'
+      - title: 'Government Projects'
+        description: 'Track infrastructure and community development projects across the city.'
+        href: '/government/projects'
+        icon: 'HardHat'
+      - title: 'City Statistics'
+        description: 'Population, barangays, services, and other public data for Cabanatuan City.'
+        href: '/statistics'
+        icon: 'TrendingUp'
+      - title: 'Flood Control Projects'
+        description: 'Flood mitigation structures and drainage canals completed across Cabanatuan City barangays.'
+        href: '/transparency/flood-controls'
+        icon: 'Droplets'
+
+  - id: city
+    title: 'City Government'
+    description: 'Official channels for records, consultations, and public information.'
+    resources:
+      - title: 'Public Consultations'
+        description: 'Participate in consultations and provide feedback on local government decisions.'
+        href: '/government/public-consultations'
+        icon: 'MessagesSquare'
+      - title: 'Departments and Offices'
+        description: 'Mandates, services, and contact details for city departments.'
+        href: '/government/departments'
+        icon: 'Building2'
+      - title: 'Official City Website'
+        description: 'Visit the official Cabanatuan City government website for transactions and announcements.'
+        href: 'https://www.cabanatuancity.gov.ph'
+        icon: 'Globe'
+        external: true
+
+  - id: national
+    title: 'National Resources'
+    description: 'Philippine government platforms for open data, FOI requests, and public records.'
+    resources:
+      - title: 'Freedom of Information (FOI)'
+        description: 'Submit and track Freedom of Information requests through the national FOI portal.'
+        href: 'https://www.foi.gov.ph'
+        icon: 'Scale'
+        external: true
+      - title: 'Open Data Philippines'
+        description: 'Browse open datasets published by national government agencies.'
+        href: 'https://data.gov.ph'
+        icon: 'Database'
+        external: true
+      - title: 'Official Gazette'
+        description: 'Official public journal of laws, issuances, and government notices.'
+        href: 'https://www.officialgazette.gov.ph'
+        icon: 'Newspaper'
+        external: true
+      - title: 'Contact Center ng Bayan'
+        description: 'National citizen complaint and feedback hotline for government services.'
+        href: 'https://contactcenterngbayan.gov.ph'
+        icon: 'Phone'
+        external: true

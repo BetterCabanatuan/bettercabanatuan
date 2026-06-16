@@ -65,7 +65,31 @@
     "description": "Stay updated with the latest government activities and announcements."
   },
   "weather": {
-    "title": "Weather Updates"
+    "title": "Weather Updates",
+    "subtitle": "Live conditions for {{city}}.",
+    "now": "Right now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "high": "High",
+    "low": "Low",
+    "rainChance": "Rain chance",
+    "nextHours": "Next few hours",
+    "updated": "Updated {{time}} {{timezone}}",
+    "error": "Weather data is temporarily unavailable.",
+    "retry": "Try again",
+    "attribution": "Weather data by Open-Meteo.",
+    "conditions": {
+      "clear": "Clear skies",
+      "partlyCloudy": "Partly cloudy",
+      "cloudy": "Overcast",
+      "fog": "Foggy",
+      "drizzle": "Light drizzle",
+      "rain": "Rainy",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorms",
+      "unknown": "Variable conditions"
+    }
   },
   "forex": {
     "title": "Foreign Exchange Rates"
@@ -80,6 +104,7 @@
     "government": "Government",
     "services": "Services",
     "statistics": "Statistics",
+    "transparency": "Transparency",
     "hotlines": "Hotlines",
     "holidays": "Holidays",
     "about": "About",
@@ -90,6 +115,26 @@
     "officialGov": "Official Gov.ph",
     "openMainMenu": "Open main menu",
     "sitemap": "Sitemap"
+  },
+  "transparency": {
+    "title": "Transparency",
+    "description": "Access Freedom of Information releases, public documents, and accountability resources for Cabanatuan City.",
+    "eyebrow": "Open Government",
+    "intro": "Browse public documents, reports, and open-government resources for {{city}}. Links on this portal open here unless marked as external.",
+    "external": "External",
+    "viewResource": "View resource"
+  },
+  "projects": {
+    "floodControls": {
+      "count": "{{count}} featured flood control and drainage projects",
+      "source": "Source: Sumbong sa Pangulo",
+      "columns": {
+        "project": "Project",
+        "contractor": "Contractor",
+        "cost": "Cost",
+        "completed": "Completion date"
+      }
+    }
   },
   "search": {
     "title": "Search the Portal",

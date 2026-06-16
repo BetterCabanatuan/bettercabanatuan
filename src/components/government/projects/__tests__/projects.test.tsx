@@ -15,6 +15,16 @@ describe('ProjectStatusBadge', () => {
     render(<ProjectStatusBadge status={status} />);
     expect(screen.getByText(label)).toBeInTheDocument();
   });
+
+  it('renders custom status labels', () => {
+    render(<ProjectStatusBadge status="under review" />);
+    expect(screen.getByText('Under Review')).toBeInTheDocument();
+  });
+
+  it('renders nothing when status is omitted', () => {
+    const { container } = render(<ProjectStatusBadge />);
+    expect(container).toBeEmptyDOMElement();
+  });
 });
 
 describe('ProjectCard', () => {

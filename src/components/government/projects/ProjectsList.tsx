@@ -2,23 +2,25 @@ import { useMemo, useState } from 'react';
 import { Search, ChevronDown } from 'lucide-react';
 import { Text } from '../../ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
-import type { Project, ProjectStatus } from '../../../data/yamlLoader';
+import type { KnownProjectStatus, Project } from '../../../data/yamlLoader';
+import { KNOWN_PROJECT_STATUSES } from '../../../data/yamlLoader';
 import ProjectCard from './ProjectCard';
 
 interface ProjectsListProps {
   projects: Project[];
 }
 
-const statusFilters: { value: ProjectStatus | ''; label: string }[] = [
+const statusFilters: { value: KnownProjectStatus | ''; label: string }[] = [
   { value: '', label: 'All statuses' },
-  { value: 'ongoing', label: 'Ongoing' },
-  { value: 'planned', label: 'Planned' },
-  { value: 'completed', label: 'Completed' },
+  ...KNOWN_PROJECT_STATUSES.map(status => ({
+    value: status,
+    label: status.charAt(0).toUpperCase() + status.slice(1),
+  })),
 ];
 
 export default function ProjectsList({ projects }: ProjectsListProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [statusFilter, setStatusFilter] = useState<ProjectStatus | ''>('');
+  const [statusFilter, setStatusFilter] = useState<KnownProjectStatus | ''>('');
   const [categoryFilter, setCategoryFilter] = useState('');
 
   const categories = useMemo(
@@ -30,7 +32,9 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
     let result = [...projects];
 
     if (statusFilter) {
-      result = result.filter(p => p.status === statusFilter);
+      result = result.filter(
+        p => p.status?.toLowerCase() === statusFilter.toLowerCase()
+      );
     }
 
     if (categoryFilter) {
@@ -75,7 +79,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
               <select
                 value={statusFilter}
                 onChange={e =>
-                  setStatusFilter(e.target.value as ProjectStatus | '')
+                  setStatusFilter(e.target.value as KnownProjectStatus | '')
                 }
                 className="appearance-none min-h-[44px] pl-3 pr-8 py-2 border border-gray-300 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600"
                 aria-label="Filter by status"

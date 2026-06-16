@@ -36,7 +36,7 @@ export default function SearchHero({
 
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden bg-gradient-to-r from-primary-600 to-primary-700 text-white py-12 md:py-16 lg:py-20"
       aria-labelledby="search-page-heading"
     >
       <div
