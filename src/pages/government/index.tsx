@@ -5,6 +5,7 @@ import Section from '../../components/ui/Section';
 import SEO from '../../components/SEO';
 import { governmentCategories } from '../../data/yamlLoader';
 import { siteConfig } from '../../lib/siteConfig';
+import { breadcrumbJsonLd } from '../../lib/structuredData';
 
 export default function GovernmentIndexPage() {
   const pageTitle = governmentCategories.title ?? 'Government Activity';
@@ -18,6 +19,11 @@ export default function GovernmentIndexPage() {
         title={pageTitle}
         description={pageDescription}
         keywords="government, local government, departments, officials, barangays"
+        url="/government"
+        jsonLd={breadcrumbJsonLd([
+          { name: 'Home', url: '/' },
+          { name: 'Government', url: '/government' },
+        ])}
       />
       <main className="flex-grow">
         <GovernmentPageHero

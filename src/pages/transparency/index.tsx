@@ -20,6 +20,7 @@ export default function TransparencyPage() {
         title={t('transparency.title')}
         description={pageDescription}
         keywords={`transparency, FOI, open government, ${siteConfig.governmentName}, public documents, accountability`}
+        url="/transparency"
       />
       <main className="flex-grow" id="main-content">
         <GovernmentPageHero

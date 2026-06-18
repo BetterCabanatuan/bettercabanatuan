@@ -94,6 +94,7 @@ export default function SearchPage() {
         description={seoDescription}
         keywords={searchSeo.keywords}
         url={getSearchCanonicalUrl(urlQuery, activeFilter)}
+        noindex
       />
       <main className="flex-grow" id="main-content">
         <SearchHero

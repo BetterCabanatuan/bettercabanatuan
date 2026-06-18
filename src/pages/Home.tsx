@@ -5,14 +5,18 @@ import CityStats from '../components/home/CityStats';
 import Map from '../components/home/Map';
 import Weather from '../components/home/Weather';
 import SEO from '../components/SEO';
+import { organizationJsonLd, webSiteJsonLd } from '../lib/structuredData';
+import { siteConfig } from '../lib/siteConfig';
 
 const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Home"
-        description="Official website of your local government. Access government services, information, and resources."
-        keywords="government, local government, services, public services, civic services"
+        title={`${siteConfig.governmentName} — Official Community Portal`}
+        description={`Official community portal of ${siteConfig.governmentName}, ${siteConfig.province}. Access barangay info, government services, public officials, departments, and resources.`}
+        keywords={`${siteConfig.governmentName}, government services, barangays, public officials, departments, community portal, ${siteConfig.province}, Philippines`}
+        url="/"
+        jsonLd={[organizationJsonLd(), webSiteJsonLd()]}
       />
       <main className="flex-grow">
         <Hero />

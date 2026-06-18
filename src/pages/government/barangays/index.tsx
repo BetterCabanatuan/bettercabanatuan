@@ -137,6 +137,7 @@ export default function BarangaysPage() {
         title={pageTitle}
         description={pageDescription}
         keywords="barangays, Cabanatuan City, urban barangays, rural barangays, local government, community"
+        url="/government/barangays"
       />
       <main className="flex-grow">
         <GovernmentPageHero
@@ -154,7 +155,10 @@ export default function BarangaysPage() {
         <Section className="p-3 mb-12 pt-10">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
             {overviewCards.map(card => (
-              <Card key={card.label} className={`border-t-4 ${card.border} h-full`}>
+              <Card
+                key={card.label}
+                className={`border-t-4 ${card.border} h-full`}
+              >
                 <CardContent className="p-5">
                   <span
                     className={`inline-flex items-center justify-center w-10 h-10 rounded-lg ${card.bg} mb-3`}
@@ -164,7 +168,9 @@ export default function BarangaysPage() {
                   <p className="text-2xl font-bold text-gray-900 tabular-nums mb-1">
                     {card.value}
                   </p>
-                  <p className="text-sm font-medium text-gray-900">{card.label}</p>
+                  <p className="text-sm font-medium text-gray-900">
+                    {card.label}
+                  </p>
                   <p className="text-xs text-gray-500 mt-1">{card.note}</p>
                 </CardContent>
               </Card>

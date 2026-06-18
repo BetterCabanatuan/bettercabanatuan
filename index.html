@@ -1,24 +1,70 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <link rel="icon" type="image/x-icon" href="/LogoLight.svg" />
+    <link rel="icon" type="image/svg+xml" href="/LogoLight.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-        BetterGov.ph | Republic of the Philippines | Community Powered Government
-        Portal
-    </title>
-    <meta name="description" content="Community-powered portal of the Republic of the Philippines. Access government services, stay updated with the latest news, and find information about the Philippines." />
+    <meta name="theme-color" content="#0066eb" />
+
+    <!-- Primary fallback meta tags (react-helmet-async overrides these at runtime) -->
+    <title>Cabanatuan City — Official Community Portal</title>
+    <meta
+      name="description"
+      content="Official community portal of Cabanatuan City, Nueva Ecija — government services, barangays, officials, and public information."
+    />
+    <meta
+      name="keywords"
+      content="Cabanatuan City, government, local government, services, public services, barangays, Nueva Ecija, Philippines, civic services, community portal"
+    />
+    <meta name="author" content="Cabanatuan City" />
+
+    <!-- Open Graph fallback (for social media crawlers that don't execute JS) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Cabanatuan City — Official Community Portal"
+    />
+    <meta
+      property="og:description"
+      content="Official community portal of Cabanatuan City, Nueva Ecija — government services, barangays, officials, and public information."
+    />
+    <meta
+      property="og:image"
+      content="https://bettercabanatuan.org/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Cabanatuan City" />
+    <meta property="og:locale" content="en_PH" />
+
+    <!-- Twitter Card fallback -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cabanatuan City — Official Community Portal"
+    />
+    <meta
+      name="twitter:description"
+      content="Official community portal of Cabanatuan City, Nueva Ecija — government services, barangays, officials, and public information."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bettercabanatuan.org/og-image.jpg"
+    />
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
+    <link rel="preconnect" href="https://api.open-meteo.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  </body>
 </html>

@@ -7,6 +7,8 @@ import Breadcrumbs from '../../../components/ui/Breadcrumbs';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { getBarangayBySlug, allBarangays } from '../../../data/yamlLoader';
+import { siteConfig } from '../../../lib/siteConfig';
+import { barangayJsonLd } from '../../../lib/structuredData';
 import {
   MapPin,
   Building2,
@@ -20,7 +22,9 @@ import {
 
 const BarangayDetail: React.FC = () => {
   const { barangaySlugId } = useParams<{ barangaySlugId: string }>();
-  const barangay = barangaySlugId ? getBarangayBySlug(barangaySlugId) : undefined;
+  const barangay = barangaySlugId
+    ? getBarangayBySlug(barangaySlugId)
+    : undefined;
 
   if (!barangay) {
     return (
@@ -47,7 +51,6 @@ const BarangayDetail: React.FC = () => {
 
   const isUrban = barangay.classification === 'Urban';
 
-  // Get related barangays (same classification)
   const relatedBarangays = allBarangays
     .filter(
       b =>
@@ -58,9 +61,11 @@ const BarangayDetail: React.FC = () => {
   return (
     <>
       <SEO
-        title={barangay.name}
+        title={`Barangay ${barangay.name}`}
         description={barangay.description}
-        keywords={`${barangay.name}, barangay, Cabanatuan City, ${barangay.classification.toLowerCase()}, local government`}
+        keywords={`${barangay.name}, barangay, ${siteConfig.governmentName}, ${barangay.classification.toLowerCase()}, local government`}
+        url={`/government/barangays/${barangay.slug}`}
+        jsonLd={barangayJsonLd(barangay)}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs
@@ -75,7 +80,6 @@ const BarangayDetail: React.FC = () => {
           ]}
         />
 
-        {/* Header */}
         <div className="mb-8">
           <Link
             to="/government/barangays"
@@ -105,7 +109,6 @@ const BarangayDetail: React.FC = () => {
           </span>
         </div>
 
-        {/* Main Info Card */}
         <Card className="mb-8">
           <CardContent className="p-6">
             <Heading level={3} className="mb-4">
@@ -167,7 +170,6 @@ const BarangayDetail: React.FC = () => {
           </CardContent>
         </Card>
 
-        {/* Population Trend */}
         <Card className="mb-8">
           <CardContent className="p-6">
             <Heading level={3} className="mb-4">
@@ -196,7 +198,6 @@ const BarangayDetail: React.FC = () => {
           </CardContent>
         </Card>
 
-        {/* Related Barangays */}
         {relatedBarangays.length > 0 && (
           <div>
             <Heading level={3} className="mb-4">

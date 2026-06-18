@@ -14,6 +14,7 @@ import SEO from '../SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
+import { breadcrumbJsonLd } from '../../lib/structuredData';
 
 interface ServiceCategoryPageProps {
   categoryId?: string;
@@ -67,6 +68,12 @@ export default function ServiceCategoryPage({
         title={categoryData.category || categoryId}
         description={categoryData.description}
         keywords={`${categoryData.category}, government services, public services, local government`}
+        url={`/services/${categoryId}`}
+        jsonLd={breadcrumbJsonLd([
+          { name: 'Home', url: '/' },
+          { name: 'Services', url: '/services' },
+          { name: categoryData.category, url: `/services/${categoryId}` },
+        ])}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" />

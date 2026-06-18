@@ -10,6 +10,8 @@ import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import type { Project } from '../../../data/yamlLoader';
 import ProjectStatusBadge from './ProjectStatusBadge';
+import { projectJsonLd } from '../../../lib/structuredData';
+import { siteConfig } from '../../../lib/siteConfig';
 
 interface ProjectDetailProps {
   project: Project;
@@ -23,7 +25,9 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       <SEO
         title={project.name}
         description={project.description}
-        keywords={`${project.name}, ${project.category}, Cabanatuan City project, infrastructure`}
+        keywords={`${project.name}, ${project.category}, ${siteConfig.governmentName} project, infrastructure`}
+        url={`/government/projects/${project.slug}`}
+        jsonLd={projectJsonLd(project)}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs

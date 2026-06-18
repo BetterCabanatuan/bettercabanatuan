@@ -4,10 +4,7 @@ import Section from '../../../components/ui/Section';
 import GovernmentPageHero from '../../../components/government/GovernmentPageHero';
 import DepartmentsList from '../../../components/government/departments/DepartmentsList';
 import DepartmentsOverview from '../../../components/government/departments/DepartmentsOverview';
-import {
-  allDepartments,
-  departmentsData,
-} from '../../../data/yamlLoader';
+import { allDepartments, departmentsData } from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
 
 export default function DepartmentsPage() {
@@ -16,7 +13,8 @@ export default function DepartmentsPage() {
       <SEO
         title="Departments"
         description={`Explore ${siteConfig.governmentName} government departments, offices, and contact information.`}
-        keywords="departments, city offices, local government, Cabanatuan City"
+        keywords={`departments, city offices, local government, ${siteConfig.governmentName}`}
+        url="/government/departments"
       />
       <main className="flex-grow">
         <GovernmentPageHero

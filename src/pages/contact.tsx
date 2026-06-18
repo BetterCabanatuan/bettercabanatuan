@@ -5,7 +5,6 @@ import { Text } from '../components/ui/Text';
 import Section from '../components/ui/Section';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import SEO from '../components/SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
 import {
   Mail,
   Phone,
@@ -24,10 +23,12 @@ import {
   cityHallAddress,
   governmentSections,
 } from '../lib/siteConfig';
+import { contactJsonLd } from '../lib/structuredData';
 import type { Category } from '../data/yamlLoader';
 import EmergencyHotlinesSection from '../components/contact/EmergencyHotlinesSection';
 import DepartmentContactsSection from '../components/contact/DepartmentContactsSection';
 import { formatPhoneForTel } from '../data/hotlines';
+import { Card, CardContent } from '@bettergov/kapwa/card';
 
 export default function ContactPage() {
   const { t } = useTranslation('common');
@@ -87,7 +88,9 @@ export default function ContactPage() {
         description={t('contact.seoDescription', {
           city: siteConfig.governmentName,
         })}
-        keywords="contact, city hall, Cabanatuan City, local government, phone, email"
+        keywords={`contact, city hall, ${siteConfig.governmentName}, local government, phone, email, address`}
+        url="/contact"
+        jsonLd={contactJsonLd()}
       />
       <main className="flex-grow">
         <section
@@ -116,7 +119,6 @@ export default function ContactPage() {
 
         <Section className="p-3 mb-0 pt-8">
           <EmergencyHotlinesSection />
-
           <DepartmentContactsSection />
 
           <div
@@ -308,7 +310,6 @@ export default function ContactPage() {
                     : section.slug === 'barangays'
                       ? '/government/barangays'
                       : `/government/${section.slug}`;
-
                 return (
                   <Link
                     key={section.slug}
