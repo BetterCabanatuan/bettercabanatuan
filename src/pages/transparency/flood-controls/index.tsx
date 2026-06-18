@@ -19,6 +19,7 @@ export default function FloodControlsPage() {
         title={floodControlsData.title}
         description={floodControlsData.description}
         keywords={`flood control, drainage, infrastructure, transparency, ${siteConfig.governmentName}`}
+        url="/transparency/flood-controls"
       />
       <main className="flex-grow" id="main-content">
         <GovernmentPageHero

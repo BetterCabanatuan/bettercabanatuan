@@ -28,8 +28,23 @@ export const siteConfig = {
   siteDescription:
     env.VITE_SITE_DESCRIPTION ||
     'Community portal for local government services and information.',
+  siteUrl: env.VITE_SITE_URL || env.VITE_PROD_ORIGIN || '',
+  ogImageUrl: env.VITE_OG_IMAGE_URL || '',
+  twitterHandle: env.VITE_TWITTER_HANDLE || '',
   prodOrigin: env.VITE_PROD_ORIGIN || '',
 };
+
+export function getSiteUrl(): string {
+  return (
+    siteConfig.siteUrl ||
+    (typeof window !== 'undefined' ? window.location.origin : '')
+  );
+}
+
+export function buildCanonicalUrl(path: string): string {
+  const base = getSiteUrl().replace(/\/$/, '');
+  return `${base}${path}`;
+}
 
 export const cityStats = {
   cityName: cityData.cityName,
@@ -56,7 +71,6 @@ export const cityHallAddress =
   mayor?.contact?.office ||
   'FXC2+9Q5, Corner M. De Leon Avenue and, 2nd St, Cabanatuan City, Nueva Ecija';
 
-/** City hall map location — override via VITE_CITY_HALL_* env vars */
 export const cityHallLocation = {
   address: env.VITE_CITY_HALL_ADDRESS || cityHallAddress,
   latitude: Number(env.VITE_CITY_HALL_LAT) || 15.4708053,
@@ -64,7 +78,6 @@ export const cityHallLocation = {
   zoom: Number(env.VITE_CITY_HALL_MAP_ZOOM) || 17,
 };
 
-/** Open-Meteo weather location — separate from map pin coordinates */
 export const weatherLocation = {
   latitude: Number(env.VITE_WEATHER_LAT) || 15.4859,
   longitude: Number(env.VITE_WEATHER_LNG) || 120.9665,

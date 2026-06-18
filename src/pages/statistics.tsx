@@ -80,7 +80,8 @@ export default function StatisticsPage() {
       <SEO
         title="Statistics"
         description={`Key statistics for ${siteConfig.governmentName} — population, barangays, land area, services, and government data.`}
-        keywords="statistics, Cabanatuan City, population, barangays, local government data"
+        keywords={`statistics, ${siteConfig.governmentName}, population, barangays, local government data`}
+        url="/statistics"
       />
       <main className="flex-grow">
         {/* Hero-style header + stat cards */}

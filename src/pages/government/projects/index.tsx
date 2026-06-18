@@ -12,7 +12,8 @@ export default function ProjectsPage() {
       <SEO
         title="Projects"
         description={`Infrastructure and community development projects in ${siteConfig.governmentName}.`}
-        keywords="projects, infrastructure, development, Cabanatuan City, local government"
+        keywords={`projects, infrastructure, development, ${siteConfig.governmentName}, local government`}
+        url="/government/projects"
       />
       <main className="flex-grow">
         <GovernmentPageHero

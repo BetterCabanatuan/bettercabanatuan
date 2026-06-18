@@ -15,6 +15,7 @@ import {
   getContactsForDepartment,
 } from '../../../data/departmentContacts';
 import { formatPhoneForTel } from '../../../data/hotlines';
+import { departmentJsonLd } from '../../../lib/structuredData';
 
 interface DepartmentDetailProps {
   department: Department;
@@ -31,7 +32,9 @@ export default function DepartmentDetail({
       <SEO
         title={department.name}
         description={department.description}
-        keywords={`${department.name}, ${department.acronym}, Cabanatuan City, local government department`}
+        keywords={`${department.name}, ${department.acronym}, ${siteConfig.governmentName}, local government department`}
+        url={`/government/departments/${department.slug}`}
+        jsonLd={departmentJsonLd(department)}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs

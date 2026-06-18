@@ -10,6 +10,7 @@ import AboutValuesSection from '../components/about/AboutValuesSection';
 import AboutDisclaimerSection from '../components/about/AboutDisclaimerSection';
 import AboutContributeSection from '../components/about/AboutContributeSection';
 import { cityStats, services, siteConfig } from '../lib/siteConfig';
+import { breadcrumbJsonLd } from '../lib/structuredData';
 import Map from '../components/home/Map';
 
 export default function AboutPage() {
@@ -24,7 +25,12 @@ export default function AboutPage() {
           barangays: cityStats.totalBarangays,
           services: services.length,
         })}
-        keywords="about, community portal, local government, Cabanatuan City, Nueva Ecija, civic tech"
+        keywords={`about, community portal, local government, ${siteConfig.governmentName}, ${siteConfig.province}, civic tech`}
+        url="/about"
+        jsonLd={breadcrumbJsonLd([
+          { name: 'Home', url: '/' },
+          { name: 'About', url: '/about' },
+        ])}
       />
       <main className="grow">
         <AboutHero />

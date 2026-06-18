@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
+import { buildCanonicalUrl, getSiteUrl, siteConfig } from '../lib/siteConfig';
 
-interface SEOProps {
+export interface SEOProps {
   title?: string;
   description?: string;
   keywords?: string;
@@ -8,6 +9,8 @@ interface SEOProps {
   url?: string;
   type?: string;
   siteName?: string;
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 export default function SEO({
@@ -17,24 +20,31 @@ export default function SEO({
   image,
   url,
   type = 'website',
-  siteName = import.meta.env.VITE_GOVERNMENT_NAME || 'Local Government Website',
+  siteName = siteConfig.governmentName,
+  noindex = false,
+  jsonLd,
 }: SEOProps) {
-  const defaultTitle = `${siteName} - Official Government Website`;
+  const siteUrl = getSiteUrl();
+  const defaultTitle = `${siteName} — Official Community Portal`;
   const defaultDescription =
-    import.meta.env.VITE_SITE_DESCRIPTION ||
-    `Official website of ${siteName}. Access government services, information, and resources.`;
+    siteConfig.siteDescription ||
+    `Official community portal of ${siteName}. Access government services, barangay information, public officials, and resources.`;
   const defaultKeywords =
     import.meta.env.VITE_SITE_KEYWORDS ||
-    'government, local government, services, public services, civic services';
+    `${siteName}, government, local government, services, public services, civic services, barangays, Nueva Ecija, Philippines`;
 
-  // const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
-  const fullTitle = title ? `${title} | BetterCabanatuan.org` : defaultTitle;
+  const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
   const fullDescription = description || defaultDescription;
   const fullKeywords = keywords || defaultKeywords;
-  const fullUrl = url || import.meta.env.VITE_WEBSITE_URL || '';
-  const fullImage =
-    image || import.meta.env.VITE_OG_IMAGE_URL || `${fullUrl}/og-image.jpg`;
-  const twitterHandle = import.meta.env.VITE_TWITTER_HANDLE || '';
+  const canonicalPath = url || '';
+  const fullUrl = canonicalPath
+    ? buildCanonicalUrl(
+        canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`
+      )
+    : siteUrl;
+  const fullImage = image || siteConfig.ogImageUrl || `${siteUrl}/og-image.jpg`;
+
+  const supportedLanguages = ['en', 'fil'];
 
   return (
     <Helmet>
@@ -43,9 +53,11 @@ export default function SEO({
       <meta name="description" content={fullDescription} />
       <meta name="keywords" content={fullKeywords} />
       <meta name="author" content={siteName} />
-      <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
-      <meta name="revisit-after" content="7 days" />
+      {noindex ? (
+        <meta name="robots" content="noindex, nofollow" />
+      ) : (
+        <meta name="robots" content="index, follow" />
+      )}
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
@@ -53,54 +65,39 @@ export default function SEO({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={fullDescription} />
       <meta property="og:image" content={fullImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content={siteName} />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content="en_PH" />
 
       {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={fullUrl} />
-      <meta property="twitter:title" content={fullTitle} />
-      <meta property="twitter:description" content={fullDescription} />
-      <meta property="twitter:image" content={fullImage} />
-      {twitterHandle && (
-        <meta property="twitter:site" content={twitterHandle} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={fullUrl} />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={fullDescription} />
+      <meta name="twitter:image" content={fullImage} />
+      {siteConfig.twitterHandle && (
+        <meta name="twitter:site" content={siteConfig.twitterHandle} />
       )}
-
-      {/* Additional Meta Tags */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="theme-color" content="#0066eb" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={fullUrl} />
 
-      {/* Favicon */}
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
+      {/* Hreflang - alternate language versions */}
+      {supportedLanguages.map(lang => (
+        <link
+          key={lang}
+          rel="alternate"
+          hrefLang={lang}
+          href={`${siteUrl}${canonicalPath.startsWith('/') ? canonicalPath : canonicalPath ? `/${canonicalPath}` : ''}?lang=${lang}`}
+        />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={fullUrl} />
 
-      {/* Preconnect to external domains */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="anonymous"
-      />
+      {/* JSON-LD Structured Data */}
+      {jsonLd && (
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      )}
     </Helmet>
   );
 }

@@ -5,6 +5,7 @@ import Section from '../../components/ui/Section';
 import SEO from '../../components/SEO';
 import { serviceCategories } from '../../data/yamlLoader';
 import { siteConfig } from '../../lib/siteConfig';
+import { breadcrumbJsonLd } from '../../lib/structuredData';
 
 export default function ServicesIndexPage() {
   const pageTitle = serviceCategories.title ?? 'Government Services';
@@ -18,6 +19,11 @@ export default function ServicesIndexPage() {
         title={pageTitle}
         description={pageDescription}
         keywords="government services, public services, local government, civic services"
+        url="/services"
+        jsonLd={breadcrumbJsonLd([
+          { name: 'Home', url: '/' },
+          { name: 'Services', url: '/services' },
+        ])}
       />
       <main className="flex-grow">
         <GovernmentPageHero

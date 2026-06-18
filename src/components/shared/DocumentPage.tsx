@@ -23,6 +23,7 @@ import {
   type CategoryIndex,
 } from '../../data/yamlLoader';
 import SEO from '../SEO';
+import { breadcrumbJsonLd } from '../../lib/structuredData';
 
 interface DocumentPageProps {
   theme?: string;
@@ -117,6 +118,11 @@ export default function DocumentPage({
     loadContent();
   }, [documentSlugId, categoryId, categoryType]);
 
+  const canonicalPath =
+    categoryType === 'government'
+      ? `/government/${categoryId}/${documentSlugId}`
+      : `/services/${categoryId}/${documentSlugId}`;
+
   if (loading) {
     return (
       <Section className="p-3 mb-12">
@@ -144,8 +150,16 @@ export default function DocumentPage({
     return (
       <>
         <SEO
-          title={documentSlugId}
+          title={nestedIndex.title || documentSlugId}
+          description={
+            nestedIndex.description ||
+            `${nestedIndex.title || documentSlugId} — ${categoryType === 'government' ? 'government' : 'public service'} information for ${documentSlugId}`
+          }
           keywords={`${documentSlugId}, government services, local government`}
+          url={canonicalPath}
+          jsonLd={breadcrumbJsonLd(
+            breadcrumbs.map(b => ({ name: b.label, url: b.href }))
+          )}
         />
         <Section className="p-3 mb-12">
           <Breadcrumbs className="mb-8" items={breadcrumbs} />
@@ -210,6 +224,10 @@ export default function DocumentPage({
           `Government service information for ${documentSlugId}`
         }
         keywords={`${documentSlugId}, government services, public services, local government`}
+        url={canonicalPath}
+        jsonLd={breadcrumbJsonLd(
+          breadcrumbs.map(b => ({ name: b.label, url: b.href }))
+        )}
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" items={breadcrumbs} />

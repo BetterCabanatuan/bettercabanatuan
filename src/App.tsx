@@ -9,6 +9,7 @@ import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import ContactPage from './pages/contact';
 import StatisticsPage from './pages/statistics';
+import NotFoundPage from './pages/NotFound';
 
 import TransparencyPage from './pages/transparency';
 import FloodControlsPage from './pages/transparency/flood-controls';
@@ -92,6 +93,7 @@ function App() {
               <Route path="/statistics" element={<StatisticsPage />} />
               <Route path="/search" element={<SearchPage />} />
               <Route path="/sitemap" element={<SitemapPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />
           </div>
