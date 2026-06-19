@@ -288,7 +288,9 @@
       "fastFacts": {
         "dateCreated": "Date Created",
         "enablingLaw": "Enabling Law"
-      }
+      },
+      "showMore": "See more",
+      "showLess": "See less"
     },
     "leadership": {
       "title": "City Leadership",

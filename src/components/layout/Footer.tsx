@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Youtube, Globe } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -18,6 +18,8 @@ const Footer: React.FC = () => {
         return <Instagram className="h-5 w-5" />;
       case 'YouTube':
         return <Youtube className="h-5 w-5" />;
+      case 'Website':
+        return <Globe className="h-5 w-5" />;
       default:
         return null;
     }
@@ -52,15 +54,16 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               {footerNavigation.socialLinks.map(link => (
-                <Link
+                <a
                   key={link.label}
-                  to={link.href}
+                  href={link.href}
                   className="text-gray-400 hover:text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={link.label}
                 >
                   {getSocialIcon(link.label)}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -102,12 +105,30 @@ const Footer: React.FC = () => {
               >
                 Terms of Use
               </a> */}
-              <Link
-                to="https://github.com/BetterCabanatuan/bettercabanatuan"
+              <a
+                href="https://bettercabanatuan.org"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                BetterCabanatuan.org
+              </a>
+              <a
+                href="https://www.facebook.com/bettercabanatuan.org"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://github.com/BetterCabanatuan/bettercabanatuan"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Contribute at GitHub
-              </Link>
+              </a>
               <Link
                 to="/sitemap"
                 className="text-gray-400 hover:text-white text-sm transition-colors"

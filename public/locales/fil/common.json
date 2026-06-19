@@ -313,7 +313,9 @@
       "fastFacts": {
         "dateCreated": "Petsa ng Pagkakatatag",
         "enablingLaw": "Batas na Nagtatag"
-      }
+      },
+      "showMore": "Magbasa pa",
+      "showLess": "Ikontrol ang pagbabasa"
     },
     "leadership": {
       "title": "Pamumuno ng Lungsod",

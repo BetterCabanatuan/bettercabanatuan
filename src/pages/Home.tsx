@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title={`${siteConfig.governmentName} — Official Community Portal`}
+        title={`${siteConfig.governmentName} — BetterCabanatuan.org`}
         description={`Official community portal of ${siteConfig.governmentName}, ${siteConfig.province}. Access barangay info, government services, public officials, departments, and resources.`}
         keywords={`${siteConfig.governmentName}, government services, barangays, public officials, departments, community portal, ${siteConfig.province}, Philippines`}
         url="/"

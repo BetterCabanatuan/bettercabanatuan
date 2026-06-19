@@ -82,9 +82,13 @@ export const footerNavigation = {
     },
   ],
   socialLinks: [
-    { label: 'Facebook', href: 'https://facebook.com/bettercabanatuan' },
+    { label: 'Website', href: 'https://bettercabanatuan.org' },
+    {
+      label: 'Facebook',
+      href: 'https://www.facebook.com/bettercabanatuan.org',
+    },
     { label: 'Twitter', href: 'https://twitter.com/bettercabanatuan' },
     { label: 'Instagram', href: 'https://instagram.com/bettercabanatuan' },
-    { label: 'Government Website', href: 'www.cabanatuancity.gov.ph' },
+    { label: 'Government Website', href: 'https://www.cabanatuancity.gov.ph' },
   ],
 };

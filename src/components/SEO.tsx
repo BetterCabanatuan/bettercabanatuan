@@ -25,7 +25,7 @@ export default function SEO({
   jsonLd,
 }: SEOProps) {
   const siteUrl = getSiteUrl();
-  const defaultTitle = `${siteName} — Official Community Portal`;
+  const defaultTitle = `${siteName} — BetterCabanatuan.org`;
   const defaultDescription =
     siteConfig.siteDescription ||
     `Official community portal of ${siteName}. Access government services, barangay information, public officials, and resources.`;

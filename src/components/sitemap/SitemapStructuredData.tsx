@@ -29,7 +29,7 @@ export default function SitemapStructuredData({
         isPartOf: {
           '@type': 'WebSite',
           '@id': `${origin}/#website`,
-          name: `${siteConfig.governmentName} Community Portal`,
+          name: `${siteConfig.governmentName} — BetterCabanatuan.org`,
           url: origin || pageUrl,
         },
         breadcrumb: {

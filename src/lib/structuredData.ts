@@ -48,7 +48,7 @@ export function webSiteJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${base}/#website`,
-    name: `${siteConfig.governmentName} Community Portal`,
+    name: `${siteConfig.governmentName} — BetterCabanatuan.org`,
     url: base,
     description: siteConfig.siteDescription,
     publisher: { '@id': `${base}/#organization` },

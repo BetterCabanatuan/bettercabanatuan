@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Calendar, ScrollText } from 'lucide-react';
+import { Calendar, ScrollText, ChevronDown, ChevronUp } from 'lucide-react';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
@@ -21,11 +22,17 @@ function getFactLabelKey(label: string) {
   if (label === 'Enabling Law') return 'about.history.fastFacts.enablingLaw';
   return null;
 }
-
 export default function AboutHistorySection() {
   const { t } = useTranslation('common');
   const { history } = aboutData;
   const paragraphs = getHistoryParagraphs(t);
+  const [expanded, setExpanded] = useState(false);
+
+  const COLLAPSED_COUNT = 3;
+  const needsToggle = paragraphs.length > COLLAPSED_COUNT;
+  const visibleParagraphs = expanded
+    ? paragraphs
+    : paragraphs.slice(0, COLLAPSED_COUNT);
 
   return (
     <Section className="bg-gray-50">
@@ -40,12 +47,32 @@ export default function AboutHistorySection() {
         )}
 
         <div className="prose prose-gray max-w-none space-y-5">
-          {paragraphs.map((paragraph, index) => (
+          {visibleParagraphs.map((paragraph, index) => (
             <p key={index} className="text-gray-700 leading-relaxed">
               {paragraph}
             </p>
           ))}
         </div>
+
+        {needsToggle && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded transition-colors"
+            aria-expanded={expanded}
+          >
+            {expanded ? (
+              <>
+                {t('about.history.showLess')}
+                <ChevronUp className="h-4 w-4" aria-hidden="true" />
+              </>
+            ) : (
+              <>
+                {t('about.history.showMore')}
+                <ChevronDown className="h-4 w-4" aria-hidden="true" />
+              </>
+            )}
+          </button>
+        )}
 
         {history.fastFacts && history.fastFacts.length > 0 && (
           <div className="mt-10">
