@@ -17,6 +17,10 @@ contacts:
     phone: '0919-081-1300'
     departmentSlug: peso
 
+  - name: "City Mayor's Office - Tourism Division"
+    phone: '0998-500-2725'
+    departmentSlug: tourism
+
   - name: 'Human Resource Management Office'
     phone: '0919-081-3135'
     departmentSlug: chrmo
@@ -29,7 +33,7 @@ contacts:
     phone: '0919-081-3694'
 
   - name: 'City Budget Office'
-    phone: '0919-081-3199'
+    phone: '0919-081-1400'
     departmentSlug: budget-office
 
   - name: 'Office of the City Accountant'
@@ -51,19 +55,13 @@ contacts:
     phone: '0919-081-4548'
     departmentSlug: lcro
 
-  - name: 'City Social Welfare and Development Office - Main'
-    phone: '0919-081-1345'
-    departmentSlug: cswdo
-
-  - name: 'CSWDO - Educational, Medical and Burial Assistance'
-    phone: '0919-081-0246'
-    departmentSlug: cswdo
-
   - name: 'City Economic Enterprise and Public Utilities Management Office'
     phone: '0919-081-2785'
+    departmentSlug: ceepumo
 
   - name: 'City Legal Office'
     phone: '0919-081-0213'
+    departmentSlug: cswdo
 
   - name: 'City Veterinary Office'
     phone: '0919-089-9906'
@@ -75,7 +73,7 @@ contacts:
   - name: 'City Livelihood and Cooperatives Development Office'
     phone: '0919-089-9875'
 
-  - name: 'City Information and Tourism Office'
+  - name: 'City Information and Communications Technology Office'
     phone: '0919-089-9862'
 
   - name: 'City Environment and Natural Resources Office'
@@ -83,26 +81,72 @@ contacts:
 
   - name: 'City Business Licensing and Investment Promotion Office'
     phone: '0919-089-9869'
-    departmentSlug: bplo
 
-  - name: 'City Motor Pool Office'
+  - name: 'City Motorpool Office'
     phone: '0919-081-3218'
 
   - name: "Vice Mayor's Office / Sangguniang Panlungsod"
     phone: '0919-081-3730'
-    departmentSlug: legislative
-
-  - name: 'CHO - City Epidemiology Surveillance Supervisor'
-    phone: '0919-081-1508'
-    departmentSlug: cho
-
-  - name: 'City Health Center Supervisor (#2, #3, #5 & #8)'
-    phone: '0919-081-1400'
-    departmentSlug: cho
-
-  - name: 'City Health Center Supervisor (#1, #4, #6 & #7)'
-    phone: '0919-081-2789'
-    departmentSlug: cho
 
   - name: 'Office of the City Building Official'
     phone: '0919-081-1394'
+
+  - name: 'City Disaster Risk Reduction and Management Office 1'
+    phone: '0908-881-1010'
+
+  - name: 'City Disaster Risk Reduction and Management Office 2'
+    phone: '0917-851-1320'
+
+  - name: 'City Disaster Risk Reduction and Management Office 3'
+    phone: '(044)-940-0161'
+
+  - name: 'MV Gallego Cabanatuan City General Hospital'
+    phone: '0919-089-9880'
+
+  - name: 'City Health Office (CHO) - Main'
+    phone: '0919-081-1348'
+
+  - name: 'CHO - City Epidemiology Surveilance Unit'
+    phone: '0919-081-0167'
+
+  - name: 'City Health Center #1 Mayapyap Sur'
+    phone: '0919-081-3119'
+
+  - name: 'City Health Center #2 San Josef Sur'
+    phone: '0999-222-6034'
+
+  - name: 'City Health Center #3 Bangad'
+    phone: '0919-081-2883'
+
+  - name: 'City Health Center #4 Mabini Homesite'
+    phone: '0919-081-1344'
+
+  - name: 'City Health Center #5 Quezon District'
+    phone: '0919-081-1535'
+
+  - name: 'City Health Center #6 Caalibangbangan'
+    phone: '0919-081-1485'
+
+  - name: 'City Health Center #6 Caalibangbangan'
+    phone: '0919-081-1485'
+
+  - name: 'City Health Center #7 H. Concepcion'
+    phone: '0919-081-2983'
+
+  - name: 'City Health Center #8 Camp Tinio'
+    phone: '0919-081-2895'
+
+  - name: 'City Social Welfare and Development Office(CSWDO) - Main'
+    phone: '0919-081-1345'
+    departmentSlug: cswdo
+
+  - name: 'CSWDO - Educational, Medical, and Burial Assistance'
+    phone: '0919-081-0246'
+    departmentSlug: cswdo
+
+  - name: 'CSWDO - Psycho-social Intervention Unit'
+    phone: '0919-081-0234'
+    departmentSlug: cswdo
+
+  - name: 'Funeraria de Cabanatuan'
+    phone: '0918-904-7130'
