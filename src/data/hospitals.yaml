@@ -1,0 +1,41 @@
+# Hospital contact information for Cabanatuan City
+# Each entry includes name, phone, address, and an optional description
+# To add a new hospital, copy an entry below and fill in the fields
+
+hospitals:
+  - name: 'MV Gallego Cabanatuan City General Hospital'
+    phone: '0919-089-9880'
+    address: 'Gabaldon, Cabanatuan City, Nueva Ecija'
+    description: >
+      City government-run general hospital providing emergency care,
+      inpatient services, and outpatient consultations for residents
+      of Cabanatuan City and neighboring municipalities.
+
+  - name: 'Immaculate Conception Medical Center'
+    phone: '(044) 940-0900 · (044) 940-0700'
+    address: 'Circumferential Road, San Juan Accfa, Cabanatuan City'
+    description: 'Email: info@icmcne.com'
+
+  - name: 'Medical City Clinic'
+    phone: '(02) 8396 9899'
+    address: >-
+      17th Floor, Exquadra Tower, Exchange Road cor. Jade Drive,
+      Ortigas Center, Pasig City
+
+  - name: 'Dr Paulino J. Garcia Memorial Research and Medical Center'
+    phone: '(044) 463-8888'
+    address: 'Cabanatuan City, Nueva Ecija'
+    description: >
+      Medical records (birth certificate, death certificate, medical
+      certificate): hirms@drpjgmrmc.doh.gov.ph. X-ray, CT-scan, MRI, and
+      imaging inquiries: imaging@drpjgmrmc.doh.gov.ph.
+
+  - name: 'Premier Medical Center'
+    phone: '0998-582-9702 · (044) 463-7845 to 48 local 101'
+    address: 'Maharlika Highway, Daan Sarile, Cabanatuan City, Nueva Ecija'
+    description: >
+      Customer inquiries: inquiry@pmcne.ph. Feedback: feedback@pmcne.ph.
+
+  - name: 'GoodSam Medical Center (Cabanatuan City)'
+    phone: '(044) 951-8888'
+    address: 'Burgos Ave., Cabanatuan, Nueva Ecija, Philippines 3100'

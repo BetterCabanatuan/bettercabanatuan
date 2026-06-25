@@ -20,6 +20,7 @@ export const siteConfig = {
   province: env.VITE_PROVINCE || 'Nueva Ecija',
   websiteUrl: env.VITE_WEBSITE_URL || 'https://www.cabanatuancity.gov.ph/',
   contactEmail: env.VITE_CONTACT_EMAIL || 'cabanatuan.lgu@gmail.com',
+  portalEmail: 'bettercabanatuan@gmail.com',
   contactPhone: env.VITE_CONTACT_PHONE || '0919-081-3749',
   facebookUrl: env.VITE_FACEBOOK_URL || '',
   twitterUrl: env.VITE_TWITTER_URL || '',
