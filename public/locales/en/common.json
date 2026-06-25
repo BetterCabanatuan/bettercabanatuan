@@ -255,6 +255,9 @@
       "title": "Find the Right Office",
       "description": "Browse government sections to find the department or information you need."
     },
+    "hospitals": {
+      "title": "Hospitals"
+    },
     "disclaimer": "This contact page is part of the Better Cabanatuan community portal, not an official government system. For verified transactions and official records, always use the <1>official {{city}} website</1> or visit City Hall in person."
   },
   "about": {

@@ -255,6 +255,9 @@
       "title": "Hanapin ang Tamang Opisina",
       "description": "Mag-browse sa mga seksyon ng pamahalaan para mahanap ang departamento o impormasyong kailangan ninyo."
     },
+    "hospitals": {
+      "title": "Mga Ospital"
+    },
     "disclaimer": "Bahagi ng Better Cabanatuan community portal ang contact page na ito, hindi opisyal na sistema ng pamahalaan. Para sa verified na transaksyon at opisyal na record, gamitin palaging ang <1>opisyal na website ng {{city}}</1> o bumisita sa City Hall nang personal."
   },
   "about": {

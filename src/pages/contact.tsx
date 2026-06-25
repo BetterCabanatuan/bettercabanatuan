@@ -28,6 +28,7 @@ import type { Category } from '../data/yamlLoader';
 import EmergencyHotlinesSection from '../components/contact/EmergencyHotlinesSection';
 import DepartmentContactsSection from '../components/contact/DepartmentContactsSection';
 import { formatPhoneForTel } from '../data/hotlines';
+import { allHospitals } from '../data/hospitals';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 
 export default function ContactPage() {
@@ -60,13 +61,15 @@ export default function ContactPage() {
       id: 'communityPortal',
       title: t('contact.channels.communityPortal.title'),
       description: t('contact.channels.communityPortal.description'),
-      email: siteConfig.contactEmail,
+      email: siteConfig.portalEmail,
       link: 'https://github.com/BetterCabanatuan/bettercabanatuan',
       linkLabel: t('contact.channels.communityPortal.linkLabel'),
       icon: MessageSquare,
       accent: 'border-secondary-500',
     },
   ];
+
+  const hospitalsHotlines = allHospitals;
 
   const socialLinks = [
     {
@@ -120,7 +123,6 @@ export default function ContactPage() {
         <Section className="p-3 mb-0 pt-8">
           <EmergencyHotlinesSection />
           <DepartmentContactsSection />
-
           <div
             id="contact-offices"
             className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 scroll-mt-28"
@@ -196,7 +198,7 @@ export default function ContactPage() {
               </Card>
             ))}
           </div>
-
+          {/* // Contact Offices Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
             <Card>
               <CardContent className="p-6">
@@ -233,7 +235,7 @@ export default function ContactPage() {
                 </a>
               </CardContent>
             </Card>
-
+            {/* // Office hours */}
             <Card>
               <CardContent className="p-6">
                 <Heading level={3} className="mb-4">
@@ -273,6 +275,51 @@ export default function ContactPage() {
             </Card>
           </div>
 
+          <div>
+            {hospitalsHotlines.length > 0 && (
+              <div className="mb-12">
+                <Heading level={3} className="mb-4">
+                  {t('contact.hospitals.title')}
+                </Heading>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {hospitalsHotlines.map(hospital => (
+                    <Card key={hospital.name} className="h-full">
+                      <CardContent className="p-5 flex flex-col h-full">
+                        <Heading level={4} className="mb-2 text-base">
+                          {hospital.name}
+                        </Heading>
+                        <Text className="text-gray-600 text-sm mb-5 flex-grow">
+                          {hospital.description}
+                        </Text>
+                        {hospital.phone && (
+                          <a
+                            href={`tel:${formatPhoneForTel(hospital.phone)}`}
+                            className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
+                          >
+                            <Phone
+                              className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
+                              aria-hidden="true"
+                            />
+                            <span>{hospital.phone}</span>
+                          </a>
+                        )}
+                        {hospital.address && (
+                          <div className="flex items-start gap-3 text-gray-700 mt-3">
+                            <MapPin
+                              className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
+                              aria-hidden="true"
+                            />
+                            <span className="text-sm">{hospital.address}</span>
+                          </div>
+                        )}
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
           {socialLinks.length > 0 && (
             <div className="mb-12">
               <Heading level={3} className="mb-4">
@@ -294,7 +341,6 @@ export default function ContactPage() {
               </div>
             </div>
           )}
-
           <div>
             <Heading level={3} className="mb-2">
               {t('contact.findOffice.title')}
@@ -322,7 +368,6 @@ export default function ContactPage() {
               })}
             </div>
           </div>
-
           <Card className="mt-12 bg-amber-50 border-amber-200">
             <CardContent className="p-5">
               <Text className="text-sm text-gray-700 mb-0">
