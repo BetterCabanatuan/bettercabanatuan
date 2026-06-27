@@ -4,6 +4,7 @@ import GovernmentActivitySection from '../components/home/GovernmentActivitySect
 import CityStats from '../components/home/CityStats';
 import Map from '../components/home/Map';
 import Weather from '../components/home/Weather';
+import FacebookSection from '../components/home/FacebookSection';
 import SEO from '../components/SEO';
 import { organizationJsonLd, webSiteJsonLd } from '../lib/structuredData';
 import { siteConfig } from '../lib/siteConfig';
@@ -21,8 +22,9 @@ const Home: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <CityStats />
-        <ServicesSection />
-        <GovernmentActivitySection />
+        <ServicesSection compact />
+        <GovernmentActivitySection compact />
+        <FacebookSection />
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
           <Map />
           <Weather />

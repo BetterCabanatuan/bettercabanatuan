@@ -58,11 +58,27 @@
     "governmentServices": "Government Services",
     "description": "Access official government services quickly and easily. Find what you need for citizenship, business, education, and more.",
     "viewAll": "View All Services",
-    "viewAllCategory": "View All"
+    "viewAllCategory": "View All",
+    "compact": {
+      "health": "Health",
+      "education": "Education",
+      "business": "Business",
+      "socialWelfare": "Social Welfare",
+      "other": "Other",
+      "otherDescription": "Browse all government service categories."
+    }
   },
   "governmentActivity": {
     "title": "Government Activity",
-    "description": "Stay updated with the latest government activities and announcements."
+    "description": "Stay updated with the latest government activities and announcements.",
+    "compact": {
+      "officials": "Officials",
+      "departments": "Departments",
+      "projects": "Projects",
+      "barangays": "Barangays",
+      "other": "Other",
+      "otherDescription": "Browse all government sections and resources."
+    }
   },
   "weather": {
     "title": "Weather Updates",
@@ -95,7 +111,11 @@
     "title": "Foreign Exchange Rates"
   },
   "news": {
-    "title": "Latest News & Updates"
+    "title": "Latest News & Updates",
+    "badge": "Official Updates",
+    "description": "Stay updated with the latest government activities and announcements from Cabanatuan City.",
+    "followCta": "Follow on Facebook",
+    "embedLabel": "Facebook page feed for {{page}}"
   },
   "footer": {
     "copyright": "© 2026 BetterGov. All content is public domain unless otherwise specified."

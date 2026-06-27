@@ -58,11 +58,27 @@
     "governmentServices": "Serbisyo ng Pamahalaan",
     "description": "Ma-access nang mabilis at madali ang opisyal na serbisyo ng pamahalaan. Hanapin ang kailangan ninyo para sa citizenship, negosyo, edukasyon, at iba pa.",
     "viewAll": "Tingnan Lahat ng Serbisyo",
-    "viewAllCategory": "Tingnan Lahat"
+    "viewAllCategory": "Tingnan Lahat",
+    "compact": {
+      "health": "Kalusugan",
+      "education": "Edukasyon",
+      "business": "Negosyo",
+      "socialWelfare": "Social Welfare",
+      "other": "Iba pa",
+      "otherDescription": "Mag-browse sa lahat ng kategorya ng serbisyo ng pamahalaan."
+    }
   },
   "governmentActivity": {
     "title": "Aktibidad ng Pamahalaan",
-    "description": "Manatiling updated sa pinakabagong aktibidad at anunsyo ng pamahalaan."
+    "description": "Manatiling updated sa pinakabagong aktibidad at anunsyo ng pamahalaan.",
+    "compact": {
+      "officials": "Mga Opisyal",
+      "departments": "Mga Departamento",
+      "projects": "Mga Proyekto",
+      "barangays": "Mga Barangay",
+      "other": "Iba pa",
+      "otherDescription": "Mag-browse sa lahat ng seksyon at resource ng pamahalaan."
+    }
   },
   "weather": {
     "title": "Update sa Panahon",
@@ -95,7 +111,11 @@
     "title": "Foreign Exchange Rates"
   },
   "news": {
-    "title": "Pinakabagong Balita at Update"
+    "title": "Pinakabagong Balita at Update",
+    "badge": "Opisyal na Update",
+    "description": "Manatiling updated sa pinakabagong aktibidad at anunsyo ng Pamahalaang Lungsod ng Cabanatuan.",
+    "followCta": "I-follow sa Facebook",
+    "embedLabel": "Facebook page feed para sa {{page}}"
   },
   "footer": {
     "copyright": "© 2026 BetterGov. Lahat ng nilalaman ay public domain maliban kung may ibang nakasaad."

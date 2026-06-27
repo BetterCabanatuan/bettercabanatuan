@@ -25,12 +25,29 @@ interface GovernmentActivitySectionProps {
   title?: string;
   description?: string;
   showHeader?: boolean;
+  compact?: boolean;
+}
+
+const FEATURED_SLUGS = [
+  'officials',
+  'departments',
+  'projects',
+  'barangays',
+] as const;
+
+function getGovernmentHref(slug: string): string {
+  if (slug === 'officials') return '/government/officials';
+  if (slug === 'barangays') return '/government/barangays';
+  if (slug === 'departments') return '/government/departments';
+  if (slug === 'projects') return '/government/projects';
+  return `/government/${slug}`;
 }
 
 export default function GovernmentActivitySection({
   title,
   description,
   showHeader = true,
+  compact = false,
 }: GovernmentActivitySectionProps = {}) {
   const { t } = useTranslation();
 
@@ -39,7 +56,22 @@ export default function GovernmentActivitySection({
     return <IconComponent className="h-6 w-6" />;
   };
 
-  const displayedCategories = governmentCategories.categories as Category[];
+  const allCategories = governmentCategories.categories as Category[];
+
+  const displayedCategories = compact
+    ? [
+        ...FEATURED_SLUGS.map(slug =>
+          allCategories.find(category => category.slug === slug)
+        ).filter((category): category is Category => Boolean(category)),
+        {
+          category: t('governmentActivity.compact.other'),
+          slug: 'other',
+          description: t('governmentActivity.compact.otherDescription'),
+          icon: 'LayoutGrid',
+          subcategories: [],
+        },
+      ]
+    : allCategories;
 
   const content = (
     <>
@@ -52,18 +84,18 @@ export default function GovernmentActivitySection({
         </>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        className={
+          compact
+            ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6'
+            : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'
+        }
+      >
         {displayedCategories.map(category => {
           const href =
-            category.slug === 'officials'
-              ? '/government/officials'
-              : category.slug === 'barangays'
-                ? '/government/barangays'
-                : category.slug === 'departments'
-                  ? '/government/departments'
-                  : category.slug === 'projects'
-                    ? '/government/projects'
-                    : `/government/${category.slug}`;
+            category.slug === 'other'
+              ? '/government'
+              : getGovernmentHref(category.slug);
 
           return (
             <Card

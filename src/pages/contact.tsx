@@ -30,6 +30,7 @@ import DepartmentContactsSection from '../components/contact/DepartmentContactsS
 import { formatPhoneForTel } from '../data/hotlines';
 import { allHospitals } from '../data/hospitals';
 import { Card, CardContent } from '@bettergov/kapwa/card';
+import FacebookPagePlugin from '../components/FacebookPagePlugin';
 
 export default function ContactPage() {
   const { t } = useTranslation('common');
@@ -320,25 +321,35 @@ export default function ContactPage() {
             )}
           </div>
 
-          {socialLinks.length > 0 && (
+          {(siteConfig.facebookUrl || socialLinks.length > 0) && (
             <div className="mb-12">
               <Heading level={3} className="mb-4">
                 {t('contact.connectOnline')}
               </Heading>
-              <div className="flex flex-wrap gap-3">
-                {socialLinks.map(link => (
-                  <a
-                    key={link.labelKey}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 min-h-[44px] px-5 py-2.5 rounded-lg border border-gray-200 text-gray-700 hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-all duration-200"
-                  >
-                    <link.icon className="h-4 w-4" aria-hidden="true" />
-                    {t(link.labelKey)}
-                  </a>
-                ))}
-              </div>
+              {siteConfig.facebookUrl && (
+                <div className="mb-6 w-full max-w-[500px]">
+                  <FacebookPagePlugin
+                    href={siteConfig.facebookUrl}
+                    pageName={siteConfig.governmentName}
+                  />
+                </div>
+              )}
+              {socialLinks.length > 0 && (
+                <div className="flex flex-wrap gap-3">
+                  {socialLinks.map(link => (
+                    <a
+                      key={link.labelKey}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 min-h-[44px] px-5 py-2.5 rounded-lg border border-gray-200 text-gray-700 hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-all duration-200"
+                    >
+                      <link.icon className="h-4 w-4" aria-hidden="true" />
+                      {t(link.labelKey)}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           )}
           <div>

@@ -22,7 +22,8 @@ export const siteConfig = {
   contactEmail: env.VITE_CONTACT_EMAIL || 'cabanatuan.lgu@gmail.com',
   portalEmail: 'bettercabanatuan@gmail.com',
   contactPhone: env.VITE_CONTACT_PHONE || '0919-081-3749',
-  facebookUrl: env.VITE_FACEBOOK_URL || '',
+  facebookUrl:
+    env.VITE_FACEBOOK_URL || 'https://www.facebook.com/lgucabanatuan',
   twitterUrl: env.VITE_TWITTER_URL || '',
   instagramUrl: env.VITE_INSTAGRAM_URL || '',
   youtubeUrl: env.VITE_YOUTUBE_URL || '',
