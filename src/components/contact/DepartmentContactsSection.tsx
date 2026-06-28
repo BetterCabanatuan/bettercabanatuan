@@ -31,7 +31,7 @@ function ContactRow({ contact }: { contact: DepartmentContactLine }) {
       <td className="py-3.5 px-4 text-sm align-top whitespace-nowrap">
         <a
           href={`tel:${formatPhoneForTel(contact.phone)}`}
-          className="inline-flex items-center gap-2 min-h-[44px] text-primary-700 hover:text-primary-800 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors"
+          className="inline-flex items-center gap-2 min-h-[44px] text-primary-700 hover:text-primary-800 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
         >
           <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
           {contact.phone}
@@ -67,16 +67,20 @@ export default function DepartmentContactsSection() {
           <p className="text-sm font-semibold uppercase tracking-wide text-primary-600 mb-1">
             {t('departmentContacts.eyebrow')}
           </p>
-          <Heading level={2} id="department-contacts-heading" className="mb-2">
+          <Heading
+            level={2}
+            id="department-contacts-heading"
+            className="mb-2 text-balance"
+          >
             {t('departmentContacts.title')}
           </Heading>
-          <Text className="text-gray-600 mb-0 max-w-2xl">
+          <Text className="text-gray-600 mb-0 max-w-2xl text-pretty">
             {t('departmentContacts.description')}
           </Text>
         </div>
       </div>
 
-      <Card className="mb-4 border-primary-100 bg-primary-50/40">
+      <Card className="mb-4 bg-primary-50/40 shadow-[inset_0_0_0_1px_rgba(0,102,235,0.15)]">
         <CardContent className="p-4 flex items-start gap-3">
           <Clock
             className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
@@ -99,11 +103,11 @@ export default function DepartmentContactsSection() {
           onChange={e => setQuery(e.target.value)}
           placeholder={t('departmentContacts.searchPlaceholder')}
           aria-label={t('departmentContacts.searchPlaceholder')}
-          className="w-full min-h-[44px] pl-10 pr-4 py-2.5 rounded-lg border border-gray-200 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:border-primary-600"
+          className="w-full min-h-[44px] pl-10 pr-4 py-2.5 rounded-xl shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:shadow-[inset_0_0_0_1px_rgba(0,102,235,0.35)] transition-[box-shadow] duration-200"
         />
       </div>
 
-      <Card className="overflow-hidden">
+      <Card className="overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06]">
         <CardContent className="p-0">
           <div className="overflow-x-auto">
             <table className="w-full min-w-[520px]">
@@ -153,7 +157,7 @@ export default function DepartmentContactsSection() {
         </CardContent>
       </Card>
 
-      <Text className="text-xs text-gray-500 mt-3 mb-0">
+      <Text className="text-xs text-gray-500 mt-3 mb-0 tabular-nums">
         {t('departmentContacts.showing', {
           count: filteredContacts.length,
           total: departmentContactsData.contacts.length,

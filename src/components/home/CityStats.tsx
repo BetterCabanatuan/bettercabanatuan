@@ -49,10 +49,10 @@ export default function CityStats() {
           <TrendingUp className="w-4 h-4" />
           <span>{t('cityStats.badge')}</span>
         </div>
-        <Heading level={2} className="text-gray-900">
+        <Heading level={2} className="text-gray-900 text-balance">
           {t('cityStats.title')}
         </Heading>
-        <p className="text-gray-600 max-w-2xl mx-auto mt-2">
+        <p className="text-gray-600 max-w-2xl mx-auto mt-2 text-pretty">
           {t('cityStats.subtitle', { city: cityData.cityName })}
         </p>
       </div>
@@ -61,16 +61,16 @@ export default function CityStats() {
         {stats.map((stat, index) => (
           <div
             key={stat.labelKey}
-            className={`group relative bg-white rounded-xl border-t-4 ${stat.borderColor} shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 p-6`}
+            className={`group relative bg-white rounded-2xl border-t-4 ${stat.borderColor} shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.1)] transition-[transform,box-shadow,opacity] duration-300 hover:-translate-y-1 p-6 motion-safe:animate-stat-rise motion-reduce:hover:translate-y-0`}
             style={{ animationDelay: `${index * 100}ms` }}
           >
             <div
-              className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${stat.color} mb-4 transition-transform duration-300 group-hover:scale-110`}
+              className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${stat.color} mb-4 transition-transform duration-300 group-hover:scale-110 motion-reduce:group-hover:scale-100`}
             >
               <stat.icon className="w-6 h-6" />
             </div>
 
-            <div className="text-3xl font-bold text-gray-900 mb-1">
+            <div className="text-3xl font-bold text-gray-900 mb-1 tabular-nums">
               {stat.value}
             </div>
 
@@ -82,7 +82,7 @@ export default function CityStats() {
               {t(stat.descriptionKey)}
             </div>
 
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
           </div>
         ))}
       </div>

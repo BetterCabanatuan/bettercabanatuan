@@ -94,7 +94,7 @@ export default function Hero() {
 
             <h1
               id="hero-heading"
-              className="text-[2.75rem] sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-semibold leading-[1.05] text-white mb-6"
+              className="text-[2.75rem] sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-semibold leading-[1.05] text-white mb-6 text-balance"
             >
               <span className="block">{siteConfig.governmentName}</span>
               <span className="block text-primary-100 mt-1">
@@ -102,21 +102,21 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-white/85 max-w-xl leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-white/85 max-w-xl leading-relaxed mb-8 text-pretty">
               {t('hero.subtitle')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-7 py-3 bg-white text-primary-900 rounded-xl font-semibold hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700 transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-7 py-3 bg-white text-primary-900 rounded-xl font-semibold hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700 transition-[transform,background-color,box-shadow] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
               >
                 {t('hero.exploreServices')}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
                 to="/about"
-                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-7 py-3 rounded-xl font-semibold text-white border border-white/30 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700 transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-7 py-3 rounded-xl font-semibold text-white border border-white/30 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700 transition-[transform,background-color,border-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
               >
                 {t('hero.learnMore')}
               </Link>
@@ -158,20 +158,20 @@ export default function Hero() {
                 <Link
                   key={path.href}
                   to={path.href}
-                  className="group relative overflow-hidden rounded-2xl border border-white/80 bg-white p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-all duration-200 motion-safe:animate-fade-in"
+                  className="group relative overflow-hidden rounded-2xl bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.06),0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-[transform,box-shadow] duration-200 active:scale-[0.96] motion-safe:animate-slide-in motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100"
                   style={{ animationDelay: `${index * 80}ms` }}
                 >
                   <div
                     className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${path.accent}`}
                     aria-hidden="true"
                   />
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gray-50 text-primary-600 mb-4 group-hover:bg-primary-50 transition-colors duration-200">
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gray-50 text-primary-600 mb-4 group-hover:bg-primary-50 transition-colors duration-200">
                     <path.icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <h2 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-primary-700 transition-colors">
+                  <h2 className="text-base font-semibold text-gray-900 mb-1 text-balance group-hover:text-primary-700 transition-colors duration-200">
                     {t(path.titleKey)}
                   </h2>
-                  <p className="text-sm text-gray-500 leading-snug">
+                  <p className="text-sm text-gray-500 leading-snug text-pretty">
                     {t(
                       path.descriptionKey,
                       'descriptionValues' in path
@@ -180,7 +180,7 @@ export default function Hero() {
                     )}
                   </p>
                   <ArrowUpRight
-                    className="absolute top-5 right-5 h-4 w-4 text-gray-300 group-hover:text-primary-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
+                    className="absolute top-5 right-5 h-4 w-4 text-gray-300 group-hover:text-primary-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-[transform,color] duration-200"
                     aria-hidden="true"
                   />
                 </Link>
@@ -200,7 +200,7 @@ export default function Hero() {
                 <Link
                   key={topic.href}
                   to={topic.href}
-                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-all duration-200"
+                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-[transform,background-color,border-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                 >
                   <topic.icon
                     className="h-4 w-4 text-primary-200"
@@ -213,7 +213,7 @@ export default function Hero() {
                 <Link
                   key={service.slug}
                   to={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-all duration-200"
+                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-[transform,background-color,border-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                 >
                   {service.category}
                 </Link>

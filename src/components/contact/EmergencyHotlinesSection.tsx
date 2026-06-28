@@ -19,10 +19,14 @@ export default function EmergencyHotlinesSection() {
           <p className="text-sm font-semibold uppercase tracking-wide text-red-600 mb-1">
             {t('hotlines.section.eyebrow')}
           </p>
-          <Heading level={2} id="emergency-hotlines-heading" className="mb-2">
+          <Heading
+            level={2}
+            id="emergency-hotlines-heading"
+            className="mb-2 text-balance"
+          >
             {t('hotlines.section.title')}
           </Heading>
-          <Text className="text-gray-600 mb-0 max-w-2xl">
+          <Text className="text-gray-600 mb-0 max-w-2xl text-pretty">
             {t('hotlines.section.description')}
           </Text>
         </div>
@@ -30,7 +34,7 @@ export default function EmergencyHotlinesSection() {
           href="https://bettergov.ph/philippines/hotlines"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 min-h-[44px] text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200 shrink-0"
+          className="inline-flex items-center gap-2 min-h-[44px] text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100 shrink-0"
         >
           {t('hotlines.section.nationalLink')}
           <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -38,17 +42,18 @@ export default function EmergencyHotlinesSection() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {emergencyHotlines.map(hotline => {
+        {emergencyHotlines.map((hotline, index) => {
           const Icon = hotline.icon;
 
           return (
             <Card
               key={hotline.id}
-              className="h-full border-t-4 border-red-500 overflow-hidden"
+              className="h-full border-t-4 border-red-500 overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6">
                 <div className="flex items-start gap-4 mb-4">
-                  <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-red-50 text-red-600 shrink-0">
+                  <span className="flex items-center justify-center w-11 h-11 rounded-lg bg-red-50 text-red-600 shrink-0">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <div>
@@ -70,7 +75,7 @@ export default function EmergencyHotlinesSection() {
                     <li key={phone.number}>
                       <a
                         href={`tel:${formatPhoneForTel(phone.number)}`}
-                        className="group flex items-center gap-3 min-h-[44px] px-4 py-2.5 rounded-lg border border-gray-100 bg-gray-50/80 hover:border-red-200 hover:bg-red-50/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-600 transition-all duration-200"
+                        className="group flex items-center gap-3 min-h-[44px] px-4 py-2.5 rounded-lg bg-gray-50/80 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)] hover:bg-red-50/60 hover:shadow-[inset_0_0_0_1px_rgba(239,68,68,0.25)] focus:outline-none focus-visible:ring-2 focus-visible:ring-red-600 transition-[transform,background-color,box-shadow] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                       >
                         <Phone
                           className="h-4 w-4 text-red-600 shrink-0"
@@ -89,9 +94,9 @@ export default function EmergencyHotlinesSection() {
         })}
       </div>
 
-      <Card className="mt-6 bg-red-50 border-red-200">
+      <Card className="mt-6 rounded-2xl bg-red-50 shadow-[inset_0_0_0_1px_rgba(239,68,68,0.25)]">
         <CardContent className="p-5">
-          <Text className="text-sm text-gray-700 mb-0">
+          <Text className="text-sm text-gray-700 mb-0 text-pretty">
             <Trans
               i18nKey="hotlines.section.disclaimer"
               components={{

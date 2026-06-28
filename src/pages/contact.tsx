@@ -112,10 +112,13 @@ export default function ContactPage() {
             <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
               {t('contact.eyebrow')}
             </p>
-            <Heading id="contact-heading" className="text-white mb-3 max-w-3xl">
+            <Heading
+              id="contact-heading"
+              className="text-white mb-3 max-w-3xl text-balance"
+            >
               {t('contact.title')}
             </Heading>
-            <Text className="text-white/85 max-w-2xl text-base md:text-lg mb-0">
+            <Text className="text-white/85 max-w-2xl text-base md:text-lg mb-0 text-pretty">
               {t('contact.subtitle', { city: siteConfig.governmentName })}
             </Text>
           </div>
@@ -128,23 +131,24 @@ export default function ContactPage() {
             id="contact-offices"
             className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 scroll-mt-28"
           >
-            {contactChannels.map(channel => (
+            {contactChannels.map((channel, index) => (
               <Card
                 key={channel.id}
-                className={`h-full border-t-4 ${channel.accent}`}
+                className={`h-full border-t-4 ${channel.accent} shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none`}
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-50 text-primary-600">
                       <channel.icon className="h-5 w-5" aria-hidden="true" />
                     </span>
-                    <Heading level={3} className="mb-0 text-lg">
+                    <Heading level={3} className="mb-0 text-lg text-balance">
                       {channel.title}
                     </Heading>
                   </div>
 
                   {channel.description && (
-                    <Text className="text-gray-600 text-sm mb-5 flex-grow">
+                    <Text className="text-gray-600 text-sm mb-5 flex-grow text-pretty">
                       {channel.description}
                     </Text>
                   )}
@@ -153,7 +157,7 @@ export default function ContactPage() {
                     {channel.phone && (
                       <a
                         href={`tel:${formatPhoneForTel(channel.phone)}`}
-                        className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
+                        className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                       >
                         <Phone
                           className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
@@ -165,7 +169,7 @@ export default function ContactPage() {
                     {channel.email && (
                       <a
                         href={`mailto:${channel.email}`}
-                        className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200 break-all"
+                        className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100 break-all"
                       >
                         <Mail
                           className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
@@ -188,7 +192,7 @@ export default function ContactPage() {
                         href={channel.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 min-h-[44px] text-primary-600 hover:text-primary-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
+                        className="inline-flex items-center gap-2 min-h-[44px] text-primary-600 hover:text-primary-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                       >
                         {channel.linkLabel}
                         <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -201,9 +205,9 @@ export default function ContactPage() {
           </div>
           {/* // Contact Offices Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-            <Card>
+            <Card className="shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04]">
               <CardContent className="p-6">
-                <Heading level={3} className="mb-4">
+                <Heading level={3} className="mb-4 text-balance">
                   {t('contact.cityHallLocation.title')}
                 </Heading>
                 <div className="flex items-start gap-3 mb-4">
@@ -229,7 +233,7 @@ export default function ContactPage() {
                   href={`https://maps.google.com/?q=${encodeURIComponent(cityHallAddress)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 bg-primary-600 text-white rounded-lg text-sm font-medium hover:bg-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-colors duration-200"
+                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 bg-primary-600 text-white rounded-xl text-sm font-medium hover:bg-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-[transform,background-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100 shadow-[0_1px_2px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,102,235,0.25)]"
                 >
                   {t('contact.cityHallLocation.openMaps')}
                   <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -237,9 +241,9 @@ export default function ContactPage() {
               </CardContent>
             </Card>
             {/* // Office hours */}
-            <Card>
+            <Card className="shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04]">
               <CardContent className="p-6">
-                <Heading level={3} className="mb-4">
+                <Heading level={3} className="mb-4 text-balance">
                   {t('contact.officeHours.title')}
                 </Heading>
                 <div className="space-y-4">
@@ -252,7 +256,7 @@ export default function ContactPage() {
                       <p className="font-medium text-gray-900">
                         {t('contact.officeHours.cityOffices')}
                       </p>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-gray-600 text-pretty">
                         {t('contact.officeHours.cityHours')}
                       </p>
                     </div>
@@ -266,7 +270,7 @@ export default function ContactPage() {
                       <p className="font-medium text-gray-900">
                         {t('contact.officeHours.portalInquiries')}
                       </p>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-gray-600 text-pretty">
                         {t('contact.officeHours.portalResponse')}
                       </p>
                     </div>
@@ -279,23 +283,30 @@ export default function ContactPage() {
           <div>
             {hospitalsHotlines.length > 0 && (
               <div className="mb-12">
-                <Heading level={3} className="mb-4">
+                <Heading level={3} className="mb-4 text-balance">
                   {t('contact.hospitals.title')}
                 </Heading>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {hospitalsHotlines.map(hospital => (
-                    <Card key={hospital.name} className="h-full">
+                  {hospitalsHotlines.map((hospital, index) => (
+                    <Card
+                      key={hospital.name}
+                      className="h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+                      style={{ animationDelay: `${index * 80}ms` }}
+                    >
                       <CardContent className="p-5 flex flex-col h-full">
-                        <Heading level={4} className="mb-2 text-base">
+                        <Heading
+                          level={4}
+                          className="mb-2 text-base text-balance"
+                        >
                           {hospital.name}
                         </Heading>
-                        <Text className="text-gray-600 text-sm mb-5 flex-grow">
+                        <Text className="text-gray-600 text-sm mb-5 flex-grow text-pretty">
                           {hospital.description}
                         </Text>
                         {hospital.phone && (
                           <a
                             href={`tel:${formatPhoneForTel(hospital.phone)}`}
-                            className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-colors duration-200"
+                            className="flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                           >
                             <Phone
                               className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
@@ -323,7 +334,7 @@ export default function ContactPage() {
 
           {(siteConfig.facebookUrl || socialLinks.length > 0) && (
             <div className="mb-12">
-              <Heading level={3} className="mb-4">
+              <Heading level={3} className="mb-4 text-balance">
                 {t('contact.connectOnline')}
               </Heading>
               {siteConfig.facebookUrl && (
@@ -342,7 +353,7 @@ export default function ContactPage() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 min-h-[44px] px-5 py-2.5 rounded-lg border border-gray-200 text-gray-700 hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-all duration-200"
+                      className="inline-flex items-center gap-2 min-h-[44px] px-5 py-2.5 rounded-xl text-gray-700 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] hover:text-primary-700 hover:bg-primary-50 hover:shadow-[inset_0_0_0_1px_rgba(0,102,235,0.25)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-[transform,background-color,box-shadow,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
                     >
                       <link.icon className="h-4 w-4" aria-hidden="true" />
                       {t(link.labelKey)}
@@ -353,35 +364,38 @@ export default function ContactPage() {
             </div>
           )}
           <div>
-            <Heading level={3} className="mb-2">
+            <Heading level={3} className="mb-2 text-balance">
               {t('contact.findOffice.title')}
             </Heading>
-            <Text className="text-gray-600 mb-6">
+            <Text className="text-gray-600 mb-6 text-pretty">
               {t('contact.findOffice.description')}
             </Text>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {governmentSections.slice(0, 8).map((section: Category) => {
-                const href =
-                  section.slug === 'officials'
-                    ? '/government/officials'
-                    : section.slug === 'barangays'
-                      ? '/government/barangays'
-                      : `/government/${section.slug}`;
-                return (
-                  <Link
-                    key={section.slug}
-                    to={href}
-                    className="flex items-center min-h-[44px] px-4 py-3 rounded-lg border border-gray-200 text-sm font-medium text-gray-800 hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-all duration-200"
-                  >
-                    {section.category}
-                  </Link>
-                );
-              })}
+              {governmentSections
+                .slice(0, 8)
+                .map((section: Category, index) => {
+                  const href =
+                    section.slug === 'officials'
+                      ? '/government/officials'
+                      : section.slug === 'barangays'
+                        ? '/government/barangays'
+                        : `/government/${section.slug}`;
+                  return (
+                    <Link
+                      key={section.slug}
+                      to={href}
+                      className="flex items-center min-h-[44px] px-4 py-3 rounded-xl text-sm font-medium text-gray-800 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] hover:text-primary-700 hover:bg-primary-50 hover:shadow-[inset_0_0_0_1px_rgba(0,102,235,0.25)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-[transform,background-color,box-shadow,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100 motion-safe:animate-slide-in motion-reduce:animate-none"
+                      style={{ animationDelay: `${index * 60}ms` }}
+                    >
+                      {section.category}
+                    </Link>
+                  );
+                })}
             </div>
           </div>
-          <Card className="mt-12 bg-amber-50 border-amber-200">
+          <Card className="mt-12 rounded-2xl bg-amber-50 shadow-[inset_0_0_0_1px_rgba(245,158,11,0.35)]">
             <CardContent className="p-5">
-              <Text className="text-sm text-gray-700 mb-0">
+              <Text className="text-sm text-gray-700 mb-0 text-pretty">
                 <Trans
                   i18nKey="contact.disclaimer"
                   values={{ city: siteConfig.governmentName }}

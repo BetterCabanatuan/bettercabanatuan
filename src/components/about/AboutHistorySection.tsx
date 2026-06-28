@@ -37,18 +37,21 @@ export default function AboutHistorySection() {
   return (
     <Section className="bg-gray-50">
       <div className="max-w-3xl mx-auto">
-        <Heading level={2} className="mb-2">
+        <Heading level={2} className="mb-2 text-balance">
           {t('about.history.title')}
         </Heading>
         {history.description && (
-          <Text className="text-gray-600 mb-8">
+          <Text className="text-gray-600 mb-8 text-pretty">
             {t('about.history.description')}
           </Text>
         )}
 
         <div className="prose prose-gray max-w-none space-y-5">
           {visibleParagraphs.map((paragraph, index) => (
-            <p key={index} className="text-gray-700 leading-relaxed">
+            <p
+              key={index}
+              className="text-gray-700 leading-relaxed text-pretty"
+            >
               {paragraph}
             </p>
           ))}
@@ -57,7 +60,7 @@ export default function AboutHistorySection() {
         {needsToggle && (
           <button
             onClick={() => setExpanded(!expanded)}
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded transition-colors"
+            className="mt-4 inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-lg transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
             aria-expanded={expanded}
           >
             {expanded ? (
@@ -80,13 +83,14 @@ export default function AboutHistorySection() {
               {t('common.fastFacts')}
             </Heading>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {history.fastFacts.map(fact => {
+              {history.fastFacts.map((fact, index) => {
                 const labelKey = getFactLabelKey(fact.label);
 
                 return (
                   <Card
                     key={fact.label}
-                    className="border-t-4 border-primary-500 h-full"
+                    className="border-t-4 border-primary-500 h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+                    style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <CardContent className="p-5">
                       <div className="flex items-start gap-3">

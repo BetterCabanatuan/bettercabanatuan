@@ -28,10 +28,13 @@ export default function AboutHero() {
         <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
           {t('about.hero.eyebrow')}
         </p>
-        <Heading id="about-heading" className="text-white mb-3 max-w-3xl">
+        <Heading
+          id="about-heading"
+          className="text-white mb-3 max-w-3xl text-balance"
+        >
           {t('about.hero.title', { city: siteConfig.governmentName })}
         </Heading>
-        <Text className="text-white/85 max-w-2xl text-base md:text-lg mb-0">
+        <Text className="text-white/85 max-w-2xl text-base md:text-lg mb-0 text-pretty">
           {t('about.hero.subtitle', {
             serviceCount: services.length,
             govCount: governmentSections.length,

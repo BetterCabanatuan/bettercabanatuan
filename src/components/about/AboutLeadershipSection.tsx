@@ -16,15 +16,15 @@ export default function AboutLeadershipSection() {
 
   return (
     <Section>
-      <Heading level={2} className="mb-2">
+      <Heading level={2} className="mb-2 text-balance">
         {t('about.leadership.title')}
       </Heading>
-      <Text className="text-gray-600 mb-8">
+      <Text className="text-gray-600 mb-8 text-pretty">
         {t('about.leadership.description', { city: siteConfig.governmentName })}
       </Text>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {leadership.mayor && (
-          <Card className="border-t-4 border-yellow-500">
+          <Card className="border-t-4 border-yellow-500 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="h-6 w-6 text-yellow-600" aria-hidden="true" />
@@ -45,7 +45,10 @@ export default function AboutLeadershipSection() {
           </Card>
         )}
         {leadership.viceMayor && (
-          <Card className="border-t-4 border-primary-500">
+          <Card
+            className="border-t-4 border-primary-500 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+            style={{ animationDelay: '100ms' }}
+          >
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Landmark
@@ -72,7 +75,7 @@ export default function AboutLeadershipSection() {
       <div className="mt-6">
         <Link
           to="/government/officials"
-          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md"
+          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
         >
           {t('about.leadership.viewAll', { count: leadership.totalOfficials })}
           <ExternalLink className="h-4 w-4" aria-hidden="true" />

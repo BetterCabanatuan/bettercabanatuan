@@ -11,7 +11,7 @@ export default function AboutDisclaimerSection() {
 
   return (
     <Section>
-      <Card className="bg-amber-50 border-amber-200">
+      <Card className="rounded-2xl bg-amber-50 shadow-[inset_0_0_0_1px_rgba(245,158,11,0.35)]">
         <CardContent className="p-6">
           <div className="flex items-start gap-3">
             <AlertTriangle
@@ -19,8 +19,10 @@ export default function AboutDisclaimerSection() {
               aria-hidden="true"
             />
             <div>
-              <Heading level={3}>{t('about.disclaimer.title')}</Heading>
-              <Text className="text-gray-700 mb-4">
+              <Heading level={3} className="text-balance">
+                {t('about.disclaimer.title')}
+              </Heading>
+              <Text className="text-gray-700 mb-4 text-pretty">
                 {t('about.disclaimer.body1')}
               </Text>
               <Text className="text-gray-700 mb-0">

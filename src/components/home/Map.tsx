@@ -58,11 +58,13 @@ export default function Map() {
   return (
     <Section className="h-full !py-8">
       <div className="text-center mb-4">
-        <Heading level={2}>{t('map.title')}</Heading>
-        <p className="text-gray-600 mt-2 flex items-center justify-center gap-2 max-w-2xl mx-auto text-sm">
+        <Heading level={2} className="text-balance">
+          {t('map.title')}
+        </Heading>
+        <p className="text-gray-600 mt-2 flex items-center justify-center gap-2 max-w-2xl mx-auto text-sm text-pretty">
           <MapPin className="w-4 h-4 shrink-0" aria-hidden="true" />
           <a
-            className="hover:underline text-primary-600"
+            className="inline-flex min-h-[44px] items-center hover:underline text-primary-600 transition-colors duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -73,7 +75,7 @@ export default function Map() {
       </div>
 
       <div
-        className="relative z-0 rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-gray-100"
+        className="relative z-0 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] bg-gray-100"
         style={{ height: MAP_PANEL_HEIGHT }}
       >
         {isMounted ? (
@@ -81,7 +83,7 @@ export default function Map() {
             center={position}
             zoom={cityHallLocation.zoom}
             scrollWheelZoom={false}
-            className="h-full w-full z-0"
+            className="h-full w-full z-0 outline outline-1 outline-black/10"
             style={{ height: MAP_PANEL_HEIGHT, width: '100%' }}
           >
             <MapResizeHandler />

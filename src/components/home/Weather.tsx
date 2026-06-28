@@ -103,14 +103,16 @@ export default function Weather() {
   return (
     <Section className="h-full !py-8">
       <div className="text-center mb-4">
-        <Heading level={2}>{t('weather.title')}</Heading>
-        <p className="text-gray-600 mt-2 text-sm max-w-2xl mx-auto">
+        <Heading level={2} className="text-balance">
+          {t('weather.title')}
+        </Heading>
+        <p className="text-gray-600 mt-2 text-sm max-w-2xl mx-auto text-pretty">
           {t('weather.subtitle', { city: siteConfig.governmentName })}
         </p>
       </div>
 
       <Card
-        className="border border-gray-200 shadow-sm overflow-hidden"
+        className="rounded-2xl shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] overflow-hidden"
         style={{ height: MAP_PANEL_HEIGHT }}
       >
         <div className="h-1 bg-gradient-to-r from-sky-400 via-primary-500 to-primary-700" />
@@ -127,7 +129,7 @@ export default function Weather() {
               <button
                 type="button"
                 onClick={() => void loadWeather()}
-                className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-lg bg-primary-600 text-white text-sm font-medium hover:bg-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-colors duration-200"
+                className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-lg bg-primary-600 text-white text-sm font-medium hover:bg-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-[transform,background-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
               >
                 <RefreshCw className="h-4 w-4" aria-hidden="true" />
                 {t('weather.retry')}
@@ -156,7 +158,7 @@ export default function Weather() {
               </div>
 
               <div className="grid grid-cols-3 gap-2">
-                <div className="rounded-lg bg-gray-50 border border-gray-100 px-3 py-2">
+                <div className="rounded-lg bg-gray-50 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.04)] px-3 py-2">
                   <div className="flex items-center gap-1 text-gray-500 text-[10px] font-medium uppercase tracking-wide mb-0.5">
                     <Thermometer className="h-3 w-3" aria-hidden="true" />
                     {t('weather.feelsLike')}
@@ -165,7 +167,7 @@ export default function Weather() {
                     {Math.round(weather.current.apparentTemperature)}°
                   </p>
                 </div>
-                <div className="rounded-lg bg-gray-50 border border-gray-100 px-3 py-2">
+                <div className="rounded-lg bg-gray-50 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.04)] px-3 py-2">
                   <div className="flex items-center gap-1 text-gray-500 text-[10px] font-medium uppercase tracking-wide mb-0.5">
                     <Droplets className="h-3 w-3" aria-hidden="true" />
                     {t('weather.humidity')}
@@ -174,7 +176,7 @@ export default function Weather() {
                     {Math.round(weather.current.humidity)}%
                   </p>
                 </div>
-                <div className="rounded-lg bg-gray-50 border border-gray-100 px-3 py-2">
+                <div className="rounded-lg bg-gray-50 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.04)] px-3 py-2">
                   <div className="flex items-center gap-1 text-gray-500 text-[10px] font-medium uppercase tracking-wide mb-0.5">
                     <Wind className="h-3 w-3" aria-hidden="true" />
                     {t('weather.wind')}
@@ -186,13 +188,13 @@ export default function Weather() {
               </div>
 
               <div className="flex flex-wrap gap-1.5">
-                <span className="inline-flex items-center rounded-full bg-orange-50 text-orange-800 px-2.5 py-1 text-xs font-medium">
+                <span className="inline-flex items-center rounded-full bg-orange-50 text-orange-800 px-2.5 py-1 text-xs font-medium tabular-nums">
                   {t('weather.high')}: {Math.round(weather.daily.high)}°
                 </span>
-                <span className="inline-flex items-center rounded-full bg-sky-50 text-sky-800 px-2.5 py-1 text-xs font-medium">
+                <span className="inline-flex items-center rounded-full bg-sky-50 text-sky-800 px-2.5 py-1 text-xs font-medium tabular-nums">
                   {t('weather.low')}: {Math.round(weather.daily.low)}°
                 </span>
-                <span className="inline-flex items-center rounded-full bg-primary-50 text-primary-800 px-2.5 py-1 text-xs font-medium">
+                <span className="inline-flex items-center rounded-full bg-primary-50 text-primary-800 px-2.5 py-1 text-xs font-medium tabular-nums">
                   {t('weather.rainChance')}:{' '}
                   {Math.round(weather.daily.precipitationChance)}%
                 </span>
@@ -206,7 +208,7 @@ export default function Weather() {
                   {weather.hourly.slice(0, 4).map(hour => (
                     <div
                       key={hour.time.toISOString()}
-                      className="rounded-md border border-gray-100 bg-white px-1.5 py-2 text-center"
+                      className="rounded-md bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.04)] px-1.5 py-2 text-center"
                     >
                       <p className="text-[10px] text-gray-500">
                         {formatTime(hour.time, i18n.language)}

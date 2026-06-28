@@ -24,7 +24,7 @@ export default function FacebookSection() {
 
       <div className="relative flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-10">
         <div
-          className="max-w-sm text-center lg:text-left motion-safe:animate-slide-in"
+          className="max-w-sm text-center lg:text-left motion-safe:animate-slide-in motion-reduce:animate-none"
           style={{ animationDelay: '0ms' }}
         >
           <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 mb-4">
@@ -49,7 +49,7 @@ export default function FacebookSection() {
         </div>
 
         <div
-          className="max-w-full shrink-0 motion-safe:animate-slide-in"
+          className="max-w-full shrink-0 motion-safe:animate-slide-in motion-reduce:animate-none"
           style={{ animationDelay: '100ms' }}
         >
           <FacebookPagePlugin

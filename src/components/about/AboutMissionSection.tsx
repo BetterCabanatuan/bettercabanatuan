@@ -51,13 +51,17 @@ export default function AboutMissionSection() {
     <Section className="p-3 mb-0 pt-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div>
-          <Heading level={2}>{t('about.mission.title')}</Heading>
-          <Text className="text-gray-600 mb-4">
+          <Heading level={2} className="text-balance">
+            {t('about.mission.title')}
+          </Heading>
+          <Text className="text-gray-600 mb-4 text-pretty">
             {t('about.mission.body1', { city: siteConfig.governmentName })}
           </Text>
-          <Text className="text-gray-600 mb-6">{t('about.mission.body2')}</Text>
+          <Text className="text-gray-600 mb-6 text-pretty">
+            {t('about.mission.body2')}
+          </Text>
 
-          <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+          <div className="rounded-2xl bg-gray-50 p-5 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]">
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">
               {t('about.mission.location')}
             </p>
@@ -72,10 +76,11 @@ export default function AboutMissionSection() {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-          {stats.map(stat => (
+          {stats.map((stat, index) => (
             <Card
               key={stat.labelKey}
-              className="border-t-4 border-primary-500 h-full"
+              className="border-t-4 border-primary-500 h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.1)] motion-safe:animate-slide-in motion-reduce:hover:translate-y-0 motion-reduce:animate-none"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-5">
                 <stat.icon

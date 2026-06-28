@@ -77,8 +77,10 @@ export default function GovernmentActivitySection({
     <>
       {showHeader && (
         <>
-          <Heading level={2}>{title || t('governmentActivity.title')}</Heading>
-          <Text className="text-gray-600 mb-6">
+          <Heading level={2} className="text-balance">
+            {title || t('governmentActivity.title')}
+          </Heading>
+          <Text className="text-gray-600 mb-6 text-pretty">
             {description || t('governmentActivity.description')}
           </Text>
         </>
@@ -91,7 +93,7 @@ export default function GovernmentActivitySection({
             : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'
         }
       >
-        {displayedCategories.map(category => {
+        {displayedCategories.map((category, index) => {
           const href =
             category.slug === 'other'
               ? '/government'
@@ -101,23 +103,28 @@ export default function GovernmentActivitySection({
             <Card
               key={category.slug}
               hoverable
-              className="border-t-4 border-primary-500"
+              className={`border-t-4 border-primary-500 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.1)] motion-reduce:hover:translate-y-0 ${compact ? 'motion-safe:animate-slide-in' : ''}`}
+              style={
+                compact ? { animationDelay: `${index * 100}ms` } : undefined
+              }
             >
               <Link
                 to={href}
-                className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors inline-flex items-center"
+                className="mt-auto text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 inline-flex items-center active:scale-[0.96] motion-reduce:active:scale-100"
               >
                 <CardContent className="flex flex-col h-full p-6">
                   <div className="flex gap-2">
-                    <div className="bg-primary-100 text-primary-600 p-3 rounded-md mb-4 self-start">
+                    <div className="bg-primary-100 text-primary-600 p-3 rounded-lg mb-4 self-start transition-colors duration-200">
                       {getIcon(category.icon)}
                     </div>
 
-                    <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center">
+                    <h3 className="text-lg font-semibold mb-4 text-gray-900 self-center text-balance">
                       {category.category}
                     </h3>
                   </div>
-                  <Text className="text-gray-800">{category.description}</Text>
+                  <Text className="text-gray-800 text-pretty">
+                    {category.description}
+                  </Text>
                 </CardContent>
               </Link>
             </Card>
