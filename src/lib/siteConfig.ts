@@ -55,6 +55,10 @@ export const cityStats = {
   landArea: cityData.landArea,
   urbanBarangays: allBarangays.filter(b => b.classification === 'Urban').length,
   ruralBarangays: allBarangays.filter(b => b.classification === 'Rural').length,
+  psgcCode: cityData.psgcCode,
+  incomeClass: cityData.incomeClass,
+  cityClass: cityData.cityClass,
+  populationTrend: cityData.populationTrend,
 };
 
 export const services = serviceCategories.categories;

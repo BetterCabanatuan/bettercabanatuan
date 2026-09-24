@@ -21,13 +21,14 @@ import {
   Maximize,
   TrendingUp,
   ArrowRight,
+  Landmark,
 } from 'lucide-react';
 
 const overviewStats = [
   {
     label: 'Total Population',
     value: cityStats.totalPopulation.toLocaleString(),
-    note: '2020 Census',
+    note: '2024 Census (PSGC)',
     icon: Users,
     border: 'border-primary-500',
     bg: 'bg-primary-50 text-primary-600',
@@ -47,6 +48,22 @@ const overviewStats = [
     icon: Maximize,
     border: 'border-success-500',
     bg: 'bg-success-50 text-success-600',
+  },
+  {
+    label: 'Income Class',
+    value: `${cityStats.incomeClass} Class`,
+    note: 'Per PSGC (DILG)',
+    icon: Landmark,
+    border: 'border-secondary-500',
+    bg: 'bg-secondary-50 text-secondary-600',
+  },
+  {
+    label: 'City Class',
+    value: cityStats.cityClass,
+    note: `PSGC ${cityStats.psgcCode}`,
+    icon: Building2,
+    border: 'border-primary-500',
+    bg: 'bg-primary-50 text-primary-600',
   },
   {
     label: 'Service Areas',
@@ -204,6 +221,27 @@ export default function StatisticsPage() {
                   </CardContent>
                 </Card>
               </div>
+
+              <Heading level={3} className="text-lg mb-2">
+                Population Trend
+              </Heading>
+              <ul className="space-y-2 mb-6">
+                {Object.entries(cityStats.populationTrend).map(
+                  ([year, population]) => (
+                    <li
+                      key={year}
+                      className="flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2"
+                    >
+                      <span className="text-sm font-medium text-gray-700">
+                        {year}
+                      </span>
+                      <span className="text-sm text-gray-900 tabular-nums font-semibold">
+                        {population.toLocaleString()}
+                      </span>
+                    </li>
+                  )
+                )}
+              </ul>
               <Link
                 to="/government/barangays"
                 className="inline-flex items-center gap-2 min-h-[44px] px-5 py-2.5 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 hover:gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-all duration-200 motion-safe:animate-fade-in"
