@@ -1,0 +1,89 @@
+# 2025 National and Local Elections results for Cabanatuan City
+# Page: /government/officials (Election Results section)
+# Source: Open Halalan dataset via dynasties.bettergov.ph (officials.bettergov.ph API)
+# Retrieved: 2026-09-23
+#
+# Note: The Sangguniang Panlungsod race was "Vote for 10" per the official
+# COMELEC 2025 ballot face, so the top ten (10) candidates are the elected
+# members. The Open Halalan dataset caps its seat field at 8; the top-10 rule
+# is the official one.
+
+title: '2025 Election Results'
+description: 'Certified winners of the May 12, 2025 National and Local Elections for local positions in Cabanatuan City, sourced from the Open Halalan dataset via dynasties.bettergov.ph.'
+sourceName: 'Open Halalan (dynasties.bettergov.ph)'
+sourceUrl: 'https://dynasties.bettergov.ph'
+electionDate: '2025-05-12'
+
+contests:
+  - position: 'Mayor'
+    seats: 1
+    totalVotes: 192027
+    margin: 32275
+    candidates:
+      - name: 'MYCA RAYMUNDO VERGARA'
+        party: 'PFP'
+        votes: 112151
+        won: true
+      - name: 'ANTHONY UMALI'
+        party: 'SIGAW'
+        votes: 79876
+        won: false
+
+  - position: 'Vice Mayor'
+    seats: 1
+    totalVotes: 181041
+    margin: 41841
+    candidates:
+      - name: 'BUNSO CARASIG ROQUE'
+        party: 'PFP'
+        votes: 111441
+        won: true
+      - name: 'NERO MERCADO'
+        party: 'SIGAW'
+        votes: 69600
+        won: false
+
+  - position: 'Member, Sangguniang Panlungsod (City Councilor)'
+    seats: 10
+    note: 'Vote for 10 — COMELEC official 2025 ballot face'
+    candidates:
+      - name: 'KUYA ELLORIN MATIAS'
+        party: 'PFP'
+        votes: 101725
+        won: true
+      - name: 'JEAN DE LEON CRUZ'
+        party: 'PFP'
+        votes: 96192
+        won: true
+      - name: 'JOLLY ADRIANO GARCIA'
+        party: 'PFP'
+        votes: 95292
+        won: true
+      - name: 'BOK VILLARUZ DIAZ'
+        party: 'PFP'
+        votes: 93911
+        won: true
+      - name: 'PEEWEE MANAHAN MENDOZA'
+        party: 'PFP'
+        votes: 91137
+        won: true
+      - name: 'FROYJAYJAY BUMANLAG VALINO'
+        party: 'PFP'
+        votes: 84314
+        won: true
+      - name: 'FANNY GALICIA POSADA'
+        party: 'PFP'
+        votes: 81668
+        won: true
+      - name: 'MEDEL RAYMUNDO SEEPING'
+        party: 'PFP'
+        votes: 81429
+        won: true
+      - name: 'JAN-JAN JAN CECILIO'
+        party: 'SIGAW'
+        votes: 79015
+        won: true
+      - name: 'BONG LIWAG'
+        party: 'PFP'
+        votes: 78884
+        won: true

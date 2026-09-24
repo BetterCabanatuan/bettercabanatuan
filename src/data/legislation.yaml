@@ -1,0 +1,91 @@
+# Laws and pending legislation affecting Cabanatuan City
+# Page: /transparency/legislation
+# Sources: juris.ph (Republic Acts & jurisprudence), bills.juris.ph (House/Senate bills)
+# Retrieved: 2026-09-23
+
+title: 'Laws & Legislation'
+description: 'Republic Acts, Supreme Court rulings, and pending bills that shape governance and public services in Cabanatuan City.'
+
+republicActs:
+  - raNumber: 'R.A. 11704'
+    title: 'Increasing the Bed Capacity of the Dr. Paulino J. Garcia Memorial Research and Medical Center'
+    year: 2022
+    summary: 'Increases the bed capacity of the Dr. Paulino J. Garcia Memorial Research and Medical Center in Cabanatuan City from 400 to 1,000 beds, upgrades facilities and workforce, and appropriates funds.'
+    tags: ['Healthcare', 'Hospital']
+    url: 'https://juris.ph/republic-act/b7ca85b8-a5b8-556f-87e1-700fad56314d'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/2022/11704.pdf'
+
+  - raNumber: 'R.A. 11375'
+    title: 'Declaring February 3 of Every Year a Special Working Holiday in Cabanatuan City'
+    year: 2019
+    summary: 'Declares February 3 as a special working holiday in the City of Cabanatuan, Nueva Ecija, in commemoration of its founding anniversary.'
+    tags: ['Local Government', 'Holiday']
+    url: 'https://juris.ph/republic-act/3f005470-f0ea-58ec-a102-018cf68c8f25'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/2019/11375.pdf'
+
+  - raNumber: 'R.A. 9968'
+    title: 'Granting a Franchise to Cabanatuan Electric Corporation'
+    year: 2010
+    summary: 'Amends Act No. 3118 to grant Cabanatuan Electric Corporation a franchise to construct, operate, and maintain an electric power distribution system in Cabanatuan City, renewing the franchise for 25 years.'
+    tags: ['Energy', 'Utilities']
+    url: 'https://juris.ph/republic-act/f6a2bd17-7e44-591a-a6e0-54556edbe2c0'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/2010/9968.pdf'
+
+  - raNumber: 'R.A. 8612'
+    title: 'Converting the Central Luzon Polytechnic College into the Nueva Ecija University of Science and Technology'
+    year: 1998
+    summary: 'Converts the Central Luzon Polytechnic College in Cabanatuan City into a state university to be known as the Nueva Ecija University of Science and Technology (NEUST), establishing its governance structure and authorizing funding.'
+    tags: ['Education', 'State University']
+    url: 'https://juris.ph/republic-act/6d48d5ce-b599-5749-888b-1391b70a5450'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/1998/8612.pdf'
+
+  - raNumber: 'R.A. 8418'
+    title: 'Establishing the Eastern Cabu National High School'
+    year: 1997
+    summary: 'Establishes a national high school in Barangay Cabu, Cabanatuan City, to be known as the Eastern Cabu National High School, and appropriates funds through the General Appropriations Act.'
+    tags: ['Education', 'School']
+    url: 'https://juris.ph/republic-act/7b603621-62b0-5046-bcc4-6e114d1dd1f8'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/1997/8418.pdf'
+
+  - raNumber: 'R.A. 6363'
+    title: 'Recognizing the Existence of Certain Barrios in the City of Cabanatuan'
+    year: 1971
+    summary: 'Recognizes and declares the existence of specified barrios in the City of Cabanatuan, formalizing their status under local law.'
+    tags: ['Local Government', 'Barrios']
+    url: 'https://juris.ph/republic-act/1a7a15f7-31cc-5083-b484-bf69c3dc1450'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/1971/6363.pdf'
+
+  - raNumber: 'R.A. 5141'
+    title: 'Increasing the Bed Capacity of the Nueva Ecija Provincial Hospital at Cabanatuan City'
+    year: 1967
+    summary: 'Increases the bed capacity of the Nueva Ecija Provincial Hospital at Cabanatuan City to 400 beds and authorizes the appropriation of funds for its operation, improvement, and construction.'
+    tags: ['Healthcare', 'Hospital']
+    url: 'https://juris.ph/republic-act/e82eed8e-cad9-5002-8e13-5f0b249feef2'
+    pdfUrl: 'https://juris-assets.bettergov.ph/pdfs/ra/1967/5141.pdf'
+
+jurisprudence:
+  - caseNumber: 'G.R. No. 203974'
+    title: 'Umali v. COMELEC, Julius Cesar V. Vergara, and the City Government of Cabanatuan'
+    year: 2014
+    decisionDate: '2014-04-22'
+    summary: 'Concerns the conversion of Cabanatuan City into a highly urbanized city. The Supreme Court ruled that the conversion substantially alters the province, ordering a plebiscite with the voters of Nueva Ecija within 120 days.'
+    disposition: 'Petition for Certiorari granted; COMELEC Minute Resolutions No. 12-0797 and 12-0925 declared null and void; plebiscite ordered to be conducted with voters of Nueva Ecija.'
+    url: 'https://juris.ph/case/b3df2240-8854-5f40-8dde-902d32c52285'
+
+  - caseNumber: 'G.R. No. 185638'
+    title: 'Vergara v. Grecia'
+    year: 2016
+    decisionDate: '2016-08-10'
+    summary: 'Expropriation case where the City of Cabanatuan took a parcel of land for road widening without paying just compensation. The Court affirmed the award of just compensation to the landowners with modification.'
+    disposition: 'Petition denied. Petitioners ordered to pay just compensation with exemplary damages and attorney fees.'
+    url: 'https://juris.ph/case/de50ab34-186b-583a-b1e1-21c691d452ce'
+
+pendingBills:
+  - number: 'HB 06929'
+    congress: 20
+    title: 'Establishing a Passport Service Satellite Office of the DFA in the City of Cabanatuan'
+    status: 'Pending with the Committee on Foreign Affairs'
+    filedAt: '2025-12-17'
+    authors: ['Vergara, Julius Caesar "Jay" V.']
+    committee: 'Foreign Affairs'
+    url: 'https://www.congress.gov.ph/legislative-documents?title=&congress=20'

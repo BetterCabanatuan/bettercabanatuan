@@ -37,6 +37,9 @@ import projectsYamlContent from './projects.yaml?raw';
 import aboutYamlContent from './about.yaml?raw';
 import transparencyYamlContent from './transparency.yaml?raw';
 import floodControlsYamlContent from './flood-controls.yaml?raw';
+import nationalProjectsYamlContent from './national-projects.yaml?raw';
+import legislationYamlContent from './legislation.yaml?raw';
+import electionResultsYamlContent from './election-results.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -144,6 +147,17 @@ export interface FloodControlProject {
   cost: string;
   completionDate: string;
   reportUrl?: string;
+  /** DPWH contract identifier from the flood-control projects index */
+  contractId?: string;
+  status?: string;
+  /** Program name, e.g. 'Regular Infra' */
+  program?: string;
+  /** Funding source, e.g. 'Regular Infra - GAA 2024 OO-2' */
+  sourceOfFunds?: string;
+  /** Infrastructure year of the GAA that funded the project */
+  year?: number;
+  latitude?: number;
+  longitude?: number;
 }
 
 export interface FloodControlsData {
@@ -158,6 +172,104 @@ export const floodControlsData: FloodControlsData = yaml.load(
 
 export const allFloodControlProjects: FloodControlProject[] =
   floodControlsData.projects || [];
+
+export interface NationalProject {
+  slug: string;
+  name: string;
+  department: string;
+  category: string;
+  location: string;
+  /** GAA fiscal years that funded this project */
+  years: number[];
+  /** Total amount in exact PHP pesos */
+  amount: number;
+  amountLabel: string;
+}
+
+export interface NationalProjectsData {
+  title: string;
+  description: string;
+  projects: NationalProject[];
+}
+
+export const nationalProjectsData: NationalProjectsData = yaml.load(
+  nationalProjectsYamlContent
+) as NationalProjectsData;
+
+export const allNationalProjects: NationalProject[] =
+  nationalProjectsData.projects || [];
+
+export interface RepublicAct {
+  raNumber: string;
+  title: string;
+  year: number;
+  summary: string;
+  tags: string[];
+  url: string;
+  pdfUrl?: string;
+}
+
+export interface CaseLaw {
+  caseNumber: string;
+  title: string;
+  year: number;
+  decisionDate?: string;
+  summary?: string;
+  disposition?: string;
+  url: string;
+}
+
+export interface PendingBill {
+  number: string;
+  congress: number;
+  title: string;
+  status: string;
+  filedAt?: string;
+  authors: string[];
+  committee?: string;
+  url: string;
+}
+
+export interface LegislationData {
+  title: string;
+  description: string;
+  republicActs: RepublicAct[];
+  jurisprudence: CaseLaw[];
+  pendingBills: PendingBill[];
+}
+
+export const legislationData: LegislationData = yaml.load(
+  legislationYamlContent
+) as LegislationData;
+
+export interface ElectionCandidate {
+  name: string;
+  party: string;
+  votes: number;
+  won: boolean;
+}
+
+export interface ElectionContest {
+  position: string;
+  seats: number;
+  totalVotes?: number;
+  margin?: number;
+  note?: string;
+  candidates: ElectionCandidate[];
+}
+
+export interface ElectionResultsData {
+  title: string;
+  description: string;
+  sourceName: string;
+  sourceUrl: string;
+  electionDate: string;
+  contests: ElectionContest[];
+}
+
+export const electionResultsData: ElectionResultsData = yaml.load(
+  electionResultsYamlContent
+) as ElectionResultsData;
 
 export const allDepartments: Department[] = departmentsData.departments || [];
 export const allProjects: Project[] = projectsData.projects || [];
