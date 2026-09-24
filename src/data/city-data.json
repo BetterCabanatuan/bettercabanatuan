@@ -2,5 +2,13 @@
   "cityName": "City of Cabanatuan",
   "totalPopulation": 343672,
   "totalBarangays": 89,
-  "landArea": 192.29
+  "landArea": 192.29,
+  "psgcCode": "0304903000",
+  "incomeClass": "1st",
+  "cityClass": "Component",
+  "populationTrend": {
+    "2015": 302231,
+    "2020": 327325,
+    "2024": 343672
+  }
 }
