@@ -100,9 +100,10 @@ export const publicOfficials: PublicOfficial[] = [
     },
   },
   {
-    id: 'councilor-marius-garcia',
-    name: 'Marius Garcia',
-    firstName: 'Marius',
+    id: 'councilor-jolly-garcia',
+    name: 'Jolly Adriano Garcia',
+    firstName: 'Jolly',
+    middleName: 'Adriano',
     lastName: 'Garcia',
     position: 'Sangguniang Panlungsod Member (City Councilor)',
     term: '2025-2028',
