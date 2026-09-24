@@ -1,69 +1,451 @@
 # Flood control and drainage projects — Cabanatuan City
 # Page: /transparency/flood-controls
+# Source: DPWH flood-control projects index (flood-control.bettergov.ph)
+# Retrieved: 2026-09-23 · Query: q=Cabanatuan · 34 projects
 
 title: 'Flood Control Projects'
 description: 'Flood mitigation structures, drainage canals, and related infrastructure completed across Cabanatuan City barangays.'
 
 projects:
-  - slug: flood-mitigation-pampanga-pagas-2025
-    title: 'Construction of Flood Mitigation Structure along Pampanga River, Barangay Pagas, Cabanatuan City, Nueva Ecija'
+  - slug: flood-25cf0107
+    title: 'BASIC INFRASTRUCTURE PROGRAM (BIP) - FLOOD MITIGATION STRUCTURES PROTECTING PUBLIC INFRASTRUCTURES/FACILITIES - CONSTRUCTION OF DRAINAGE STRUCTURE, BARANGAY SANGITAN EAST, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CCF EARTHMOVING CORP.'
+    cost: 'PHP 4,875,701.61'
+    completionDate: '2025-08-22'
+    contractId: '25CF0107'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2025 SSP'
+    year: 2025
+    latitude: 15.4926505
+    longitude: 120.9754136
+  - slug: flood-25cf0029
+    title: 'BASIC INFRASTRUCTURE PROGRAM (BIP) - FLOOD MITIGATION STRUCTURES PROTECTING PUBLIC INFRASTRUCTURES/FACILITIES - CONSTRUCTION OF DRAINAGE STRUCTURE, BARANGAY CAMP TINIO, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CCF EARTHMOVING CORP.'
+    cost: 'PHP 9,879,383.96'
+    completionDate: '2025-07-25'
+    contractId: '25CF0029'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2025 SSP'
+    year: 2025
+    latitude: 15.492534
+    longitude: 120.97681
+  - slug: flood-24cf0115
+    title: 'FLOOD MANAGEMENT PROGRAM - CONSTRUCTION/MAINTENANCE OF FLOOD MITIGATION STRUCTURES AND DRAINAGE SYSTEMS - REHABILITATION OF BABY DAM, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 9,799,999.10'
+    completionDate: '2025-07-21'
+    contractId: '24CF0115'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2024 OO-2'
+    year: 2024
+    latitude: 15.5143594
+    longitude: 120.9953039
+  - slug: flood-25cf0104
+    title: 'BASIC INFRASTRUCTURE PROGRAM (BIP) - FLOOD MITIGATION STRUCTURES PROTECTING PUBLIC INFRASTRUCTURES/FACILITIES - CONSTRUCTION OF DRAINAGE STRUCTURE, BARANGAY BANTUG BULALO, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'S.S.R. CONSTRUCTION'
+    cost: 'PHP 4,875,529.86'
+    completionDate: '2025-06-10'
+    contractId: '25CF0104'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2025 SSP'
+    year: 2025
+    latitude: 15.4893994
+    longitude: 120.9757767
+  - slug: flood-25cf0012
+    title: 'FLOOD MANAGEMENT PROGRAM - CONSTRUCTION/REHABILITATION OF FLOOD MITIGATION FACILITIES WITHIN MAJOR RIVER BASINS AND PRINCIPAL RIVERS - CONSTRUCTION OF FLOOD MITIGATION STRUCTURE ALONG PAMPANGA RIVER, BARANGAY PAGAS, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
     cost: 'PHP 95,052,371.10'
     completionDate: '2025-05-23'
-
-  - slug: flood-control-dalampang-2025
-    title: 'Construction of Flood Control Structure, Barangay Dalampang, Cabanatuan City, Nueva Ecija'
+    contractId: '25CF0012'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2025 OO-2'
+    year: 2025
+    latitude: 15.500809
+    longitude: 120.9488392
+  - slug: flood-24cf0078
+    title: 'SUSTAINABLE INFRASTRUCTURE PROJECTS ALLEVIATING GAPS (SIPAG) - FLOOD MITIGATION STRUCTURES PROTECTING PUBLIC INFRASTRUCTURES / FACILITIES - CONSTRUCTION OF FLOOD CONTROL STRUCTURE, BARANGAY DALAMPANG, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'DGSARM BUILDERS INC. (FORMERLY: D.G. SARMENTA CONSTRUCTION)'
     cost: 'PHP 71,072,250.00'
     completionDate: '2025-02-07'
-
-  - slug: drainage-magsaysay-norte-2024
-    title: 'Construction of Drainage Structure, Barangay Magsaysay Norte, Cabanatuan City, Nueva Ecija'
+    contractId: '24CF0078'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2024 SSP'
+    year: 2024
+    latitude: 15.5372525
+    longitude: 120.9612133
+  - slug: flood-24cf0083
+    title: 'BASIC INFRASTRUCTURE PROGRAM (BIP) - FLOOD MITIGATION STRUCTURES PROTECTING MAJOR / STRATEGIC PUBLIC BUILDINGS / FACILITIES - CONSTRUCTION OF DRAINAGE STRUCTURE, BARANGAY MAGSAYSAY NORTE, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
     cost: 'PHP 9,792,146.27'
     completionDate: '2024-11-14'
-
-  - slug: flood-mitigation-baca-mayapyap-2024
-    title: 'Construction of Flood Mitigation Structure including Drainage System along Baca River, Barangay Mayapyap, Cabanatuan City, Nueva Ecija'
-    location: 'Nueva Ecija'
-    contractor: 'FRAMECON BUILDERS'
-    cost: 'PHP 75,650,574.13'
-    completionDate: '2024-09-20'
-
-  - slug: flood-mitigation-pampanga-ibabao-bana-2024
-    title: 'Construction of Flood Mitigation Structure along Pampanga River, Barangay Ibabao Bana, Cabanatuan City, Nueva Ecija'
+    contractId: '24CF0083'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2024 SSP'
+    year: 2024
+    latitude: 15.4860064
+    longitude: 120.9784803
+  - slug: flood-24cf0004
+    title: 'FLOOD MANAGEMENT PROGRAM - CONSTRUCTION/REHABILITATION OF FLOOD MITIGATION FACILITIES WITHIN MAJOR RIVER BASINS AND PRINCIPAL RIVERS - CONSTRUCTION OF FLOOD MITIGATION STRUCTURE ALONG PAMPANGA RIVER, BARANGAY IBABAO BANA, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'DGSARM BUILDERS INC. (FORMERLY: D.G. SARMENTA CONSTRUCTION)'
     cost: 'PHP 86,849,964.84'
     completionDate: '2024-08-06'
-
-  - slug: drainage-kapitan-pepe-2024
-    title: 'Construction of Drainage Canal, Brgy. Kapitan Pepe, Cabanatuan City, Nueva Ecija'
+    contractId: '24CF0004'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2024 OO-2'
+    year: 2024
+    latitude: 15.4706431
+    longitude: 120.9166408
+  - slug: flood-24cf0046
+    title: 'BASIC INFRASTRUCTURE PROGRAM (BIP) - FLOOD MITIGATION STRUCTURES PROTECTING MAJOR / STRATEGIC PUBLIC BUILDINGS / FACILITIES - CONSTRUCTION OF DRAINAGE CANAL, BRGY. KAPITAN PEPE CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
     cost: 'PHP 4,873,904.40'
     completionDate: '2024-07-26'
-
-  - slug: flood-mitigation-pampanga-pagas-2024
-    title: 'Construction of Flood Mitigation Structure along Pampanga River, Barangay Pagas, Cabanatuan City, Nueva Ecija'
+    contractId: '24CF0046'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2024 SSP'
+    year: 2024
+    latitude: 15.480733
+    longitude: 120.956246
+  - slug: flood-24cf0002
+    title: 'FLOOD MANAGEMENT PROGRAM - CONSTRUCTION/REHABILITATION OF FLOOD MITIGATION FACILITIES WITHIN MAJOR RIVER BASINS AND PRINCIPAL RIVERS - CONSTRUCTION OF FLOOD MITIGATION STRUCTURE ALONG PAMPANGA RIVER, BARANGAY PAGAS, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
     cost: 'PHP 86,849,907.06'
     completionDate: '2024-07-16'
-
-  - slug: drainage-aduas-centro-2023
-    title: 'Construction of Drainage Canal, Brgy. Aduas Centro, Cabanatuan City, Nueva Ecija'
+    contractId: '24CF0002'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2024 OO-2'
+    year: 2024
+    latitude: 15.5050064
+    longitude: 120.9480433
+  - slug: flood-23cf0148
+    title: 'CONVERGENCE AND SPECIAL SUPPORT PROGRAM - SUSTAINABLE INFRASTRUCTURE PROJECTS ALLEVIATING GAPS (SIPAG) - FLOOD MITIGATION STRUCTURES PROTECTING PUBLIC INFRASTRUCTURE/FACILITIES - CONSTRUCTION OF KALIKID SUR DRAINAGE SYSTEM, BRGY. KALIKID SUR, CABANATUAN C'
+    location: 'Nueva Ecija'
+    contractor: 'CCF EARTHMOVING CORP.'
+    cost: 'PHP 9,504,384.75'
+    completionDate: '2024-04-23'
+    contractId: '23CF0148'
+    status: 'Completed'
+    program: 'Outside Infra'
+    sourceOfFunds: 'Outside Infra - Unprogrammed Appropriations 2023'
+    year: 2023
+    latitude: 15.4699733
+    longitude: 121.0489514
+  - slug: flood-23cf0071
+    title: 'CONSTRUCTION OF DRAINAGE CANAL, BRGY. ADUAS CENTRO, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
     cost: 'PHP 4,890,460.80'
     completionDate: '2023-09-06'
-
-  - slug: drainage-valle-cruz-2023
-    title: 'Construction of Drainage Canal, Barangay Valle Cruz, Cabanatuan City, Nueva Ecija'
+    contractId: '23CF0071'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2023 CSSP'
+    year: 2023
+    latitude: 15.493031
+    longitude: 120.9641152
+  - slug: flood-23cf0028
+    title: 'CONSTRUCTION OF DRAINAGE CANAL, BARANGAY VALLE CRUZ, CABANATUAN CITY, NUEVA ECIJA'
     location: 'Nueva Ecija'
     contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
     cost: 'PHP 5,791,378.53'
     completionDate: '2023-06-02'
+    contractId: '23CF0028'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2023 CSSP'
+    year: 2023
+    latitude: 15.4727864
+    longitude: 120.9841983
+  - slug: flood-22cf0064
+    title: 'CONSTRUCTION OF DRAINAGE SYSTEM, BARANGAY MAGSAYSAY SUR, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 9,652,433.83'
+    completionDate: '2022-05-20'
+    contractId: '22CF0064'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2022 CSSP'
+    year: 2022
+    latitude: 15.486525
+    longitude: 120.9750639
+  - slug: flood-22cf0067
+    title: 'CONSTRUCTION OF PROTECTION DIKE ALONG PAMPANGA RIVER, BRGY. SAMON, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 80,550,367.98'
+    completionDate: '2022-05-13'
+    contractId: '22CF0067'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2022 OO-2'
+    year: 2022
+    latitude: 15.4945491
+    longitude: 120.945495
+  - slug: flood-20cf0111
+    title: 'CONSTRUCTION OF HOMOGENEOUS CLOSING EARTH LEVEE (EARTH DIKE ALONG PAMPANGA RIVER) FROM BRGY. PAGAS TO BRGY. SAN JOSEF NORTE, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'D.S. PAMINTUAN CONSTRUCTION'
+    cost: 'PHP 48,947,711.96'
+    completionDate: '2021-05-24'
+    contractId: '20CF0111'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2020 LP'
+    year: 2020
+    latitude: 15.4940203
+    longitude: 120.9531844
+  - slug: flood-20cf0075
+    title: 'CONSTRUCTION OF PAMPANGA RIVER FLOOD CONTROL, EARTH DIKE AND CONCRETE SLOPE PROTECTION WITH SHEET PILE, BRGY. SAN JOSEF SUR, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'FRAMECON BUILDERS'
+    cost: 'PHP 59,165,115.00'
+    completionDate: '2021-05-21'
+    contractId: '20CF0075'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2020 OO-2'
+    year: 2020
+    latitude: 15.4736019
+    longitude: 120.9454758
+  - slug: flood-20cf0088
+    title: 'REHABILITATION OF PAMPANGA RIVER CONTROL EARTH DIKE, BRGY. PAGAS, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 33,958,657.17'
+    completionDate: '2021-05-14'
+    contractId: '20CF0088'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2020 OO-2'
+    year: 2020
+    latitude: 15.4961267
+    longitude: 120.9517206
+  - slug: flood-21cf0072
+    title: 'CONSTRUCTION OF DRAINAGE CANAL AT BARANGAY ADUAS CENTRO CABANATUAN, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 3,625,987.99'
+    completionDate: '2021-04-16'
+    contractId: '21CF0072'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2021 LP'
+    year: 2021
+    latitude: 15.4963203
+    longitude: 120.9628342
+  - slug: flood-21cf0041
+    title: 'CONSTRUCTION OF DRAINAGE CANAL AT BARANGAY DICARMA, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 1,959,556.12'
+    completionDate: '2021-04-16'
+    contractId: '21CF0041'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2021 LP'
+    year: 2021
+    latitude: 15.4840922
+    longitude: 120.9702147
+  - slug: flood-21cf0073
+    title: 'CONSTRUCTION OF DRAINAGE CANAL AT MAGSAYSAY NORTE, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 2,254,050.75'
+    completionDate: '2021-04-15'
+    contractId: '21CF0073'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2021 LP'
+    year: 2021
+    latitude: 15.4894389
+    longitude: 120.9753917
+  - slug: flood-20cf0050
+    title: 'CONSTRUCTION OF DRAINAGE AT MABINI EXTENSION, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 48,505,295.95'
+    completionDate: '2021-04-13'
+    contractId: '20CF0050'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2020 LP'
+    year: 2020
+    latitude: 15.4819306
+    longitude: 120.9756417
+  - slug: flood-20cf0073
+    title: 'CONSTRUCTION OF PAMPANGA RIVER FLOOD CONTROL, EARTH DIKE AND CONCRETE SLOPE PROTECTION WITH SHEET PILE, BRGY. SUMACAB NORTE, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 57,434,141.86'
+    completionDate: '2021-02-15'
+    contractId: '20CF0073'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2020 OO-2'
+    year: 2020
+    latitude: 15.4674175
+    longitude: 120.9276089
+  - slug: flood-19cf0061
+    title: 'CONSTRUCTION OF SLOPE PROTECTION STRUCTURE - CONSTRUCTION/MAINTENANCE OF PAMPANGA RIVER FLOOD CONTROL, EARTH DIKE AND CONCRETE SLOPE PROTECTION, BRGY. SAN JOSEF SUR, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'D.S. PAMINTUAN CONSTRUCTION / FRAMECON BUILDERS'
+    cost: 'PHP 74,942,075.69'
+    completionDate: '2020-02-02'
+    contractId: '19CF0061'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2019 OO-2'
+    year: 2019
+    latitude: 15.4726703
+    longitude: 120.9450428
+  - slug: flood-19cf0079
+    title: 'REHABILITATION/MAJOR REPAIR OF FLOOD CONTROL STRUCTURE - REHABILITATION/IMPROVEMENT OF PAMPANGA RIVER CONTROL EARTH DIKE, STA. 41+141.20 - STA. 43+704.20, BRGY. PAGAS, CABANATUAN CITY,'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 57,320,451.32'
+    completionDate: '2020-01-17'
+    contractId: '19CF0079'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2019 OO-2'
+    year: 2019
+    latitude: 15.5062819
+    longitude: 120.9488125
+  - slug: flood-19cf0038
+    title: 'CONSTRUCTION OF SLOPE PROTECTION STRUCTURE - CONSTRUCTION OF SLOPE PROTECTION, BARANGAY POLILIO, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'IJK MAE CONSTRUCTION INC.'
+    cost: 'PHP 4,277,684.50'
+    completionDate: '2019-08-11'
+    contractId: '19CF0038'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2019 LP'
+    year: 2019
+    latitude: 15.4621867
+    longitude: 120.9100567
+  - slug: flood-19cf0078
+    title: 'CONSTRUCTION OF FLOOD MITIGATION STRUCTURE - CONSTRUCTION/MAINTENANCE OF PAMPANGA RIVER, SAN JOSEF, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 42,849,656.56'
+    completionDate: '2019-07-22'
+    contractId: '19CF0078'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2019 OO-2'
+    year: 2019
+    latitude: 15.4702432
+    longitude: 120.9428161
+  - slug: flood-19cf0077
+    title: 'CONSTRUCTION OF FLOOD MITIGATION STRUCTURE - CONSTRUCTION/MAINTENANCE OF PAMPANGA RIVER CONTROL, SITIO KAINGIN, SUMACAB NORTE, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 42,849,857.25'
+    completionDate: '2019-07-22'
+    contractId: '19CF0077'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2019 OO-2'
+    year: 2019
+    latitude: 15.46299
+    longitude: 120.9344783
+  - slug: flood-18cf0120
+    title: 'REHABILITATION / IMPROVEMENT OF PAMPANGA RIVER CONTROL, BRGY. SAN JOSEF, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'FRAMECON BUILDERS'
+    cost: 'PHP 48,159,468.40'
+    completionDate: '2019-01-15'
+    contractId: '18CF0120'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2018 OO-2'
+    year: 2018
+    latitude: 15.4661074
+    longitude: 120.9379308
+  - slug: flood-18cf0117
+    title: 'CONSTRUCTION OF PAMPANGA RIVER CONTROL BRGY. SUMACAB (KAINGIN), CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'CELSO C. FERRER CONSTRUCTION CORP.'
+    cost: 'PHP 48,507,224.05'
+    completionDate: '2019-01-10'
+    contractId: '18CF0117'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2018 OO-2'
+    year: 2018
+    latitude: 15.4628701
+    longitude: 120.9322264
+  - slug: flood-18cf0124
+    title: 'LOCAL INFRASTRUCTURE PROGRAM - FLOOD CONTROL AND DRAINAGE- DRAINAGE/PROTECTION WORKS - CONSTRUCTION OF DRAINAGE CANAL AT BARANGAY ADUAS CENTRO, CABANATUAN CITY'
+    location: 'Nueva Ecija'
+    contractor: 'J.P. SANDOVAL CONSTRUCTION'
+    cost: 'PHP 1,921,065.40'
+    completionDate: '2018-11-22'
+    contractId: '18CF0124'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2018 LP'
+    year: 2018
+    latitude: 15.4953167
+    longitude: 120.96228
+  - slug: flood-18cf0121
+    title: 'REHABILITATION / IMPROVEMENT OF PAMPANGA RIVER CONTROL, STA. 47+097.20 - STA. 47+257.20, BRGY. SAN JOSEF, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'FRAMECON BUILDERS'
+    cost: 'PHP 18,886,496.87'
+    completionDate: '2018-10-17'
+    contractId: '18CF0121'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2018 OO-2'
+    year: 2018
+    latitude: 15.4678256
+    longitude: 120.9398362
+  - slug: flood-18cf0054
+    title: 'LOCAL INFRASTRUCTURE PROGRAM -CONSTRUCTION OF DRAINAGE AT BRGY. SAN JOSEF SUR, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'D.S. PAMINTUAN CONSTRUCTION'
+    cost: 'PHP 1,900,788.25'
+    completionDate: '2018-05-25'
+    contractId: '18CF0054'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2018 LP'
+    year: 2018
+    latitude: 15.4643167
+    longitude: 120.938335
+  - slug: flood-18cf0055
+    title: 'LOCAL INFRASTRUCTURE PROGRAM- CONSTRUCTION OF DRAINAGE AT BRGY. SUMACAB NORTE, CABANATUAN CITY, NUEVA ECIJA'
+    location: 'Nueva Ecija'
+    contractor: 'D.S. PAMINTUAN CONSTRUCTION'
+    cost: 'PHP 1,900,781.22'
+    completionDate: '2018-05-25'
+    contractId: '18CF0055'
+    status: 'Completed'
+    program: 'Regular Infra'
+    sourceOfFunds: 'Regular Infra - GAA 2018 LP'
+    year: 2018
+    latitude: 15.4649083
+    longitude: 120.93866
