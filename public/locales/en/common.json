@@ -144,6 +144,22 @@
     "external": "External",
     "viewResource": "View resource"
   },
+  "legislation": {
+    "republicActs": {
+      "title": "Republic Acts",
+      "description": "National laws that directly affect Cabanatuan City — health, education, utilities, and local governance."
+    },
+    "jurisprudence": {
+      "title": "Supreme Court Rulings",
+      "description": "Landmark rulings involving the city government, its elections, and its residents."
+    },
+    "pendingBills": {
+      "title": "Pending Bills",
+      "description": "Measures currently being deliberated in Congress that would affect the city."
+    },
+    "sourceJuris": "Source: Juris — Republic Acts",
+    "sourceBills": "Source: Congress Bills"
+  },
   "projects": {
     "floodControls": {
       "count": "{{count}} featured flood control and drainage projects",
@@ -153,6 +169,18 @@
         "contractor": "Contractor",
         "cost": "Cost",
         "completed": "Completion date"
+      }
+    },
+    "national": {
+      "count": "{{count}} funded national projects",
+      "fundYears": "GAA funding years",
+      "source": "Source: PH Budget Data API",
+      "columns": {
+        "project": "Project",
+        "department": "Department",
+        "category": "Category",
+        "years": "GAA year(s)",
+        "amount": "Amount"
       }
     }
   },

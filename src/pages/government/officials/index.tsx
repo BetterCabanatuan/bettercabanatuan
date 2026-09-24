@@ -1,5 +1,6 @@
 import { Users } from 'lucide-react';
 import PublicOfficials from '../../../components/sections/PublicOfficials';
+import ElectionResultsSection from '../../../components/government/officials/ElectionResultsSection';
 import GovernmentPageHero from '../../../components/government/GovernmentPageHero';
 import Section from '../../../components/ui/Section';
 import SEO from '../../../components/SEO';
@@ -67,6 +68,7 @@ export default function OfficialsPage() {
         />
         <Section className="p-3 mb-12 pt-10">
           <PublicOfficials />
+          <ElectionResultsSection />
         </Section>
       </main>
     </>

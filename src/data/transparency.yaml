@@ -28,6 +28,10 @@ sections:
         description: 'Flood mitigation structures and drainage canals completed across Cabanatuan City barangays.'
         href: '/transparency/flood-controls'
         icon: 'Droplets'
+      - title: 'Laws and Legislation'
+        description: 'Republic Acts, Supreme Court rulings, and pending bills that shape governance and public services.'
+        href: '/transparency/legislation'
+        icon: 'Scale'
 
   - id: city
     title: 'City Government'

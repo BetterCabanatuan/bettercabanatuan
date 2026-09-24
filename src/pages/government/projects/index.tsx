@@ -3,7 +3,13 @@ import SEO from '../../../components/SEO';
 import Section from '../../../components/ui/Section';
 import GovernmentPageHero from '../../../components/government/GovernmentPageHero';
 import ProjectsList from '../../../components/government/projects/ProjectsList';
-import { allProjects, projectsData } from '../../../data/yamlLoader';
+import NationalProjectsSection from '../../../components/government/projects/NationalProjectsSection';
+import {
+  allProjects,
+  projectsData,
+  nationalProjectsData,
+  allNationalProjects,
+} from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
 
 export default function ProjectsPage() {
@@ -29,6 +35,11 @@ export default function ProjectsPage() {
         />
         <Section className="p-3 mb-12 pt-10">
           <ProjectsList projects={allProjects} />
+          <NationalProjectsSection
+            title={nationalProjectsData.title}
+            description={nationalProjectsData.description}
+            projects={allNationalProjects}
+          />
         </Section>
       </main>
     </>

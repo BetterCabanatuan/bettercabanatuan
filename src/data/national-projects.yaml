@@ -1,0 +1,209 @@
+# National budget (GAA) projects in Cabanatuan City — curated from the BetterGov budget API
+# Page: /government/projects (national section)
+# Source: budget.bettergov.ph/api/v1/gaa/search?q=cabanatuan
+# Retrieved: 2026-09-23
+
+title: 'National Budget Projects in Cabanatuan City'
+description: 'National government (GAA) line items allocated to projects in Cabanatuan City — roads, bridges, flood control, education, and agriculture.'
+
+projects:
+  - slug: central-luzon-link-expressway-cllex-phase-i-la-paz-tarlac-to-cabanatuan-city-jic
+    name: 'Central Luzon Link Expressway (CLLEX), Phase I, La Paz, Tarlac to Cabanatuan City, JICA, PH - P249'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2020', '2021', '2022', '2023', '2025', '2026']
+    amount: 2629943000
+    amountLabel: 'PHP 2,629,943,000'
+  - slug: construction-of-access-road-leading-to-cllex-with-bridge-approaches-barangay-dal
+    name: 'Construction of Access Road Leading to CLLEX with Bridge Approaches, Barangay Dalampang, Cabanatuan City, Nueva Ecija, Sta. 0+000 -Sta. 0+500'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 88494000
+    amountLabel: 'PHP 88,494,000'
+  - slug: construction-of-access-road-leading-to-cllex-with-bridge-approach-barangay-barli
+    name: 'Construction of Access Road Leading to CLLEX with Bridge Approach, Barangay Barlis, Cabanatuan City, Nueva Ecija, Sta. 0+000 - Sta. 0+954'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 80963000
+    amountLabel: 'PHP 80,963,000'
+  - slug: construction-of-access-road-leading-to-cllex-with-bridge-approaches-barangay-cru
+    name: 'Construction of Access Road Leading to CLLEX with Bridge Approaches, Barangay Cruz Roja, Cabanatuan City, Nueva Ecija, Sta. 0+000 - Sta. 1+842'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 77197000
+    amountLabel: 'PHP 77,197,000'
+  - slug: rehabilitation-of-cesar-vergara-bridge-cabanatuan-city-nueva-ecija-sta-1-344-sta
+    name: 'Rehabilitation of Cesar Vergara Bridge, Cabanatuan City, Nueva Ecija, Sta. 1+344 - Sta. 2+145'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 73500000
+    amountLabel: 'PHP 73,500,000'
+  - slug: construction-of-dpwh-nueva-ecija-2nd-district-engineering-office-deo-building-sa
+    name: 'Construction of DPWH Nueva Ecija 2nd District Engineering Office (DEO) Building, San Isidro, Cabanatuan City, Nueva Ecija, 15.493028, 120.993053'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Public Buildings'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 50000000
+    amountLabel: 'PHP 50,000,000'
+  - slug: construction-of-multi-purpose-building-neust-sumacab-campus-brgy-sumacab-sur-cab
+    name: 'Construction of Multi-Purpose Building NEUST Sumacab Campus, Brgy. Sumacab Sur, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Education'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 50000000
+    amountLabel: 'PHP 50,000,000'
+  - slug: construction-of-access-road-leading-to-cllex-barangay-bitas-lourdes-and-bantug-n
+    name: 'Construction of Access Road Leading to CLLEX, Barangay Bitas, Lourdes, and Bantug Norte, Cabanatuan City, Nueva Ecija, Sta. 0+000 - Sta. 1+150'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 43306000
+    amountLabel: 'PHP 43,306,000'
+  - slug: installation-application-of-road-safety-facilities-roadway-lighting-along-cabana
+    name: 'Installation/Application of Road Safety Facilities (Roadway Lighting) along Cabanatuan City-Carmen Rd K0132 + 050 - K0136 + 190, K0137 + 000 - K0138 + 575'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 36260000
+    amountLabel: 'PHP 36,260,000'
+  - slug: construction-of-access-road-leading-to-cllex-with-bridge-approach-barangay-sapan
+    name: 'Construction of Access Road Leading to CLLEX with Bridge Approach, Barangay Sapang, Cabanatuan City, Nueva Ecija, Sta. 0+000 - Sta. 0+667'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 30126000
+    amountLabel: 'PHP 30,126,000'
+  - slug: construction-of-access-road-leading-to-cllex-with-bridge-approach-barangay-mayap
+    name: 'Construction of Access Road Leading to CLLEX with Bridge Approach, Barangay Mayapyap Sur, Cabanatuan City, Nueva Ecija, Sta. 0+000 - Sta. 0+500'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 29184000
+    amountLabel: 'PHP 29,184,000'
+  - slug: construction-of-access-road-leading-to-cllex-with-bridge-approach-barangay-caali
+    name: 'Construction of Access Road Leading to CLLEX with Bridge Approach, Barangay Caalibangbangan, Cabanatuan City, Nueva Ecija, Sta. 0+000 - Sta. 0+350'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 18829000
+    amountLabel: 'PHP 18,829,000'
+  - slug: cabanatuan-city-circumferential-rd-k0114-379-k0115-166
+    name: 'Cabanatuan City Circumferential Rd - K0114 + 379 - K0115 + 166'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2026']
+    amount: 17440000
+    amountLabel: 'PHP 17,440,000'
+  - slug: nueva-ecija-integrated-onion-research-project-in-general-tinio-street-cabanatuan
+    name: 'Nueva Ecija Integrated Onion Research Project in General Tinio Street, Cabanatuan City, Nueva Ecija and Gabaldon Campus, Gabaldon, Nueva Ecija'
+    department: 'State Universities and Colleges (SUCs)'
+    category: 'Agriculture'
+    location: 'Cabanatuan City'
+    years: ['2024']
+    amount: 5000000
+    amountLabel: 'PHP 5,000,000'
+  - slug: cabanatuan-city-carmen-rd-k0129-775-k0130-508-k0131-000-k0131-050-k0132-000-k013
+    name: 'Cabanatuan City - Carmen Rd - K0129 + 775 - K0130 + 508, K0131 + 000 - K0131 + 050, K0132 + 000 - K0133 + 000, K0133 + 750 - K0133 + 980, K0136 + 000 - K0136 + 350, K0136 + 630 - K0137 + 310, K0137 + 450 - K0137 +710, K0139 + 1014 - K0140 + 471'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2024']
+    amount: 91000000
+    amountLabel: 'PHP 91,000,000'
+  - slug: cabanatuan-city-circumferential-rd-k0113-166-k0113-172-k0113-187-k0113-364-k0114
+    name: 'Cabanatuan City Circumferential Rd - K0113 + (-166) - K0113 + 172, K0113 + 187 - K0113 + 364, K0114 + 361 - K0115 + 541'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2022']
+    amount: 65000000
+    amountLabel: 'PHP 65,000,000'
+  - slug: cabanatuan-city-circumferential-rd-k0113-363-60-k0114-332-80
+    name: 'Cabanatuan City Circumferential Rd - K0113+363.60 - K0114+332.80'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2020', '2021']
+    amount: 37089000
+    amountLabel: 'PHP 37,089,000'
+  - slug: cabanatuan-city-circumferential-rd-k0115-054-k0115-489
+    name: 'Cabanatuan City Circumferential Rd - K0115 + 054 - K0115 + 489'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2024']
+    amount: 15001000
+    amountLabel: 'PHP 15,001,000'
+  - slug: construction-completion-of-dpwh-nueva-ecija-2nd-deo-building-cabanatuan-city-nue
+    name: 'Construction (Completion) of DPWH Nueva Ecija 2nd DEO Building, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Public Buildings'
+    location: 'Cabanatuan City'
+    years: ['2023']
+    amount: 18293000
+    amountLabel: 'PHP 18,293,000'
+  - slug: construction-of-950-lm-homogeneous-closing-earth-levee-earth-dike-along-pampanga
+    name: 'Construction of 950 lm. Homogeneous Closing Earth Levee (Earth Dike along Pampanga River) from Brgy. Pagas to Brgy. San Josef Norte, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Flood Control'
+    location: 'Cabanatuan City'
+    years: ['2020', '2021']
+    amount: 90613000
+    amountLabel: 'PHP 90,613,000'
+  - slug: construction-of-access-road-leading-to-khoa-barangay-kalikid-sur-cabanatuan-city
+    name: 'Construction of Access Road leading to KHOA, Barangay Kalikid Sur, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2025']
+    amount: 20000000
+    amountLabel: 'PHP 20,000,000'
+  - slug: construction-of-bridge-barangay-san-isidro-cabanatuan-city-nueva-ecija
+    name: 'Construction of Bridge, Barangay San Isidro, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Transport Infrastructure'
+    location: 'Cabanatuan City'
+    years: ['2025']
+    amount: 15000000
+    amountLabel: 'PHP 15,000,000'
+  - slug: construction-of-drainage-at-mabini-extension-cabanatuan-city-nueva-ecija
+    name: 'Construction of Drainage at Mabini Extension, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Flood Control'
+    location: 'Cabanatuan City'
+    years: ['2020']
+    amount: 50000000
+    amountLabel: 'PHP 50,000,000'
+  - slug: construction-of-metal-casting-center-nueva-ecija-university-of-science-and-techn
+    name: 'Construction of Metal Casting Center, Nueva Ecija University of Science and Technology NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Public Works and Highways (DPWH)'
+    category: 'Education'
+    location: 'Cabanatuan City'
+    years: ['2022']
+    amount: 15000000
+    amountLabel: 'PHP 15,000,000'
+  - slug: concreting-of-brgy-macatbong-to-brgy-kalikid-norte-fmr-brgy-macatbong-to-brgy-ka
+    name: 'Concreting of Brgy. Macatbong to Brgy. Kalikid Norte FMR, Brgy. Macatbong to   Brgy. Kalikid Norte, Cabanatuan City, Nueva Ecija'
+    department: 'Department of Agriculture (DA)'
+    category: 'Agriculture'
+    location: 'Cabanatuan City'
+    years: ['2025']
+    amount: 30000000
+    amountLabel: 'PHP 30,000,000'

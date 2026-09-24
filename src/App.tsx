@@ -13,6 +13,7 @@ import NotFoundPage from './pages/NotFound';
 
 import TransparencyPage from './pages/transparency';
 import FloodControlsPage from './pages/transparency/flood-controls';
+import LegislationPage from './pages/transparency/legislation';
 
 import ServicesIndexPage from './pages/services/index';
 import ServiceCategoryPage from './pages/services/$categoryId';
@@ -85,6 +86,10 @@ function App() {
               <Route
                 path="/transparency/flood-controls"
                 element={<FloodControlsPage />}
+              />
+              <Route
+                path="/transparency/legislation"
+                element={<LegislationPage />}
               />
               <Route path="/transparency" element={<TransparencyPage />} />
 

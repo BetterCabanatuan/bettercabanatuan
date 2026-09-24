@@ -57,6 +57,11 @@ const staticPages = [
     priority: '0.7',
     changefreq: 'weekly',
   },
+  {
+    path: '/transparency/legislation',
+    priority: '0.7',
+    changefreq: 'monthly',
+  },
 ];
 
 const urls = [...staticPages];

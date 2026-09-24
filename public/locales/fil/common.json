@@ -144,6 +144,22 @@
     "external": "Panlabas",
     "viewResource": "Tingnan ang resource"
   },
+  "legislation": {
+    "republicActs": {
+      "title": "Mga Republic Act",
+      "description": "Mga pambansang batas na direktang nakakaapekto sa Cabanatuan City — kalusugan, edukasyon, utilities, at lokal na pamamahala."
+    },
+    "jurisprudence": {
+      "title": "Mga Desisyon ng Korte Suprema",
+      "description": "Mga landmark na desisyon na may kinalaman sa pamahalaang panlungsod, halalan nito, at mga residente."
+    },
+    "pendingBills": {
+      "title": "Mga Nakatambak na Panukalang Batas",
+      "description": "Mga panukalang batas na kasalukuyang tinitimbang sa Kongreso na makakaapekto sa lungsod."
+    },
+    "sourceJuris": "Pinagmulan: Juris — Republic Acts",
+    "sourceBills": "Pinagmulan: Congress Bills"
+  },
   "projects": {
     "floodControls": {
       "count": "{{count}} featured na flood control at drainage projects",
@@ -153,6 +169,18 @@
         "contractor": "Kontratista",
         "cost": "Halaga",
         "completed": "Petsa ng pagkakumpleto"
+      }
+    },
+    "national": {
+      "count": "{{count}} na proyektong may pambansang pondo",
+      "fundYears": "Mga taon ng GAA funding",
+      "source": "Pinagmulan: PH Budget Data API",
+      "columns": {
+        "project": "Proyekto",
+        "department": "Kagawaran",
+        "category": "Kategorya",
+        "years": "Taon ng GAA",
+        "amount": "Halaga"
       }
     }
   },
