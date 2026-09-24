@@ -4,7 +4,7 @@ import { allFloodControlProjects, floodControlsData } from '../yamlLoader';
 describe('flood controls data', () => {
   it('loads featured flood control projects', () => {
     expect(floodControlsData.title).toBeTruthy();
-    expect(allFloodControlProjects).toHaveLength(9);
+    expect(allFloodControlProjects).toHaveLength(34);
   });
 
   it('includes required project fields', () => {
