@@ -21,27 +21,25 @@ export default function ProjectsPage() {
         keywords={`projects, infrastructure, development, ${siteConfig.governmentName}, local government`}
         url="/government/projects"
       />
-      <main className="flex-grow">
-        <GovernmentPageHero
-          eyebrow="City Development"
-          title="Government Projects"
-          description={projectsData.description}
-          icon={HardHat}
-          breadcrumbs={[
-            { label: 'Home', href: '/' },
-            { label: 'Government', href: '/government' },
-            { label: 'Projects', href: '/government/projects' },
-          ]}
+      <GovernmentPageHero
+        eyebrow="City Development"
+        title="Government Projects"
+        description={projectsData.description}
+        icon={HardHat}
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Government', href: '/government' },
+          { label: 'Projects', href: '/government/projects' },
+        ]}
+      />
+      <Section className="p-3 mb-12 pt-10">
+        <ProjectsList projects={allProjects} />
+        <NationalProjectsSection
+          title={nationalProjectsData.title}
+          description={nationalProjectsData.description}
+          projects={allNationalProjects}
         />
-        <Section className="p-3 mb-12 pt-10">
-          <ProjectsList projects={allProjects} />
-          <NationalProjectsSection
-            title={nationalProjectsData.title}
-            description={nationalProjectsData.description}
-            projects={allNationalProjects}
-          />
-        </Section>
-      </main>
+      </Section>
     </>
   );
 }

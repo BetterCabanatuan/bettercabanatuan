@@ -1,4 +1,4 @@
-import { siteConfig } from '../lib/siteConfig';
+import { siteConfig, BRAND_NAME } from '../lib/siteConfig';
 
 function getBaseUrl(): string {
   return (
@@ -48,7 +48,7 @@ export function webSiteJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${base}/#website`,
-    name: `${siteConfig.governmentName} — BetterCabanatuan.org`,
+    name: `${siteConfig.governmentName} — ${BRAND_NAME}`,
     url: base,
     description: siteConfig.siteDescription,
     publisher: { '@id': `${base}/#organization` },
@@ -82,7 +82,7 @@ export function barangayJsonLd(barangay: {
   slug: string;
   description: string;
   classification: string;
-  population: Record<string, number>;
+  population: Record<string, number | null>;
 }) {
   const base = getBaseUrl();
   return {

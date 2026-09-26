@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import type { SitemapLink } from '../../data/sitemap';
-import { siteConfig } from '../../lib/siteConfig';
+import { siteConfig, BRAND_NAME } from '../../lib/siteConfig';
 
 interface SitemapStructuredDataProps {
   pageUrl: string;
@@ -29,7 +29,7 @@ export default function SitemapStructuredData({
         isPartOf: {
           '@type': 'WebSite',
           '@id': `${origin}/#website`,
-          name: `${siteConfig.governmentName} — BetterCabanatuan.org`,
+          name: `${siteConfig.governmentName} — ${BRAND_NAME}`,
           url: origin || pageUrl,
         },
         breadcrumb: {

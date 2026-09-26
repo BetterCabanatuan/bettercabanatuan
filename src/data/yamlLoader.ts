@@ -1,4 +1,5 @@
 import yaml from 'js-yaml';
+import { normalizeBarangayDescription } from '../lib/barangayText';
 
 // Type definitions for the services data
 export interface Subcategory {
@@ -286,10 +287,20 @@ export function getProjectBySlug(slug: string): Project | undefined {
   return allProjects.find(p => p.slug === slug);
 }
 
-export const allBarangays: Barangay[] = barangaysData.barangays || [];
+export const allBarangays: Barangay[] = normalizeBarangays(barangaysData);
 
 export function getBarangayBySlug(slug: string): Barangay | undefined {
   return allBarangays.find(b => b.slug === slug);
+}
+
+/** Population figures for a barangay, omitting years with no verified data. */
+export function getBarangayPopulationTrend(
+  barangay: Barangay
+): Array<{ year: BarangayPopulationYear; population: number }> {
+  return BARANGAY_POPULATION_YEARS.flatMap(year => {
+    const value = barangay.population[year];
+    return typeof value === 'number' ? [{ year, population: value }] : [];
+  });
 }
 
 export interface CategoryIndex {
@@ -308,16 +319,47 @@ export interface Barangay {
   correspondence_code: string;
   old_name?: string;
   status?: string;
+  /**
+   * Population by census year. A year is `null` when the figure could not be
+   * verified against a PSA source and must not be guessed — see P3-2.
+   */
   population: {
-    2015: number;
-    2020: number;
-    2024: number;
+    2015: number | null;
+    2020: number | null;
+    2024: number | null;
   };
 }
 
 export interface BarangaysData {
   description?: string;
+  /** Source attribution for the figures in `barangays`. */
+  source?: string;
+  sourceUrl?: string;
+  retrieved?: string;
   barangays: Barangay[];
+}
+
+/** Census years present in the barangay population series. */
+export const BARANGAY_POPULATION_YEARS = [2015, 2020, 2024] as const;
+export type BarangayPopulationYear = (typeof BARANGAY_POPULATION_YEARS)[number];
+
+/**
+ * Applies the shared description grammar fix and exposes only verified
+ * population figures. See `src/lib/barangayText.ts`.
+ */
+function normalizeBarangays(data: BarangaysData): Barangay[] {
+  return (data.barangays ?? []).map(barangay => ({
+    ...barangay,
+    description: normalizeBarangayDescription(
+      barangay.description,
+      barangay.classification
+    ),
+    population: {
+      2015: barangay.population?.['2015'] ?? null,
+      2020: barangay.population?.['2020'] ?? null,
+      2024: barangay.population?.['2024'] ?? null,
+    },
+  }));
 }
 
 export interface Department {

@@ -5,8 +5,9 @@ import { getIconComponent } from '../../../lib/iconMap';
 import { Text } from '../../ui/Text';
 import Section from '../../ui/Section';
 import Breadcrumbs from '../../ui/Breadcrumbs';
+import MapBanner from '../../ui/MapBanner';
 import SEO from '../../SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../../ui/Card';
 import { Banner } from '@bettergov/kapwa/banner';
 import type { Department } from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
@@ -65,7 +66,7 @@ export default function DepartmentDetail({
                 <Icon className="h-7 w-7" aria-hidden="true" />
               </span>
               <div>
-                <span className="inline-flex px-2.5 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-700 mb-2">
+                <span className="inline-flex px-2.5 py-1 text-xs font-semibold rounded-full bg-badge-neutral text-badge-neutral-fg mb-2">
                   {department.acronym} · {department.branch}
                 </span>
                 <Heading className="mb-2">{department.name}</Heading>
@@ -74,6 +75,20 @@ export default function DepartmentDetail({
                 </Text>
               </div>
             </div>
+
+            {/*
+              The location anchor. A schematic band rather than a map: an
+              office's verified coordinates are not in the data, and a
+              plausible-looking pin would be a fabricated image on a civic
+              site. Labelled, so it reads as "map goes here" rather than as a
+              failed image load. See docs/IMAGERY-SYSTEM.md.
+            */}
+            <MapBanner
+              className="mt-4"
+              label={department.name}
+              caption={`${department.acronym} · ${department.branch}`}
+              size="sm"
+            />
 
             {department.services.length > 0 && (
               <Card className="mb-6">
@@ -100,7 +115,7 @@ export default function DepartmentDetail({
             )}
           </div>
 
-          <Card className="h-fit border-t-4 border-primary-500">
+          <Card className="h-fit ring-1 ring-black/[0.06]">
             <CardContent className="p-6 space-y-4">
               <Heading level={3} className="text-lg mb-2">
                 Contact Information

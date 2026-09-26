@@ -1,6 +1,6 @@
 import { Trans, useTranslation } from 'react-i18next';
 import { AlertTriangle } from 'lucide-react';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import Section from '../ui/Section';

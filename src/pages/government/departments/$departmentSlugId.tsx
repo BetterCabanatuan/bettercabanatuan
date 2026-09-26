@@ -10,9 +10,12 @@ import {
   loadMarkdownContent,
   type MarkdownContent,
 } from '../../../lib/markdownLoader';
-import { createMarkdownComponents } from '../../../lib/markdownComponents';
+import {
+  createMarkdownComponents,
+  contentUrlTransform,
+} from '../../../lib/markdownComponents';
 import { getTypographyTheme } from '../../../lib/typographyThemes';
-import { Card, CardContent, CardHeader } from '@bettergov/kapwa/card';
+import { Card, CardContent, CardHeader } from '../../../components/ui/Card';
 import { Heading } from '../../../components/ui/Heading';
 
 export default function DepartmentDetailPage() {
@@ -55,6 +58,7 @@ export default function DepartmentDetailPage() {
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={markdownComponents}
+                urlTransform={contentUrlTransform}
               >
                 {markdownContent.content}
               </ReactMarkdown>

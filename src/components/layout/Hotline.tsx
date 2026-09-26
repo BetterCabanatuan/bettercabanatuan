@@ -23,7 +23,16 @@ export function Hotline() {
             </span>
           </div>
 
-          <div className="flex-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {/*
+            `min-w-0` is load-bearing. A flex item defaults to
+            `min-width: auto`, which refuses to shrink below its content — so
+            without it this strip stays as wide as every phone number put side
+            by side, pushes past the viewport, and makes the *whole page* scroll
+            sideways at 375px. `overflow-x-auto` alone does not prevent that;
+            the strip is meant to scroll inside itself, not drag the document
+            with it.
+          */}
+          <div className="min-w-0 flex-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <ul className="flex items-center gap-4 min-w-max lg:min-w-0 lg:flex-wrap lg:justify-end">
               {emergencyHotlines.map(hotline => (
                 <li

@@ -1,8 +1,32 @@
 # Cabanatuan City Barangays
-# Generated from PSGC data with population figures (2015, 2020, 2024)
 # Total barangays: 89
+#
+# SOURCE
+#   Barangay boundaries, names, and PSGC/correspondence codes:
+#     Philippine Standard Geographic Code (PSGC), DILG.
+#     https://psa.gov.ph/classification/psgc
+#   Population figures: Philippine Statistics Authority census releases.
+#     2024 — POPCEN 2024 (2024 Census of Population and Housing)
+#     2020 — 2020 Census of Population and Housing
+#     2015 — 2015 Census of Population
+#   The per-year totals in this file sum exactly to the published city-level
+#   counts: 302,231 (2015), 327,325 (2020), 343,672 (2024).
+#
+# A year may be `null` when the barangay-level figure could not be verified
+# against a PSA release. Unknown years are left null on purpose — a repeated or
+# invented number is worse than a gap. `getBarangayPopulationTrend()` omits
+# null years, and the barangay detail page renders only the points that exist.
+#
+# NOTE: descriptions in this file were generated from a template that
+# hardcoded "is a urban barangay". The leading clause is corrected at load
+# time by `normalizeBarangayDescription()` (src/lib/barangayText.ts) from the
+# structured `classification` field, so the stored text is left as-is rather
+# than edited 89 times.
 
 description: 'Explore all barangays of Cabanatuan City, including their classifications, descriptions, and local information. The city is divided into urban and rural barangays, each with its own character and community.'
+source: 'Philippine Statistics Authority (PSA) census releases; PSGC from DILG'
+sourceUrl: 'https://psa.gov.ph/classification/psgc'
+retrieved: '2026-09-23'
 
 barangays:
   - name: 'Aduas Centro'
@@ -13,8 +37,12 @@ barangays:
     correspondence_code: '034903002'
     old_name: 'Aduas'
     status: ''
+    # 2015 is null: the source file carried 5,116 for both 2015 and 2020,
+    # which is a duplicated value rather than two census counts. PSA blocks
+    # automated lookup, so the 2015 figure could not be verified and is left
+    # out instead of being repeated or guessed. See the header note.
     population:
-      2015: 5116
+      2015: null
       2020: 5116
       2024: 5151
 

@@ -11,8 +11,11 @@ import {
   loadMarkdownContent,
   type MarkdownContent,
 } from '../../lib/markdownLoader';
-import { createMarkdownComponents } from '../../lib/markdownComponents';
-import { Card, CardContent, CardHeader } from '@bettergov/kapwa/card';
+import {
+  createMarkdownComponents,
+  contentUrlTransform,
+} from '../../lib/markdownComponents';
+import { Card, CardContent, CardHeader } from '../ui/Card';
 import { getTypographyTheme } from '../../lib/typographyThemes';
 import {
   serviceCategories,
@@ -215,10 +218,23 @@ export default function DocumentPage({
     return null;
   }
 
+  /*
+   * The document's own leading `#` heading is its title — 17 of the 18 markdown
+   * documents open with one, and `markdownContent.title` is read from it. The
+   * page renders that title as its <h1> below, so leaving the heading in the
+   * body would print the same words twice, inches apart.
+   *
+   * Stripped here rather than in the loader, because the pages that render
+   * their own heading — department and project details — legitimately keep
+   * their `#` sections.
+   */
+  const bodyContent = markdownContent.content.replace(/^#\s+.*\n+/, '');
+  const pageTitle = markdownContent.title || documentSlugId;
+
   return (
     <>
       <SEO
-        title={markdownContent.title || documentSlugId}
+        title={pageTitle}
         description={
           markdownContent.description ||
           `Government service information for ${documentSlugId}`
@@ -231,6 +247,9 @@ export default function DocumentPage({
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" items={breadcrumbs} />
+        <Heading level={1} className="mb-4 text-balance">
+          {pageTitle}
+        </Heading>
         <Card className="mb-8 markdown-content">
           <CardHeader>
             {markdownContent.description && (
@@ -239,8 +258,9 @@ export default function DocumentPage({
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={markdownComponents}
+              urlTransform={contentUrlTransform}
             >
-              {markdownContent.content}
+              {bodyContent}
             </ReactMarkdown>
           </CardHeader>
         </Card>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Calendar, ScrollText, ChevronDown, ChevronUp } from 'lucide-react';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import Section from '../ui/Section';
@@ -89,7 +89,7 @@ export default function AboutHistorySection() {
                 return (
                   <Card
                     key={fact.label}
-                    className="border-t-4 border-primary-500 h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+                    className="h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] motion-safe:animate-slide-in motion-reduce:animate-none"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <CardContent className="p-5">

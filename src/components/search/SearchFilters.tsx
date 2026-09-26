@@ -39,7 +39,7 @@ export default function SearchFilters({
             type="button"
             onClick={() => onFilterChange(filter.id)}
             aria-pressed={isActive}
-            className={`inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 ${
+            className={`inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full text-sm font-medium transition-[background-color,border-color,color,box-shadow] duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 ${
               isActive
                 ? 'bg-primary-600 text-white shadow-sm'
                 : 'bg-white text-gray-700 border border-gray-200 hover:border-primary-300 hover:text-primary-700 hover:bg-primary-50'

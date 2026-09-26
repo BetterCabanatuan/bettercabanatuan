@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Building2, Heart, MapPin, Users } from 'lucide-react';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import Section from '../ui/Section';
@@ -20,6 +20,7 @@ export default function AboutMissionSection() {
       labelKey: 'about.mission.stats.population',
       value: cityStats.totalPopulation.toLocaleString(),
       noteKey: 'about.mission.stats.populationNote',
+      noteValues: cityStats.populationLabelValues,
       icon: Users,
     },
     {
@@ -79,7 +80,7 @@ export default function AboutMissionSection() {
           {stats.map((stat, index) => (
             <Card
               key={stat.labelKey}
-              className="border-t-4 border-primary-500 h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.1)] motion-safe:animate-slide-in motion-reduce:hover:translate-y-0 motion-reduce:animate-none"
+              className="h-full shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.1)] motion-safe:animate-slide-in motion-reduce:hover:translate-y-0 motion-reduce:animate-none"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-5">

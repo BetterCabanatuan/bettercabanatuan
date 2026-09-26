@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { getSearchTypeIcon } from '../../data/searchIndex';
@@ -31,12 +31,17 @@ export default function SearchResults({
         <Text className="text-gray-600 mb-6 max-w-2xl">
           {t('search.suggestionsDescription')}
         </Text>
-        <div className="flex flex-wrap gap-2">
+        <div
+          className="flex flex-wrap gap-2"
+          role="group"
+          aria-label={t('search.suggestionsGroupLabel')}
+        >
           {suggestedSearches.map(term => (
             <button
               key={term}
               type="button"
               onClick={() => onSuggestedSearch(term)}
+              aria-label={t('search.chipLabel', { term })}
               className="inline-flex items-center min-h-[44px] px-4 py-2 rounded-full bg-primary-50 text-primary-700 border border-primary-200 text-sm font-medium hover:bg-primary-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-colors duration-200"
             >
               {term}
@@ -59,12 +64,17 @@ export default function SearchResults({
         <Text className="text-gray-600 mb-6">
           {t('search.noResultsDescription', { query })}
         </Text>
-        <div className="flex flex-wrap justify-center gap-2">
+        <div
+          className="flex flex-wrap justify-center gap-2"
+          role="group"
+          aria-label={t('search.suggestionsGroupLabel')}
+        >
           {suggestedSearches.slice(0, 4).map(term => (
             <button
               key={term}
               type="button"
               onClick={() => onSuggestedSearch(term)}
+              aria-label={t('search.chipLabel', { term })}
               className="inline-flex items-center min-h-[44px] px-4 py-2 rounded-full bg-white text-primary-700 border border-primary-200 text-sm font-medium hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-colors duration-200"
             >
               {term}
@@ -82,7 +92,7 @@ export default function SearchResults({
         const content = (
           <Card
             hoverable
-            className="border-l-4 border-l-primary-500 motion-safe:animate-slide-in hover:-translate-y-0.5 transition-transform duration-200"
+            className="ring-1 ring-primary-100 motion-safe:animate-slide-in hover:-translate-y-0.5 transition-transform duration-200"
             style={{ animationDelay: `${80 + index * 40}ms` }}
           >
             <CardContent className="p-5">
@@ -113,7 +123,7 @@ export default function SearchResults({
                   )}
                 </div>
                 <ArrowRight
-                  className="h-5 w-5 shrink-0 text-gray-300 group-hover:text-primary-500 transition-colors duration-200"
+                  className="h-5 w-5 shrink-0 text-gray-400 group-hover:text-primary-500 transition-colors duration-200"
                   aria-hidden="true"
                 />
               </div>

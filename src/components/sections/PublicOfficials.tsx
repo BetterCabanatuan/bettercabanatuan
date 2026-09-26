@@ -1,17 +1,15 @@
 import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import { Text } from '../ui/Text';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Banner } from '@bettergov/kapwa/banner';
-import { publicOfficials } from '../../data/publicOfficials';
+import CardGrid, { CardGridItem } from '../ui/CardGrid';
+import OfficialPortrait from '../ui/OfficialPortrait';
+import StatusBadge, { type BadgeTone } from '../ui/StatusBadge';
 import {
-  Crown,
-  Gavel,
-  Landmark,
-  Search,
-  ChevronDown,
-  Building2,
-} from 'lucide-react';
+  publicOfficials,
+  hasBallotNameDifference,
+} from '../../data/publicOfficials';
+import { Search, ChevronDown, Building2 } from 'lucide-react';
 
 export default function PublicOfficials() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -63,24 +61,10 @@ export default function PublicOfficials() {
     return result;
   }, [positionFilter, searchQuery, sortBy]);
 
-  const getIcon = (position: string) => {
-    if (position === 'City Mayor') {
-      return <Crown className="h-5 w-5 text-yellow-600" />;
-    }
-    if (position === 'Vice Mayor') {
-      return <Landmark className="h-5 w-5 text-primary-600" />;
-    }
-    return <Gavel className="h-5 w-5 text-blue-600" />;
-  };
-
-  const getBadgeClass = (position: string) => {
-    if (position === 'City Mayor') {
-      return 'bg-yellow-100 text-yellow-800';
-    }
-    if (position === 'Vice Mayor') {
-      return 'bg-primary-100 text-primary-800';
-    }
-    return 'bg-blue-100 text-blue-800';
+  const getBadgeTone = (position: string): BadgeTone => {
+    if (position === 'City Mayor') return 'accent';
+    if (position === 'Vice Mayor') return 'info';
+    return 'neutral';
   };
 
   return (
@@ -162,100 +146,128 @@ export default function PublicOfficials() {
           icon
         />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <CardGrid label="Public officials">
           {filteredOfficials.map(official => (
-            <Card hoverable className="h-full border-t-4 border-primary-500">
-              <CardContent className="p-5">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    {getIcon(official.position)}
-                    <h4 className="text-lg font-medium text-gray-900">
-                      {official.name}
-                    </h4>
-                  </div>
-                  <span
-                    className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full ${getBadgeClass(
-                      official.position
-                    )}`}
-                  >
-                    {official.position === 'City Mayor'
-                      ? 'Mayor'
-                      : official.position === 'Vice Mayor'
-                        ? 'Vice Mayor'
-                        : 'Councilor'}
-                  </span>
-                </div>
-
-                <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                  {official.description}
-                </p>
-
-                {official.committees && (
-                  <div className="flex flex-wrap gap-1 mb-3">
-                    {official.committees.slice(0, 2).map(committee => (
-                      <span
-                        key={committee}
-                        className="inline-block px-2 py-0.5 text-xs rounded bg-gray-100 text-gray-700"
+            <CardGridItem key={official.id}>
+              <Card hoverable className="h-full ring-1 ring-black/[0.06]">
+                <CardContent className="flex h-full flex-col p-5">
+                  <div className="mb-3 flex items-start gap-3">
+                    <OfficialPortrait
+                      src={official.avatar}
+                      name={official.name}
+                      position={official.position}
+                      size="md"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <h4 className="text-lg font-medium text-gray-900">
+                        {official.name}
+                      </h4>
+                      <StatusBadge
+                        tone={getBadgeTone(official.position)}
+                        size="sm"
+                        className="mt-1"
                       >
-                        {committee}
-                      </span>
-                    ))}
-                    {official.committees.length > 2 && (
-                      <span className="inline-block px-2 py-0.5 text-xs rounded bg-gray-100 text-gray-700">
-                        +{official.committees.length - 2}
-                      </span>
-                    )}
+                        {official.position === 'City Mayor'
+                          ? 'Mayor'
+                          : official.position === 'Vice Mayor'
+                            ? 'Vice Mayor'
+                            : 'Councilor'}
+                      </StatusBadge>
+                    </div>
                   </div>
-                )}
 
-                <div className="flex items-center text-xs text-gray-500">
-                  <Building2 className="h-3 w-3 mr-1" />
-                  Term: {official.term}
-                </div>
-                {official.contact?.email ||
-                official.contact?.office ||
-                official.contact?.phone ? (
-                  <div className="flex flex-col gap-1">
-                    {official?.contact?.email && (
-                      <span className="text-xs text-gray-500">
-                        Email:
-                        <Link
-                          to={`mailto:${official?.contact.email}`}
-                          className="text-xs text-primary-600 hover:underline"
+                  {official.description && (
+                    <p className="mb-3 line-clamp-2 text-sm text-gray-600">
+                      {official.description}
+                    </p>
+                  )}
+
+                  {hasBallotNameDifference(official) && (
+                    <p className="mb-3 text-xs text-gray-500">
+                      <span className="font-medium text-gray-600">
+                        On the ballot:
+                      </span>{' '}
+                      {official.ballotName}
+                    </p>
+                  )}
+
+                  {official.committees && official.committees.length > 0 && (
+                    <div className="mb-3 flex flex-wrap gap-1">
+                      {official.committees.slice(0, 2).map(committee => (
+                        <span
+                          key={committee}
+                          className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-700"
                         >
-                          {official.contact.email}
-                        </Link>
-                      </span>
-                    )}
-                    {official?.contact?.phone && (
-                      <span className="text-xs text-gray-500">
-                        Phone:{' '}
-                        <Link
-                          to={`tel:${official?.contact.phone}`}
-                          className="text-xs text-primary-600 hover:underline"
-                        >
-                          {official.contact.phone}
-                        </Link>
-                      </span>
-                    )}
-                    <span className="text-xs text-gray-500 flex items-center gap-1">
-                      Office Address:
-                      {official?.contact?.office && (
-                        <span className="text-xs text-gray-700">
-                          {official.contact.office}
+                          {committee}
+                        </span>
+                      ))}
+                      {official.committees.length > 2 && (
+                        <span className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-700">
+                          +{official.committees.length - 2}
                         </span>
                       )}
-                    </span>
+                    </div>
+                  )}
+
+                  <div className="mt-auto">
+                    <div className="mb-2 flex items-center text-xs text-gray-500">
+                      <Building2
+                        className="mr-1 size-3 shrink-0"
+                        aria-hidden="true"
+                      />
+                      Term: {official.term}
+                    </div>
+
+                    {official.contact?.email ||
+                    official.contact?.office ||
+                    official.contact?.phone ? (
+                      <dl className="flex flex-col gap-1 text-xs">
+                        {official.contact.email && (
+                          <div className="flex gap-1">
+                            <dt className="shrink-0 text-gray-500">Email:</dt>
+                            <dd className="min-w-0">
+                              <a
+                                href={`mailto:${official.contact.email}`}
+                                className="break-all text-primary-600 hover:underline"
+                              >
+                                {official.contact.email}
+                              </a>
+                            </dd>
+                          </div>
+                        )}
+                        {official.contact.phone && (
+                          <div className="flex gap-1">
+                            <dt className="shrink-0 text-gray-500">Phone:</dt>
+                            <dd className="min-w-0">
+                              <a
+                                href={`tel:${official.contact.phone}`}
+                                className="text-primary-600 hover:underline"
+                              >
+                                {official.contact.phone}
+                              </a>
+                            </dd>
+                          </div>
+                        )}
+                        {official.contact.office && (
+                          <div className="flex gap-1">
+                            <dt className="shrink-0 text-gray-500">Office:</dt>
+                            <dd className="min-w-0 text-gray-700">
+                              {official.contact.office}
+                            </dd>
+                          </div>
+                        )}
+                      </dl>
+                    ) : (
+                      <p className="text-xs text-gray-500">
+                        No contact information available
+                      </p>
+                    )}
                   </div>
-                ) : (
-                  <div className="text-xs text-gray-500 mt-3">
-                    No contact information available
-                  </div>
-                )}
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </CardGridItem>
           ))}
-        </div>
+        </CardGrid>
       )}
     </div>
   );

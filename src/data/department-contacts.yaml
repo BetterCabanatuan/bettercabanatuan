@@ -61,7 +61,7 @@ contacts:
 
   - name: 'City Legal Office'
     phone: '0919-081-0213'
-    departmentSlug: cswdo
+    departmentSlug: city-legal-office
 
   - name: 'City Veterinary Office'
     phone: '0919-089-9906'
@@ -105,9 +105,11 @@ contacts:
 
   - name: 'City Health Office (CHO) - Main'
     phone: '0919-081-1348'
+    departmentSlug: cho
 
   - name: 'CHO - City Epidemiology Surveilance Unit'
     phone: '0919-081-0167'
+    departmentSlug: cho
 
   - name: 'City Health Center #1 Mayapyap Sur'
     phone: '0919-081-3119'

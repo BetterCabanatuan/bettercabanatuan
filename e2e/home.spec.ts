@@ -8,7 +8,9 @@ test.describe('Home page', () => {
     await expect(
       page.getByRole('region', { name: 'Emergency hotlines' })
     ).toBeVisible();
-    await expect(page.getByRole('link', { name: '(044)-463-1111' })).toBeVisible();
+    await expect(
+      page.getByRole('link', { name: '(044)-463-1111' })
+    ).toBeVisible();
   });
 });
 

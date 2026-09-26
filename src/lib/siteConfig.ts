@@ -70,6 +70,18 @@ export const cityStats = {
   incomeClass: cityData.incomeClass,
   cityClass: cityData.cityClass,
   populationTrend: cityData.populationTrend,
+  /**
+   * Which census `totalPopulation` belongs to.
+   *
+   * Single source of truth — the homepage, /about, and /statistics all read
+   * this instead of hardcoding a year. See `city-data.json`.
+   */
+  populationReference: cityData.populationReference,
+  /** Interpolation values for the `populationLabel` i18n keys. */
+  populationLabelValues: {
+    year: cityData.populationReference.year,
+    program: cityData.populationReference.program,
+  },
 };
 
 export const services = serviceCategories.categories;
