@@ -1,10 +1,17 @@
+import Breadcrumbs from './Breadcrumbs';
 import { Heading } from './Heading';
 import { Text } from './Text';
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
 
 interface PageBannerProps {
   eyebrow?: string;
   title: string;
   description: string;
+  breadcrumbs?: BreadcrumbItem[];
   className?: string;
 }
 
@@ -12,6 +19,7 @@ export default function PageBanner({
   eyebrow,
   title,
   description,
+  breadcrumbs,
   className = '',
 }: PageBannerProps) {
   return (
@@ -27,14 +35,18 @@ export default function PageBanner({
       />
       <div className="absolute inset-0 bg-gradient-to-br from-primary-800/80 via-primary-900 to-primary-950" />
       <div className="container mx-auto px-4 relative">
+        {breadcrumbs && breadcrumbs.length > 0 && (
+          <Breadcrumbs
+            className="mb-6 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/60"
+            items={breadcrumbs}
+          />
+        )}
         {eyebrow && (
           <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
             {eyebrow}
           </p>
         )}
-        <Heading className="text-white mb-3 max-w-3xl">
-          {title}
-        </Heading>
+        <Heading className="text-white mb-3 max-w-3xl">{title}</Heading>
         <Text className="text-white/85 max-w-2xl text-base md:text-lg mb-0">
           {description}
         </Text>

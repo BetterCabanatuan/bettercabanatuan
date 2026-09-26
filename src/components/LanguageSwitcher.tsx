@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
         </span>
       </button>
 
-      <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div className="absolute right-0 z-50 mt-2 w-48 invisible rounded-md bg-white opacity-0 shadow-lg ring-1 ring-black/5 transition-[opacity,visibility] duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
         <div className="py-1">
           {languages.map(language => (
             <button

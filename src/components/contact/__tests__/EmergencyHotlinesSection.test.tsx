@@ -16,9 +16,8 @@ describe('EmergencyHotlinesSection', () => {
   it('provides tel links for emergency numbers', () => {
     render(<EmergencyHotlinesSection />);
 
-    expect(screen.getByRole('link', { name: '(044)-940-0161' })).toHaveAttribute(
-      'href',
-      'tel:+63449400161'
-    );
+    expect(
+      screen.getByRole('link', { name: '(044)-940-0161' })
+    ).toHaveAttribute('href', 'tel:+63449400161');
   });
 });

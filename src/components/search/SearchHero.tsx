@@ -60,7 +60,7 @@ export default function SearchHero({
           ]}
         />
 
-        <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
+        <p className="text-sm tracking-[0.2em] uppercase text-primary-100 mb-3">
           {t('search.eyebrow')}
         </p>
         <Heading id="search-page-heading" className="text-white mb-3 max-w-3xl">
@@ -94,7 +94,7 @@ export default function SearchHero({
                 value={query}
                 onChange={event => onQueryChange(event.target.value)}
                 placeholder={t('search.placeholder')}
-                className="w-full min-h-[52px] pl-12 pr-4 py-3 rounded-xl border-0 bg-white text-gray-900 text-base shadow-lg shadow-primary-900/20 placeholder:text-gray-400 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
+                className="w-full min-h-[52px] pl-12 pr-4 py-3 rounded-xl border-0 bg-white text-gray-900 text-base shadow-lg shadow-primary-900/20 placeholder:text-gray-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
               />
             </div>
             <button

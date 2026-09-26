@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Crown, ExternalLink, Landmark } from 'lucide-react';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import Section from '../ui/Section';
@@ -24,7 +24,7 @@ export default function AboutLeadershipSection() {
       </Text>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {leadership.mayor && (
-          <Card className="border-t-4 border-yellow-500 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none">
+          <Card className="shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] motion-safe:animate-slide-in motion-reduce:animate-none">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="h-6 w-6 text-yellow-600" aria-hidden="true" />
@@ -46,7 +46,7 @@ export default function AboutLeadershipSection() {
         )}
         {leadership.viceMayor && (
           <Card
-            className="border-t-4 border-primary-500 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+            className="shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] motion-safe:animate-slide-in motion-reduce:animate-none"
             style={{ animationDelay: '100ms' }}
           >
             <CardContent className="p-6">

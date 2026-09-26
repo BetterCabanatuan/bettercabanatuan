@@ -25,21 +25,19 @@ export default function ServicesIndexPage() {
           { name: 'Services', url: '/services' },
         ])}
       />
-      <main className="flex-grow">
-        <GovernmentPageHero
-          eyebrow="City Services"
-          title={pageTitle}
-          description={pageDescription}
-          icon={LayoutGrid}
-          breadcrumbs={[
-            { label: 'Home', href: '/' },
-            { label: 'Services', href: '/services' },
-          ]}
-        />
-        <Section className="p-3 mb-12 pt-10">
-          <ServicesSection showHeader={false} />
-        </Section>
-      </main>
+      <GovernmentPageHero
+        eyebrow="City Services"
+        title={pageTitle}
+        description={pageDescription}
+        icon={LayoutGrid}
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Services', href: '/services' },
+        ]}
+      />
+      <Section className="p-3 mb-12 pt-10">
+        <ServicesSection showHeader={false} />
+      </Section>
     </>
   );
 }

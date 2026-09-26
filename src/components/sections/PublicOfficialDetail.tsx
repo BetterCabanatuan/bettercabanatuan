@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { getOfficialById, councilors } from '../../data/publicOfficials';
 import {

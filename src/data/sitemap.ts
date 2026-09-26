@@ -1,11 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import {
-  Home,
-  Heart,
-  Landmark,
-  MapPin,
-  ExternalLink,
-} from 'lucide-react';
+import { Home, Heart, Landmark, MapPin, ExternalLink } from 'lucide-react';
 import {
   serviceCategories,
   governmentCategories,
@@ -13,6 +7,7 @@ import {
   allDepartments,
   allProjects,
   getCategoryPagesSync,
+  getBarangayPopulationTrend,
 } from './yamlLoader';
 import { siteConfig } from '../lib/siteConfig';
 
@@ -49,7 +44,9 @@ export const sitemapGroups: SitemapGroup[] = [
       { label: 'Home', href: '/' },
       { label: 'About the Portal', href: '/about' },
       { label: 'Contact Us', href: '/contact' },
+      { label: 'Hotlines', href: '/hotlines' },
       { label: 'Statistics', href: '/statistics' },
+      { label: 'Accessibility', href: '/accessibility' },
       { label: 'Sitemap', href: '/sitemap' },
     ],
   },
@@ -106,8 +103,12 @@ export const sitemapGroups: SitemapGroup[] = [
         )
         .flatMap(section => {
           const pages = getCategoryPagesSync(section.slug);
+          // Label sections that have no published content yet, so search and
+          // sitemap don't present them as ready-to-read. See P2-1.
           const sectionLink: SitemapLink = {
-            label: section.category,
+            label: section.comingSoon
+              ? `${section.category} (Coming soon)`
+              : section.category,
             href: getGovernmentHref(section.slug),
             description: section.description,
           };
@@ -125,11 +126,16 @@ export const sitemapGroups: SitemapGroup[] = [
     title: 'Barangays',
     description: `${allBarangays.length} barangays across ${siteConfig.governmentName}.`,
     icon: MapPin,
-    links: allBarangays.map(barangay => ({
-      label: barangay.name,
-      href: `/government/barangays/${barangay.slug}`,
-      description: `${barangay.classification} · ${barangay.population['2024'].toLocaleString()} residents`,
-    })),
+    links: allBarangays.map(barangay => {
+      const latest = getBarangayPopulationTrend(barangay).at(-1);
+      return {
+        label: barangay.name,
+        href: `/government/barangays/${barangay.slug}`,
+        description: latest
+          ? `${barangay.classification} · ${latest.population.toLocaleString()} residents (${latest.year})`
+          : `${barangay.classification} · population not yet published`,
+      };
+    }),
   },
   {
     id: 'resources',

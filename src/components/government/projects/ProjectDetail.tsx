@@ -6,7 +6,7 @@ import { Text } from '../../ui/Text';
 import Section from '../../ui/Section';
 import Breadcrumbs from '../../ui/Breadcrumbs';
 import SEO from '../../SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../../ui/Card';
 import { Banner } from '@bettergov/kapwa/banner';
 import type { Project } from '../../../data/yamlLoader';
 import ProjectStatusBadge from './ProjectStatusBadge';
@@ -72,7 +72,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             </div>
           </div>
 
-          <Card className="h-fit border-t-4 border-accent-500">
+          <Card className="h-fit ring-1 ring-accent-200">
             <CardContent className="p-6 space-y-4">
               <Heading level={3} className="text-lg mb-2">
                 Project Details

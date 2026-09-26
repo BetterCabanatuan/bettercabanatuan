@@ -1,6 +1,13 @@
 {
   "cityName": "City of Cabanatuan",
   "totalPopulation": 343672,
+  "populationReference": {
+    "year": 2024,
+    "program": "POPCEN 2024",
+    "source": "Philippine Statistics Authority (PSA)",
+    "sourceUrl": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+    "note": "343,672 is the 2024 Census of Population and Housing (POPCEN 2024) count. The 2020 census recorded 327,325, and the 2015 census 302,231."
+  },
   "totalBarangays": 89,
   "landArea": 192.29,
   "psgcCode": "0304903000",

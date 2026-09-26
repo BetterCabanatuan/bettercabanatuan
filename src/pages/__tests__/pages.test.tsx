@@ -5,6 +5,8 @@ import { renderWithProviders } from '../../test/test-utils';
 import HomePage from '../Home';
 import AboutPage from '../About';
 import ContactPage from '../contact';
+import HotlinesPage from '../hotlines';
+import AccessibilityPage from '../accessibility';
 import StatisticsPage from '../statistics';
 import ServicesIndexPage from '../services/index';
 import ServiceCategoryPage from '../services/$categoryId';
@@ -49,6 +51,18 @@ const pages: Array<{
     route: '/contact',
     Component: ContactPage,
     heading: 'Contact Us',
+  },
+  {
+    name: 'Hotlines',
+    route: '/hotlines',
+    Component: HotlinesPage,
+    heading: 'Hotlines',
+  },
+  {
+    name: 'Accessibility',
+    route: '/accessibility',
+    Component: AccessibilityPage,
+    heading: 'Accessibility Statement',
   },
   {
     name: 'Statistics',
@@ -182,5 +196,30 @@ describe('page smoke tests', () => {
         expect(document.body.textContent?.length).toBeGreaterThan(0);
       }
     });
+  });
+});
+
+describe('long-page navigation', () => {
+  it('uses the shared card grid on service category pages', async () => {
+    renderWithProviders(<ServiceCategoryPage />, {
+      route: '/services/health-services',
+      routePattern: '/services/:categoryId',
+    });
+
+    expect(
+      await screen.findByRole('list', { name: 'Health Services' })
+    ).toBeInTheDocument();
+  });
+
+  it.each([
+    ['About', '/about', AboutPage],
+    ['Contact', '/contact', ContactPage],
+    ['Departments', '/government/departments', DepartmentsPage],
+  ])('adds jump navigation to %s', async (_name, route, Component) => {
+    renderWithProviders(<Component />, { route });
+
+    expect(
+      await screen.findByRole('navigation', { name: 'On this page' })
+    ).toBeInTheDocument();
   });
 });

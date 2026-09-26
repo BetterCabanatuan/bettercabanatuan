@@ -25,21 +25,19 @@ export default function GovernmentIndexPage() {
           { name: 'Government', url: '/government' },
         ])}
       />
-      <main className="flex-grow">
-        <GovernmentPageHero
-          eyebrow="City Government"
-          title={pageTitle}
-          description={pageDescription}
-          icon={Landmark}
-          breadcrumbs={[
-            { label: 'Home', href: '/' },
-            { label: 'Government', href: '/government' },
-          ]}
-        />
-        <Section className="p-3 mb-12 pt-10">
-          <GovernmentActivitySection showHeader={false} />
-        </Section>
-      </main>
+      <GovernmentPageHero
+        eyebrow="City Government"
+        title={pageTitle}
+        description={pageDescription}
+        icon={Landmark}
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Government', href: '/government' },
+        ]}
+      />
+      <Section className="p-3 mb-12 pt-10">
+        <GovernmentActivitySection showHeader={false} />
+      </Section>
     </>
   );
 }

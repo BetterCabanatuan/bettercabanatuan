@@ -30,40 +30,39 @@ categories:
     slug: 'social-welfare'
     description: 'What assistance is available for seniors, PWDs, solo parents, and indigent families, plus details on relief goods, and livelihood aid.'
     icon: 'Users'
-  
+
   # Agriculture & Fisheries Services
   - category: 'Agriculture & Fisheries'
     slug: 'agriculture-fisheries'
     description: 'What farm or fishing support is available, including seeds, fertilizers, veterinary care, and where to join training or borrow equipment.'
     icon: 'Wheat'
-  
+
   # Infrastructure & Public Works Services
   - category: 'Infrastructure & Public Works'
     slug: 'infrastructure-public-works'
     description: 'How to report damaged roads or drainage, where to request water supply, and how to access public facilities and markets.'
     icon: 'Wrench'
-  
+
   # Garbage and Waste Disposal Services
   - category: 'Garbage and Waste Disposal'
     slug: 'garbage-waste-disposal'
     description: 'Garbage collection schedules, waste disposal guidelines, and how to properly dispose of different types of waste.'
     icon: 'Trash2'
-  
+
   # Environment Services
   - category: 'Environment'
     slug: 'environment'
     description: 'Clean-up or tree planting activities, environmental protection rules, and conservation programs.'
     icon: 'TreePine'
-  
+
   # Disaster Preparedness Services
   - category: 'Disaster Preparedness'
     slug: 'disaster-preparedness'
     description: 'Disaster preparedness plans, emergency response information, and evacuation procedures.'
     icon: 'Shield'
-  
+
   # Housing & Land Use Services
   - category: 'Housing & Land Use'
     slug: 'housing-land-use'
     description: 'How to apply for housing projects, what zoning and building permits are needed, and where relocation sites are available.'
     icon: 'Home'
-  

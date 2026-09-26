@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import type { SitemapGroup } from '../../data/sitemap';
 
 interface SitemapSectionProps {
@@ -25,7 +25,7 @@ export default function SitemapSection({
       className="motion-safe:animate-slide-in scroll-mt-24"
       style={{ animationDelay: `${animationDelay}ms` }}
     >
-      <Card className="h-full border-t-4 border-primary-500 overflow-hidden">
+      <Card className="h-full overflow-hidden ring-1 ring-black/[0.06]">
         <CardContent className="p-6 md:p-8">
           <div className="flex items-start gap-4 mb-6">
             <span className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary-50 text-primary-600 shrink-0">
@@ -86,7 +86,7 @@ function SitemapLinkRow({ link, compact }: SitemapLinkRowProps) {
   );
 
   const className =
-    'group flex items-start justify-between gap-3 min-h-[44px] px-4 py-3 rounded-lg border border-gray-100 bg-gray-50/80 hover:border-primary-200 hover:bg-primary-50/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-all duration-200';
+    'group flex items-start justify-between gap-3 min-h-[44px] px-4 py-3 rounded-lg border border-gray-100 bg-gray-50/80 hover:border-primary-200 hover:bg-primary-50/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 transition-[background-color,border-color,color] duration-200';
 
   if (link.external) {
     return (

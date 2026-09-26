@@ -70,7 +70,7 @@ export default function ElectionResultsSection() {
               <Heading level={3} className="text-base mb-0">
                 {contest.position}
               </Heading>
-              <span className="text-xs font-medium text-gray-400 whitespace-nowrap">
+              <span className="text-xs font-medium text-gray-500 whitespace-nowrap">
                 {contest.margin !== undefined
                   ? `Margin: ${formatVotes(contest.margin)}`
                   : `${contest.seats} seat${contest.seats === 1 ? '' : 's'}`}
@@ -99,7 +99,7 @@ export default function ElectionResultsSection() {
           <Heading level={3} className="text-base mb-0">
             {councilors.position}
           </Heading>
-          <span className="text-xs font-medium text-gray-400 whitespace-nowrap">
+          <span className="text-xs font-medium text-gray-500 whitespace-nowrap">
             {councilors.seats} seats
           </span>
         </div>

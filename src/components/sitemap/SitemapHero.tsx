@@ -21,7 +21,7 @@ export default function SitemapHero({ title, description }: SitemapHeroProps) {
             { label: 'Sitemap', href: '/sitemap' },
           ]}
         />
-        <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
+        <p className="text-sm tracking-[0.2em] uppercase text-primary-100 mb-3">
           Site Navigation
         </p>
         <Heading id="sitemap-heading" className="text-white mb-3 max-w-3xl">

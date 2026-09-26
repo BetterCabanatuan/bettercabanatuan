@@ -4,9 +4,17 @@ import { Text } from '../../../components/ui/Text';
 import Section from '../../../components/ui/Section';
 import SEO from '../../../components/SEO';
 import Breadcrumbs from '../../../components/ui/Breadcrumbs';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import MapBanner from '../../../components/ui/MapBanner';
+import { Card, CardContent } from '../../../components/ui/Card';
 import { Banner } from '@bettergov/kapwa/banner';
-import { getBarangayBySlug, allBarangays } from '../../../data/yamlLoader';
+import {
+  getBarangayBySlug,
+  allBarangays,
+  barangaysData,
+  getBarangayPopulationTrend,
+  BARANGAY_POPULATION_YEARS,
+  type BarangayPopulationYear,
+} from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
 import { barangayJsonLd } from '../../../lib/structuredData';
 import {
@@ -50,6 +58,19 @@ const BarangayDetail: React.FC = () => {
   }
 
   const isUrban = barangay.classification === 'Urban';
+
+  // Years with a verified figure only — null years are omitted, never faked.
+  const populationTrend = getBarangayPopulationTrend(barangay);
+  const presentYears = new Set(populationTrend.map(p => p.year));
+  const missingYears = BARANGAY_POPULATION_YEARS.filter(
+    year => !presentYears.has(year)
+  ) as BarangayPopulationYear[];
+  const latestYear = populationTrend[populationTrend.length - 1]?.year;
+  const latestPopulation =
+    populationTrend[populationTrend.length - 1]?.population;
+  const LATEST_CENSUS_YEAR =
+    latestYear ??
+    BARANGAY_POPULATION_YEARS[BARANGAY_POPULATION_YEARS.length - 1];
 
   const relatedBarangays = allBarangays
     .filter(
@@ -101,12 +122,26 @@ const BarangayDetail: React.FC = () => {
           <span
             className={`inline-block px-3 py-1 text-sm font-medium rounded-full ${
               isUrban
-                ? 'bg-blue-100 text-blue-800'
-                : 'bg-green-100 text-green-800'
+                ? 'bg-badge-info text-badge-info-fg'
+                : 'bg-badge-success text-badge-success-fg'
             }`}
           >
             {barangay.classification}
           </span>
+
+          {/*
+            The map anchor. A schematic band rather than a map: there is no
+            verified boundary geometry for any of the 89 barangays, and a
+            plausible-looking map would be a fabricated image on a civic site.
+            It is labelled, so it reads as "map goes here" instead of as a
+            failed image load. See docs/IMAGERY-SYSTEM.md.
+          */}
+          <MapBanner
+            className="mt-4"
+            label={`Barangay ${barangay.name}`}
+            caption={`${barangay.classification} barangay, Cabanatuan City`}
+            size="sm"
+          />
         </div>
 
         <Card className="mb-8">
@@ -120,9 +155,11 @@ const BarangayDetail: React.FC = () => {
               <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
                 <Users className="h-5 w-5 text-primary-600" />
                 <div>
-                  <div className="text-sm text-gray-500">Population (2024)</div>
+                  <div className="text-sm text-gray-500">
+                    Population ({latestYear})
+                  </div>
                   <div className="text-lg font-semibold text-gray-900">
-                    {barangay.population['2024'].toLocaleString()}
+                    {latestPopulation?.toLocaleString() ?? '—'}
                   </div>
                 </div>
               </div>
@@ -175,26 +212,58 @@ const BarangayDetail: React.FC = () => {
             <Heading level={3} className="mb-4">
               Population Trend
             </Heading>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-gray-50 rounded-lg">
-                <div className="text-sm text-gray-500 mb-1">2015</div>
-                <div className="text-xl font-bold text-gray-900">
-                  {barangay.population['2015'].toLocaleString()}
-                </div>
+            {populationTrend.length > 0 ? (
+              <div
+                className="grid gap-4"
+                style={{
+                  gridTemplateColumns: `repeat(${populationTrend.length}, minmax(0, 1fr))`,
+                }}
+              >
+                {populationTrend.map(({ year, population }) => {
+                  const isLatest = year === LATEST_CENSUS_YEAR;
+                  return (
+                    <div
+                      key={year}
+                      className={
+                        isLatest
+                          ? 'text-center p-4 bg-primary-50 rounded-lg border border-primary-200'
+                          : 'text-center p-4 bg-gray-50 rounded-lg'
+                      }
+                    >
+                      <div
+                        className={
+                          isLatest
+                            ? 'text-sm text-primary-600 mb-1'
+                            : 'text-sm text-gray-500 mb-1'
+                        }
+                      >
+                        {year}
+                      </div>
+                      <div
+                        className={
+                          isLatest
+                            ? 'text-xl font-bold text-primary-700'
+                            : 'text-xl font-bold text-gray-900'
+                        }
+                      >
+                        {population.toLocaleString()}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-              <div className="text-center p-4 bg-gray-50 rounded-lg">
-                <div className="text-sm text-gray-500 mb-1">2020</div>
-                <div className="text-xl font-bold text-gray-900">
-                  {barangay.population['2020'].toLocaleString()}
-                </div>
-              </div>
-              <div className="text-center p-4 bg-primary-50 rounded-lg border border-primary-200">
-                <div className="text-sm text-primary-600 mb-1">2024</div>
-                <div className="text-xl font-bold text-primary-700">
-                  {barangay.population['2024'].toLocaleString()}
-                </div>
-              </div>
-            </div>
+            ) : (
+              <Text className="text-gray-500 mb-0">
+                Population trend data is not available for this barangay.
+              </Text>
+            )}
+            {missingYears.length > 0 && (
+              <Text className="text-xs text-gray-500 mt-4 mb-0">
+                No verified {missingYears.join(' or ')} census figure is
+                available for this barangay, so it is left out rather than
+                estimated. Source: {barangaysData.source}.
+              </Text>
+            )}
           </CardContent>
         </Card>
 

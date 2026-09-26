@@ -54,23 +54,21 @@ export default function OfficialsPage() {
           ]),
         ]}
       />
-      <main className="flex-grow">
-        <GovernmentPageHero
-          eyebrow="City Government"
-          title="Public Officials"
-          description={pageDescription}
-          icon={Users}
-          breadcrumbs={[
-            { label: 'Home', href: '/' },
-            { label: 'Government', href: '/government' },
-            { label: 'Public Officials', href: '/government/officials' },
-          ]}
-        />
-        <Section className="p-3 mb-12 pt-10">
-          <PublicOfficials />
-          <ElectionResultsSection />
-        </Section>
-      </main>
+      <GovernmentPageHero
+        eyebrow="City Government"
+        title="Public Officials"
+        description={pageDescription}
+        icon={Users}
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Government', href: '/government' },
+          { label: 'Public Officials', href: '/government/officials' },
+        ]}
+      />
+      <Section className="p-3 mb-12 pt-10">
+        <PublicOfficials />
+        <ElectionResultsSection />
+      </Section>
     </>
   );
 }

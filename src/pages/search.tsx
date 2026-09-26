@@ -96,30 +96,28 @@ export default function SearchPage() {
         url={getSearchCanonicalUrl(urlQuery, activeFilter)}
         noindex
       />
-      <main className="flex-grow" id="main-content">
-        <SearchHero
-          title={t('search.title')}
-          description={pageDescription}
-          query={draftQuery}
-          onQueryChange={setDraftQuery}
-          onSubmit={() => commitSearch()}
-          resultCount={urlQuery.trim() ? results.length : undefined}
-        />
+      <SearchHero
+        title={t('search.title')}
+        description={pageDescription}
+        query={draftQuery}
+        onQueryChange={setDraftQuery}
+        onSubmit={() => commitSearch()}
+        resultCount={urlQuery.trim() ? results.length : undefined}
+      />
 
-        <Section className="p-3 mb-12 pt-10">
-          <SearchFilters
-            filters={searchFilters}
-            activeFilter={activeFilter}
-            onFilterChange={handleFilterChange}
-          />
-          <SearchResults
-            results={results}
-            query={urlQuery}
-            onSuggestedSearch={handleSuggestedSearch}
-            suggestedSearches={suggestedSearches}
-          />
-        </Section>
-      </main>
+      <Section className="p-3 mb-12 pt-10">
+        <SearchFilters
+          filters={searchFilters}
+          activeFilter={activeFilter}
+          onFilterChange={handleFilterChange}
+        />
+        <SearchResults
+          results={results}
+          query={urlQuery}
+          onSuggestedSearch={handleSuggestedSearch}
+          suggestedSearches={suggestedSearches}
+        />
+      </Section>
     </>
   );
 }

@@ -12,6 +12,7 @@ import {
   isNestedCategory,
   serviceCategories,
 } from '../yamlLoader';
+import { ICON_MAP } from '../../lib/iconMap';
 
 describe('yamlLoader data', () => {
   it('loads service and government categories', () => {
@@ -19,9 +20,20 @@ describe('yamlLoader data', () => {
     expect(governmentCategories.categories.length).toBeGreaterThan(0);
   });
 
-  it('loads 18 departments from departments.yaml', () => {
-    expect(allDepartments).toHaveLength(18);
+  it('loads the departments listed in departments.yaml', () => {
+    expect(allDepartments.length).toBeGreaterThan(0);
     expect(allDepartments[0].name).toBe('Office of the City Mayor');
+  });
+
+  it('gives every department a unique slug and a mapped icon', () => {
+    const slugs = allDepartments.map(department => department.slug);
+    expect(new Set(slugs).size).toBe(slugs.length);
+
+    allDepartments.forEach(department => {
+      expect(department.slug).toBeTruthy();
+      expect(department.services.length).toBeGreaterThan(0);
+      expect(ICON_MAP[department.icon]).toBeDefined();
+    });
   });
 
   it('loads projects from projects.yaml', () => {

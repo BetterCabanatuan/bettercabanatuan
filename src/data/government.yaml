@@ -31,6 +31,8 @@ categories:
     slug: 'news'
     description: 'Stay informed with the latest local government news, announcements, and policy updates.'
     icon: 'Newspaper'
+    comingSoon: true
+    comingSoonNote: 'News items are not published here yet. The official Facebook page is where the city government posts announcements as they happen.'
     subcategories:
       - name: 'News'
         slug: 'news'
@@ -40,6 +42,8 @@ categories:
     slug: 'guides-and-regulations'
     description: 'Access guidelines, rules, regulations, and step-by-step instructions for local government processes.'
     icon: 'Book'
+    comingSoon: true
+    comingSoonNote: 'Guides and regulations are still being transcribed. For the requirements that apply to you today, contact the responsible city office directly.'
     subcategories:
       - name: 'Guides'
         slug: 'guides'
@@ -49,6 +53,8 @@ categories:
     slug: 'reports-and-statistics'
     description: 'Access local government reports, statistical data, and performance metrics.'
     icon: 'ChartBar'
+    comingSoon: true
+    comingSoonNote: 'City reports and performance data are not published here yet. The Transparency and Statistics sections already carry published figures you can use today.'
     subcategories:
       - name: 'Reports'
         slug: 'reports'
@@ -58,6 +64,8 @@ categories:
     slug: 'public-consultations'
     description: 'Participate in public consultations and provide feedback on local government decisions.'
     icon: 'MessagesSquare'
+    comingSoon: true
+    comingSoonNote: 'Open consultations are not listed here yet. Watch the official Facebook page for announcements when a consultation opens.'
     subcategories:
       - name: 'Public Consultations'
         slug: 'public-consultations'
@@ -65,6 +73,8 @@ categories:
     slug: 'transparency-documents'
     description: 'Access Freedom of Information releases and transparency documents for local government accountability.'
     icon: 'FileText'
+    comingSoon: true
+    comingSoonNote: 'Transparency documents are not mirrored here yet. The Transparency section already links the Freedom of Information portal and published flood control and budget records.'
     subcategories:
       - name: 'Transparency Documents'
         slug: 'transparency-documents'

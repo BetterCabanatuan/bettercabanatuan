@@ -4,7 +4,28 @@
 
 import { type TypographyTheme } from './typographyThemes';
 import { type ReactNode, type HTMLAttributes } from 'react';
+import { defaultUrlTransform } from 'react-markdown';
 import { TableWithToggle } from './TableWithToggle';
+
+/**
+ * Protocols allowed in markdown link targets.
+ *
+ * react-markdown's own `defaultUrlTransform` only trusts http/https/irc/mailto/
+ * xmpp, so it silently rewrites every `tel:` link in content to `href=""` —
+ * a hotline written in markdown renders as a dead, unclickable number.
+ * Everything else still goes through the default transform, which keeps
+ * relative URLs working and `javascript:` blocked.
+ */
+const SAFE_CONTENT_PROTOCOLS = /^(https?|ircs?|mailto|xmpp|tel)$/i;
+
+export function contentUrlTransform(url: string): string {
+  const colon = url.indexOf(':');
+  // Compare the scheme only — the rest of the URL is arbitrary.
+  if (colon > -1 && SAFE_CONTENT_PROTOCOLS.test(url.slice(0, colon))) {
+    return url;
+  }
+  return defaultUrlTransform(url);
+}
 
 // Extended theme type to include dynamic component keys
 type ExtendedTheme = TypographyTheme & {
@@ -15,50 +36,48 @@ type ExtendedTheme = TypographyTheme & {
 
 /**
  * Creates ReactMarkdown components with custom styling based on typography theme
+ *
+ * ## Headings are demoted one level
+ *
+ * Every document page already renders its own `<h1>` — the department name, the
+ * project name, the service title. Markdown documents are written with `#` for
+ * their top-level sections, and the loader keeps that first `#` in the body (it
+ * is also read as the document title for SEO). Rendering those as `<h1>` gave
+ * the department page *ten* h1s: one for the page and nine for its sections.
+ *
+ * Mapping `#` to `<h2>` and shifting the rest down keeps the outline honest
+ * relative to the page heading, and the visual sizes still come from the
+ * typography theme, so nothing looks different.
  */
 export function createMarkdownComponents(theme: TypographyTheme) {
   const extendedTheme = theme as ExtendedTheme;
+
+  /**
+   * Build a heading renderer one level down from its markdown source level.
+   *
+   * The visual style stays keyed to the *source* level so `#` and `##` keep the
+   * relative sizes the author intended; only the tag is shifted.
+   */
+  const demoted =
+    (
+      Tag: 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+      styleKey: 'h1' | 'h2' | 'h3' | 'h4' | 'h5'
+    ) =>
+    ({
+      children,
+      ...props
+    }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
+      <Tag className={theme.components[styleKey]} {...props}>
+        {children}
+      </Tag>
+    );
+
   return {
-    h1: ({
-      children,
-      ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
-      <h1 className={theme.components.h1} {...props}>
-        {children}
-      </h1>
-    ),
-    h2: ({
-      children,
-      ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
-      <h2 className={theme.components.h2} {...props}>
-        {children}
-      </h2>
-    ),
-    h3: ({
-      children,
-      ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
-      <h3 className={theme.components.h3} {...props}>
-        {children}
-      </h3>
-    ),
-    h4: ({
-      children,
-      ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
-      <h4 className={theme.components.h4} {...props}>
-        {children}
-      </h4>
-    ),
-    h5: ({
-      children,
-      ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
-      <h5 className={theme.components.h5} {...props}>
-        {children}
-      </h5>
-    ),
+    h1: demoted('h2', 'h1'),
+    h2: demoted('h3', 'h2'),
+    h3: demoted('h4', 'h3'),
+    h4: demoted('h5', 'h4'),
+    h5: demoted('h6', 'h5'),
     h6: ({
       children,
       ...props
@@ -305,11 +324,14 @@ export function createMarkdownComponents(theme: TypographyTheme) {
     ),
     th: ({
       children,
+      scope,
       ...props
     }: {
       children?: ReactNode;
+      /** GFM never emits a scope, so default to column headers. */
+      scope?: string;
     } & HTMLAttributes<HTMLTableHeaderCellElement>) => (
-      <th className={theme.components.th} {...props}>
+      <th className={theme.components.th} scope={scope ?? 'col'} {...props}>
         {children}
       </th>
     ),

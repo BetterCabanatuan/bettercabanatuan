@@ -1,5 +1,10 @@
 import { Helmet } from 'react-helmet-async';
-import { buildCanonicalUrl, getSiteUrl, siteConfig } from '../lib/siteConfig';
+import {
+  buildCanonicalUrl,
+  getSiteUrl,
+  siteConfig,
+  BRAND_NAME,
+} from '../lib/siteConfig';
 
 export interface SEOProps {
   title?: string;
@@ -25,7 +30,7 @@ export default function SEO({
   jsonLd,
 }: SEOProps) {
   const siteUrl = getSiteUrl();
-  const defaultTitle = `${siteName} — BetterCabanatuan.org`;
+  const defaultTitle = `${siteName} — ${BRAND_NAME}`;
   const defaultDescription =
     siteConfig.siteDescription ||
     `Official community portal of ${siteName}. Access government services, barangay information, public officials, and resources.`;
@@ -33,7 +38,15 @@ export default function SEO({
     import.meta.env.VITE_SITE_KEYWORDS ||
     `${siteName}, government, local government, services, public services, civic services, barangays, Nueva Ecija, Philippines`;
 
-  const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
+  // Consistent "<Page> | Better Cabanatuan" template. A page title that
+  // already carries the brand is not suffixed again, which is what produced
+  // the duplicated home <title>.
+  const candidate = (title ?? '').trim();
+  const fullTitle = candidate
+    ? candidate.toLowerCase().includes(BRAND_NAME.toLowerCase())
+      ? candidate
+      : `${candidate} | ${BRAND_NAME}`
+    : defaultTitle;
   const fullDescription = description || defaultDescription;
   const fullKeywords = keywords || defaultKeywords;
   const canonicalPath = url || '';

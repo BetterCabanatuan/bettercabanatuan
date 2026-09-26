@@ -25,7 +25,7 @@ export default function AboutHero() {
             { label: t('common.about'), href: '/about' },
           ]}
         />
-        <p className="text-sm tracking-[0.2em] uppercase text-primary-200 mb-3">
+        <p className="text-sm tracking-[0.2em] uppercase text-primary-100 mb-3">
           {t('about.hero.eyebrow')}
         </p>
         <Heading
