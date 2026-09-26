@@ -43,15 +43,9 @@ Outside of official duties, Mayor **{MAYOR}** works closely with barangay leader
 
 ### Mayor's Community Assistance Program
 
-During the current term, Mayor **{MAYOR}** supports several initiatives aimed at improving the welfare of residents under the theme **"[PROGRAM THEME]"**.
+During the current term, Mayor **{MAYOR}** administers the Mayor's Community Assistance Program, which directs city funds to residents who submit qualifying requests.
 
-Programs supported include:
-
-- **[PROGRAM NAME 1]** – Supporting education and youth development
-- **[PROGRAM NAME 2]** – Providing livelihood assistance to families
-- **[PROGRAM NAME 3]** – Strengthening disaster preparedness and community resilience
-
-You can read more about these initiatives on the **Mayor's Community Programs page**.
+Program releases, application schedules, and eligibility requirements are announced through the official **{GOVERNMENT_NAME}** website and social media channels. Residents are advised to confirm current details before applying.
 
 ---
 
@@ -148,18 +142,19 @@ These roles reflect the legacy of leadership and public service within the commu
 
 # Contact the Mayor's Office
 
-**Office of the Mayor**
-City/Municipal Hall of **{GOVERNMENT_NAME}**
+**Office of the City Mayor**
+City Hall, **{GOVERNMENT_NAME}**
 
 **Address:**
-[STREET ADDRESS]
-[CITY / PROVINCE / POSTAL CODE]
+{OFFICE_ADDRESS}
 
 **Telephone:**
-[PHONE NUMBER]
+{OFFICE_PHONE}
 
 **Email:**
-[EMAIL ADDRESS]
+{OFFICE_EMAIL}
 
 **Website:**
-[OFFICIAL WEBSITE URL]
+{CITY_WEBSITE}
+
+Other lines for the Mayor's Office are listed on the [department contacts](/contact#department-contacts) directory.

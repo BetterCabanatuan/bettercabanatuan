@@ -7,7 +7,7 @@ import Section from '../../ui/Section';
 import Breadcrumbs from '../../ui/Breadcrumbs';
 import SEO from '../../SEO';
 import { Card, CardContent } from '../../ui/Card';
-import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from '../../shared/NotFoundGuard';
 import type { Project } from '../../../data/yamlLoader';
 import ProjectStatusBadge from './ProjectStatusBadge';
 import { projectJsonLd } from '../../../lib/structuredData';
@@ -128,14 +128,10 @@ function DetailRow({
 
 export function ProjectNotFound() {
   return (
-    <Section className="p-3 mb-12">
-      <Breadcrumbs className="mb-8" />
-      <Banner
-        type="error"
-        title="Project not found"
-        description="The project you are looking for does not exist."
-        icon
-      />
-    </Section>
+    <NotFoundGuard
+      subject="project"
+      backHref="/government/projects"
+      backLabel="Back to all projects"
+    />
   );
 }

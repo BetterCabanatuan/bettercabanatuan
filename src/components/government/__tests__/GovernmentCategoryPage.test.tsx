@@ -69,12 +69,23 @@ describe('GovernmentCategoryPage empty states', () => {
     });
   });
 
-  it('renders a not-found banner for an unknown category', () => {
+  it('renders a guarded not-found state for an unknown category', () => {
     renderWithProviders(<GovernmentCategoryPage />, {
       route: '/government/not-a-real-section',
       routePattern: '/government/:categoryId',
     });
 
-    expect(screen.getByText('Category not found')).toBeInTheDocument();
+    // The shared guard states what is missing, gives it a real <h1> (the
+    // Banner this replaced rendered no heading at all, so the page had no
+    // document outline), and offers a way back.
+    expect(
+      screen.getByRole('heading', { level: 1, name: 'Section not found' })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/The section you are looking for does not exist/)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /Back to all government sections/ })
+    ).toHaveAttribute('href', '/government');
   });
 });

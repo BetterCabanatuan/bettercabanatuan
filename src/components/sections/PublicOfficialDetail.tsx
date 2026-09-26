@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Card, CardContent } from '../ui/Card';
-import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from '../shared/NotFoundGuard';
 import { getOfficialById, councilors } from '../../data/publicOfficials';
 import {
   Crown,
@@ -28,23 +28,11 @@ export default function PublicOfficialDetail({
 
   if (!official) {
     return (
-      <div>
-        <Banner
-          type="error"
-          title="Official not found"
-          description="The public official you are looking for does not exist."
-          icon
-        />
-        <div className="mt-6">
-          <Link
-            to="/government/officials"
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
-          >
-            <ChevronLeft className="h-4 w-4 mr-1" />
-            Back to Public Officials
-          </Link>
-        </div>
-      </div>
+      <NotFoundGuard
+        subject="official"
+        backHref="/government/officials"
+        backLabel="Back to all public officials"
+      />
     );
   }
 
