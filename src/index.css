@@ -74,16 +74,47 @@
   --color-error-800: #5a1212;
   --color-error-900: #2d0909;
 
+  /* Neutral ramp.
+     50-300 are surface + hairline roles and were already compliant.
+     400-600 were authored as border tints but used as text across 215 call
+     sites, where they measured 1.49 / 2.07 / 3.32:1 on white — all failing
+     WCAG AA. Re-tuned so each step clears the floor its role demands:
+       400  3.30:1  NON-TEXT ONLY (icons, glyph placeholders, dividers)
+       500  5.01:1  meta rows, timestamps, captions
+       600  6.08:1  card descriptions, secondary prose
+     700+ were already compliant and are unchanged. Verified by
+     `npm run check:contrast`; see docs/DESIGN-TOKENS.md. */
   --color-gray-50: #f8f9fa;
   --color-gray-100: #f1f3f5;
   --color-gray-200: #e9ecef;
   --color-gray-300: #dee2e6;
-  --color-gray-400: #ced4da;
-  --color-gray-500: #adb5bd;
-  --color-gray-600: #868e96;
+  --color-gray-400: #8b8e8f;
+  --color-gray-500: #6c7071;
+  --color-gray-600: #5f6364;
   --color-gray-700: #495057;
   --color-gray-800: #343a40;
   --color-gray-900: #212529;
+
+  /* Status badges.
+     Promoted from arbitrary values (`bg-[#dbeafe]`) to tokens so the pairs are
+     discoverable, greppable, and checked by `npm run check:contrast` like every
+     other colour role. Each pair is measured at 6.37:1 or better.
+     Foregrounds are the -800 step of the matching ramp; backgrounds the -100. */
+  --color-badge-info: #dbeafe;
+  --color-badge-info-fg: #1e40af;
+  --color-badge-warning: #fef3c7;
+  --color-badge-warning-fg: #92400e;
+  --color-badge-success: #dcfce7;
+  --color-badge-success-fg: #166534;
+  --color-badge-neutral: #f1f3f5;
+  --color-badge-neutral-fg: #495057;
+  --color-badge-accent: #fffbeb;
+  --color-badge-accent-fg: #92400e;
+
+  /* The one true dark surface on the site: the footer band. Text on it uses
+     gray-300 (8.39:1) or gray-400 (5.27:1); gray-500 measures 3.48:1 and fails
+     AA for body text. */
+  --color-surface-inverse: #1a1a1a;
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-in: slideIn 0.5s ease-out;
@@ -134,9 +165,48 @@
   --font-mono: var(--font-kapwa-mono);
 }
 
+/* Leaflet overrides.
+   The library ships its zoom buttons at 30x30, under the 44px minimum target
+   size, and there is no prop to change that — it is set in its own stylesheet.
+   Overriding it here keeps the fix with the rest of the design tokens rather
+   than forking the component. */
+.leaflet-touch .leaflet-bar a,
+.leaflet-bar a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 20px;
+}
+
 /* Checklist styling */
 .task-list-item {
-  @apply text-base text-gray-700 leading-relaxed relative flex items-start gap-3 font-sans rounded-md mb-5 transition-all duration-200 border border-transparent cursor-pointer items-center;
+  @apply text-base text-gray-700 leading-relaxed relative flex items-start gap-3 font-sans rounded-md mb-5 transition-[background-color,border-color,color] duration-200 border border-transparent cursor-pointer items-center;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+a,
+[role='button'] {
+  touch-action: manipulation;
+}
+
+button,
+[role='button'],
+summary {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (pointer: coarse) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
 }
 
 /* Sticky table styling */

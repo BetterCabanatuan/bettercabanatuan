@@ -43,10 +43,13 @@ const staticPages = [
   { path: '/', priority: '1.0', changefreq: 'daily' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/contact', priority: '0.8', changefreq: 'monthly' },
+  { path: '/hotlines', priority: '0.7', changefreq: 'monthly' },
+  { path: '/accessibility', priority: '0.4', changefreq: 'yearly' },
   { path: '/statistics', priority: '0.6', changefreq: 'monthly' },
   { path: '/sitemap', priority: '0.5', changefreq: 'monthly' },
   { path: '/services', priority: '0.9', changefreq: 'weekly' },
   { path: '/government', priority: '0.9', changefreq: 'weekly' },
+  { path: '/government/news', priority: '0.7', changefreq: 'daily' },
   { path: '/government/officials', priority: '0.8', changefreq: 'monthly' },
   { path: '/government/barangays', priority: '0.9', changefreq: 'monthly' },
   { path: '/government/departments', priority: '0.8', changefreq: 'monthly' },
@@ -99,6 +102,9 @@ if (governmentData?.categories) {
       ['officials', 'barangays', 'departments', 'projects'].includes(cat.slug)
     )
       continue;
+
+    // /government/news already appears in staticPages above.
+    if (cat.slug === 'news') continue;
 
     urls.push({
       path: `/government/${cat.slug}`,

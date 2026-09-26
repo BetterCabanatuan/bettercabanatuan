@@ -66,3 +66,13 @@ test-results
 playwright-report
 blob-report
 
+# QA screenshots from `npm run qa:shots`. Regenerable, and 120 PNGs is a lot of
+# noise in a diff — the measurements that matter are committed in
+# docs/RESPONSIVE-QA.md and gated by e2e/responsive.spec.ts.
+.qa-shots
+
+# Output of the UI review tooling: audit critiques and the JSON findings from
+# `npm run qa:shots` / `scripts/qa-audit.mjs`. Regenerable scratch output; the
+# decisions that came out of a review are recorded in docs/ and in
+# docs/superpowers/specs/ instead.
+.impeccable/

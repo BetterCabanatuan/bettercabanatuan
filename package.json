@@ -21,6 +21,11 @@
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
+    "check:contrast": "node --experimental-strip-types --no-warnings scripts/check-contrast.mjs",
+    "check:contrast:report": "node --experimental-strip-types --no-warnings scripts/check-contrast.mjs --report",
+    "qa:shots": "node scripts/shoot.mjs",
+    "qa:inspect": "node scripts/inspect.mjs",
+    "update:copy": "node scripts/update-copy.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "prebuild": "npm run generate:sitemap"
   },

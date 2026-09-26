@@ -1,0 +1,9 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://localhost:4173",
+      "localStorage": [{ "name": "bc-volunteer-popup", "value": "0" }]
+    }
+  ]
+}
