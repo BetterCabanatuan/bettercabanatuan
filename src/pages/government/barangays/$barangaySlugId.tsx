@@ -6,7 +6,7 @@ import SEO from '../../../components/SEO';
 import Breadcrumbs from '../../../components/ui/Breadcrumbs';
 import MapBanner from '../../../components/ui/MapBanner';
 import { Card, CardContent } from '../../../components/ui/Card';
-import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from '../../../components/shared/NotFoundGuard';
 import {
   getBarangayBySlug,
   allBarangays,
@@ -36,24 +36,11 @@ const BarangayDetail: React.FC = () => {
 
   if (!barangay) {
     return (
-      <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" />
-        <Banner
-          type="error"
-          title="Barangay not found"
-          description="The barangay you are looking for does not exist."
-          icon
-        />
-        <div className="mt-6">
-          <Link
-            to="/government/barangays"
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
-          >
-            <ChevronLeft className="h-4 w-4 mr-1" />
-            Back to Barangays
-          </Link>
-        </div>
-      </Section>
+      <NotFoundGuard
+        subject="barangay"
+        backHref="/government/barangays"
+        backLabel="Back to all barangays"
+      />
     );
   }
 

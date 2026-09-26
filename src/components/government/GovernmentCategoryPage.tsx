@@ -14,7 +14,7 @@ import Breadcrumbs from '../ui/Breadcrumbs';
 import { getIconComponent } from '../../lib/iconMap';
 import SEO from '../SEO';
 import { Card, CardContent } from '../ui/Card';
-import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from '../shared/NotFoundGuard';
 import { useState, useEffect } from 'react';
 import { breadcrumbJsonLd } from '../../lib/structuredData';
 
@@ -53,15 +53,11 @@ export default function GovernmentCategoryPage({
 
   if (!categoryId || !categoryData) {
     return (
-      <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" />
-        <Banner
-          type="error"
-          title="Category not found"
-          description="The category you are looking for does not exist."
-          icon
-        />
-      </Section>
+      <NotFoundGuard
+        subject="section"
+        backHref="/government"
+        backLabel="Back to all government sections"
+      />
     );
   }
 

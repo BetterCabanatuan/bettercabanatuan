@@ -10,7 +10,7 @@ import {
 } from '../../data/yamlLoader';
 import { getIconComponent } from '../../lib/iconMap';
 import SEO from '../SEO';
-import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from '../shared/NotFoundGuard';
 import { useState, useEffect } from 'react';
 import { breadcrumbJsonLd } from '../../lib/structuredData';
 import GovernmentPageHero from '../government/GovernmentPageHero';
@@ -53,14 +53,11 @@ export default function ServiceCategoryPage({
 
   if (!categoryId || !categoryData) {
     return (
-      <Section className="p-3 mb-12">
-        <Banner
-          type="error"
-          title="Category not found"
-          description="The category you are looking for does not exist."
-          icon
-        />
-      </Section>
+      <NotFoundGuard
+        subject="service category"
+        backHref="/services"
+        backLabel="Back to all services"
+      />
     );
   }
 

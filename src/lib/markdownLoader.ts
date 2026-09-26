@@ -4,6 +4,10 @@
 
 /**
  * Replaces {PLACEHOLDER} tokens using JSON data first, then VITE_ env vars.
+ *
+ * Only `{BRACE}` tokens resolve. A `[BRACKETED]` placeholder has no resolver
+ * and reaches the page as literal text — `npm run check:placeholders` fails the
+ * build on both a token with no value and a bracketed leftover.
  */
 function interpolate(
   content: string,
@@ -64,11 +68,16 @@ export async function loadMarkdownContent(
       : undefined;
 
     return { content, title, description, data };
-  } catch (error) {
-    console.error(
-      `Failed to load markdown content for document: ${documentSlug}`,
-      error
-    );
+  } catch {
+    /*
+     * Reached when the slug has no matching file, which is the ordinary way a
+     * bad URL becomes a 404 — the caller's not-found guard handles it. It was
+     * logged at `error`, so every mistyped or crawled URL painted a red console
+     * error and buried the failures that were actually worth reading. A missing
+     * document is a 404, not a fault; `debug` keeps it inspectable without
+     * crying wolf.
+     */
+    console.debug(`No markdown document for slug "${documentSlug}"`);
     throw new Error(`Document not found: ${documentSlug}`);
   }
 }

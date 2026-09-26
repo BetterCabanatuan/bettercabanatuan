@@ -90,3 +90,48 @@ jobs:
       # Fails on token/stylesheet drift, on any declared pair dropping below its
       # WCAG 2.1 threshold, and on a "known trap" that no longer measures as one.
       - run: npm run check:contrast
+
+  placeholders:
+    name: Content placeholder audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Fails on any `{TOKEN}` with no value in its companion .json or a
+      # VITE_* env var, and on any `[BRACKETED PLACEHOLDER]` — the convention
+      # that shipped "[PHONE NUMBER]" to a live civic page.
+      - run: npm run check:placeholders
+
+  routes:
+    name: Route integrity audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Build and serve
+        run: |
+          npm run build
+          npx vite preview --port 4000 --strictPort &
+          npx wait-on http://localhost:4000 --timeout 60000
+
+      # Walks every route plus every detail route's invalid slug, and fails on
+      # a console error, a placeholder leaking into the DOM, a missing <h1>, a
+      # not-found state that is not noindex, or an internal link that lands on
+      # a 404. Seven guards shipped without a heading, without noindex, and
+      # with the homepage's <title>.
+      - run: npm run check:routes

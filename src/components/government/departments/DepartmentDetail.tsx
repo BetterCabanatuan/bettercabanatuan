@@ -8,7 +8,7 @@ import Breadcrumbs from '../../ui/Breadcrumbs';
 import MapBanner from '../../ui/MapBanner';
 import SEO from '../../SEO';
 import { Card, CardContent } from '../../ui/Card';
-import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from '../../shared/NotFoundGuard';
 import type { Department } from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
 import {
@@ -230,14 +230,10 @@ export default function DepartmentDetail({
 
 export function DepartmentNotFound() {
   return (
-    <Section className="p-3 mb-12">
-      <Breadcrumbs className="mb-8" />
-      <Banner
-        type="error"
-        title="Department not found"
-        description="The department you are looking for does not exist."
-        icon
-      />
-    </Section>
+    <NotFoundGuard
+      subject="department"
+      backHref="/government/departments"
+      backLabel="Back to all departments"
+    />
   );
 }

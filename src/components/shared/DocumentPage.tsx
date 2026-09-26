@@ -3,6 +3,7 @@ import Breadcrumbs from '../ui/Breadcrumbs';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
+import NotFoundGuard from './NotFoundGuard';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -136,15 +137,16 @@ export default function DocumentPage({
 
   if (error) {
     return (
-      <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" items={breadcrumbs} />
-        <Banner
-          type="error"
-          title="Document Not Found"
-          description={error}
-          icon
-        />
-      </Section>
+      <NotFoundGuard
+        subject={categoryType === 'service' ? 'service document' : 'document'}
+        backHref={categoryType === 'government' ? '/government' : '/services'}
+        backLabel={
+          categoryType === 'government'
+            ? 'Back to all government sections'
+            : 'Back to all services'
+        }
+        breadcrumbs={breadcrumbs}
+      />
     );
   }
 
@@ -215,7 +217,26 @@ export default function DocumentPage({
   }
 
   if (!markdownContent) {
-    return null;
+    /*
+     * Reached when loading finished with no error, no nested index, and no
+     * document — previously `return null`, which rendered a completely blank
+     * page: no heading, no message, no way forward, inside a layout that still
+     * painted the navbar and footer. A resident would assume the site broke.
+     * The loader sets one of the three or throws, so this is a backstop rather
+     * than a normal path, which is exactly why it needs a real state.
+     */
+    return (
+      <NotFoundGuard
+        subject={categoryType === 'service' ? 'service document' : 'document'}
+        backHref={categoryType === 'government' ? '/government' : '/services'}
+        backLabel={
+          categoryType === 'government'
+            ? 'Back to all government sections'
+            : 'Back to all services'
+        }
+        breadcrumbs={breadcrumbs}
+      />
+    );
   }
 
   /*
