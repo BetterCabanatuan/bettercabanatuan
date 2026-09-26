@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../../ui/Card';
 import { Building2, Landmark, Wallet } from 'lucide-react';
 import type { Department } from '../../../data/yamlLoader';
 
@@ -12,7 +12,9 @@ export default function DepartmentsOverview({
 }: DepartmentsOverviewProps) {
   const stats = useMemo(() => {
     const branches = new Set(departments.map(d => d.branch));
-    const legislative = departments.filter(d => d.branch === 'Legislative').length;
+    const legislative = departments.filter(
+      d => d.branch === 'Legislative'
+    ).length;
     const finance = departments.filter(d => d.branch === 'Finance').length;
 
     return {
@@ -29,7 +31,6 @@ export default function DepartmentsOverview({
       value: String(stats.total),
       note: 'City departments listed',
       icon: Building2,
-      border: 'border-primary-500',
       bg: 'bg-primary-50 text-primary-600',
     },
     {
@@ -37,7 +38,6 @@ export default function DepartmentsOverview({
       value: String(stats.branches),
       note: 'Organized by function',
       icon: Landmark,
-      border: 'border-accent-500',
       bg: 'bg-accent-50 text-accent-600',
     },
     {
@@ -45,7 +45,6 @@ export default function DepartmentsOverview({
       value: String(stats.finance),
       note: 'Accounting, budget, treasury',
       icon: Wallet,
-      border: 'border-success-500',
       bg: 'bg-success-50 text-success-600',
     },
   ];
@@ -53,7 +52,7 @@ export default function DepartmentsOverview({
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
       {cards.map(card => (
-        <Card key={card.label} className={`border-t-4 ${card.border} h-full`}>
+        <Card key={card.label} className="h-full ring-1 ring-black/[0.06]">
           <CardContent className="p-5">
             <span
               className={`inline-flex items-center justify-center w-10 h-10 rounded-lg ${card.bg} mb-3`}

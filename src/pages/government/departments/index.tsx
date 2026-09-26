@@ -6,6 +6,7 @@ import DepartmentsList from '../../../components/government/departments/Departme
 import DepartmentsOverview from '../../../components/government/departments/DepartmentsOverview';
 import { allDepartments, departmentsData } from '../../../data/yamlLoader';
 import { siteConfig } from '../../../lib/siteConfig';
+import SectionJumpNav from '../../../components/ui/SectionJumpNav';
 
 export default function DepartmentsPage() {
   return (
@@ -16,23 +17,31 @@ export default function DepartmentsPage() {
         keywords={`departments, city offices, local government, ${siteConfig.governmentName}`}
         url="/government/departments"
       />
-      <main className="flex-grow">
-        <GovernmentPageHero
-          eyebrow="City Government"
-          title="Departments & Offices"
-          description={departmentsData.description}
-          icon={Building2}
-          breadcrumbs={[
-            { label: 'Home', href: '/' },
-            { label: 'Government', href: '/government' },
-            { label: 'Departments', href: '/government/departments' },
+      <GovernmentPageHero
+        eyebrow="City Government"
+        title="Departments & Offices"
+        description={departmentsData.description}
+        icon={Building2}
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Government', href: '/government' },
+          { label: 'Departments', href: '/government/departments' },
+        ]}
+      />
+      <Section className="p-3 mb-12 pt-10">
+        <SectionJumpNav
+          items={[
+            { id: 'department-overview', label: 'Overview' },
+            { id: 'department-directory', label: 'Office directory' },
           ]}
         />
-        <Section className="p-3 mb-12 pt-10">
+        <div id="department-overview" className="scroll-mt-28">
           <DepartmentsOverview departments={allDepartments} />
+        </div>
+        <div id="department-directory" className="scroll-mt-28">
           <DepartmentsList departments={allDepartments} />
-        </Section>
-      </main>
+        </div>
+      </Section>
     </>
   );
 }

@@ -1,11 +1,21 @@
 import { Trans, useTranslation } from 'react-i18next';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Phone, ExternalLink } from 'lucide-react';
 import { emergencyHotlines, formatPhoneForTel } from '../../data/hotlines';
 
-export default function EmergencyHotlinesSection() {
+interface EmergencyHotlinesSectionProps {
+  /**
+   * Where the disclaimer's "city government offices" link should point.
+   * Defaults to the in-page anchor used on /contact.
+   */
+  officesHref?: string;
+}
+
+export default function EmergencyHotlinesSection({
+  officesHref = '#contact-offices',
+}: EmergencyHotlinesSectionProps) {
   const { t } = useTranslation('common');
 
   return (
@@ -48,7 +58,7 @@ export default function EmergencyHotlinesSection() {
           return (
             <Card
               key={hotline.id}
-              className="h-full border-t-4 border-red-500 overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04] motion-safe:animate-slide-in motion-reduce:animate-none"
+              className="h-full overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_rgba(0,0,0,0.06)] ring-1 ring-red-200 motion-safe:animate-slide-in motion-reduce:animate-none"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6">
@@ -102,7 +112,7 @@ export default function EmergencyHotlinesSection() {
               components={{
                 1: (
                   <a
-                    href="#contact-offices"
+                    href={officesHref}
                     className="text-primary-600 hover:underline font-medium"
                   />
                 ),

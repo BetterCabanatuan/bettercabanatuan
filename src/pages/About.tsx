@@ -12,6 +12,7 @@ import AboutContributeSection from '../components/about/AboutContributeSection';
 import { cityStats, services, siteConfig } from '../lib/siteConfig';
 import { breadcrumbJsonLd } from '../lib/structuredData';
 import Map from '../components/home/Map';
+import SectionJumpNav from '../components/ui/SectionJumpNav';
 
 export default function AboutPage() {
   const { t } = useTranslation('common');
@@ -32,18 +33,40 @@ export default function AboutPage() {
           { name: 'About', url: '/about' },
         ])}
       />
-      <main className="grow">
-        <AboutHero />
+      <AboutHero />
+      <div className="container mx-auto px-4 pt-8">
+        <SectionJumpNav
+          items={[
+            { id: 'mission', label: 'Mission' },
+            { id: 'history', label: 'History' },
+            { id: 'leadership', label: 'Leadership' },
+            { id: 'services', label: 'Services' },
+            { id: 'government', label: 'Government' },
+            { id: 'values', label: 'Values' },
+          ]}
+        />
+      </div>
+      <div id="mission" className="scroll-mt-28">
         <AboutMissionSection />
+      </div>
+      <div id="history" className="scroll-mt-28">
         <AboutHistorySection />
+      </div>
+      <div id="leadership" className="scroll-mt-28">
         <AboutLeadershipSection />
+      </div>
+      <div id="services" className="scroll-mt-28">
         <AboutServicesSection />
+      </div>
+      <div id="government" className="scroll-mt-28">
         <AboutGovernmentSection />
-        <Map />
+      </div>
+      <Map />
+      <div id="values" className="scroll-mt-28">
         <AboutValuesSection />
-        <AboutDisclaimerSection />
-        <AboutContributeSection />
-      </main>
+      </div>
+      <AboutDisclaimerSection />
+      <AboutContributeSection />
     </>
   );
 }

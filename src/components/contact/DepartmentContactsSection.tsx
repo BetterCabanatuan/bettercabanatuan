@@ -4,23 +4,26 @@ import { useTranslation } from 'react-i18next';
 import { Building2, Clock, ExternalLink, Phone, Search } from 'lucide-react';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import {
   departmentContactsData,
+  getDepartmentHref,
   type DepartmentContactLine,
 } from '../../data/departmentContacts';
 import { formatPhoneForTel } from '../../data/hotlines';
 
 function ContactRow({ contact }: { contact: DepartmentContactLine }) {
   const { t } = useTranslation('common');
+  // Resolved from the departments dataset — no hardcoded /government/... paths.
+  const departmentHref = getDepartmentHref(contact.departmentSlug);
 
   return (
     <tr className="border-b border-gray-100 last:border-0 hover:bg-gray-50/80 transition-colors">
       <td className="py-3.5 px-4 text-sm text-gray-900 align-top">
         <div className="font-medium">{contact.name}</div>
-        {contact.departmentSlug && (
+        {departmentHref && (
           <Link
-            to={`/government/departments/${contact.departmentSlug}`}
+            to={departmentHref}
             className="inline-flex items-center gap-1 mt-1 text-xs text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded"
           >
             {t('departmentContacts.viewDepartment')}
@@ -41,7 +44,11 @@ function ContactRow({ contact }: { contact: DepartmentContactLine }) {
   );
 }
 
-export default function DepartmentContactsSection() {
+export default function DepartmentContactsSection({
+  showHeader = true,
+}: {
+  showHeader?: boolean;
+}) {
   const { t } = useTranslation('common');
   const [query, setQuery] = useState('');
 
@@ -58,27 +65,30 @@ export default function DepartmentContactsSection() {
 
   return (
     <section
-      id="department-contacts"
-      aria-labelledby="department-contacts-heading"
+      id={showHeader ? 'department-contacts' : undefined}
+      aria-labelledby={showHeader ? 'department-contacts-heading' : undefined}
+      aria-label={showHeader ? undefined : t('departmentContacts.title')}
       className="mb-12 scroll-mt-28"
     >
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-primary-600 mb-1">
-            {t('departmentContacts.eyebrow')}
-          </p>
-          <Heading
-            level={2}
-            id="department-contacts-heading"
-            className="mb-2 text-balance"
-          >
-            {t('departmentContacts.title')}
-          </Heading>
-          <Text className="text-gray-600 mb-0 max-w-2xl text-pretty">
-            {t('departmentContacts.description')}
-          </Text>
+      {showHeader && (
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-primary-600 mb-1">
+              {t('departmentContacts.eyebrow')}
+            </p>
+            <Heading
+              level={2}
+              id="department-contacts-heading"
+              className="mb-2 text-balance"
+            >
+              {t('departmentContacts.title')}
+            </Heading>
+            <Text className="text-gray-600 mb-0 max-w-2xl text-pretty">
+              {t('departmentContacts.description')}
+            </Text>
+          </div>
         </div>
-      </div>
+      )}
 
       <Card className="mb-4 bg-primary-50/40 shadow-[inset_0_0_0_1px_rgba(0,102,235,0.15)]">
         <CardContent className="p-4 flex items-start gap-3">
@@ -103,7 +113,7 @@ export default function DepartmentContactsSection() {
           onChange={e => setQuery(e.target.value)}
           placeholder={t('departmentContacts.searchPlaceholder')}
           aria-label={t('departmentContacts.searchPlaceholder')}
-          className="w-full min-h-[44px] pl-10 pr-4 py-2.5 rounded-xl shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:shadow-[inset_0_0_0_1px_rgba(0,102,235,0.35)] transition-[box-shadow] duration-200"
+          className="w-full min-h-[44px] pl-10 pr-4 py-2.5 rounded-xl shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] text-sm text-gray-900 placeholder:text-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:shadow-[inset_0_0_0_1px_rgba(0,102,235,0.35)] transition-[box-shadow] duration-200"
         />
       </div>
 

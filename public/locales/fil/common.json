@@ -5,6 +5,7 @@
     "home": "Home",
     "about": "Tungkol",
     "contact": "Makipag-ugnayan",
+    "government": "Pamahalaan",
     "search": "Maghanap",
     "location": "Lokasyon",
     "cityMayor": "Punong Lungsod",
@@ -58,27 +59,13 @@
     "governmentServices": "Serbisyo ng Pamahalaan",
     "description": "Ma-access nang mabilis at madali ang opisyal na serbisyo ng pamahalaan. Hanapin ang kailangan ninyo para sa citizenship, negosyo, edukasyon, at iba pa.",
     "viewAll": "Tingnan Lahat ng Serbisyo",
-    "viewAllCategory": "Tingnan Lahat",
-    "compact": {
-      "health": "Kalusugan",
-      "education": "Edukasyon",
-      "business": "Negosyo",
-      "socialWelfare": "Social Welfare",
-      "other": "Iba pa",
-      "otherDescription": "Mag-browse sa lahat ng kategorya ng serbisyo ng pamahalaan."
-    }
+    "viewAllCategory": "Tuklas"
   },
   "governmentActivity": {
     "title": "Aktibidad ng Pamahalaan",
-    "description": "Manatiling updated sa pinakabagong aktibidad at anunsyo ng pamahalaan.",
-    "compact": {
-      "officials": "Mga Opisyal",
-      "departments": "Mga Departamento",
-      "projects": "Mga Proyekto",
-      "barangays": "Mga Barangay",
-      "other": "Iba pa",
-      "otherDescription": "Mag-browse sa lahat ng seksyon at resource ng pamahalaan."
-    }
+    "description": "Kilalanin ang mga taong humahawak ng pamahalaan, ang mga tanggapan na nagbibigay ng serbisyo, at ang mga proyekto nilang ginagawa.",
+    "viewSection": "Tingnan ang seksyon",
+    "viewAll": "Tingnan ang lahat ng seksyon ng pamahalaan"
   },
   "weather": {
     "title": "Update sa Panahon",
@@ -111,14 +98,34 @@
     "title": "Foreign Exchange Rates"
   },
   "news": {
-    "title": "Pinakabagong Balita at Update",
-    "badge": "Opisyal na Update",
-    "description": "Manatiling updated sa pinakabagong aktibidad at anunsyo ng Pamahalaang Lungsod ng Cabanatuan.",
+    "title": "Mga anunsyo mula sa pamahalaang lungsod",
+    "badge": "Opisyal na channel",
+    "description": "Mga abiso, update ng programa, at pampublikong paunawa, gaya ng inilathala ng pamahalaang lungsod sa opisyal nitong Facebook page.",
     "followCta": "I-follow sa Facebook",
     "embedLabel": "Facebook page feed para sa {{page}}"
   },
+  "newsFeed": {
+    "seoTitle": "Balita",
+    "seoDescription": "Pinakabagong balita at update ng {{city}} — anunsyo, abiso, at update ng council.",
+    "eyebrow": "Opisyal na Update",
+    "title": "Mga Balita at Update",
+    "description": "Pinakabagong balita, anunsyo, at abiso mula sa {{city}}.",
+    "latestTitle": "Pinakabagong Balita at Update",
+    "allTitle": "Mga Balita at Update",
+    "allDescription": "Mga anunsyo, abiso, at update mula sa pamahalaang lungsod ng {{city}}. Inilathala ang mga ito rito at sa opisyal na Facebook page.",
+    "publishedOn": "Nailathala noong {{date}}",
+    "readMore": "Magbasa pa",
+    "viewAll": "Tingnan ang lahat ng balita",
+    "sourceLabel": "Pinagmulan",
+    "itemCount_one": "{{count}} balita",
+    "itemCount_other": "{{count}} na balita",
+    "emptyTitle": "Wala pang balita",
+    "emptyDescription": "Hindi pa nailathala rito ang mga update mula sa pamahalaang lungsod. Ang pinakamabilis na paraan para makita ang mga anunsyo ay ang opisyal na Facebook page ng {{city}}.",
+    "fallbackCta": "Tingnan ang anunsyo sa Facebook"
+  },
   "footer": {
-    "copyright": "© 2026 BetterGov. Lahat ng nilalaman ay public domain maliban kung may ibang nakasaad."
+    "copyright": "© 2026 {{brand}}. Lahat ng nilalaman ay public domain maliban kung may ibang nakasaad.",
+    "builtOn": "Ginawa sa civic template na open-source ng BetterGov."
   },
   "navbar": {
     "government": "Pamahalaan",
@@ -182,7 +189,8 @@
         "years": "Taon ng GAA",
         "amount": "Halaga"
       }
-    }
+    },
+    "viewProject": "Tingnan ang proyekto"
   },
   "search": {
     "title": "Maghanap sa Portal",
@@ -202,7 +210,9 @@
     "noResultsTitle": "Walang nahanap na tugma",
     "noResultsDescription": "Walang nahanap para sa \"{{query}}\". Subukan ang ibang keyword o pumili ng mungkahing paksa sa ibaba.",
     "external": "Panlabas",
-    "seoWithQuery": "Mga resulta ng paghahanap para sa \"{{query}}\" sa community portal ng {{city}}."
+    "seoWithQuery": "Mga resulta ng paghahanap para sa \"{{query}}\" sa community portal ng {{city}}.",
+    "suggestionsGroupLabel": "Mga popular na search term",
+    "chipLabel": "Maghanap ng \"{{term}}\""
   },
   "joinUs": {
     "stripTitle": "🚀 Sumali sa #CivicTech Revolution",
@@ -224,7 +234,7 @@
     "city": "Lungsod",
     "cityDescription": "Lalawigan ng Nueva Ecija",
     "totalPopulation": "Kabuuang Populasyon",
-    "populationDescription": "Ayon sa 2020 Census",
+    "populationDescription": "Ayon sa {{year}} Census ({{program}})",
     "barangays": "Mga Barangay",
     "barangaysDescription": "Urban at Rural",
     "landArea": "Lawak ng Lupain",
@@ -233,11 +243,31 @@
   "map": {
     "title": "Bisitahin ang City Hall"
   },
+  "localConditions": {
+    "eyebrow": "Lokal na kondisyon",
+    "title": "Cabanatuan ngayong araw",
+    "description": "Live na panahon at lokasyon ng {{city}} Hall sa iisang praktikal na tanaw.",
+    "openInMaps": "Buksan sa Maps",
+    "openInMapsLabel": "Buksan ang City Hall sa Google Maps",
+    "mapLabel": "Mapa na nagpapakita ng Cabanatuan City Hall"
+  },
   "hotlines": {
     "banner": {
       "ariaLabel": "Emergency hotlines",
       "label": "Emergency Hotlines",
       "labelShort": "Hotlines"
+    },
+    "page": {
+      "seoTitle": "Hotlines",
+      "seoDescription": "Mga emergency hotline at contact number ng departamento ng {{city}} — PNP, BFP, CDRRMO, at mga linya ng opisina ng lungsod.",
+      "eyebrow": "Directory ng Kontak",
+      "title": "Hotlines",
+      "description": "Mga emergency at non-emergency na contact number ng {{city}} — pulis, bumbero, rescue, at mga linya ng departamento ng lungsod. I-tap ang numero para tumawag nang direkta.",
+      "moreHelp": {
+        "title": "Hinahanap ang city hall?",
+        "body": "Para sa address ng city hall ng {{city}}, oras ng opisina, email address, at buong contact directory, pumunta sa contact page.",
+        "link": "Pumunta sa contact page"
+      }
     },
     "section": {
       "eyebrow": "24/7 na Tugon",
@@ -308,6 +338,100 @@
     },
     "disclaimer": "Bahagi ng Better Cabanatuan community portal ang contact page na ito, hindi opisyal na sistema ng pamahalaan. Para sa verified na transaksyon at opisyal na record, gamitin palaging ang <1>opisyal na website ng {{city}}</1> o bumisita sa City Hall nang personal."
   },
+  "accessibility": {
+    "seoTitle": "Accessibility",
+    "seoDescription": "Pahayag ng accessibility ng community portal ng {{city}} — ang aming pangako, ang pamantayang tinatarget namin, ang mga kilalang limitasyon, at kung paano mag-ulat ng isyu.",
+    "eyebrow": "Aming Pangako",
+    "title": "Pahayag ng Accessibility",
+    "lastReviewed": "Huling sinuri: Enero 2026",
+    "intro": "Ang community portal ng {{city}} ay ginawa at pinananatili ng mga volunteer. Nais naming mabasa ng lahat ng komunidad ang aming mga pahina, magamit ang aming mga gabay sa serbisyo, at maabot ang tamang opisina nang walang hadlang. Ipinaliliwanag ng pahinang ito kung ano ang aming pinagkakaisipan, kung ano na ang ginawa namin, at kung saan pa may kulang.",
+    "commitment": {
+      "title": "Aming pangako",
+      "body1": "Pinagkakaisipan naming gawing magagamit ng maraming tao ang portal na ito — kabilang ang mga may kapansanan, matatanda, at sinumang nagba-browse sa mabagal na koneksyon o maliit na screen ng telepono.",
+      "body2": "Itinaturing namin ang accessibility bilang tuloy-tuloy na gawain, hindi bilang tapos nang checklist. Sinusuri namin ang bawat bagong pahina at feature habang idinadagdag, at nilulutuwan namin ang problema kapag may naiulat."
+    },
+    "standard": {
+      "title": "Ang pamantayang tinatarget namin",
+      "body": "Pinagkakaisipan naming sumunod sa Web Content Accessibility Guidelines (WCAG) 2.1, Level AA — ang pamantayang pinakamadalas na ginagamit para sa website ng sektor publiko at sibiko.",
+      "note": "Ito ay pahayag ng pinagkakaisipang patuloy, hindi pagtubos ng legal na pagsunod. Hindi rin nito pinagsasalaksakan ang pamahalaan ng {{city}} o ang anumang opisyal na website ng pamahalaan."
+    },
+    "measures": {
+      "title": "Ang mga naayos namin na",
+      "description": "Ito ang mga gawi na ipinatupad na namin sa buong portal.",
+      "items": [
+        {
+          "title": "Keyboard at focus",
+          "description": "Maaaring maabot at gamitin ang mga interactive na gamit gamit ang keyboard, at may nakikita na focus indicator."
+        },
+        {
+          "title": "Istruktura at heading",
+          "description": "Gumagamit ang bawat pahina ng iisang top-level na heading at makatuwirang pagkakasunod ng heading, kaya madaling lumipat-lipat ng bahagi ang mga gumagamit ng screen reader."
+        },
+        {
+          "title": "Label at alternate na teksto",
+          "description": "May label o deskripsyon ang mga form field, button na walang teksto, talahanayan, at larawan, at nakatago sa assistive technology ang mga dekoratibong icon."
+        },
+        {
+          "title": "Teksto at contrast",
+          "description": "Sinusuri ang contrast ng teksto at kontrol para madaling basahin, at umaayos ang teksto nang hindi nangangailangan ng pahalang na scroll sa maliit na screen."
+        },
+        {
+          "title": "Touch target at reduced motion",
+          "description": "Sapat ang laki ng link at button para madaling i-tap sa telepono, at iginagalang ng animasyon ang setting na reduced motion ng iyong device."
+        },
+        {
+          "title": "Wika at pagsasalin",
+          "description": "May bersyong Ingles at Tagalog ang portal para hindi sa iisang wika lamang nakakulong ang pangunahing impormasyon."
+        }
+      ]
+    },
+    "limitations": {
+      "title": "Mga kilalang limitasyon",
+      "description": "Alam namin na hindi pa umaabot sa gusto namin ang mga bahaging ito.",
+      "items": [
+        {
+          "title": "Hindi pa lubos na na-audit",
+          "description": "Hindi pa namin natapos ang buong third-party na accessibility audit sa bawat pahina ng portal."
+        },
+        {
+          "title": "Na-import na nilalaman",
+          "description": "May ilang gabay sa serbisyo at balitang inilipat na simpleng dokumento lamang. Maaaring hindi pa ganoon ka-nababasa ang mga ito gaya ng sarili naming pahina."
+        },
+        {
+          "title": "Nilalamang third-party na nilalaman",
+          "description": "Galing sa labas na serbisyo ang mga map, weather, at Facebook feed. Hindi namin ito kayang kontrolin ang accessibility, at kayang iulat lang namin ang problema sa kanilang provider."
+        },
+        {
+          "title": "Dokumento at larawan",
+          "description": "Hindi pa naitatag o naihinalaw ang ilang PDF at naiscan na larawan, kaya maaaring mahirap itong basahin sa tulong ng assistive technology."
+        }
+      ]
+    },
+    "feedback": {
+      "title": "Sabihin sa amin kung may hadlang",
+      "body1": "Kung may bahagi ng portal na ito na mahirap o imposibleng gamitin para sa inyo, nais naming malaman. Walang maling paraan ng pag-uulat — sapat na ang maikling tala.",
+      "body2": "Pakisabi kung saang pahina kayo nandoon, ano ang sinubukang gawin, at kung ano ang nangyari. Kung kaya, isama rin ang browser at device na ginamit ninyo.",
+      "emailLabel": "Magpadala ng feedback sa accessibility",
+      "emailSubject": "Feedback sa accessibility ng portal ng {{city}}",
+      "responseTime": "Sumasagot ang mga volunteer sa loob ng 2–3 araw ng trabaho. Para sa urgent o opisyal na usapin, makipag-ugnayan na lang direkta sa pamahalaang lungsod."
+    },
+    "helpNote": {
+      "title": "Kailangan ng tulong sa halip na ulat?",
+      "body": "Kung nais ninyong tulungan kayo na humanap ng opisina o impormasyong kailangan ninyo, pumunta sa contact page ng {{city}} para sa detalye ng city hall, mga linya ng departamento, at emergency na hotline."
+    }
+  },
+  "emptyState": {
+    "badge": "Coming soon",
+    "noContentBadge": "Wala pang nilalaman",
+    "comingSoonTitle": "Inihahanda pa ang seksyong ito",
+    "comingSoonDescription": "Tinutugunan pa namin ang seksyong ito. Samantala, subukan ang mga link sa ibaba o makipag-ugnayan sa pamahalaang lungsod para sa impormasyong kailangan ninyo ngayon.",
+    "noContentTitle": "Wala pang nailathala rito",
+    "noContentDescription": "Handa na ang seksyong ito para sa nilalaman ngunit wala pang idinagdag. Bumalik sa lalong madaling panahon, o mag-browse ng ibang seksyon ng portal.",
+    "browseGovernment": "Tingnan ang lahat ng seksyon ng pamahalaan",
+    "openTransparency": "Buksan ang Transparency",
+    "contactCity": "Makipag-ugnayan sa pamahalaang lungsod",
+    "followFacebook": "I-follow sa Facebook"
+  },
   "about": {
     "seoTitle": "Tungkol",
     "seoDescription": "Tungkol sa community portal ng {{city}} — {{barangays}} barangay, {{services}} service area, at impormasyon ng lokal na pamahalaan.",
@@ -324,7 +448,7 @@
       "locationMeta": "{{type}} · {{area}} km² lawak ng lupain",
       "stats": {
         "population": "Populasyon",
-        "populationNote": "2020 Census",
+        "populationNote": "{{year}} Census ({{program}})",
         "barangays": "Mga Barangay",
         "barangaysNote": "{{urban}} urban · {{rural}} rural",
         "serviceAreas": "Service Area",
@@ -413,5 +537,29 @@
       "github": "Mag-contribute sa GitHub",
       "contact": "Makipag-ugnayan sa Amin"
     }
+  },
+  "volunteerDialog": {
+    "logoAlt": "Better Cabanatuan",
+    "close": "Isara ang_anyaya na boluntaryo",
+    "title": "Maging Bahagi ng Mas Mahusay",
+    "city": "Cabanatuan",
+    "subtitle": "Ang Lungsod ng Cabanatuan ay nararapat magkaroon ng world-class na digital na pamahalaan. Tulungan nating itayo.",
+    "body": "Hinahanap namin ang mga passionadong <1>{{demonym}}</1> na nais maglingkod sa kanilang komunidad sa pamamagitan ng kanilang sining.",
+    "demonym": "Cabanatueño",
+    "roles": {
+      "softwareDev": "Software Dev",
+      "uiUxDesign": "UI/UX Design",
+      "graphicDesign": "Graphic Design",
+      "contentCreation": "Content Creation",
+      "digitalMarketing": "Digital Marketing",
+      "research": "Research"
+    },
+    "cta": "Gusto Ko Sumali",
+    "dismiss": "Baka Mamaya",
+    "email": "bettercabanatuan@gmail.com",
+    "emailSubject": "Gusto kong maging boluntaryo sa Better Cabanatuan"
+  },
+  "departments": {
+    "viewDetails": "Tingnan ang detalye"
   }
 }

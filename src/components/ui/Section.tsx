@@ -1,16 +1,15 @@
 import { cn } from '../../lib/utils';
+
+type SectionProps = React.ComponentPropsWithoutRef<'section'>;
+
 export default function Section({
   children,
   className,
-  id,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  id?: string;
-}) {
+  ...props
+}: SectionProps) {
   return (
-    <section className={cn('py-12 bg-white', className)} id={id}>
-      <div className={cn('container mx-auto px-4', className)}>{children}</div>
+    <section className={cn('py-12 bg-white', className)} {...props}>
+      <div className="container mx-auto px-4">{children}</div>
     </section>
   );
 }

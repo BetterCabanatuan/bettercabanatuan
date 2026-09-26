@@ -1,10 +1,14 @@
 import { useMemo, useState } from 'react';
 import { Search, ChevronDown } from 'lucide-react';
-import { Heading } from '../../ui/Heading';
 import { Text } from '../../ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
 import type { Department } from '../../../data/yamlLoader';
 import DepartmentCard from './DepartmentCard';
+import SectionJumpNav from '../../ui/SectionJumpNav';
+import ResponsiveDisclosure from '../../ui/ResponsiveDisclosure';
+
+const branchId = (branch: string) =>
+  `branch-${branch.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
 interface DepartmentsListProps {
   departments: Department[];
@@ -102,6 +106,17 @@ export default function DepartmentsList({ departments }: DepartmentsListProps) {
         Showing {filteredDepartments.length} of {departments.length} offices
       </Text>
 
+      {!branchFilter && !searchQuery.trim() && (
+        <SectionJumpNav
+          label="Jump to a branch"
+          items={groupedDepartments.flatMap(group =>
+            group.branch
+              ? [{ id: branchId(group.branch), label: group.branch }]
+              : []
+          )}
+        />
+      )}
+
       {filteredDepartments.length === 0 ? (
         <Banner
           type="info"
@@ -111,25 +126,8 @@ export default function DepartmentsList({ departments }: DepartmentsListProps) {
         />
       ) : (
         <div className="space-y-10">
-          {groupedDepartments.map(group => (
-            <section
-              key={group.branch ?? 'all'}
-              aria-labelledby={
-                group.branch ? `branch-${group.branch}` : undefined
-              }
-            >
-              {group.branch && (
-                <Heading
-                  level={3}
-                  id={`branch-${group.branch}`}
-                  className="text-lg mb-4 pb-2 border-b border-gray-200"
-                >
-                  {group.branch}
-                  <span className="ml-2 text-sm font-normal text-gray-500">
-                    ({group.items.length})
-                  </span>
-                </Heading>
-              )}
+          {groupedDepartments.map((group, index) => {
+            const cards = (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {group.items.map(department => (
                   <DepartmentCard
@@ -138,8 +136,25 @@ export default function DepartmentsList({ departments }: DepartmentsListProps) {
                   />
                 ))}
               </div>
-            </section>
-          ))}
+            );
+
+            if (!group.branch) {
+              return <div key="all">{cards}</div>;
+            }
+
+            return (
+              <ResponsiveDisclosure
+                key={group.branch}
+                id={branchId(group.branch)}
+                title={group.branch}
+                count={group.items.length}
+                defaultOpen={index === 0}
+                headingLevel={3}
+              >
+                {cards}
+              </ResponsiveDisclosure>
+            );
+          })}
         </div>
       )}
     </div>

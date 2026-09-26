@@ -27,24 +27,30 @@ describe('DepartmentsOverview', () => {
     renderWithProviders(<DepartmentsOverview departments={allDepartments} />);
 
     expect(screen.getByText('Total Offices')).toBeInTheDocument();
-    expect(screen.getByText('18')).toBeInTheDocument();
+    expect(screen.getByText(String(allDepartments.length))).toBeInTheDocument();
   });
 });
 
 describe('DepartmentsList', () => {
+  const total = allDepartments.length;
+
   it('filters departments by search query', async () => {
     const user = userEvent.setup();
 
     renderWithProviders(<DepartmentsList departments={allDepartments} />);
 
-    expect(screen.getByText(/Showing 18 of 18 offices/)).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(`Showing ${total} of ${total} offices`))
+    ).toBeInTheDocument();
 
     await user.type(
       screen.getByRole('searchbox', { name: 'Search departments' }),
       'CDRRMO'
     );
 
-    expect(screen.getByText(/Showing 1 of 18 offices/)).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(`Showing 1 of ${total} offices`))
+    ).toBeInTheDocument();
     expect(
       screen.getByText('City Disaster Risk Reduction and Management Office')
     ).toBeInTheDocument();
@@ -60,7 +66,9 @@ describe('DepartmentsList', () => {
       'Legislative'
     );
 
-    expect(screen.getByText(/Showing 1 of 18 offices/)).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(`Showing 1 of ${total} offices`))
+    ).toBeInTheDocument();
     expect(screen.getByText('Sangguniang Panlungsod')).toBeInTheDocument();
   });
 });

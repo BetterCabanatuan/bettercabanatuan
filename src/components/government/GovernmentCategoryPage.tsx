@@ -1,7 +1,9 @@
 import Section from '../ui/Section';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
+import EmptyState from '../ui/EmptyState';
 import {
   governmentCategories,
   getCategorySubcategories,
@@ -11,7 +13,7 @@ import {
 import Breadcrumbs from '../ui/Breadcrumbs';
 import { getIconComponent } from '../../lib/iconMap';
 import SEO from '../SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '../ui/Card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
 import { breadcrumbJsonLd } from '../../lib/structuredData';
@@ -25,6 +27,7 @@ export default function GovernmentCategoryPage({
 }: GovernmentCategoryPageProps) {
   const { categoryId: paramCategoryId } = useParams();
   const categoryId = fixedCategoryId ?? paramCategoryId;
+  const { t } = useTranslation('common');
 
   const [categoryIndex, setCategoryIndex] = useState<CategoryIndex>({
     layout: 'list',
@@ -85,6 +88,34 @@ export default function GovernmentCategoryPage({
           <div className="flex justify-center items-center p-8">
             <Text>Loading...</Text>
           </div>
+        ) : subcategories.length === 0 ? (
+          /* No pages published for this category yet — never render a blank
+             content area. See P2-1. */
+          <EmptyState
+            icon={Icon}
+            badge={
+              categoryData.comingSoon
+                ? t('emptyState.badge')
+                : t('emptyState.noContentBadge')
+            }
+            title={
+              categoryData.comingSoon
+                ? t('emptyState.comingSoonTitle')
+                : t('emptyState.noContentTitle')
+            }
+            description={
+              categoryData.comingSoonNote ||
+              t('emptyState.comingSoonDescription')
+            }
+            primaryAction={{
+              href: '/government',
+              label: t('emptyState.browseGovernment'),
+            }}
+            secondaryAction={{
+              href: '/contact',
+              label: t('emptyState.contactCity'),
+            }}
+          />
         ) : (
           <>
             {categoryIndex.title && (
@@ -102,10 +133,7 @@ export default function GovernmentCategoryPage({
                     key={subcategory.slug}
                     to={`/government/${categoryId}/${subcategory.slug}`}
                   >
-                    <Card
-                      hoverable
-                      className="h-full border-t-4 border-primary-500"
-                    >
+                    <Card hoverable className="h-full ring-1 ring-black/[0.06]">
                       <CardContent>
                         <h4 className="text-lg font-medium text-gray-900">
                           {subcategory.name}

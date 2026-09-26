@@ -17,3 +17,10 @@ export interface NavigationItem {
   href: string;
   children?: NavigationItem[];
 }
+
+/** A single footer link. `external` marks absolute URLs that leave the SPA. */
+export interface NavigationLink {
+  label: string;
+  href: string;
+  external?: boolean;
+}

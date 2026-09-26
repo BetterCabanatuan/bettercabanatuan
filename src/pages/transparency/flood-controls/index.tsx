@@ -21,31 +21,29 @@ export default function FloodControlsPage() {
         keywords={`flood control, drainage, infrastructure, transparency, ${siteConfig.governmentName}`}
         url="/transparency/flood-controls"
       />
-      <main className="flex-grow" id="main-content">
-        <GovernmentPageHero
-          eyebrow={t('transparency.eyebrow')}
+      <GovernmentPageHero
+        eyebrow={t('transparency.eyebrow')}
+        title={floodControlsData.title}
+        description={floodControlsData.description}
+        icon={Droplets}
+        breadcrumbs={[
+          { label: t('common.home'), href: '/' },
+          { label: t('transparency.title'), href: '/transparency' },
+          {
+            label: floodControlsData.title,
+            href: '/transparency/flood-controls',
+          },
+        ]}
+      />
+      <Section className="p-3 mb-12 pt-10">
+        <FloodControlsFeatured
           title={floodControlsData.title}
           description={floodControlsData.description}
-          icon={Droplets}
-          breadcrumbs={[
-            { label: t('common.home'), href: '/' },
-            { label: t('transparency.title'), href: '/transparency' },
-            {
-              label: floodControlsData.title,
-              href: '/transparency/flood-controls',
-            },
-          ]}
+          projects={allFloodControlProjects}
+          showHeader={false}
+          className=""
         />
-        <Section className="p-3 mb-12 pt-10">
-          <FloodControlsFeatured
-            title={floodControlsData.title}
-            description={floodControlsData.description}
-            projects={allFloodControlProjects}
-            showHeader={false}
-            className=""
-          />
-        </Section>
-      </main>
+      </Section>
     </>
   );
 }

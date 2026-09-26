@@ -13,6 +13,10 @@ export interface Category {
   description: string;
   icon: string;
   subcategories?: Subcategory[]; // Keep for backward compatibility
+  /** Section is planned but has no published content yet (see P2-1). */
+  comingSoon?: boolean;
+  /** Section-specific wording for the empty state. */
+  comingSoonNote?: string;
 }
 
 export interface CategoryData {
