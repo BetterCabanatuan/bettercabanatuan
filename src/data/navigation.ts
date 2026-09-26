@@ -1,4 +1,4 @@
-import type { NavigationItem } from '../types';
+import type { NavigationItem, NavigationLink } from '../types';
 import { serviceCategories as servicesData } from './yamlLoader';
 
 interface Subcategory {
@@ -35,7 +35,13 @@ export const mainNavigation: NavigationItem[] = [
   },
 ];
 
-export const footerNavigation = {
+export const footerNavigation: {
+  mainSections: Array<{
+    title: string;
+    links: NavigationLink[];
+  }>;
+  socialLinks: NavigationLink[];
+} = {
   mainSections: [
     {
       title: 'About',
@@ -45,7 +51,11 @@ export const footerNavigation = {
         // { label: 'Terms of Use', href: '/terms' },
         { label: 'Accessibility', href: '/accessibility' },
         { label: 'Contact Us', href: '/contact' },
-        { label: 'Community Discord', href: '/discord' },
+        {
+          label: 'Community Discord',
+          href: 'https://bettergov.ph/join-us',
+          external: true,
+        },
       ],
     },
     {
@@ -58,8 +68,12 @@ export const footerNavigation = {
             label: category.category,
             href: `/services/${category.slug}`,
           })),
-        { label: 'Hotlines', href: '/philippines/hotlines' },
-        { label: 'Holidays', href: '/philippines/holidays' },
+        { label: 'Hotlines', href: '/hotlines' },
+        {
+          label: 'Holidays',
+          href: 'https://bettergov.ph/philippines/holidays',
+          external: true,
+        },
       ],
     },
     {
@@ -68,27 +82,46 @@ export const footerNavigation = {
         { label: 'Government', href: '/government' },
         { label: 'Public Officials', href: '/government/officials' },
         { label: 'Barangays', href: '/government/barangays' },
-        { label: 'Open Data', href: 'https://data.gov.ph' },
-        { label: 'Freedom of Information', href: 'https://www.foi.gov.ph' },
+        { label: 'Open Data', href: 'https://data.gov.ph', external: true },
+        {
+          label: 'Freedom of Information',
+          href: 'https://www.foi.gov.ph',
+          external: true,
+        },
         {
           label: 'Contact Center',
           href: 'https://contactcenterngbayan.gov.ph',
+          external: true,
         },
         {
           label: 'Official Gazette',
           href: 'https://www.officialgazette.gov.ph',
+          external: true,
         },
       ],
     },
   ],
   socialLinks: [
-    { label: 'Website', href: 'https://bettercabanatuan.org' },
+    { label: 'Website', href: 'https://bettercabanatuan.org', external: true },
     {
       label: 'Facebook',
       href: 'https://www.facebook.com/bettercabanatuan.org',
+      external: true,
     },
-    { label: 'Twitter', href: 'https://twitter.com/bettercabanatuan' },
-    { label: 'Instagram', href: 'https://instagram.com/bettercabanatuan' },
-    { label: 'Government Website', href: 'https://www.cabanatuancity.gov.ph' },
+    {
+      label: 'Twitter',
+      href: 'https://twitter.com/bettercabanatuan',
+      external: true,
+    },
+    {
+      label: 'Instagram',
+      href: 'https://instagram.com/bettercabanatuan',
+      external: true,
+    },
+    {
+      label: 'Government Website',
+      href: 'https://www.cabanatuancity.gov.ph',
+      external: true,
+    },
   ],
 };

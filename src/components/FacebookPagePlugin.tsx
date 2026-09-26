@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ExternalLink } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 declare global {
@@ -122,15 +123,21 @@ export default function FacebookPagePlugin({
   const containerRef = useRef<HTMLDivElement>(null);
   const { i18n, t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
+  const [hasFailed, setHasFailed] = useState(false);
 
   useEffect(() => {
     if (!href) return;
 
     setIsLoaded(false);
+    setHasFailed(false);
     const locale = getFacebookLocale(i18n.language);
     let observer: MutationObserver | undefined;
-    let timeoutId: number | undefined;
     let rafId = 0;
+
+    const timeoutId = window.setTimeout(
+      () => setHasFailed(true),
+      LOAD_TIMEOUT_MS
+    );
 
     loadFacebookSdk(locale).then(() => {
       if (!containerRef.current || !window.FB) return;
@@ -146,6 +153,8 @@ export default function FacebookPagePlugin({
         const iframe = containerRef.current?.querySelector('iframe');
         if (iframe) {
           setIsLoaded(true);
+          setHasFailed(false);
+          window.clearTimeout(timeoutId);
           observer?.disconnect();
         }
       });
@@ -154,14 +163,12 @@ export default function FacebookPagePlugin({
         childList: true,
         subtree: true,
       });
-
-      timeoutId = window.setTimeout(() => setIsLoaded(true), LOAD_TIMEOUT_MS);
     });
 
     return () => {
       cancelAnimationFrame(rafId);
       observer?.disconnect();
-      if (timeoutId) window.clearTimeout(timeoutId);
+      window.clearTimeout(timeoutId);
     };
   }, [
     href,
@@ -179,6 +186,37 @@ export default function FacebookPagePlugin({
 
   if (!href) return null;
 
+  if (hasFailed) {
+    return (
+      <div
+        data-embed-fallback=""
+        className={cn(
+          'w-full max-w-lg rounded-xl bg-primary-50 p-5 ring-1 ring-primary-100',
+          className
+        )}
+        role="status"
+      >
+        <p className="font-semibold text-gray-900">
+          Facebook updates are hosted externally
+        </p>
+        <p className="mt-1 text-sm text-gray-600">
+          The embedded feed could not load. Open the official page to view the
+          latest announcements.
+        </p>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${pageName ?? 'this page'} on Facebook`}
+          className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+        >
+          View on Facebook
+          <ExternalLink className="size-4" aria-hidden="true" />
+        </a>
+      </div>
+    );
+  }
+
   const embed = (
     <div
       ref={containerRef}
@@ -187,6 +225,11 @@ export default function FacebookPagePlugin({
       aria-busy={!isLoaded}
       aria-label={t('news.embedLabel', { page: pageName ?? href })}
     >
+      {!isLoaded && (
+        <span className="sr-only" role="status" aria-live="polite">
+          Loading Facebook updates…
+        </span>
+      )}
       {!isLoaded && <FacebookEmbedSkeleton height={height} />}
       <div
         className="fb-page"

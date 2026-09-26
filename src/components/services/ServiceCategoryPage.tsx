@@ -1,5 +1,5 @@
 import Section from '../ui/Section';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import {
@@ -8,13 +8,16 @@ import {
   type Subcategory,
   type CategoryIndex,
 } from '../../data/yamlLoader';
-import Breadcrumbs from '../ui/Breadcrumbs';
 import { getIconComponent } from '../../lib/iconMap';
 import SEO from '../SEO';
-import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
 import { breadcrumbJsonLd } from '../../lib/structuredData';
+import GovernmentPageHero from '../government/GovernmentPageHero';
+import CardGrid, { CardGridItem } from '../ui/CardGrid';
+import CategoryCard from '../ui/CategoryCard';
+import EmptyState from '../ui/EmptyState';
+import { Inbox } from 'lucide-react';
 
 interface ServiceCategoryPageProps {
   categoryId?: string;
@@ -51,7 +54,6 @@ export default function ServiceCategoryPage({
   if (!categoryId || !categoryData) {
     return (
       <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" />
         <Banner
           type="error"
           title="Category not found"
@@ -75,80 +77,64 @@ export default function ServiceCategoryPage({
           { name: categoryData.category, url: `/services/${categoryId}` },
         ])}
       />
-      <Section className="p-3 mb-12">
-        <Breadcrumbs className="mb-8" />
-        <Icon className="h-8 w-8 mb-4 text-primary-600 rounded-md" />
-        <Heading>{categoryData.category || categoryId}</Heading>
-        <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
-
+      <GovernmentPageHero
+        eyebrow="City Services"
+        title={categoryData.category || categoryId}
+        description={categoryData.description}
+        icon={Icon}
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Services', href: '/services' },
+          {
+            label: categoryData.category || categoryId,
+            href: `/services/${categoryId}`,
+          },
+        ]}
+      />
+      <Section className="pb-16 pt-10">
         {loading ? (
-          <div className="flex justify-center items-center p-8">
-            <Text>Loading services...</Text>
+          <div
+            className="flex items-center justify-center p-8"
+            role="status"
+            aria-live="polite"
+          >
+            <Text>Loading services…</Text>
           </div>
+        ) : subcategories.length === 0 ? (
+          <EmptyState
+            icon={Inbox}
+            title="No services published yet"
+            description="This category does not have published service guides yet. Browse all services or contact the city for assistance."
+            primaryAction={{ href: '/services', label: 'Browse all services' }}
+            secondaryAction={{ href: '/contact', label: 'Contact the city' }}
+          />
         ) : (
           <>
             {categoryIndex.title && (
-              <Heading level={3}>{categoryIndex.title}</Heading>
+              <Heading level={2}>{categoryIndex.title}</Heading>
             )}
             {categoryIndex.description && (
               <Text className="text-gray-600 mb-4">
                 {categoryIndex.description}
               </Text>
             )}
-            {categoryIndex.layout === 'grid' ? (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
+            <CardGrid
+              label={categoryData.category || categoryId}
+              className="lg:grid-cols-2 xl:grid-cols-2"
+            >
+              {subcategories.map(subcategory => (
+                <CardGridItem key={subcategory.slug}>
+                  <CategoryCard
                     to={`/services/${categoryId}/${subcategory.slug}`}
-                  >
-                    <Card
-                      hoverable
-                      className="h-full border-t-4 border-primary-500"
-                    >
-                      <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
-                          {subcategory.name}
-                        </h4>
-                        {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </p>
-                        )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || categoryId}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {subcategories.map(subcategory => (
-                  <Link
-                    key={subcategory.slug}
-                    to={`/services/${categoryId}/${subcategory.slug}`}
-                  >
-                    <Card hoverable className="mb-4">
-                      <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
-                          {subcategory.name}
-                        </h4>
-                        {subcategory.description && (
-                          <p className="mt-2 text-sm text-gray-600">
-                            {subcategory.description}
-                          </p>
-                        )}
-                        <span className="inline-block px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-gray-100 text-gray-800">
-                          {categoryData.category || categoryId}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            )}
+                    title={subcategory.name}
+                    description={subcategory.description}
+                    icon={Icon}
+                    cta="View service"
+                    headingLevel={3}
+                  />
+                </CardGridItem>
+              ))}
+            </CardGrid>
           </>
         )}
       </Section>

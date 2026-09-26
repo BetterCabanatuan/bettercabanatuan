@@ -13,6 +13,17 @@ import {
 
 const env = import.meta.env;
 
+/**
+ * Canonical product name for this site.
+ *
+ * This portal is a Cabanatuan-specific community site built on the BetterGov
+ * template. Its own brand is "Better Cabanatuan". BetterGov is the upstream
+ * project, credited separately in the footer rather than mixed into this
+ * site's own brand strings. Every user-facing brand string and the <title>
+ * template read this constant.
+ */
+export const BRAND_NAME = 'Better Cabanatuan';
+
 export const siteConfig = {
   governmentName: env.VITE_GOVERNMENT_NAME || 'Cabanatuan City',
   governmentType: env.VITE_GOVERNMENT_TYPE || 'City',

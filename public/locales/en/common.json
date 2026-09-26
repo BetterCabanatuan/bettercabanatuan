@@ -5,6 +5,7 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact",
+    "government": "Government",
     "search": "Search",
     "location": "Location",
     "cityMayor": "City Mayor",
@@ -58,27 +59,13 @@
     "governmentServices": "Government Services",
     "description": "Access official government services quickly and easily. Find what you need for citizenship, business, education, and more.",
     "viewAll": "View All Services",
-    "viewAllCategory": "View All",
-    "compact": {
-      "health": "Health",
-      "education": "Education",
-      "business": "Business",
-      "socialWelfare": "Social Welfare",
-      "other": "Other",
-      "otherDescription": "Browse all government service categories."
-    }
+    "viewAllCategory": "Explore"
   },
   "governmentActivity": {
     "title": "Government Activity",
-    "description": "Stay updated with the latest government activities and announcements.",
-    "compact": {
-      "officials": "Officials",
-      "departments": "Departments",
-      "projects": "Projects",
-      "barangays": "Barangays",
-      "other": "Other",
-      "otherDescription": "Browse all government sections and resources."
-    }
+    "description": "Meet the people who run the city, the offices that deliver its services, and the projects they are building.",
+    "viewSection": "View section",
+    "viewAll": "View all government sections"
   },
   "weather": {
     "title": "Weather Updates",
@@ -111,14 +98,34 @@
     "title": "Foreign Exchange Rates"
   },
   "news": {
-    "title": "Latest News & Updates",
-    "badge": "Official Updates",
-    "description": "Stay updated with the latest government activities and announcements from Cabanatuan City.",
+    "title": "Announcements from the city government",
+    "badge": "Official channel",
+    "description": "Advisories, program updates, and public notices, as posted by the city government on its official Facebook page.",
     "followCta": "Follow on Facebook",
     "embedLabel": "Facebook page feed for {{page}}"
   },
+  "newsFeed": {
+    "seoTitle": "News",
+    "seoDescription": "Latest news and updates from {{city}} — announcements, advisories, and council updates.",
+    "eyebrow": "Official Updates",
+    "title": "News & Updates",
+    "description": "Latest news, announcements, and advisories from {{city}}.",
+    "latestTitle": "Latest News & Updates",
+    "allTitle": "News & Updates",
+    "allDescription": "Announcements, advisories, and updates from the {{city}} city government. Items are published here and on the official Facebook page.",
+    "publishedOn": "Published {{date}}",
+    "readMore": "Read more",
+    "viewAll": "View all news",
+    "sourceLabel": "Source",
+    "itemCount_one": "{{count}} news item",
+    "itemCount_other": "{{count}} news items",
+    "emptyTitle": "No news items yet",
+    "emptyDescription": "Updates from the city government are not published here yet. The fastest way to see announcements as they happen is the official {{city}} Facebook page.",
+    "fallbackCta": "See announcements on Facebook"
+  },
   "footer": {
-    "copyright": "© 2026 BetterGov. All content is public domain unless otherwise specified."
+    "copyright": "© 2026 {{brand}}. All content is public domain unless otherwise specified.",
+    "builtOn": "Built on the BetterGov open-source civic template."
   },
   "navbar": {
     "government": "Government",
@@ -182,7 +189,8 @@
         "years": "GAA year(s)",
         "amount": "Amount"
       }
-    }
+    },
+    "viewProject": "View project"
   },
   "search": {
     "title": "Search the Portal",
@@ -202,7 +210,9 @@
     "noResultsTitle": "No matches found",
     "noResultsDescription": "We couldn't find anything for \"{{query}}\". Try different keywords or browse a suggested topic below.",
     "external": "External",
-    "seoWithQuery": "Search results for \"{{query}}\" on the {{city}} community portal."
+    "seoWithQuery": "Search results for \"{{query}}\" on the {{city}} community portal.",
+    "suggestionsGroupLabel": "Popular search terms",
+    "chipLabel": "Search for \"{{term}}\""
   },
   "joinUs": {
     "stripTitle": "🚀 Join the #CivicTech Revolution",
@@ -224,7 +234,7 @@
     "city": "City",
     "cityDescription": "Province of Nueva Ecija",
     "totalPopulation": "Total Population",
-    "populationDescription": "As of 2020 Census",
+    "populationDescription": "As of {{year}} Census ({{program}})",
     "barangays": "Barangays",
     "barangaysDescription": "Urban & Rural",
     "landArea": "Land Area",
@@ -233,11 +243,31 @@
   "map": {
     "title": "Visit City Hall"
   },
+  "localConditions": {
+    "eyebrow": "Local conditions",
+    "title": "Cabanatuan today",
+    "description": "Live weather and the location of {{city}} Hall, together in one practical view.",
+    "openInMaps": "Open in Maps",
+    "openInMapsLabel": "Open City Hall in Google Maps",
+    "mapLabel": "Map showing Cabanatuan City Hall"
+  },
   "hotlines": {
     "banner": {
       "ariaLabel": "Emergency hotlines",
       "label": "Emergency Hotlines",
       "labelShort": "Hotlines"
+    },
+    "page": {
+      "seoTitle": "Hotlines",
+      "seoDescription": "Emergency hotlines and department contact numbers for {{city}} — PNP, BFP, CDRRMO, and city office lines.",
+      "eyebrow": "Contact Directory",
+      "title": "Hotlines",
+      "description": "Emergency and non-emergency contact numbers for {{city}} — police, fire, rescue, and city department lines. Tap any number to call it directly.",
+      "moreHelp": {
+        "title": "Looking for city hall?",
+        "body": "For the {{city}} city hall address, office hours, email addresses, and the full contact directory, visit the contact page.",
+        "link": "Go to the contact page"
+      }
     },
     "section": {
       "eyebrow": "24/7 Response",
@@ -308,6 +338,100 @@
     },
     "disclaimer": "This contact page is part of the Better Cabanatuan community portal, not an official government system. For verified transactions and official records, always use the <1>official {{city}} website</1> or visit City Hall in person."
   },
+  "accessibility": {
+    "seoTitle": "Accessibility",
+    "seoDescription": "Accessibility statement for the {{city}} community portal — our commitment, the standard we target, known limitations, and how to report a barrier.",
+    "eyebrow": "Our Commitment",
+    "title": "Accessibility Statement",
+    "lastReviewed": "Last reviewed: January 2026",
+    "intro": "The {{city}} community portal is built and maintained by volunteers. We want everyone in the community to be able to read our pages, use our services guides, and reach the right office without barriers. This page explains what we are working toward, what we have done so far, and where the gaps still are.",
+    "commitment": {
+      "title": "Our commitment",
+      "body1": "We are working toward making this portal usable by as many people as possible, including people with disabilities, older residents, and anyone browsing on a slow connection or a small phone screen.",
+      "body2": "Accessibility is treated as ongoing work rather than a finished checklist. We review new pages and features as they are added, and we fix issues when people report them."
+    },
+    "standard": {
+      "title": "The standard we target",
+      "body": "We are working toward conformance with the Web Content Accessibility Guidelines (WCAG) 2.1, Level AA — the standard most widely used for public-sector and civic websites.",
+      "note": "This is a statement of work in progress, not a claim of legal compliance. It also does not speak for the {{city}} government or any official government website."
+    },
+    "measures": {
+      "title": "What we have built in so far",
+      "description": "These are the practices we have already put into place across the portal.",
+      "items": [
+        {
+          "title": "Keyboard and focus",
+          "description": "Interactive elements are reachable and operable with a keyboard, with a visible focus indicator."
+        },
+        {
+          "title": "Structure and headings",
+          "description": "Pages use a single top-level heading and a logical heading order, so screen reader users can navigate between sections."
+        },
+        {
+          "title": "Labels and alternative text",
+          "description": "Form fields, icon-only buttons, tables, and images carry text labels or descriptions, and decorative icons are hidden from assistive technology."
+        },
+        {
+          "title": "Text and contrast",
+          "description": "Body text and controls are checked for readable colour contrast, and text reflows without horizontal scrolling on small screens."
+        },
+        {
+          "title": "Touch targets and reduced motion",
+          "description": "Links and buttons are large enough to tap comfortably on a phone, and animations respect your device's reduced-motion setting."
+        },
+        {
+          "title": "Language and translation",
+          "description": "The portal ships in English and Tagalog, so key information is not limited to a single language."
+        }
+      ]
+    },
+    "limitations": {
+      "title": "Known limitations",
+      "description": "We know these parts are not yet where we want them to be.",
+      "items": [
+        {
+          "title": "Not yet fully audited",
+          "description": "We have not yet run a complete third-party accessibility audit across every page of the portal."
+        },
+        {
+          "title": "Legacy content",
+          "description": "Some imported service guides and news items are plain documents. They may not yet be as navigable as our own pages."
+        },
+        {
+          "title": "Embedded third-party content",
+          "description": "Features such as the embedded map, weather, and Facebook feed come from outside services. We do not control their accessibility and can only report problems to their providers."
+        },
+        {
+          "title": "Documents and images",
+          "description": "Some attached PDFs and scanned images are not yet tagged or transcribed, which can make them harder to read with assistive technology."
+        }
+      ]
+    },
+    "feedback": {
+      "title": "Tell us if you hit a barrier",
+      "body1": "If something on this portal is difficult or impossible for you to use, we want to know. There is no wrong way to report it — a short note is enough.",
+      "body2": "Please tell us which page you were on, what you were trying to do, and what happened. If you can, include the browser and device you were using.",
+      "emailLabel": "Send accessibility feedback",
+      "emailSubject": "Accessibility feedback on the {{city}} portal",
+      "responseTime": "Volunteers aim to reply within 2–3 business days. For urgent or official matters, contact the city government directly instead."
+    },
+    "helpNote": {
+      "title": "Need help instead of a report?",
+      "body": "If you would rather have someone help you find the office or information you need, visit the {{city}} contact page for city hall details, department lines, and emergency hotlines."
+    }
+  },
+  "emptyState": {
+    "badge": "Coming soon",
+    "noContentBadge": "No content yet",
+    "comingSoonTitle": "This section is being prepared",
+    "comingSoonDescription": "We are still putting this section together. In the meantime, try one of the links below or contact the city government for the information you need today.",
+    "noContentTitle": "Nothing published here yet",
+    "noContentDescription": "This section is ready for content but nothing has been added. Check back soon, or browse another section of the portal.",
+    "browseGovernment": "Browse all government sections",
+    "openTransparency": "Open Transparency",
+    "contactCity": "Contact the city government",
+    "followFacebook": "Follow on Facebook"
+  },
   "about": {
     "seoTitle": "About",
     "seoDescription": "About the {{city}} community portal — {{barangays}} barangays, {{services}} service areas, and local government information.",
@@ -324,7 +448,7 @@
       "locationMeta": "{{type}} · {{area}} km² land area",
       "stats": {
         "population": "Population",
-        "populationNote": "2020 Census",
+        "populationNote": "{{year}} Census ({{program}})",
         "barangays": "Barangays",
         "barangaysNote": "{{urban}} urban · {{rural}} rural",
         "serviceAreas": "Service Areas",
@@ -388,5 +512,29 @@
       "github": "Contribute on GitHub",
       "contact": "Contact Us"
     }
+  },
+  "volunteerDialog": {
+    "logoAlt": "Better Cabanatuan",
+    "close": "Close volunteer invitation",
+    "title": "Be Part of Something Greater",
+    "city": "Cabanatuan",
+    "subtitle": "Cabanatuan City deserves a world-class digital government. Help us build it.",
+    "body": "We are looking for passionate <1>{{demonym}}</1> who want to serve their community through their craft.",
+    "demonym": "Cabanatueños",
+    "roles": {
+      "softwareDev": "Software Dev",
+      "uiUxDesign": "UI/UX Design",
+      "graphicDesign": "Graphic Design",
+      "contentCreation": "Content Creation",
+      "digitalMarketing": "Digital Marketing",
+      "research": "Research"
+    },
+    "cta": "I Want to Volunteer",
+    "dismiss": "Maybe Later",
+    "email": "bettercabanatuan@gmail.com",
+    "emailSubject": "Volunteer for Better Cabanatuan"
+  },
+  "departments": {
+    "viewDetails": "View details"
   }
 }

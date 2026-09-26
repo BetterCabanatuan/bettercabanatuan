@@ -1,0 +1,30 @@
+# News & Updates for Cabanatuan City
+#
+# Volunteer-editable. Each item renders on /government/news (all items) and on
+# the homepage (the three most recent).
+#
+# HOW TO ADD AN ITEM — copy the block below, paste it under `items:`, and edit.
+# Items are sorted by `date` descending automatically; order in this file does
+# not matter. `date` must be YYYY-MM-DD.
+#
+#   - title: 'Short headline of the update'
+#     date: '2026-09-25'
+#     summary: 'One or two sentences. Keep it plain and non-technical.'
+#     sourceName: 'City Mayor's Office'          # who published it
+#     sourceUrl: 'https://www.facebook.com/lgucabanatuan'   # where it lives
+#
+# Rules:
+#   - `title`, `date` and `sourceUrl` are required. Missing ones are dropped.
+#   - Prefer linking the official Facebook post or the official city website.
+#   - Do not invent announcements. Only publish what the city government said.
+#   - If an item turns out to be wrong, delete the block. Do not edit history
+#     in place — a wrong correction is harder to spot than a missing item.
+#
+# Why this file is empty: the city government posts updates on Facebook, and
+# we do not want to republish announcements we cannot verify. Until someone
+# adds real items, /government/news shows an empty state pointing readers at
+# the official Facebook page.
+
+description: 'Announcements, advisories, and updates from the Cabanatuan City government.'
+
+items: []

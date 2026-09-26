@@ -1,22 +1,19 @@
-import { Link } from 'react-router-dom';
+import { useState, type FormEvent } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   ArrowRight,
   ArrowUpRight,
-  MapPin,
-  Users,
-  Phone,
-  Sparkles,
+  Building2,
   GraduationCap,
   Heart,
-  Building2,
+  MapPin,
+  Phone,
+  Search,
+  Sparkles,
+  Users,
 } from 'lucide-react';
-import {
-  siteConfig,
-  cityStats,
-  services,
-  leadership,
-} from '../../lib/siteConfig';
+import { siteConfig, cityStats, leadership } from '../../lib/siteConfig';
 
 const intentPathKeys = [
   {
@@ -24,7 +21,6 @@ const intentPathKeys = [
     descriptionKey: 'hero.intent.findService.description',
     href: '/services',
     icon: Sparkles,
-    accent: 'from-primary-500 to-primary-700',
   },
   {
     titleKey: 'hero.intent.exploreBarangays.title',
@@ -35,21 +31,18 @@ const intentPathKeys = [
     },
     href: '/government/barangays',
     icon: MapPin,
-    accent: 'from-accent-500 to-accent-700',
   },
   {
     titleKey: 'hero.intent.meetOfficials.title',
     descriptionKey: 'hero.intent.meetOfficials.description',
     href: '/government/officials',
     icon: Users,
-    accent: 'from-secondary-500 to-secondary-700',
   },
   {
     titleKey: 'hero.intent.getInTouch.title',
     descriptionKey: 'hero.intent.getInTouch.description',
     href: '/contact',
     icon: Phone,
-    accent: 'from-success-500 to-success-700',
   },
 ] as const;
 
@@ -73,153 +66,191 @@ const popularTopicKeys = [
 
 export default function Hero() {
   const { t } = useTranslation('common');
+  const navigate = useNavigate();
+  const [query, setQuery] = useState('');
+
+  const submitSearch = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const trimmed = query.trim();
+    navigate(
+      trimmed ? `/search?${new URLSearchParams({ q: trimmed })}` : '/search'
+    );
+  };
 
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-r from-primary-600 to-primary-700 text-white py-12 md:py-20 lg:py-24"
+      className="relative overflow-hidden bg-primary-700 py-12 text-white md:py-16 lg:py-20"
       aria-labelledby="hero-heading"
     >
-      <div className="container mx-auto px-4 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
-          {/* Copy column */}
-          <div className="lg:col-span-7 xl:col-span-6 motion-safe:animate-fade-in">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-100 mb-6">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary-200" />
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.08]"
+        aria-hidden="true"
+        style={{
+          backgroundImage:
+            'linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)',
+          backgroundSize: '56px 56px',
+          maskImage:
+            'linear-gradient(to right, transparent, black 35%, black 70%, transparent)',
+        }}
+      />
+      <div
+        className="pointer-events-none absolute -right-32 -top-32 size-[34rem] rounded-full bg-primary-400/20 blur-3xl"
+        aria-hidden="true"
+      />
+
+      <div className="container relative mx-auto px-4">
+        <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className="motion-safe:animate-fade-in lg:col-span-7">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary-50 ring-1 ring-inset ring-white/20">
+              <span className="size-1.5 rounded-full bg-accent-300" />
               {t('hero.badge')}
             </div>
 
-            <p className="text-sm tracking-[0.22em] uppercase text-primary-200 mb-4">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary-100">
               {t('hero.eyebrow')}
             </p>
-
             <h1
               id="hero-heading"
-              className="text-[2.75rem] sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-semibold leading-[1.05] text-white mb-6 text-balance"
+              className="mb-5 max-w-3xl text-balance text-[2.6rem] font-semibold leading-[1.04] tracking-[-0.035em] text-white sm:text-5xl lg:text-[3.7rem]"
             >
-              <span className="block">{siteConfig.governmentName}</span>
-              <span className="block text-primary-100 mt-1">
+              {siteConfig.governmentName}
+              <span className="mt-1 block text-primary-100">
                 {t('hero.headlineAccent')}
               </span>
             </h1>
-
-            <p className="text-lg md:text-xl text-white/85 max-w-xl leading-relaxed mb-8 text-pretty">
+            <p className="mb-7 max-w-2xl text-pretty text-lg leading-relaxed text-white/85 md:text-xl">
               {t('hero.subtitle')}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-10">
-              <Link
-                to="/services"
-                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-7 py-3 bg-white text-primary-900 rounded-xl font-semibold hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700 transition-[transform,background-color,box-shadow] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
-              >
-                {t('hero.exploreServices')}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <Link
-                to="/about"
-                className="inline-flex items-center justify-center gap-2 min-h-[48px] px-7 py-3 rounded-xl font-semibold text-white border border-white/30 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700 transition-[transform,background-color,border-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
-              >
-                {t('hero.learnMore')}
-              </Link>
-            </div>
-
-            {/* Location + leadership strip */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 pt-6 border-t border-white/20">
-              <div>
-                <p className="text-xs font-medium uppercase tracking-wider text-white/60 mb-1">
-                  {t('common.location')}
-                </p>
-                <p className="text-sm font-medium text-white">
-                  {siteConfig.province}, {siteConfig.region}
-                </p>
-              </div>
-              {leadership.mayor && (
-                <div className="hidden sm:block w-px h-10 bg-white/20" />
-              )}
-              {leadership.mayor && (
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wider text-white/60 mb-1">
-                    {t('common.cityMayor')}
-                  </p>
-                  <p className="text-sm font-medium text-white">
-                    {leadership.mayor.name}
-                  </p>
+            <form
+              role="search"
+              aria-label="Search the city portal"
+              onSubmit={submitSearch}
+              className="max-w-2xl"
+            >
+              <label htmlFor="hero-search" className="sr-only">
+                Search the city portal
+              </label>
+              <div className="flex gap-2 rounded-2xl bg-white p-2 shadow-[0_8px_30px_rgba(0,35,84,0.24)]">
+                <div className="relative min-w-0 flex-1">
+                  <Search
+                    className="absolute left-3 top-1/2 size-5 -translate-y-1/2 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <input
+                    id="hero-search"
+                    type="search"
+                    enterKeyHint="search"
+                    autoComplete="off"
+                    value={query}
+                    onChange={event => setQuery(event.target.value)}
+                    placeholder={t('search.placeholder')}
+                    className="min-h-12 w-full rounded-xl border-0 bg-white py-3 pl-11 pr-3 text-base text-gray-900 placeholder:text-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600"
+                  />
                 </div>
-              )}
-            </div>
-          </div>
-
-          {/* Bento intent grid */}
-          <div className="lg:col-span-5 xl:col-span-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-200 mb-4">
-              {t('hero.startHere')}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {intentPathKeys.map((path, index) => (
-                <Link
-                  key={path.href}
-                  to={path.href}
-                  className="group relative overflow-hidden rounded-2xl bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.06),0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 transition-[transform,box-shadow] duration-200 active:scale-[0.96] motion-safe:animate-slide-in motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100"
-                  style={{ animationDelay: `${index * 80}ms` }}
+                <button
+                  type="submit"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary-700 px-4 font-semibold text-white transition-[background-color,transform] duration-150 hover:bg-primary-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 active:scale-[0.98] motion-reduce:active:scale-100 sm:px-6"
                 >
-                  <div
-                    className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${path.accent}`}
-                    aria-hidden="true"
-                  />
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gray-50 text-primary-600 mb-4 group-hover:bg-primary-50 transition-colors duration-200">
-                    <path.icon className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  <h2 className="text-base font-semibold text-gray-900 mb-1 text-balance group-hover:text-primary-700 transition-colors duration-200">
-                    {t(path.titleKey)}
-                  </h2>
-                  <p className="text-sm text-gray-500 leading-snug text-pretty">
-                    {t(
-                      path.descriptionKey,
-                      'descriptionValues' in path
-                        ? path.descriptionValues
-                        : undefined
-                    )}
-                  </p>
-                  <ArrowUpRight
-                    className="absolute top-5 right-5 h-4 w-4 text-gray-300 group-hover:text-primary-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-[transform,color] duration-200"
-                    aria-hidden="true"
-                  />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
+                  <span className="hidden sm:inline">{t('search.submit')}</span>
+                  <Search className="size-5" aria-hidden="true" />
+                </button>
+              </div>
+            </form>
 
-        {/* Popular topics rail */}
-        <div className="border-t border-white/20 py-6 md:py-8 mt-8">
-          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-            <p className="text-sm font-semibold text-white shrink-0">
-              {t('hero.popularTopics')}
-            </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap items-center gap-2">
+              <span className="mr-1 text-sm font-medium text-primary-100">
+                {t('hero.popularTopics')}
+              </span>
               {popularTopicKeys.map(topic => (
                 <Link
                   key={topic.href}
                   to={topic.href}
-                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-[transform,background-color,border-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white/10 px-3.5 py-2 text-sm font-medium text-white ring-1 ring-inset ring-white/20 transition-[background-color,transform] duration-150 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white active:scale-[0.98] motion-reduce:active:scale-100"
                 >
                   <topic.icon
-                    className="h-4 w-4 text-primary-200"
+                    className="size-4 text-primary-100"
                     aria-hidden="true"
                   />
                   {t(topic.labelKey)}
                 </Link>
               ))}
-              {services.slice(3, 5).map(service => (
-                <Link
-                  key={service.slug}
-                  to={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-[transform,background-color,border-color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100"
-                >
-                  {service.category}
-                </Link>
-              ))}
             </div>
           </div>
+
+          <aside
+            className="overflow-hidden rounded-3xl bg-primary-950/30 shadow-[0_20px_60px_rgba(0,31,75,0.28)] ring-1 ring-inset ring-white/15 backdrop-blur-sm lg:col-span-5"
+            aria-label={t('hero.startHere')}
+          >
+            <div className="border-b border-white/15 px-5 py-4 sm:px-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary-100">
+                {t('hero.startHere')}
+              </p>
+            </div>
+            <nav aria-label={t('hero.startHere')}>
+              <ul className="divide-y divide-white/10">
+                {intentPathKeys.map(path => (
+                  <li key={path.href}>
+                    <Link
+                      to={path.href}
+                      className="group flex min-h-[88px] items-center gap-4 px-5 py-4 transition-colors duration-150 hover:bg-white/10 focus:outline-none focus-visible:bg-white/10 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-white sm:px-6"
+                    >
+                      <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-inset ring-white/15 transition-colors group-hover:bg-white/15">
+                        <path.icon className="size-5" aria-hidden="true" />
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block font-semibold text-white">
+                          {t(path.titleKey)}
+                        </span>
+                        <span className="mt-0.5 block text-sm text-white/85">
+                          {t(
+                            path.descriptionKey,
+                            'descriptionValues' in path
+                              ? path.descriptionValues
+                              : undefined
+                          )}
+                        </span>
+                      </span>
+                      <ArrowUpRight
+                        className="size-4 shrink-0 text-primary-100 transition-transform duration-150 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                        aria-hidden="true"
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="grid grid-cols-1 gap-4 border-t border-white/15 bg-black/10 px-5 py-4 text-sm sm:grid-cols-2 sm:px-6">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-white/80">
+                  {t('common.location')}
+                </p>
+                <p className="mt-1 font-medium text-white">
+                  {siteConfig.province}, {siteConfig.region}
+                </p>
+              </div>
+              {leadership.mayor && (
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-white/80">
+                    {t('common.cityMayor')}
+                  </p>
+                  <p className="mt-1 font-medium text-white">
+                    {leadership.mayor.name}
+                  </p>
+                </div>
+              )}
+            </div>
+          </aside>
+        </div>
+
+        <div className="mt-8 flex justify-start lg:mt-10">
+          <Link
+            to="/services"
+            className="inline-flex min-h-11 items-center gap-2 font-semibold text-white underline decoration-white/30 underline-offset-4 transition-[text-decoration-color,gap] hover:gap-3 hover:decoration-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          >
+            {t('hero.exploreServices')}
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>

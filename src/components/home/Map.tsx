@@ -10,8 +10,7 @@ import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import { cityHallLocation, siteConfig } from '../../lib/siteConfig';
 import { useTranslation } from 'react-i18next';
-
-export const MAP_PANEL_HEIGHT = 400;
+import { cn } from '../../lib/utils';
 
 const cityHallMarkerIcon = L.icon({
   iconUrl: markerIcon,
@@ -43,7 +42,7 @@ function MapResizeHandler() {
   return null;
 }
 
-export default function Map() {
+export default function Map({ embedded = false }: { embedded?: boolean }) {
   const { t } = useTranslation('common');
   const [isMounted, setIsMounted] = useState(false);
   const position: [number, number] = [
@@ -54,6 +53,48 @@ export default function Map() {
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  const panel = (
+    <div
+      className={cn(
+        'relative z-0 overflow-hidden bg-gray-100',
+        embedded
+          ? 'h-[320px] md:h-[400px] lg:h-[520px]'
+          : 'h-[400px] rounded-2xl shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06]'
+      )}
+      aria-label={t('localConditions.mapLabel')}
+    >
+      {isMounted ? (
+        <MapContainer
+          center={position}
+          zoom={cityHallLocation.zoom}
+          scrollWheelZoom={false}
+          className="h-full w-full z-0 outline outline-1 outline-black/10"
+          style={{ height: '100%', width: '100%' }}
+        >
+          <MapResizeHandler />
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position} icon={cityHallMarkerIcon}>
+            <Popup>
+              <strong>{siteConfig.governmentName}</strong>
+              <br />
+              {cityHallLocation.address}
+            </Popup>
+          </Marker>
+        </MapContainer>
+      ) : (
+        <div
+          className="h-full w-full animate-pulse bg-gray-200"
+          aria-hidden="true"
+        />
+      )}
+    </div>
+  );
+
+  if (embedded) return panel;
 
   return (
     <Section className="h-full !py-8">
@@ -74,38 +115,7 @@ export default function Map() {
         </p>
       </div>
 
-      <div
-        className="relative z-0 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06] bg-gray-100"
-        style={{ height: MAP_PANEL_HEIGHT }}
-      >
-        {isMounted ? (
-          <MapContainer
-            center={position}
-            zoom={cityHallLocation.zoom}
-            scrollWheelZoom={false}
-            className="h-full w-full z-0 outline outline-1 outline-black/10"
-            style={{ height: MAP_PANEL_HEIGHT, width: '100%' }}
-          >
-            <MapResizeHandler />
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={position} icon={cityHallMarkerIcon}>
-              <Popup>
-                <strong>{siteConfig.governmentName}</strong>
-                <br />
-                {cityHallLocation.address}
-              </Popup>
-            </Marker>
-          </MapContainer>
-        ) : (
-          <div
-            className="h-full w-full animate-pulse bg-gray-200"
-            aria-hidden="true"
-          />
-        )}
-      </div>
+      {panel}
     </Section>
   );
 }
