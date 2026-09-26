@@ -10,6 +10,11 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:4173',
     trace: 'on-first-retry',
+    // The volunteer dialog opens on a first visit and covers the page, which
+    // would block clicks in unrelated specs. Seed it as already-dismissed so
+    // the rest of the suite is deterministic; the volunteer-dialog spec opts
+    // back in to a clean profile.
+    storageState: 'e2e/.storage-state/dismissed-volunteer.json',
   },
   projects: [
     {

@@ -54,3 +54,39 @@ jobs:
       - run: npm ci
 
       - run: npm run lint
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+  contrast:
+    name: Contrast audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Reads the palette straight out of node_modules/tailwindcss/theme.css
+          # to measure Tailwind's shipped defaults in their real oklch form, and
+          # strips TypeScript types when importing the token registry. Both need
+          # a newer Node than the other jobs.
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # Fails on token/stylesheet drift, on any declared pair dropping below its
+      # WCAG 2.1 threshold, and on a "known trap" that no longer measures as one.
+      - run: npm run check:contrast
