@@ -1,0 +1,12 @@
+{
+  "FEE_LATE_BIRTH": "₱200",
+  "FEE_LATE_BIRTH_NOT_MARRIED": "₱300",
+  "FEE_LATE_BIRTH_TOTAL_NOT_MARRIED": "₱500",
+  "TIME_LATE_BIRTH_TOTAL": "10 days and 25 minutes",
+  "TIME_LATE_BIRTH_EVALUATE": "10 minutes",
+  "TIME_LATE_BIRTH_PAY": "10 minutes",
+  "TIME_LATE_BIRTH_POSTING": "10 working days",
+  "TIME_LATE_BIRTH_RELEASE": "5 minutes",
+  "FEE_LATE_MARRIAGE_DEATH": "₱200",
+  "TIME_LATE_MARRIAGE_DEATH_TOTAL": "10 days and 20 minutes"
+}

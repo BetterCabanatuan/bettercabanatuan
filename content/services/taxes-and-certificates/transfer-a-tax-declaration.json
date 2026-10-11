@@ -1,0 +1,14 @@
+{
+  "FEE_TRANSFER_TD": "₱50",
+  "TIME_TRANSFER_TD_TOTAL": "42 minutes",
+  "TIME_TRANSFER_TD_RECEIVE": "10 minutes",
+  "TIME_TRANSFER_TD_PIN": "5 minutes per RPU",
+  "TIME_TRANSFER_TD_PRINT": "10 minutes per RPU",
+  "TIME_TRANSFER_TD_CHECK": "5 minutes per RPU",
+  "TIME_TRANSFER_TD_APPROVE": "5 minutes per RPU",
+  "TIME_TRANSFER_TD_ARP": "5 minutes per RPU",
+  "TIME_TRANSFER_TD_RELEASE": "2 minutes",
+  "FEE_TRANSFER_TAX": "82.5% of 1% of the market value in the tax declaration or the selling price, whichever is higher",
+  "FEE_TRANSFER_TAX_CERT": "₱50",
+  "TIME_TRANSFER_TAX_TOTAL": "37 minutes"
+}
