@@ -17,7 +17,7 @@ Proper waste segregation is **mandatory** in Cabanatuan City under **Republic Ac
 
 ## 2) General Rules for Segregation
 
-- **Always use labeled bins** or color-coded plastic bags (green = biodegradable, blue = recyclable, black = residual).
+- **Always use labeled bins.** Colour coding (green = biodegradable, blue = recyclable, black = residual) is common practice; follow your barangay's labels if they differ.
 - **Rinse recyclables** to avoid pests and foul odor.
 - **Do not burn waste** — open burning is prohibited under RA 9003 and the Clean Air Act.
 - **Put garbage out only on your barangay’s collection day** to avoid clutter and flooding.
@@ -30,7 +30,7 @@ Proper waste segregation is **mandatory** in Cabanatuan City under **Republic Ac
 
 - Each barangay is required to operate an **MRF** to handle recyclables and compostables.
 - Residents can bring segregated recyclables and kitchen/garden waste to the MRF.
-- Some barangays have **“exchange programs”** (e.g., recyclables for rice or grocery packs).
+- Ask your barangay whether it runs a recyclables exchange programme.
 
 ---
 
@@ -38,7 +38,7 @@ Proper waste segregation is **mandatory** in Cabanatuan City under **Republic Ac
 
 - Must maintain **segregated waste bins** accessible to customers and staff.
 - Required to **contract accredited haulers** for industrial, medical, or hazardous waste.
-- Keep disposal receipts/hauler contracts for inspection by CENRO.
+- Keep disposal receipts/hauler contracts for inspection.
 - Restaurants/food-related establishments should explore **onsite composting** or regular turnover to barangay MRFs.
 
 ---
@@ -61,13 +61,18 @@ Proper waste segregation is **mandatory** in Cabanatuan City under **Republic Ac
 
 ## Contact for Support
 
-- **City Environment and Natural Resources Office (CENRO)**  
-  Cabanatuan City Hall, Government Complex, Brgy. Pajo  
-  Phone: (032) 340-0004 (ask for CENRO)  
-  Updates via: [Cabanatuan City Information Office Facebook Page](https://www.facebook.com/cabanatuancitygovernment)
+- **Cabanatuan City Environment and Natural Resources Office (CENRO)**  
+  2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100  
+  Phone: 0919 081 4509
 
 ---
 
 ### Key Reminder
 
 ✅ Proper segregation is a **shared responsibility**. By separating waste correctly, you help reduce landfill use, promote recycling, and keep Cabanatuan City safe and sustainable.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), p. 343 (office directory). Accessed 2026-10-11. The charter has no garbage collection entry, so no schedule, frequency or truck assignment is published here. Segregation rules follow RA 9003 (Ecological Solid Waste Management Act). Confirm your barangay's schedule with your barangay hall.

@@ -1,6 +1,6 @@
 # Join Health Programs — Cabanatuan City (Nutrition, Dengue Control, TB Treatment)
 
-Below are city-led and national programs you can join through your **Barangay Health Center** and the **City Health Office (CHO)**.
+Below are city-led and national programs you can join through your **City Health Center** and the **City Health Office (CHO)**. Of these, the Citizen's Charter itemises TB-DOTS as a free CHO service.
 
 ---
 
@@ -19,7 +19,7 @@ Below are city-led and national programs you can join through your **Barangay He
 
 **How to join**
 
-1. Visit your **Barangay Health Center** or ask the **Barangay Nutrition Scholar (BNS)** about ongoing feeding programs.
+1. Visit your **City Health Center** or ask the **Barangay Nutrition Scholar (BNS)** about ongoing feeding programs.
 2. Join community activities and city-wide nutrition events announced by the **City Health Office (CHO)** or City Information Office.
 
 **Cost:** Free for eligible beneficiaries.
@@ -53,11 +53,11 @@ Below are city-led and national programs you can join through your **Barangay He
 
 **Where**
 
-- Cabanatuan City Health Office (DOTS facility) and affiliated barangay health centers.
+- Cabanatuan City Health Office (DOTS facility) and the City Health Centers.
 
 **How to join**
 
-1. Go to your **Barangay Health Center** or the **CHO DOTS Clinic** for TB screening.
+1. Go to your **City Health Center** or the **CHO DOTS Clinic** for TB screening.
 2. If diagnosed, you will be enrolled in DOTS — treatment and medicines are given for free.
 3. Regular follow-up visits will be scheduled to monitor your recovery.
 
@@ -67,9 +67,9 @@ Below are city-led and national programs you can join through your **Barangay He
 
 ## Contact & Updates
 
-- **Barangay Health Centers** — First point of contact for nutrition, dengue, and TB programs.
-- **Cabanatuan City Health Office (CHO)** — Main office for program schedules and services.
-- **City Information Office** — Posts updates on city-wide campaigns and health events.
+- **City Health Centers** — First point of contact for nutrition, dengue, and TB programs.
+- **City Health Office** — City Health Office, CHO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 081 1348 or 044 463 5900.
+- **City Information and Tourism Office** — city-wide campaign announcements. Phone: 0919 089 9862.
 
 ---
 
@@ -79,3 +79,9 @@ Below are city-led and national programs you can join through your **Barangay He
 - For TB symptoms (cough for 2 weeks or more, weight loss, night sweats), seek screening immediately.
 - Join community clean-up drives and practice the 4 o’clock habit to prevent dengue.
 - Attend barangay nutrition events and feeding programs for your children’s growth and wellness.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 242-248 (TB-DOTS and other free CHO services) and p. 344 (office directory). Accessed 2026-10-11. Nutrition and dengue programme descriptions follow national DOH programmes; confirm current activities with the CHO.

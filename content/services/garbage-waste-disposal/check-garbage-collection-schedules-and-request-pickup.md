@@ -1,6 +1,6 @@
 # Check Garbage Collection Schedules and Request Pickup — Cabanatuan City
 
-The City Government of Cabanatuan manages **regular garbage collection** through the **City Environment and Natural Resources Office (CENRO)** and barangays. Residents and business owners are encouraged to follow the schedule and proper segregation rules.
+Garbage collection in Cabanatuan City is scheduled per barangay. The Citizen's Charter does not publish a collection service or schedule, so your barangay hall is the first place to ask. For city-level questions, contact the Cabanatuan City Environment and Natural Resources Office (CENRO).
 
 ---
 
@@ -8,15 +8,14 @@ The City Government of Cabanatuan manages **regular garbage collection** through
 
 **How it works**
 
-- Collection schedules vary **by barangay** (usually **every other day** or **3 times per week**).
-- Trucks assigned to barangays cover **household waste**, **biodegradable**, and **residual/non-recyclable** garbage.
+- Collection schedules vary **by barangay**. Ask your barangay hall for the current days.
 - Segregation at source is **mandatory** — separate biodegradable, recyclable, residual, and special/hazardous waste.
 
 **Where to check schedules**
 
 1. **Barangay Hall** — each barangay posts its official collection schedule.
 2. **Barangay Facebook Pages** — most update residents when trucks are delayed or rescheduled.
-3. **City Information Office (CIO)** or **CENRO** announcements for citywide advisories (e.g., during holidays or typhoon disruptions).
+3. **CENRO** or the **City Information and Tourism Office** for citywide advisories (e.g., during holidays or typhoon disruptions).
 
 > Tip: Post the collection calendar on your fridge or gate to remind the household which days to take bins out.
 
@@ -30,8 +29,7 @@ For **bulk waste** (e.g., furniture, appliances, construction debris, yard trimm
 
 1. Visit your **Barangay Hall** or contact the **Barangay Environment Committee**.
 2. Provide details: type of waste, estimated volume, and address.
-3. Barangay coordinates with **CENRO** for scheduling a **special truck pickup**.
-4. Some barangays may require a **minimal fee** for bulk or special disposal.
+3. Ask whether the barangay coordinates a **special pickup** with the city and whether a fee applies.
 
 **Items usually needing special pickup**
 
@@ -43,10 +41,9 @@ For **bulk waste** (e.g., furniture, appliances, construction debris, yard trimm
 
 ## 3) Contact Information
 
-- **City Environment and Natural Resources Office (CENRO)**  
-  Cabanatuan City Hall, Government Complex, Brgy. Pajo  
-  Phone: (032) 340-0004 (City Hall trunkline, ask for CENRO)  
-  Updates: via **City Information Office** FB page
+- **Cabanatuan City Environment and Natural Resources Office (CENRO)**  
+  2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100  
+  Phone: 0919 081 4509
 
 - **Barangay Halls** — each barangay has an Environment/ Solid Waste desk for local schedules and pickup requests.
 
@@ -57,7 +54,7 @@ For **bulk waste** (e.g., furniture, appliances, construction debris, yard trimm
 - Put garbage out **only on collection day**, early morning or night before.
 - Use durable, closed containers to prevent animal scattering.
 - For recyclables, check if your barangay has a **Materials Recovery Facility (MRF)** or partner junkshop.
-- During **rainy season/typhoons**, expect **schedule adjustments** — follow CIO or barangay announcements.
+- During **rainy season/typhoons**, expect **schedule adjustments** — follow city or barangay announcements.
 - Avoid burning waste (strictly prohibited under RA 9003 / Clean Air Act).
 
 ---
@@ -65,10 +62,16 @@ For **bulk waste** (e.g., furniture, appliances, construction debris, yard trimm
 ## 5) Businesses & Establishments
 
 - Businesses must comply with **segregation** and may need to contract **accredited private haulers** for bulk/industrial waste.
-- Keep proof of disposal (receipts/hauling contracts) for compliance inspections by CENRO.
+- Keep proof of disposal (receipts/hauling contracts) for compliance inspections.
 
 ---
 
 ### Key Reminder
 
 Following your barangay’s **garbage collection schedule** and properly requesting **special pickups** keeps the city clean and prevents flooding, pests, and health risks.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), p. 343 (office directory). Accessed 2026-10-11. The charter has no garbage collection entry, so no schedule, frequency or truck assignment is published here. Segregation rules follow RA 9003 (Ecological Solid Waste Management Act). Confirm your barangay's schedule with your barangay hall.

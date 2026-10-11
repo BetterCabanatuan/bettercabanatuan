@@ -1,98 +1,70 @@
 # Go to the Local Hospital for Treatment or Confinement — Cabanatuan City
 
-This guide covers **where to go**, **what to bring**, and **how admission works** at local hospitals in Cabanatuan City, including the city-run facility and nearby private hospitals.
+This guide covers the city-run hospital, what to bring, and how PhilHealth applies. Other hospitals in the city are listed in the hospitals directory on this site.
 
 ---
 
-## A) Government Hospital (City-Run)
+## A) City-run hospital
 
-### Sta. Rosa Community Hospital (Cabanatuan City)
+### MV Gallego Cabanatuan City General Hospital
 
-**Services & Hours**
+Maharlika Highway, Cabanatuan City
+Phone: 0919 089 9880 or 044 958 9774
 
-- **Emergency (Medical & Medico-legal):** 24/7
-- **Ward (In-patient confinement):** 24/7
-- **Out-Patient:** Mon–Fri, 8:00 AM–5:00 PM (except holidays)
+**Services in the Citizen's Charter**
 
-**Emergency (Medical cases) – Quick Steps**
-| Step | What you do | Hospital does | Typical time |
-|---|---|---|---|
-| 1 | Seek care at ER | Triage, vitals, initial MD orders | ~10–25 min |
-| 2 | Sign consent (treatment/admission if needed) | Prepare meds/tests; set for transfer to ward if admitted | ~20–25 min |
-| 3 | Transfer to ward (if for confinement) | ER endorses to Ward Nurse on duty | ~10 min |
+| Service                        | Fee  | Total processing time          |
+| ------------------------------ | ---- | ------------------------------ |
+| Out-patient (OPD) consultation | Free | 40 minutes                     |
+| Hemodialysis                   | Free | Per schedule; ask the hospital |
 
-**Requirements (bring if available):** Registration data sheet (onsite), **PhilHealth ID/MDR (optional)**, doctor’s referral/admitting orders (if coming from clinic).
-
-**Ward (In-patient) – What to expect**
-
-- Follow doctor’s orders; nurses administer meds/tests; dietary issued as ordered.
-- For discharge: instructions & schedule for follow-ups are given; proceed to Billing for clearance; release at Ward/Nurse station.
-- **Fees:** Posted at Billing.
-- **Note:** If not enrolled in PhilHealth, staff will guide processing if a relative can provide documents.
+Emergency, ward and other hospital services are not itemised in the charter. Call the hospital for admission requirements and ward availability.
 
 ---
 
-## B) Private Hospitals Nearby
+## B) Emergency transport
 
-| Hospital                                     | Where                  | Beds/Notes                            | Admissions basics                                                                                                                     |
-| -------------------------------------------- | ---------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Mactan Doctors’ Hospital (CebuDoc Group)** | Basak, Cabanatuan City | **151-bed tertiary** private hospital | Bring valid ID; company/HMO authorization if applicable; PhilHealth forms; fill out admission forms and submit to Admissions/Billing. |
-| **ARC Hospitals**                            | Cabanatuan City        | **~100-bed** private hospital         | Standard private-hospital admission flow; coordinate with Admissions/HMO/PhilHealth desk.                                             |
+For a medical emergency anywhere in the city, call the City Disaster Risk Reduction and Management Office emergency line. The charter lists a free 24/7 emergency medical service with dispatch in 3 to 20 minutes.
 
-> Private hospitals typically require **initial deposits** (varies by case/room) unless fully covered by HMO/PhilHealth arrangements. Confirm at the **Billing/Admissions** desk.
-
----
-
-## C) What to Bring (All Hospitals)
-
-- **Valid ID** (with photo & signature)
-- **PhilHealth** ID and **MDR** (Member Data Record); if a dependent, bring proof of dependency
-- **Doctor’s referral/admitting order** (if elective admission)
-- **HMO/Company**: LOA/guarantee letter, membership/ID cards (if applicable)
-- **Personal necessities** (for confinement)
+- Smart: 0908 881 1010
+- Globe: 0917 851 1320
+- Landline: 044 940 0161
 
 ---
 
-## D) Costs & PhilHealth Coverage
+## C) What to bring (any hospital)
 
-- **City hospital:** Fees are posted at **Billing**; **PhilHealth** benefits may apply at admission/discharge processing.
-- **No Balance Billing (NBB):** For **indigent/sponsored**, **senior citizens**, and certain categories in **government hospitals**, no other fees beyond PhilHealth package should be charged during confinement (subject to policy and facility capacity).
-
----
-
-## E) How to Avail — At a Glance
-
-### Emergency (any hospital)
-
-1. **Go straight to ER** (24/7).
-2. **Triage & initial orders** → stabilization/tests.
-3. **If admitted:** sign consent → transfer to ward → submit IDs/PhilHealth/HMO at Admissions/Billing.
-
-### Elective Admission (planned confinement/procedure)
-
-1. Obtain **doctor’s admitting order** & **referral**.
-2. Prepare **IDs, PhilHealth, HMO/LOA** (if any).
-3. Proceed to **Admissions** for room assignment, forms, and initial billing arrangements.
+- **Valid ID** with photo and signature
+- **PhilHealth** ID and Member Data Record; if a dependent, proof of dependency
+- **Doctor's referral or admitting order** for planned admission
+- **HMO or company** letter of authorisation and membership card, if applicable
+- Personal necessities for confinement
 
 ---
 
-## F) Useful Contacts
+## D) Costs and PhilHealth coverage
 
-- **Cabanatuan City Hospital / District Hospital (Gov’t)**
-  - A. Tumulak St., Gun-ob, Cabanatuan City
-  - **Tel:** (032) 340-0249 / 340-0248
-  - **Email:** cabanatuancityhospital@yahoo.com
-
-- **Mactan Doctors’ Hospital (Private, CebuDoc Group)**
-  - Basak, Cabanatuan City
-  - **Trunkline:** +63 (32) 239-7002 to 7016
-
-- **ARC Hospitals (Private)**
-  - Cabanatuan City (100-bed facility)
+- City hospital fees are posted at Billing; PhilHealth benefits are applied at admission or discharge.
+- **No Balance Billing** applies to indigent, sponsored and senior citizen members in government hospitals for covered packages, subject to PhilHealth rules and facility capacity.
 
 ---
 
-### Notes
+## E) How to avail
 
-- Bring your **PhilHealth** documents even for emergencies; if unavailable, the hospital can guide you on follow-up submission.
-- Schedules and processes can change; confirm by calling the hospital **Admissions/Billing** desk before a planned confinement.
+**Emergency**
+
+1. Go straight to the emergency room or call the CDRRMO line above.
+2. Triage and initial orders, then stabilisation and tests.
+3. If admitted: sign consent, transfer to the ward, submit IDs and PhilHealth or HMO documents at Admissions.
+
+**Planned admission**
+
+1. Obtain a doctor's admitting order and referral.
+2. Prepare IDs, PhilHealth and HMO documents.
+3. Proceed to Admissions for room assignment and billing arrangements.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 229-230 (CDRRMO emergency response), pp. 271-276 (MVG hospital services) and p. 345 (office directory). Accessed 2026-10-11. PhilHealth rules follow national policy; confirm with the hospital's Billing desk.
