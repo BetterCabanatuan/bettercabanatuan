@@ -1,0 +1,11 @@
+{
+  "FEE_TRAINING": "Free",
+  "TIME_TRAINING_REQUEST": "25 minutes",
+  "TIME_TRAINING_RECEIVE": "5 minutes",
+  "TIME_TRAINING_ASSIGN": "5 minutes",
+  "TIME_TRAINING_PLAN": "10 minutes",
+  "TIME_TRAINING_COORDINATE": "5 minutes",
+  "TIME_COURSE_WASAR_CSSR": "3-5 days",
+  "TIME_COURSE_BLS_JR": "2-3 days",
+  "TIME_COURSE_MOISES_AWARENESS": "1-2 days"
+}
