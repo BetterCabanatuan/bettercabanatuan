@@ -7,6 +7,7 @@ import Breadcrumbs from '../../../components/ui/Breadcrumbs';
 import MapBanner from '../../../components/ui/MapBanner';
 import { Card, CardContent } from '../../../components/ui/Card';
 import NotFoundGuard from '../../../components/shared/NotFoundGuard';
+import BarangayHealthCenterCard from '../../../components/government/barangays/BarangayHealthCenterCard';
 import {
   getBarangayBySlug,
   allBarangays,
@@ -193,6 +194,14 @@ const BarangayDetail: React.FC = () => {
             </div>
           </CardContent>
         </Card>
+
+        {barangay.healthCenter && (
+          <BarangayHealthCenterCard
+            className="mb-8"
+            healthCenter={barangay.healthCenter}
+            barangayName={barangay.name}
+          />
+        )}
 
         <Card className="mb-8">
           <CardContent className="p-6">
