@@ -1,0 +1,13 @@
+{
+  "FEE_ECCD_INSPECTION": "₱250",
+  "TIME_ECCD_TOTAL": "1 day, 5 hours and 55 minutes",
+  "TIME_ECCD_PRESCRIBED": "6 months",
+  "TIME_ECCD_RECEIVE": "10 minutes",
+  "TIME_ECCD_SCHEDULE": "5 minutes",
+  "TIME_ECCD_PAYMENT": "10 minutes",
+  "TIME_ECCD_ASSESSMENT": "4 hours",
+  "TIME_ECCD_REPORT": "8 hours",
+  "TIME_ECCD_REVIEW_CYDD": "30 minutes",
+  "TIME_ECCD_REVIEW_CSWDO": "30 minutes",
+  "TIME_ECCD_FORWARD": "30 minutes"
+}
