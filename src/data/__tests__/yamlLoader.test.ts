@@ -55,7 +55,7 @@ describe('yamlLoader data', () => {
 describe('yamlLoader lookups', () => {
   it('finds departments by slug', () => {
     expect(getDepartmentBySlug('executive')?.acronym).toBe('OCM');
-    expect(getDepartmentBySlug('bplo')?.name).toContain('Business Permits');
+    expect(getDepartmentBySlug('bplo')?.name).toContain('Business Licensing');
     expect(getDepartmentBySlug('missing-slug')).toBeUndefined();
   });
 

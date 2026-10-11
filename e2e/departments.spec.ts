@@ -48,7 +48,7 @@ test.describe('Departments', () => {
     await expect(page).toHaveURL(/\/government\/departments\/bplo$/);
     await expect(
       page.getByRole('heading', {
-        name: 'Business Permits and Licensing Office',
+        name: 'City Business Licensing and Investment Promotion Office',
       })
     ).toBeVisible();
     await expect(page.getByText('Key Services')).toBeVisible();
