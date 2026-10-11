@@ -1,0 +1,13 @@
+{
+  "TIME_FARMER_ID_REGISTER": "1 minute",
+  "TIME_FARMER_ID_VERIFY": "3 minutes",
+  "TIME_FARMER_ID_APPROVE": "1 minute",
+  "TIME_FARMER_ID_PRINT": "5 minutes",
+  "TIME_FARMER_ID_TOTAL": "10 minutes",
+  "TIME_BONAFIDE_VERIFY": "5 minutes",
+  "TIME_BONAFIDE_PREPARE": "5 minutes",
+  "TIME_BONAFIDE_APPROVE": "3 minutes",
+  "TIME_BONAFIDE_RELEASE": "2 minutes",
+  "TIME_BONAFIDE_STEPS_SUM": "15 minutes",
+  "TIME_BONAFIDE_PRINTED_TOTAL": "2 days, 8 hours and 20 minutes"
+}
