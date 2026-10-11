@@ -17,7 +17,7 @@ The Cabanatuan City Government, through the **City Social Welfare and Developmen
 - Children aged **3–4 years old** who are residents of the barangay.
 - Priority is often given to **indigent families** or those referred by barangay officials.
 
-**Requirements (typical)**
+**Requirements (typical; confirm with your centre)**
 
 - Child’s **birth certificate** (PSA copy or local civil registrar copy).
 - **Barangay clearance** or proof of residency.
@@ -66,8 +66,8 @@ The Cabanatuan City Government, through the **City Social Welfare and Developmen
 ## Contact & Updates
 
 - **Barangay Daycare Centers** — Enrollment schedules and requirements are usually announced by barangay officials.
-- **City Social Welfare and Development Office (CSWDO)** — Oversees daycare programs.
-- **DepEd Cabanatuan City Division** — Manages public kindergarten enrollment.
+- **City Social Welfare and Development Office (CSWDO)** — Oversees daycare programs and issues the ECCD permit to operate for day care centres. CSWDO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 081 1345.
+- **DepEd Schools Division Office, Cabanatuan City** — Manages public kindergarten enrollment. Ask your nearest public elementary school for the division's current contact.
 
 ---
 
@@ -76,3 +76,9 @@ The Cabanatuan City Government, through the **City Social Welfare and Developmen
 - Enroll early — daycare and preschool slots may be limited per barangay/school.
 - Keep copies of your child’s **birth certificate** and **barangay certificate** ready.
 - Attend parent orientations to understand your role in supporting your child’s early education.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), p. 290 (ECCD permit to operate) and p. 345 (office directory). Accessed 2026-10-11. Ages, requirements and schedules above are the usual national practice under the ECCD and DepEd Kindergarten programmes; the charter has no enrolment entry for parents. Confirm with your barangay day care centre.

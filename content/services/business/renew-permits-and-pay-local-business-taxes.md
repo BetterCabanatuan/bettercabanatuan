@@ -36,7 +36,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 - **Sworn Declaration of Gross Sales/Receipts** for the **preceding year** (or **Audited FS**/**Accountant-certified** FS if applicable).
 - **Inventory list** (selected industries) and **machine/equipment list** (if applicable).
 
-**Regulatory Clearances** (city/BPLO may route you during assessment)
+**Regulatory Clearances** (the licensing office may route you during assessment)
 
 - **Barangay Clearance** (for business).
 - **Sanitary Permit** (Health).
@@ -51,7 +51,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 ## Step-by-Step (Walk-In)
 
 1. **Pre-screening / Queuing**
-   - Go to the **Business One-Stop Shop (BOSS)** during the renewal period.
+   - Go to the **City Business Licensing and Investment Promotion Office**, 1st Floor, City Hall, during the renewal period.
    - Get your queue number; submit last year’s permit and basic IDs for pre-check.
 
 2. **Application & Declaration**
@@ -62,7 +62,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
    - The evaluator will route you (if needed) to: **Barangay**, **Sanitary/Health**, **Zoning**, **Environmental**, and **BFP** for assessment/inspection.
 
 4. **Assessment**
-   - **BPLO** computes **Local Business Tax**, **Regulatory Fees**, and **Other Charges** (signage, garbage, sanitary, etc.).
+   - The licensing office computes **Local Business Tax**, **Regulatory Fees**, and **Other Charges** (signage, garbage, sanitary, etc.).
    - Choose **Annual** or **Quarterly** payment.
 
 5. **Payment**
@@ -77,7 +77,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 
 ## (If Available) Online / Hybrid Filing
 
-- Some transactions may be done via the city’s **online business portal** or **pre-assessment** channels (if announced).
+- The Citizen's Charter refers to an online application form for renewals. Confirm with the licensing office whether it is open for your business type.
 - Prepare **scanned PDFs** of your documents (clear, legible; 1 file per requirement).
 - After online assessment, proceed to **payment** (e-payment or onsite) and **permit releasing** per instructions.
 
@@ -130,3 +130,18 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 - [ ] **Valid ID** / **SPA or Board Resolution** for representative
 - [ ] Payment (cash/card) for **taxes & fees**
 - [ ] Collect **Permit**, **Stickers/Plates**, post on site
+
+---
+
+## Where to go
+
+- **City Business Licensing and Investment Promotion Office** — application and assessment. 1st Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 089 9869.
+- **Office of the City Treasurer** — payment. 1st Floor, City Hall. Phone: 0919 089 9849 or 044 464 7696.
+
+The Citizen's Charter lists a total processing time of **1 day** for a business permit renewal and **16 minutes** for business tax payment at the Treasurer.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 91-93 (renewal), pp. 112-114 (business tax payment) and p. 343 (office directory). Accessed 2026-10-11. Renewal periods, surcharge and interest ceilings follow the Local Government Code (RA 7160, ss. 167-168); the city's own rates are set by City Ordinance No. 038-2010 and may have changed. Confirm with the office before paying.

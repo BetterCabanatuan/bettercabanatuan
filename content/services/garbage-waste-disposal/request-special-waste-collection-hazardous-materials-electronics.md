@@ -1,6 +1,6 @@
 # Request Special Collection Services for Hazardous Waste & E-Waste — Cabanatuan City
 
-Hazardous and electronic wastes (e-waste) cannot be disposed of with regular garbage. The City Environment and Natural Resources Office (CENRO) and barangays coordinate **special collection drives** and drop-off services for these items.
+Hazardous and electronic wastes (e-waste) cannot be disposed of with regular garbage. Ask your barangay hall how special items are collected in your area; the Cabanatuan City Environment and Natural Resources Office (CENRO) is the city office to ask about citywide drives.
 
 ---
 
@@ -20,9 +20,8 @@ Hazardous and electronic wastes (e-waste) cannot be disposed of with regular gar
    - Ask for the **Barangay Environment Committee** or Solid Waste desk.
    - Provide details: type of waste, approximate volume, and your address.
 
-2. **Barangay forwards request to CENRO**
-   - CENRO schedules a **special truck pickup** or directs you to the next citywide collection event.
-   - Some barangays coordinate with **accredited junkshops/recyclers**.
+2. **Ask about the next collection**
+   - The barangay will tell you whether a special pickup or a citywide collection event is scheduled.
 
 3. **Prepare items for pickup/drop-off**
    - Store in sealed, clearly labeled containers or boxes.
@@ -35,18 +34,17 @@ Hazardous and electronic wastes (e-waste) cannot be disposed of with regular gar
 
 ## 3) Other Disposal Options
 
-- **Barangay E-Waste Drives** — many barangays organize quarterly e-waste collection campaigns.
+- **Barangay e-waste drives** — ask your barangay whether it organizes collection campaigns.
 - **School/NGO Drives** — occasionally schools or civic groups run e-waste donation drives in coordination with the City.
-- **Accredited Junkshops/Collectors** — some accept electronics for recycling; ask CENRO for the accredited list.
+- **Junkshops and collectors** — some accept electronics for recycling; ask CENRO whether an accredited list exists.
 
 ---
 
 ## 4) Contact Information
 
-- **City Environment and Natural Resources Office (CENRO)**  
-  Cabanatuan City Hall, Government Complex, Brgy. Pajo  
-  Phone: (032) 340-0004 (City Hall trunkline, ask for CENRO)  
-  Updates: [Cabanatuan City Government Facebook Page](https://www.facebook.com/cabanatuancitygovernment)
+- **Cabanatuan City Environment and Natural Resources Office (CENRO)**  
+  2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100  
+  Phone: 0919 081 4509
 
 - **Barangay Halls** — Environment/Solid Waste desk for barangay-level pickup scheduling.
 
@@ -57,7 +55,7 @@ Hazardous and electronic wastes (e-waste) cannot be disposed of with regular gar
 - Keep a **separate box** for batteries, bulbs, and small electronics.
 - Do not break bulbs or dismantle devices — this increases risk of contamination.
 - Join **barangay or school e-waste drives** regularly to avoid stockpiling.
-- Encourage neighbors to **bundle requests together** — barangays often schedule collection faster for group requests.
+- Encourage neighbors to **bundle requests together** so the barangay can schedule one collection.
 
 ---
 
@@ -65,3 +63,9 @@ Hazardous and electronic wastes (e-waste) cannot be disposed of with regular gar
 
 ✅ Never dispose of hazardous waste or e-waste with your regular garbage.  
 ✅ Always coordinate with your **Barangay Hall** or **CENRO** for proper and safe collection.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), p. 343 (office directory). Accessed 2026-10-11. The charter has no garbage collection entry, so no schedule, frequency or truck assignment is published here. Segregation rules follow RA 9003 (Ecological Solid Waste Management Act). Confirm your barangay's schedule with your barangay hall.

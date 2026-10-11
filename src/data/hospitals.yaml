@@ -1,11 +1,12 @@
 # Hospital contact information for Cabanatuan City
+# MV Gallego entry: Citizen's Charter 2022 (2nd Edition), p. 345. Other entries: hospital-published contacts, not yet cross-checked against an official city source.
 # Each entry includes name, phone, address, and an optional description
 # To add a new hospital, copy an entry below and fill in the fields
 
 hospitals:
   - name: 'MV Gallego Cabanatuan City General Hospital'
-    phone: '0919-089-9880'
-    address: 'Gabaldon, Cabanatuan City, Nueva Ecija'
+    phone: '0919-089-9880 · (044) 958-9774'
+    address: 'Maharlika Highway, Cabanatuan City, Nueva Ecija'
     description: >
       City government-run general hospital providing emergency care,
       inpatient services, and outpatient consultations for residents
@@ -15,12 +16,6 @@ hospitals:
     phone: '(044) 940-0900 · (044) 940-0700'
     address: 'Circumferential Road, San Juan Accfa, Cabanatuan City'
     description: 'Email: info@icmcne.com'
-
-  - name: 'Medical City Clinic'
-    phone: '(02) 8396 9899'
-    address: >-
-      17th Floor, Exquadra Tower, Exchange Road cor. Jade Drive,
-      Ortigas Center, Pasig City
 
   - name: 'Dr Paulino J. Garcia Memorial Research and Medical Center'
     phone: '(044) 463-8888'

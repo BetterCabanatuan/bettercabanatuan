@@ -48,4 +48,6 @@ The City Health Office, together with the DOH, runs the **Ligtas Tigdas / Measle
 
 ---
 
-> Source: Official announcements from the City Government of Cabanatuan. Maintained by Better Cabanatuan; not an official government publication. Verify all schedules directly with the relevant office.
+## Source
+
+Programme schedules compiled from City Government of Cabanatuan announcements; they change and are not published in the Citizen's Charter. Office numbers for the City Health Office, MV Gallego Cabanatuan City General Hospital and City Veterinary Office match the Citizen's Charter 2022 (2nd Edition), pp. 344-345. The number given for MR-SIA is the Office of the City Mayor line in the same directory. Accessed 2026-10-11. Maintained by Better Cabanatuan; not an official government publication.

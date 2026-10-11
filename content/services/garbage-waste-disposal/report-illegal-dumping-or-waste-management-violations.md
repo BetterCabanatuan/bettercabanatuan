@@ -25,18 +25,17 @@ Illegal dumping, open burning, and improper waste practices are violations of **
 
 2. **City Environment and Natural Resources Office (CENRO)**
    - If the violation is large-scale, recurring, or unaddressed by the barangay, contact **CENRO** at City Hall.
-   - Phone: (032) 340-0004 (City Hall trunkline, ask for CENRO)
-   - Updates and announcements: [Cabanatuan City Government Facebook Page](https://www.facebook.com/cabanatuancitygovernment)
+   - 2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 081 4509.
 
 3. **Other Hotlines**
-   - **City Information Office (CIO):** (032) 340-1615 (for reports and follow-up).
-   - **Philippine National Police (PNP):** for dumping that threatens public safety or involves large-scale transport.
+   - **City Information and Tourism Office:** 0919 089 9862 (for follow-up on city advisories).
+   - **Cabanatuan City Police Station:** for dumping that threatens public safety.
 
 ---
 
 ## 3) What Happens After Reporting
 
-- **Barangay/CENRO inspection team** will visit the site.
+- The barangay or city office will inspect the site.
 - **Offenders may be fined or penalized** under city ordinances.
 - For businesses, repeated violations can lead to **closure or suspension of business permits**.
 - Collected evidence (photos, witness accounts) strengthens enforcement action.
@@ -63,3 +62,9 @@ Illegal dumping, open burning, and improper waste practices are violations of **
 ### Key Reminder
 
 ✅ Reporting waste violations is a **civic duty**. By promptly alerting your barangay or CENRO, you help protect your community’s health, prevent flooding, and keep Cabanatuan City sustainable.
+
+---
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), p. 343 (office directory). Accessed 2026-10-11. The charter has no garbage collection entry, so no schedule, frequency or truck assignment is published here. Segregation rules follow RA 9003 (Ecological Solid Waste Management Act). Confirm your barangay's schedule with your barangay hall.
