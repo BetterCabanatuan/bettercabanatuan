@@ -1,0 +1,9 @@
+{
+  "TIME_MTOP_CLEARANCE_TOTAL": "20 minutes",
+  "TIME_MTOP_RECEIVE": "2 minutes",
+  "TIME_MTOP_PREPARE": "5 minutes",
+  "TIME_MTOP_SIGN": "5 minutes",
+  "TIME_MTOP_SEAL": "2 minutes",
+  "TIME_MTOP_RELEASE": "5 minutes",
+  "TIME_MTOP_RECEIPT": "2 minutes"
+}
