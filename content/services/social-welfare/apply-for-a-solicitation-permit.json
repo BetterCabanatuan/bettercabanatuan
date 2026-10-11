@@ -1,0 +1,9 @@
+{
+  "FEE_SOLICITATION": "₱300",
+  "TIME_SOLICITATION_TOTAL": "27 to 52 minutes",
+  "TIME_SOLICITATION_REVIEW": "5 minutes",
+  "TIME_SOLICITATION_VERIFY": "10 minutes",
+  "TIME_SOLICITATION_PAY": "15 to 30 minutes",
+  "TIME_SOLICITATION_APPROVE": "5 minutes",
+  "TIME_SOLICITATION_ISSUE": "2 minutes"
+}
