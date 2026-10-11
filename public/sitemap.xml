@@ -200,6 +200,33 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/health-services/join-health-programs-nutrition-dengue-control-tb-treatment"/>
   </url>
   <url>
+    <loc>https://bettercabanatuan.org/services/health-services/get-a-sanitary-permit</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/health-services/get-a-sanitary-permit?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/health-services/get-a-sanitary-permit?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/health-services/get-a-sanitary-permit"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/health-services/get-a-health-certificate</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/health-services/get-a-health-certificate?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/health-services/get-a-health-certificate?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/health-services/get-a-health-certificate"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/health-services/get-a-medical-certificate</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/health-services/get-a-medical-certificate?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/health-services/get-a-medical-certificate?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/health-services/get-a-medical-certificate"/>
+  </url>
+  <url>
     <loc>https://bettercabanatuan.org/services/health-services/health-clinics-immunization-and-hotlines</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -245,15 +272,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/education/access-educational-support-programs-from-the-lgu"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/education/learn-about-supplementary-activities-for-schools-in-your-area</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/education/learn-about-supplementary-activities-for-schools-in-your-area?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/education/learn-about-supplementary-activities-for-schools-in-your-area?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/education/learn-about-supplementary-activities-for-schools-in-your-area"/>
-  </url>
-  <url>
     <loc>https://bettercabanatuan.org/services/business</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -279,6 +297,33 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/business/renew-permits-and-pay-local-business-taxes?lang=en"/>
     <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/business/renew-permits-and-pay-local-business-taxes?lang=fil"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/business/renew-permits-and-pay-local-business-taxes"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/business/get-an-occupational-or-working-permit</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/business/get-an-occupational-or-working-permit?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/business/get-an-occupational-or-working-permit?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/business/get-an-occupational-or-working-permit"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/business/secure-a-locational-clearance-or-zoning-permit</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/business/secure-a-locational-clearance-or-zoning-permit?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/business/secure-a-locational-clearance-or-zoning-permit?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/business/secure-a-locational-clearance-or-zoning-permit"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/business/get-a-mayors-clearance-for-a-tricycle-mtop</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/business/get-a-mayors-clearance-for-a-tricycle-mtop?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/business/get-a-mayors-clearance-for-a-tricycle-mtop?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/business/get-a-mayors-clearance-for-a-tricycle-mtop"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/business/rent-stalls-in-public-markets</loc>
@@ -308,22 +353,67 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/social-welfare/apply-for-senior-citizen-solo-parent-or-pwd-assistance</loc>
+    <loc>https://bettercabanatuan.org/services/social-welfare/get-a-senior-citizen-osca-id</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/apply-for-senior-citizen-solo-parent-or-pwd-assistance?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/apply-for-senior-citizen-solo-parent-or-pwd-assistance?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/apply-for-senior-citizen-solo-parent-or-pwd-assistance"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/get-a-senior-citizen-osca-id?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/get-a-senior-citizen-osca-id?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/get-a-senior-citizen-osca-id"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/social-welfare/receive-relief-goods-or-cash-aid-during-disasters</loc>
+    <loc>https://bettercabanatuan.org/services/social-welfare/get-a-solo-parent-id</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/receive-relief-goods-or-cash-aid-during-disasters?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/receive-relief-goods-or-cash-aid-during-disasters?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/receive-relief-goods-or-cash-aid-during-disasters"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/get-a-solo-parent-id?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/get-a-solo-parent-id?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/get-a-solo-parent-id"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/social-welfare/get-a-certificate-of-indigency</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/get-a-certificate-of-indigency?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/get-a-certificate-of-indigency?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/get-a-certificate-of-indigency"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/social-welfare/get-a-4ps-listahanan-certification</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/get-a-4ps-listahanan-certification?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/get-a-4ps-listahanan-certification?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/get-a-4ps-listahanan-certification"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/social-welfare/apply-for-a-solicitation-permit</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/apply-for-a-solicitation-permit?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/apply-for-a-solicitation-permit?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/apply-for-a-solicitation-permit"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/social-welfare/ask-about-pwd-id-and-medical-or-burial-assistance</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/ask-about-pwd-id-and-medical-or-burial-assistance?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/ask-about-pwd-id-and-medical-or-burial-assistance?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/ask-about-pwd-id-and-medical-or-burial-assistance"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/social-welfare/apply-for-a-job-through-peso</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/apply-for-a-job-through-peso?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/apply-for-a-job-through-peso?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/apply-for-a-job-through-peso"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/social-welfare/join-livelihood-or-skills-training-programs</loc>
@@ -335,13 +425,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/join-livelihood-or-skills-training-programs"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/social-welfare/get-family-and-community-welfare-support</loc>
+    <loc>https://bettercabanatuan.org/services/social-welfare/register-a-cooperative</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/get-family-and-community-welfare-support?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/get-family-and-community-welfare-support?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/get-family-and-community-welfare-support"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/social-welfare/register-a-cooperative?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/social-welfare/register-a-cooperative?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/social-welfare/register-a-cooperative"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/agriculture-fisheries</loc>
@@ -362,6 +452,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/agriculture-fisheries/ask-for-free-seeds-seedlings-fertilizers-or-fingerlings"/>
   </url>
   <url>
+    <loc>https://bettercabanatuan.org/services/agriculture-fisheries/register-as-a-farmer-rsbsa-and-get-a-farmer-id</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/agriculture-fisheries/register-as-a-farmer-rsbsa-and-get-a-farmer-id?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/agriculture-fisheries/register-as-a-farmer-rsbsa-and-get-a-farmer-id?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/agriculture-fisheries/register-as-a-farmer-rsbsa-and-get-a-farmer-id"/>
+  </url>
+  <url>
     <loc>https://bettercabanatuan.org/services/agriculture-fisheries/get-veterinary-services-for-livestock</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -371,6 +470,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/agriculture-fisheries/get-veterinary-services-for-livestock"/>
   </url>
   <url>
+    <loc>https://bettercabanatuan.org/services/agriculture-fisheries/get-free-anti-rabies-vaccination-for-pets</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/agriculture-fisheries/get-free-anti-rabies-vaccination-for-pets?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/agriculture-fisheries/get-free-anti-rabies-vaccination-for-pets?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/agriculture-fisheries/get-free-anti-rabies-vaccination-for-pets"/>
+  </url>
+  <url>
     <loc>https://bettercabanatuan.org/services/agriculture-fisheries/attend-farming-or-fishing-training</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -378,15 +486,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/agriculture-fisheries/attend-farming-or-fishing-training?lang=en"/>
     <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/agriculture-fisheries/attend-farming-or-fishing-training?lang=fil"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/agriculture-fisheries/attend-farming-or-fishing-training"/>
-  </url>
-  <url>
-    <loc>https://bettercabanatuan.org/services/agriculture-fisheries/borrow-farm-tools-or-equipment-from-the-lgu</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/agriculture-fisheries/borrow-farm-tools-or-equipment-from-the-lgu?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/agriculture-fisheries/borrow-farm-tools-or-equipment-from-the-lgu?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/agriculture-fisheries/borrow-farm-tools-or-equipment-from-the-lgu"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/infrastructure-public-works</loc>
@@ -407,31 +506,31 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/report-damaged-roads-bridges-or-drainage"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/infrastructure-public-works/request-access-to-barangay-water-supply-systems</loc>
+    <loc>https://bettercabanatuan.org/services/infrastructure-public-works/request-a-right-of-way-certification</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-access-to-barangay-water-supply-systems?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-access-to-barangay-water-supply-systems?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-access-to-barangay-water-supply-systems"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-a-right-of-way-certification?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-a-right-of-way-certification?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-a-right-of-way-certification"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/infrastructure-public-works/use-public-facilities-like-gyms-barangay-halls-or-multipurpose-centers</loc>
+    <loc>https://bettercabanatuan.org/services/infrastructure-public-works/request-a-program-of-works-for-your-barangay</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/infrastructure-public-works/use-public-facilities-like-gyms-barangay-halls-or-multipurpose-centers?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/infrastructure-public-works/use-public-facilities-like-gyms-barangay-halls-or-multipurpose-centers?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/use-public-facilities-like-gyms-barangay-halls-or-multipurpose-centers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-a-program-of-works-for-your-barangay?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-a-program-of-works-for-your-barangay?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/request-a-program-of-works-for-your-barangay"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/infrastructure-public-works/rent-stalls-in-public-markets-or-use-lgu-managed-cemeteries</loc>
+    <loc>https://bettercabanatuan.org/services/infrastructure-public-works/electricity-and-water-providers</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/infrastructure-public-works/rent-stalls-in-public-markets-or-use-lgu-managed-cemeteries?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/infrastructure-public-works/rent-stalls-in-public-markets-or-use-lgu-managed-cemeteries?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/rent-stalls-in-public-markets-or-use-lgu-managed-cemeteries"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/infrastructure-public-works/electricity-and-water-providers?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/infrastructure-public-works/electricity-and-water-providers?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/infrastructure-public-works/electricity-and-water-providers"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/garbage-waste-disposal</loc>
@@ -488,6 +587,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment"/>
   </url>
   <url>
+    <loc>https://bettercabanatuan.org/services/environment/get-a-city-environment-certificate-or-permit-to-operate</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/environment/get-a-city-environment-certificate-or-permit-to-operate?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/environment/get-a-city-environment-certificate-or-permit-to-operate?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment/get-a-city-environment-certificate-or-permit-to-operate"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/environment/get-a-hauling-pass</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/environment/get-a-hauling-pass?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/environment/get-a-hauling-pass?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment/get-a-hauling-pass"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/environment/get-a-tree-cutting-clearance</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/environment/get-a-tree-cutting-clearance?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/environment/get-a-tree-cutting-clearance?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment/get-a-tree-cutting-clearance"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/environment/file-an-environmental-complaint</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/environment/file-an-environmental-complaint?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/environment/file-an-environmental-complaint?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment/file-an-environmental-complaint"/>
+  </url>
+  <url>
     <loc>https://bettercabanatuan.org/services/environment/join-clean-up-drives-and-tree-planting-activities</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -495,15 +630,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/environment/join-clean-up-drives-and-tree-planting-activities?lang=en"/>
     <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/environment/join-clean-up-drives-and-tree-planting-activities?lang=fil"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment/join-clean-up-drives-and-tree-planting-activities"/>
-  </url>
-  <url>
-    <loc>https://bettercabanatuan.org/services/environment/report-illegal-logging-quarrying-or-fishing</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/environment/report-illegal-logging-quarrying-or-fishing?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/environment/report-illegal-logging-quarrying-or-fishing?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/environment/report-illegal-logging-quarrying-or-fishing"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/disaster-preparedness</loc>
@@ -515,31 +641,31 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/disaster-preparedness/join-disaster-drills-and-evacuation-planning</loc>
+    <loc>https://bettercabanatuan.org/services/disaster-preparedness/call-the-cdrrmo-emergency-line</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/disaster-preparedness/join-disaster-drills-and-evacuation-planning?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/disaster-preparedness/join-disaster-drills-and-evacuation-planning?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness/join-disaster-drills-and-evacuation-planning"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/disaster-preparedness/call-the-cdrrmo-emergency-line?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/disaster-preparedness/call-the-cdrrmo-emergency-line?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness/call-the-cdrrmo-emergency-line"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/disaster-preparedness/learn-about-emergency-response-procedures-and-evacuation-routes</loc>
+    <loc>https://bettercabanatuan.org/services/disaster-preparedness/know-your-flood-earthquake-and-typhoon-risk</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/disaster-preparedness/learn-about-emergency-response-procedures-and-evacuation-routes?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/disaster-preparedness/learn-about-emergency-response-procedures-and-evacuation-routes?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness/learn-about-emergency-response-procedures-and-evacuation-routes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/disaster-preparedness/know-your-flood-earthquake-and-typhoon-risk?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/disaster-preparedness/know-your-flood-earthquake-and-typhoon-risk?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness/know-your-flood-earthquake-and-typhoon-risk"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/disaster-preparedness/access-disaster-preparedness-information-and-early-warning-systems</loc>
+    <loc>https://bettercabanatuan.org/services/disaster-preparedness/find-evacuation-centers-and-drills</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/disaster-preparedness/access-disaster-preparedness-information-and-early-warning-systems?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/disaster-preparedness/access-disaster-preparedness-information-and-early-warning-systems?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness/access-disaster-preparedness-information-and-early-warning-systems"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/disaster-preparedness/find-evacuation-centers-and-drills?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/disaster-preparedness/find-evacuation-centers-and-drills?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/disaster-preparedness/find-evacuation-centers-and-drills"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/services/housing-land-use</loc>
@@ -551,15 +677,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/housing-land-use/apply-for-socialized-housing-or-relocation-projects</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-socialized-housing-or-relocation-projects?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-socialized-housing-or-relocation-projects?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-socialized-housing-or-relocation-projects"/>
-  </url>
-  <url>
     <loc>https://bettercabanatuan.org/services/housing-land-use/request-zoning-land-use-or-building-permits</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -569,13 +686,130 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use/request-zoning-land-use-or-building-permits"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/services/housing-land-use/ask-about-available-relocation-sites-in-case-of-demolition</loc>
+    <loc>https://bettercabanatuan.org/services/housing-land-use/apply-for-a-building-permit</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/housing-land-use/ask-about-available-relocation-sites-in-case-of-demolition?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/housing-land-use/ask-about-available-relocation-sites-in-case-of-demolition?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use/ask-about-available-relocation-sites-in-case-of-demolition"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-a-building-permit?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-a-building-permit?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-a-building-permit"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/housing-land-use/apply-for-occupancy-fence-demolition-excavation-or-electrical-permits</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-occupancy-fence-demolition-excavation-or-electrical-permits?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-occupancy-fence-demolition-excavation-or-electrical-permits?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use/apply-for-occupancy-fence-demolition-excavation-or-electrical-permits"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/housing-land-use/ask-about-socialized-housing-and-relocation</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/housing-land-use/ask-about-socialized-housing-and-relocation?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/housing-land-use/ask-about-socialized-housing-and-relocation?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/housing-land-use/ask-about-socialized-housing-and-relocation"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/pay-real-property-tax</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/pay-real-property-tax?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/pay-real-property-tax?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/pay-real-property-tax"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/get-a-real-property-tax-clearance</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/get-a-real-property-tax-clearance?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/get-a-real-property-tax-clearance?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/get-a-real-property-tax-clearance"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/get-a-community-tax-certificate-cedula</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/get-a-community-tax-certificate-cedula?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/get-a-community-tax-certificate-cedula?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/get-a-community-tax-certificate-cedula"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/request-a-certified-true-copy-of-tax-declaration</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/request-a-certified-true-copy-of-tax-declaration?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/request-a-certified-true-copy-of-tax-declaration?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/request-a-certified-true-copy-of-tax-declaration"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/transfer-a-tax-declaration</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/transfer-a-tax-declaration?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/transfer-a-tax-declaration?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/transfer-a-tax-declaration"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-marriage-or-death</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-marriage-or-death?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-marriage-or-death?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-marriage-or-death"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-late-delayed-registration</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-late-delayed-registration?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-late-delayed-registration?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/register-a-birth-late-delayed-registration"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/request-a-birth-marriage-or-death-certificate</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/request-a-birth-marriage-or-death-certificate?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/request-a-birth-marriage-or-death-certificate?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/request-a-birth-marriage-or-death-certificate"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/correct-a-clerical-error-in-a-civil-registry-record</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/correct-a-clerical-error-in-a-civil-registry-record?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/correct-a-clerical-error-in-a-civil-registry-record?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/correct-a-clerical-error-in-a-civil-registry-record"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/services/taxes-and-certificates/apply-for-a-marriage-license</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/services/taxes-and-certificates/apply-for-a-marriage-license?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/services/taxes-and-certificates/apply-for-a-marriage-license?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/services/taxes-and-certificates/apply-for-a-marriage-license"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/government/guides-and-regulations</loc>
@@ -1433,6 +1667,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/legislative"/>
   </url>
   <url>
+    <loc>https://bettercabanatuan.org/government/departments/gso</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/gso?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/gso?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/gso"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/chrmo</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/chrmo?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/chrmo?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/chrmo"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/tourism</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/tourism?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/tourism?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/tourism"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/city-legal-office</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-legal-office?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-legal-office?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-legal-office"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/community-affairs</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/community-affairs?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/community-affairs?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/community-affairs"/>
+  </url>
+  <url>
     <loc>https://bettercabanatuan.org/government/departments/accounting-office</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1440,15 +1719,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/accounting-office?lang=en"/>
     <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/accounting-office?lang=fil"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/accounting-office"/>
-  </url>
-  <url>
-    <loc>https://bettercabanatuan.org/government/departments/administration-office</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/administration-office?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/administration-office?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/administration-office"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/government/departments/assessors-office</loc>
@@ -1496,31 +1766,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/ceepumo"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/government/departments/city-legal-office</loc>
+    <loc>https://bettercabanatuan.org/government/departments/cenro</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-legal-office?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-legal-office?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-legal-office"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/cenro?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/cenro?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cenro"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/government/departments/tourism</loc>
+    <loc>https://bettercabanatuan.org/government/departments/city-engineers-office</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/tourism?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/tourism?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/tourism"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-engineers-office?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-engineers-office?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-engineers-office"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/government/departments/chrmo</loc>
+    <loc>https://bettercabanatuan.org/government/departments/city-building-official</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/chrmo?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/chrmo?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/chrmo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-building-official?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-building-official?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-building-official"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/motor-pool</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/motor-pool?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/motor-pool?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/motor-pool"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/government/departments/cpdo</loc>
@@ -1532,33 +1811,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cpdo"/>
   </url>
   <url>
-    <loc>https://bettercabanatuan.org/government/departments/it-management-office</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/it-management-office?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/it-management-office?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/it-management-office"/>
-  </url>
-  <url>
-    <loc>https://bettercabanatuan.org/government/departments/cswdo</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/cswdo?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/cswdo?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cswdo"/>
-  </url>
-  <url>
-    <loc>https://bettercabanatuan.org/government/departments/cho</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/cho?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/cho?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cho"/>
-  </url>
-  <url>
     <loc>https://bettercabanatuan.org/government/departments/city-agriculture-office</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1566,15 +1818,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-agriculture-office?lang=en"/>
     <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-agriculture-office?lang=fil"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-agriculture-office"/>
-  </url>
-  <url>
-    <loc>https://bettercabanatuan.org/government/departments/peso</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/peso?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/peso?lang=fil"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/peso"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/government/departments/lcro</loc>
@@ -1593,6 +1836,69 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/cdrrmo?lang=en"/>
     <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/cdrrmo?lang=fil"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cdrrmo"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/cho</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/cho?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/cho?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cho"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/city-health-centers</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-health-centers?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-health-centers?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-health-centers"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/clcdo</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/clcdo?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/clcdo?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/clcdo"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/mvg-city-general-hospital</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/mvg-city-general-hospital?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/mvg-city-general-hospital?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/mvg-city-general-hospital"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/peso</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/peso?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/peso?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/peso"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/cswdo</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/cswdo?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/cswdo?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/cswdo"/>
+  </url>
+  <url>
+    <loc>https://bettercabanatuan.org/government/departments/city-veterinary-office</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bettercabanatuan.org/government/departments/city-veterinary-office?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://bettercabanatuan.org/government/departments/city-veterinary-office?lang=fil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bettercabanatuan.org/government/departments/city-veterinary-office"/>
   </url>
   <url>
     <loc>https://bettercabanatuan.org/government/departments/lra-registry-of-deeds</loc>
