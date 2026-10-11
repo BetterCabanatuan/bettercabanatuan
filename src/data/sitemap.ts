@@ -47,6 +47,7 @@ export const sitemapGroups: SitemapGroup[] = [
       { label: 'Hotlines', href: '/hotlines' },
       { label: 'Statistics', href: '/statistics' },
       { label: 'Accessibility', href: '/accessibility' },
+      { label: 'Privacy Notice', href: '/privacy' },
       { label: 'Sitemap', href: '/sitemap' },
     ],
   },
