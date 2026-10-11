@@ -17,10 +17,10 @@ Email: ceepumocab@gmail.com
 
 The charter lists two stallholder services at this office:
 
-| Service            | Fee  | Total processing time |
-| ------------------ | ---- | --------------------- |
-| Market clearance   | ₱100 | 10 minutes            |
-| Market certificate | ₱100 | 15 minutes            |
+| Service            | Fee                      | Total processing time     |
+| ------------------ | ------------------------ | ------------------------- |
+| Market clearance   | {FEE_MARKET_CLEARANCE}   | {TIME_MARKET_CLEARANCE}   |
+| Market certificate | {FEE_MARKET_CERTIFICATE} | {TIME_MARKET_CERTIFICATE} |
 
 A market clearance is also on the checklist for a new business permit when the business is a market stall.
 

@@ -1,0 +1,21 @@
+{
+  "TIME_RENEWAL_TOTAL": "1 day",
+  "TIME_RENEWAL_APPLICATION": "10 minutes",
+  "TIME_RENEWAL_ASSESSMENT": "23½ hours",
+  "TIME_RENEWAL_PAYMENT": "20 minutes",
+  "FEE_RENEWAL": "Assessed per Order of Payment",
+  "TIME_BUSINESS_TAX_TOTAL": "16 minutes",
+  "TIME_BT_ASSESS": "5 minutes",
+  "TIME_BT_CONFIRM": "5 minutes",
+  "TIME_BT_PAY": "5 minutes",
+  "TIME_BT_RECEIPT": "1 minute",
+  "FEE_BUSINESS_TAX": "Based on the graduated tax schedule in the Revised Revenue Code, City Ordinance No. 038-2010",
+  "TIME_RETIREMENT": "30 minutes",
+  "FEE_RETIREMENT": "Tax difference, if any",
+  "TIME_CHANGE_LOCATION": "30 minutes",
+  "FEE_CHANGE_LOCATION": "₱50",
+  "TIME_CHANGE_OWNERSHIP": "30 minutes",
+  "FEE_CHANGE_OWNERSHIP": "₱50",
+  "TIME_TRANSFER_OWNERSHIP": "30 minutes",
+  "FEE_TRANSFER_OWNERSHIP": "₱50"
+}
