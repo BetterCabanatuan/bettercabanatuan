@@ -1,0 +1,12 @@
+{
+  "FEE_RA9048_FILING": "₱1,300",
+  "FEE_RA9048_INDORSEMENT": "₱200",
+  "FEE_RA9048_TOTAL": "₱1,500",
+  "TIME_RA9048_EVALUATE": "5 minutes",
+  "TIME_RA9048_PAY": "10 minutes",
+  "TIME_RA9048_PREPARE": "20 minutes",
+  "TIME_RA9048_DECISION": "15 days",
+  "TIME_RA9048_TRANSMIT": "5 days after the date of decision",
+  "TIME_RA9048_FINALITY": "20 minutes",
+  "TIME_RA9048_FOLLOWUP": "1 to 2 months after the documents are mailed to the PSA"
+}
