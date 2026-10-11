@@ -22,6 +22,15 @@
 # time by `normalizeBarangayDescription()` (src/lib/barangayText.ts) from the
 # structured `classification` field, so the stored text is left as-is rather
 # than edited 89 times.
+#
+# HEALTH CENTRES
+#   `healthCenter` names the City Health Office centre based in the barangay,
+#   with its phone lines exactly as printed. Source: City Government of
+#   Cabanatuan, Citizen's Charter 2022 (2nd Edition), "VII. List of Offices",
+#   p. 344 (City Health Office row). Only barangays the charter names carry
+#   the field: Mayapyap Sur, San Josef Norte, Mabini Homesite, General Luna,
+#   Caalibangbangan and Hermogenes C. Concepcion, Sr. (printed in the charter
+#   as "H. Concepcion").
 
 description: 'Explore all barangays of Cabanatuan City, including their classifications, descriptions, and local information. The city is divided into urban and rural barangays, each with its own character and community.'
 source: 'Philippine Statistics Authority (PSA) census releases; PSGC from DILG'
@@ -240,6 +249,11 @@ barangays:
       2015: 11112
       2020: 11104
       2024: 11879
+    # Citizen's Charter 2022 (2nd Edition), p. 344.
+    healthCenter:
+      name: 'City Health Center 6'
+      phone: '0919 081 1485'
+      landline: '044 958 2094'
 
   - name: 'Cabu'
     slug: 'cabu'
@@ -435,6 +449,10 @@ barangays:
       2015: 1548
       2020: 1516
       2024: 1488
+    # Citizen's Charter 2022 (2nd Edition), p. 344.
+    healthCenter:
+      name: 'City Health Center 5'
+      phone: '0919 081 1535'
 
   - name: 'Ibabao Bana'
     slug: 'ibabao-bana'
@@ -565,6 +583,11 @@ barangays:
       2015: 4317
       2020: 5501
       2024: 5540
+    # Citizen's Charter 2022 (2nd Edition), p. 344.
+    healthCenter:
+      name: 'City Health Center 4'
+      phone: '0919 081 1344'
+      landline: '044 951 5699'
 
   - name: 'Macatbong'
     slug: 'macatbong'
@@ -643,6 +666,10 @@ barangays:
       2015: 5473
       2020: 5904
       2024: 5950
+    # Citizen's Charter 2022 (2nd Edition), p. 344.
+    healthCenter:
+      name: 'City Health Center 1'
+      phone: '0919 081 3119'
 
   - name: 'Melojavilla'
     slug: 'melojavilla'
@@ -838,6 +865,11 @@ barangays:
       2015: 4442
       2020: 4684
       2024: 4867
+    # Citizen's Charter 2022 (2nd Edition), p. 344.
+    healthCenter:
+      name: 'City Health Center 2'
+      phone: '0919 081 2976'
+      landline: '044 960 1613'
 
   - name: 'San Josef Sur'
     slug: 'san-josef-sur'
@@ -1073,6 +1105,10 @@ barangays:
       2020: 7640
       2024: 7616
 
+  # The Citizen's Charter 2022 (2nd Edition), p. 344, lists "CHC 7 H. Concepcion"
+  # (0919 081 2983; 044 803 1079). That name does not match this entry
+  # verbatim, so no `healthCenter` is recorded here until the city confirms
+  # the barangay it refers to.
   - name: 'Hermogenes C. Concepcion, Sr.'
     slug: 'hermogenes-c-concepcion-sr'
     description: 'Hermogenes C. Concepcion, Sr. is a urban barangay in Cabanatuan City. As of 2024, it has a population of 4,867.'
@@ -1085,6 +1121,11 @@ barangays:
       2015: 4039
       2020: 4756
       2024: 4867
+    # Citizen's Charter 2022 (2nd Edition), p. 344, printed as "CHC 7 H. Concepcion".
+    healthCenter:
+      name: 'City Health Center 7'
+      phone: '0919 081 2983'
+      landline: '044 803 1079'
 
   - name: 'Sapang'
     slug: 'sapang'
