@@ -13,12 +13,14 @@ describe('DepartmentCard', () => {
 
     renderWithProviders(<DepartmentCard department={department} />);
 
-    expect(screen.getByText('BPLO')).toBeInTheDocument();
+    expect(screen.getByText('CBLIPO')).toBeInTheDocument();
     const link = document.querySelector(
       'a[href="/government/departments/bplo"]'
     );
     expect(link).not.toBeNull();
-    expect(link).toHaveTextContent('Business Permits and Licensing Office');
+    expect(link).toHaveTextContent(
+      'City Business Licensing and Investment Promotion Office'
+    );
   });
 });
 

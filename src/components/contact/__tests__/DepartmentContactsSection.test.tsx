@@ -38,7 +38,7 @@ describe('DepartmentContactsSection', () => {
       'Civil Registry'
     );
 
-    expect(screen.getByText('Local Civil Registry Office')).toBeInTheDocument();
+    expect(screen.getByText('City Civil Registry Office')).toBeInTheDocument();
     expect(
       screen.queryByText("City Mayor's Office - Admin")
     ).not.toBeInTheDocument();
@@ -49,11 +49,17 @@ describe('getContactsForDepartment', () => {
   it('returns all contact lines for a department slug', () => {
     const contacts = getContactsForDepartment('executive');
 
-    expect(contacts).toHaveLength(2);
-    expect(contacts.map(c => c.phone)).toEqual([
-      '0919-081-3749',
-      '0919-081-3983',
-    ]);
+    expect(contacts).toHaveLength(1);
+    expect(contacts.map(c => c.phone)).toEqual(['0919-081-3749']);
+  });
+
+  it('points the Community Affairs line at its own office, not the Mayor', () => {
+    const contacts = getContactsForDepartment('community-affairs');
+
+    expect(contacts.map(c => c.phone)).toEqual(['0919-081-3983']);
+    expect(getDepartmentBySlug('community-affairs')?.name).toBe(
+      'Community Affairs Office'
+    );
   });
 
   it('returns the health office lines that point at the CHO page', () => {
@@ -63,10 +69,11 @@ describe('getContactsForDepartment', () => {
     );
 
     expect(contacts).toHaveLength(expected.length);
-    expect(contacts).toHaveLength(2);
+    expect(contacts).toHaveLength(3);
     expect(contacts.map(c => c.phone)).toEqual([
       '0919-081-1348',
       '0919-081-0167',
+      '0919-081-1508',
     ]);
   });
 });
@@ -90,9 +97,9 @@ describe('department link integrity', () => {
     });
   });
 
-  it('points the City Legal Office at its own page, not CSWDO', () => {
+  it('points the Office for City Legal Affairs at its own page, not CSWDO', () => {
     const legalOffice = departmentContactsData.contacts.find(
-      contact => contact.name === 'City Legal Office'
+      contact => contact.name === 'Office for City Legal Affairs'
     );
 
     expect(legalOffice).toBeDefined();
@@ -102,7 +109,7 @@ describe('department link integrity', () => {
       '/government/departments/city-legal-office'
     );
     expect(getDepartmentBySlug('city-legal-office')?.name).toBe(
-      'City Legal Office'
+      'Office for City Legal Affairs'
     );
   });
 
