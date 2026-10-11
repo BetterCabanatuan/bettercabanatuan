@@ -1,0 +1,10 @@
+{
+  "FEE_HEALTH_CERT": "₱100",
+  "TIME_HEALTH_CERT": "18 minutes",
+  "TIME_HEALTH_TRIAGE": "5 minutes",
+  "TIME_HEALTH_EVALUATE": "5 minutes",
+  "TIME_HEALTH_PREPARE": "5 minutes",
+  "TIME_HEALTH_RELEASE": "3 minutes",
+  "FEE_DENTAL_CERT": "₱50",
+  "TIME_DENTAL_CERT": "45 minutes"
+}

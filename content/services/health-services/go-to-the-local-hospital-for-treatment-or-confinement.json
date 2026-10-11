@@ -1,0 +1,15 @@
+{
+  "FEE_OPD": "None",
+  "TIME_OPD_SIMPLE": "30 minutes",
+  "TIME_OPD_COMPLEX": "40 minutes",
+  "FEE_RECORDS": "None",
+  "TIME_RECORDS": "40 minutes",
+  "TIME_HEMODIALYSIS": "5 hours 36 minutes",
+  "FEE_HEMO_PHILHEALTH": "No cash out",
+  "FEE_HEMO_RESIDENT": "₱1,000",
+  "FEE_HEMO_NONRESIDENT": "₱2,884 including professional fee",
+  "FEE_EMS": "Free",
+  "TIME_EMS_CALL": "1-3 minutes",
+  "TIME_EMS_DISPATCH": "3-20 minutes",
+  "TIME_EMS_TOTAL": "20 minutes"
+}

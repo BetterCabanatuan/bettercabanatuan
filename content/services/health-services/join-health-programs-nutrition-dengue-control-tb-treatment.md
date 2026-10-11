@@ -1,87 +1,88 @@
-# Join Health Programs — Cabanatuan City (Nutrition, Dengue Control, TB Treatment)
+# Join Health Programs: TB Treatment, Dental Care and Animal Bite Treatment — Cabanatuan City
 
-Below are city-led and national programs you can join through your **City Health Center** and the **City Health Office (CHO)**. Of these, the Citizen's Charter itemises TB-DOTS as a free CHO service.
+The City Health Office treats tuberculosis, gives basic dental care and treats animal bites free of charge for Cabanatuan City residents. This page lists what to bring and how long each visit takes. Nutrition and dengue control programmes are not in the Citizen's Charter; ask the City Health Office about current activities.
 
----
+## Tuberculosis and primary complex infection treatment
 
-## 1) Nutrition Programs
+Office: City Health Office, through the City Health Center assigned to your barangay. Fee: {FEE_CHO_SERVICES}. Total time: {TIME_TB}.
 
-**What’s offered**
+The charter cites Republic Act No. 10767, the Comprehensive TB Elimination Plan Act of 2016.
 
-- Supplementary feeding for day-care children.
-- Community nutrition activities such as breastfeeding promotion, growth monitoring, and health education.
-- Special events during Nutrition Month (July) and city-wide wellness programs.
+**Who may avail**
 
-**Who can join**
+Cabanatuan City residents with a productive cough for more than two weeks who are not in the COVID-19 suspect or probable masterlist.
 
-- Day-care children and families identified by barangays or CSWD.
-- Residents may also take part in open city nutrition events.
+**What to bring**
 
-**How to join**
+| Requirement                                                                                   | Where to get it                                  |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Personal appearance of the patient, except patients in quarantine or isolation                |                                                  |
+| Voter's ID or certification                                                                   | COMELEC                                          |
+| 2x2 picture                                                                                   |                                                  |
+| Chest X-ray result                                                                            | Hospital or diagnostic laboratory of your choice |
+| Sputum examination result, or Purified Protein Derivative (PPD) skin test result for children | City Health Office                               |
 
-1. Visit your **City Health Center** or ask the **Barangay Nutrition Scholar (BNS)** about ongoing feeding programs.
-2. Join community activities and city-wide nutrition events announced by the **City Health Office (CHO)** or City Information Office.
+**Steps**
 
-**Cost:** Free for eligible beneficiaries.
+1. Go to your barangay's City Health Center. Staff do a temperature check, health declaration, interview and assessment (5 minutes), give instructions on sputum collection or schedule a PPD skin test for children (15 minutes), then receive and evaluate your requirements (20 minutes).
+2. Receive your initial anti-TB medicine. The nurse explains how to take the Fixed Dose Combination (FDC) medication and schedules a monthly follow-up to check your progress (5 minutes).
 
----
+## Basic oral health care
 
-## 2) Dengue Control Programs
+Office: City Health Office, Dental Division. Fee: {FEE_CHO_SERVICES}. Total time: {TIME_DENTAL}.
 
-**What’s offered**
+**Who may avail**
 
-- Community clean-up drives under the **ABKD (Aksyon Barangay Kontra Dengue)** program.
-- Daily “4 o’clock habit” — searching and destroying mosquito breeding sites.
-- Misting, fogging, and entomological surveys led by the CHO.
-- Information campaigns during Dengue Awareness Month and rainy season.
+Cabanatuan City residents with dental health problems; pre-schoolers, children and pregnant mothers.
 
-**How to join**
+**What to bring**
 
-1. Take part in barangay clean-up drives and follow the **4S strategy** (Search & Destroy, Self-protection, Seek early consultation, Support fogging/misting).
-2. Cooperate when CHO teams conduct **misting** or **house-to-house larval checks**.
+| Requirement                       | Where to get it |
+| --------------------------------- | --------------- |
+| Barangay certificate of residence | Barangay hall   |
 
-**Cost:** Free; no registration needed.
+**Steps**
 
----
+1. Go to the triage area for a temperature check, health declaration and initial screening (5 minutes).
+2. Go to the Dental Division. The dental aide records your vital signs in your Patient Treatment Card and refers you to the dentist on duty (5 minutes). The dentist examines you, gives a lecture and dental advice, and prescribes medicine (10 minutes).
+3. Receive the available medicine and extra health instructions (5 minutes).
 
-## 3) TB Treatment (NTP TB-DOTS)
+A dental certificate for employment is a separate paid service; see [Get a health certificate](/services/health-services/get-a-health-certificate).
 
-**What’s offered**
+## Animal bite treatment
 
-- Free consultations, diagnostic tests, and full course of anti-TB medicines under the **National Tuberculosis Program (NTP)**.
-- Supervised treatment through the **Directly Observed Therapy Short-course (DOTS)** approach.
+Office: City Health Office, Animal Bite Treatment Center. Fee: {FEE_CHO_SERVICES}. Total time: {TIME_ANIMAL_BITE}.
 
-**Where**
+The charter cites DOH Administrative Orders No. 2007-0029 and 2009-0027 on the management of animal bites, and notes that animal bite and rabies treatment is covered by the PhilHealth service package under Republic Act No. 7875 and Republic Act No. 9241.
 
-- Cabanatuan City Health Office (DOTS facility) and the City Health Centers.
+**Who may avail**
 
-**How to join**
+Cabanatuan City residents with a history of animal bite or contact with a suspected rabies patient.
 
-1. Go to your **City Health Center** or the **CHO DOTS Clinic** for TB screening.
-2. If diagnosed, you will be enrolled in DOTS — treatment and medicines are given for free.
-3. Regular follow-up visits will be scheduled to monitor your recovery.
+**What to bring**
 
-**Cost:** Free for all TB patients.
+| Requirement                                                                    | Where to get it |
+| ------------------------------------------------------------------------------ | --------------- |
+| Personal appearance of the patient, except patients in quarantine or isolation |                 |
+| Voter's ID or certification                                                    | COMELEC         |
 
----
+**Steps**
 
-## Contact & Updates
+1. Go to the triage area for a temperature check, health declaration and initial screening (5 minutes).
+2. Ask for a check-up at the Animal Bite Treatment Center of the City Health Office. The nurse interviews you, takes vital signs and gives first aid (5 minutes). The physician examines you and decides on treatment (10 minutes).
+3. Receive the anti-rabies vaccine or anti-rabies serum (10 minutes).
+4. Receive your Rabies Exposure Prophylaxis Card with instructions for the succeeding doses (5 minutes).
 
-- **City Health Centers** — First point of contact for nutrition, dengue, and TB programs.
-- **City Health Office** — City Health Office, CHO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 081 1348 or 044 463 5900.
-- **City Information and Tourism Office** — city-wide campaign announcements. Phone: 0919 089 9862.
+## Nutrition and dengue control
 
----
+The Citizen's Charter has no entry for a nutrition programme or a dengue control programme. For current activities, call the City Health Office, CHO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100: 0919 081 1348 or 044 463 5900.
 
-### Quick Tips
+## Related pages
 
-- Bring a **valid ID** and your **barangay health record** (if you already have one).
-- For TB symptoms (cough for 2 weeks or more, weight loss, night sweats), seek screening immediately.
-- Join community clean-up drives and practice the 4 o’clock habit to prevent dengue.
-- Attend barangay nutrition events and feeding programs for your children’s growth and wellness.
-
----
+- [Get free check-ups, basic medicines and vaccines](/services/health-services/get-free-check-ups-basic-medicines-and-vaccines)
+- [Access maternal care and child immunization](/services/health-services/access-maternal-care-and-child-immunization)
+- [Health centers and hotlines](/services/health-services/health-clinics-immunization-and-hotlines)
 
 ## Source
 
-City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 242-248 (TB-DOTS and other free CHO services) and p. 344 (office directory). Accessed 2026-10-11. Nutrition and dengue programme descriptions follow national DOH programmes; confirm current activities with the CHO.
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 242-244 (tuberculosis and primary complex infection treatment, animal bite treatment services), pp. 247-248 (basic oral health care services) and p. 344 (List of Offices). Accessed 2026-10-11.
