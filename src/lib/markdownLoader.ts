@@ -20,11 +20,80 @@ function interpolate(
   });
 }
 
+/**
+ * The language segment a translated page carries in its file name:
+ * `<slug>.fil.md`. Two or three lowercase letters, which is also what
+ * scripts/check-content-placeholders.mjs strips to find the shared companion
+ * `<slug>.json`. Keep the two in step.
+ */
+const LANGUAGE_SEGMENT = /^[a-z]{2,3}$/;
+
+/**
+ * The language code a translated Markdown file would carry, or `undefined`
+ * when only the English file should be read.
+ *
+ * i18next reports `i18n.language` as whatever the detector or switcher set,
+ * which can be a regional tag (`fil-PH`), an unsupported code, or `cimode` in
+ * debug. Only the primary subtag matters here, and English never has a
+ * suffixed file — the base `<slug>.md` is the English page.
+ */
+export function contentLanguage(lang?: string): string | undefined {
+  const primary = lang?.trim().toLowerCase().split('-')[0];
+  if (!primary || primary === 'en' || !LANGUAGE_SEGMENT.test(primary)) {
+    return undefined;
+  }
+  return primary;
+}
+
+/**
+ * Ordered Markdown basenames to try for a document in a given language:
+ * the translated `<slug>.<lang>.md` first, then the English `<slug>.md`.
+ *
+ * `loadMarkdownContent` mirrors this order with two import statements rather
+ * than looping over the list, because Vite can only analyse a dynamic import
+ * whose extension is literal. This helper exists so the order and the
+ * language rule are stated once and are unit-testable without a bundler.
+ */
+export function markdownCandidates(slug: string, lang?: string): string[] {
+  const code = contentLanguage(lang);
+  const base = `${slug}.md`;
+  return code ? [`${slug}.${code}.md`, base] : [base];
+}
+
 export interface MarkdownContent {
   content: string;
   title?: string;
   description?: string;
   data?: Record<string, unknown>;
+}
+
+/**
+ * Imports the raw Markdown for a document, preferring the translation when one
+ * exists. Both import strings keep their variables inside the file name only,
+ * which is the shape Vite turns into a glob at build time.
+ */
+async function importMarkdown(
+  dir: string,
+  categorySlug: string,
+  documentSlug: string,
+  lang?: string
+): Promise<string> {
+  const code = contentLanguage(lang);
+  if (code) {
+    try {
+      const translated = await import(
+        `../../content/${dir}/${categorySlug}/${documentSlug}.${code}.md?raw`
+      );
+      return translated.default;
+    } catch {
+      // No translation for this page yet — the English file is the fallback,
+      // never a not-found state.
+    }
+  }
+  const module = await import(
+    `../../content/${dir}/${categorySlug}/${documentSlug}.md?raw`
+  );
+  return module.default;
 }
 
 /**
@@ -34,11 +103,15 @@ export interface MarkdownContent {
  * @param documentSlug - The document slug (filename without .md extension)
  * @param categorySlug - The category slug (parent directory)
  * @param categoryType - Whether this is a 'service' or 'government' document
+ * @param lang - The active UI language. When set and not English, the loader
+ *   tries `<slug>.<lang>.md` before `<slug>.md`. The companion JSON is the
+ *   same `<slug>.json` in either case, so a translation never restates a fee.
  */
 export async function loadMarkdownContent(
   documentSlug: string,
   categorySlug: string,
-  categoryType: 'service' | 'government'
+  categoryType: 'service' | 'government',
+  lang?: string
 ): Promise<MarkdownContent> {
   try {
     const dir = categoryType === 'government' ? 'government' : 'services';
@@ -54,10 +127,8 @@ export async function loadMarkdownContent(
       // No companion JSON — that's fine
     }
 
-    const module = await import(
-      `../../content/${dir}/${categorySlug}/${documentSlug}.md?raw`
-    );
-    const content = interpolate(module.default, data);
+    const raw = await importMarkdown(dir, categorySlug, documentSlug, lang);
+    const content = interpolate(raw, data);
 
     const titleMatch = content.match(/^#\s+(.+)$/m);
     const title = titleMatch ? titleMatch[1] : undefined;

@@ -336,7 +336,61 @@
     "hospitals": {
       "title": "Mga Ospital"
     },
-    "disclaimer": "Bahagi ng Better Cabanatuan community portal ang contact page na ito, hindi opisyal na sistema ng pamahalaan. Para sa verified na transaksyon at opisyal na record, gamitin palaging ang <1>opisyal na website ng {{city}}</1> o bumisita sa City Hall nang personal."
+    "disclaimer": "Bahagi ng Better Cabanatuan community portal ang contact page na ito, hindi opisyal na sistema ng pamahalaan. Para sa verified na transaksyon at opisyal na record, gamitin palaging ang <1>opisyal na website ng {{city}}</1> o bumisita sa City Hall nang personal.",
+    "complaints": {
+      "navLabel": "Reklamo at feedback",
+      "title": "Reklamo at feedback",
+      "intro": "Nakalista sa Citizen's Charter ang mga paraang ito para magbigay ng feedback, papuri o reklamo tungkol sa serbisyo ng lungsod. Piliin ang akma sa inyong alalahanin.",
+      "tableCaption": "Mga paraan ng pagrereklamo at pagbibigay ng feedback, para kanino ang bawat isa, at paano ito maaabot",
+      "columns": {
+        "channel": "Paraan",
+        "audience": "Para kanino",
+        "reach": "Paano maaabot"
+      },
+      "textPrefix": "Mag-text sa",
+      "channels": {
+        "feedbackForm": {
+          "title": "Feedback o compliment form",
+          "audience": "Sinumang nais magkomento o pumuri sa isang serbisyo ng lungsod.",
+          "reach": "Punan ang Feedback Form o Client Compliment Form at ihulog sa suggestion box sa Public Assistance and Complaint Desk, lobby ng City Hall."
+        },
+        "complaintForm": {
+          "title": "Complaint form sa Public Assistance and Complaint Desk",
+          "audience": "Mga residenteng maghahain ng nakasulat na reklamo tungkol sa isang opisina o empleyado ng lungsod.",
+          "reach": "Punan ang complaint form at ihulog sa suggestion box sa Public Assistance and Complaint Desk, lobby ng City Hall."
+        },
+        "textLine": {
+          "title": "Reklamo sa pamamagitan ng text",
+          "audience": "Mga residenteng nais magpadala ng alalahanin sa pamamagitan ng SMS."
+        },
+        "mayorsOffice": {
+          "title": "Office of the City Mayor",
+          "audience": "Pag-follow-up sa isang reklamo, at mga reklamo laban sa tauhan ng lungsod.",
+          "location": "2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100"
+        },
+        "arta": {
+          "title": "Anti-Red Tape Authority (ARTA)",
+          "audience": "Red tape, fixer o pagkaantala sa anumang transaksyon sa pamahalaan."
+        },
+        "pcc": {
+          "title": "Presidential Complaint Center (PCC)",
+          "audience": "Mga reklamo tungkol sa anumang opisina o opisyal ng pamahalaan, idinudulog sa Office of the President."
+        },
+        "ccb": {
+          "title": "Contact Center ng Bayan (CCB)",
+          "audience": "Pambansang channel para sa feedback at reklamo tungkol sa serbisyo ng pamahalaan."
+        }
+      },
+      "afterFiling": {
+        "title": "Ano ang mangyayari pagkatapos ninyong maghain",
+        "steps": [
+          "Araw-araw kinokolekta ng City Human Resource Management Office ang mga form mula sa suggestion box at ini-endorso sa Office of the City Mayor ang mahahalagang feedback at ang bawat reklamo.",
+          "Ipinapasa ng Office of the City Mayor ang feedback sa opisinang kinauukulan para aksyunan. Kung reklamo laban sa isang empleyado, ipinaaalam ito sa empleyado at itinatakda ang pulong kasama ninyo para pagdesisyunan kung maghahain ng kaso o magkakasundo nang maayos.",
+          "Isinasangguni ang kaso sa Office for City Legal Affairs. Isinasara ang maayos na pagkakasundo kapag nakumpleto na ang Complaint Settlement Agreement form."
+        ]
+      },
+      "source": "Pinagmulan: Citizen's Charter 2022, pp. 340-341 (City Government of Cabanatuan, 2nd Edition, Feedback and Complaints Mechanism). Na-access 2026-10-11."
+    }
   },
   "accessibility": {
     "seoTitle": "Accessibility",
@@ -418,6 +472,90 @@
     "helpNote": {
       "title": "Kailangan ng tulong sa halip na ulat?",
       "body": "Kung nais ninyong tulungan kayo na humanap ng opisina o impormasyong kailangan ninyo, pumunta sa contact page ng {{city}} para sa detalye ng city hall, mga linya ng departamento, at emergency na hotline."
+    }
+  },
+  "privacy": {
+    "seoTitle": "Paunawa sa Privacy",
+    "seoDescription": "Paunawa sa privacy ng community portal ng {{city}} — ano ang iniimbak ng site, ano ang hindi, aling mga serbisyo sa labas ang kinokontak ng iyong browser, ang legal na batayan sa ilalim ng Data Privacy Act, at paano maabot ang mga volunteer.",
+    "eyebrow": "Ang Iyong Datos",
+    "title": "Paunawa sa Privacy",
+    "footerLabel": "Paunawa sa Privacy",
+    "lastReviewed": "Huling sinuri: Oktubre 2026",
+    "intro": "Pinapatakbo ng mga volunteer ang portal na ito at hindi ito ang opisyal na website ng pamahalaan ng {{city}}. Ginawa ito para basahin, hindi para mangolekta. Nakalista sa pahinang ito kung ano nga ba ang iniimbak ng site sa iyong device, ano ang itinatala ng server, aling mga serbisyo sa labas ang kinokontak ng iyong browser, at aling batas ang umiiral.",
+    "summary": {
+      "title": "Ang maikling bersyon",
+      "body1": "Hindi mo kailangan ng account para gamitin ang portal na ito, at walang login. Walang form sa site na ito na nagpapadala ng iyong detalye sa amin: gumagana ang search box sa loob ng iyong browser, at bawat contact button ay nagbubukas ng sarili mong email app.",
+      "body2": "Wala kaming analytics, advertising o tracking script, at walang sariling cookies ang site na ito. Dalawang setting lang ang iniimbak nito sa iyong browser para matandaan ang iyong mga pinili, at ang web server ay may parehong access log na nalilikha ng bawat website."
+    },
+    "collects": {
+      "title": "Ano ang iniimbak at itinatala ng site na ito",
+      "description": "Ito lamang ang mga talaang nalilikha dahil bumisita ka.",
+      "items": [
+        {
+          "title": "Browser storage para sa iyong wika",
+          "description": "Kapag lumipat ka sa pagitan ng English at Tagalog, naiimbak ang pinili sa localStorage ng iyong browser sa ilalim ng key na i18nextLng para sa parehong wika mag-load ang susunod na pahina. Hindi ito umaalis sa iyong device."
+        },
+        {
+          "title": "Browser storage para sa volunteer prompt",
+          "description": "Kapag isinara mo ang imbitasyon sa pag-volunteer na lumalabas sa unang pagbisita, naiimbak ang key na bc-volunteer-popup sa localStorage para manatiling sarado ang imbitasyon. Wala nang iba pang iniimbak."
+        },
+        {
+          "title": "Access log ng server",
+          "description": "Tulad ng bawat website, maaaring itala ng server na naghahatid ng mga pahinang ito ang IP address, ang hiniling na pahina, ang petsa at oras, at ang uri ng browser sa karaniwang access log. Ginagamit lang namin ito para panatilihing gumagana ang site at para matukoy ang pang-aabuso. Hindi namin ito itinutugma sa pangalan ng sinuman."
+        },
+        {
+          "title": "Wala nang iba",
+          "description": "Walang account, walang cookies mula sa site na ito, walang analytics, walang advertising, walang fingerprinting, at walang form na nag-iimbak ng iyong tinatype."
+        }
+      ]
+    },
+    "thirdParty": {
+      "title": "Mga serbisyo sa labas na kinokontak ng iyong browser",
+      "description": "Ilang bahagi ng portal ay nilo-load mula sa server ng ibang organisasyon. Kapag nag-load ang mga ito, ipinapadala ng iyong browser ang IP address nito at ang karaniwang detalye ng request, sa ilalim ng sariling privacy policy ng organisasyong iyon, hindi sa amin.",
+      "items": [
+        {
+          "title": "Panahon (Open-Meteo)",
+          "description": "Humihingi ang home page sa api.open-meteo.com ng forecast para sa isang nakapirming lokasyon sa Lungsod ng Cabanatuan. Hindi kailanman binabasa o ipinapadala ang sarili mong lokasyon."
+        },
+        {
+          "title": "Mapa (OpenStreetMap)",
+          "description": "Kinukuha ng mapa sa home page ang mga tile nito mula sa tile.openstreetmap.org."
+        },
+        {
+          "title": "Facebook Page Plugin",
+          "description": "Nilo-load ng news feed sa home page ang script ng Facebook mula sa connect.facebook.net para ipakita ang pampublikong page ng lungsod. Ang sariling privacy policy ng Facebook ang namamahala sa kung ano ang itinatala nito kapag nag-load ang script na iyon."
+        },
+        {
+          "title": "Google Fonts",
+          "description": "Ang typeface ay inihahatid mula sa fonts.googleapis.com at fonts.gstatic.com."
+        }
+      ],
+      "note": "Ang mga link patungong Google Maps, Facebook, opisyal na website ng lungsod at iba pang site sa labas ay kumokontak lamang sa mga serbisyong iyon kapag pinili mong buksan ang mga ito."
+    },
+    "legal": {
+      "title": "Legal na batayan",
+      "body1": "Ang Data Privacy Act of 2012 (Republic Act No. 10173) ay umiiral sa sinuman sa Pilipinas na nagpoproseso ng personal na impormasyon. Hinihingi ng Seksyon 11 na ang pagpoproseso ay transparent, para sa lehitimong layunin, at proporsyonal. Ibinibigay ng Seksyon 16 ang iyong karapatang maipaalam sa iyo ang anumang pagpoproseso bago ito mangyari. Umiiral ang paunawang ito para tugunan ang dalawang seksyong iyon, kahit ginawa ang portal para magproseso ng kakaunti hangga’t maaari.",
+      "body2": "Itinakda ng National Privacy Commission Circular 16-01 ang mga tuntunin sa seguridad para sa personal na datos na hawak ng mga ahensya ng pamahalaan, kabilang ang mga local government unit, at inaatasan ng DILG Memorandum Circular 2018-36 ang bawat local government unit na magtalaga ng Data Protection Officer. Umiiral ang mga tuntuning iyon sa pamahalaan ng {{city}} at sa sarili nitong mga sistema, at ang opisyal na itatalaga nito ang dapat tanungin tungkol sa mga ito.",
+      "lawLinkLabel": "Basahin ang RA 10173 (LawPhil)",
+      "npcLinkLabel": "NPC Circular 16-01 (privacy.gov.ph)",
+      "dpoLine": "Data Protection Officer: to be confirmed by the City Government",
+      "dpoNote": "Pinananatili ang portal na ito ng mga volunteer na hindi empleyado ng lungsod. Ilalathala namin ang pangalan at opisina ng opisyal kapag nakumpirma na ito ng Pamahalaang Lungsod. Hanggang doon, ang mga tanong tungkol sa kung paano hinahawakan ng lungsod mismo ang iyong datos ay para sa Office of the City Mayor, 2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100, 0919 081 3749, cabanatuan.lgu@gmail.com."
+    },
+    "rights": {
+      "title": "Ang iyong mga karapatan at paano gamitin ang mga ito",
+      "body1": "Sa ilalim ng Seksyon 16 ng RA 10173, may karapatan kang maipaalam sa iyo, ma-access at maitama ang datos tungkol sa iyo, tumutol o magpa-block ng pagpoproseso, at mabayaran para sa pinsala. Dahil walang iniimbak ang portal na ito na personal na datos tungkol sa mga bisita, karaniwang wala nang dapat i-access o itama.",
+      "body2": "Para burahin ang dalawang setting na iniimbak ng site na ito, burahin ang datos ng site sa setting ng iyong browser; ituturing ka na lang ng portal bilang bagong bisita. Kung may pahina sa portal na ito na naglalathala ng impormasyon tungkol sa iyo na sa tingin mo ay hindi dapat naroon, mag-email sa mga volunteer at sabihin ang address ng pahina at kung ano ang dapat baguhin. Maaari ka ring maghain ng alalahanin sa National Privacy Commission sa privacy.gov.ph."
+    },
+    "contact": {
+      "title": "Maabot ang mga volunteer ng portal",
+      "body": "Ang mga tanong tungkol sa paunawang ito, o sa kung paano hinahawakan ng portal ang datos, ay para sa volunteer team sa pamamagitan ng email. Para sa anumang tungkol sa sariling talaan ng Pamahalaang Lungsod, gamitin ang detalye ng opisina sa itaas o ang contact page.",
+      "emailLabel": "Mag-email sa mga volunteer tungkol sa privacy",
+      "emailSubject": "Tanong sa privacy tungkol sa portal ng {{city}}",
+      "responseTime": "Sumasagot ang mga volunteer sa loob ng 2–3 araw ng trabaho. Para sa urgent o opisyal na usapin, makipag-ugnayan na lang direkta sa pamahalaang lungsod."
+    },
+    "officialNote": {
+      "title": "Hindi ang opisyal na website ng lungsod",
+      "body": "Ang Better Cabanatuan ay portal na pinapatakbo ng komunidad. Hindi ito nagsasalita para sa pamahalaan ng {{city}}, at may sarili nang paunawa sa privacy ang website at mga opisina ng lungsod. Nasa contact page ang mga address at numero ng telepono ng opisina."
     }
   },
   "emptyState": {
@@ -561,5 +699,9 @@
   },
   "departments": {
     "viewDetails": "Tingnan ang detalye"
+  },
+  "documentPage": {
+    "complaintPrompt": "May problema sa serbisyong ito?",
+    "complaintLink": "Paano maghain ng reklamo"
   }
 }

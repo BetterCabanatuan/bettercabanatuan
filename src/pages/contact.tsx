@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Trans, useTranslation } from 'react-i18next';
 import { Heading } from '../components/ui/Heading';
 import { Text } from '../components/ui/Text';
@@ -15,6 +16,7 @@ import {
   Facebook,
   Globe,
   Crown,
+  FileText,
   MessageSquare,
 } from 'lucide-react';
 import {
@@ -35,8 +37,193 @@ import SectionJumpNav from '../components/ui/SectionJumpNav';
 import ResponsiveDisclosure from '../components/ui/ResponsiveDisclosure';
 import { departmentContactsData } from '../data/departmentContacts';
 
+/**
+ * One way a resident can reach a complaint or feedback channel. Phone numbers
+ * carry an `href` only when the charter's format dials as written from a
+ * mobile phone: 09xx mobile numbers and the 8888 hotline. ARTA's Metro Manila
+ * landline (8-478-5093) is printed without an area code in the charter, so it
+ * is shown as text rather than guessed into a `tel:` link.
+ */
+type ReachLine =
+  | { kind: 'place'; value: string }
+  | { kind: 'form'; value: string }
+  | { kind: 'sms'; value: string; href: string }
+  | { kind: 'tel'; value: string; href?: string }
+  | { kind: 'email'; value: string };
+
+interface ComplaintChannel {
+  id: string;
+  title: string;
+  audience: string;
+  reach: ReachLine[];
+}
+
+const reachIcon = {
+  place: MapPin,
+  form: FileText,
+  sms: MessageSquare,
+  tel: Phone,
+  email: Mail,
+} as const;
+
+const reachLinkClass =
+  'inline-flex items-start gap-3 min-h-[44px] text-gray-700 hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md transition-[transform,color] duration-200 active:scale-[0.96] motion-reduce:active:scale-100 break-all';
+
+function ReachLineItem({ line }: { line: ReachLine }) {
+  const Icon = reachIcon[line.kind];
+  const icon = (
+    <Icon
+      className="h-5 w-5 text-primary-600 shrink-0 mt-0.5"
+      aria-hidden="true"
+    />
+  );
+
+  if (line.kind === 'email') {
+    return (
+      <a href={`mailto:${line.value}`} className={reachLinkClass}>
+        {icon}
+        <span>{line.value}</span>
+      </a>
+    );
+  }
+  if (line.kind === 'sms' || (line.kind === 'tel' && line.href)) {
+    return (
+      <a href={line.href} className={reachLinkClass}>
+        {icon}
+        <span>{line.value}</span>
+      </a>
+    );
+  }
+  return (
+    <span className="inline-flex items-start gap-3 text-gray-700">
+      {icon}
+      <span>{line.value}</span>
+    </span>
+  );
+}
+
+/**
+ * Scrolls to the section named by the URL hash. `ScrollToTop` resets the
+ * window to (0, 0) on every pathname change and ignores the hash, so a link to
+ * `/contact#complaints` from a service page would otherwise land at the top.
+ * Runs a frame later so it wins over that reset, then moves focus to the
+ * section so keyboard and screen-reader users arrive where sighted users do.
+ */
+function useScrollToHash(hash: string) {
+  useEffect(() => {
+    if (!hash) return;
+    const id = decodeURIComponent(hash.slice(1));
+    const frame = requestAnimationFrame(() => {
+      const target = document.getElementById(id);
+      if (!target) return;
+      target.scrollIntoView?.({ block: 'start' });
+      target.focus({ preventScroll: true });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [hash]);
+}
+
 export default function ContactPage() {
   const { t } = useTranslation('common');
+  const { hash } = useLocation();
+  useScrollToHash(hash);
+
+  /*
+   * Citizen's Charter 2022 (2nd Edition), "VI. Feedback and Complaints",
+   * pp. 340-341. The two PACD forms are separate rows because the charter
+   * documents them as separate flows: feedback and compliments are relayed to
+   * the office concerned, complaints go to the Office of the City Mayor.
+   * ARTA's remit is RA 11032 (https://lawphil.net/statutes/repacts/ra2018/ra_11032_2018.html);
+   * the 8888 hotline is EO 6 s. 2016 (https://lawphil.net/executive/execord/eo2016/eo_6_2016.html).
+   */
+  const complaintChannels: ComplaintChannel[] = [
+    {
+      id: 'feedbackForm',
+      title: t('contact.complaints.channels.feedbackForm.title'),
+      audience: t('contact.complaints.channels.feedbackForm.audience'),
+      reach: [
+        {
+          kind: 'form',
+          value: t('contact.complaints.channels.feedbackForm.reach'),
+        },
+      ],
+    },
+    {
+      id: 'complaintForm',
+      title: t('contact.complaints.channels.complaintForm.title'),
+      audience: t('contact.complaints.channels.complaintForm.audience'),
+      reach: [
+        {
+          kind: 'form',
+          value: t('contact.complaints.channels.complaintForm.reach'),
+        },
+      ],
+    },
+    {
+      id: 'textLine',
+      title: t('contact.complaints.channels.textLine.title'),
+      audience: t('contact.complaints.channels.textLine.audience'),
+      reach: [
+        {
+          kind: 'sms',
+          value: `${t('contact.complaints.textPrefix')} 0917 813 3247`,
+          href: `sms:${formatPhoneForTel('0917 813 3247')}`,
+        },
+      ],
+    },
+    {
+      id: 'mayorsOffice',
+      title: t('contact.complaints.channels.mayorsOffice.title'),
+      audience: t('contact.complaints.channels.mayorsOffice.audience'),
+      reach: [
+        {
+          kind: 'tel',
+          value: '0919 081 3749',
+          href: `tel:${formatPhoneForTel('0919 081 3749')}`,
+        },
+        { kind: 'email', value: 'cabanatuan.lgu@gmail.com' },
+        {
+          kind: 'place',
+          value: t('contact.complaints.channels.mayorsOffice.location'),
+        },
+      ],
+    },
+    {
+      id: 'arta',
+      title: t('contact.complaints.channels.arta.title'),
+      audience: t('contact.complaints.channels.arta.audience'),
+      reach: [
+        { kind: 'email', value: 'complaints@arta.gov.ph' },
+        { kind: 'tel', value: '8-478-5093' },
+      ],
+    },
+    {
+      id: 'pcc',
+      title: t('contact.complaints.channels.pcc.title'),
+      audience: t('contact.complaints.channels.pcc.audience'),
+      reach: [
+        { kind: 'email', value: 'pcc@malacanang.gov.ph' },
+        { kind: 'tel', value: '8888', href: 'tel:8888' },
+      ],
+    },
+    {
+      id: 'ccb',
+      title: t('contact.complaints.channels.ccb.title'),
+      audience: t('contact.complaints.channels.ccb.audience'),
+      reach: [
+        { kind: 'email', value: 'email@contactcenterngbayan.gov.ph' },
+        {
+          kind: 'tel',
+          value: '0908 881 6565',
+          href: `tel:${formatPhoneForTel('0908 881 6565')}`,
+        },
+      ],
+    },
+  ];
+
+  const afterFilingSteps = t('contact.complaints.afterFiling.steps', {
+    returnObjects: true,
+  }) as string[];
 
   const contactChannels = [
     {
@@ -129,6 +316,7 @@ export default function ContactPage() {
             { id: 'emergency-hotlines', label: 'Emergency hotlines' },
             { id: 'department-contacts', label: 'Department numbers' },
             { id: 'contact-offices', label: 'Contact channels' },
+            { id: 'complaints', label: t('contact.complaints.navLabel') },
             { id: 'hospitals', label: 'Hospitals' },
             { id: 'connect-online', label: 'Connect online' },
             { id: 'find-office', label: 'Find an office' },
@@ -294,6 +482,95 @@ export default function ContactPage() {
             </CardContent>
           </Card>
         </div>
+
+        <section
+          id="complaints"
+          aria-labelledby="complaints-heading"
+          tabIndex={-1}
+          className="mb-12 scroll-mt-28 focus:outline-none"
+        >
+          <Heading
+            id="complaints-heading"
+            level={3}
+            className="mb-2 text-balance"
+          >
+            {t('contact.complaints.title')}
+          </Heading>
+          <Text className="text-gray-600 mb-6 text-pretty max-w-2xl">
+            {t('contact.complaints.intro')}
+          </Text>
+          <Card className="overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.06]">
+            <CardContent className="p-0">
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[640px]">
+                  <caption className="sr-only">
+                    {t('contact.complaints.tableCaption')}
+                  </caption>
+                  <thead>
+                    <tr className="bg-gray-50 border-b border-gray-200">
+                      <th
+                        scope="col"
+                        className="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wide text-gray-500"
+                      >
+                        {t('contact.complaints.columns.channel')}
+                      </th>
+                      <th
+                        scope="col"
+                        className="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wide text-gray-500"
+                      >
+                        {t('contact.complaints.columns.audience')}
+                      </th>
+                      <th
+                        scope="col"
+                        className="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wide text-gray-500"
+                      >
+                        {t('contact.complaints.columns.reach')}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {complaintChannels.map(channel => (
+                      <tr
+                        key={channel.id}
+                        className="border-b border-gray-100 last:border-0 align-top"
+                      >
+                        <th
+                          scope="row"
+                          className="py-4 px-4 text-left text-sm font-semibold text-gray-900"
+                        >
+                          {channel.title}
+                        </th>
+                        <td className="py-4 px-4 text-sm text-gray-700 text-pretty">
+                          {channel.audience}
+                        </td>
+                        <td className="py-4 px-4 text-sm text-gray-700">
+                          <ul className="space-y-1">
+                            {channel.reach.map(line => (
+                              <li key={`${line.kind}-${line.value}`}>
+                                <ReachLineItem line={line} />
+                              </li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </CardContent>
+          </Card>
+          <Heading level={4} className="mt-8 mb-3 text-base md:text-lg">
+            {t('contact.complaints.afterFiling.title')}
+          </Heading>
+          <ol className="list-decimal pl-5 space-y-2 text-sm text-gray-700 max-w-3xl text-pretty">
+            {afterFilingSteps.map(step => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+          <Text className="text-xs text-gray-500 mt-6 mb-0 text-pretty">
+            {t('contact.complaints.source')}
+          </Text>
+        </section>
 
         <div>
           {hospitalsHotlines.length > 0 && (
