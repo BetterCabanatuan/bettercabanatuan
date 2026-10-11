@@ -2,10 +2,22 @@
 # This file contains all the pages/services available under the Environment category
 
 pages:
+  - name: 'Get a City Environmental Certificate or Permit to Operate'
+    slug: 'get-a-city-environment-certificate-or-permit-to-operate'
+    description: 'Checklist, fees by type of establishment, steps and processing times for the CEC and CEPO from the Cabanatuan City Environment and Natural Resources Office.'
+
+  - name: 'Get a hauling pass'
+    slug: 'get-a-hauling-pass'
+    description: 'Requirements, fee and steps for a City Hauling Pass for sand and gravel trucks, and the Mayor’s Clearance that quarry operators need.'
+
+  - name: 'Get a tree-cutting clearance'
+    slug: 'get-a-tree-cutting-clearance'
+    description: 'Requirements, fee, seedling donation and steps for a clearance to cut a tree on your own property.'
+
+  - name: 'File an environmental complaint'
+    slug: 'file-an-environmental-complaint'
+    description: 'How to file a complaint through the Office of the City Mayor, what CCENRO does after the inspection, and the fines or community service a violator faces.'
+
   - name: 'Join clean-up drives and tree planting activities'
     slug: 'join-clean-up-drives-and-tree-planting-activities'
-    description: 'Information about participating in community clean-up drives and tree planting activities.'
-
-  - name: 'Report illegal logging, quarrying, or fishing'
-    slug: 'report-illegal-logging-quarrying-or-fishing'
-    description: 'How to report illegal environmental activities like logging, quarrying, or illegal fishing.'
+    description: 'Who to contact at the Cabanatuan City Environment and Natural Resources Office about upcoming clean-up drives and tree planting.'
