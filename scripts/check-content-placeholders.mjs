@@ -119,9 +119,16 @@ function collectMarkdown(dir) {
   return collectFiles(dir, ['.md']);
 }
 
-/** Keys defined in a page's companion `<slug>.json`, or `null` if it has none. */
+/**
+ * Keys defined in a page's companion `<slug>.json`, or `null` if it has none.
+ *
+ * A translated page is `<slug>.<lang>.md` (`renew-a-permit.fil.md`) and shares
+ * the English page's `<slug>.json`, so a fee is stated once for every
+ * language. The optional 2-3 letter segment is stripped here; keep it in step
+ * with `contentLanguage()` in src/lib/markdownLoader.ts.
+ */
 function companionKeys(mdPath) {
-  const jsonPath = mdPath.replace(/\.md$/, '.json');
+  const jsonPath = mdPath.replace(/(\.[a-z]{2,3})?\.md$/, '.json');
   if (!existsSync(jsonPath)) return null;
   try {
     return new Set(Object.keys(JSON.parse(readFileSync(jsonPath, 'utf8'))));

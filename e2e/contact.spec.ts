@@ -67,7 +67,9 @@ test.describe('Contact page', () => {
     await page.goto('/contact#department-contacts');
     await page.waitForLoadState('networkidle');
 
-    const row = page.getByRole('row').filter({ hasText: 'City Legal Office' });
+    const row = page
+      .getByRole('row')
+      .filter({ hasText: 'Office for City Legal Affairs' });
 
     await expect(row).toBeVisible();
     await expect(

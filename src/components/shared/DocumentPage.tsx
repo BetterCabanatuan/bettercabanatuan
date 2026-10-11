@@ -4,8 +4,9 @@ import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
 import NotFoundGuard from './NotFoundGuard';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import {
@@ -38,6 +39,8 @@ export default function DocumentPage({
   theme: initialTheme = 'default',
   categoryType,
 }: DocumentPageProps) {
+  const { t, i18n } = useTranslation('common');
+  const lang = i18n.language;
   const { documentSlugId, categoryId } = useParams();
   const [markdownContent, setMarkdownContent] =
     useState<MarkdownContent | null>(null);
@@ -60,6 +63,14 @@ export default function DocumentPage({
       return;
     }
 
+    /*
+     * `lang` is a dependency so switching the UI language reloads the page
+     * and picks up `<slug>.<lang>.md` when one exists. That means two loads
+     * for the same slug can be in flight at once; the flag stops the slower,
+     * stale one from overwriting the newer result after it lands.
+     */
+    let cancelled = false;
+
     const loadContent = async () => {
       try {
         setLoading(true);
@@ -75,6 +86,7 @@ export default function DocumentPage({
 
         if (isNestedCategory(documentSlugId)) {
           const index = await getCategorySubcategories(documentSlugId);
+          if (cancelled) return;
           setNestedIndex(index);
           setBreadcrumbs([
             { label: 'Home', href: '/' },
@@ -94,8 +106,10 @@ export default function DocumentPage({
         const content = await loadMarkdownContent(
           documentSlugId,
           categoryId,
-          categoryType
+          categoryType,
+          lang
         );
+        if (cancelled) return;
         setMarkdownContent(content);
 
         setBreadcrumbs([
@@ -111,16 +125,20 @@ export default function DocumentPage({
           },
         ]);
       } catch (err) {
+        if (cancelled) return;
         setError(
           err instanceof Error ? err.message : 'Failed to load document'
         );
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     };
 
     loadContent();
-  }, [documentSlugId, categoryId, categoryType]);
+    return () => {
+      cancelled = true;
+    };
+  }, [documentSlugId, categoryId, categoryType, lang]);
 
   const canonicalPath =
     categoryType === 'government'
@@ -285,6 +303,22 @@ export default function DocumentPage({
             </ReactMarkdown>
           </CardHeader>
         </Card>
+        {categoryType === 'service' && (
+          /*
+           * RA 11032 s.6(g) requires the complaint procedure to be published
+           * alongside each charter service. The Contact page carries the
+           * charter's channels (pp. 340-341); every service page points there.
+           */
+          <Text className="text-sm text-gray-600 mb-0 text-pretty">
+            {t('documentPage.complaintPrompt')}{' '}
+            <Link
+              to="/contact#complaints"
+              className="inline-flex items-center min-h-[44px] font-medium text-primary-600 hover:text-primary-700 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 rounded-md"
+            >
+              {t('documentPage.complaintLink')}
+            </Link>
+          </Text>
+        )}
       </Section>
     </>
   );
