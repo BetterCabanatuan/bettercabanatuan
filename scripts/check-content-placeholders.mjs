@@ -21,6 +21,13 @@
  * two words, uppercase, no lowercase prose. Markdown link text is excluded
  * structurally (inline, reference, and shortcut forms), so ordinary links like
  * `[SSS](https://sss.gov.ph/)` are not false positives.
+ *
+ * A third gate, `BANNED_TERMS`, catches content inherited from the Lapu-Lapu
+ * City template this site was converted from. Nine service pages shipped with
+ * Cebu hospitals, barangays, area codes and news links under the Cabanatuan
+ * name (see docs/superpowers/specs/2026-10-11-charter-content-integration-slices.md,
+ * slice A2). This gate scans `content/**\/*.md` and `src/data/*.{yaml,ts}` and
+ * fails on any match, so that content cannot come back.
  */
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
@@ -47,6 +54,41 @@ const C = {
 const TOKEN = /\{([A-Z0-9_]+)\}/g;
 
 /**
+ * Terms that identify Lapu-Lapu City / Cebu template residue, or artefacts of
+ * the tool that generated it. Each entry is a regex source matched
+ * case-insensitively; short place names carry word boundaries so ordinary
+ * words are not caught. Add a term here whenever an audit finds a new one.
+ */
+const BANNED_TERMS = [
+  'lapu',
+  'mactan',
+  'cebu',
+  '\\bopon\\b',
+  '\\bbasak\\b',
+  'carajay',
+  '\\bibo\\b',
+  'marigondon',
+  '\\bpusok\\b',
+  'gun-ob',
+  '\\bpajo\\b',
+  'maribago',
+  'mandaue',
+  'maifipp',
+  'cebuano',
+  'bisaya',
+  '\\(032\\)', // Cebu landline area code
+  'king-chan',
+  '\\bahong\\b',
+  '\\bllcc\\b',
+  'depedllc',
+  'llctourism',
+  'oaicite', // ChatGPT citation marker
+  'contentReference',
+].map(src => new RegExp(src, 'i'));
+
+const dataDir = join(root, 'src', 'data');
+
+/**
  * A bracketed run is a placeholder when it is two or more uppercase words.
  * `[PHONE NUMBER]` qualifies; `[SSS]` does not (one word, and a real link);
  * `[read the guide]` does not (lowercase prose).
@@ -62,14 +104,19 @@ function looksLikePlaceholder(text) {
 
 /* ------------------------------------------------------------------ walking */
 
-function collectMarkdown(dir) {
+function collectFiles(dir, extensions) {
   const out = [];
   for (const entry of readdirSync(dir)) {
     const full = join(dir, entry);
-    if (statSync(full).isDirectory()) out.push(...collectMarkdown(full));
-    else if (entry.endsWith('.md')) out.push(full);
+    if (statSync(full).isDirectory())
+      out.push(...collectFiles(full, extensions));
+    else if (extensions.some(ext => entry.endsWith(ext))) out.push(full);
   }
   return out;
+}
+
+function collectMarkdown(dir) {
+  return collectFiles(dir, ['.md']);
 }
 
 /** Keys defined in a page's companion `<slug>.json`, or `null` if it has none. */
@@ -158,6 +205,31 @@ for (const mdPath of collectMarkdown(contentDir)) {
   });
 }
 
+// --- banned terms (template residue) across content and data
+for (const file of [
+  ...collectMarkdown(contentDir),
+  ...collectFiles(dataDir, ['.yaml', '.yml', '.ts']).filter(
+    f => !f.includes(`${join('src', 'data', '__tests__')}`)
+  ),
+]) {
+  const rel = relative(root, file);
+  readFileSync(file, 'utf8')
+    .split('\n')
+    .forEach((line, i) => {
+      for (const re of BANNED_TERMS) {
+        const m = line.match(re);
+        if (!m) continue;
+        findings.push({
+          file: rel,
+          line: i + 1,
+          kind: 'banned term',
+          detail: `"${m[0]}" — Lapu-Lapu City template residue; replace with a sourced Cabanatuan fact or remove`,
+        });
+        break;
+      }
+    });
+}
+
 /* ------------------------------------------------------------------ report */
 
 console.log(`\n${C.bold}CONTENT PLACEHOLDER AUDIT${C.reset}`);
@@ -167,7 +239,7 @@ console.log(
 
 if (findings.length === 0) {
   console.log(
-    `${C.green}✓${C.reset} no unresolved placeholders in ${basename(contentDir)}/\n`
+    `${C.green}✓${C.reset} no unresolved placeholders or banned terms in ${basename(contentDir)}/ and src/data/\n`
   );
   process.exit(reportOnly ? 0 : 0);
 }
@@ -179,11 +251,12 @@ for (const f of findings) {
   console.log(`  ${f.detail}`);
 }
 console.log(
-  `\n${C.red}${findings.length} unresolved placeholder(s)${C.reset} in ` +
+  `\n${C.red}${findings.length} finding(s)${C.reset} in ` +
     `${C.bold}${new Set(findings.map(f => f.file)).size}${C.reset} file(s).\n` +
     `${C.dim}Fix: replace with {TOKEN} and add the value to the page's companion .json,` +
     `\n     or delete the sentence. Bracketed placeholders have no resolver — they` +
-    `\n     reach the page as literal text.${C.reset}\n`
+    `\n     reach the page as literal text. Banned terms are Lapu-Lapu City template` +
+    `\n     residue; see docs/superpowers/specs/2026-10-11-charter-content-integration-slices.md.${C.reset}\n`
 );
 
 process.exit(reportOnly ? 0 : 1);
