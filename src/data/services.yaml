@@ -66,3 +66,9 @@ categories:
     slug: 'housing-land-use'
     description: 'How to apply for housing projects, what zoning and building permits are needed, and where relocation sites are available.'
     icon: 'Home'
+
+  # Taxes, Certificates and Civil Registry
+  - category: 'Taxes, Certificates and Civil Registry'
+    slug: 'taxes-and-certificates'
+    description: 'How to pay real property tax, get a cedula or tax declaration copy, and request birth, marriage and death certificates or a marriage license from the city.'
+    icon: 'Receipt'
