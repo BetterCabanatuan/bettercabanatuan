@@ -2,7 +2,7 @@
   "site_name": "Portal ng Lungsod ng Cabanatuan",
   "site_description": "Ang inyong one-stop portal para sa lahat ng serbisyo at impormasyon ng Pamahalaang Lungsod ng Cabanatuan. Ma-access ang mga serbisyo, balita, at impormasyon sa isang lugar.",
   "common": {
-    "home": "Home",
+    "home": "Unang Pahina",
     "about": "Tungkol",
     "contact": "Makipag-ugnayan",
     "government": "Pamahalaan",
@@ -18,7 +18,7 @@
     "cityHall": "City Hall: {{address}}"
   },
   "hero": {
-    "title": "Welcome to BetterGov.ph",
+    "title": "Maligayang pagdating sa BetterGov.ph",
     "eyebrow": "Mas Mahusay na Cabanatuan",
     "badge": "Portal ng komunidad na pinapatakbo ng volunteers",
     "headlineAccent": "Malinaw na serbisyo ng pamahalaan.",
@@ -28,8 +28,8 @@
     "startHere": "Magsimula rito",
     "popularTopics": "Popular ngayon",
     "nationalId": "National ID",
-    "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Business Registration",
+    "birthCertificate": "Sertipiko ng Kapanganakan",
+    "businessRegistration": "Pagrerehistro ng Negosyo",
     "intent": {
       "findService": {
         "title": "Maghanap ng Serbisyo",
@@ -95,7 +95,7 @@
     }
   },
   "forex": {
-    "title": "Foreign Exchange Rates"
+    "title": "Halaga ng Palitan ng Dayuhang Pera"
   },
   "news": {
     "title": "Mga anunsyo mula sa pamahalaang lungsod",
@@ -131,8 +131,8 @@
     "government": "Pamahalaan",
     "services": "Mga Serbisyo",
     "statistics": "Estadistika",
-    "transparency": "Transparency",
-    "hotlines": "Hotlines",
+    "transparency": "Transparensiya",
+    "hotlines": "Mga Hotline",
     "holidays": "Holiday",
     "about": "Tungkol",
     "contact": "Makipag-ugnayan",
@@ -141,10 +141,10 @@
     "aboutBetterGov": "Tungkol sa BetterGov",
     "officialGov": "Opisyal na Gov.ph",
     "openMainMenu": "Buksan ang main menu",
-    "sitemap": "Sitemap"
+    "sitemap": "Mapa ng Site"
   },
   "transparency": {
-    "title": "Transparency",
+    "title": "Transparensiya",
     "description": "I-access ang mga FOI release, pampublikong dokumento, at accountability resources para sa Cabanatuan City.",
     "eyebrow": "Bukas na Pamahalaan",
     "intro": "Mag-browse ng pampublikong dokumento, ulat, at open-government resources para sa {{city}}. Ang mga link sa portal na ito ay dito bubukas maliban kung may markang external.",
@@ -225,7 +225,7 @@
     "joinMovement": "Sumali sa Kilusan",
     "or": "o",
     "joinDiscord": "Sumali sa Discord",
-    "features": "🚀 Infrastructure • 💡 Mentorship • 🤝 Community • 🏢 Office Space"
+    "features": "🚀 Imprastraktura • 💡 Paggabay • 🤝 Komunidad • 🏢 Espasyo ng Opisina"
   },
   "cityStats": {
     "badge": "Cabanatuan City sa Isang Sulyap",
@@ -253,15 +253,15 @@
   },
   "hotlines": {
     "banner": {
-      "ariaLabel": "Emergency hotlines",
-      "label": "Emergency Hotlines",
-      "labelShort": "Hotlines"
+      "ariaLabel": "Mga emergency hotline",
+      "label": "Mga Emergency Hotline",
+      "labelShort": "Mga Hotline"
     },
     "page": {
-      "seoTitle": "Hotlines",
+      "seoTitle": "Mga Hotline",
       "seoDescription": "Mga emergency hotline at contact number ng departamento ng {{city}} — PNP, BFP, CDRRMO, at mga linya ng opisina ng lungsod.",
       "eyebrow": "Directory ng Kontak",
-      "title": "Hotlines",
+      "title": "Mga Hotline",
       "description": "Mga emergency at non-emergency na contact number ng {{city}} — pulis, bumbero, rescue, at mga linya ng departamento ng lungsod. I-tap ang numero para tumawag nang direkta.",
       "moreHelp": {
         "title": "Hinahanap ang city hall?",
@@ -271,7 +271,7 @@
     },
     "section": {
       "eyebrow": "24/7 na Tugon",
-      "title": "Emergency Hotlines",
+      "title": "Mga Emergency Hotline",
       "description": "Para sa krimen, sunog, rescue operation, at urgent na usapin ng komunidad. I-tap ang numero para tumawag direkta mula sa telepono ninyo.",
       "nationalLink": "Pambansang hotlines",
       "multipleNumbers": "{{count}} contact number",
@@ -307,7 +307,7 @@
         "title": "Opisina ng Punong Lungsod"
       },
       "communityPortal": {
-        "title": "Community Portal",
+        "title": "Portal ng Komunidad",
         "description": "I-report ang outdated na impormasyon, mag-suggest ng pagpapabuti, o mag-volunteer sa Better Cabanatuan.",
         "linkLabel": "Mag-contribute sa GitHub"
       }
@@ -559,7 +559,7 @@
     }
   },
   "emptyState": {
-    "badge": "Coming soon",
+    "badge": "Malapit na",
     "noContentBadge": "Wala pang nilalaman",
     "comingSoonTitle": "Inihahanda pa ang seksyong ito",
     "comingSoonDescription": "Tinutugunan pa namin ang seksyong ito. Samantala, subukan ang mga link sa ibaba o makipag-ugnayan sa pamahalaang lungsod para sa impormasyong kailangan ninyo ngayon.",
@@ -586,7 +586,7 @@
       "locationMeta": "{{type}} · {{area}} km² lawak ng lupain",
       "stats": {
         "population": "Populasyon",
-        "populationNote": "{{year}} Census ({{program}})",
+        "populationNote": "Census ng {{year}} ({{program}})",
         "barangays": "Mga Barangay",
         "barangaysNote": "{{urban}} urban · {{rural}} rural",
         "serviceAreas": "Service Area",
@@ -685,12 +685,12 @@
     "body": "Hinahanap namin ang mga passionadong <1>{{demonym}}</1> na nais maglingkod sa kanilang komunidad sa pamamagitan ng kanilang sining.",
     "demonym": "Cabanatueño",
     "roles": {
-      "softwareDev": "Software Dev",
-      "uiUxDesign": "UI/UX Design",
-      "graphicDesign": "Graphic Design",
-      "contentCreation": "Content Creation",
-      "digitalMarketing": "Digital Marketing",
-      "research": "Research"
+      "softwareDev": "Pagbuo ng Software",
+      "uiUxDesign": "Disenyo ng UI/UX",
+      "graphicDesign": "Disenyong Grapiko",
+      "contentCreation": "Paglikha ng Nilalaman",
+      "digitalMarketing": "Digital na Marketing",
+      "research": "Pananaliksik"
     },
     "cta": "Gusto Ko Sumali",
     "dismiss": "Baka Mamaya",
