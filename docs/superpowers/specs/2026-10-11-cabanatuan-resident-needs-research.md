@@ -126,7 +126,7 @@ M.S. Garcia) and Sapang Buhay Creek works
   ([Philstar](https://www.philstar.com/headlines/2015/03/06/1430516/headlines)).
 - **Earthquake.** PHIVOLCS leadership places the Philippine Fault's Gabaldon
   segment in Nueva Ecija ([Inquirer](https://newsinfo.inquirer.net/915393/dont-just-prepare-for-big-one-phivolcs-chief-says/amp));
-  Gabaldon is roughly 15 km east of the city. CDRRMO's 2023 FOI request for a
+  Gabaldon is about 40 km east of the city ([Philatlas](https://philatlas.com/luzon/r03/nueva-ecija/gabaldon.html)). CDRRMO's 2023 FOI request for a
   city ground-rupture/liquefaction map was redirected to PHIVOLCS HazardHunter
   ([foi.gov.ph](https://foi.gov.ph/requests/request-for-ground-rupture-active-fault-and-liquefaction-hazard-map-for-cabanatuan-city)).
   The 1990 Luzon earthquake and Typhoons Santi (2013), Lando (2015) and Karding
@@ -252,7 +252,8 @@ collection service, and a Market stall-award service.
   ([batasnatin](https://batasnatin.com/laws/mc-2019-177)).
 - Senior citizen ID: OSCA "in all cities and municipalities" issues the ID and
   purchase booklet free ([RA 9994 s.6 and IRR](https://lawphil.net/statutes/repacts/ra2010/ra_9994_2010.html)).
-- PWD ID: issued by the city/municipal mayor or barangay captain; NCDA AO 001
+- PWD ID: issued and signed by the city/municipal mayor, processed through the
+  C/MSWDO or PDAO (barangay captains are not issuing officials); NCDA AO 001
   s.2021 ([NCDA](https://ncda.gov.ph/?p=11230)).
 - Solo parent ID: RA 11861 (2022), issued through the C/MSWDO, valid one year
   ([batasnatin explainer](https://batasnatin.com/laws/solo-parents-welfare-act-ra-11861);

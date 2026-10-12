@@ -1,0 +1,10 @@
+{
+  "FEE_POW": "None",
+  "TIME_POW_TOTAL": "1 day 3 hours 10 minutes",
+  "TIME_POW_RECEIVE": "10 minutes",
+  "TIME_POW_INDORSE": "5 minutes",
+  "TIME_POW_INSPECT": "1 hour",
+  "TIME_POW_PLANS": "4 hours (for a simple plan)",
+  "TIME_POW_PROGRAM": "6 hours",
+  "TIME_POW_RELEASE": "5 minutes"
+}

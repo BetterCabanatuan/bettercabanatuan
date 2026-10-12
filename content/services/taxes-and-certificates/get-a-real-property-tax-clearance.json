@@ -1,0 +1,11 @@
+{
+  "FEE_RPT_CLEARANCE": "₱50",
+  "TIME_RPT_CLEARANCE_TOTAL": "21 minutes",
+  "TIME_RPT_CLEARANCE_VERIFY": "5 minutes",
+  "TIME_RPT_CLEARANCE_ORDER": "2 minutes",
+  "TIME_RPT_CLEARANCE_PAY": "5 minutes",
+  "TIME_RPT_CLEARANCE_OR": "1 minute",
+  "TIME_RPT_CLEARANCE_PREPARE": "5 minutes",
+  "TIME_RPT_CLEARANCE_SIGN": "2 minutes",
+  "TIME_RPT_CLEARANCE_RELEASE": "1 minute"
+}

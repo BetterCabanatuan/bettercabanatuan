@@ -1,0 +1,11 @@
+{
+  "FEE_LISTAHANAN": "free of charge",
+  "TIME_LISTAHANAN_TOTAL": "31 minutes",
+  "TIME_LISTAHANAN_CHECK": "5 minutes",
+  "TIME_LISTAHANAN_VALIDATE": "10 minutes",
+  "TIME_LISTAHANAN_LOGBOOK": "3 minutes",
+  "TIME_LISTAHANAN_PRINT": "2 minutes",
+  "TIME_LISTAHANAN_REVIEW": "5 minutes",
+  "TIME_LISTAHANAN_APPROVE": "3 minutes",
+  "TIME_LISTAHANAN_RELEASE": "3 minutes"
+}

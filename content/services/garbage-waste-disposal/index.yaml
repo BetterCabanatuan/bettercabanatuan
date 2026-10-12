@@ -4,16 +4,16 @@
 pages:
   - name: 'Check garbage collection schedules and request pickup'
     slug: 'check-garbage-collection-schedules-and-request-pickup'
-    description: 'Information about garbage collection schedules and how to request special garbage pickup services.'
+    description: 'Who collects which waste under RA 9003, where to get your barangay collection days, and how to ask about bulky-item pickup.'
 
   - name: 'Learn proper waste segregation and disposal methods'
     slug: 'learn-proper-waste-segregation-and-disposal-methods'
-    description: 'Guidelines for proper waste segregation and disposal methods in your area.'
+    description: 'The four waste categories RA 9003 requires you to separate, how to store them, and the barangay Materials Recovery Facility.'
 
   - name: 'Request special waste collection (hazardous materials, electronics)'
     slug: 'request-special-waste-collection-hazardous-materials-electronics'
-    description: 'How to request special collection services for hazardous materials and electronic waste.'
+    description: 'What counts as special waste under RA 9003 and which offices to ask about collection of batteries, paints, electronics and appliances.'
 
   - name: 'Report illegal dumping or waste management violations'
     slug: 'report-illegal-dumping-or-waste-management-violations'
-    description: 'How to report illegal dumping activities and waste management violations in your area.'
+    description: 'Acts prohibited under RA 9003, where to report them in Cabanatuan City, and the penalties the law sets.'

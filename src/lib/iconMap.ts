@@ -50,6 +50,7 @@ import {
   Users,
   Wallet,
   Wheat,
+  Receipt,
   Wrench,
 } from 'lucide-react';
 
@@ -112,6 +113,7 @@ export const ICON_MAP: Record<string, LucideIcon> = {
   Users,
   Wallet,
   Wheat,
+  Receipt,
   Wrench,
 };
 

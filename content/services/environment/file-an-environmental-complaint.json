@@ -1,0 +1,18 @@
+{
+  "FEE_COMPLAINT": "Free",
+  "TIME_COMPLAINT_TOTAL": "1 day, 5 hours and 5 minutes",
+  "TIME_SUBMIT": "2 minutes",
+  "TIME_RECEIVE": "3 minutes",
+  "TIME_INSPECTION": "1 day",
+  "TIME_FOLLOW_UP": "2 hours",
+  "TIME_CONFERENCE": "2 hours",
+  "TIME_RECOMMENDATION": "1 hour",
+  "FINE_FIRST_INDIVIDUAL": "₱500",
+  "FINE_FIRST_BUSINESS": "₱1,500",
+  "FINE_SECOND_INDIVIDUAL": "₱1,000",
+  "FINE_SECOND_BUSINESS": "₱3,000",
+  "FINE_THIRD": "₱5,000, or a recommendation to close the business",
+  "TIME_FINE_TOTAL": "9 minutes",
+  "TIME_COMMUNITY_SERVICE_MAX": "3 days maximum",
+  "TIME_COMMUNITY_SERVICE_TOTAL": "3 days and 23 minutes"
+}

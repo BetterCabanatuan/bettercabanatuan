@@ -1,0 +1,12 @@
+{
+  "FEE_ROADS": "None",
+  "TIME_ROADS_TOTAL": "1 day 15 minutes",
+  "TIME_ROADS_RECEIVE": "10 minutes",
+  "TIME_ROADS_INDORSE": "5 minutes",
+  "TIME_ROADS_WORK": "1 day or more, depending on the area or volume to be cleared",
+  "FEE_ELECTRICAL": "None",
+  "TIME_ELECTRICAL_TOTAL": "3 hours 15 minutes",
+  "TIME_ELECTRICAL_RECEIVE": "10 minutes",
+  "TIME_ELECTRICAL_INDORSE": "5 minutes",
+  "TIME_ELECTRICAL_WORK": "3 hours, depending on the extent of the activity"
+}

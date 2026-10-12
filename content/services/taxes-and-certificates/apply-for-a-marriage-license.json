@@ -1,0 +1,13 @@
+{
+  "FEE_ML_APPLICATION": "₱150",
+  "FEE_ML_COUNSELLING": "₱60",
+  "FEE_ML_FAMILY_PLANNING": "₱80",
+  "FEE_ML_TOTAL": "₱290",
+  "TIME_ML_TOTAL": "35 minutes, excluding the 10-day posting of the notice",
+  "TIME_ML_POSTING": "10 days",
+  "TIME_ML_REVIEW": "10 minutes",
+  "TIME_ML_SCHEDULE": "10 minutes",
+  "TIME_ML_PAY": "10 minutes",
+  "TIME_ML_OATH": "5 minutes",
+  "VALIDITY_ML": "120 days"
+}

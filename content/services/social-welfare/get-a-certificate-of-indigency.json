@@ -1,0 +1,11 @@
+{
+  "FEE_INDIGENCY": "free of charge",
+  "TIME_INDIGENCY_TOTAL": "38 minutes",
+  "TIME_INDIGENCY_RECEIVE": "3 minutes",
+  "TIME_INDIGENCY_INTERVIEW": "10 minutes",
+  "TIME_INDIGENCY_PREPARE": "10 minutes",
+  "TIME_INDIGENCY_PRINT": "3 minutes",
+  "TIME_INDIGENCY_REVIEW": "5 minutes",
+  "TIME_INDIGENCY_APPROVE": "5 minutes",
+  "TIME_INDIGENCY_RELEASE": "2 minutes"
+}

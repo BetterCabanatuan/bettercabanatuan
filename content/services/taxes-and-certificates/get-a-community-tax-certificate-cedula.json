@@ -1,0 +1,12 @@
+{
+  "TIME_CTC_TOTAL": "11 minutes",
+  "TIME_CTC_COMPUTE": "5 minutes",
+  "TIME_CTC_PAY": "3 minutes",
+  "TIME_CTC_SIGN": "2 minutes",
+  "TIME_CTC_RELEASE": "1 minute",
+  "FEE_CTC_UNEMPLOYED": "₱5 basic + ₱25",
+  "FEE_CTC_EMPLOYED": "₱5 basic + ₱1 per ₱1,000 of annual declared income",
+  "FEE_CTC_CORP_NEW": "₱500 basic",
+  "FEE_CTC_CORP_RENEWAL": "(annual gross receipts ÷ ₱5,000) × 2, plus ₱500",
+  "PENALTY_CTC": "2% interest is imposed starting 1 March"
+}
