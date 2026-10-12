@@ -50,6 +50,7 @@ export const ROUTES = [
   { path: '/search', name: 'search' },
   { path: '/sitemap', name: 'sitemap' },
   { path: '/accessibility', name: 'accessibility' },
+  { path: '/privacy', name: 'privacy' },
   { path: '/404-does-not-exist', name: 'not-found' },
 ];
 

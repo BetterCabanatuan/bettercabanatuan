@@ -2,18 +2,38 @@
 # This file contains all the pages/services available under the Social Welfare category
 
 pages:
-  - name: 'Apply for senior citizen, solo parent, or PWD assistance'
-    slug: 'apply-for-senior-citizen-solo-parent-or-pwd-assistance'
-    description: 'Information about applying for assistance programs for senior citizens, solo parents, and persons with disabilities.'
+  - name: 'Get a Senior Citizen (OSCA) ID'
+    slug: 'get-a-senior-citizen-osca-id'
+    description: 'Residents aged 60 and above can get a free OSCA ID from the City Social Welfare and Development Office. Requirements, steps and processing time.'
 
-  - name: 'Receive relief goods or cash aid during disasters'
-    slug: 'receive-relief-goods-or-cash-aid-during-disasters'
-    description: 'How to access relief goods and cash assistance during natural disasters and emergencies.'
+  - name: 'Get a Solo Parent ID'
+    slug: 'get-a-solo-parent-id'
+    description: 'How solo parents get a free Solo Parent ID from the City Social Welfare and Development Office, starting with a barangay captain certification.'
+
+  - name: 'Get a Certificate of Indigency'
+    slug: 'get-a-certificate-of-indigency'
+    description: 'Students applying for scholarships or SPES can get a free Certificate of Indigency or Social Case Study Report from the CSWDO Child and Youth Development Division.'
+
+  - name: 'Get a 4Ps Listahanan certification'
+    slug: 'get-a-4ps-listahanan-certification'
+    description: 'Free certificate from the CSWDO stating whether you are a 4Ps beneficiary in the DSWD Listahanan II database.'
+
+  - name: 'Apply for a Solicitation Permit'
+    slug: 'apply-for-a-solicitation-permit'
+    description: 'Organizations raising funds in Cabanatuan City apply for a Solicitation Permit at the CSWDO and pay the fee at the City Treasurer.'
+
+  - name: 'Ask about PWD ID and medical or burial assistance'
+    slug: 'ask-about-pwd-id-and-medical-or-burial-assistance'
+    description: 'PWD ID and medical, burial and educational assistance are not in the published charter. CSWDO phone lines to call.'
+
+  - name: 'Apply for a job through PESO'
+    slug: 'apply-for-a-job-through-peso'
+    description: 'Register with the Public Employment Services Office for local or overseas job matching, SPES and referrals. Employers: how to hold a recruitment activity.'
 
   - name: 'Join livelihood or skills training programs'
     slug: 'join-livelihood-or-skills-training-programs'
-    description: 'Participate in livelihood and skills training programs offered by your local government.'
+    description: 'Request free livelihood or employable skills training for individuals, associations and groups from the City Livelihood and Cooperatives Development Office.'
 
-  - name: 'Get family and community welfare support'
-    slug: 'get-family-and-community-welfare-support'
-    description: 'Access family and community welfare support services from your local government.'
+  - name: 'Register a cooperative'
+    slug: 'register-a-cooperative'
+    description: 'Orientation, Pre-Registration and Pre-Membership Education Seminars, Certificate of Good Standing and trainings for cooperatives, from the CLCDO.'

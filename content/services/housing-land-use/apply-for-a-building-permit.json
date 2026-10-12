@@ -1,0 +1,11 @@
+{
+  "FEE_BUILDING_PERMIT": "Assessed by the office from the National Building Code fee table for residential, commercial and industrial structures",
+  "TIME_BUILDING_PERMIT_TOTAL": "3 hours and 10 minutes",
+  "TIME_BUILDING_PERMIT_WINDOW": "15 days",
+  "TIME_BP_RECEIVE": "5 minutes",
+  "TIME_BP_REVIEW": "20 minutes",
+  "TIME_BP_INSPECT": "30 minutes",
+  "TIME_BP_PAY": "2 hours",
+  "TIME_BP_RELEASE": "10 minutes",
+  "COST_LOGBOOK_THRESHOLD": "₱50,000.00"
+}

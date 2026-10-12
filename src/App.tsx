@@ -10,6 +10,7 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/contact';
 import HotlinesPage from './pages/hotlines';
 import AccessibilityPage from './pages/accessibility';
+import PrivacyPage from './pages/privacy';
 import StatisticsPage from './pages/statistics';
 import NewsPage from './pages/government/news/index';
 import NotFoundPage from './pages/NotFound';
@@ -123,6 +124,7 @@ function App() {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/hotlines" element={<HotlinesPage />} />
                 <Route path="/accessibility" element={<AccessibilityPage />} />
+                <Route path="/privacy" element={<PrivacyPage />} />
                 <Route path="/statistics" element={<StatisticsPage />} />
                 <Route path="/search" element={<SearchPage />} />
                 <Route path="/sitemap" element={<SitemapPage />} />

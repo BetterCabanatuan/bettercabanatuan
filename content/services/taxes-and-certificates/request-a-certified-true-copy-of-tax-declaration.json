@@ -1,0 +1,9 @@
+{
+  "FEE_CTC_TD": "₱50",
+  "TIME_CTC_TD_TOTAL": "19 minutes",
+  "TIME_CTC_TD_RECEIVE": "2 minutes",
+  "TIME_CTC_TD_PROCESS": "3 minutes per tax declaration",
+  "TIME_CTC_TD_OLD_RECORD": "10 minutes per tax declaration",
+  "TIME_CTC_TD_APPROVE": "2 minutes",
+  "TIME_CTC_TD_RELEASE": "2 minutes"
+}

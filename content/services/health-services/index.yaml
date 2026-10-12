@@ -2,22 +2,34 @@
 # This file contains all the pages/services available under the Health Services category
 
 pages:
-  - name: 'Get free check-ups, basic medicines, and vaccines'
+  - name: 'Get free check-ups, basic medicines and vaccines'
     slug: 'get-free-check-ups-basic-medicines-and-vaccines'
-    description: 'Access free medical check-ups, basic medicines, and vaccination services provided by your local government.'
+    description: 'Free medical consultation in person or by telemedicine at the City Health Office, medicines given after the check-up, free vaccines and the City Health Center for your barangay.'
 
   - name: 'Access maternal care and child immunization'
     slug: 'access-maternal-care-and-child-immunization'
-    description: 'Information about maternal health services and child immunization programs available in your area.'
+    description: 'Free vaccines for children up to 24 months and pregnant women, free family planning methods, and the prenatal clinic days at the city hospital.'
 
   - name: 'Go to the local hospital for treatment or confinement'
     slug: 'go-to-the-local-hospital-for-treatment-or-confinement'
-    description: 'Details about local hospital services, treatment options, and confinement procedures.'
+    description: 'MVG Cabanatuan City General Hospital clinic schedule, free OPD consultation, hemodialysis requirements and fees, and the 24/7 emergency ambulance line.'
 
-  - name: 'Join health programs (nutrition, dengue control, TB treatment)'
+  - name: 'Join health programs (TB treatment, dental care, animal bite treatment)'
     slug: 'join-health-programs-nutrition-dengue-control-tb-treatment'
-    description: 'Participate in various health programs including nutrition support, dengue control, and TB treatment initiatives.'
+    description: 'Free tuberculosis treatment, basic dental care and anti-rabies treatment at the City Health Office: who may avail, what to bring and how long it takes.'
 
-  - name: 'Health clinics, immunization, and health hotlines'
+  - name: 'Get a sanitary permit'
+    slug: 'get-a-sanitary-permit'
+    description: 'Sanitary Permit for food and non-food establishments and ambulant vendors from the City Health Office Sanitation Division: requirements, fee and processing time.'
+
+  - name: 'Get a health certificate'
+    slug: 'get-a-health-certificate'
+    description: 'Health Certificate (health card) for workers in food and non-food establishments, plus the Dental Certificate for job applicants: requirements, fees and processing times.'
+
+  - name: 'Get a medical certificate'
+    slug: 'get-a-medical-certificate'
+    description: 'Medical Certificate for government job applicants from the City Health Office, and medical or medico-legal certificates from the city hospital.'
+
+  - name: 'Health centers and hotlines'
     slug: 'health-clinics-immunization-and-hotlines'
-    description: 'Which free health services run every week, the current immunization drive, scheduled programs, and hotline numbers to confirm before you go.'
+    description: 'Phone numbers for the City Health Office, the City Health Centers by barangay, the city hospital and the 24/7 emergency ambulance line.'

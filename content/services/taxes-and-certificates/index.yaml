@@ -1,0 +1,43 @@
+# Taxes, Certificates and Civil Registry Category Pages
+# Pages under this category are written from the Citizen's Charter 2022 (2nd Edition).
+
+pages:
+  - name: 'Pay real property tax'
+    slug: 'pay-real-property-tax'
+    description: 'When real property tax is due, the discounts for paying early or on time, the penalty for paying late, and what to bring to the Office of the City Treasurer.'
+
+  - name: 'Get a real property tax clearance'
+    slug: 'get-a-real-property-tax-clearance'
+    description: 'Requirements, fee and steps for a tax clearance showing your real property tax is fully paid.'
+
+  - name: 'Get a Community Tax Certificate (cedula)'
+    slug: 'get-a-community-tax-certificate-cedula'
+    description: 'Who needs a cedula, how the fee is computed for individuals and corporations, and the steps at the Cash Receipts Division.'
+
+  - name: 'Request a certified true copy of a tax declaration'
+    slug: 'request-a-certified-true-copy-of-tax-declaration'
+    description: 'How to get a certified copy of your tax declaration from the Office of the City Assessor, with fee and processing time.'
+
+  - name: 'Transfer a tax declaration to a new owner'
+    slug: 'transfer-a-tax-declaration'
+    description: "Documents, transfer tax and steps to move a tax declaration into the new owner's name after a sale, donation, inheritance, subdivision or consolidation."
+
+  - name: 'Register a birth, marriage or death'
+    slug: 'register-a-birth-marriage-or-death'
+    description: 'Deadlines, forms and steps for registering a birth, marriage or death on time at the City Civil Registry Office, free of charge.'
+
+  - name: 'Register a birth late (delayed registration)'
+    slug: 'register-a-birth-late-delayed-registration'
+    description: 'Requirements for an adult or a child, fees and the posting period for registering a birth after the 30-day deadline.'
+
+  - name: 'Request a birth, marriage or death certificate'
+    slug: 'request-a-birth-marriage-or-death-certificate'
+    description: 'Who may request a certified copy of a civil registry record, what each requester must bring, and the fee and processing time.'
+
+  - name: 'Correct a clerical error in a civil registry record'
+    slug: 'correct-a-clerical-error-in-a-civil-registry-record'
+    description: 'How to petition under RA 9048 to fix a typographical error in a birth, marriage or death record, with fees and timeline.'
+
+  - name: 'Apply for a marriage license'
+    slug: 'apply-for-a-marriage-license'
+    description: 'Requirements for both applicants, fees, the 10-day posting and the 120-day validity of a marriage licence from the City Civil Registry Office.'

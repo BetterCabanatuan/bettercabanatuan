@@ -1,0 +1,12 @@
+{
+  "TIME_RPT_TOTAL": "19 minutes",
+  "TIME_RPT_VERIFY": "5 minutes",
+  "TIME_RPT_COMPUTE": "5 minutes",
+  "TIME_RPT_PAY": "5 minutes",
+  "TIME_RPT_RELEASE": "1 minute",
+  "DISCOUNT_ON_TIME": "10%",
+  "DISCOUNT_ADVANCE": "20%",
+  "PENALTY_MONTHLY": "2% per month",
+  "RATE_BASIC": "1.25%",
+  "RATE_SEF": "1%"
+}

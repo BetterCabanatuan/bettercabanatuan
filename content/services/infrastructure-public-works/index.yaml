@@ -4,16 +4,16 @@
 pages:
   - name: 'Report damaged roads, bridges, or drainage'
     slug: 'report-damaged-roads-bridges-or-drainage'
-    description: 'How to report damaged infrastructure like roads, bridges, and drainage systems to your local government.'
+    description: 'Ask the Office of the City Engineer to clear a road, de-clog a drainage canal or repair a streetlight. One request letter, no fee.'
 
-  - name: 'Request access to barangay water supply systems'
-    slug: 'request-access-to-barangay-water-supply-systems'
-    description: 'Information about requesting access to barangay water supply systems and water connections.'
+  - name: 'Request a right-of-way certification'
+    slug: 'request-a-right-of-way-certification'
+    description: 'Get a road right-of-way certification, lot relocation or lot survey from the Office of the City Engineer. No fee.'
 
-  - name: 'Use public facilities like gyms, barangay halls, or multipurpose centers'
-    slug: 'use-public-facilities-like-gyms-barangay-halls-or-multipurpose-centers'
-    description: 'How to access and use public facilities like gyms, barangay halls, and multipurpose centers.'
+  - name: 'Request a program of works for your barangay'
+    slug: 'request-a-program-of-works-for-your-barangay'
+    description: 'How barangays get plans and a Program of Works for an infrastructure project from the Office of the City Engineer. No fee.'
 
-  - name: 'Rent stalls in public markets or use LGU-managed cemeteries'
-    slug: 'rent-stalls-in-public-markets-or-use-lgu-managed-cemeteries'
-    description: 'Information about renting stalls in public markets and using LGU-managed cemetery services.'
+  - name: 'Electricity and water providers'
+    slug: 'electricity-and-water-providers'
+    description: 'Who supplies electricity (CELCOR) and water (Cabanatuan City Water District with PrimeWater) in the city, and what City Hall handles.'

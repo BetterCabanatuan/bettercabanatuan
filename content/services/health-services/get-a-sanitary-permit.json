@@ -1,0 +1,8 @@
+{
+  "FEE_SANITARY_PERMIT": "₱200-₱500",
+  "TIME_SANITARY_PERMIT": "18 minutes",
+  "TIME_SANITARY_TRIAGE": "5 minutes",
+  "TIME_SANITARY_EVALUATE": "5 minutes",
+  "TIME_SANITARY_PREPARE": "5 minutes",
+  "TIME_SANITARY_RELEASE": "3 minutes"
+}

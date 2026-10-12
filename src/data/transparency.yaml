@@ -1,5 +1,11 @@
 # Transparency hub — /transparency
 # Curated links to local portal sections and national open-government resources
+#
+# Sections may carry `documents:` — checklist rows with a `status` of `posted`
+# or `not-yet-located` and an optional `sourceNote`. Every URL in the charter,
+# full-disclosure and transparency-seal sections appears in
+# docs/superpowers/specs/2026-10-11-cabanatuan-resident-needs-research.md
+# (§2 "Documents actually posted", §6, Sources); a test enforces this.
 
 description: 'Access Freedom of Information releases, public documents, reports, and accountability resources for Cabanatuan City.'
 
@@ -32,6 +38,106 @@ sections:
         description: 'Republic Acts, Supreme Court rulings, and pending bills that shape governance and public services.'
         href: '/transparency/legislation'
         icon: 'Scale'
+
+  - id: charter
+    title: "Citizen's Charter"
+    description: "The city government's official list of services: the requirements, fees, processing time and responsible office for each one. Service guides on this portal cite it by page."
+    resources:
+      - title: "Citizen's Charter 2022 (2nd Edition)"
+        description: '2022, 2nd Edition, uploaded 2022-01-07. PDF, 345 pages, on the official city website.'
+        href: 'https://www.cabanatuancity.gov.ph/uploads/photos/detail/61d7d8890742f0.14414526.pdf'
+        icon: 'Book'
+        external: true
+
+  - id: full-disclosure
+    title: 'Full Disclosure Policy documents'
+    description: "DILG Memorandum Circular 2024-021 (15 February 2024) requires every local government to post 14 core financial documents each quarter. This list is partial until the circular's annex is obtained: it covers the documents named so far and whether each has been found on the official city website."
+    note: 'Status as of 2026-10-11. "Posted" means this portal located the document on cabanatuancity.gov.ph. "Not yet located" means the portal has not located it there yet; it does not mean the city has not produced it.'
+    documents:
+      - title: 'Annual budget'
+        description: 'The approved budget for the year.'
+        status: 'not-yet-located'
+        sourceNote: 'The city website posts SEF Annual Budgets 2025, which covers the Special Education Fund only. The general annual budget was not located.'
+      - title: 'Statement of receipts and expenditures'
+        description: 'What the city collected and what it spent.'
+        status: 'not-yet-located'
+      - title: 'Special Education Fund utilisation'
+        description: 'How the Special Education Fund was spent.'
+        status: 'posted'
+        href: 'https://www.cabanatuancity.gov.ph/'
+        external: true
+        sourceNote: 'Posted on the city website as "SEF Utilization Q1-Q4 2024". No direct file link was captured; the link opens the official website.'
+      - title: '20% development fund utilisation'
+        description: 'How the share of internal revenue set aside for development projects was spent.'
+        status: 'not-yet-located'
+      - title: 'Trust fund utilisation'
+        description: 'How funds held in trust for specific purposes were spent.'
+        status: 'not-yet-located'
+      - title: 'Bid results and awarded contracts'
+        description: 'Who won each public bidding and for how much.'
+        status: 'not-yet-located'
+      - title: 'Annual procurement plan'
+        description: 'What the city plans to buy during the year.'
+        status: 'posted'
+        href: 'https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf'
+        external: true
+        sourceNote: 'Annual Procurement Plan FY 2026, PDF, posted 2026-02-13.'
+      - title: 'Manpower complement'
+        description: 'The number of positions in the city government and how many are filled.'
+        status: 'not-yet-located'
+    resources:
+      - title: 'Full Disclosure Policy Portal (DILG)'
+        description: 'The national portal where local governments upload their 14 core documents each quarter. Check it for Cabanatuan City filings.'
+        href: 'https://fdpp.dilg.gov.ph/'
+        icon: 'Landmark'
+        external: true
+
+  - id: transparency-seal
+    title: 'Transparency Seal'
+    description: 'The General Appropriations Act for FY 2026 (Republic Act No. 12314, section 112) directs all government agencies to keep a Transparency Seal on their websites with the items below. The rows show what has been found for Cabanatuan City.'
+    note: 'Applicability of the current GAA text to local governments is not confirmed. The FY 2015 GAA named LGUs explicitly; the FY 2026 wording covers "all agencies of the government".'
+    documents:
+      - title: 'Mandate, functions and officials with contact details'
+        description: "The agency's mandate and the names and contact details of its officials."
+        status: 'posted'
+        href: 'https://www.cabanatuancity.gov.ph/uploads/photos/detail/61d7d8890742f0.14414526.pdf'
+        external: true
+        sourceNote: "Citizen's Charter 2022, p. 5 (Mandate, Vision, Mission, Service Pledge) and pp. 342-345 (every office with address and contact numbers). Pages 342-345 list offices, not named officials."
+      - title: 'Approved budgets and targets'
+        description: 'The approved budget and the performance targets it funds.'
+        status: 'not-yet-located'
+        sourceNote: 'The city website posts SEF Annual Budgets 2025. The general budget and performance targets were not located.'
+      - title: 'Annual procurement plan and awarded contracts'
+        description: 'What the agency plans to buy and the contracts it has awarded.'
+        status: 'posted'
+        href: 'https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf'
+        external: true
+        sourceNote: 'Annual Procurement Plan FY 2026, posted 2026-02-13. Awarded contracts were not located.'
+      - title: 'Major programmes and projects with beneficiaries'
+        description: 'The main programmes and projects and who they serve.'
+        status: 'not-yet-located'
+      - title: 'Status reports on programmes and projects'
+        description: 'Progress and evaluation reports on the programmes and projects above.'
+        status: 'not-yet-located'
+      - title: 'Subsidy programmes'
+        description: 'Subsidies the agency gives and who receives them.'
+        status: 'not-yet-located'
+      - title: 'Budget and Financial Accountability Reports (BFARs)'
+        description: 'The periodic financial reports filed with the Department of Budget and Management.'
+        status: 'not-yet-located'
+      - title: 'Retained income'
+        description: 'Income the agency keeps and how it is used.'
+        status: 'not-yet-located'
+      - title: 'News'
+        description: 'Current announcements from the city government.'
+        status: 'not-yet-located'
+        sourceNote: 'The official website links Facebook pages for CITO Cabanatuan, PESO Cabanatuan and CDRRMO. No news section was located on the website itself.'
+    resources:
+      - title: 'GAA FY 2026, section 112 (Transparency Seal)'
+        description: 'The Transparency Seal provision as reproduced by the Philippine Competition Commission; the reference for the item list above.'
+        href: 'https://www.phcc.gov.ph/transparency-seal'
+        icon: 'Shield'
+        external: true
 
   - id: city
     title: 'City Government'

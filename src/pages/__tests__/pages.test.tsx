@@ -7,6 +7,7 @@ import AboutPage from '../About';
 import ContactPage from '../contact';
 import HotlinesPage from '../hotlines';
 import AccessibilityPage from '../accessibility';
+import PrivacyPage from '../privacy';
 import StatisticsPage from '../statistics';
 import ServicesIndexPage from '../services/index';
 import ServiceCategoryPage from '../services/$categoryId';
@@ -63,6 +64,12 @@ const pages: Array<{
     route: '/accessibility',
     Component: AccessibilityPage,
     heading: 'Accessibility Statement',
+  },
+  {
+    name: 'Privacy',
+    route: '/privacy',
+    Component: PrivacyPage,
+    heading: 'Privacy Notice',
   },
   {
     name: 'Statistics',
@@ -136,7 +143,7 @@ const pages: Array<{
     route: '/government/departments/bplo',
     routePattern: '/government/departments/:departmentSlugId',
     Component: DepartmentDetailPage,
-    heading: /Business Permits and Licensing Office/i,
+    heading: /City Business Licensing and Investment Promotion Office/i,
   },
   {
     name: 'Projects',
