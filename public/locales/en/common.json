@@ -336,7 +336,61 @@
     "hospitals": {
       "title": "Hospitals"
     },
-    "disclaimer": "This contact page is part of the Better Cabanatuan community portal, not an official government system. For verified transactions and official records, always use the <1>official {{city}} website</1> or visit City Hall in person."
+    "disclaimer": "This contact page is part of the Better Cabanatuan community portal, not an official government system. For verified transactions and official records, always use the <1>official {{city}} website</1> or visit City Hall in person.",
+    "complaints": {
+      "navLabel": "Complaints and feedback",
+      "title": "Complaints and feedback",
+      "intro": "The Citizen's Charter lists these channels for feedback, compliments and complaints about city services. Pick the one that fits your concern.",
+      "tableCaption": "Complaint and feedback channels, who each one is for, and how to reach it",
+      "columns": {
+        "channel": "Channel",
+        "audience": "Who it is for",
+        "reach": "How to reach it"
+      },
+      "textPrefix": "Text",
+      "channels": {
+        "feedbackForm": {
+          "title": "Feedback or compliment form",
+          "audience": "Anyone who wants to comment on, or commend, a city service.",
+          "reach": "Fill out the Feedback Form or Client Compliment Form and drop it in the suggestion box at the Public Assistance and Complaint Desk, City Hall lobby."
+        },
+        "complaintForm": {
+          "title": "Complaint form at the Public Assistance and Complaint Desk",
+          "audience": "Residents filing a written complaint about a city office or employee.",
+          "reach": "Fill out the complaint form and drop it in the suggestion box at the Public Assistance and Complaint Desk, City Hall lobby."
+        },
+        "textLine": {
+          "title": "Complaints by text message",
+          "audience": "Residents who want to relay a concern by SMS."
+        },
+        "mayorsOffice": {
+          "title": "Office of the City Mayor",
+          "audience": "Follow-ups on a complaint, and complaints against city personnel.",
+          "location": "2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100"
+        },
+        "arta": {
+          "title": "Anti-Red Tape Authority (ARTA)",
+          "audience": "Red tape, fixers or delays in any government transaction."
+        },
+        "pcc": {
+          "title": "Presidential Complaint Center (PCC)",
+          "audience": "Complaints about any government office or official, raised to the Office of the President."
+        },
+        "ccb": {
+          "title": "Contact Center ng Bayan (CCB)",
+          "audience": "A national channel for feedback and complaints about government service."
+        }
+      },
+      "afterFiling": {
+        "title": "What happens after you file",
+        "steps": [
+          "The City Human Resource Management Office collects the forms from the suggestion box every day and endorses significant feedback, and every complaint, to the Office of the City Mayor.",
+          "The Office of the City Mayor forwards feedback to the office concerned for action. For a complaint against an employee, the employee is informed and a meeting is scheduled with you to decide whether to file a case or settle amicably.",
+          "A case is referred to the Office for City Legal Affairs. An amicable settlement is closed once the Complaint Settlement Agreement form is completed."
+        ]
+      },
+      "source": "Source: Citizen's Charter 2022, pp. 340-341 (City Government of Cabanatuan, 2nd Edition, Feedback and Complaints Mechanism). Accessed 2026-10-11."
+    }
   },
   "accessibility": {
     "seoTitle": "Accessibility",
@@ -418,6 +472,90 @@
     "helpNote": {
       "title": "Need help instead of a report?",
       "body": "If you would rather have someone help you find the office or information you need, visit the {{city}} contact page for city hall details, department lines, and emergency hotlines."
+    }
+  },
+  "privacy": {
+    "seoTitle": "Privacy Notice",
+    "seoDescription": "Privacy notice for the {{city}} community portal — what the site stores, what it does not, the outside services your browser contacts, the legal basis under the Data Privacy Act, and how to reach the volunteers.",
+    "eyebrow": "Your Data",
+    "title": "Privacy Notice",
+    "footerLabel": "Privacy Notice",
+    "lastReviewed": "Last reviewed: October 2026",
+    "intro": "This portal is run by volunteers and is not the official website of the {{city}} government. It is built to be read, not to collect. This page lists exactly what the site stores on your device, what the server records, which outside services your browser contacts, and which law applies.",
+    "summary": {
+      "title": "The short version",
+      "body1": "You do not need an account to use this portal, and there is no login. No form on this site sends your details to us: the search box works inside your browser, and every contact button opens your own email app.",
+      "body2": "We run no analytics, advertising or tracking scripts, and this site sets no cookies of its own. It keeps two settings in your browser so it remembers your choices, and the web server keeps the same access logs every website generates."
+    },
+    "collects": {
+      "title": "What this site stores and records",
+      "description": "These are the only records that exist because you visited.",
+      "items": [
+        {
+          "title": "Browser storage for your language",
+          "description": "When you switch between English and Tagalog, the choice is saved in your browser’s localStorage under the key i18nextLng so the next page loads in the same language. It never leaves your device."
+        },
+        {
+          "title": "Browser storage for the volunteer prompt",
+          "description": "When you close the volunteer invitation that appears on a first visit, the key bc-volunteer-popup is saved in localStorage so the invitation stays closed. Nothing else is stored."
+        },
+        {
+          "title": "Server access logs",
+          "description": "Like every website, the server that delivers these pages may record the IP address, the page requested, the date and time, and the browser type in standard access logs. We use them only to keep the site running and to spot abuse. We do not match them to a named person."
+        },
+        {
+          "title": "Nothing else",
+          "description": "There are no accounts, no cookies set by this site, no analytics, no advertising, no fingerprinting, and no form that stores what you type."
+        }
+      ]
+    },
+    "thirdParty": {
+      "title": "Outside services your browser contacts",
+      "description": "Some parts of the portal are loaded from other organisations’ servers. When they load, your browser sends them its IP address and the usual request details, under that organisation’s own privacy policy, not ours.",
+      "items": [
+        {
+          "title": "Weather (Open-Meteo)",
+          "description": "The home page asks api.open-meteo.com for the forecast at a fixed point in Cabanatuan City. Your own location is never read or sent."
+        },
+        {
+          "title": "Map tiles (OpenStreetMap)",
+          "description": "The map on the home page draws its tiles from tile.openstreetmap.org."
+        },
+        {
+          "title": "Facebook Page Plugin",
+          "description": "The news feed on the home page loads Facebook’s script from connect.facebook.net to show the city’s public page. Facebook’s own privacy policy governs what it records when that script loads."
+        },
+        {
+          "title": "Google Fonts",
+          "description": "The typeface is served from fonts.googleapis.com and fonts.gstatic.com."
+        }
+      ],
+      "note": "Links to Google Maps, Facebook, the official city website and other outside sites contact those services only when you choose to open them."
+    },
+    "legal": {
+      "title": "Legal basis",
+      "body1": "The Data Privacy Act of 2012 (Republic Act No. 10173) applies to anyone in the Philippines who processes personal information. Section 11 requires that processing be transparent, for a legitimate purpose and proportionate. Section 16 gives you the right to be informed about any processing before it happens. This notice exists to meet those two sections, even though the portal is built to process as little as possible.",
+      "body2": "National Privacy Commission Circular 16-01 sets the security rules for personal data held by government agencies, including local government units, and DILG Memorandum Circular 2018-36 directs each local government unit to designate a Data Protection Officer. Those rules bind the {{city}} government and its own systems, and the officer it designates is the person to ask about them.",
+      "lawLinkLabel": "Read RA 10173 (LawPhil)",
+      "npcLinkLabel": "NPC Circular 16-01 (privacy.gov.ph)",
+      "dpoLine": "Data Protection Officer: to be confirmed by the City Government",
+      "dpoNote": "This portal is maintained by volunteers who are not city employees. We will publish the officer’s name and office once the City Government confirms it. Until then, questions about how the city itself handles your data go to the Office of the City Mayor, 2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100, 0919 081 3749, cabanatuan.lgu@gmail.com."
+    },
+    "rights": {
+      "title": "Your rights and how to use them",
+      "body1": "Under Section 16 of RA 10173 you have the right to be informed, to access and correct data about you, to object to or block processing, and to be indemnified for damages. Because this portal keeps no personal data about visitors, there is normally nothing to access or correct.",
+      "body2": "To clear the two settings this site stores, delete the site’s data in your browser settings; the portal will then treat you as a first-time visitor. If a page on this portal publishes information about you that you believe should not be there, email the volunteers with the page address and what to change. You may also raise a concern with the National Privacy Commission at privacy.gov.ph."
+    },
+    "contact": {
+      "title": "Reach the portal volunteers",
+      "body": "Questions about this notice, or about how the portal handles data, go to the volunteer team by email. For anything about the City Government’s own records, use the office details above or the contact page.",
+      "emailLabel": "Email the volunteers about privacy",
+      "emailSubject": "Privacy question about the {{city}} portal",
+      "responseTime": "Volunteers aim to reply within 2–3 business days. For urgent or official matters, contact the city government directly instead."
+    },
+    "officialNote": {
+      "title": "Not the official city website",
+      "body": "Better Cabanatuan is a community-run portal. It does not speak for the {{city}} government, and the city’s own website and offices have their own privacy notices. Office addresses and phone numbers are on the contact page."
     }
   },
   "emptyState": {
@@ -536,5 +674,9 @@
   },
   "departments": {
     "viewDetails": "View details"
+  },
+  "documentPage": {
+    "complaintPrompt": "Had a problem with this service?",
+    "complaintLink": "How to file a complaint"
   }
 }

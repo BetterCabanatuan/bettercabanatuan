@@ -1,112 +1,63 @@
 # Apply for Local Scholarships — Cabanatuan City
 
-Use this guide to find **City/LGU**, **Congressional/partner**, **local college**, and **national** scholarship options you can apply for while based in **Cabanatuan City**.
+The Citizen's Charter does not list a city scholarship programme. It does list the document most scholarship programmes ask Cabanatuan students for: the Certificate of Indigency and Social Case Study Report from the City Social Welfare and Development Office. The certificate is {FEE_INDIGENCY_CERT} and takes {TIME_INDIGENCY_CERT}. This page tells you how to get it, whom to ask about city scholarship calls, and which national agencies run scholarships you can apply to from Cabanatuan.
 
 ---
 
-## 1) City/LGU Scholarship Programs
+## 1) Get your Certificate of Indigency first
 
-| Program                                            | Who it’s for                                                                                            | What it covers\*                                                          | Where to apply                  | Notes                                                                                                                                                                                                         |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Cabanatuan City Government College Scholarship** | Cabanatuan City residents (typically Senior High / incoming college; priority to low-income households) | Tuition/fees or full scholarship, depending on intake and partner schools | City Hall / posted online calls | The city has historically opened slots for poor residents and tied these to local HEIs during certain intakes. Check latest calls from City Hall / Office of the Mayor. :contentReference[oaicite:0]{index=0} |
+The charter lists one service that covers three documents:
 
-\*Coverage varies by year/partner school; always verify the current announcement.
+- Certificate of Indigency for scholarship assistance
+- Certificate of Indigency for the Special Program for the Employment of Students (SPES)
+- Social Case Study Report for scholarship assistance
 
-**How to apply (typical flow)**
+**Who may avail:** any bona fide resident of Cabanatuan City applying for educational assistance from a school or institution. The charter classifies the service as **Simple**.
 
-1. Watch for the **official call for applications** from the **Cabanatuan City Government** (FB/website or City Information Office). :contentReference[oaicite:1]{index=1}
-2. Prepare documents (see **Common Requirements** below).
-3. Submit your application at the designated **LGU window/online form** and attend evaluation/orientation if shortlisted.
+**What to bring**
 
----
+| Requirement                    | Where to secure       |
+| ------------------------------ | --------------------- |
+| Barangay Indigency certificate | Your barangay captain |
+| Student ID (photocopy)         | Your school           |
 
-## 2) Congressional / Partner Scholarship Slots
+**What happens at the office:** you submit your requirements, fill up the DAFAC form and sign the client logbook, and the Youth Focal Person interviews you based on the form. The certificate or social case study report is then prepared, printed, countersigned by the Acting Supervising Administrative Officer, signed by the CSWD Officer and released to you.
 
-| Program                                                                                       | Who it’s for                                   | What it covers                                          | Where to apply                                                                   | Notes                                                                                                                |
-| --------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Mayor Junard “Ahong” Chan & First Lady Ma. Cynthia King-Chan Scholarship** (periodic calls) | City residents, course/partner-school specific | Tuition assistance/full scholarship depending on cohort | Calls posted by the **Office of the Mayor** / **Office of Rep. Cindi King-Chan** | Look for official FB announcements with the **requirements and deadlines**. :contentReference[oaicite:2]{index=2}    |
-| **International/partner school opportunities**                                                | Senior High/college grads                      | Tuition discounts/scholarships via MOUs                 | Via partner school announcements & City coordination                             | Example: Taiwan partner university opportunities highlighted by city partners. :contentReference[oaicite:3]{index=3} |
+**Fee:** {FEE_INDIGENCY_CERT}. **Total processing time:** {TIME_INDIGENCY_CERT}.
 
----
+**Where:** City Social Welfare and Development Office, Child and Youth Development Division, CSWDO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 081 1345.
 
-## 3) Local Colleges & Their In-House Scholarships
-
-| School                                           | Scholarship page/info                                                        | Notes                                                                                                                                 |
-| ------------------------------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Cabanatuan City College (LLCC)**               | School site lists contacts; ask registrar/scholarship desk for current slots | City college; scholarship rules and timing set per semester. :contentReference[oaicite:4]{index=4}                                    |
-| **University of Cebu** (Mactan/Main system)      | Public scholarship lists & requirements                                      | UC posts scholarship requirements (e.g., academic honors, docs). Availability varies by campus. :contentReference[oaicite:5]{index=5} |
-| **LCIC (Cabanatuan-Cebu International College)** | Scholarship page with program specifics                                      | Has its own discounts/scholarships; separate from LGU. :contentReference[oaicite:6]{index=6}                                          |
-
-> Tip: Even if you’re targeting an **LGU scholarship**, apply to your target school’s **in-house scholarship** too. Slots stack or complement depending on rules.
+The full step-by-step table is on [Get a Certificate of Indigency](/services/social-welfare/get-a-certificate-of-indigency).
 
 ---
 
-## 4) National Programs You Can Apply For While Based in Cabanatuan
+## 2) City scholarship calls
 
-| Program                                                             | Who it’s for                                                  | Typical coverage                                          | Where to file                                                                                                               |
-| ------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **CHED Merit Scholarship (CMSP)**                                   | Incoming/continuing college with merit + income criteria      | Stipend + book/tuition assistance (per CHED rules)        | CHED’s official calls/portals (watch national page) :contentReference[oaicite:7]{index=7}                                   |
-| **OWWA EDSP/ODSP** (for OFW dependents)                             | Qualified dependents of active OWWA members                   | EDSP up to ₱60k/yr; ODSP up to ₱20k/yr (amounts per call) | OWWA Scholarship portal; local **PESO Cabanatuan** often posts the call window :contentReference[oaicite:8]{index=8}        |
-| **Cebu Province scholarships** (if eligible as provincial resident) | Cebu Province residents (check city/province residency rules) | Tuition/stipend per program                               | Province announcements; verify residency eligibility vs. highly urbanized city status :contentReference[oaicite:9]{index=9} |
+The charter has no entry for a city scholarship programme, so requirements, deadlines and slots are not published here. Ask the City Social Welfare and Development Office's Child and Youth Development Division whether a call is open and what to bring. Educational assistance line: 0919 081 0246.
 
 ---
 
-## Common Requirements (have these ready)
+## 3) National scholarship agencies
 
-- **Proof of residency** (Barangay Certificate)
-- **Birth certificate** (PSA)
-- **Report card/grades** (JHS/SHS/college)
-- **Good moral certificate** (from school)
-- **Income documents** (parents’ ITR/Certificate of Non-Filing/indigency, depending on program)
-- **Photos/ID** (2×2 or passport size)
-- **Admission/Enrollment proof** (if already admitted)
+These programmes are run by national agencies, not the city. Check each agency's own website for the programmes currently open, who qualifies and the deadlines.
 
-(Exact lists vary per program; always follow the posted checklist.)
+| Agency                                         | Website                                     |
+| ---------------------------------------------- | ------------------------------------------- |
+| Commission on Higher Education (CHED)          | [ched.gov.ph](https://ched.gov.ph/)         |
+| DOST Science Education Institute (DOST-SEI)    | [sei.dost.gov.ph](https://sei.dost.gov.ph/) |
+| Overseas Workers Welfare Administration (OWWA) | [owwa.gov.ph](https://owwa.gov.ph/)         |
 
----
-
-## Step-by-Step: How to Apply
-
-1. **Pick your target programs**
-   - City/LGU scholarship (watch City Hall channels), school-based scholarship, and at least one national program.
-
-2. **Check the current call**
-   - Read the **eligibility, coverage, and deadline**. Save the announcement.
-
-3. **Assemble documents**
-   - Use the checklist above; request certificates early (Barangay, School Registrar, BIR/Barangay for income).
-
-4. **Submit**
-   - Follow the **specified portal or window**. Keep digital scans (PDF) for online filing.
-
-5. **Monitor & attend screening**
-   - Answer calls/emails, attend orientation/interviews, and **sign the scholarship agreement** if accepted.
-
-6. **Comply every term**
-   - Maintain the **required GWA**, submit grade reports on time, and **renew** each semester/year.
+If a programme asks for proof that your family is indigent, the CSWDO certificate in section 1 is the document to bring.
 
 ---
 
-## Where to Watch for Announcements
+## Related
 
-- LCIC’s website → “Scholarship” section
-- University of Cebu’s “Scholarship & Study Grants” page
-- DepEd Cabanatuan City’s official site / memorandums
-- City Government announcements (City Hall / Information Office)
+- [Get a Certificate of Indigency](/services/social-welfare/get-a-certificate-of-indigency)
+- [Access educational support programs from the LGU](/services/education/access-educational-support-programs-from-the-lgu) (SPES, ALS and basic literacy)
 
 ---
 
-### Example Applications Available Now
+## Source
 
-- [LCIC Scholarship Page](https://lcic.edu.ph/scholarship.html)
-- [UC Scholarships & Study Grants](https://www.universityofcebu.net/p/scholarship.html)
-- [DOST-SEI S&T Scholarship (Grade 12 applicants)](https://depedcabanatuan.net.ph/download/dm-no-723-s-2024-2025-dost-sei-s-t-undergraduate-scholarship-applications-for-grade-12-senior-high-school-students/)
-- [English Access Program (DepEd Cabanatuan)](https://depedcabanatuan.net.ph/download/dm-no-064-s-2025-english-access-scholarship-program/)
-
----
-
-### Reminders
-
-- **Deadlines change every cycle.** Always follow the **current** call post.
-- **Coverage differs by program & year.** Read the fine print (tuition vs. full).
-- **Apply to multiple programs** to improve your chances and coverage.
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 294-295 (Issuance of Certificate of Indigency and Social Case Study Report) and p. 345 (office directory). Accessed 2026-10-11. No charter entry for a city scholarship programme; office contact only.

@@ -4,16 +4,28 @@
 pages:
   - name: "Apply for barangay clearance and mayor's business permits"
     slug: 'apply-for-barangay-clearance-and-mayors-business-permits'
-    description: "Step-by-step guide to applying for barangay clearance and mayor's business permits for your business."
+    description: 'Checklist, steps, offices and processing time for a new Mayor’s Business Permit from the City Business Licensing and Investment Promotion Office.'
 
   - name: 'Renew permits and pay local business taxes'
     slug: 'renew-permits-and-pay-local-business-taxes'
-    description: 'Information about renewing business permits and paying local business taxes to your local government.'
+    description: 'Payment schedule, checklist and steps to renew your business permit and pay business tax, plus what to bring to retire, relocate or transfer a business.'
+
+  - name: 'Get an occupational or working permit'
+    slug: 'get-an-occupational-or-working-permit'
+    description: 'Requirements, steps and fees by type of establishment for a worker’s occupational permit.'
+
+  - name: 'Secure a locational clearance or zoning permit'
+    slug: 'secure-a-locational-clearance-or-zoning-permit'
+    description: 'Checklists, steps and processing times for a locational clearance, site zoning certificate or zoning appeal at the City Planning and Development Office.'
+
+  - name: "Get a Mayor's clearance for a tricycle (MTOP)"
+    slug: 'get-a-mayors-clearance-for-a-tricycle-mtop'
+    description: 'Requirements and steps for the Mayor’s Clearance that tricycle operators need for an MTOP application, and who to ask about the franchise itself.'
 
   - name: 'Rent stalls in public markets'
     slug: 'rent-stalls-in-public-markets'
-    description: 'How to rent stalls in local government public markets for your business.'
+    description: 'Market clearance and market certificate for public market vendors, and who to ask about stall awards and rentals.'
 
   - name: 'Join trade fairs, business expos, or tourism promotions'
     slug: 'join-trade-fairs-business-expos-or-tourism-promotions'
-    description: 'Participate in local trade fairs, business expos, and tourism promotion activities.'
+    description: 'Which city offices announce trade fairs, expos and tourism promotion activities.'

@@ -1,0 +1,13 @@
+{
+  "FEE_CHO_SERVICES": "Free",
+  "TIME_CONSULT_SIMPLE": "25-30 minutes",
+  "TIME_CONSULT_COMPLEX": "35-40 minutes",
+  "TIME_TELEMED_SIMPLE": "20-25 minutes",
+  "TIME_TELEMED_COMPLEX": "30-35 minutes",
+  "TIME_IMMUNIZATION": "20 minutes",
+  "TIME_ANIMAL_BITE": "45 minutes",
+  "TIME_TB": "45 minutes",
+  "TIME_DENTAL": "25 minutes",
+  "TIME_FP_SIMPLE": "22-26 minutes",
+  "TIME_FP_COMPLEX": "41-56 minutes"
+}

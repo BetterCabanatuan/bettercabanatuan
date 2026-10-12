@@ -1,49 +1,76 @@
-# Access Maternal Care & Child Immunization — Cabanatuan City
+# Access Maternal Care and Child Immunization — Cabanatuan City
 
-The City Health Office (CHO) and barangay health centers provide **prenatal care**, **family planning**, and **free routine child immunization** for residents.
+The City Health Office gives free vaccines to children aged 0 to 24 months and to pregnant women at the City Health Center or Barangay Health Station assigned to your barangay, and free family planning counselling, supplies and methods. Prenatal check-ups are held at MVG Cabanatuan City General Hospital on the first and third Wednesday of the month. Bring your child's immunization card.
 
----
+## Child and maternal immunization
 
-## Maternal Care (Prenatal & Related Services)
+Office: City Health Office, at the City Health Center or Barangay Health Station assigned to your barangay. Fee: {FEE_CHO_SERVICES}. Total time: {TIME_IMMUNIZATION}.
 
-| Service                                                             | Where                       | Schedule                                                               | Requirements                                    | Cost                                                       |
-| ------------------------------------------------------------------- | --------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
-| Prenatal check-ups (by midwife/nurse; physician referral as needed) | **Barangay Health Centers** | Mon–Fri (typical clinic hours; varies by center)                       | Prenatal record (issued/updated at first visit) | **Free**                                                   |
-| Family Planning counseling & methods                                | **Barangay Health Centers** | Mon–Fri **8:00 AM–4:00 PM**; Sat **8:00 AM–1:00 PM** (except holidays) | Personal appearance for counseling              | **Free** counseling (methods per DOH program availability) |
+The charter cites Presidential Decree No. 996 as amended by Republic Act No. 10152, the Mandatory Infants and Children Health Immunization Act of 2011. Free immunization covers children aged 0 to 24 months and pregnant mothers, against childhood tuberculosis, diphtheria, pertussis, tetanus, polio, measles, mumps, rubella (German measles), hepatitis B and H. influenzae type B.
 
-**Tip:** Bring any previous prenatal card/records and a valid ID. If you’re new, staff will register you and issue the needed record at the health center.
+**Who may avail**
 
----
+Cabanatuan City residents in the eligible population.
 
-## Child Immunization (EPI)
+**What to bring**
 
-Routine childhood vaccines are provided **free** under the Expanded Program on Immunization (EPI).
+| Requirement                                                                    | Where to get it                       |
+| ------------------------------------------------------------------------------ | ------------------------------------- |
+| Personal appearance of the patient, except patients in quarantine or isolation |                                       |
+| Immunization card                                                              | Hospital, pediatric clinic or midwife |
 
-| Age/Visit                          | Vaccines (examples)                                                        | Where                       | Regular Day/Time                                  | Requirements                          | Cost     |
-| ---------------------------------- | -------------------------------------------------------------------------- | --------------------------- | ------------------------------------------------- | ------------------------------------- | -------- |
-| Birth–12 months (per DOH schedule) | **BCG**, **Pentavalent**, **OPV/IPV**, **MMR**, **Hepatitis B**, **PCV13** | **Barangay Health Centers** | **Wednesdays, 8:00 AM–4:00 PM** (except holidays) | **ECCD card** (issued on first visit) | **Free** |
+**Steps**
 
-> First time? The health worker will **issue an ECCD card** and guide you on next-dose return dates.
+1. Go to the triage area for a temperature check, health declaration and initial screening (5 minutes).
+2. Ask for immunization at your barangay's City Health Center or Barangay Health Station. The nurse or midwife interviews you and records the patient in the Target Client List (5 minutes).
+3. Receive the scheduled vaccine and your immunization card. The nurse or midwife tells you the next vaccination date and explains how to handle side-effects of that vaccine (10 minutes).
 
----
+Vaccination days are not published in the charter. Call your City Health Center first; numbers are on the [health centers and hotlines page](/services/health-services/health-clinics-immunization-and-hotlines).
 
-## How to Avail (Quick Steps)
+## Family planning
 
-1. **Go to your Barangay Health Center** during clinic hours (or the posted EPI day for vaccines).
-2. **Register/Update your record:** Prenatal record for mothers, **ECCD card** for children (issued if first time).
-3. **Receive service:** Prenatal assessment, counseling (and TT vaccine/supplements per program), or child vaccination per EPI schedule.
-4. **Book your return date** for follow-ups and next vaccine doses as advised by the health staff.
+Office: City Health Office. Fee: {FEE_CHO_SERVICES}. Total time: {TIME_FP_SIMPLE} for pills, condoms or injectables; {TIME_FP_COMPLEX} when an implant is removed.
 
----
+The charter cites Republic Act No. 10354, the Responsible Parenthood and Reproductive Health Act of 2012, and lists the services and supplies as free to voluntary beneficiaries.
 
-## Notes & Extras
+**Who may avail**
 
-- **Medical consultations** at health centers are **free** (Mon–Fri, 8:00 AM–5:00 PM; center schedules apply). Useful if you need a doctor’s assessment alongside prenatal care.
-- The CHO and health centers also run **mother’s classes** and promote **facility-based delivery**; ask your midwife for schedules.
+Cabanatuan City residents who want to adopt a family planning method.
 
----
+**What to bring**
 
-**References**
+- Yourself. Personal appearance is the only listed requirement, except for patients in quarantine or isolation.
 
-- [Cabanatuan City Government – Services](https://cabanatuancity.gov.ph)
-- [Department of Health – Expanded Program on Immunization](https://doh.gov.ph)
+**Steps**
+
+1. Go to the triage area for a temperature check, health declaration and initial screening (5 minutes).
+2. Ask for family planning services. The nurse or midwife interviews and assesses you and endorses you to the physician on duty (10 minutes). The physician examines you and provides the appropriate service (5 minutes).
+3. Receive your supplies, medication or device, then health and follow-up instructions (1 minute).
+
+| Method                                     | Time          | Given by                 |
+| ------------------------------------------ | ------------- | ------------------------ |
+| Condom, pills or injectable contraceptives | 1 minute      | Nurse or midwife on duty |
+| Insertion of subdermal implant             | 5 minutes     | Physician on duty        |
+| Removal of subdermal implant               | 15-30 minutes | Physician on duty        |
+
+The charter marks implant insertion and removal as "available for scheduling" and "currently unavailable due to current pandemic restriction". Ask the office whether they are offered now.
+
+## Prenatal check-ups
+
+The charter has no City Health Office entry for prenatal care. It lists these out-patient clinics at MVG Cabanatuan City General Hospital, Maharlika Highway, 0919 089 9880 or 044 958 9774:
+
+| When                                     | Clinic            |
+| ---------------------------------------- | ----------------- |
+| Wednesday, 1st and 3rd week of the month | Prenatal Check-up |
+| Wednesday, 4th week of the month         | OB-Gyne           |
+
+OPD consultation at the hospital has no fee. See [Go to the local hospital](/services/health-services/go-to-the-local-hospital-for-treatment-or-confinement) for the steps. For prenatal services at your City Health Center, call the center; the charter does not list them.
+
+## Related pages
+
+- [Get free check-ups, basic medicines and vaccines](/services/health-services/get-free-check-ups-basic-medicines-and-vaccines)
+- [Health programs: TB treatment, dental care and animal bite treatment](/services/health-services/join-health-programs-nutrition-dengue-control-tb-treatment)
+
+## Source
+
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 245-247 (immunization services, family planning services), p. 271 (MVG Cabanatuan City General Hospital OPD schedule) and pp. 344-345 (List of Offices). Accessed 2026-10-11.

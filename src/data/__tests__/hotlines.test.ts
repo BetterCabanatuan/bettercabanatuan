@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { emergencyHotlines, formatPhoneForTel } from '../hotlines';
+import {
+  bannerHotlines,
+  emergencyHotlines,
+  formatPhoneForTel,
+} from '../hotlines';
 
 describe('formatPhoneForTel', () => {
   it('converts leading 0 to +63', () => {
@@ -16,13 +20,34 @@ describe('formatPhoneForTel', () => {
 });
 
 describe('emergencyHotlines', () => {
-  it('includes all four emergency agencies', () => {
-    expect(emergencyHotlines).toHaveLength(4);
+  it('lists the seven city hotlines in order', () => {
+    expect(emergencyHotlines).toHaveLength(7);
     expect(emergencyHotlines.map(h => h.id)).toEqual([
       'pnp',
       'bfp',
       'cdrrmo',
       'community-affairs',
+      'cho',
+      'mvg-hospital',
+      'cswdo',
+    ]);
+  });
+
+  it('keeps the header strip to the four responder entries', () => {
+    expect(bannerHotlines.map(h => h.id)).toEqual([
+      'pnp',
+      'bfp',
+      'cdrrmo',
+      'community-affairs',
+    ]);
+  });
+
+  it("uses the CDRRMO numbers from the Citizen's Charter", () => {
+    const cdrrmo = emergencyHotlines.find(h => h.id === 'cdrrmo');
+    expect(cdrrmo?.phones.map(p => p.number)).toEqual([
+      '0908-881-1010',
+      '0917-851-1320',
+      '(044)-940-0161',
     ]);
   });
 

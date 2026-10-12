@@ -1,0 +1,12 @@
+{
+  "FEE_MEDICAL_CERT": "₱50",
+  "TIME_MEDICAL_CERT": "32 minutes",
+  "TIME_MEDICAL_TRIAGE": "5 minutes",
+  "TIME_MEDICAL_EVALUATE": "5 minutes",
+  "TIME_MEDICAL_VITALS": "5 minutes",
+  "TIME_MEDICAL_EXAM": "10 minutes",
+  "TIME_MEDICAL_RECORD": "5 minutes",
+  "TIME_MEDICAL_RELEASE": "2 minutes",
+  "FEE_HOSPITAL_CERT": "None",
+  "TIME_HOSPITAL_CERT": "40 minutes"
+}

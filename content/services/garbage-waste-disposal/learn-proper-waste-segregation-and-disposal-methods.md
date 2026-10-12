@@ -1,73 +1,47 @@
-# Guidelines for Proper Waste Segregation and Disposal — Cabanatuan City
+# Learn Proper Waste Segregation and Disposal Methods — Cabanatuan City
 
-Proper waste segregation is **mandatory** in Cabanatuan City under **Republic Act 9003 (Ecological Solid Waste Management Act)** and local ordinances. Following these rules helps keep the city clean, prevents flooding, and protects health.
-
----
-
-## 1) Waste Categories You Must Separate
-
-| Category                    | Examples                                                                         | How to Dispose                                                                                                     |
-| --------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Biodegradable**           | Food scraps, vegetable/fruit peelings, garden waste, paper towels                | Place in green container/biodegradable bin; collected by trucks; can also be composted at home/barangay MRF        |
-| **Recyclable**              | Plastic bottles, glass, tin/aluminum cans, paper, cartons, scrap metal           | Clean and dry before disposal; place in blue container/recyclable bin; bring to junkshops or barangay MRF          |
-| **Residual**                | Used diapers, styrofoam, plastic wrappers, sachets, contaminated paper, ceramics | Place in black container/residual bin; collected by trucks and sent to sanitary landfill                           |
-| **Special/Hazardous Waste** | Batteries, light bulbs, e-waste, paint cans, chemicals, medical waste            | Do **not** mix with regular waste; bring to barangay/CENRO special collection drives or accredited drop-off points |
+Republic Act No. 9003 (Ecological Solid Waste Management Act) requires every household, business and institution in Cabanatuan City to separate its waste at source. This page lists the categories the law names, how to store each one, and where recyclables and compostables can go. Collection days come from your barangay hall.
 
 ---
 
-## 2) General Rules for Segregation
+## The four categories
 
-- **Always use labeled bins** or color-coded plastic bags (green = biodegradable, blue = recyclable, black = residual).
-- **Rinse recyclables** to avoid pests and foul odor.
-- **Do not burn waste** — open burning is prohibited under RA 9003 and the Clean Air Act.
-- **Put garbage out only on your barangay’s collection day** to avoid clutter and flooding.
-- For **bulk items (furniture, appliances)** → request a **special pickup** through your Barangay Hall or CENRO.
-- **Construction debris** must be hauled by accredited haulers; not allowed in household collection.
+RA 9003 Section 22 requires a separate container for each type of waste, marked with one of these labels:
 
----
+| Label          | What goes in                                                                                                                                                    | Where it goes                                                                                                                                                                               |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Compostable    | Biodegradable waste such as food scraps and yard trimmings                                                                                                      | Barangay collection or the barangay Materials Recovery Facility (Sections 10, 32)                                                                                                           |
+| Recyclable     | Newspaper, office paper, corrugated cardboard, glass, aluminum, tin cans, ferrous and non-ferrous scrap metal, used oil (Section 3, paragraph z)                | Barangay Materials Recovery Facility, or a buyer of recyclables                                                                                                                             |
+| Non-recyclable | Residual waste that cannot be composted or recycled                                                                                                             | City collection (Section 10)                                                                                                                                                                |
+| Special waste  | Paints, thinners, household and lead-acid batteries, spray canisters, consumer electronics, large appliances, tires, oil, bulky items (Section 3, paragraph pp) | City collection, handled separately (Section 10). See [Request special waste collection](/services/garbage-waste-disposal/request-special-waste-collection-hazardous-materials-electronics) |
 
-## 3) Barangay Materials Recovery Facilities (MRFs)
+The law does not set bin colours. Use whatever your barangay asks for, as long as each container is labelled.
 
-- Each barangay is required to operate an **MRF** to handle recyclables and compostables.
-- Residents can bring segregated recyclables and kitchen/garden waste to the MRF.
-- Some barangays have **“exchange programs”** (e.g., recyclables for rice or grocery packs).
+## Storing waste before collection
 
----
+- Keep one container per category (Section 22, paragraph a).
+- Bulky items may be set in a separate designated area instead of a container (Section 22, paragraph a).
+- Do not mix recyclables you have already separated back in with other waste; the law prohibits it (Section 48, paragraph 8).
+- Do not burn waste. Open burning of solid waste is prohibited (Section 48, paragraph 3).
 
-## 4) For Businesses & Establishments
+## Barangay Materials Recovery Facility
 
-- Must maintain **segregated waste bins** accessible to customers and staff.
-- Required to **contract accredited haulers** for industrial, medical, or hazardous waste.
-- Keep disposal receipts/hauler contracts for inspection by CENRO.
-- Restaurants/food-related establishments should explore **onsite composting** or regular turnover to barangay MRFs.
+RA 9003 Section 32 requires a Materials Recovery Facility in every barangay or cluster of barangays. It receives waste for final sorting, segregation, composting and recycling. Ask your barangay hall where its facility is, what it accepts and when it is open; the charter does not list this.
 
----
+## What is prohibited
 
-## 5) Penalties for Non-Compliance
+Littering or dumping in roads, sidewalks, canals, esteros or parks, open burning, collecting unsorted waste, and dumping in flood-prone areas are prohibited acts with fines under RA 9003 (Sections 48 and 49). To report a violation, see [Report illegal dumping or waste management violations](/services/garbage-waste-disposal/report-illegal-dumping-or-waste-management-violations).
 
-- **Improper waste disposal or open dumping** can result in fines or penalties under city ordinances and RA 9003.
-- Repeated violations may lead to **business permit suspension** (for establishments).
+## Contact
 
----
+**Cabanatuan City Environment and Natural Resources Office**
+2nd Floor, City Hall, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100
+Phone: 0919 081 4509
 
-## 6) Quick Tips for Households
-
-- Keep **3–4 labeled bins** at home (biodegradable, recyclable, residual, hazardous).
-- Reduce waste by avoiding single-use plastics; bring reusable bags/containers.
-- Compost biodegradable waste if you have space (simple backyard compost pit or container).
-- Encourage kids and household members to follow segregation as a habit.
+**Your barangay hall** for collection days and the location of the Materials Recovery Facility.
 
 ---
 
-## Contact for Support
+## Source
 
-- **City Environment and Natural Resources Office (CENRO)**  
-  Cabanatuan City Hall, Government Complex, Brgy. Pajo  
-  Phone: (032) 340-0004 (ask for CENRO)  
-  Updates via: [Cabanatuan City Information Office Facebook Page](https://www.facebook.com/cabanatuancitygovernment)
-
----
-
-### Key Reminder
-
-✅ Proper segregation is a **shared responsibility**. By separating waste correctly, you help reduce landfill use, promote recycling, and keep Cabanatuan City safe and sustainable.
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), p. 343 (office directory). Accessed 2026-10-11. No charter entry; office contact only. Segregation categories, storage rules, the Materials Recovery Facility requirement and prohibited acts cite Republic Act No. 9003, Sections 3, 10, 22, 32, 48 and 49, https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html.

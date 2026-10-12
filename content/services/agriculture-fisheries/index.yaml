@@ -4,16 +4,20 @@
 pages:
   - name: 'Ask for free seeds, seedlings, fertilizers, or fingerlings'
     slug: 'ask-for-free-seeds-seedlings-fertilizers-or-fingerlings'
-    description: 'How to request free agricultural inputs like seeds, seedlings, fertilizers, and fingerlings from your local government.'
+    description: 'Requirements, steps and fees for planting materials, DA rice seeds and fertilizer vouchers, soil testing and tilapia fingerlings from the City Agriculture Office.'
+
+  - name: "Register as a farmer (RSBSA) and get a Farmer's ID"
+    slug: 'register-as-a-farmer-rsbsa-and-get-a-farmer-id'
+    description: "How to get a Farmer's ID or a Certificate of Bona Fide Farmer from the City Agriculture Office, and who to ask about RSBSA registration."
 
   - name: 'Get veterinary services for livestock'
     slug: 'get-veterinary-services-for-livestock'
-    description: 'Access veterinary services for your livestock and farm animals from local government veterinarians.'
+    description: 'Free farm-visit treatment, veterinary health certificates for transporting animals, post-mortem certification, disease reporting and large cattle branding.'
+
+  - name: 'Get free anti-rabies vaccination for pets'
+    slug: 'get-free-anti-rabies-vaccination-for-pets'
+    description: 'Free rabies shots and treatment for dogs, cats and other pets at the City Veterinary Office, barangay mass vaccination, and how to get back an impounded pet.'
 
   - name: 'Attend farming or fishing training'
     slug: 'attend-farming-or-fishing-training'
-    description: 'Join training programs for farming and fishing techniques offered by your local government.'
-
-  - name: 'Borrow farm tools or equipment from the LGU'
-    slug: 'borrow-farm-tools-or-equipment-from-the-lgu'
-    description: 'How to borrow farm tools and equipment from your local government unit.'
+    description: 'Who to ask about farming or fishing training, and the livelihood skills training the City Livelihood and Cooperatives Development Office lists in the charter.'

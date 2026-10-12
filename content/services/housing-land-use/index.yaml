@@ -2,14 +2,18 @@
 # This file contains all the pages/services available under the Housing & Land Use category
 
 pages:
-  - name: 'Apply for socialized housing or relocation projects'
-    slug: 'apply-for-socialized-housing-or-relocation-projects'
-    description: 'Information about applying for socialized housing and relocation projects from your local government.'
-
   - name: 'Request zoning, land use, or building permits'
     slug: 'request-zoning-land-use-or-building-permits'
-    description: 'How to request zoning, land use, and building permits from your local government.'
+    description: 'Which permit you need before you build, fence, demolish or occupy, which office issues it, and where to start.'
 
-  - name: 'Ask about available relocation sites in case of demolition'
-    slug: 'ask-about-available-relocation-sites-in-case-of-demolition'
-    description: 'Information about available relocation sites in case of demolition or displacement.'
+  - name: 'Apply for a building permit'
+    slug: 'apply-for-a-building-permit'
+    description: 'Requirements, steps and processing time for a building permit from the Office of the City Building Official.'
+
+  - name: 'Apply for occupancy, fence, demolition, excavation or electrical permits'
+    slug: 'apply-for-occupancy-fence-demolition-excavation-or-electrical-permits'
+    description: 'Requirements, steps and processing times for the five other permits issued by the Office of the City Building Official.'
+
+  - name: 'Ask about socialized housing and relocation'
+    slug: 'ask-about-socialized-housing-and-relocation'
+    description: "The Citizen's Charter has no socialized housing or relocation service; here is who to ask and what national law says."

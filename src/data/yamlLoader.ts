@@ -57,6 +57,7 @@ import garbageWasteDisposalIndex from '../../content/services/garbage-waste-disp
 import environmentIndex from '../../content/services/environment/index.yaml?raw';
 import disasterPreparednessIndex from '../../content/services/disaster-preparedness/index.yaml?raw';
 import housingLandUseIndex from '../../content/services/housing-land-use/index.yaml?raw';
+import taxesAndCertificatesIndex from '../../content/services/taxes-and-certificates/index.yaml?raw';
 import governmentDepartmentsIndex from '../../content/government/departments/index.yaml?raw';
 import governmentDepartmentsLegislativeIndex from '../../content/government/departments/legislative/index.yaml?raw';
 
@@ -72,6 +73,7 @@ const categoryIndexMap: { [key: string]: string } = {
   environment: environmentIndex,
   'disaster-preparedness': disasterPreparednessIndex,
   'housing-land-use': housingLandUseIndex,
+  'taxes-and-certificates': taxesAndCertificatesIndex,
   departments: governmentDepartmentsIndex,
   legislative: governmentDepartmentsLegislativeIndex,
 };
@@ -128,10 +130,41 @@ export interface TransparencyResource {
   external?: boolean;
 }
 
+/**
+ * Whether a document a law requires the city to publish has been found.
+ *
+ * `not-yet-located` is a statement about this portal's search of the official
+ * website on the date in the section note, not a claim that the city has not
+ * produced the document.
+ */
+export type TransparencyDocumentStatus = 'posted' | 'not-yet-located';
+
+export const TRANSPARENCY_DOCUMENT_STATUSES: readonly TransparencyDocumentStatus[] =
+  ['posted', 'not-yet-located'];
+
+/**
+ * One row in a compliance checklist (Full Disclosure Policy, Transparency
+ * Seal). Unlike a `TransparencyResource` it may have no `href`: a document that
+ * has not been located has nothing to link to, and the row exists to say so.
+ */
+export interface TransparencyDocument {
+  title: string;
+  description: string;
+  status: TransparencyDocumentStatus;
+  href?: string;
+  external?: boolean;
+  /** Where the status came from: the page, posting date or search that set it. */
+  sourceNote?: string;
+}
+
 export interface TransparencySection {
   id: string;
   title: string;
   description: string;
+  /** One-line caveat shown under the description, e.g. an unconfirmed legal basis. */
+  note?: string;
+  /** Checklist rows rendered with a status badge, before the resource cards. */
+  documents?: TransparencyDocument[];
   resources: TransparencyResource[];
 }
 
@@ -310,6 +343,19 @@ export interface CategoryIndex {
   pages: Subcategory[];
 }
 
+/**
+ * A City Health Office centre based in a barangay, with its lines as printed
+ * in the Citizen's Charter 2022 (2nd Edition), "VII. List of Offices", p. 344.
+ */
+export interface BarangayHealthCenter {
+  /** Charter name, e.g. "City Health Center 1". */
+  name: string;
+  /** Mobile line, as printed. */
+  phone: string;
+  /** Landline, present only where the charter lists one. */
+  landline?: string;
+}
+
 export interface Barangay {
   name: string;
   slug: string;
@@ -319,6 +365,11 @@ export interface Barangay {
   correspondence_code: string;
   old_name?: string;
   status?: string;
+  /**
+   * Set only on the barangays the charter names as the seat of a City Health
+   * Center. Absent elsewhere: no centre is inferred for the other barangays.
+   */
+  healthCenter?: BarangayHealthCenter;
   /**
    * Population by census year. A year is `null` when the figure could not be
    * verified against a PSA source and must not be guessed — see P3-2.

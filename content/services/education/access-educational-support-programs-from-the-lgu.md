@@ -1,116 +1,78 @@
 # Access Educational Support Programs from the LGU — Cabanatuan City
 
-Below are **city-led** or **LGU-facilitated** programs you can use for study support: free school supplies, e-library access, student employment (SPES) via PESO, scholarships, and cash/education assistance. Links point to official pages or recent announcements.
+The Citizen's Charter lists three kinds of educational support from the city: basic literacy classes and Alternative Learning System (ALS) enrolment for out-of-school children through the City Social Welfare and Development Office, and referral of students to the Special Program for the Employment of Students (SPES) through the Public Employment Services Office. All three are free. This page gives who qualifies, what to bring and how long each takes.
 
 ---
 
-## 1) Free School Supplies (SEF-funded)
+## 1) Basic literacy for children at risk
 
-**What it is**
+**What it is:** centre-based educational sessions for children who have missed out on basic literacy. Street educators and a social worker assess each child's educational background and set the module. It runs at the Children's HOPE Day Care Center for Children at Risk (CHDC) under the City Social Welfare and Development Office.
 
-- The City provides **free school supplies** to public school learners using the **Special Education Fund (SEF)**, announced each school year with distribution schedules.
+**Who may avail:** children 5 to 17 years old who are out of school, street children or children at risk.
 
-**How to access**
+**What to bring:** the child's birth certificate.
 
-1. Watch your school’s advisory and the **DepEd Cabanatuan** Division memos for **distribution schedules**.
-2. Learners (with parent/guardian) claim supplies at the school on the announced date.
+| Step                                | Who handles it                     | Time                        |
+| ----------------------------------- | ---------------------------------- | --------------------------- |
+| 1. Fill in the intake sheet at CHDC | Street educators                   | {TIME_LITERACY_INTAKE}      |
+| 2. Attend the orientation           | Street educators and social worker | {TIME_LITERACY_ORIENTATION} |
 
-**Links**
-
-- DepEd Cabanatuan memo: **Distribution of School Supplies (SEF)** (2025 schedule) — depedcabanatuan.net.ph
-- News: **City to distribute free school supplies** — SunStar Cebu (June 7, 2025)
-- City info posts often echo the distribution dates via DepEd/City channels.
+**Fee:** {FEE_LITERACY}. **Total time:** {TIME_LITERACY_TOTAL}. The charter classifies the service as **Complex**.
 
 ---
 
-## 2) City e-Library (Free Study Space, Wi-Fi, Computers & Printing)
+## 2) Alternative Learning System (ALS) enrolment
 
-**What it is**
+**What it is:** centre-based sessions for learners who want to continue their education through ALS. CHDC enrols the child in ALS online with an ALS mobile teacher.
 
-- A **government-run e-Library** offering **free internet, computer use, and printing** for students; open **daily 8:00 a.m.–12:00 midnight** at **Hoops Dome, Brgy. Gun-ob**.
+**Who may avail:** children 10 to 17 years old who are out of school, street children or children at risk.
 
-**How to access**
+**What to bring:**
 
-1. Go to the **Cabanatuan City e-Library (Hoops Dome)** during operating hours.
-2. Sign the logbook; follow usage limits (to give everyone a turn).
+- The child's birth certificate
+- The Learner Reference Number (LRN) from the school the child last attended
 
-**Links**
+| Step                                | Who handles it                          | Time                   |
+| ----------------------------------- | --------------------------------------- | ---------------------- |
+| 1. Fill in the intake sheet at CHDC | Street educators                        | {TIME_ALS_INTAKE}      |
+| 2. Online enrolment in ALS          | ALS mobile teacher and street educators | {TIME_ALS_ENROLMENT}   |
+| 3. Attend the orientation           | Street educators and social worker      | {TIME_ALS_ORIENTATION} |
 
-- SunStar: **E-Library reopens; open daily 8 a.m.–12 midnight** (July 26, 2025)
-- The POST: **City library reopens, free digital access & printing** (July 28, 2025)
-- Background: **City launched first gov’t e-Library** (2019) — Cebu Daily News
+**Fee:** {FEE_ALS}. **Total time:** {TIME_ALS_TOTAL}. The charter classifies the service as **Complex**.
 
----
-
-## 3) Student Employment (SPES) via PESO Cabanatuan
-
-**What it is**
-
-- The **Special Program for the Employment of Students (SPES)** lets poor but deserving **students/OSYs (15–30)** work during breaks to earn and gain experience.
-- Implemented locally through the **Public Employment Service Office (PESO)** with DOLE.
-
-**How to access**
-
-1. Follow **PESO Cabanatuan City** on Facebook for **SPES application windows** and job fair advisories.
-2. Prepare IDs, school docs, and income/indigency proofs per announcement.
-3. Submit online or at the PESO office; attend orientation when shortlisted.
-
-**Links**
-
-- **PESO Cabanatuan City** Facebook page (official announcements)
-- DepEd/BLSS-YFD: **SPES 2025 guidelines & timelines**
-- City press: **PESO career fair / youth employment events** — City Information Office
+**Where to ask for both programmes:** the charter does not give a separate address for CHDC. Call the City Social Welfare and Development Office, CSWDO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Phone: 0919 081 1345.
 
 ---
 
-## 4) LGU-linked Scholarships & Incentives
+## 3) Student employment through SPES
 
-**What it is**
+SPES is a national programme under [Republic Act No. 7323 as amended by Republic Act No. 10917](https://lawphil.net/statutes/repacts/ra2016/ra_10917_2016.html). It gives poor but deserving students, out-of-school youth and dependents of displaced workers, aged 15 to 30, paid work of 20 to 78 working days; secondary students may work only during summer or Christmas vacation. The law assigns applicant facilitation to the Public Employment Service Office.
 
-- The City (and Congressional office) **periodically opens scholarship calls** or **educational incentives** for local students, separate from school-based grants.
+In Cabanatuan the charter covers two steps:
 
-**How to access**
+| Step                                           | Office                                                                                                                                                       | Fee                     | Total time               |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- | ------------------------ |
+| Get a Certificate of Indigency for SPES        | City Social Welfare and Development Office, Child and Youth Development Division. Bring a barangay indigency certificate and a photocopy of your student ID. | {FEE_INDIGENCY_CERT}    | {TIME_INDIGENCY_CERT}    |
+| Register with PESO and ask for a SPES referral | Public Employment Services Office. Bring a resume, a police or NBI clearance and any employment or training certificate.                                     | {FEE_PESO_REGISTRATION} | {TIME_PESO_REGISTRATION} |
 
-1. Monitor the **Cabanatuan City Government / City Information Office** and the **Office of the Mayor / Congresswoman** for official **calls**.
-2. Prepare residency and academic documents; submit by deadline; attend screening/orientation.
+SPES application windows are not in the charter. PESO posts announcements at [facebook.com/PESOCabanatuan](https://www.facebook.com/PESOCabanatuan/). PESO Bldg., City Hall Compound. Phone: 0919 081 1300.
 
-**Links (examples & history)**
-
-- News: **Cabanatuan City offers college scholarship to poor residents** — The Freeman/Philstar (program history)
-- Sample: **Cindi “Skwela” Scholarship** highlights via official pages (video updates)
-- Also check school-based options in-city (e.g., **LCIC scholarships**, **UC scholarships**) which can complement LGU aid.
+Full details: [Get a Certificate of Indigency](/services/social-welfare/get-a-certificate-of-indigency) and [Apply for a job through PESO](/services/social-welfare/apply-for-a-job-through-peso).
 
 ---
 
-## 5) Educational / Cash Assistance (LGU-facilitated with DSWD)
+## School clubs, contests and other activities
 
-**What it is**
-
-- **Educational assistance pay-outs** (e.g., AICS) are nationally run by DSWD but are often **coordinated locally** with the **City** for venue and beneficiary management.
-
-**How to access**
-
-1. Watch announcements from **DSWD-7** and the **City Information Office** for **Cabanatuan payout schedules**.
-2. Bring student ID, enrollment proof, and required forms on your assigned date.
-
-**Links (context)**
-
-- SunStar Cebu: **Education assistance payout in Cabanatuan** (local coverage)
-- Cebu Daily News: **DSWD-7 educational assistance** (program overview & amounts)
+The charter has no entry for school clubs, student organisations or competitions. Public schools in Cabanatuan City are run by the Department of Education, not the city. Ask your child's school, or check [deped.gov.ph](https://www.deped.gov.ph/).
 
 ---
 
-## Quick Directory
+## Other support
 
-- **City Information Office (Cabanatuan City)** — city-wide program announcements
-- **PESO Cabanatuan City** — SPES, job fairs, recruitment & youth work programs
-- **DepEd Cabanatuan Division** — school memos (SEF supplies, schedules)
-- **Cabanatuan City e-Library (Hoops Dome, Gun-ob)** — free study space & digital access
+City scholarships, school supplies and educational cash assistance are not in the charter. Ask the City Social Welfare and Development Office what is currently open. Educational assistance line: 0919 081 0246. See also [Apply for local scholarships](/services/education/apply-for-local-scholarships).
 
 ---
 
-## Tips to Maximize Support
+## Source
 
-- **Stack benefits** where allowed: e.g., SEF school supplies **+** SPES stipend **+** school-based scholarship.
-- Keep a folder with **PSA Birth Cert**, **Barangay Residency**, **School ID**, **Report Cards/COE**, and **2x2 photos** ready.
-- Turn on notifications for **PESO** and **City Information** pages so you don’t miss application windows.
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 287-288 (Basic Literacy for Beginners Children at Risk; Learners / Alternative Learning System), p. 281 (Application for Job Employment, SPES referral), pp. 294-295 (Certificate of Indigency for SPES) and p. 345 (office directory). Accessed 2026-10-11.

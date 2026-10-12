@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Phone } from 'lucide-react';
-import { emergencyHotlines, formatPhoneForTel } from '../../data/hotlines';
+import { bannerHotlines, formatPhoneForTel } from '../../data/hotlines';
 
 export function Hotline() {
   const { t } = useTranslation('common');
@@ -34,7 +34,7 @@ export function Hotline() {
           */}
           <div className="min-w-0 flex-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <ul className="flex items-center gap-4 min-w-max lg:min-w-0 lg:flex-wrap lg:justify-end">
-              {emergencyHotlines.map(hotline => (
+              {bannerHotlines.map(hotline => (
                 <li
                   key={hotline.id}
                   className="flex items-center gap-2 text-xs"

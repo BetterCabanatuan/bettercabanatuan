@@ -1,0 +1,7 @@
+{
+  "FEE_TIMELY": "free",
+  "TIME_TIMELY_TOTAL": "15 minutes",
+  "TIME_TIMELY_STEP": "5 minutes",
+  "FEE_ART34_LATE": "₱200",
+  "TIME_ART34_TOTAL": "15 minutes"
+}

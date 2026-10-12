@@ -1,0 +1,21 @@
+{
+  "TIME_LC_COMPLEX_TOTAL": "5 days and 3 hours",
+  "TIME_LC_HIGHLY_TECHNICAL_TOTAL": "20 days, 3 hours and 15 minutes",
+  "TIME_LC_FORM": "10 minutes",
+  "TIME_LC_EVALUATE": "30 minutes",
+  "TIME_LC_COMPLEX_INSPECTION": "1 to 5 days after receipt of the application",
+  "TIME_LC_HIGHLY_TECHNICAL_INSPECTION": "15 to 20 days after receipt of the application",
+  "TIME_LC_REPORT": "30 minutes",
+  "TIME_LC_COMPUTE": "45 minutes",
+  "TIME_LC_COMPLEX_APPROVE_ORDER": "10 minutes",
+  "TIME_LC_HIGHLY_TECHNICAL_APPROVE_ORDER": "5 minutes",
+  "TIME_LC_PAY": "30 minutes",
+  "TIME_LC_COMPLEX_PRINT": "10 minutes",
+  "TIME_LC_HIGHLY_TECHNICAL_PRINT": "30 minutes",
+  "TIME_LC_SIGN": "10 minutes",
+  "TIME_LC_RELEASE": "5 minutes",
+  "FEE_LOCATIONAL_CLEARANCE": "Computed from the submitted requirements under City Ordinance No. 038-2010",
+  "TIME_SZC_TOTAL": "2 hours and 30 minutes",
+  "FEE_SITE_ZONING_CERTIFICATE": "₱500 per land title and per hectare or fraction of a hectare",
+  "TIME_LC_APPEAL_TOTAL": "30 days and 3 hours"
+}

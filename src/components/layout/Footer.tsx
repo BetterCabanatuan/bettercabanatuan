@@ -172,18 +172,6 @@ const Footer: React.FC = () => {
               ask anyone to do.
             */}
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 md:justify-end">
-              {/* <a
-                href="/privacy"
-                className="text-gray-400 hover:text-white inline-flex min-h-[44px] items-center text-sm transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="/terms"
-                className="text-gray-400 hover:text-white inline-flex min-h-[44px] items-center text-sm transition-colors"
-              >
-                Terms of Use
-              </a> */}
               <a
                 href="https://bettercabanatuan.org"
                 className="text-gray-400 hover:text-white inline-flex min-h-[44px] items-center text-sm transition-colors"
@@ -219,6 +207,16 @@ const Footer: React.FC = () => {
                 className="text-gray-400 hover:text-white inline-flex min-h-[44px] items-center text-sm transition-colors"
               >
                 Accessibility
+              </Link>
+              {/*
+                No Terms link: no /terms page exists, and a footer link to a
+                404 is worse than no link. Add one together with the page.
+              */}
+              <Link
+                to="/privacy"
+                className="text-gray-400 hover:text-white inline-flex min-h-[44px] items-center text-sm transition-colors"
+              >
+                {t('privacy.footerLabel')}
               </Link>
             </div>
           </div>

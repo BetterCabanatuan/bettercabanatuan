@@ -2,14 +2,14 @@
 # This file contains all the pages/services available under the Disaster Preparedness category
 
 pages:
-  - name: 'Join disaster drills and evacuation planning'
-    slug: 'join-disaster-drills-and-evacuation-planning'
-    description: 'Information about participating in disaster drills and evacuation planning activities.'
+  - name: 'Call the CDRRMO emergency line'
+    slug: 'call-the-cdrrmo-emergency-line'
+    description: 'The 24/7 CDRRMO hotline numbers for road accidents and medical emergencies, what to tell the operator, and how fast the free EMS team is dispatched.'
 
-  - name: 'Learn about emergency response procedures and evacuation routes'
-    slug: 'learn-about-emergency-response-procedures-and-evacuation-routes'
-    description: 'Details about emergency response procedures and evacuation routes in your area.'
+  - name: 'Know your flood, earthquake and typhoon risk'
+    slug: 'know-your-flood-earthquake-and-typhoon-risk'
+    description: 'Published facts on Pampanga River flooding, the Philippine Fault near the city and recent typhoons, with a link to HazardHunter PH to check your own address.'
 
-  - name: 'Access disaster preparedness information and early warning systems'
-    slug: 'access-disaster-preparedness-information-and-early-warning-systems'
-    description: 'How to access disaster preparedness information and early warning systems.'
+  - name: 'Find evacuation centers and drills'
+    slug: 'find-evacuation-centers-and-drills'
+    description: 'Evacuation center list pending CDRRMO confirmation, the office contact, and how to request free disaster-preparedness training or drills.'

@@ -1,51 +1,44 @@
-# Health Services in Cabanatuan City
+# Health Centers and Hotlines — Cabanatuan City
 
-A plain-language guide to free and low-cost health services from the City Government of Cabanatuan. Compiled from official City Government announcements. Confirm schedules by calling the office directly, as dates can change.
+Phone numbers for the City Health Office, the City Health Centers by barangay, the city-run hospital and the 24/7 emergency ambulance line, taken from the Citizen's Charter's List of Offices. Programme schedules such as vaccination drives and screening days are not in the charter; the city announces them separately. Call before you go.
 
----
+## City Health Office and City Health Centers
 
-## Always Available (Weekly / Ongoing)
+City Health Office, CHO Bldg., City Hall Compound, Kapitan Pepe Subd. Phase II, Cabanatuan City 3100. Each barangay is assigned to a City Health Center; the charter lists these numbers. It gives no number for City Health Center 3; call the main office.
 
-These run on a regular weekly or ongoing basis.
+| Center                    | Barangay                                        | Phone                        |
+| ------------------------- | ----------------------------------------------- | ---------------------------- |
+| City Health Office (main) | City Hall Compound, Kapitan Pepe Subd. Phase II | 0919 081 1348; 044 463 5900  |
+| City Health Center 1      | Mayapyap Sur                                    | 0919 081 3119                |
+| City Health Center 2      | San Josef Norte                                 | 0919 081 2976; 044 960 1613  |
+| City Health Center 4      | Mabini Homesite                                 | 0919 081 1344; 044 951 5699  |
+| City Health Center 5      | General Luna                                    | 0919 081 1535                |
+| City Health Center 6      | Caalibangbangan                                 | 0919 081 1485; 044 958 2094  |
+| City Health Center 7      | H. Concepcion                                   | 0919 081 2983; 044 803 1079  |
+| CESU                      | City Health Office                              | 0919 081 0167; 0919 081 1508 |
 
-- **Free Check-up & Anti-Rabies Vaccination** — Cabanatuan City Health Office, at Cabanatuan City Hall, Monday–Friday. Hotline: [0919-081-1348](tel:+639190811348).
-- **Free Orthopedic Check-up** — M.V. Gallego Cabanatuan City General Hospital (MVGCCGH), at TTMF (Temporary Treatment & Monitoring Facility), Brgy. Kapitan Pepe, every Tuesday 1:00 PM–5:00 PM. Hotline: [0919-089-9880](tel:+639190899880).
-- **Free Pet Services (Anti-Rabies, Deworming, Spay/Neuter)** — City Veterinary Office, for dogs and cats. Hotline: [0919-089-9906](tel:+639190899906).
+## City hospital
 
----
+MVG Cabanatuan City General Hospital, Maharlika Highway, Cabanatuan City 3100: 0919 089 9880 or 044 958 9774. The out-patient clinic schedule is on the [hospital page](/services/health-services/go-to-the-local-hospital-for-treatment-or-confinement).
 
-## Immunization: Measles-Rubella (MR-SIA)
+## Emergency ambulance
 
-The City Health Office, together with the DOH, runs the **Ligtas Tigdas / Measles-Rubella Supplemental Immunization Activity (MR-SIA)** for children 6–59 months old and the target school-age population. Vaccinations rotate daily per barangay across the 9 City Health Centers (CHC 1–9). Hotline: [+63 919 081 3749](tel:+639190813749).
+City Disaster Risk Reduction and Management Office, CDRRMO Bldg., City Hall Compound. 24/7 Emergency Response, free of charge:
 
-> **Current schedule:** the day-to-day barangay assignment changes, so it is not published here. Call [+63 919 081 3749](tel:+639190813749) to confirm which City Health Center (CHC) is scheduled before you go.
+- Smart: 0908 881 1010
+- Globe: 0917 851 1320
+- Landline: 044 940 0161
 
----
+## Programme schedules
 
-## Scheduled Programs (dates vary, confirm current)
+The charter lists the services each office gives and how long they take; it does not publish vaccination days, clinic days or screening schedules. Those come from City Government of Cabanatuan announcements and change often. Confirm with your City Health Center or the City Health Office before you go.
 
-- **Pediatric Eye Screening** — free eye check-up for children (crossed eyes, lazy eye, irregular eye movement, premature birth), ages 21 and below. Held at the Eye Center, M.V. Gallego General Hospital, in coordination with UERM Medical Center. Inquiries: [0919-089-9880](tel:+639190899880).
-- **TB Mass Screening** — free TB screening by the City Health Office / City Health Centers at barangay level, under the "PILIPINAS can #ENDTB!" campaign. Hotline: [0919-081-1348](tel:+639190811348).
-- **Free Ligation & Vasectomy** — family planning outreach by the City Health Office, POPCOM Cabanatuan, and the DKT Philippines Foundation, at the CDRRM Training Center. Contact: [0919-081-1348](tel:+639190811348).
+## Related pages
 
----
+- [Get free check-ups, basic medicines and vaccines](/services/health-services/get-free-check-ups-basic-medicines-and-vaccines)
+- [Access maternal care and child immunization](/services/health-services/access-maternal-care-and-child-immunization)
+- [Health programs: TB treatment, dental care and animal bite treatment](/services/health-services/join-health-programs-nutrition-dengue-control-tb-treatment)
 
-## Mental Health & Social Services
+## Source
 
-- **CogniCare / mental-health awareness programs** — run with the City Social Welfare and Development Office (CSWDO).
-- **Social Pension for Indigent Senior Citizens** — payouts managed by the CSWDO.
-
----
-
-## Key Health Contacts
-
-| Office                        | Service                                    | Hotline                               |
-| ----------------------------- | ------------------------------------------ | ------------------------------------- |
-| City Health Office            | Check-up, anti-rabies, TB, family planning | [0919-081-1348](tel:+639190811348)    |
-| M.V. Gallego General Hospital | Orthopedic clinic, eye screening           | [0919-089-9880](tel:+639190899880)    |
-| City Veterinary Office        | Pet vaccination & spay/neuter              | [0919-089-9906](tel:+639190899906)    |
-| MR-SIA Immunization           | Children's measles-rubella vaccine         | [+63 919 081 3749](tel:+639190813749) |
-
----
-
-> Source: Official announcements from the City Government of Cabanatuan. Maintained by Better Cabanatuan; not an official government publication. Verify all schedules directly with the relevant office.
+City Government of Cabanatuan, Citizen's Charter 2022 (2nd Edition), pp. 229-230 (CDRRMO 24/7 Emergency Response) and pp. 344-345 (List of Offices). Accessed 2026-10-11. No charter entry; office contact only.
