@@ -24,7 +24,7 @@ Kailangang pinaghihiwalay ang basura bago ito kolektahin. Tingnan ang [Alamin an
 
 Ang mga muwebles, appliances, electronics, basura mula sa bakuran, baterya, langis at gulong ay itinuturing na special waste sa ilalim ng RA 9003 (Section 3, paragraph pp) at hiwalay na pinangangasiwaan mula sa karaniwang basura. Pinahihintulutan ng batas na ilagay ang malalaking basura sa hiwalay na itinalagang lugar sa halip na sa lalagyan (Section 22).
 
-Walang serbisyo ng special pickup sa charter at walang bayad para rito. Itanong sa inyong barangay hall o sa Cabanatuan City Environment and Natural Resources Office kung maaaring ayusin ang pickup o drop-off at kung may sinisingil. Tingnan ang [Humiling ng pangongolekta ng special waste](/services/garbage-waste-disposal/request-special-waste-collection-hazardous-materials-electronics).
+Walang nakalistang serbisyo ng special pickup sa charter, at wala ring nakalistang bayad para rito. Itanong sa inyong barangay hall o sa Cabanatuan City Environment and Natural Resources Office kung maaaring ayusin ang pickup o drop-off at kung may sinisingil. Tingnan ang [Humiling ng pangongolekta ng special waste](/services/garbage-waste-disposal/request-special-waste-collection-hazardous-materials-electronics).
 
 ## Makipag-ugnayan
 
