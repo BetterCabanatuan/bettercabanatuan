@@ -67,7 +67,7 @@ const DATE_SEGMENT = new RegExp(
 
 /** Kicker lines the page puts above the real headline. */
 const GENERIC_LINE =
-  /^(?:announcement|check this out!?|good news\b.*|pabatid|paalala|tingnan|stay safe,? cabanatue[ñn]os!?|[—–-]*\s*city government advisory\s*[—–-]*)$/i;
+  /^(?:announcement|check this out!?|good news\b.*|pabatid|paalala|tingnan|stay safe,? cabanatue[ñn]os!?|programa para sa cabanatue[ñn]o|tuloy-tuloy na serbisyo,? para sa tuloy-tuloy na progreso\.?|[—–-]*\s*city government advisory\s*[—–-]*)$/i;
 
 /**
  * Kicker labels that head a whole series of posts, e.g. `#WALANGPASOK | August

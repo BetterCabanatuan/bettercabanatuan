@@ -84,6 +84,14 @@ describe('extractHeadline', () => {
     ).toBe('Bantay Bagyo — IndayPH');
   });
 
+  it('skips the PROGRAMA PARA SA CABANATUEÑO series banner and tagline', () => {
+    expect(
+      extractHeadline(
+        'PROGRAMA PARA SA CABANATUEÑO\nTuloy-tuloy na serbisyo, para sa tuloy-tuloy na progreso.\n\nFUNERARIA DE CABANATUAN\n\nAng Funeraria…'
+      )
+    ).toBe('FUNERARIA DE CABANATUAN');
+  });
+
   it('keeps leading digits and strips edge emoji', () => {
     expect(extractHeadline('10-KILONG BIGAS, IPINAMAMAHAGI')).toBe(
       '10-KILONG BIGAS, IPINAMAMAHAGI'
