@@ -154,6 +154,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0zKE7uBh7mdudggBvpnasFiVk3g1dRCo7q9bWswAt894GtqBXpn4zUVRjrG8bi8nMl'
     topics:
       - 'infrastructure-public-works'
+      - 'disaster-preparedness'
   - title: 'Walang pasok — AUGUST 28, 2026'
     date: '2026-08-27'
     summary: 'Alinsunod sa Executive Order No. 26, Series of 2026, mula sa Provincial Government of Nueva Ecija— sinuspinde ang face-to-face classes sa lahat ng antas sa Nueva Ecija ngayong Biyernes, Agosto 28, 2026.'
@@ -161,6 +162,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid076pazpf33TKyyktQ8Q7YbRfh5FCf5Vrncesn2eP4wRVL8EaY7ACGmfTLPZ3Vu5uEl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: '“LUNG MONTH”: TB MASS SCREENING AT LIBRENG CHEST X-RAY, ISINAGAWA SA CAMP TINIO'
     date: '2026-08-27'
     summary: 'Isinagawa ngayong Agosto 27, 2026 sa Camp Tinio Covered Court ang TB Mass Screening with Free Chest X-Ray, na pinangunahan ng City Health Office (CHO) bilang bahagi ng paggunita sa Lung Month.'
@@ -189,6 +191,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02DvhydWJznpPfHUCCMrLFi2KY6gY6LEaMSyJZJSLVTicDWDrkhz9QuntYaES2HQNpl'
     topics:
       - 'health-services'
+  - title: 'ADRONE, NAGTIPON SA CABANATUAN PARA SA PAGPAPALAKAS NG DISASTER RESILIENCE'
+    date: '2026-08-26'
+    summary: 'Isinagawa nitong Agosto 19, 2026 sa CDRRMC Training Center ang pagtitipon ng Association of Disaster Resilience Officers of Nueva Ecija (ADRONE), na pinangunahan ng Cabanatuan City Disaster Risk Reduction and Management Office (CDRRMO).'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0mdhQ9TC73CYBEvhKKXs9j6Vz881r9rgxXyP5HjUetumeRz6ic2AibzkuFQjfv2Tfl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'CABANATUAN UPDATE — Agarang Pagkukumpuni'
     date: '2026-08-22'
     summary: 'Naisaayos na rin ang drainage cover sa Gen. Tinio Street corner Paco Roman Street, Cabanatuan City upang matiyak ang kaligtasan ng mga motorista at pedestrian na dumaraan sa lugar.'
@@ -218,6 +227,13 @@ items:
     topics:
       - 'garbage-waste-disposal'
       - 'environment'
+  - title: 'RAPID MONITORING – AUGUST 19, 2026'
+    date: '2026-08-19'
+    summary: 'Mga lugar na nananatiling normal o below normal: - Purok Adobo, Brgy. San Juan Accfa – Normal; walang naitalang pagbaha.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02n1KWUMjKRX2h4yCDctCrC58f7pFmoBs73Reo4ugZTc74m6EuLGAKcCd6TW3fBGsAl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'Walang pasok — August 18, 2026'
     date: '2026-08-17'
     summary: 'Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 24, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at pribadong paaralan,…'
@@ -225,6 +241,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0hxjiF1pUszTgeNvsSSNYaV1Azhhv9XmPMbTQZ23NP4SMtfNRnJf156VJ6T4PE6Y2l'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'LIBRENG GAMOT HATID NG PHILHEALTH AT LGU CABANATUAN!'
     date: '2026-08-17'
     summary: 'Sa ilalim ng mga programa ni President Ferdinand “Bongbong” Marcos Jr., ang PhilHealth YAKAP (Yaman ng Kalusugan) Program, ay may 75 gamot na maaaring ma-avail nang libre ng kwalipikadong PhilHealth members at kanilang dependents sa mga…'
@@ -253,6 +270,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0y3BZo1d2B5eb4Sa3BuRPqd5Y14ASxdkczaSo16VACdZnWeeN74CAcuYvCQfQCBNjl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'MR SIA 2026 — CABANATUAN CITY UPDATE'
     date: '2026-08-17'
     summary: 'Target: Mga batang 6–59 months old · Layunin nating maprotektahan ang ating mga chikiting laban sa Tigdas at Rubella.'
@@ -267,6 +285,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0QTr7qd4sYJEYvtfu64APmZCX8dpX3U3KSkuh4uvUVNDFtd7KeVstCyepMBXeApUDl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'MEASLES-RUBELLA SUPPLEMENTAL IMMUNIZATION ACTIVITY (MR SIA)'
     date: '2026-08-14'
     summary: 'Buong Buwan ng Agosto 2026 Bilang bahagi ng patuloy na pangangalaga sa kalusugan ng ating mga kabataan, isasagawa sa buong buwan ng Agosto 2026 ang Measles-Rubella Supplemental Immunization Activity (MR SIA).'
@@ -302,6 +321,14 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid036rjMgEVnRMuqZqN8skRPC7HPVQ3wSLwNUek7kucxZ8q2TWy73wwmrVBAzyfuRt1ml'
     topics:
       - 'infrastructure-public-works'
+      - 'disaster-preparedness'
+  - title: 'RAPID WATER LEVEL MONITORING'
+    date: '2026-08-10'
+    summary: 'Patuloy ang isinagawang Rapid Water Level Monitoring sa iba’t ibang lugar sa Cabanatuan City upang masubaybayan ang kasalukuyang antas ng tubig sa mga waterways, tulay, at flood-prone areas.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid033GFRLaM815gt9o29LRWaeZx2a8psvXLjH8VCf47zBSNbjRzLPf32L5w6ZJ2A3HkFl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'Walang pasok — August 10, 2026'
     date: '2026-08-09'
     summary: 'Stay safe, Cabanatueños! Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 22, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at…'
@@ -309,6 +336,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0Uhu4jU8CziRoW9Ukq7762sZtk8roMmVxTpc6JJsDBZULuth17EHxFxUbA75JendTl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'Umulan man o umaraw — AAKSYON PA RIN!'
     date: '2026-08-09'
     summary: 'Walang makapipigil sa darating na Measles-Rubella Supplemental Immunization Activity para sa mga batang 6-59 months ng Lungsod ng Cabanatuan!'
@@ -316,6 +344,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02qkyYQGv9fSqDPQnfs9JuXedRQkqJfJJzskBk8ZZsX65ZYdZj9F3anYF2sACfq1Vul'
     topics:
       - 'health-services'
+  - title: 'RAINFALL WARNING'
+    date: '2026-08-09'
+    summary: 'Weather System: Enhanced Southwest Monsoon #HabagatPH · Issued at: 11:00 AM, 09 August 2026 (Sunday)'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0HQJwkrT7zdb7CdypoEiUFU3MwEnsJgJDjKk8BMTyPUQ3rRPh6FDCc4UeipLxwcXrl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'CSWDO AT COGNICARE, NAGSAGAWA NG SEMINAR TUNGKOL SA PAG-UNAWA SA PAG-UUGALI'
     date: '2026-08-06'
     summary: 'Sa pakikipagtulungan ng City Social Welfare and Development Office at CogniCare, isinagawa ngayong araw—Agosto 6, 2026 ang seminar na may temang “Understanding the Why Behind Behavior” sa CDRRMC Training Center.'
@@ -331,6 +366,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02qUGQqGSdd8HU36FhFWoT3cVXi2zVXngwxKpa9BxwA7ZaNM8DE3ps2CzbL9asjCTVl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'Walang pasok — August 06, 2026'
     date: '2026-08-05'
     summary: 'Stay safe, Cabanatueños! Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 21, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at…'
@@ -338,6 +374,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid022ac9QzdzbYGf7iPCPe6DfyY3RjfjJW7mn3B2ss18ebbTYBwdPAFyLdBFNNM3LuuYl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'ORIENTATION PARA SA MGA SUPPORT AIDES NG ARAL PROGRAM PARA SA SY 2026–2027'
     date: '2026-08-04'
     summary: 'Isinagawa ngayong araw, Agosto 4, 2026 ang Academic Recovery and Accessible Learning (ARAL) Program Support Aides Orientation para sa School Year 2026–2027 sa CDRRMC Training Center.'
@@ -352,6 +389,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02Mr3Zhvj5Wp6q6424hwj8TXPZnY6ATLFhYawN4qgFSNwvz1TkfGU2oZCbYeUeuk3ol'
     topics:
       - 'social-welfare'
+      - 'disaster-preparedness'
   - title: 'PATULOY ANG PAGMOMONITOR NG MGA HEAVY EQUIPMENT MATAPOS ANG BAGYONG LUIS'
     date: '2026-08-04'
     summary: 'Matapos ang pananalasa ng Bagyong Luis, patuloy ang monitoring at deployment ng mga heavy equipment sa iba’t ibang bahagi ng Cabanatuan City upang matiyak ang agarang pagtugon sa mga lugar na naapektuhan ng masamang panahon.'
@@ -359,6 +397,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02qcg9JsZH7CspiUeigJvHvZM9YLyDrF4Z1hNfCquTR25MtSnVHcvFMqziaV61eptRl'
     topics:
       - 'infrastructure-public-works'
+      - 'disaster-preparedness'
   - title: 'EVERYDAY FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER'
     date: '2026-08-04'
     summary: 'Patuloy ang pagsasagawa ng ating Cabanatuan City Veterinary Office sa FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER sa City Hall Compound.'
@@ -373,6 +412,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02nzSGF7pM7xvSqum2rgETKCac6jTCVJCFutaRkZdPm5RYtT522r65kQzh5xeiRPBWl'
     topics:
       - 'health-services'
+  - title: 'CABANATUAN, NAKIBAHAGI SA PAGDIRIWANG NG NATIONAL DISASTER RESILIENCE MONTH 2026'
+    date: '2026-08-04'
+    summary: 'Bilang pakikibahagi sa pagdiriwang ng National Disaster Resilience Month 2026, isinagawa ng Cabanatuan City Disaster Risk Reduction and Management Council ang information and awareness activity nitong nakaraang Hulyo 31, 2026 sa Level 1,…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02zur2DSgcU8ttkXuBWNzkGUcA66HNjp9BfNUi5vjmSn8ar4rY2dAQYGq7uDRtru2Al'
+    topics:
+      - 'disaster-preparedness'
   - title: 'Bantay Bagyo — AUGUST 03, 2026'
     date: '2026-08-03'
     summary: 'Tropical Depression #LuisPh Through the recommendation from the City DRRM Office, #WalangPasokBukas (August 04, 2026)'
@@ -380,6 +426,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0wDMjrdHQakU9Ud84cgeceYbsQUS6qPnvLW23qD9nGRdL2X3QxQ9XWVextmDiJWf1l'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'Walang pasok — August 03, 2026'
     date: '2026-08-03'
     summary: 'Suspension of Face-to-face classes and shift to Alternative Delivery Mode. All Levels. Public and Private.'
@@ -387,6 +434,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid021R1Jtn6bmvKAgDMWSKBLpL7zdhb71hW2TW5P7B1CoywrL9n2ein7TWC1nGZTC4Twl'
     topics:
       - 'education'
+      - 'disaster-preparedness'
   - title: 'Benteng Bigas Meron Na: ₱20 Rice Project inilunsad sa Cabanatuan City'
     date: '2026-07-31'
     summary: 'IIsinagawa ang Benteng Bigas Meron Na: ₱20 Rice Project ni Pangulong Ferdinand “Bongbong” Marcos Jr., Hulyo 28-31,2026 sa mga barangay ng Obrero, Bagong Sikat, Bakero at Lagare.'
@@ -464,6 +512,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0dcTjxrP6LvbLrPjR8JB3BbBPipzZo5eBEyKmuLku2SKRb2M3fSByLadRh9DE3ZkAl'
     topics:
       - 'health-services'
+  - title: 'Bantay Bagyo — As of 11:00 am - July 23, 2026'
+    date: '2026-07-23'
+    summary: 'Tropical Depression #KiyapoPH Huling namataan ang sentro ng Tropical Depression #KiyapoPH sa layong 830km silangan ng Northern Luzon. Taglay ang lakas ng hangin na umaabot sa 45km/h at pagbugso na tinatayang abot sa 55km/h. Patuloy itong…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02JcCmHLaiifWiVuq6d86xJ1gw6HjvbLgiaL5q2uFXweHzRcV2k3C49PmCqPPniuWkl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'DSWD, PINANGUNAHAN ANG ENHANCED FAMILY DEVELOPMENT SESSION (EFDS) AT PANGKALAHATANG ASEMBLIYA NG 4Ps'
     date: '2026-07-23'
     summary: 'Pormal na sinimulan kahapon, Hulyo 22, 2026, ang Day 1 ng Training on the Enhanced Family Development Session (EFDS) at General Assembly ng Pantawid Pamilyang Pilipino Program (4Ps) na pinangunahan ng Department of Social Welfare and…'
@@ -500,6 +555,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0r1W2MDZEjRrH9dnx71PoKXFjyGYafSVJcgAa93pzsB828LoVMun7RXCr7MSQKJ7gl'
     topics:
       - 'agriculture-fisheries'
+  - title: 'CDRRMO, NAGSAGAWA NG FLOOD DRILL BILANG BAHAGI NG NATIONAL DISASTER RESILIENCE MONTH'
+    date: '2026-07-21'
+    summary: 'Bilang bahagi ng pagdiriwang ng National Disaster Resilience Month (NDRM), nagsagawa ang City Disaster Risk Reduction and Management Office ng Flood Drill ngayong araw, Hulyo 21, 2026 sa Gymnasium ng Barangay Isla.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid031hViEAAQXcksLMU1mHX7kVKE57JpTrfcX6ECjzEZvHekYqqfT9qfDoWpWetwZQrFl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'LIBRENG CHECK-UP, PEDIA'
     date: '2026-07-21'
     summary: 'EVERY TUESDAY, 8:00 AM LIBRENG CHECK-UP PARA SA MGA BUNTIS · MON-FRI, 8:00 AM TO 12:00 NN'
@@ -614,6 +676,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0ma6NWmHYQEskrXAsCVCQAQYtbRC5SMEnSRPxiqBGvc4EB3GcArdnmRC7osYTXNXAl'
     topics:
       - 'health-services'
+  - title: 'PRE-DISASTER RISK ASSESSMENT'
+    date: '2026-07-09'
+    summary: 'Through the leadership of its Chairperson, Mayor Myca Vergara, the Cabanatuan City Disaster Risk Reduction and Management Council conducts Pre-Disaster Risk Assessment on July 8, 2026 as part of the city''s preparedness measures in…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0f3TitsyouQetf9vQiYRxhpiCwoN2TV6dudZ168HAM6SootDZNWWEGZCQiBhwUcnyl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'MV GALLEGO GENERAL HOSPITAL, NAGSAGAWA NG LIBRENG E.N.T. CHECK-UP'
     date: '2026-07-09'
     summary: 'EVERY WEDNESDAY, 1:00 PM TO 5:00 PM Isinagawa kahapon, Hulyo 08, 2026, ang Libreng E.N.T. Check-Up na pinangunahan ng MV Gallego Cabanatuan City General Hospital sa 2nd Floor - MVGCCGH: Eye Center - Clinic, City Hospital, Old Building.'
@@ -628,6 +697,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02VhLncrDVtKdbSvK499sw84pb5QbizMkX4UJ5K8bhTeU489PVFJk54WwuhP2sMvgLl'
     topics:
       - 'business'
+  - title: 'Bantay Bagyo — IndayPH'
+    date: '2026-07-08'
+    summary: 'Patuloy na nakaalerto ang City Government of Cabanatuan kaugnay ng Tropical Cyclone Inday. Mahigpit na mino-monitor ng ating lokal na pamahalaan ang mga opisyal na ulat at advisories mula sa DOST-PAGASA upang matiyak ang kaligtasan ng…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid04PZPCDUg2sYnAfnQBfXhubpZ8NiAKbr4PtZvNJNNqnsgM1pGju3bbxQxuPbDphbEl'
+    topics:
+      - 'disaster-preparedness'
   - title: 'Bayanihan in Action: Strengthening Immunization Efforts in Cabanatuan City'
     date: '2026-07-08'
     summary: 'The City of Cabanatuan came together in a spirit of bayanihan with the support of various Human Resources for Health (HRH) and vaccinators from the municipalities of Talavera, Gapan, Aliaga, Guimba, Zaragoza, Jaen, San Leonardo, San…'
@@ -722,3 +798,10 @@ items:
     topics:
       - 'garbage-waste-disposal'
       - 'environment'
+  - title: 'NAGHAHANDA, KUMIKILOS, AT NAGLILINGKOD PARA SA LIGTAS AT MATATAG NA CABANATUAN'
+    date: '2026-07-01'
+    summary: 'Nakikibahagi ang City Government of Cabanatuan sa pagdiriwang ng National Disaster Resilience Month 2026 na may temang: “Naghahanda at Kumikilos Tungo sa Panatag na Bagong Pilipinas.”'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid07SNRxLPo4bfodmrbpeyCKYzAvNehkkb9dKmBVJqAnXBDmyKGbSQCXT9bGd8tEFaXl'
+    topics:
+      - 'disaster-preparedness'
