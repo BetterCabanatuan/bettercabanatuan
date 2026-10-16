@@ -73,6 +73,25 @@ describe('extractHeadline', () => {
     ).toBe('Walang pasok — August 10, 2026');
   });
 
+  it('keeps what follows a BANTAY BAGYO label so bulletins stay distinct', () => {
+    expect(
+      extractHeadline(
+        'BANTAY BAGYO | AUGUST 03, 2026\nTropical Depression #LuisPh'
+      )
+    ).toBe('Bantay Bagyo — AUGUST 03, 2026');
+    expect(
+      extractHeadline('BANTAY BAGYO | #IndayPH\nPatuloy na nakaalerto')
+    ).toBe('Bantay Bagyo — IndayPH');
+  });
+
+  it('skips the PROGRAMA PARA SA CABANATUEÑO series banner and tagline', () => {
+    expect(
+      extractHeadline(
+        'PROGRAMA PARA SA CABANATUEÑO\nTuloy-tuloy na serbisyo, para sa tuloy-tuloy na progreso.\n\nFUNERARIA DE CABANATUAN\n\nAng Funeraria…'
+      )
+    ).toBe('FUNERARIA DE CABANATUAN');
+  });
+
   it('keeps leading digits and strips edge emoji', () => {
     expect(extractHeadline('10-KILONG BIGAS, IPINAMAMAHAGI')).toBe(
       '10-KILONG BIGAS, IPINAMAMAHAGI'
