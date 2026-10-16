@@ -83,6 +83,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02EEQ6D6wPM8S17VT4LsJ2bAE8LKGHqDemjMx6oUdLeE4g6bPcc8b4WKhxCXuFKj7Kl'
     topics:
       - 'agriculture-fisheries'
+      - 'infrastructure-public-works'
   - title: 'CITY HEALTH OFFICE, MASS TB SCREENING SA BRGY. STA. ARCADIA'
     date: '2026-09-18'
     summary: 'Isinagawa kahapon, Setyembre 17, 2026 sa Brgy. Sta. Arcadia ang mass tuberculosis (TB) screening na bahagi ng PURO KALUSUGAN program ng City Health Office.'
@@ -146,6 +147,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0Wm3fNaYKr744sc9KtYp4S8kGA8DQmuuXop1GAbsWZsFvoc18yK8UQzkfi8iw3Tqtl'
     topics:
       - 'social-welfare'
+  - title: 'BRIDGE CLOSURE ADVISORY'
+    date: '2026-08-31'
+    summary: 'Pansamantalang isinara ang Dalampang Bridge dahil sa soil erosion sa road approach papunta sa tulay na dulot ng tuloy-tuloy na malakas na pag-ulan.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0zKE7uBh7mdudggBvpnasFiVk3g1dRCo7q9bWswAt894GtqBXpn4zUVRjrG8bi8nMl'
+    topics:
+      - 'infrastructure-public-works'
   - title: 'Walang pasok — AUGUST 28, 2026'
     date: '2026-08-27'
     summary: 'Alinsunod sa Executive Order No. 26, Series of 2026, mula sa Provincial Government of Nueva Ecija— sinuspinde ang face-to-face classes sa lahat ng antas sa Nueva Ecija ngayong Biyernes, Agosto 28, 2026.'
@@ -181,6 +189,27 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02DvhydWJznpPfHUCCMrLFi2KY6gY6LEaMSyJZJSLVTicDWDrkhz9QuntYaES2HQNpl'
     topics:
       - 'health-services'
+  - title: 'CABANATUAN UPDATE — Agarang Pagkukumpuni'
+    date: '2026-08-22'
+    summary: 'Naisaayos na rin ang drainage cover sa Gen. Tinio Street corner Paco Roman Street, Cabanatuan City upang matiyak ang kaligtasan ng mga motorista at pedestrian na dumaraan sa lugar.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02qMH2LJ94D4etCzkWTANK1ZvYYwZakpiNLAtBJgXGm7YZg6JbogfAAaTC9ABktUQTl'
+    topics:
+      - 'infrastructure-public-works'
+  - title: 'CABANATUAN UPDATE — Agarang Naisaayos ang Drainage Cover sa Zulueta'
+    date: '2026-08-21'
+    summary: 'Agad na naisaayos ng Pamahalaang Lungsod ng Cabanatuan ang drainage cover sa Zulueta Street matapos maiulat ang sirang bahagi nito na maaaring magdulot ng panganib sa mga motorista at pedestrian.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0JLNLowQThUgpjhdoQakkErJ6B61pwHECXJ2brGVJfwx2FcjV3Tghoq17EfznLEZYl'
+    topics:
+      - 'infrastructure-public-works'
+  - title: 'PAALALA SA MGA MOTORISTA AT PUBLIKO'
+    date: '2026-08-21'
+    summary: 'Kasalukuyang may sirang bahagi ng drainage grate sa Zulueta Street, Cabanatuan City na maaaring maging panganib sa mga dumadaang motorista.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02oFqQevsfs2N6pyPxbBMgCzrrmsbZSiSEw6uCZYuYJv1swPivWBK9PNjfRHJtm3BFl'
+    topics:
+      - 'infrastructure-public-works'
   - title: 'Walang pasok — August 18, 2026'
     date: '2026-08-17'
     summary: 'Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 24, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at pribadong paaralan,…'
@@ -258,6 +287,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02dYy1gNyF3XKsndG1pVMuyeMoCizhJGQK3oyZyeL37jEwRty6r8ZpCKaqTAaygGJxl'
     topics:
       - 'health-services'
+  - title: 'EXCAVATION OF WATERWAY — BRGY. VALLE CRUZ'
+    date: '2026-08-10'
+    summary: 'August 10, 2026 Isinagawa ang excavation at paglilinis ng waterway gamit ang heavy equipment upang maalis ang naipong putik, lupa, at mga halaman na maaaring humarang sa maayos na daloy ng tubig. Layunin nitong makatulong sa pagpapanatili…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid036rjMgEVnRMuqZqN8skRPC7HPVQ3wSLwNUek7kucxZ8q2TWy73wwmrVBAzyfuRt1ml'
+    topics:
+      - 'infrastructure-public-works'
   - title: 'Walang pasok — August 10, 2026'
     date: '2026-08-09'
     summary: 'Stay safe, Cabanatueños! Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 22, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at…'
@@ -308,6 +344,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02Mr3Zhvj5Wp6q6424hwj8TXPZnY6ATLFhYawN4qgFSNwvz1TkfGU2oZCbYeUeuk3ol'
     topics:
       - 'social-welfare'
+  - title: 'PATULOY ANG PAGMOMONITOR NG MGA HEAVY EQUIPMENT MATAPOS ANG BAGYONG LUIS'
+    date: '2026-08-04'
+    summary: 'Matapos ang pananalasa ng Bagyong Luis, patuloy ang monitoring at deployment ng mga heavy equipment sa iba’t ibang bahagi ng Cabanatuan City upang matiyak ang agarang pagtugon sa mga lugar na naapektuhan ng masamang panahon.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02qcg9JsZH7CspiUeigJvHvZM9YLyDrF4Z1hNfCquTR25MtSnVHcvFMqziaV61eptRl'
+    topics:
+      - 'infrastructure-public-works'
   - title: 'EVERYDAY FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER'
     date: '2026-08-04'
     summary: 'Patuloy ang pagsasagawa ng ating Cabanatuan City Veterinary Office sa FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER sa City Hall Compound.'
@@ -392,6 +435,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0PsLYJpDC1qdiKRGFrPAsnBZf1WcJJ7gpS3FYZAaFMwhAtHmgr1widsYWvrY8mcDdl'
     topics:
       - 'education'
+      - 'infrastructure-public-works'
   - title: 'LIBRENG LIGATION AT VASECTOMY SA CITYHALL NGAYONG ARAW'
     date: '2026-07-24'
     sourceName: 'City Government of Cabanatuan'
@@ -476,6 +520,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02RkeybEAL3JDKJB2jHmwW3KXbizFVwB2LfUmU7j4gRz9sNW5YU3AWBMe1nssmMFkYl'
     topics:
       - 'education'
+      - 'infrastructure-public-works'
   - title: 'HALALAN NG MGA OPISYAL NG CABANATUAN AGRICULTURE AND FISHERIES COUNCIL (CAFC)'
     date: '2026-07-17'
     summary: 'Isinagawa ngayong araw, Hulyo 17, 2026 sa SP Session Hall ang CAFC Election 2026, kung saan pinili ang mga bagong opisyal na mamumuno sa Cabanatuan Agriculture and Fisheries Council.'
@@ -660,3 +705,4 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02oSsAKQ6udRkxocVPNn8t5nBtWkZTSGDZCpCuA2EK9Q54DqHzsMH7RmS3BnySYYrLl'
     topics:
       - 'education'
+      - 'infrastructure-public-works'
