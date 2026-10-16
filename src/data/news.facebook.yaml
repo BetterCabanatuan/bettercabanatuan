@@ -12,6 +12,7 @@ items:
     sourceUrl: 'https://www.facebook.com/reel/1762127485054876/'
     topics:
       - 'health-services'
+      - 'education'
   - title: 'FREE KAPON DAY 2'
     date: '2026-09-30'
     summary: 'Ginanap ang Day 2 ng Free Kapon Activity, ngayong araw, Setyembre 30, 2026, sa Cabanatuan City Veterinary Office, City Hall, Brgy. Kapt. Pepe, Cabanatuan.'
@@ -61,6 +62,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0uyPWb4uvnbGAaWFR2CceZQ9AnLPgHFZGMVAuqTCSaqmxnEAXSnWJmFAFrDc84t7Xl'
     topics:
       - 'health-services'
+  - title: 'Walang pasok — AUGUST 28, 2026'
+    date: '2026-08-27'
+    summary: 'Alinsunod sa Executive Order No. 26, Series of 2026, mula sa Provincial Government of Nueva Ecija— sinuspinde ang face-to-face classes sa lahat ng antas sa Nueva Ecija ngayong Biyernes, Agosto 28, 2026.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid076pazpf33TKyyktQ8Q7YbRfh5FCf5Vrncesn2eP4wRVL8EaY7ACGmfTLPZ3Vu5uEl'
+    topics:
+      - 'education'
   - title: '“LUNG MONTH”: TB MASS SCREENING AT LIBRENG CHEST X-RAY, ISINAGAWA SA CAMP TINIO'
     date: '2026-08-27'
     summary: 'Isinagawa ngayong Agosto 27, 2026 sa Camp Tinio Covered Court ang TB Mass Screening with Free Chest X-Ray, na pinangunahan ng City Health Office (CHO) bilang bahagi ng paggunita sa Lung Month.'
@@ -68,6 +76,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02JaTPirsE2UHypD8z4Hyvab5QLAWsb2MuQkLkKa3B869KUqrBv7Jd8Kde7KHBsWyfl'
     topics:
       - 'health-services'
+  - title: 'DEPED: 2026 BUWAN NG WIKA AT KASAYSAYAN'
+    date: '2026-08-26'
+    summary: 'Isinagawa nitong nakaraang Agosto 21, 2026 ang Pansangay na Paligsahan sa Pagbuo ng Poster at Pagsulat ng Sanaysay bilang bahagi ng pagdiriwang ng 2026 Buwan ng Wika at Kasaysayan.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid032jZWmdGT8UcftzQVnMS9R1cXPhmNwN5FyzCe7MLhGAXqygqVKBUV7P2Z9hFvuBY6l'
+    topics:
+      - 'education'
   - title: 'DOH WELLNESS CLINIC SA CABANATUAN, PATULOY ANG LIBRENG BAKUNA KONTRA TIGDAS AT RUBELLA'
     date: '2026-08-26'
     summary: 'Patuloy na nagbibigay ng libreng bakuna kontra tigdas at rubella ang DOH Wellness Clinic sa Cabanatuan City bilang bahagi ng kampanya para maprotektahan ang mga bata laban sa mga sakit na maaaring maiwasan sa pamamagitan ng pagbabakuna.'
@@ -82,6 +97,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02DvhydWJznpPfHUCCMrLFi2KY6gY6LEaMSyJZJSLVTicDWDrkhz9QuntYaES2HQNpl'
     topics:
       - 'health-services'
+  - title: 'Walang pasok — August 18, 2026'
+    date: '2026-08-17'
+    summary: 'Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 24, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at pribadong paaralan,…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0hxjiF1pUszTgeNvsSSNYaV1Azhhv9XmPMbTQZ23NP4SMtfNRnJf156VJ6T4PE6Y2l'
+    topics:
+      - 'education'
   - title: 'LIBRENG GAMOT HATID NG PHILHEALTH AT LGU CABANATUAN!'
     date: '2026-08-17'
     summary: 'Sa ilalim ng mga programa ni President Ferdinand “Bongbong” Marcos Jr., ang PhilHealth YAKAP (Yaman ng Kalusugan) Program, ay may 75 gamot na maaaring ma-avail nang libre ng kwalipikadong PhilHealth members at kanilang dependents sa mga…'
@@ -96,6 +118,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid036oEfRkLziSJcXtFHW2v5Pa2V5CnVv9dbKUzDEn8iYZ2V41Q6wY3mn3kwJSKYpvz9l'
     topics:
       - 'health-services'
+  - title: 'Alinsunod sa Memorandum Circular No. 127 na inilabas ng Office of the President, inaatasan ang mga tanggapan ng pamahalaan na magpatupad…'
+    date: '2026-08-17'
+    summary: 'Samantala, mananatiling bukas ang Pamahalaang Lungsod ng Cabanatuan at magpapatupad ng skeletal workforce arrangement sa buong araw.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0y3BZo1d2B5eb4Sa3BuRPqd5Y14ASxdkczaSo16VACdZnWeeN74CAcuYvCQfQCBNjl'
+    topics:
+      - 'education'
   - title: 'MR SIA 2026 — CABANATUAN CITY UPDATE'
     date: '2026-08-17'
     summary: 'Target: Mga batang 6–59 months old · Layunin nating maprotektahan ang ating mga chikiting laban sa Tigdas at Rubella.'
@@ -103,6 +132,13 @@ items:
     sourceUrl: 'https://www.facebook.com/reel/4406179022972784/'
     topics:
       - 'health-services'
+  - title: 'Alinsunod sa Memorandum Circular No. 126, inaatasan ang mga tanggapan ng pamahalaan na magpatupad ng alternative work arrangements ngayong…'
+    date: '2026-08-14'
+    summary: 'Ipatutupad rin ang paglilipat o shift sa alternative learning modes para sa mga klase sa lahat ng antas sa mga pampubliko at pribadong paaralan.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0QTr7qd4sYJEYvtfu64APmZCX8dpX3U3KSkuh4uvUVNDFtd7KeVstCyepMBXeApUDl'
+    topics:
+      - 'education'
   - title: 'MEASLES-RUBELLA SUPPLEMENTAL IMMUNIZATION ACTIVITY (MR SIA)'
     date: '2026-08-14'
     summary: 'Buong Buwan ng Agosto 2026 Bilang bahagi ng patuloy na pangangalaga sa kalusugan ng ating mga kabataan, isasagawa sa buong buwan ng Agosto 2026 ang Measles-Rubella Supplemental Immunization Activity (MR SIA).'
@@ -124,6 +160,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02dYy1gNyF3XKsndG1pVMuyeMoCizhJGQK3oyZyeL37jEwRty6r8ZpCKaqTAaygGJxl'
     topics:
       - 'health-services'
+  - title: 'Walang pasok — August 10, 2026'
+    date: '2026-08-09'
+    summary: 'Stay safe, Cabanatueños! Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 22, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0Uhu4jU8CziRoW9Ukq7762sZtk8roMmVxTpc6JJsDBZULuth17EHxFxUbA75JendTl'
+    topics:
+      - 'education'
   - title: 'Umulan man o umaraw — AAKSYON PA RIN!'
     date: '2026-08-09'
     summary: 'Walang makapipigil sa darating na Measles-Rubella Supplemental Immunization Activity para sa mga batang 6-59 months ng Lungsod ng Cabanatuan!'
@@ -138,6 +181,27 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02aUQco1yjACjcaxEy3Haak98ibKm4CszcEqpwBwzZ5FYSQJsfQhvevQsP4Fbqu7x2l'
     topics:
       - 'health-services'
+  - title: 'Alinsunod sa Memorandum Circular No. 122, suspendido ang trabaho sa mga tanggapan ng pamahalaan at klase sa lahat ng antas sa Nueva Ecija.'
+    date: '2026-08-06'
+    summary: 'Mananatiling bukas ang City Mayor’s Office. Samantang ang mga tanggapan sa Cabanatuan City Hall ay magpapatupad ng Skeletal Workforce upang magpatuloy sa pagbibigay ng serbisyo sa publiko.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02qUGQqGSdd8HU36FhFWoT3cVXi2zVXngwxKpa9BxwA7ZaNM8DE3ps2CzbL9asjCTVl'
+    topics:
+      - 'education'
+  - title: 'Walang pasok — August 06, 2026'
+    date: '2026-08-05'
+    summary: 'Stay safe, Cabanatueños! Base sa rekomendasyon ng Provincial Disaster Risk Reduction and Management Office (PDRRMO) at sa bisa ng Executive Order No. 21, Series of 2026, suspendido ang face-to-face classes sa lahat ng antas, pampubliko at…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid022ac9QzdzbYGf7iPCPe6DfyY3RjfjJW7mn3B2ss18ebbTYBwdPAFyLdBFNNM3LuuYl'
+    topics:
+      - 'education'
+  - title: 'ORIENTATION PARA SA MGA SUPPORT AIDES NG ARAL PROGRAM PARA SA SY 2026–2027'
+    date: '2026-08-04'
+    summary: 'Isinagawa ngayong araw, Agosto 4, 2026 ang Academic Recovery and Accessible Learning (ARAL) Program Support Aides Orientation para sa School Year 2026–2027 sa CDRRMC Training Center.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0BX8wsifBmSuNbMi7SYLXNSe1R39B7g7LSj8vcCQJ1f2HmP5oCfnsdyK3Aw57fLrDl'
+    topics:
+      - 'education'
   - title: 'EVERYDAY FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER'
     date: '2026-08-04'
     summary: 'Patuloy ang pagsasagawa ng ating Cabanatuan City Veterinary Office sa FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER sa City Hall Compound.'
@@ -152,6 +216,20 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02nzSGF7pM7xvSqum2rgETKCac6jTCVJCFutaRkZdPm5RYtT522r65kQzh5xeiRPBWl'
     topics:
       - 'health-services'
+  - title: 'Bantay Bagyo — AUGUST 03, 2026'
+    date: '2026-08-03'
+    summary: 'Tropical Depression #LuisPh Through the recommendation from the City DRRM Office, #WalangPasokBukas (August 04, 2026)'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0wDMjrdHQakU9Ud84cgeceYbsQUS6qPnvLW23qD9nGRdL2X3QxQ9XWVextmDiJWf1l'
+    topics:
+      - 'education'
+  - title: 'Walang pasok — August 03, 2026'
+    date: '2026-08-03'
+    summary: 'Suspension of Face-to-face classes and shift to Alternative Delivery Mode. All Levels. Public and Private.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid021R1Jtn6bmvKAgDMWSKBLpL7zdhb71hW2TW5P7B1CoywrL9n2ein7TWC1nGZTC4Twl'
+    topics:
+      - 'education'
   - title: 'TB Mass Screening Isinagawa sa Brgy. Bangad, Cabanatuan City'
     date: '2026-07-29'
     summary: 'Isinagawa ngayong araw, Hulyo 29, 2026, ang TB Mass Screening sa pangunguna ng City Health Office - City Health Center 3, sa Brgy. Bangad, Cabanatuan City.'
@@ -166,6 +244,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02TSBRsSnAvA9dCEyYwqcmH76QE95wEv5dbHZXvsbMsgQ6uF5HTH5XEbydtszwpd8pl'
     topics:
       - 'health-services'
+  - title: 'Alin sa mga paaralang ipinatayo ng City Government of Cabanatuan ang pinapasukan ng inyong mga anak?'
+    date: '2026-07-24'
+    summary: 'I-comment ang pangalan ng paaralan!'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0PsLYJpDC1qdiKRGFrPAsnBZf1WcJJ7gpS3FYZAaFMwhAtHmgr1widsYWvrY8mcDdl'
+    topics:
+      - 'education'
   - title: 'LIBRENG LIGATION AT VASECTOMY SA CITYHALL NGAYONG ARAW'
     date: '2026-07-24'
     sourceName: 'City Government of Cabanatuan'
@@ -186,6 +271,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0dcTjxrP6LvbLrPjR8JB3BbBPipzZo5eBEyKmuLku2SKRb2M3fSByLadRh9DE3ZkAl'
     topics:
       - 'health-services'
+  - title: 'LUNGSOD NG CABANATUAN, LUMAGDA SA MEMORANDUM OF UNDERSTANDING SA NEUST'
+    date: '2026-07-22'
+    summary: 'Lumagda ang Pamahalaang Lungsod ng Cabanatuan City sa Mass Memorandum of Understanding (MOU) / Memorandum of Agreement (MOA) Signing Ceremony na pinangunahan ng Nueva Ecija University of Science and Technology ngayong araw Hulyo 22, 2026…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0fr6RMRFaKTUwYcFqc1ZuvmfTsUdfRvX3KJQXTZMcjhXHGCQHroWkTm9zNz2vn4BRl'
+    topics:
+      - 'education'
   - title: 'HOUSE-TO-HOUSE FREE ANTI-RABIES VACCINATION'
     date: '2026-07-22'
     summary: 'Barangay Aduas Sur · July 23–24, 2026 · Ang Cabanatuan City Veterinary Office ay magsasagawa ng LIBRENG house-to-house anti-rabies vaccination para sa mga aso at pusa sa Barangay Aduas Sur. · Hinihikayat namin ang lahat ng pet owners na…'
@@ -221,6 +313,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02LnLkRRJQz3o61z8Qvq6tqN2e6NMe3jro1nnbGMif8YY6PxdC7hTJx2crZpuf62Crl'
     topics:
       - 'health-services'
+  - title: 'J.P. MELENCIO MEMORIAL ELEMENTARY SCHOOL'
+    date: '2026-07-21'
+    summary: 'Ang bawat batang Cabanatueño ay may karapatang matuto sa ligtas at maayos na paaralan —ito ang dahilan kung bakit nagpapatayo ang LGU Cabanatuan ng mga paaralan: - 4-Storey, 28 Classroom Building · - 2,952 sqm floor area · - ₱22,096.24…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02RkeybEAL3JDKJB2jHmwW3KXbizFVwB2LfUmU7j4gRz9sNW5YU3AWBMe1nssmMFkYl'
+    topics:
+      - 'education'
   - title: '"Taas-kamay para sa Rabies-free Cabanatuan City"'
     date: '2026-07-17'
     summary: 'Stay Connected! CONTACT NO. 0919-089-9906 Location: City Hall Compound, Kapitan Pepe, Cabanatuan City, Nueva Ecija, Philippines.'
@@ -235,6 +334,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02xCoTk1NhURXvWiSgLU1uJXTnfyiM7VbRvQSkvXjSHxdqQjWfnGYm9GTCHqkMpWqFl'
     topics:
       - 'health-services'
+  - title: 'IKA -18 TAONG PAG TATAPOS SA ELEMENTARYA AT IKA-7 TAONG PAG TATAPOS NG ANTAS SA MATAAS NA PAARALAN NG ALS LEARNERS'
+    date: '2026-07-17'
+    summary: 'Isinagawa kahapon, Hulyo 16, 2026 ang Alternative Learning System (ALS) Graduation Ceremony, isang pagdiriwang ng tagumpay at pagpupursige ng mga ALS learners na nagpatuloy sa kanilang pag-aaral sa kabila ng iba''t ibang hamon sa buhay.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid027wJvvpVuedjRUatsaraRKJadCzwBmnsbnW4V5PVFaAhWtXjcQA4i1RcNRekXkHwYl'
+    topics:
+      - 'education'
   - title: 'LIBRENG CHECK-UP, E.N.T.'
     date: '2026-07-14'
     summary: 'Every Wednesday, 1:00 PM - 5:00 PM · MVGCCGH (2ND FLOOR), Maharlika Highway, Cabanatuan City.'
@@ -277,6 +383,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0mDfrVdWaxVmFpWqds93CA3EZszUXxvK6qBeEM8ACc9n9mZxPWDtDRQVB96RSwuNbl'
     topics:
       - 'health-services'
+  - title: 'OFFICIAL STATEMENT'
+    date: '2026-07-07'
+    summary: 'Re: Heat-Related Incident Involving Learners – July 6, 2026'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0DsKeoDB3c4sPEBLNhb6m59JRdx3tESxYpxrhUUDpTAaERgJDYBEz7BcwNFn5YTJ6l'
+    topics:
+      - 'education'
   - title: 'MV GALLEGO GENERAL HOSPITAL, NAGSAGAWA NG LIBRENG CHECK-UP PARA SA MGA BUNTIS (MON-FRI, 8:00 AM TO 12:00 NN)'
     date: '2026-07-07'
     summary: 'Isinagawa kahapon, Hulyo 06, 2026, ang Libreng Check-Up sa para sa mga buntis, sa TTMF Monitoring Facility, Kapitan Pepe, Cabanatuan City.'
@@ -326,3 +439,10 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0FyRJD2cBN2Um4FMsbJRPCTehGsdwLZC2EHErLQAM1nQw3MdJzD4HyuKFTPqmkAYpl'
     topics:
       - 'health-services'
+  - title: 'ACA ELEMENTARY SCHOOL'
+    date: '2026-07-01'
+    summary: 'Ang bawat batang Cabanatueño ay may karapatang matuto sa ligtas at maayos na paaralan —ito ang dahilan kung bakit nagpapatayo ang LGU Cabanatuan ng mga paaralan: - 4-Storey, 28 Classroom Building · - 2,876 sqm floor area · - ₱24,511.5 per…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02oSsAKQ6udRkxocVPNn8t5nBtWkZTSGDZCpCuA2EK9Q54DqHzsMH7RmS3BnySYYrLl'
+    topics:
+      - 'education'
