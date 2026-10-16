@@ -70,12 +70,14 @@ const GENERIC_LINE =
   /^(?:announcement|check this out!?|good news\b.*|pabatid|paalala|tingnan|stay safe,? cabanatue[ñn]os!?|[—–-]*\s*city government advisory\s*[—–-]*)$/i;
 
 /**
- * Kicker hashtags that are the whole headline, e.g. `#WALANGPASOK | August 10,
- * 2026`. The date stays in the title: every suspension notice has the same
- * hashtag, and posts with the same title collapse into one.
+ * Kicker labels that head a whole series of posts, e.g. `#WALANGPASOK | August
+ * 10, 2026` or `BANTAY BAGYO | #IndayPH`. The label keeps the next part of the
+ * line (the date, or the storm's hashtag) in the title: posts with the same
+ * title collapse into one, and every bulletin in a series has the same label.
  */
-const LABEL_HASHTAGS: Record<string, string> = {
+const LABELS: Record<string, string> = {
   walangpasok: 'Walang pasok',
+  'bantay bagyo': 'Bantay Bagyo',
 };
 
 function isHashtagOnly(segment: string): boolean {
@@ -92,10 +94,11 @@ function stripEdgeSymbols(text: string): string {
  */
 function headlineFromLine(line: string): string {
   const segments = line.split('|').map(segment => stripEdgeSymbols(segment));
-  const label = LABEL_HASHTAGS[segments[0]?.replace(/^#/, '').toLowerCase()];
-  const date = segments.find(segment => DATE_SEGMENT.test(segment));
-  if (label && date) {
-    return `${label} — ${date.replace(/\s*\([^)]*\)$/, '')}`;
+  const label = LABELS[segments[0]?.replace(/^#/, '').toLowerCase()];
+  const detail = segments.slice(1).find(segment => segment.length > 0);
+  if (label && detail) {
+    // Drop a "(FRIDAY)" suffix and the leading '#' of a storm hashtag.
+    return `${label} — ${detail.replace(/\s*\([^)]*\)$/, '').replace(/^#/, '')}`;
   }
   const kept = segments.filter(
     segment =>
