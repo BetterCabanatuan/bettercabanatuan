@@ -56,7 +56,8 @@ const WEEKDAY =
 
 const DATE_SEGMENT = new RegExp(
   [
-    `^${MONTH}\\s+\\d{1,2}(?:\\s*[-–]\\s*\\d{1,2})?,?\\s*\\d{4}$`,
+    `^${MONTH}\\s+\\d{1,2}(?:\\s*[-–]\\s*\\d{1,2})?,?\\s*\\d{4}(?:\\s*\\(${WEEKDAY}\\))?$`,
+    `^${MONTH},?\\s+\\d{4}$`,
     `^${WEEKDAY}(?:\\s*[-–]\\s*${WEEKDAY})?$`,
     '^\\d{4}-\\d{2}-\\d{2}$',
     '\\bweek of\\b',
@@ -66,7 +67,16 @@ const DATE_SEGMENT = new RegExp(
 
 /** Kicker lines the page puts above the real headline. */
 const GENERIC_LINE =
-  /^(?:announcement|check this out!?|good news\b.*|pabatid|paalala|tingnan)$/i;
+  /^(?:announcement|check this out!?|good news\b.*|pabatid|paalala|tingnan|stay safe,? cabanatue[ñn]os!?|[—–-]*\s*city government advisory\s*[—–-]*)$/i;
+
+/**
+ * Kicker hashtags that are the whole headline, e.g. `#WALANGPASOK | August 10,
+ * 2026`. The date stays in the title: every suspension notice has the same
+ * hashtag, and posts with the same title collapse into one.
+ */
+const LABEL_HASHTAGS: Record<string, string> = {
+  walangpasok: 'Walang pasok',
+};
 
 function isHashtagOnly(segment: string): boolean {
   return /^(?:#\S+\s*)+$/.test(segment);
@@ -81,16 +91,19 @@ function stripEdgeSymbols(text: string): string {
  * that read as a headline. Returns '' when nothing on the line qualifies.
  */
 function headlineFromLine(line: string): string {
-  const kept = line
-    .split('|')
-    .map(segment => stripEdgeSymbols(segment))
-    .filter(
-      segment =>
-        segment.length > 0 &&
-        !isHashtagOnly(segment) &&
-        !DATE_SEGMENT.test(segment) &&
-        !GENERIC_LINE.test(segment)
-    );
+  const segments = line.split('|').map(segment => stripEdgeSymbols(segment));
+  const label = LABEL_HASHTAGS[segments[0]?.replace(/^#/, '').toLowerCase()];
+  const date = segments.find(segment => DATE_SEGMENT.test(segment));
+  if (label && date) {
+    return `${label} — ${date.replace(/\s*\([^)]*\)$/, '')}`;
+  }
+  const kept = segments.filter(
+    segment =>
+      segment.length > 0 &&
+      !isHashtagOnly(segment) &&
+      !DATE_SEGMENT.test(segment) &&
+      !GENERIC_LINE.test(segment)
+  );
   return kept.join(' — ');
 }
 

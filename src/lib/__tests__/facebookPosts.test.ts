@@ -47,6 +47,32 @@ describe('extractHeadline', () => {
     );
   });
 
+  it('skips dates with a weekday suffix, month-year dates and advisory kickers', () => {
+    expect(
+      extractHeadline(
+        '#BawatBayanMakikinabang | AUGUST 2026\n\n10-KILONG BIGAS, IPINAMAMAHAGI'
+      )
+    ).toBe('10-KILONG BIGAS, IPINAMAMAHAGI');
+    expect(
+      extractHeadline(
+        'AUGUST 06, 2026 | THURSDAY\n\n— CITY GOVERNMENT ADVISORY —\n\nSuspendido ang klase.'
+      )
+    ).toBe('Suspendido ang klase.');
+  });
+
+  it('keeps the date on a #WALANGPASOK notice so each one stays distinct', () => {
+    expect(
+      extractHeadline(
+        '#WALANGPASOK | AUGUST 28, 2026 (FRIDAY)\n\nAlinsunod sa…'
+      )
+    ).toBe('Walang pasok — AUGUST 28, 2026');
+    expect(
+      extractHeadline(
+        '#WALANGPASOK | August 10, 2026\nStay safe, Cabanatueños!\n\nBase sa…'
+      )
+    ).toBe('Walang pasok — August 10, 2026');
+  });
+
   it('keeps leading digits and strips edge emoji', () => {
     expect(extractHeadline('10-KILONG BIGAS, IPINAMAMAHAGI')).toBe(
       '10-KILONG BIGAS, IPINAMAMAHAGI'
