@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { allNews, getLatestNews, newsData, parseNewsDate } from '../news';
+import {
+  allNews,
+  getLatestNews,
+  getNewsByTopic,
+  newsData,
+  parseNewsDate,
+} from '../news';
 
 describe('news data source', () => {
   it('loads a description and an items collection', () => {
@@ -52,5 +58,19 @@ describe('news data source', () => {
     allNews.forEach(news => {
       expect(Number.isNaN(parseNewsDate(news.date).getTime())).toBe(false);
     });
+  });
+
+  it('never lists the same source link twice', () => {
+    const urls = allNews.map(n => n.sourceUrl);
+    expect(new Set(urls).size).toBe(urls.length);
+  });
+
+  it('filters by topic, newest first', () => {
+    const health = getNewsByTopic('health-services');
+    expect(health.every(n => n.topics?.includes('health-services'))).toBe(true);
+    expect(health).toEqual(
+      allNews.filter(n => n.topics?.includes('health-services'))
+    );
+    expect(getNewsByTopic('no-such-topic')).toEqual([]);
   });
 });

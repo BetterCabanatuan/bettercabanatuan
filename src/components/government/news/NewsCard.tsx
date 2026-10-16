@@ -34,7 +34,12 @@ export default function NewsCard({ item, className = '' }: NewsCardProps) {
           </time>
         </p>
 
-        <Heading level={3} className="text-base mb-2 text-balance">
+        {/* Every breakpoint is overridden: Heading's level-3 md:/lg: sizes
+            would otherwise survive the merge and blow up card titles. */}
+        <Heading
+          level={3}
+          className="text-base md:text-lg lg:text-lg mb-2 text-balance"
+        >
           {item.title}
         </Heading>
 

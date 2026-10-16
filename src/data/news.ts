@@ -1,5 +1,6 @@
 import yaml from 'js-yaml';
 import newsYaml from './news.yaml?raw';
+import facebookNewsYaml from './news.facebook.yaml?raw';
 
 export interface NewsItem {
   title: string;
@@ -8,6 +9,11 @@ export interface NewsItem {
   summary?: string;
   sourceName?: string;
   sourceUrl: string;
+  /**
+   * Service category slugs this item belongs to (e.g. `health-services`).
+   * The category page lists the items tagged with its slug.
+   */
+  topics?: string[];
 }
 
 export interface NewsData {
@@ -15,38 +21,63 @@ export interface NewsData {
   items: NewsItem[];
 }
 
-export const newsData: NewsData = (() => {
+function loadNewsYaml(contents: string, fileName: string): NewsData {
   try {
-    return yaml.load(newsYaml) as NewsData;
+    return (yaml.load(contents) as NewsData) ?? { description: '', items: [] };
   } catch (error) {
     // A malformed news file must not take the homepage or /government/news down.
-    console.error('Failed to parse news.yaml:', error);
+    console.error(`Failed to parse ${fileName}:`, error);
     return { description: '', items: [] };
   }
-})();
+}
+
+/** Hand-written items. See the header of news.yaml. */
+export const newsData: NewsData = loadNewsYaml(newsYaml, 'news.yaml');
+
+/** Items generated from the city Facebook page by `npm run import:posts`. */
+const facebookNews: NewsData = loadNewsYaml(
+  facebookNewsYaml,
+  'news.facebook.yaml'
+);
+
+function isValidItem(item: NewsItem | null | undefined): item is NewsItem {
+  if (!item) return false;
+  return (
+    Boolean(item.title?.trim()) &&
+    Boolean(item.date?.trim()) &&
+    Boolean(item.sourceUrl?.trim()) &&
+    !Number.isNaN(parseNewsDate(item.date).getTime())
+  );
+}
 
 /**
- * Valid items, newest first.
+ * Valid items from both files, newest first.
  *
  * Anything missing a title, date, or source link is dropped rather than
  * rendered as a broken card, so a half-finished edit degrades to "no items"
- * instead of breaking the page.
+ * instead of breaking the page. A hand-written item replaces an imported one
+ * with the same link, so a volunteer can correct an imported headline.
  */
-export const allNews: NewsItem[] = (newsData.items ?? [])
-  .filter(
-    (item): item is NewsItem =>
-      Boolean(item?.title?.trim()) &&
-      Boolean(item?.date?.trim()) &&
-      Boolean(item?.sourceUrl?.trim()) &&
-      !Number.isNaN(parseNewsDate(item.date).getTime())
-  )
-  .sort(
+export const allNews: NewsItem[] = (() => {
+  const handWritten = (newsData.items ?? []).filter(isValidItem);
+  const handWrittenUrls = new Set(handWritten.map(item => item.sourceUrl));
+  const imported = (facebookNews.items ?? [])
+    .filter(isValidItem)
+    .filter(item => !handWrittenUrls.has(item.sourceUrl));
+
+  return [...handWritten, ...imported].sort(
     (a, b) => parseNewsDate(b.date).getTime() - parseNewsDate(a.date).getTime()
   );
+})();
 
 /** The `limit` most recent items, newest first. */
 export function getLatestNews(limit: number): NewsItem[] {
   return allNews.slice(0, Math.max(0, limit));
+}
+
+/** Items tagged with `topic`, newest first. */
+export function getNewsByTopic(topic: string): NewsItem[] {
+  return allNews.filter(item => item.topics?.includes(topic));
 }
 
 /**
