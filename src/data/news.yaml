@@ -12,6 +12,7 @@
 #     summary: 'One or two sentences. Keep it plain and non-technical.'
 #     sourceName: 'City Mayor's Office'          # who published it
 #     sourceUrl: 'https://www.facebook.com/lgucabanatuan'   # where it lives
+#     topics: ['health-services']   # optional; lists it on that services page
 #
 # Rules:
 #   - `title`, `date` and `sourceUrl` are required. Missing ones are dropped.
@@ -20,10 +21,10 @@
 #   - If an item turns out to be wrong, delete the block. Do not edit history
 #     in place — a wrong correction is harder to spot than a missing item.
 #
-# Why this file is empty: the city government posts updates on Facebook, and
-# we do not want to republish announcements we cannot verify. Until someone
-# adds real items, /government/news shows an empty state pointing readers at
-# the official Facebook page.
+# Posts imported from the official city Facebook page live in the generated
+# news.facebook.yaml (`npm run import:posts`). Both files feed the same list.
+# An item here with the same `sourceUrl` as an imported one replaces it — use
+# that to correct an imported headline rather than editing the generated file.
 
 description: 'Announcements, advisories, and updates from the Cabanatuan City government.'
 

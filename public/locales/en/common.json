@@ -121,7 +121,11 @@
     "itemCount_other": "{{count}} news items",
     "emptyTitle": "No news items yet",
     "emptyDescription": "Updates from the city government are not published here yet. The fastest way to see announcements as they happen is the official {{city}} Facebook page.",
-    "fallbackCta": "See announcements on Facebook"
+    "fallbackCta": "See announcements on Facebook",
+    "categoryTitle": "Latest updates",
+    "categoryDescription": "Recent {{category}} posts from the official {{city}} Facebook page. Open a post for the full details and photos.",
+    "showMore": "Show more updates",
+    "showingCount": "Showing {{shown}} of {{total}} updates"
   },
   "footer": {
     "copyright": "© 2026 {{brand}}. All content is public domain unless otherwise specified.",
