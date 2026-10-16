@@ -5,6 +5,20 @@
 # src/lib/facebookTopics/ and re-run `npm run import:posts`.
 # Sources: posts.json, posts_since_2026-07-01.json
 items:
+  - title: 'ANUNSYO MULA SA CITY TREASURER’S OFFICE'
+    date: '2026-10-16'
+    summary: 'Paalala po sa lahat ng mga may negosyo sa Lungsod ng Cabanatuan ang palugit sa pagbabayad ng buwis para sa 4th Quarter ng Business Tax ay hanggang sa ika-20 ng Oktubre, 2026 ayon sa pinatupad na Ordinansa Bilang 038-2010.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid024QefZ28FtFExSRSeSUAaEWzVDPfTk8ftSsxHkxUknP8LWQezRZZ1xep7jSS5F7ZEl'
+    topics:
+      - 'business'
+  - title: 'PESO CABANATUAN CITY, KINILALANG BEST PESO SA 2025 NATIONAL SEARCH FOR THE BEST PESO AWARDS'
+    date: '2026-10-14'
+    summary: 'Isang malaking tagumpay para sa Cabanatuan City ang pagkilala sa Public Employment Service Office (PESO) bilang Best PESO sa 1st Class Component City Category sa 2025 National Search for the Best PESO Awards.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0jxwJytVnWELsGhHdN9A7w4c3pFUYoqttQJzmo1Gh4VmRj3G8yX9Ue2p95mdU3wB5l'
+    topics:
+      - 'business'
   - title: 'Libreng Bakuna Eskwela ng Cabanatuan City Health Office'
     date: '2026-10-12'
     summary: 'BAKUNA ESKWELA 2026: PROTEKSYON NGAYON, MAS LIGTAS NA KINABUKASAN! Grade 1- MR TD VACCINE · GRADE 4 (FEMALE)(9-14 y.o)-na wala pang bakuna ng HPV · GRADE 5 (FEMALE)(9-14 y.o)-wala pang bakuna ng HPV · GRADE 7- MR TD'
@@ -20,6 +34,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0HjCjYgP2m96yar1Buhj6Kyx7YRNb8Nf8FjPuyeoqZHQUm72KzoY17c8deemkcmeDl'
     topics:
       - 'health-services'
+  - title: 'HAPPENING NOW: TRABAHO AGAD JOB FAIR'
+    date: '2026-09-30'
+    summary: 'At CDRRMC Training Center, Kapt. Pepe, Cabanatuan City. 8:00 AM- 4:00 PM Public Employment Service Office - Cabanatuan City'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/reel/1117553877591960/'
+    topics:
+      - 'business'
   - title: 'WORLD RABIES DAY 2026'
     date: '2026-09-28'
     summary: 'Ipinagdiwang ngayong Setyembre 28, 2026 ang World Rabies Day sa Plaza Lucero, Cabanatuan City, na may temang “Stronger Together, Taas Kamay Para sa Rabies-Free Cabanatuan City!”'
@@ -244,6 +265,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02TSBRsSnAvA9dCEyYwqcmH76QE95wEv5dbHZXvsbMsgQ6uF5HTH5XEbydtszwpd8pl'
     topics:
       - 'health-services'
+  - title: 'Calling all Filipino authors, creatives, and artists in Cabanatuan!'
+    date: '2026-07-27'
+    summary: 'The Local Government Unit of Cabanatuan proudly supports the Malikhaing Pinoy Wanna Make It Right with International Standard Name Identifier (ISNI) and Copyright Project of the Department of Trade and Industry – Philippine Creative…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02GgvCmasGsPWPgcQg1dtMdySYUDWrBkMikxVaWpaSBRh2RvBxVqh4VKHsNJq3pv7fl'
+    topics:
+      - 'business'
   - title: 'Alin sa mga paaralang ipinatayo ng City Government of Cabanatuan ang pinapasukan ng inyong mga anak?'
     date: '2026-07-24'
     summary: 'I-comment ang pangalan ng paaralan!'
@@ -327,6 +355,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02asZSWkLr8s1P98ANwNcjMBPW7T4rhx69GY8BVn4ezqW8TZua36yn1fc5h2ix2BWVl'
     topics:
       - 'health-services'
+  - title: 'Ready to land your next job?'
+    date: '2026-07-17'
+    summary: 'We are bringing the employers straight to you! Check out our line-up of upcoming recruitment activities and find the opportunity that fits your goals. · Where: PESO Office, City Hall Compound, Cabanatuan City · When: Check the list below…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02UqsQD3KbLP3xP37ZEBFH9SUa2BA8u9h1iR5xRxEuhJ6HYT4CQBsxAnjaKCKKKMXWl'
+    topics:
+      - 'business'
   - title: 'LIBRENG CHECK-UP, OPHTHALMOLOGY'
     date: '2026-07-17'
     summary: 'EVERY FRIDAY, 8:00 AM - 12:00 NN · MVGCCGH (2ND FLOOR), Maharlika Highway, Cabanatuan City.'
@@ -341,6 +376,20 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid027wJvvpVuedjRUatsaraRKJadCzwBmnsbnW4V5PVFaAhWtXjcQA4i1RcNRekXkHwYl'
     topics:
       - 'education'
+  - title: 'LIVELIHOOD ASSISTANCE, IPINAGKALOOB SA MGA MARGINALIZED INDIVIDUALS MULA SA IKATLONG DISTRITO NG NUEVA ECIJA'
+    date: '2026-07-16'
+    summary: 'Isinagawa kahapon, Hulyo 15, 2026 sa City Hall Compound ang Provision of Livelihood Assistance to Marginalized Individuals para sa mga benepisyaryo mula sa Ikatlong Distrito ng Nueva Ecija.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02bHoevyXv58b4iMkUeNFUXfQLAVBPVGGPoSR4feFzdp7zKnAYnSbrV29ceHRJ7rEJl'
+    topics:
+      - 'business'
+  - title: 'BIR REVENUE DISTRICT OFFICE NO. 23B – SOUTH NUEVA ECIJA, NAGSAGAWA NG PAGBISITA SA PAMAHALAANG LUNGSOD NG CABANATUAN'
+    date: '2026-07-15'
+    summary: 'Nagsagawa ng pagbisita ang mga kinatawan ng Bureau of Internal Revenue Revenue District Office No. 23B – South Nueva Ecija sa Pamahalaang Lungsod ng Cabanatuan City.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0caHdURANewgj3QBLZn594fVJAMairSXT6AF7zEum6JCmjSPoZgZ2TZBHudpLp74Yl'
+    topics:
+      - 'business'
   - title: 'LIBRENG CHECK-UP, E.N.T.'
     date: '2026-07-14'
     summary: 'Every Wednesday, 1:00 PM - 5:00 PM · MVGCCGH (2ND FLOOR), Maharlika Highway, Cabanatuan City.'
@@ -369,6 +418,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid09cBQworAYT4CigPu6duHTosxiahrx8LiACyzSwiCX77APa26sSg7hKZyBw1Fm5TKl'
     topics:
       - 'health-services'
+  - title: 'PESO, NAGSAGAWA NG ORIENTATION SEMINAR AT INITIAL INTERVIEW PARA SA MGA APLIKANTE'
+    date: '2026-07-09'
+    summary: 'Isinagawa kahapon, Hulyo 8, 2026 ang Orientation Seminar at Initial Interview na pinangunahan ng Public Employment Service Office sa City Hall Gym, Cabanatuan City.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02VhLncrDVtKdbSvK499sw84pb5QbizMkX4UJ5K8bhTeU489PVFJk54WwuhP2sMvgLl'
+    topics:
+      - 'business'
   - title: 'Bayanihan in Action: Strengthening Immunization Efforts in Cabanatuan City'
     date: '2026-07-08'
     summary: 'The City of Cabanatuan came together in a spirit of bayanihan with the support of various Human Resources for Health (HRH) and vaccinators from the municipalities of Talavera, Gapan, Aliaga, Guimba, Zaragoza, Jaen, San Leonardo, San…'
