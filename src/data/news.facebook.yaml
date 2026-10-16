@@ -5,6 +5,13 @@
 # src/lib/facebookTopics/ and re-run `npm run import:posts`.
 # Sources: posts.json, posts_since_2026-07-01.json
 items:
+  - title: '10-KILONG BIGAS, IPINAMAMAHAGI SA MGA PAMILYA NG SENIOR CITIZEN SA ILALIM NG “BAGONG PILIPINAS, BAWAT BAYAN MAKIKINABANG”'
+    date: '2026-10-16'
+    summary: 'Patuloy ang pamamahagi ng 10-kilogramong bigas sa Brgy. San Isidro, Brgy. Mabini Homesite, Brgy. Villa Ofelia, Brgy. Dicarma, Brgy. Zulueta, Brgy. Pula, Brgy. Barlis, at Brgy. Kalikid Sur, Cabanatuan City— para sa mga kwalipikadong…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02M1fVgujpQXdrLQnAWi1f8fa1btNekDReLvxwZjoh82zdfEeMsUZpgdjZLqaao6xvl'
+    topics:
+      - 'social-welfare'
   - title: 'ANUNSYO MULA SA CITY TREASURER’S OFFICE'
     date: '2026-10-16'
     summary: 'Paalala po sa lahat ng mga may negosyo sa Lungsod ng Cabanatuan ang palugit sa pagbabayad ng buwis para sa 4th Quarter ng Business Tax ay hanggang sa ika-20 ng Oktubre, 2026 ayon sa pinatupad na Ordinansa Bilang 038-2010.'
@@ -27,6 +34,13 @@ items:
     topics:
       - 'health-services'
       - 'education'
+  - title: 'BENTENG BIGAS, MERON NA!'
+    date: '2026-09-30'
+    summary: 'HATID NG PANGULONG FERDINAND “BONGBONG” MARCOS JR. Patuloy na isinasagawa ngayong araw (September 30) sa Brgy. Barlis, Cabanatuan City, ang Benteng Bigas, Meron Na! – ₱20 Rice Project ng administrasyon ni Pangulong Ferdinand “Bongbong”…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid026QJZwePb2aBvSzMsHsh9tD77vgBagiRaaTrRzSjbpjx5KoizaR42mREBjau7Knwol'
+    topics:
+      - 'social-welfare'
   - title: 'FREE KAPON DAY 2'
     date: '2026-09-30'
     summary: 'Ginanap ang Day 2 ng Free Kapon Activity, ngayong araw, Setyembre 30, 2026, sa Cabanatuan City Veterinary Office, City Hall, Brgy. Kapt. Pepe, Cabanatuan.'
@@ -69,6 +83,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0fiZPNfpE6uKkDuAJZEoy7XQj6gwM3YjDt2J69JJW6vyspg5GLY6GNQ4qVggGC8ddl'
     topics:
       - 'health-services'
+  - title: 'PAUNAWA SA PUBLIKO: VALIDATION AT REGISTRATION NG MGA POTENSYAL NA BENEPISYARYO NG 4Ps'
+    date: '2026-09-14'
+    summary: 'Ipinagbibigay-alam sa lahat ng mamamayan ng Lungsod ng Cabanatuan na magsasagawa ng validation at registration para sa mga potensyal na pamilyang maging bagong benepisyaryo ng Pantawid Pamilyang Pilipino Program (4Ps). Ang listahang ito…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02jhySdfZQ3dMxuziGeCcm1YYVY4AR8z8LNT6Ffd2PWdJ8YoZTgPcjS59EvE6qCwKal'
+    topics:
+      - 'social-welfare'
   - title: 'M.V. GALLEGO CABANATUAN CITY GENERAL HOSPITAL, OPD SPECIALTY CLINIC SCHEDULE'
     date: '2026-09-11'
     summary: 'Narito po ang bagong schedule ng OPD Specialty Clinics ng M.V. Gallego Cabanatuan City General Hospital para sa mga nangangailangan ng medical consultation.'
@@ -83,6 +104,34 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0uyPWb4uvnbGAaWFR2CceZQ9AnLPgHFZGMVAuqTCSaqmxnEAXSnWJmFAFrDc84t7Xl'
     topics:
       - 'health-services'
+  - title: 'MYCABANATUAN: KASALUKUYANG AKTIBIDAD SA LUNGSOD'
+    date: '2026-09-05'
+    summary: 'Patuloy ang iba’t ibang rice assistance initiatives para sa mga Cabanatueño, bilang tugon sa pangangailangan ng bawat pamilya.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02FDjZcjpAanv4rPe4CKnBDTKAoHtUQCuP575dMGYkVJXeV2ZJSC8EXM9fb9QGpPrFl'
+    topics:
+      - 'social-welfare'
+  - title: 'PROTECTING CHILDHOOD IN THE DIGITAL AGE'
+    date: '2026-09-02'
+    summary: 'Isinagawa ngayong Setyembre 2, 2026 ang one-day training na may temang “Protecting Childhood in the Digital Age 2026,” na pinangunahan ng City Social Welfare and Development Office (CSWDO).'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid022sKJREkcUa9ghAFvmMTE8A7B8cXQwuwc2nfFWAX2uQnJGFnhqyvHb42RrRxrtd4xl'
+    topics:
+      - 'social-welfare'
+  - title: '10-KILONG BIGAS, IPINAMAMAHAGI SA MGA PAMILYANG CABANATUEÑO SA ILALIM NG “BAGONG PILIPINAS, BAWAT BAYAN MAKIKINABANG”'
+    date: '2026-09-01'
+    summary: 'Patuloy ang pamamahagi ng 10-kilogramong bigas sa iba''t ibang barangay ng Cabanatuan para sa mga kwalipikadong pamilyang kabilang sa low-income at vulnerable sectors bilang bahagi ng mga social welfare initiatives ng Administrasyon ni…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0ETPvESejFsMwM1t9VXFEW5LEnGnuCAJBbXhQv7dq6ygkyMFGBtPJdXoC1kTXHtGil'
+    topics:
+      - 'social-welfare'
+  - title: 'FUNERARIA DE CABANATUAN'
+    date: '2026-09-01'
+    summary: 'Ang Funeraria de Cabanatuan ay isang proyekto ng Pamahalaang Lungsod na nagbibigay ng LIBRE, MAAYOS, AT MARANGAL NA FUNERAL SERVICES para sa mga pumanaw na residente ng Lungsod ng Cabanatuan.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0Wm3fNaYKr744sc9KtYp4S8kGA8DQmuuXop1GAbsWZsFvoc18yK8UQzkfi8iw3Tqtl'
+    topics:
+      - 'social-welfare'
   - title: 'Walang pasok — AUGUST 28, 2026'
     date: '2026-08-27'
     summary: 'Alinsunod sa Executive Order No. 26, Series of 2026, mula sa Provincial Government of Nueva Ecija— sinuspinde ang face-to-face classes sa lahat ng antas sa Nueva Ecija ngayong Biyernes, Agosto 28, 2026.'
@@ -132,6 +181,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0hAei8ixgwqGbFMNZXvqpioJAudHA9b5b4WE5PnAv92ci4ogsjoX7Cxorod5xWxKNl'
     topics:
       - 'health-services'
+  - title: 'UPLIFT PROGRAM PAYOUT'
+    date: '2026-08-17'
+    summary: 'Isinagawa nitong nakaraang Agosto 14, 2026 ang payout para sa mga benepisyaryo ng Unified Package for Livelihood, Industry, Food and Transport (UPLIFT) Program sa Cabanatuan City Convention Center.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02ekrtg611CgZbf8Une5QzSGKyRBbbgEP38gj3RpzR2HFatasZ52a2sDLRBgXt3yw3l'
+    topics:
+      - 'social-welfare'
   - title: 'CITY HEALTH OFFICE AT RITEMED, NAGHATID NG HEALTH TALK SESSION'
     date: '2026-08-17'
     summary: 'Isinagawa nitong nakaraang Agosto 14, 2026 ang Health Talk Session ng City Health Office (CHO) sa pakikipagtulungan ng RiteMed sa CDRRMC Training Center, Cabanatuan City.'
@@ -167,6 +223,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02Z7EJprA2Fkf964GPvsvEPGizE59pXai6J6q6a1QvZ8Cs4fd5vajt2wTdAw5cQSGxl'
     topics:
       - 'health-services'
+  - title: 'BENTENG BIGAS MERON NA: ₱20 RICE PROJECT, INILUNSAD SA CABANATUAN CITY'
+    date: '2026-08-11'
+    summary: 'Isinagawa ang Benteng Bigas Meron Na: ₱20 Rice Project ni Pangulong Ferdinand “Bongbong” Marcos Jr., nitong August 05-11, 2026 sa mga barangay ng Pangatian, Communal, at Sapang.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0cXEGkk2gfDXd76m3nPSAi76jVZRjYkpDTPa7kQvsd7XNr4LQAPgpwydoKgckxyvKl'
+    topics:
+      - 'social-welfare'
   - title: '“LIGTAS TIGDAS,” ISINAGAWA PARA SA KARAGDAGANG PROTEKSYON LABAN SA MEASLES AT RUBELLA'
     date: '2026-08-11'
     summary: 'Isinagawa ng City Health Office (CHO), katuwang ang Department of Health (DOH), ang Ligtas Tigdas – Measles-Rubella Supplemental Immunization Activity (SIA) sa Cabanatuan City.'
@@ -202,6 +265,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02aUQco1yjACjcaxEy3Haak98ibKm4CszcEqpwBwzZ5FYSQJsfQhvevQsP4Fbqu7x2l'
     topics:
       - 'health-services'
+      - 'social-welfare'
   - title: 'Alinsunod sa Memorandum Circular No. 122, suspendido ang trabaho sa mga tanggapan ng pamahalaan at klase sa lahat ng antas sa Nueva Ecija.'
     date: '2026-08-06'
     summary: 'Mananatiling bukas ang City Mayor’s Office. Samantang ang mga tanggapan sa Cabanatuan City Hall ay magpapatupad ng Skeletal Workforce upang magpatuloy sa pagbibigay ng serbisyo sa publiko.'
@@ -223,6 +287,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0BX8wsifBmSuNbMi7SYLXNSe1R39B7g7LSj8vcCQJ1f2HmP5oCfnsdyK3Aw57fLrDl'
     topics:
       - 'education'
+  - title: 'CSWDO, PATULOY NA NAGMOMONITOR AT NAGBIBIGAY NG TULONG SA MGA EVACUATION CENTER'
+    date: '2026-08-04'
+    summary: 'Patuloy na nagsasagawa ng monitoring at paghahatid ng kinakailangang serbisyo ang City Social Welfare and Development Office sa mga evacuation center sa Cabanatuan City para sa mga residenteng inilikas dahil sa pagbaha dulot ng Bagyong…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02Mr3Zhvj5Wp6q6424hwj8TXPZnY6ATLFhYawN4qgFSNwvz1TkfGU2oZCbYeUeuk3ol'
+    topics:
+      - 'social-welfare'
   - title: 'EVERYDAY FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER'
     date: '2026-08-04'
     summary: 'Patuloy ang pagsasagawa ng ating Cabanatuan City Veterinary Office sa FREE CONSULTATION, TREATMENT, ANTI-RABIES, DEWORMING, SPAY AND NEUTER sa City Hall Compound.'
@@ -251,6 +322,20 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid021R1Jtn6bmvKAgDMWSKBLpL7zdhb71hW2TW5P7B1CoywrL9n2ein7TWC1nGZTC4Twl'
     topics:
       - 'education'
+  - title: 'Benteng Bigas Meron Na: ₱20 Rice Project inilunsad sa Cabanatuan City'
+    date: '2026-07-31'
+    summary: 'IIsinagawa ang Benteng Bigas Meron Na: ₱20 Rice Project ni Pangulong Ferdinand “Bongbong” Marcos Jr., Hulyo 28-31,2026 sa mga barangay ng Obrero, Bagong Sikat, Bakero at Lagare.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0PNqKPvE1iDsEVJ11v7XErJqYCgYPc8pm4F4g16uoPKxZGbJBjyFrJ8xfhbvKRMqrl'
+    topics:
+      - 'social-welfare'
+  - title: 'Isinagawa kahapon, Hulyo 30, 2026, ang Social Pension Pay-out for Indigent Senior Citizens sa pangunguna ng City Social Welfare and…'
+    date: '2026-07-31'
+    summary: 'Umabot sa 950 senior citizens at 20 Overseas Filipino Workers (OFWs) mula sa 89 barangay ng Lungsod ng Cabanatuan ang nakinabang sa nasabing pay-out.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02VGsuSDWt6MevvNvwM6jy3kUetJKjhixEyCj3UZ4x3ocPjhUxK1CWgMSehSfvErtYl'
+    topics:
+      - 'social-welfare'
   - title: 'TB Mass Screening Isinagawa sa Brgy. Bangad, Cabanatuan City'
     date: '2026-07-29'
     summary: 'Isinagawa ngayong araw, Hulyo 29, 2026, ang TB Mass Screening sa pangunguna ng City Health Office - City Health Center 3, sa Brgy. Bangad, Cabanatuan City.'
@@ -258,6 +343,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0rfBLrNaarcZP9TMPWPjBtsjdM6EBFbfku76VgczCki2XcU2faAPPwEHa8zeuVjLzl'
     topics:
       - 'health-services'
+  - title: 'Social Protection and Reintegration Orientation'
+    date: '2026-07-28'
+    summary: 'Isinagawa ngayong araw, Hulyo 28, 2026, ang Social Protection and Reintegration Orientation bilang bahagi ng pagdiriwang ng ika-50 anibersaryo ng Parole and Probation Administration sa Cabanatuan City na ginanap sa City DRRM Council…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0kicxfikY1iArhFwLhBy2qwnb8ZeKkTuU45Se898TAgCzCNnyvCRG6fjsiCuzZnfMl'
+    topics:
+      - 'social-welfare'
   - title: 'LIBRENG CHECK-UP, ORTHOPEDIC'
     date: '2026-07-27'
     summary: 'EVERY TUESDAY,1:00 PM - 5:00 PM · TTMF Monitoring Facility, Kapitan Pepe, Cabanatuan City.'
@@ -272,6 +364,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02GgvCmasGsPWPgcQg1dtMdySYUDWrBkMikxVaWpaSBRh2RvBxVqh4VKHsNJq3pv7fl'
     topics:
       - 'business'
+  - title: 'CABANATUAN ASSOCIATION OF SENIOR CITIZENS FEDERATION, NAGSAGAWA NG BUWANANG PAGPUPULONG'
+    date: '2026-07-24'
+    summary: 'Isinagawa ngayong araw, Hulyo 24, 2026 ang Monthly Meeting ng Cabanatuan Association of Senior Citizens Federation (CASCF) sa pangunguna ng City Social Welfare and Development Office.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02YnZBoRjfLjPJoRsTrxY5KnxYVBp8km2Q2MEfuvD5A4GhAUHgTTebq9nwBuGoaTwVl'
+    topics:
+      - 'social-welfare'
   - title: 'Alin sa mga paaralang ipinatayo ng City Government of Cabanatuan ang pinapasukan ng inyong mga anak?'
     date: '2026-07-24'
     summary: 'I-comment ang pangalan ng paaralan!'
@@ -299,6 +398,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0dcTjxrP6LvbLrPjR8JB3BbBPipzZo5eBEyKmuLku2SKRb2M3fSByLadRh9DE3ZkAl'
     topics:
       - 'health-services'
+  - title: 'DSWD, PINANGUNAHAN ANG ENHANCED FAMILY DEVELOPMENT SESSION (EFDS) AT PANGKALAHATANG ASEMBLIYA NG 4Ps'
+    date: '2026-07-23'
+    summary: 'Pormal na sinimulan kahapon, Hulyo 22, 2026, ang Day 1 ng Training on the Enhanced Family Development Session (EFDS) at General Assembly ng Pantawid Pamilyang Pilipino Program (4Ps) na pinangunahan ng Department of Social Welfare and…'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02p15kFBkRVeQwkWqXfJhJSk5U2Y2cPt5JAgu7851GdKJ8kzwSdkheDnjf5rBnWpcvl'
+    topics:
+      - 'social-welfare'
   - title: 'LUNGSOD NG CABANATUAN, LUMAGDA SA MEMORANDUM OF UNDERSTANDING SA NEUST'
     date: '2026-07-22'
     summary: 'Lumagda ang Pamahalaang Lungsod ng Cabanatuan City sa Mass Memorandum of Understanding (MOU) / Memorandum of Agreement (MOA) Signing Ceremony na pinangunahan ng Nueva Ecija University of Science and Technology ngayong araw Hulyo 22, 2026…'
@@ -320,6 +426,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02tLhiE8fATa7tqpxx8zmWwSUywoBFHpMDZm9ESzq8H8EmkkviK7P1NAiGeQuvtqrxl'
     topics:
       - 'health-services'
+      - 'social-welfare'
   - title: 'LIBRENG CHECK-UP, PEDIA'
     date: '2026-07-21'
     summary: 'EVERY TUESDAY, 8:00 AM LIBRENG CHECK-UP PARA SA MGA BUNTIS · MON-FRI, 8:00 AM TO 12:00 NN'
@@ -383,6 +490,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02bHoevyXv58b4iMkUeNFUXfQLAVBPVGGPoSR4feFzdp7zKnAYnSbrV29ceHRJ7rEJl'
     topics:
       - 'business'
+      - 'social-welfare'
   - title: 'BIR REVENUE DISTRICT OFFICE NO. 23B – SOUTH NUEVA ECIJA, NAGSAGAWA NG PAGBISITA SA PAMAHALAANG LUNGSOD NG CABANATUAN'
     date: '2026-07-15'
     summary: 'Nagsagawa ng pagbisita ang mga kinatawan ng Bureau of Internal Revenue Revenue District Office No. 23B – South Nueva Ecija sa Pamahalaang Lungsod ng Cabanatuan City.'
@@ -397,6 +505,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0UWkygo9CJe6BwjnRFKUx9jMgGfYdjvXWpnwD9e27MdSDLSsBx57KDyUxp5wtyeeHl'
     topics:
       - 'health-services'
+  - title: 'CSWDO, NAGSAGAWA NG VALIDATION PARA SA MGA BENEPISYARYO NG PANTAWID PAMILYANG PILIPINO PROGRAM (4Ps)'
+    date: '2026-07-13'
+    summary: 'Isinagawa ng City Social Welfare and Development Office ang validation ng mga benepisyaryo ng Pantawid Pamilyang Pilipino Program (4Ps) sa SM Mega Center, Ground Floor, Cabanatuan City.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid0q2iFHq6RyjNUTN3sPCvEvfJYnjpRzr9AZvKLr1EEGHqY29fQJWYucV98n6NjZEDvl'
+    topics:
+      - 'social-welfare'
   - title: 'LIBRENG CHECK-UP PARA SA MGA BUNTIS'
     date: '2026-07-13'
     summary: 'MON-FRI, 8:00 AM TO 12:00 NN · TTMF Monitoring Facility, Kapitan Pepe, Cabanatuan City.'
@@ -474,6 +589,13 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid02PPVEngDQ1Z7nKuEe4WjwTLWguPXK21d8n82fhhtYyFtv9oJdWsjJeQbpRpJK9Qmpl'
     topics:
       - 'health-services'
+  - title: 'CSWDO, NAGSAGAWA NG SEMINAR PARA SA PAGPAPALAKAS NG BCPC SYSTEM AT PAMUMUNONG PANGKOMUNIDAD'
+    date: '2026-07-02'
+    summary: 'Isinagawa kahapon, Hulyo 1, 2026 ang “Empowering Communities: Strengthening the BCPC System with Local Leadership” na pinangunahan ng City Social Welfare and Development Office.'
+    sourceName: 'City Government of Cabanatuan'
+    sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid027jWqavzFPFRdsGTSif51uVK1PW3nNJCBcn92LHLiGBkZZ81PCwvbxChaMnVVaoPfl'
+    topics:
+      - 'social-welfare'
   - title: 'MV GALLEGO GENERAL HOSPITAL, NAGSAGAWA NG LIBRENG CHECK-UP'
     date: '2026-07-02'
     summary: 'Isinagawa kahapon, Hulyo 01, 2026, ang Libreng E.N.T. Check-Up na pinangunahan ng MV Gallego Cabanatuan City General Hospital sa 2nd Floor - MVGCCGH: Eye Center - Clinic, City Hospital, Old Building, pati na ang Libreng Check-up para sa…'
@@ -488,6 +610,7 @@ items:
     sourceUrl: 'https://www.facebook.com/lgucabanatuan/posts/pfbid03538DwVJpXcbpAbH4Lmmn8KBeSUZRJEm2S4RFVqrisqqzBXQuYGdsDcRcXCteC8bbl'
     topics:
       - 'health-services'
+      - 'social-welfare'
   - title: '2026 Nutrition Month Sub-Theme: Nutrisyon at Kalikasan, Ating Pangalagaan!'
     date: '2026-07-01'
     summary: 'Ngayong Hulyo, nakikiisa ang City Government of Cabanatuan at Cabanatuan City Health Office, kasama ang Nutrition Division, sa pagdiriwang ng Nutrition Month 2026 na may temang nakatuon sa pangangalaga ng kalikasan tungo sa wasto at sapat…'
