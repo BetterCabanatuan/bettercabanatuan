@@ -18,6 +18,7 @@ import CardGrid, { CardGridItem } from '../ui/CardGrid';
 import CategoryCard from '../ui/CategoryCard';
 import EmptyState from '../ui/EmptyState';
 import { Inbox } from 'lucide-react';
+import CategoryUpdates from './CategoryUpdates';
 
 interface ServiceCategoryPageProps {
   categoryId?: string;
@@ -134,6 +135,10 @@ export default function ServiceCategoryPage({
             </CardGrid>
           </>
         )}
+        <CategoryUpdates
+          categoryId={categoryId}
+          categoryName={categoryData.category || categoryId}
+        />
       </Section>
     </>
   );

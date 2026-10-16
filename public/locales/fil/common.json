@@ -121,7 +121,11 @@
     "itemCount_other": "{{count}} na balita",
     "emptyTitle": "Wala pang balita",
     "emptyDescription": "Hindi pa nailathala rito ang mga update mula sa pamahalaang lungsod. Ang pinakamabilis na paraan para makita ang mga anunsyo ay ang opisyal na Facebook page ng {{city}}.",
-    "fallbackCta": "Tingnan ang anunsyo sa Facebook"
+    "fallbackCta": "Tingnan ang anunsyo sa Facebook",
+    "categoryTitle": "Pinakabagong update",
+    "categoryDescription": "Mga bagong post tungkol sa {{category}} mula sa opisyal na Facebook page ng {{city}}. Buksan ang post para sa buong detalye at mga larawan.",
+    "showMore": "Magpakita pa ng update",
+    "showingCount": "Ipinapakita ang {{shown}} sa {{total}} na update"
   },
   "footer": {
     "copyright": "© 2026 {{brand}}. Lahat ng nilalaman ay public domain maliban kung may ibang nakasaad.",

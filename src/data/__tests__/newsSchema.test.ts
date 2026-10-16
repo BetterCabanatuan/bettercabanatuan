@@ -1,12 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import yaml from 'js-yaml';
-
-// Kept in sync with the checked-in file; asserted below so the docs and the
-// loader's contract can never drift.
-const SHIPPED_NEWS_YAML = `description: 'Announcements, advisories, and updates from the Cabanatuan City government.'
-
-items: []
-`;
+import SHIPPED_NEWS_YAML from '../news.yaml?raw';
+import SHIPPED_FACEBOOK_NEWS_YAML from '../news.facebook.yaml?raw';
 
 /**
  * Mirrors the validation in src/data/news.ts, applied to arbitrary YAML text.
@@ -109,5 +104,18 @@ items:
     };
     expect(typeof parsed.description).toBe('string');
     expect(Array.isArray(parsed.items)).toBe(true);
+  });
+
+  it('every generated Facebook item passes validation and has a topic', () => {
+    const parsed = yaml.load(SHIPPED_FACEBOOK_NEWS_YAML) as {
+      items: { topics?: string[] }[];
+    };
+    expect(Array.isArray(parsed.items)).toBe(true);
+    expect(loadItems(SHIPPED_FACEBOOK_NEWS_YAML)).toHaveLength(
+      parsed.items.length
+    );
+    for (const item of parsed.items) {
+      expect(item.topics?.length).toBeGreaterThan(0);
+    }
   });
 });
