@@ -70,6 +70,11 @@ export const footerNavigation: {
           })),
         { label: 'Hotlines', href: '/hotlines' },
         {
+          label: 'Jeep & Tricycle Fares',
+          href: 'https://pamasahe.bettercabanatuan.org',
+          external: true,
+        },
+        {
           label: 'Holidays',
           href: 'https://bettergov.ph/philippines/holidays',
           external: true,

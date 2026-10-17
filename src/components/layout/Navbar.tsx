@@ -90,6 +90,14 @@ const Navbar: React.FC = () => {
             >
               {t('navbar.hotlines')}
             </a>
+            <a
+              href="https://pamasahe.bettercabanatuan.org"
+              className="text-gray-800 hover:text-primary-600 inline-flex min-h-[44px] items-center text-xs transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('navbar.fares')}
+            </a>
             <div className="hidden md:block">
               <select
                 aria-label="Language"
@@ -323,6 +331,14 @@ const Navbar: React.FC = () => {
             className="flex min-h-11 items-center px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
           >
             {t('navbar.hotlines')}
+          </a>
+          <a
+            href="https://pamasahe.bettercabanatuan.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex min-h-11 items-center px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
+          >
+            {t('navbar.fares')}
           </a>
           <Link
             to="/about"

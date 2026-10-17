@@ -4,6 +4,7 @@ import GovernmentActivitySection from '../components/home/GovernmentActivitySect
 import CityStats from '../components/home/CityStats';
 import LocalConditionsSection from '../components/home/LocalConditionsSection';
 import FacebookSection from '../components/home/FacebookSection';
+import CivicAppsSection from '../components/home/CivicAppsSection';
 import SEO from '../components/SEO';
 import { organizationJsonLd, webSiteJsonLd } from '../lib/structuredData';
 import { siteConfig } from '../lib/siteConfig';
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
       <Hero />
       <CityStats />
       <ServicesSection compact />
+      <CivicAppsSection />
       <GovernmentActivitySection compact />
       <FacebookSection />
       <LocalConditionsSection />

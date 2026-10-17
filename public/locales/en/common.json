@@ -61,6 +61,17 @@
     "viewAll": "View All Services",
     "viewAllCategory": "Explore"
   },
+  "civicApps": {
+    "title": "Tools for Residents",
+    "description": "Free apps built by the Better Cabanatuan community for everyday life in the city.",
+    "open": "Open app",
+    "apps": {
+      "pamasahe": {
+        "title": "Pamasahe: Jeep & Tricycle Fares",
+        "description": "Check the legal jeep and tricycle fare in Cabanatuan City before you pay."
+      }
+    }
+  },
   "governmentActivity": {
     "title": "Government Activity",
     "description": "Meet the people who run the city, the offices that deliver its services, and the projects they are building.",
@@ -137,6 +148,7 @@
     "statistics": "Statistics",
     "transparency": "Transparency",
     "hotlines": "Hotlines",
+    "fares": "Fares",
     "holidays": "Holidays",
     "about": "About",
     "contact": "Contact",

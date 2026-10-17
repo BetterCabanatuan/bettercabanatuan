@@ -61,6 +61,17 @@
     "viewAll": "Tingnan Lahat ng Serbisyo",
     "viewAllCategory": "Tuklas"
   },
+  "civicApps": {
+    "title": "Mga Kasangkapan para sa Residente",
+    "description": "Mga libreng app na gawa ng komunidad ng Better Cabanatuan para sa araw-araw na buhay sa lungsod.",
+    "open": "Buksan ang app",
+    "apps": {
+      "pamasahe": {
+        "title": "Pamasahe: Pamasahe sa Jeep at Tricycle",
+        "description": "Alamin ang tamang pamasahe sa jeep at tricycle sa Lungsod ng Cabanatuan bago magbayad."
+      }
+    }
+  },
   "governmentActivity": {
     "title": "Aktibidad ng Pamahalaan",
     "description": "Kilalanin ang mga taong humahawak ng pamahalaan, ang mga tanggapan na nagbibigay ng serbisyo, at ang mga proyekto nilang ginagawa.",
@@ -137,6 +148,7 @@
     "statistics": "Estadistika",
     "transparency": "Transparensiya",
     "hotlines": "Mga Hotline",
+    "fares": "Pamasahe",
     "holidays": "Holiday",
     "about": "Tungkol",
     "contact": "Makipag-ugnayan",
