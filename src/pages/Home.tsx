@@ -1,5 +1,6 @@
 import Hero from '../components/sections/Hero';
 import ServicesSection from '../components/home/ServicesSection';
+import WhatsNewSection from '../components/home/WhatsNewSection';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
 import CityStats from '../components/home/CityStats';
 import LocalConditionsSection from '../components/home/LocalConditionsSection';
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
       <Hero />
       <CityStats />
       <ServicesSection compact />
+      <WhatsNewSection />
       <CivicAppsSection />
       <GovernmentActivitySection compact />
       <FacebookSection />

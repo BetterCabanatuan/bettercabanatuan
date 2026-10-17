@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '../../ui/Card';
 import { Heading } from '../../ui/Heading';
 import { Text } from '../../ui/Text';
-import { parseNewsDate, type NewsItem } from '../../../data/news';
+import StatusBadge from '../../ui/StatusBadge';
+import { newsRecency, parseNewsDate, type NewsItem } from '../../../data/news';
 
 interface NewsCardProps {
   item: NewsItem;
@@ -21,6 +22,7 @@ export default function NewsCard({ item, className = '' }: NewsCardProps) {
         month: 'long',
         day: 'numeric',
       }).format(published);
+  const recency = newsRecency(item.date);
 
   return (
     <Card
@@ -32,6 +34,17 @@ export default function NewsCard({ item, className = '' }: NewsCardProps) {
           <time dateTime={item.date}>
             {t('newsFeed.publishedOn', { date: formattedDate })}
           </time>
+          {recency && (
+            <StatusBadge
+              tone={recency === 'today' ? 'info' : 'neutral'}
+              size="sm"
+              className="ml-1"
+            >
+              {recency === 'today'
+                ? t('newsFeed.today')
+                : t('newsFeed.yesterday')}
+            </StatusBadge>
+          )}
         </p>
 
         {/* Every breakpoint is overridden: Heading's level-3 md:/lg: sizes

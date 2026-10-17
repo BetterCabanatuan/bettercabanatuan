@@ -1,6 +1,6 @@
 import { describe, expect, it, afterEach, vi } from 'vitest';
 import yaml from 'js-yaml';
-import { screen } from '@testing-library/react';
+import { fireEvent, screen } from '@testing-library/react';
 import { renderWithProviders } from '../../../../test/test-utils';
 import NewsList from '../NewsList';
 import NewsCard from '../NewsCard';
@@ -82,6 +82,47 @@ describe('NewsList', () => {
 
     expect(getLatest).toHaveBeenCalledWith(3);
     expect(screen.getAllByRole('link', { name: /Read more/ })).toHaveLength(3);
+  });
+
+  it('pages through items with Show more', () => {
+    vi.spyOn(newsModule, 'allNews', 'get').mockReturnValue(sorted);
+
+    renderWithProviders(<NewsList pageSize={3} />);
+
+    expect(screen.getAllByRole('link', { name: /Read more/ })).toHaveLength(3);
+    expect(screen.getByText('Showing 3 of 4 updates')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Show more updates' }));
+
+    expect(screen.getAllByRole('link', { name: /Read more/ })).toHaveLength(4);
+    expect(screen.getByText('Showing 4 of 4 updates')).toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: 'Show more updates' })
+    ).not.toBeInTheDocument();
+  });
+
+  it('badges an item from today, and none from last week', () => {
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-09-20T04:00:00Z'));
+    try {
+      renderWithProviders(<NewsCard item={SAMPLE[1]} />);
+      expect(screen.getByText('Today')).toBeInTheDocument();
+      renderWithProviders(<NewsCard item={SAMPLE[3]} />);
+      expect(screen.queryByText('Yesterday')).not.toBeInTheDocument();
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('badges an item from yesterday', () => {
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-09-21T04:00:00Z'));
+    try {
+      renderWithProviders(<NewsCard item={SAMPLE[1]} />);
+      expect(screen.getByText('Yesterday')).toBeInTheDocument();
+    } finally {
+      vi.useRealTimers();
+    }
   });
 
   it('renders the published date in a readable local format', () => {

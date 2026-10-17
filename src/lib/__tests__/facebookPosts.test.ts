@@ -146,7 +146,7 @@ describe('toManilaDate', () => {
 describe('postsToNewsItems', () => {
   const at = (day: number) => Date.UTC(2026, 7, day, 2) / 1000;
 
-  it('keeps matching posts, newest first, collapsing reposted headlines', () => {
+  it('keeps every post, newest first, collapsing reposted headlines', () => {
     const items = postsToNewsItems(
       [
         { id: '1', url: 'u1', creation_time: at(1), text: 'Libreng Check-Up' },
@@ -159,7 +159,7 @@ describe('postsToNewsItems', () => {
       'City Government'
     );
 
-    expect(items.map(i => i.sourceUrl)).toEqual(['u2', 'u3']);
+    expect(items.map(i => i.sourceUrl)).toEqual(['u2', 'u4', 'u3']);
     expect(items[0]).toMatchObject({
       title: 'Libreng Check-Up',
       date: '2026-08-05',
@@ -167,5 +167,16 @@ describe('postsToNewsItems', () => {
       topics: ['health-services'],
     });
     expect(items[0]).not.toHaveProperty('summary');
+    // General news with no matching rule stays, untagged.
+    expect(items[1]).toMatchObject({ title: 'Weather update', topics: [] });
+  });
+
+  it('drops a post with no caption', () => {
+    const items = postsToNewsItems(
+      [{ id: '1', url: 'u1', creation_time: at(1), text: null }],
+      HEALTH,
+      'City Government'
+    );
+    expect(items).toEqual([]);
   });
 });

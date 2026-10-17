@@ -136,7 +136,14 @@
     "categoryTitle": "Pinakabagong update",
     "categoryDescription": "Mga bagong post tungkol sa {{category}} mula sa opisyal na Facebook page ng {{city}}. Buksan ang post para sa buong detalye at mga larawan.",
     "showMore": "Magpakita pa ng update",
-    "showingCount": "Ipinapakita ang {{shown}} sa {{total}} na update"
+    "showingCount": "Ipinapakita ang {{shown}} sa {{total}} na update",
+    "today": "Ngayong araw",
+    "yesterday": "Kahapon"
+  },
+  "whatsNew": {
+    "title": "Ano ang bago",
+    "description": "Ang mga pinakabagong anunsyo at update mula sa {{city}}, mula sa pinakabago. Naka-link ang bawat isa sa orihinal na post sa opisyal na Facebook page.",
+    "viewAll": "Tingnan ang lahat ng update"
   },
   "footer": {
     "copyright": "© 2026 {{brand}}. Lahat ng nilalaman ay public domain maliban kung may ibang nakasaad.",

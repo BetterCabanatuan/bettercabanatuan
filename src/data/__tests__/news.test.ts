@@ -4,6 +4,7 @@ import {
   getLatestNews,
   getNewsByTopic,
   newsData,
+  newsRecency,
   parseNewsDate,
 } from '../news';
 
@@ -63,6 +64,19 @@ describe('news data source', () => {
   it('never lists the same source link twice', () => {
     const urls = allNews.map(n => n.sourceUrl);
     expect(new Set(urls).size).toBe(urls.length);
+  });
+
+  it('fills in the Facebook page name on imported items', () => {
+    expect(allNews.every(n => n.sourceName?.trim())).toBe(true);
+  });
+
+  it('labels today and yesterday by the Manila calendar', () => {
+    // 01:30 on 17 Oct in Manila is still 16 Oct in UTC.
+    const now = new Date('2026-10-16T17:30:00Z');
+    expect(newsRecency('2026-10-17', now)).toBe('today');
+    expect(newsRecency('2026-10-16', now)).toBe('yesterday');
+    expect(newsRecency('2026-10-15', now)).toBeNull();
+    expect(newsRecency('2026-10-18', now)).toBeNull();
   });
 
   it('filters by topic, newest first', () => {

@@ -136,7 +136,14 @@
     "categoryTitle": "Latest updates",
     "categoryDescription": "Recent {{category}} posts from the official {{city}} Facebook page. Open a post for the full details and photos.",
     "showMore": "Show more updates",
-    "showingCount": "Showing {{shown}} of {{total}} updates"
+    "showingCount": "Showing {{shown}} of {{total}} updates",
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "whatsNew": {
+    "title": "What's new",
+    "description": "The latest announcements and updates from {{city}}, newest first. Each one links to the original post on the official Facebook page.",
+    "viewAll": "See all updates"
   },
   "footer": {
     "copyright": "© 2026 {{brand}}. All content is public domain unless otherwise specified.",

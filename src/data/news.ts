@@ -1,6 +1,7 @@
 import yaml from 'js-yaml';
 import newsYaml from './news.yaml?raw';
-import facebookNewsYaml from './news.facebook.yaml?raw';
+import facebookNewsJson from './news.facebook.json';
+import { toManilaDate } from '../lib/facebookPosts';
 
 export interface NewsItem {
   title: string;
@@ -34,11 +35,17 @@ function loadNewsYaml(contents: string, fileName: string): NewsData {
 /** Hand-written items. See the header of news.yaml. */
 export const newsData: NewsData = loadNewsYaml(newsYaml, 'news.yaml');
 
-/** Items generated from the city Facebook page by `npm run import:posts`. */
-const facebookNews: NewsData = loadNewsYaml(
-  facebookNewsYaml,
-  'news.facebook.yaml'
-);
+/**
+ * Items generated from the city Facebook page by `npm run import:posts`.
+ * The file stores the page name once; every item gets it here.
+ */
+const facebookNews: NewsData = {
+  description: '',
+  items: (facebookNewsJson.items as NewsItem[]).map(item => ({
+    ...item,
+    sourceName: facebookNewsJson.sourceName,
+  })),
+};
 
 function isValidItem(item: NewsItem | null | undefined): item is NewsItem {
   if (!item) return false;
@@ -78,6 +85,21 @@ export function getLatestNews(limit: number): NewsItem[] {
 /** Items tagged with `topic`, newest first. */
 export function getNewsByTopic(topic: string): NewsItem[] {
   return allNews.filter(item => item.topics?.includes(topic));
+}
+
+/**
+ * How recent an item is, from the city's point of view: `today` and
+ * `yesterday` are Manila calendar days, the same calendar the item dates use,
+ * so a reader abroad sees the same badge as one in Cabanatuan.
+ */
+export function newsRecency(
+  date: string,
+  now: Date = new Date()
+): 'today' | 'yesterday' | null {
+  const today = toManilaDate(now.getTime() / 1000);
+  if (date === today) return 'today';
+  const yesterday = toManilaDate(now.getTime() / 1000 - 24 * 60 * 60);
+  return date === yesterday ? 'yesterday' : null;
 }
 
 /**

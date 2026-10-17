@@ -4,9 +4,12 @@ import SEO from '../../../components/SEO';
 import Section from '../../../components/ui/Section';
 import GovernmentPageHero from '../../../components/government/GovernmentPageHero';
 import NewsList from '../../../components/government/news/NewsList';
-import { allNews, newsData } from '../../../data/news';
+import { newsData } from '../../../data/news';
 import { siteConfig } from '../../../lib/siteConfig';
 import { breadcrumbJsonLd } from '../../../lib/structuredData';
+
+/** Cards per "Show more" step: four full rows of the three-column grid. */
+const NEWS_PAGE_SIZE = 12;
 
 export default function NewsPage() {
   const { t } = useTranslation('common');
@@ -43,13 +46,9 @@ export default function NewsPage() {
       <Section className="p-3 mb-12 pt-10">
         <NewsList
           showHeader={false}
+          pageSize={NEWS_PAGE_SIZE}
           description={t('newsFeed.allDescription', { city: governmentName })}
         />
-        {allNews.length > 0 && (
-          <p className="text-xs text-gray-500 mt-6 mb-0">
-            {t('newsFeed.itemCount', { count: allNews.length })}
-          </p>
-        )}
       </Section>
     </>
   );

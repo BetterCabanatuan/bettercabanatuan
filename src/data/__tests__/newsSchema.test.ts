@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import yaml from 'js-yaml';
 import SHIPPED_NEWS_YAML from '../news.yaml?raw';
-import SHIPPED_FACEBOOK_NEWS_YAML from '../news.facebook.yaml?raw';
+import SHIPPED_FACEBOOK_NEWS from '../news.facebook.json';
 
 /**
  * Mirrors the validation in src/data/news.ts, applied to arbitrary YAML text.
@@ -106,16 +106,17 @@ items:
     expect(Array.isArray(parsed.items)).toBe(true);
   });
 
-  it('every generated Facebook item passes validation and has a topic', () => {
-    const parsed = yaml.load(SHIPPED_FACEBOOK_NEWS_YAML) as {
-      items: { topics?: string[] }[];
-    };
-    expect(Array.isArray(parsed.items)).toBe(true);
-    expect(loadItems(SHIPPED_FACEBOOK_NEWS_YAML)).toHaveLength(
-      parsed.items.length
-    );
-    for (const item of parsed.items) {
-      expect(item.topics?.length).toBeGreaterThan(0);
+  it('every generated Facebook item passes validation', () => {
+    const { items, sourceName } = SHIPPED_FACEBOOK_NEWS;
+    expect(Array.isArray(items)).toBe(true);
+    expect(sourceName.trim()).toBeTruthy();
+    expect(loadItems(yaml.dump({ items }))).toHaveLength(items.length);
+  });
+
+  it('generated topics are never an empty list', () => {
+    // The importer drops empty topics; untagged items have no key at all.
+    for (const item of SHIPPED_FACEBOOK_NEWS.items as { topics?: string[] }[]) {
+      if ('topics' in item) expect(item.topics?.length).toBeGreaterThan(0);
     }
   });
 });

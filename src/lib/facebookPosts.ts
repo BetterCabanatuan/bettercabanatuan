@@ -201,7 +201,11 @@ export function toManilaDate(unixSeconds: number): string {
 }
 
 /**
- * Converts posts into news items for the topics they match, newest first.
+ * Converts posts into news items, newest first.
+ *
+ * Every post with a headline becomes an item; `topics` lists the rules it
+ * matches and is empty for general city news (pageants, flag raising, council
+ * sessions), which still belongs on /government/news.
  *
  * The page reposts the same announcement for days (the MR-SIA notice went up
  * seven times), so posts sharing a headline collapse to the newest one.
@@ -226,8 +230,6 @@ export function postsToNewsItems(
   for (const post of newestFirst) {
     const text = post.text ?? '';
     const topics = matchTopics(text, rules);
-    if (!topics.length) continue;
-
     const title = extractHeadline(text);
     if (!title) continue;
 

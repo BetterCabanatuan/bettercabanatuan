@@ -22,7 +22,7 @@
 #     in place — a wrong correction is harder to spot than a missing item.
 #
 # Posts imported from the official city Facebook page live in the generated
-# news.facebook.yaml (`npm run import:posts`). Both files feed the same list.
+# news.facebook.json (`npm run import:posts`). Both files feed the same list.
 # An item here with the same `sourceUrl` as an imported one replaces it — use
 # that to correct an imported headline rather than editing the generated file.
 

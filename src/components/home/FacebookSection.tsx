@@ -4,8 +4,6 @@ import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { useTranslation } from '../../hooks/useTranslation';
 import FacebookPagePlugin from '../FacebookPagePlugin';
-import NewsList from '../government/news/NewsList';
-import { allNews } from '../../data/news';
 import { siteConfig } from '../../lib/siteConfig';
 
 /**
@@ -30,18 +28,16 @@ import { siteConfig } from '../../lib/siteConfig';
  * always has something in it, instead of promising news items that may not
  * exist.
  *
- * The editorial list is a second thing and is treated as one: it renders only
- * when `news.yaml` has items, with no heading of its own, because the band
- * already labels the section. When the file is empty the list collapses and
- * leaves no gap. `/government/news` still shows a full empty state — there, an
- * explanation is the point of the page.
+ * The news items themselves live in their own "What's new" section higher up
+ * the page (WhatsNewSection), with a link to every item on /government/news.
+ * They used to sit under this band as a headless three-card list; with the
+ * full Facebook archive imported they earned a heading of their own, and this
+ * band went back to being only the live channel.
  */
 export default function FacebookSection() {
   const { t } = useTranslation();
 
   if (!siteConfig.facebookUrl) return null;
-
-  const hasNews = allNews.length > 0;
 
   return (
     <Section className="relative overflow-hidden">
@@ -91,18 +87,6 @@ export default function FacebookSection() {
           />
         </div>
       </div>
-
-      {/*
-        The editorial list, only once it has something to show. It carries no
-        heading of its own — the band above already names the section — and the
-        top rule plus `mt-12` keeps it on the same vertical rhythm as the
-        sections either side of it.
-      */}
-      {hasNews && (
-        <div className="border-gray-200 relative mt-12 border-t pt-10">
-          <NewsList limit={3} showHeader={false} />
-        </div>
-      )}
     </Section>
   );
 }
