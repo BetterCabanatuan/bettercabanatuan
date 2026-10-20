@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
               <img
                 src={BetterCabanatuanLogo}
                 alt="Better Cabanatuan"
-                width={18156}
-                height={6580}
+                width={1800}
+                height={638}
                 className="h-12 w-auto mr-3"
               />
               {/* <CheckCircle2 className="h-12 w-12 mr-3" /> */}

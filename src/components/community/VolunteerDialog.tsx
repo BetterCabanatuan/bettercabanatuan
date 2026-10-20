@@ -149,13 +149,13 @@ export default function VolunteerDialog() {
             aria-hidden="true"
           />
 
-          {/* LogoDark is the white-on-dark variant, matching the blue header. */}
+          {/* LogoDark is the colour-on-dark variant (no map outline), matching the blue header. */}
           <div className="relative flex justify-center mb-5">
             <img
               src={BetterCabanatuanLogo}
               alt={t('volunteerDialog.logoAlt')}
-              width={18156}
-              height={6580}
+              width={1800}
+              height={638}
               className="h-16 w-auto"
             />
           </div>
