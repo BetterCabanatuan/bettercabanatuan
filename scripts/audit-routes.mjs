@@ -181,7 +181,12 @@ async function probe(path, expect, note) {
   const page = await context.newPage();
   const console_ = [];
   page.on('console', m => {
-    if (m.type() === 'error') console_.push(m.text().slice(0, 200));
+    if (m.type() !== 'error') return;
+    // "Failed to load resource" names no URL in its text; the location does.
+    const from = m.location()?.url;
+    console_.push(
+      `${m.text().slice(0, 200)}${from ? ` (${from.slice(0, 160)})` : ''}`
+    );
   });
   page.on('pageerror', e =>
     console_.push(`UNCAUGHT: ${e.message.slice(0, 200)}`)
@@ -215,9 +220,13 @@ async function probe(path, expect, note) {
    * would train people to ignore the tool. Verified directly: with the SDK
    * loaded, `iframe[src*="facebook"]` is present and the component's 12s
    * fallback never fires.
+   *
+   * From a CI runner the page plugin's own requests to facebook.com can come
+   * back 400 (data-centre IP), which only `/` and `/contact` embed. That is
+   * Facebook's answer, not a broken route, so match the error's source URL.
    */
   const THIRD_PARTY =
-    /ErrorUtils|Could not find element|DataStore\.get|fburl\.com|connect\.facebook\.net|fbroot/i;
+    /ErrorUtils|Could not find element|DataStore\.get|fburl\.com|connect\.facebook\.net|fbroot|\(https:\/\/[^/]*facebook\.com\//i;
 
   const realErrors = console_.filter(
     t => !/favicon|Download the React DevTools/i.test(t)
