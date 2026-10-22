@@ -2,9 +2,11 @@
  * Imports scraped Facebook posts from the city page into the news feed.
  *
  *   npm run import:posts -- <scraper output dir or posts JSON> [...more]
+ *   npm run import:posts -- data/facebook/lgucabanatuan
  *   npm run import:posts -- <dir> --dry-run [--topic <slug>]
  *
- * Reads every `posts*.json` in a directory (or the files given) and rewrites
+ * Reads every `posts*.json` in a directory, every `<YYYY>/<YYYY-MM>.json` of
+ * an archive kept by scripts/facebook-sync, or the files given, and rewrites
  * src/data/news.facebook.json with one item per post. That file is generated:
  * edit the rules, not the JSON. Hand-written items belong in
  * src/data/news.yaml and win over imported ones with the same link.
@@ -29,7 +31,7 @@ import {
   statSync,
   writeFileSync,
 } from 'node:fs';
-import { basename, join, relative } from 'node:path';
+import { join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 import {
@@ -74,6 +76,14 @@ function collectInputFiles(args) {
     if (statSync(arg).isDirectory()) {
       for (const name of readdirSync(arg).sort()) {
         if (/^posts.*\.json$/.test(name)) files.push(join(arg, name));
+        // An archive from scripts/facebook-sync: <YYYY>/<YYYY-MM>.json.
+        if (/^\d{4}$/.test(name) && statSync(join(arg, name)).isDirectory()) {
+          for (const month of readdirSync(join(arg, name)).sort()) {
+            if (/^\d{4}-\d{2}\.json$/.test(month)) {
+              files.push(join(arg, name, month));
+            }
+          }
+        }
       }
     } else {
       files.push(arg);
@@ -84,8 +94,12 @@ function collectInputFiles(args) {
 
 function readSourceName(files) {
   for (const file of files) {
-    const pageInfo = join(file, '..', 'page_info.json');
-    if (existsSync(pageInfo)) {
+    // page_info.json from the scraper, or page.json at the archive root.
+    const pageInfo = [
+      join(file, '..', 'page_info.json'),
+      join(file, '..', '..', 'page.json'),
+    ].find(existsSync);
+    if (pageInfo) {
       const name = JSON.parse(readFileSync(pageInfo, 'utf-8'))?.page_name;
       if (typeof name === 'string' && name.trim()) return name.trim();
     }
@@ -187,7 +201,7 @@ async function main() {
     toJson({
       generated:
         'By scripts/import-facebook-posts.mjs. Do not edit by hand: change the rules in src/lib/facebookTopics/ and re-run `npm run import:posts`.',
-      sources: files.map(f => basename(f)),
+      sources: args.map(arg => relative(root, resolve(arg))),
       sourceName: readSourceName(files),
       items,
     })

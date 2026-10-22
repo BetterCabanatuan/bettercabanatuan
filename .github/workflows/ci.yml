@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [main]
+    # The Facebook sync commits its raw archive alone; the site does not read it.
+    paths-ignore: ['data/**']
   pull_request:
 
 concurrency:
