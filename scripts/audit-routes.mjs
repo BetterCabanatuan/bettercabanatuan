@@ -180,10 +180,23 @@ let baselineTitle = '';
 async function probe(path, expect, note) {
   const page = await context.newPage();
   const console_ = [];
+  // An iframe whose document 4xxs reports its error from Chromium's own
+  // chrome-error:// page, so remember which frame URL actually failed.
+  let failedFrame = '';
+  page.on('response', r => {
+    if (
+      r.status() >= 400 &&
+      r.request().isNavigationRequest() &&
+      r.frame() !== page.mainFrame()
+    ) {
+      failedFrame = r.url();
+    }
+  });
   page.on('console', m => {
     if (m.type() !== 'error') return;
     // "Failed to load resource" names no URL in its text; the location does.
-    const from = m.location()?.url;
+    let from = m.location()?.url;
+    if (from?.startsWith('chrome-error://') && failedFrame) from = failedFrame;
     console_.push(
       `${m.text().slice(0, 200)}${from ? ` (${from.slice(0, 160)})` : ''}`
     );
@@ -222,7 +235,7 @@ async function probe(path, expect, note) {
    * fallback never fires.
    *
    * From a CI runner the page plugin's own requests to facebook.com can come
-   * back 400 (data-centre IP), which only `/` and `/contact` embed. That is
+   * back 400 (data-centre IP); only `/` and `/contact` embed it. That is
    * Facebook's answer, not a broken route, so match the error's source URL.
    */
   const THIRD_PARTY =
