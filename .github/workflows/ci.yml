@@ -19,6 +19,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -34,6 +35,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -49,6 +51,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -64,6 +67,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -83,6 +87,7 @@ jobs:
           # strips TypeScript types when importing the token registry. Both need
           # a newer Node than the other jobs.
           node-version: 24
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -100,6 +105,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -121,6 +127,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
