@@ -13,6 +13,8 @@ export interface ScrapedPost {
   /** Unix seconds. */
   creation_time: number;
   text?: string | null;
+  /** Set by scripts/facebook-sync once two refreshes in a row missed the post. */
+  deleted_at?: string | null;
 }
 
 export interface TopicRule {
@@ -217,7 +219,9 @@ export function postsToNewsItems(
 ): ImportedNewsItem[] {
   const byId = new Map<string, ScrapedPost>();
   for (const post of posts) {
-    if (post?.id && post.url && post.text) byId.set(post.id, post);
+    if (post?.id && post.url && post.text && !post.deleted_at) {
+      byId.set(post.id, post);
+    }
   }
 
   const newestFirst = [...byId.values()].sort(

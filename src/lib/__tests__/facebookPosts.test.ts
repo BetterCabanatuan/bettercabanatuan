@@ -179,4 +179,22 @@ describe('postsToNewsItems', () => {
     );
     expect(items).toEqual([]);
   });
+
+  it('drops a post the sync marked deleted', () => {
+    const items = postsToNewsItems(
+      [
+        { id: '1', url: 'u1', creation_time: at(1), text: 'Bakuna drive' },
+        {
+          id: '2',
+          url: 'u2',
+          creation_time: at(2),
+          text: 'Libreng Check-Up',
+          deleted_at: '2026-08-03T00:00:00+00:00',
+        },
+      ],
+      HEALTH,
+      'City Government'
+    );
+    expect(items.map(i => i.sourceUrl)).toEqual(['u1']);
+  });
 });

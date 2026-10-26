@@ -1,7 +1,7 @@
 {
   "generated": "By scripts/import-facebook-posts.mjs. Do not edit by hand: change the rules in src/lib/facebookTopics/ and re-run `npm run import:posts`.",
   "sources": [
-    "posts_since_2025-01-01.json"
+    "data/facebook/lgucabanatuan"
   ],
   "sourceName": "City Government of Cabanatuan",
   "items": [
