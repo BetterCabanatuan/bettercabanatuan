@@ -172,7 +172,66 @@
     "eyebrow": "Open Government",
     "intro": "Browse public documents, reports, and open-government resources for {{city}}. Links on this portal open here unless marked as external.",
     "external": "External",
-    "viewResource": "View resource"
+    "viewResource": "View resource",
+    "browseOnPortal": "Browse on this portal"
+  },
+  "procurementPlan": {
+    "title": "Annual Procurement Plan {{year}}",
+    "description": "What the city government plans to buy in {{year}}: each purchase and project in the plan, the office behind it, how it will be procured, and its estimated budget.",
+    "noteTitle": "These are planned estimates, not contracts.",
+    "note": "The plan lists what each office intends to procure this year and the budget set aside for it. Purchases still go through bidding, so contracts can differ. Bid results and awarded contracts have not been located yet.",
+    "source": "Source: {{title}}, approved by the Bids and Awards Committee and the Head of the Procuring Entity on {{approved}} and posted on the city website on {{posted}}.",
+    "openPdf": "Open the PDF ({{pages}} pages)",
+    "stats": {
+      "total": "Planned budget",
+      "totalNote": "Across {{count}} items",
+      "items": "Items",
+      "itemsNote": "Purchases and projects",
+      "infrastructure": "Infrastructure",
+      "goods": "Goods and services",
+      "shareNote": "{{count}} items, {{share}} of the total"
+    },
+    "byOffice": {
+      "heading": "By office",
+      "description": "Planned budget by the office listed first on each row. A row that names several offices counts under the first.",
+      "showAll": "Show all {{count}} offices",
+      "showFewer": "Show fewer",
+      "filter": "Show the items for {{office}}",
+      "itemCount_one": "{{count}} item",
+      "itemCount_other": "{{count}} items"
+    },
+    "items": {
+      "heading": "All items",
+      "search": "Search items",
+      "searchPlaceholder": "Search by item, office or fund",
+      "office": "Office",
+      "allOffices": "All offices",
+      "category": "Category",
+      "allCategories": "All categories",
+      "mode": "Procurement mode",
+      "allModes": "All modes",
+      "sort": "Sort",
+      "sortPlan": "Plan order",
+      "sortBudget": "Largest budget first",
+      "all": "{{count}} items, {{total}} in planned budget",
+      "matching": "{{count}} items match, {{total}} in planned budget",
+      "clear": "Clear filters",
+      "noResults": "No items match",
+      "noResultsHint": "Try a different search or clear the filters.",
+      "showMore": "Show {{count}} more",
+      "budgetNotStated": "Not stated",
+      "page": "PDF p. {{page}}",
+      "earlyProcurement": "Early procurement",
+      "showFull": "Show full description",
+      "showLess": "Show less",
+      "columns": {
+        "item": "Item",
+        "office": "Office",
+        "procurement": "Category and mode",
+        "fund": "Fund",
+        "budget": "Estimated budget"
+      }
+    }
   },
   "legislation": {
     "republicActs": {

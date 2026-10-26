@@ -71,11 +71,16 @@ describe('TransparencyPage', () => {
     const appRow = fdp
       .getByRole('heading', { level: 3, name: 'Annual procurement plan' })
       .closest('li')!;
-    const appLink = within(appRow).getByRole('link');
+    const appLink = within(appRow).getByRole('link', {
+      name: /View resource/,
+    });
     expect(appLink).toHaveAttribute(
       'href',
       'https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf'
     );
+    expect(
+      within(appRow).getByRole('link', { name: 'Browse on this portal' })
+    ).toHaveAttribute('href', '/transparency/procurement-plan');
     expect(within(appRow).getByText(/posted 2026-02-13/)).toBeInTheDocument();
 
     const manpowerRow = fdp

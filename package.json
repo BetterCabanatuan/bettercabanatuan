@@ -32,6 +32,7 @@
     "update:copy": "node scripts/update-copy.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "import:posts": "node --experimental-strip-types --no-warnings scripts/import-facebook-posts.mjs",
+    "import:app": "node scripts/import-procurement-plan.mjs",
     "prebuild": "npm run generate:sitemap"
   },
   "lint-staged": {
