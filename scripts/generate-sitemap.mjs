@@ -65,6 +65,11 @@ const staticPages = [
     priority: '0.7',
     changefreq: 'monthly',
   },
+  {
+    path: '/transparency/procurement-plan',
+    priority: '0.7',
+    changefreq: 'monthly',
+  },
 ];
 
 const urls = [...staticPages];

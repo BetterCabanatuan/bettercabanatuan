@@ -153,6 +153,8 @@ export interface TransparencyDocument {
   status: TransparencyDocumentStatus;
   href?: string;
   external?: boolean;
+  /** A page on this portal that presents the document, beside the source link. */
+  portalHref?: string;
   /** Where the status came from: the page, posting date or search that set it. */
   sourceNote?: string;
 }

@@ -172,7 +172,66 @@
     "eyebrow": "Bukas na Pamahalaan",
     "intro": "Mag-browse ng pampublikong dokumento, ulat, at open-government resources para sa {{city}}. Ang mga link sa portal na ito ay dito bubukas maliban kung may markang external.",
     "external": "Panlabas",
-    "viewResource": "Tingnan ang resource"
+    "viewResource": "Tingnan ang resource",
+    "browseOnPortal": "Tingnan sa portal na ito"
+  },
+  "procurementPlan": {
+    "title": "Annual Procurement Plan {{year}}",
+    "description": "Ang mga planong bilhin ng pamahalaang panlungsod sa {{year}}: bawat pagbili at proyekto sa plano, ang opisinang may hawak nito, kung paano ito bibilhin, at ang tinantyang budget.",
+    "noteTitle": "Mga tinantyang halaga ito, hindi mga kontrata.",
+    "note": "Nakalista sa plano ang balak bilhin ng bawat opisina ngayong taon at ang budget na inilaan dito. Dadaan pa sa bidding ang mga pagbili, kaya maaaring iba ang mga kontrata. Hindi pa nahahanap ang bid results at awarded contracts.",
+    "source": "Pinagmulan: {{title}}, inaprubahan ng Bids and Awards Committee at ng Head of the Procuring Entity noong {{approved}} at inilathala sa website ng lungsod noong {{posted}}.",
+    "openPdf": "Buksan ang PDF ({{pages}} pahina)",
+    "stats": {
+      "total": "Planong budget",
+      "totalNote": "Sa {{count}} na item",
+      "items": "Mga item",
+      "itemsNote": "Mga pagbili at proyekto",
+      "infrastructure": "Imprastraktura",
+      "goods": "Mga kalakal at serbisyo",
+      "shareNote": "{{count}} na item, {{share}} ng kabuuan"
+    },
+    "byOffice": {
+      "heading": "Ayon sa opisina",
+      "description": "Planong budget ayon sa unang opisinang nakalista sa bawat row. Ang row na may ilang opisina ay binibilang sa una.",
+      "showAll": "Ipakita ang lahat ng {{count}} na opisina",
+      "showFewer": "Ipakita nang mas kaunti",
+      "filter": "Ipakita ang mga item ng {{office}}",
+      "itemCount_one": "{{count}} item",
+      "itemCount_other": "{{count}} na item"
+    },
+    "items": {
+      "heading": "Lahat ng item",
+      "search": "Maghanap ng item",
+      "searchPlaceholder": "Maghanap ayon sa item, opisina o pondo",
+      "office": "Opisina",
+      "allOffices": "Lahat ng opisina",
+      "category": "Kategorya",
+      "allCategories": "Lahat ng kategorya",
+      "mode": "Paraan ng procurement",
+      "allModes": "Lahat ng paraan",
+      "sort": "Ayusin",
+      "sortPlan": "Ayon sa plano",
+      "sortBudget": "Pinakamalaking budget muna",
+      "all": "{{count}} na item, {{total}} na planong budget",
+      "matching": "{{count}} na item ang tugma, {{total}} na planong budget",
+      "clear": "I-clear ang mga filter",
+      "noResults": "Walang tugmang item",
+      "noResultsHint": "Subukan ang ibang hanap o i-clear ang mga filter.",
+      "showMore": "Magpakita ng {{count}} pa",
+      "budgetNotStated": "Hindi nakasaad",
+      "page": "PDF p. {{page}}",
+      "earlyProcurement": "Early procurement",
+      "showFull": "Ipakita ang buong paglalarawan",
+      "showLess": "Ipakita nang mas kaunti",
+      "columns": {
+        "item": "Item",
+        "office": "Opisina",
+        "procurement": "Kategorya at paraan",
+        "fund": "Pondo",
+        "budget": "Tinantyang budget"
+      }
+    }
   },
   "legislation": {
     "republicActs": {
