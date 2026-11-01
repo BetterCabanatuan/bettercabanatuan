@@ -69,6 +69,10 @@
       "pamasahe": {
         "title": "Pamasahe: Jeep & Tricycle Fares",
         "description": "Check the legal jeep and tricycle fare in Cabanatuan City before you pay."
+      },
+      "transparencyPortal": {
+        "title": "Transparency Portal: National Budget Projects",
+        "description": "See Cabanatuan City's projects in the FY 2027 national budget, and the enacted budgets from 2020 to 2026."
       }
     }
   },
