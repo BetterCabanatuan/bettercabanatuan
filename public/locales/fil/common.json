@@ -69,6 +69,10 @@
       "pamasahe": {
         "title": "Pamasahe: Pamasahe sa Jeep at Tricycle",
         "description": "Alamin ang tamang pamasahe sa jeep at tricycle sa Lungsod ng Cabanatuan bago magbayad."
+      },
+      "transparencyPortal": {
+        "title": "Transparency Portal: Mga Proyekto sa National Budget",
+        "description": "Mga proyekto ng lungsod sa FY 2027 national budget, at mga pinagtibay na budget mula 2020."
       }
     }
   },
