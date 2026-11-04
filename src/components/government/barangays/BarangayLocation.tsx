@@ -28,7 +28,9 @@ export default function BarangayLocation({
   caption,
 }: BarangayLocationProps) {
   // undefined = loading, null = no boundary for this code.
+  // Callers key this component by psgcCode, so a new barangay starts fresh.
   const [feature, setFeature] = useState<BoundaryFeature | null>();
+  const [loadFailed, setLoadFailed] = useState(false);
 
   useEffect(() => {
     let live = true;
@@ -37,11 +39,23 @@ export default function BarangayLocation({
         const match = fc.features.find(f => f.properties?.psgc === psgcCode);
         if (live) setFeature((match as BoundaryFeature) ?? null);
       })
-      .catch(() => live && setFeature(null));
+      .catch(() => live && setLoadFailed(true));
     return () => {
       live = false;
     };
   }, [psgcCode]);
+
+  if (loadFailed) {
+    return (
+      <div
+        role="status"
+        className="mt-4 rounded-xl bg-gray-50 p-4 text-sm text-gray-700 ring-1 ring-inset ring-gray-200"
+      >
+        The map of {label} couldn’t load. Check your connection and refresh the
+        page.
+      </div>
+    );
+  }
 
   if (feature === null) {
     return (
@@ -58,7 +72,6 @@ export default function BarangayLocation({
       <div className="relative z-0 h-72 sm:h-80">
         {feature ? (
           <MapContainer
-            key={psgcCode}
             bounds={geoJSON(feature).getBounds()}
             boundsOptions={{ padding: [24, 24] }}
             scrollWheelZoom={false}

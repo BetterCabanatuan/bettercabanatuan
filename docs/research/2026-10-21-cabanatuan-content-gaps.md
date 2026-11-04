@@ -31,7 +31,7 @@ Also worth doing: barangay-profile enrichment (the 89 pages currently hold popul
 | Contact and hotlines | Emergency numbers, five hospitals, department contacts          | Safety-critical                                   | Hospital list is partial; no transport or visitor information  |
 | Civic apps           | Pamasahe fare calculator                                        | Ties to a real resident need                      | No transport guide to link from                                |
 
-The route list in `src/App.tsx` confirms there is no tourism, heritage, festival, transport, school, market, media or sports route. The homepage sections are hero, city stats, services, what's new, civic apps, government activity, Facebook and local conditions — again, no city-content layer.
+The route list in `src/App.tsx` confirms there is no tourism, heritage, festival, transport, school, market, media or sports route. The homepage sections, defined in `src/pages/Home.tsx`, are hero, city stats, services, what's new, civic apps, government activity, Facebook and local conditions — again, no city-content layer.
 
 Counts come from the repo on 2026-10-21: `src/data/services.yaml` (services and categories), `src/data/departments.yaml` (departments), `src/data/barangays.yaml` (barangays), `src/data/projects.yaml` (projects) and `src/data/hospitals.yaml` (hospitals). Live equivalents: [services](https://bettercabanatuan.org/services), [government](https://bettercabanatuan.org/government), [barangays](https://bettercabanatuan.org/government/barangays), [projects](https://bettercabanatuan.org/government/projects) and [contact](https://bettercabanatuan.org/contact).
 
@@ -101,7 +101,7 @@ Counts come from the repo on 2026-10-21: `src/data/services.yaml` (services and 
 
 **Suggested page.** `/discover/festivals` — a 12-month calendar with:
 
-- Fixed civic dates: February 1 Foundation Day, June 16 Cityhood, September 10 fiesta.
+- Civic dates: February 1 Foundation Day (provisional pending city confirmation), June 16 Cityhood, September 10 fiesta.
 - Festival windows: Longganisa and Banatu, usually January to March; confirm each year.
 - "What happens" and "what to expect" sections: street closures, crowds, vendor zones.
 - A short history of each name, with the 2008 and 2015 dates.
@@ -120,7 +120,7 @@ Counts come from the repo on 2026-10-21: `src/data/services.yaml` (services and 
 
 **What we can publish now.**
 
-- **CLLEX Phase 1** — a 30.7-kilometre, four-lane expressway from Tarlac to Cabanatuan with five interchanges. Contract Package 4, the Aliaga–Cabanatuan section of 10.3 kilometres, opened on March 31, 2026. It is toll-free until December 2026 and carries about 11,500 motorists daily. The expressway cuts the Tarlac–Cabanatuan trip to about 20 minutes from up to 1 hour 30 minutes. **[Publish-ready]** Sources: [DPWH project page](https://www.dpwh.gov.ph/dpwh/PPP/projs/CLLEx_phase1) · [Inquirer, March 2026](https://newsinfo.inquirer.net/2204217/marcos-on-opening-of-cllex-in-nueva-ecija-it-will-be-toll-free-until-december) · [Philstar, April 1, 2026](https://www.philstar.com/nation/2026/04/01/2518197/new-cllex-segment-opened-motorists).
+- **CLLEX Phase 1** — a four-lane expressway from Tarlac to Cabanatuan with five interchanges. Contract Package 4, the Aliaga–Cabanatuan section, opened on March 31, 2026. Lengths are under verification: sources give 30.7 or 29.2 km for Phase 1 and 10.3, 9.5 or 4 km for the opened segment, likely measuring different scopes. Confirm the as-built figures with DPWH and state the full Phase 1 and opened-segment lengths separately. It is toll-free until December 2026 and carries about 11,500 motorists daily. The expressway cuts the Tarlac–Cabanatuan trip to about 20 minutes from up to 1 hour 30 minutes. **[Publish-ready except lengths; Verify lengths]** Sources: [DPWH project page](https://www.dpwh.gov.ph/dpwh/PPP/projs/CLLEx_phase1) · [Inquirer, March 2026](https://newsinfo.inquirer.net/2204217/marcos-on-opening-of-cllex-in-nueva-ecija-it-will-be-toll-free-until-december) · [Philstar, April 1, 2026](https://www.philstar.com/nation/2026/04/01/2518197/new-cllex-segment-opened-motorists).
 - **Cabanatuan City Central Transport Terminal** — the major bus and van hub. It is in Barangay D.S. Garcia according to some sources, and in the Barrera District according to others; the phone number is +63 917 557 8648. **[Verify location and current tenants]** Sources: [commutetour terminal page](https://ph.commutetour.com/ph/terminal/cabanatuan/) · [Apple Maps pin](https://maps.apple.com/place?place-id=I507AF40842E568DC) · [terminal Facebook post](https://www.facebook.com/100065119105952/posts/1322292379951386/).
 - **Bus and van routes** — Metro Manila, Baguio and nearby provinces. Companies include Five Star, Genesis, Baliwag, Victory Liner and Solid North. Schedules and terminals change, so publish these only as examples with a "confirm at the terminal" note. **[Verify]** Source: [commutetour route list](https://ph.commutetour.com/ph/terminal/cabanatuan/).
 - **Tricycle capital** — the city is popularly called the "Tricycle Capital of the Philippines." A 2009 source counted about 30,000 registered tricycles. **[Publish-ready as a nickname; Verify the current count with LTO or the City Transport Management Office]** Sources: [Wikipedia](https://en.wikipedia.org/wiki/Cabanatuan) (lead) · [League of Cities profile](https://lcp.org.ph/92/cabanatuan-city) · [2009 research paper (PDF)](https://www.researchpublish.com/upload/book/Cabanatuan%20City-3270.pdf).
@@ -239,9 +239,9 @@ Counts come from the repo on 2026-10-21: `src/data/services.yaml` (services and 
 
 ### 3.7 Barangay profile enrichment
 
-**Why it matters.** The [89 barangay pages](https://bettercabanatuan.org/government/barangays) are among the most useful URLs on the site, but each currently carries little more than a generated population and classification description. Residents want to know where the barangay hall is, which school and health centre serve them, and whether their area floods.
+**Why it matters.** The [89 barangay pages](https://bettercabanatuan.org/government/barangays) are among the most useful URLs on the site, and each now shows a boundary map, the population trend, the official roster (term 2023–2026), and a health-centre card where the charter names one. Residents still want to know where the barangay hall is, which school and health centre serve them, and whether their area floods.
 
-**What exists.** `src/data/barangays.yaml` holds the name, slug, classification, population and description; `src/data/barangays-data.json` holds the underlying population series. The live index is at [bettercabanatuan.org/government/barangays](https://bettercabanatuan.org/government/barangays).
+**What exists.** `src/data/barangays.yaml` holds the name, slug, classification, population, description, `psgc_code`, `status` and `healthCenter` (former names appear in the description text); `src/data/barangay-boundaries.json` holds the boundary polygons; `src/data/officialBarangayRoster.json` holds the officials; `src/data/barangays-data.json` holds the underlying population series. The live index is at [bettercabanatuan.org/government/barangays](https://bettercabanatuan.org/government/barangays).
 
 **What to add (template).**
 
@@ -360,7 +360,6 @@ Counts come from the repo on 2026-10-21: `src/data/services.yaml` (services and 
 - Proclamation No. 1451, s. 2008 (February 1, 2008 special non-working day) — [LawPhil PDF](https://lawphil.net/executive/proc/proc2008/pdf/proc_1451_2008.pdf) · [LDR record](https://ldr.senate.gov.ph/executive-issuance/proclamation-no-1451-s-2008)
 - Republic Act No. 4475, establishing Palayan as the new capital (June 19, 1965) — [LawPhil](https://lawphil.net/statutes/repacts/ra1965/ra_4475_1965.html)
 - Republic Act No. 8612, converting Central Luzon Polytechnic College into NEUST (1998) — [LawPhil](https://lawphil.net/statutes/repacts/ra1998/ra_8612_1998.html)
-- NHCP Philippine Nationhood Trail markers list (Cabanatuan marker, June 14, 2024) — [Wikipedia compilation](https://en.wikipedia.org/wiki/List_of_Philippine_Nationhood_Trail_historical_markers) · [marker photos](https://commons.wikimedia.org/wiki/Category:Katedral_ng_Cabanatuan_historical_marker) (verify against NHCP)
 - NHCP, "The First Philippine Republic" — [nhcp.gov.ph](https://nhcp.gov.ph/the-first-philippine-republic/)
 - Diocese of Cabanatuan, history — [dioceseofcabanatuan.net](https://www.dioceseofcabanatuan.net/about-us-page/history-of-the-diocese/)
 - ABMC, Cabanatuan American Memorial — [about](https://www.abmc.gov/cemeteries-memorials/about-cabanatuan-american-memorial/) · [history](https://www.abmc.gov/history/discover-the-history-of-cabanatuan-american-memorial/) · [visit](https://www.abmc.gov/plan/plan-your-visit-to-cabanatuan-american-memorial/)
@@ -384,6 +383,7 @@ Counts come from the repo on 2026-10-21: `src/data/services.yaml` (services and 
 
 ### Secondary and reference
 
+- NHCP Philippine Nationhood Trail markers list (Cabanatuan marker, June 14, 2024) — [Wikipedia compilation](https://en.wikipedia.org/wiki/List_of_Philippine_Nationhood_Trail_historical_markers) · [marker photos](https://commons.wikimedia.org/wiki/Category:Katedral_ng_Cabanatuan_historical_marker) (verify against NHCP)
 - Inquirer, "Where to go in Cabanatuan when you hardly know the place" — [lifestyle.inquirer.net](https://lifestyle.inquirer.net/254192/go-cabanatuan-hardly-know-place/) (blocked to automated fetches; use a search snippet or archive)
 - Inquirer, "Lazaro Francisco, Cabanatuan's treasure" — [opinion.inquirer.net](https://opinion.inquirer.net/127384/lazaro-francisco-cabanatuans-treasure)
 - Inquirer, "Lazaro Francisco, Cabanatuan's pride" — [opinion.inquirer.net](https://opinion.inquirer.net/114263/lazaro-francisco-cabanatuans-pride)

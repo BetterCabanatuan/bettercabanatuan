@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import BarangayLocation from '../BarangayLocation';
 import boundaries from '../../../../data/barangay-boundaries.json';
@@ -39,5 +39,23 @@ describe('barangay location', () => {
         name: 'Map location not yet verified',
       })
     ).toBeInTheDocument();
+  });
+
+  it('says the map failed to load, not "not verified", on a load error', async () => {
+    vi.resetModules();
+    vi.doMock('../../../../data/barangay-boundaries.json', () => {
+      throw new Error('network');
+    });
+    const { default: Fresh } = await import('../BarangayLocation');
+    render(
+      <Fresh psgcCode="0304903002" label="Barangay Aduas Centro" caption="x" />
+    );
+    expect(
+      await screen.findByText(/map of Barangay Aduas Centro couldn’t load/i)
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole('status', { name: 'Map location not yet verified' })
+    ).toBeNull();
+    vi.doUnmock('../../../../data/barangay-boundaries.json');
   });
 });

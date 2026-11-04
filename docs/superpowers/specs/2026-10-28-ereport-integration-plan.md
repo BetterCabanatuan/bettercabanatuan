@@ -135,8 +135,9 @@ an accredited partner applies and the city endorses it in writing.
 
 ## Done when
 
-Credentials are issued, Q1 to Q3 have written answers, and the city's
-endorsement is on file.
+Credentials are issued, Q1 to Q3 and Q5 have written answers, and the city's
+endorsement is on file. Until Q5 is answered, E2 and E3 leave `gender` out of
+validation, the form and the forwarded request.
 
 ---
 
@@ -197,6 +198,10 @@ Node functions.
      the token once and retries.
    - Maps upstream errors to `{ error: code }` without echoing upstream
      bodies, which may contain personal data.
+   - Validates `EREPORT_BASE_URL` at startup and fails closed unless it is
+     `https:` and matches the approved DICT origin.
+   - Sends credential-bearing requests with `redirect: 'manual'` and rejects
+     any redirect that changes scheme or origin.
 3. Write the functions:
 
    | Function                          | Upstream                                    |
@@ -216,7 +221,17 @@ Node functions.
      against the imported list.
    - Normalise `mobile` from `09XXXXXXXXX` to `639XXXXXXXXX`.
    - Cap `subject` and `message` lengths.
+   - If `latitude` and `longitude` are sent, require both as finite numbers
+     inside Cabanatuan's boundary (and the selected barangay's polygon from
+     `src/data/barangay-boundaries.json`); otherwise drop both before
+     forwarding.
    - Do not send `evidences` in v1 (see Q4).
+   - Send `Cache-Control: no-store` on every `/api/ereport/*` response,
+     including report and OTP responses.
+   - Do not expose `GET /api/ereport/reports/[case]` until Q3 confirms the
+     upstream enforces a complainant-scoped view token. The route then
+     requires that token and forwards it; the integration bearer alone must
+     never return a report.
 5. **Abuse and credit control:**
    - Add a Vercel WAF rate-limit rule on `/api/ereport/*`, per IP.
    - Add a honeypot field and a minimum fill time in `submit`.
@@ -238,8 +253,11 @@ Node functions.
 ## Verification
 
 - Vitest unit tests for each function cover: valid input, rejected input,
-  upstream 401 with retry, upstream 429 returned as `quota_exceeded`, and no
-  personal fields in thrown errors. Mock `fetch`.
+  upstream 401 with retry, upstream 429 returned as `quota_exceeded`, no
+  personal fields in thrown errors, `Cache-Control: no-store` on every
+  response, a non-HTTPS base URL failing closed, a cross-origin redirect
+  rejected, out-of-area coordinates dropped, and a report read without a
+  view token refused. Mock `fetch`.
 - A sandbox submit from the preview deployment returns a `case_number`.
 
 ---
@@ -258,8 +276,10 @@ catch-all. React Router ranks the static path above `/:documentSlug`.
 ## Tasks
 
 1. **Emergency gate first.** Before showing the form, add a short panel: "Is
-   this happening now? Call 911", with the CDRRMO, BFP and PNP numbers from
-   the existing hotlines data. Repeat it when `fire`, `accident` or `crime`
+   this happening now? Call 911", then the CDRRMO numbers (sourced from the
+   charter) as the fallback. Show BFP and PNP numbers only once each has an
+   official source and a check date recorded in `src/data/hotlines.ts`; today
+   that file marks them unverified. Repeat it when `fire`, `accident` or `crime`
    is chosen. For `women_abuse` and `child_abuse`, show the relevant hotlines
    too.
 2. Build the form from `src/data/ereport-datasets.json`:
@@ -346,12 +366,15 @@ The project lead approves; one contributor writes the copy.
 4. Launch checklist:
    - Rate limits are active.
    - The quota fallback has been tested.
-   - The emergency gate has been reviewed by CDRRMO, or at least checked
-     against the hotlines page.
+   - The emergency gate has been reviewed by CDRRMO, and every number it shows
+     has an official source and a check date (the hotlines page renders the
+     same data, so it cannot confirm them).
    - Filipino strings have been reviewed.
 
 ## Done when
 
-The privacy page matches what the code does. The DPO review is recorded. A
-production test report has been filed and then withdrawn with DICT's
-knowledge.
+The privacy page matches what the code does. The DPO review is recorded.
+Production is validated without filing a real report: either DICT provides a
+written withdrawal procedure and a test report is filed and withdrawn under it,
+or validation stays in the sandbox and production gets a read-only smoke test
+(token issue and dataset fetch).

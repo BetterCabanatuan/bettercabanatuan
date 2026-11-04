@@ -119,6 +119,7 @@ const BarangayDetail: React.FC = () => {
           </span>
 
           <BarangayLocation
+            key={barangay.psgc_code}
             psgcCode={barangay.psgc_code}
             label={`Barangay ${barangay.name}`}
             caption={`${barangay.classification} barangay, Cabanatuan City`}
