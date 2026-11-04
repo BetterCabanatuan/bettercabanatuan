@@ -1,0 +1,1089 @@
+- generic [ref=f29e3]:
+  - region "Emergency hotlines" [ref=f29e4]:
+    - generic [ref=f29e6]:
+      - generic [ref=f29e7]: Emergency Hotlines
+      - list [ref=f29e12]:
+        - listitem [ref=f29e13]:
+          - generic [ref=f29e14]: "PNP:"
+          - generic [ref=f29e15]:
+            - link "(044)-463-1111" [ref=f29e17] [cursor=pointer]:
+              - /url: tel:+63444631111
+            - generic [ref=f29e18]:
+              - generic [aria-hidden] [ref=f29e19]: ·
+              - link "0920-611-2000" [ref=f29e20] [cursor=pointer]:
+                - /url: tel:+639206112000
+            - generic [ref=f29e21]:
+              - generic [aria-hidden] [ref=f29e22]: ·
+              - link "0935-522-2227" [ref=f29e23] [cursor=pointer]:
+                - /url: tel:+639355222227
+        - listitem [ref=f29e24]:
+          - generic [ref=f29e25]: "BFP:"
+          - generic [ref=f29e26]:
+            - link "(044)-958-3701" [ref=f29e28] [cursor=pointer]:
+              - /url: tel:+63449583701
+            - generic [ref=f29e29]:
+              - generic [aria-hidden] [ref=f29e30]: ·
+              - link "(044)-600-5696" [ref=f29e31] [cursor=pointer]:
+                - /url: tel:+63446005696
+            - generic [ref=f29e32]:
+              - generic [aria-hidden] [ref=f29e33]: ·
+              - link "0943-303-4279" [ref=f29e34] [cursor=pointer]:
+                - /url: tel:+639433034279
+        - listitem [ref=f29e35]:
+          - generic [ref=f29e36]: "CDRRMO:"
+          - generic [ref=f29e37]:
+            - link "0908-881-1010" [ref=f29e39] [cursor=pointer]:
+              - /url: tel:+639088811010
+            - generic [ref=f29e40]:
+              - generic [aria-hidden] [ref=f29e41]: ·
+              - link "0917-851-1320" [ref=f29e42] [cursor=pointer]:
+                - /url: tel:+639178511320
+            - generic [ref=f29e43]:
+              - generic [aria-hidden] [ref=f29e44]: ·
+              - link "(044)-940-0161" [ref=f29e45] [cursor=pointer]:
+                - /url: tel:+63449400161
+        - listitem [ref=f29e46]:
+          - generic [ref=f29e47]: "Community Affairs:"
+          - link "0919-081-3983" [ref=f29e50] [cursor=pointer]:
+            - /url: tel:+639190813983
+  - navigation [ref=f29e51]:
+    - generic [ref=f29e54]:
+      - link "Join Us" [ref=f29e55] [cursor=pointer]:
+        - /url: https://bettergov.ph/join-us
+      - link "About BetterGov" [ref=f29e56] [cursor=pointer]:
+        - /url: https://bettergov.ph/about
+      - link "Official Gov.ph" [ref=f29e57] [cursor=pointer]:
+        - /url: https://www.cabanatuancity.gov.ph
+      - link "Hotlines" [ref=f29e58] [cursor=pointer]:
+        - /url: https://bettergov.ph/philippines/hotlines
+      - link "Fares" [ref=f29e59] [cursor=pointer]:
+        - /url: https://pamasahe.bettercabanatuan.org
+      - combobox "Language" [ref=f29e61]:
+        - option "English" [selected]
+        - option "Filipino/Tagalog"
+    - generic [ref=f29e63]:
+      - link [ref=f29e65] [cursor=pointer]:
+        - /url: /
+        - img "Better Cabanatuan" [ref=f29e66]
+      - generic [ref=f29e67]:
+        - generic [ref=f29e69]:
+          - link "Services" [ref=f29e70] [cursor=pointer]:
+            - /url: /services
+          - button "Toggle Services menu" [ref=f29e71]
+        - link "Government" [ref=f29e76] [cursor=pointer]:
+          - /url: /government
+        - link "Statistics" [ref=f29e79] [cursor=pointer]:
+          - /url: /statistics
+        - link "Transparency" [ref=f29e82] [cursor=pointer]:
+          - /url: /transparency
+      - generic [ref=f29e83]:
+        - link "About" [ref=f29e84] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f29e85] [cursor=pointer]:
+          - /url: /contact
+        - link "Search" [ref=f29e86] [cursor=pointer]:
+          - /url: /search
+  - main [ref=f29e90]:
+    - region [ref=f29e91]:
+      - generic [ref=f29e92]:
+        - navigation "Breadcrumb" [ref=f29e93]:
+          - link "Home" [ref=f29e98] [cursor=pointer]:
+            - /url: /
+          - link "Transparency" [ref=f29e102] [cursor=pointer]:
+            - /url: /transparency
+          - link "Annual Procurement Plan 2026" [ref=f29e106] [cursor=pointer]:
+            - /url: /transparency/procurement-plan
+        - generic [ref=f29e112]:
+          - paragraph [ref=f29e113]: Open Government
+          - heading "Annual Procurement Plan 2026" [level=1] [ref=f29e114]
+          - paragraph [ref=f29e115]: "What the city government plans to buy in 2026: each purchase and project in the plan, the office behind it, how it will be procured, and its estimated budget."
+    - generic [ref=f29e117]:
+      - note [ref=f29e118]:
+        - paragraph [ref=f29e119]: These are planned estimates, not contracts.
+        - paragraph [ref=f29e120]: The plan lists what each office intends to procure this year and the budget set aside for it. Purchases still go through bidding, so contracts can differ. Bid results and awarded contracts have not been located yet.
+        - paragraph [ref=f29e121]: "Source: Annual Procurement Plan F.Y. 2026, approved by the Bids and Awards Committee and the Head of the Procuring Entity on December 23, 2025 and posted on the city website on February 13, 2026."
+        - link "Open the PDF (49 pages) (External)" [ref=f29e122] [cursor=pointer]:
+          - /url: https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf
+          - text: Open the PDF (49 pages)
+          - generic [ref=f29e127]: (External)
+      - generic [ref=f29e128]:
+        - region "Service details" [ref=f29e130]:
+          - paragraph [ref=f29e135]: ₱5.7B
+          - paragraph [ref=f29e136]: Planned budget
+          - paragraph [ref=f29e137]: ₱5,697,991,404
+        - region "Service details" [ref=f29e139]:
+          - paragraph [ref=f29e144]: "500"
+          - paragraph [ref=f29e145]: Items
+          - paragraph [ref=f29e146]: Purchases and projects
+        - region "Service details" [ref=f29e148]:
+          - paragraph [ref=f29e155]: ₱3.37B
+          - paragraph [ref=f29e156]: Infrastructure
+          - paragraph [ref=f29e157]: 211 items, 59% of the total
+        - region "Service details" [ref=f29e159]:
+          - paragraph [ref=f29e165]: ₱2.33B
+          - paragraph [ref=f29e166]: Goods and services
+          - paragraph [ref=f29e167]: 289 items, 41% of the total
+      - region [ref=f29e168]:
+        - heading "By office" [level=2] [ref=f29e169]
+        - paragraph [ref=f29e170]: Planned budget by the office listed first on each row. A row that names several offices counts under the first.
+        - list [ref=f29e171]:
+          - listitem [ref=f29e172]:
+            - button "Show the items for Office of the City Engineer" [ref=f29e173]:
+              - generic [ref=f29e174]:
+                - generic [ref=f29e175]: Office of the City Engineer
+                - generic [ref=f29e176]: CEO
+              - generic [ref=f29e179]: ₱2,125,653,020132 items
+          - listitem [ref=f29e180]:
+            - button "Show the items for Office of the City Mayor" [ref=f29e181]:
+              - generic [ref=f29e182]:
+                - generic [ref=f29e183]: Office of the City Mayor
+                - generic [ref=f29e184]: CMO
+              - generic [ref=f29e187]: ₱687,070,52025 items
+          - listitem [ref=f29e188]:
+            - button "Show the items for Cabanatuan City Environment and Natural Resources Office" [ref=f29e189]:
+              - generic [ref=f29e190]:
+                - generic [ref=f29e191]: Cabanatuan City Environment and Natural Resources Office
+                - generic [ref=f29e192]: CCENRO
+              - generic [ref=f29e195]: ₱655,580,00013 items
+          - listitem [ref=f29e196]:
+            - button "Show the items for City Agriculture Office" [ref=f29e197]:
+              - generic [ref=f29e198]:
+                - generic [ref=f29e199]: City Agriculture Office
+                - generic [ref=f29e200]: CAgriO
+              - generic [ref=f29e203]: ₱380,623,04033 items
+          - listitem [ref=f29e204]:
+            - button "Show the items for City Motor Pool Office" [ref=f29e205]:
+              - generic [ref=f29e206]: City Motor Pool Office
+              - generic [ref=f29e210]: ₱376,183,11028 items
+          - listitem [ref=f29e211]:
+            - button "Show the items for City Health Office" [ref=f29e212]:
+              - generic [ref=f29e213]:
+                - generic [ref=f29e214]: City Health Office
+                - generic [ref=f29e215]: CHO
+              - generic [ref=f29e218]: ₱310,636,21040 items
+          - listitem [ref=f29e219]:
+            - button "Show the items for CTDPO" [ref=f29e220]:
+              - generic [ref=f29e221]: CTDPO
+              - generic [ref=f29e225]: ₱227,430,00017 items
+          - listitem [ref=f29e226]:
+            - button "Show the items for City Social Welfare and Development Office" [ref=f29e227]:
+              - generic [ref=f29e228]:
+                - generic [ref=f29e229]: City Social Welfare and Development Office
+                - generic [ref=f29e230]: CSWDO
+              - generic [ref=f29e233]: ₱188,648,31449 items
+          - listitem [ref=f29e234]:
+            - button "Show the items for CEEMO" [ref=f29e235]:
+              - generic [ref=f29e236]: CEEMO
+              - generic [ref=f29e240]: ₱155,837,00016 items
+          - listitem [ref=f29e241]:
+            - button "Show the items for MVG Cabanatuan City General Hospital" [ref=f29e242]:
+              - generic [ref=f29e243]:
+                - generic [ref=f29e244]: MVG Cabanatuan City General Hospital
+                - generic [ref=f29e245]: MVGCCGH
+              - generic [ref=f29e248]: ₱132,000,00026 items
+        - button "Show all 31 offices" [ref=f29e249]
+      - region [ref=f29e250]:
+        - heading "All items" [level=2] [ref=f29e251]
+        - generic [ref=f29e252]:
+          - generic [ref=f29e253]:
+            - generic [ref=f29e254]: Search items
+            - searchbox "Search items" [ref=f29e259]
+          - generic [ref=f29e260]:
+            - generic [ref=f29e261]: Office
+            - combobox "Office" [ref=f29e263]:
+              - option "All offices" [selected]
+              - option "Office of the City Engineer (CEO)"
+              - option "Office of the City Mayor (CMO)"
+              - option "Cabanatuan City Environment and Natural Resources Office (CCENRO)"
+              - option "City Agriculture Office (CAgriO)"
+              - option "City Motor Pool Office"
+              - option "City Health Office (CHO)"
+              - option "CTDPO"
+              - option "City Social Welfare and Development Office (CSWDO)"
+              - option "CEEMO"
+              - option "MVG Cabanatuan City General Hospital (MVGCCGH)"
+              - option "DENR"
+              - option "DepEd"
+              - option "CDRRMC"
+              - option "Sangguniang Panlungsod (SP)"
+              - option "City Veterinary Office (CVO)"
+              - option "City General Services Office (GSO)"
+              - option "CICTO"
+              - option "Office of the City Building Official (OCBO)"
+              - option "Office of the City Treasurer (CTO)"
+              - option "City Livelihood and Cooperatives Development Office (CLCDO)"
+              - option "City Disaster Risk Reduction and Management Office (CDRRMO)"
+              - option "City Civil Registry Office (LCRO)"
+              - option "City Planning and Development Office (CPDO)"
+              - option "City Human Resource Management Office (HRMO)"
+              - option "City Business Licensing and Investment Promotion Office (CBLIPO)"
+              - option "City Budget Office (CBO)"
+              - option "PNP"
+              - option "CHDMO"
+              - option "CAO"
+              - option "OCA"
+              - option "Office for City Legal Affairs"
+              - option "Barangay"
+              - option "BFAR"
+              - option "BFP"
+              - option "CAI"
+              - option "City Information and Tourism Office (CITO)"
+              - option "CMP"
+              - option "CMPO"
+              - option "CYDO"
+              - option "DA-RFO3"
+              - option "DBM"
+              - option "DILG"
+              - option "DOE"
+              - option "DOH"
+              - option "DOST"
+              - option "DPWH"
+              - option "LGU"
+              - option "NGO(s)"
+              - option "NIA"
+              - option "NSWMC"
+              - option "PhilMech"
+              - option "TMC"
+              - option "VMO"
+          - generic [ref=f29e264]:
+            - generic [ref=f29e265]: Category
+            - combobox "Category" [ref=f29e267]:
+              - option "All categories" [selected]
+              - option "Goods"
+              - option "Infrastructure"
+              - option "Goods / Infrastructure"
+              - option "Consulting Services"
+              - option "Services"
+          - generic [ref=f29e268]:
+            - generic [ref=f29e269]: Procurement mode
+            - combobox "Procurement mode" [ref=f29e271]:
+              - option "All modes" [selected]
+              - option "Public Bidding"
+              - option "Small Value Procurement"
+              - option "Small Value Procurement, Public Bidding"
+              - option "Direct Contracting"
+              - option "Small Value Procurement / Public Bidding"
+          - generic [ref=f29e272]:
+            - generic [ref=f29e273]: Sort
+            - combobox "Sort" [ref=f29e275]:
+              - option "Plan order" [selected]
+              - option "Largest budget first"
+        - paragraph [ref=f29e277]: 500 items, ₱5,697,991,404 in planned budget
+        - table [ref=f29e279]:
+          - rowgroup [ref=f29e280]:
+            - row [ref=f29e281]:
+              - columnheader "Item" [ref=f29e282]
+              - columnheader "Office" [ref=f29e283]
+              - columnheader "Category and mode" [ref=f29e284]
+              - columnheader "Fund" [ref=f29e285]
+              - columnheader "Estimated budget" [ref=f29e286]
+          - rowgroup [ref=f29e287]:
+            - row [ref=f29e288]:
+              - cell "2.1.1 Inter Barangay Sports Development (Uniform, Sports Supplies and Equipment, Prizes, Trophies and Medals) PDF p. 1" [ref=f29e289]:
+                - generic [ref=f29e290]:
+                  - paragraph [ref=f29e292]: 2.1.1 Inter Barangay Sports Development (Uniform, Sports Supplies and Equipment, Prizes, Trophies and Medals)
+                  - paragraph [ref=f29e293]:
+                    - generic [ref=f29e294]: PDF p. 1
+              - cell [ref=f29e295]:
+                - link "CMO - LYDO" [ref=f29e297] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e298]:
+                - paragraph [ref=f29e299]: Goods
+                - paragraph [ref=f29e300]: Public Bidding
+              - cell "General Fund" [ref=f29e301]
+              - cell "₱1,240,000" [ref=f29e302]
+            - row [ref=f29e303]:
+              - cell "Procurement of Learning and Teaching Materials for youth in Different Barangays PDF p. 1" [ref=f29e304]:
+                - generic [ref=f29e305]:
+                  - paragraph [ref=f29e307]: Procurement of Learning and Teaching Materials for youth in Different Barangays
+                  - paragraph [ref=f29e308]:
+                    - generic [ref=f29e309]: PDF p. 1
+              - cell [ref=f29e310]:
+                - link "CMO-LYDO" [ref=f29e312] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e313]:
+                - paragraph [ref=f29e314]: Goods
+                - paragraph [ref=f29e315]: Small Value Procurement
+              - cell "General Fund" [ref=f29e316]
+              - cell "₱580,000" [ref=f29e317]
+            - row [ref=f29e318]:
+              - cell "Procurement/ Printing of Youth related information Education Advocacy Campaign Materials (IEC's) PDF p. 1" [ref=f29e319]:
+                - generic [ref=f29e320]:
+                  - paragraph [ref=f29e322]: Procurement/ Printing of Youth related information Education Advocacy Campaign Materials (IEC's)
+                  - paragraph [ref=f29e323]:
+                    - generic [ref=f29e324]: PDF p. 1
+              - cell [ref=f29e325]:
+                - link "CMO-LYDO" [ref=f29e327] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e328]:
+                - paragraph [ref=f29e329]: Goods
+                - paragraph [ref=f29e330]: Small Value Procurement
+              - cell "General Fund" [ref=f29e331]
+              - cell "₱100,000" [ref=f29e332]
+            - row [ref=f29e333]:
+              - cell "Procurement of technology equipment such as computers, printers, scanners etc. PDF p. 1" [ref=f29e334]:
+                - generic [ref=f29e335]:
+                  - paragraph [ref=f29e337]: Procurement of technology equipment such as computers, printers, scanners etc.
+                  - paragraph [ref=f29e338]:
+                    - generic [ref=f29e339]: PDF p. 1
+              - cell [ref=f29e340]:
+                - link "CMO-LYDO" [ref=f29e342] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e343]:
+                - paragraph [ref=f29e344]: Goods
+                - paragraph [ref=f29e345]: Public Bidding
+              - cell "General Fund" [ref=f29e346]
+              - cell "₱1,000,000" [ref=f29e347]
+            - row [ref=f29e348]:
+              - cell "Procurement of office equipment, furniture and fixtures, and IT equipment PDF p. 1" [ref=f29e349]:
+                - generic [ref=f29e350]:
+                  - paragraph [ref=f29e352]: Procurement of office equipment, furniture and fixtures, and IT equipment
+                  - paragraph [ref=f29e353]:
+                    - generic [ref=f29e354]: PDF p. 1
+              - cell [ref=f29e355]:
+                - link "CMO" [ref=f29e357] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e358]:
+                - paragraph [ref=f29e359]: Goods
+                - paragraph [ref=f29e360]: Public Bidding
+              - cell "General Fund" [ref=f29e361]
+              - cell "₱11,300,000" [ref=f29e362]
+            - row [ref=f29e363]:
+              - cell "Procurement of Tent PDF p. 1" [ref=f29e364]:
+                - generic [ref=f29e365]:
+                  - paragraph [ref=f29e367]: Procurement of Tent
+                  - paragraph [ref=f29e368]:
+                    - generic [ref=f29e369]: PDF p. 1
+              - cell [ref=f29e370]:
+                - link "CMO" [ref=f29e372] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e373]:
+                - paragraph [ref=f29e374]: Goods
+                - paragraph [ref=f29e375]: Public Bidding
+              - cell "General Fund" [ref=f29e376]
+              - cell "₱5,000,000" [ref=f29e377]
+            - row [ref=f29e378]:
+              - cell "Procurement of Uniform, Gears, Paraphernalia, and Sports Equipment PDF p. 1" [ref=f29e379]:
+                - generic [ref=f29e380]:
+                  - paragraph [ref=f29e382]: Procurement of Uniform, Gears, Paraphernalia, and Sports Equipment
+                  - paragraph [ref=f29e383]:
+                    - generic [ref=f29e384]: PDF p. 1
+              - cell [ref=f29e385]:
+                - link "CMO-CAD" [ref=f29e387] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e388]:
+                - paragraph [ref=f29e389]: Goods
+                - paragraph [ref=f29e390]: Small Value Procurement
+              - cell "General Fund" [ref=f29e391]
+              - cell "₱500,000" [ref=f29e392]
+            - row [ref=f29e393]:
+              - cell "Procurement of Traffic Signages PDF p. 1" [ref=f29e394]:
+                - generic [ref=f29e395]:
+                  - paragraph [ref=f29e397]: Procurement of Traffic Signages
+                  - paragraph [ref=f29e398]:
+                    - generic [ref=f29e399]: PDF p. 1
+              - cell [ref=f29e400]:
+                - link "CMO-CAD" [ref=f29e402] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e403]:
+                - paragraph [ref=f29e404]: Goods
+                - paragraph [ref=f29e405]: Small Value Procurement
+              - cell "General Fund" [ref=f29e406]
+              - cell "₱250,000" [ref=f29e407]
+            - row [ref=f29e408]:
+              - cell "Procurement of fuel, lubricants, and other products for service vehicle PDF p. 2" [ref=f29e409]:
+                - generic [ref=f29e410]:
+                  - paragraph [ref=f29e412]: Procurement of fuel, lubricants, and other products for service vehicle
+                  - paragraph [ref=f29e413]:
+                    - generic [ref=f29e414]: PDF p. 2
+              - cell [ref=f29e415]:
+                - link "CMO" [ref=f29e417] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e418]:
+                - paragraph [ref=f29e419]: Goods
+                - paragraph [ref=f29e420]: Public Bidding
+              - cell "General Fund" [ref=f29e421]
+              - cell "₱3,500,000" [ref=f29e422]
+            - row [ref=f29e423]:
+              - cell "Communication Equipment PDF p. 2" [ref=f29e424]:
+                - generic [ref=f29e425]:
+                  - paragraph [ref=f29e427]: Communication Equipment
+                  - paragraph [ref=f29e428]:
+                    - generic [ref=f29e429]: PDF p. 2
+              - cell [ref=f29e430]:
+                - link "CMO" [ref=f29e432] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e433]:
+                - paragraph [ref=f29e434]: Goods
+                - paragraph [ref=f29e435]: Small Value Procurement
+              - cell "General Fund" [ref=f29e436]
+              - cell "₱500,000" [ref=f29e437]
+            - row [ref=f29e438]:
+              - cell "Other Machineries and Equipment PDF p. 2" [ref=f29e439]:
+                - generic [ref=f29e440]:
+                  - paragraph [ref=f29e442]: Other Machineries and Equipment
+                  - paragraph [ref=f29e443]:
+                    - generic [ref=f29e444]: PDF p. 2
+              - cell [ref=f29e445]:
+                - link "CMO" [ref=f29e447] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e448]:
+                - paragraph [ref=f29e449]: Goods
+                - paragraph [ref=f29e450]: Public Bidding
+              - cell "General Fund" [ref=f29e451]
+              - cell "₱5,200,000" [ref=f29e452]
+            - row [ref=f29e453]:
+              - cell "Military, Police, and Security Equipment PDF p. 2" [ref=f29e454]:
+                - generic [ref=f29e455]:
+                  - paragraph [ref=f29e457]: Military, Police, and Security Equipment
+                  - paragraph [ref=f29e458]:
+                    - generic [ref=f29e459]: PDF p. 2
+              - cell [ref=f29e460]:
+                - link "CMO" [ref=f29e462] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e463]:
+                - paragraph [ref=f29e464]: Goods
+                - paragraph [ref=f29e465]: Public Bidding
+              - cell "General Fund" [ref=f29e466]
+              - cell "₱1,000,000" [ref=f29e467]
+            - row [ref=f29e468]:
+              - cell "Consultancy Services PDF p. 2" [ref=f29e469]:
+                - generic [ref=f29e470]:
+                  - paragraph [ref=f29e472]: Consultancy Services
+                  - paragraph [ref=f29e473]:
+                    - generic [ref=f29e474]: PDF p. 2
+              - cell [ref=f29e475]:
+                - link "CMO" [ref=f29e477] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e478]:
+                - paragraph [ref=f29e479]: Consulting Services
+                - paragraph
+              - cell "General Fund" [ref=f29e480]
+              - cell "₱11,900,000" [ref=f29e481]
+            - row [ref=f29e482]:
+              - cell "Purchase of Communication Equipment PDF p. 2" [ref=f29e483]:
+                - generic [ref=f29e484]:
+                  - paragraph [ref=f29e486]: Purchase of Communication Equipment
+                  - paragraph [ref=f29e487]:
+                    - generic [ref=f29e488]: PDF p. 2
+              - cell [ref=f29e489]:
+                - link "CMO" [ref=f29e491] [cursor=pointer]:
+                  - /url: /government/departments/executive
+              - cell [ref=f29e492]:
+                - paragraph [ref=f29e493]: Goods
+                - paragraph [ref=f29e494]: Public Bidding
+              - cell "General Fund" [ref=f29e495]
+              - cell "₱2,300,000" [ref=f29e496]
+            - row [ref=f29e497]:
+              - cell "Purchase of Office Equipment (Tables, Steel Cabinets, etc.) PDF p. 2" [ref=f29e498]:
+                - generic [ref=f29e499]:
+                  - paragraph [ref=f29e501]: Purchase of Office Equipment (Tables, Steel Cabinets, etc.)
+                  - paragraph [ref=f29e502]:
+                    - generic [ref=f29e503]: PDF p. 2
+              - cell "SP, VMO" [ref=f29e504]:
+                - generic [ref=f29e505]:
+                  - link "SP," [ref=f29e506] [cursor=pointer]:
+                    - /url: /government/departments/legislative
+                  - generic [ref=f29e507]: VMO
+              - cell [ref=f29e508]:
+                - paragraph [ref=f29e509]: Goods
+                - paragraph [ref=f29e510]: Small Value Procurement
+              - cell "General Fund" [ref=f29e511]
+              - cell "₱800,000" [ref=f29e512]
+            - row [ref=f29e513]:
+              - cell "Procurement of Service Vehicle PDF p. 2" [ref=f29e514]:
+                - generic [ref=f29e515]:
+                  - paragraph [ref=f29e517]: Procurement of Service Vehicle
+                  - paragraph [ref=f29e518]:
+                    - generic [ref=f29e519]: PDF p. 2
+              - cell "SP, VMO" [ref=f29e520]:
+                - generic [ref=f29e521]:
+                  - link "SP," [ref=f29e522] [cursor=pointer]:
+                    - /url: /government/departments/legislative
+                  - generic [ref=f29e523]: VMO
+              - cell [ref=f29e524]:
+                - paragraph [ref=f29e525]: Goods
+                - paragraph [ref=f29e526]: Public Bidding
+              - cell "General Fund" [ref=f29e527]
+              - cell "₱15,000,000" [ref=f29e528]
+            - row [ref=f29e529]:
+              - cell "Procurement of IT Equipment PDF p. 2" [ref=f29e530]:
+                - generic [ref=f29e531]:
+                  - paragraph [ref=f29e533]: Procurement of IT Equipment
+                  - paragraph [ref=f29e534]:
+                    - generic [ref=f29e535]: PDF p. 2
+              - cell "SP, VMO" [ref=f29e536]:
+                - generic [ref=f29e537]:
+                  - link "SP," [ref=f29e538] [cursor=pointer]:
+                    - /url: /government/departments/legislative
+                  - generic [ref=f29e539]: VMO
+              - cell [ref=f29e540]:
+                - paragraph [ref=f29e541]: Goods
+                - paragraph [ref=f29e542]: Public Bidding
+              - cell "General Fund" [ref=f29e543]
+              - cell "₱1,500,000" [ref=f29e544]
+            - row [ref=f29e545]:
+              - cell "Construction of Sangguniang Panlungsod Building PDF p. 2" [ref=f29e546]:
+                - generic [ref=f29e547]:
+                  - paragraph [ref=f29e549]: Construction of Sangguniang Panlungsod Building
+                  - paragraph [ref=f29e550]:
+                    - generic [ref=f29e551]: PDF p. 2
+              - cell "SP, VMO" [ref=f29e552]:
+                - generic [ref=f29e553]:
+                  - link "SP," [ref=f29e554] [cursor=pointer]:
+                    - /url: /government/departments/legislative
+                  - generic [ref=f29e555]: VMO
+              - cell [ref=f29e556]:
+                - paragraph [ref=f29e557]: Infrastructure
+                - paragraph [ref=f29e558]: Public Bidding
+              - cell "General Fund" [ref=f29e559]
+              - cell "₱15,000,000" [ref=f29e560]
+            - row [ref=f29e561]:
+              - cell "Office Equipment PDF p. 2" [ref=f29e562]:
+                - generic [ref=f29e563]:
+                  - paragraph [ref=f29e565]: Office Equipment
+                  - paragraph [ref=f29e566]:
+                    - generic [ref=f29e567]: PDF p. 2
+              - cell "SP, VMO" [ref=f29e568]:
+                - generic [ref=f29e569]:
+                  - link "SP," [ref=f29e570] [cursor=pointer]:
+                    - /url: /government/departments/legislative
+                  - generic [ref=f29e571]: VMO
+              - cell [ref=f29e572]:
+                - paragraph [ref=f29e573]: Goods
+                - paragraph [ref=f29e574]: Small Value Procurement
+              - cell "General Fund" [ref=f29e575]
+              - cell "₱200,000" [ref=f29e576]
+            - row [ref=f29e577]:
+              - cell "Motor Vehicles PDF p. 2" [ref=f29e578]:
+                - generic [ref=f29e579]:
+                  - paragraph [ref=f29e581]: Motor Vehicles
+                  - paragraph [ref=f29e582]:
+                    - generic [ref=f29e583]: PDF p. 2
+              - cell "SP, VMO" [ref=f29e584]:
+                - generic [ref=f29e585]:
+                  - link "SP," [ref=f29e586] [cursor=pointer]:
+                    - /url: /government/departments/legislative
+                  - generic [ref=f29e587]: VMO
+              - cell [ref=f29e588]:
+                - paragraph [ref=f29e589]: Goods
+                - paragraph [ref=f29e590]: Small Value Procurement
+              - cell "General Fund" [ref=f29e591]
+              - cell "₱300,000" [ref=f29e592]
+            - row [ref=f29e593]:
+              - cell "Purchase of Office Equipment (Tables, Steel Cabinets, etc.) PDF p. 2" [ref=f29e594]:
+                - generic [ref=f29e595]:
+                  - paragraph [ref=f29e597]: Purchase of Office Equipment (Tables, Steel Cabinets, etc.)
+                  - paragraph [ref=f29e598]:
+                    - generic [ref=f29e599]: PDF p. 2
+              - cell [ref=f29e600]:
+                - link "CPDO" [ref=f29e602] [cursor=pointer]:
+                  - /url: /government/departments/cpdo
+              - cell [ref=f29e603]:
+                - paragraph [ref=f29e604]: Goods
+                - paragraph [ref=f29e605]: Small Value Procurement
+              - cell "General Fund" [ref=f29e606]
+              - cell "₱298,000" [ref=f29e607]
+            - row [ref=f29e608]:
+              - cell "Service Vehicle PDF p. 2" [ref=f29e609]:
+                - generic [ref=f29e610]:
+                  - paragraph [ref=f29e612]: Service Vehicle
+                  - paragraph [ref=f29e613]:
+                    - generic [ref=f29e614]: PDF p. 2
+              - cell [ref=f29e615]:
+                - link "CPDO" [ref=f29e617] [cursor=pointer]:
+                  - /url: /government/departments/cpdo
+              - cell [ref=f29e618]:
+                - paragraph [ref=f29e619]: Goods
+                - paragraph [ref=f29e620]: Public Bidding
+              - cell "General Fund" [ref=f29e621]
+              - cell "₱1,500,000" [ref=f29e622]
+            - row [ref=f29e623]:
+              - cell "Procurement of IT Equipment PDF p. 2" [ref=f29e624]:
+                - generic [ref=f29e625]:
+                  - paragraph [ref=f29e627]: Procurement of IT Equipment
+                  - paragraph [ref=f29e628]:
+                    - generic [ref=f29e629]: PDF p. 2
+              - cell [ref=f29e630]:
+                - link "CPDO" [ref=f29e632] [cursor=pointer]:
+                  - /url: /government/departments/cpdo
+              - cell [ref=f29e633]:
+                - paragraph [ref=f29e634]: Goods
+                - paragraph [ref=f29e635]: Public Bidding
+              - cell "General Fund" [ref=f29e636]
+              - cell "₱1,145,800" [ref=f29e637]
+            - row [ref=f29e638]:
+              - cell "Acquisition of IT Equipment and accessories PDF p. 2" [ref=f29e639]:
+                - generic [ref=f29e640]:
+                  - paragraph [ref=f29e642]: Acquisition of IT Equipment and accessories
+                  - paragraph [ref=f29e643]:
+                    - generic [ref=f29e644]: PDF p. 2
+              - cell "OCA" [ref=f29e645]
+              - cell [ref=f29e648]:
+                - paragraph [ref=f29e649]: Goods
+                - paragraph [ref=f29e650]: Public Bidding
+              - cell "General Fund" [ref=f29e651]
+              - cell "₱384,000" [ref=f29e652]
+            - row [ref=f29e653]:
+              - cell "Office Renovation PDF p. 2" [ref=f29e654]:
+                - generic [ref=f29e655]:
+                  - paragraph [ref=f29e657]: Office Renovation
+                  - paragraph [ref=f29e658]:
+                    - generic [ref=f29e659]: PDF p. 2
+              - cell [ref=f29e660]:
+                - link "CTO" [ref=f29e662] [cursor=pointer]:
+                  - /url: /government/departments/city-treasurers-office
+              - cell [ref=f29e663]:
+                - paragraph [ref=f29e664]: Infrastructure
+                - paragraph [ref=f29e665]: Public Bidding
+              - cell "General Fund" [ref=f29e666]
+              - cell "₱5,300,000" [ref=f29e667]
+            - row [ref=f29e668]:
+              - cell "Procurement of Other Supplies and Equipment PDF p. 2" [ref=f29e669]:
+                - generic [ref=f29e670]:
+                  - paragraph [ref=f29e672]: Procurement of Other Supplies and Equipment
+                  - paragraph [ref=f29e673]:
+                    - generic [ref=f29e674]: PDF p. 2
+              - cell [ref=f29e675]:
+                - link "CBO" [ref=f29e677] [cursor=pointer]:
+                  - /url: /government/departments/budget-office
+              - cell [ref=f29e678]:
+                - paragraph [ref=f29e679]: Goods
+                - paragraph [ref=f29e680]: Small Value Procurement
+              - cell "General Fund" [ref=f29e681]
+              - cell "₱110,000" [ref=f29e682]
+            - row [ref=f29e683]:
+              - cell "Improvement and renovation of City Budget Office PDF p. 3" [ref=f29e684]:
+                - generic [ref=f29e685]:
+                  - paragraph [ref=f29e687]: Improvement and renovation of City Budget Office
+                  - paragraph [ref=f29e688]:
+                    - generic [ref=f29e689]: PDF p. 3
+              - cell [ref=f29e690]:
+                - link "CBO" [ref=f29e692] [cursor=pointer]:
+                  - /url: /government/departments/budget-office
+              - cell [ref=f29e693]:
+                - paragraph [ref=f29e694]: Infrastructure
+                - paragraph [ref=f29e695]: Public Bidding
+              - cell "General Fund" [ref=f29e696]
+              - cell "₱500,000" [ref=f29e697]
+            - row [ref=f29e698]:
+              - cell "Other Supplies and Materials Expenses PDF p. 3" [ref=f29e699]:
+                - generic [ref=f29e700]:
+                  - paragraph [ref=f29e702]: Other Supplies and Materials Expenses
+                  - paragraph [ref=f29e703]:
+                    - generic [ref=f29e704]: PDF p. 3
+              - cell "CAO" [ref=f29e705]
+              - cell [ref=f29e708]:
+                - paragraph [ref=f29e709]: Goods
+                - paragraph [ref=f29e710]: Small Value Procurement
+              - cell "General Fund" [ref=f29e711]
+              - cell "₱500,000" [ref=f29e712]
+            - row [ref=f29e713]:
+              - cell "Procurement of Chairs, Tables, and Tents PDF p. 3" [ref=f29e714]:
+                - generic [ref=f29e715]:
+                  - paragraph [ref=f29e717]: Procurement of Chairs, Tables, and Tents
+                  - paragraph [ref=f29e718]:
+                    - generic [ref=f29e719]: PDF p. 3
+              - cell [ref=f29e720]:
+                - link "GSO" [ref=f29e722] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e723]:
+                - paragraph [ref=f29e724]: Goods
+                - paragraph [ref=f29e725]: Small Value Procurement
+              - cell "General Fund" [ref=f29e726]
+              - cell "₱600,000" [ref=f29e727]
+            - row [ref=f29e728]:
+              - cell "Procurement of utility tools PDF p. 3" [ref=f29e729]:
+                - generic [ref=f29e730]:
+                  - paragraph [ref=f29e732]: Procurement of utility tools
+                  - paragraph [ref=f29e733]:
+                    - generic [ref=f29e734]: PDF p. 3
+              - cell [ref=f29e735]:
+                - link "GSO" [ref=f29e737] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e738]:
+                - paragraph [ref=f29e739]: Goods
+                - paragraph [ref=f29e740]: Small Value Procurement
+              - cell "General Fund" [ref=f29e741]
+              - cell "₱200,000" [ref=f29e742]
+            - row [ref=f29e743]:
+              - cell "Procurement of Office Equipment PDF p. 3" [ref=f29e744]:
+                - generic [ref=f29e745]:
+                  - paragraph [ref=f29e747]: Procurement of Office Equipment
+                  - paragraph [ref=f29e748]:
+                    - generic [ref=f29e749]: PDF p. 3
+              - cell [ref=f29e750]:
+                - link "GSO" [ref=f29e752] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e753]:
+                - paragraph [ref=f29e754]: Goods
+                - paragraph [ref=f29e755]: Small Value Procurement
+              - cell "General Fund" [ref=f29e756]
+              - cell "₱154,000" [ref=f29e757]
+            - row [ref=f29e758]:
+              - cell "Procurement of Office Furniture and Fixtures PDF p. 3" [ref=f29e759]:
+                - generic [ref=f29e760]:
+                  - paragraph [ref=f29e762]: Procurement of Office Furniture and Fixtures
+                  - paragraph [ref=f29e763]:
+                    - generic [ref=f29e764]: PDF p. 3
+              - cell [ref=f29e765]:
+                - link "GSO" [ref=f29e767] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e768]:
+                - paragraph [ref=f29e769]: Goods
+                - paragraph [ref=f29e770]: Small Value Procurement
+              - cell "General Fund" [ref=f29e771]
+              - cell "₱355,000" [ref=f29e772]
+            - row [ref=f29e773]:
+              - cell "Procurement of IT Equipment PDF p. 3" [ref=f29e774]:
+                - generic [ref=f29e775]:
+                  - paragraph [ref=f29e777]: Procurement of IT Equipment
+                  - paragraph [ref=f29e778]:
+                    - generic [ref=f29e779]: PDF p. 3
+              - cell [ref=f29e780]:
+                - link "GSO" [ref=f29e782] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e783]:
+                - paragraph [ref=f29e784]: Goods
+                - paragraph [ref=f29e785]: Small Value Procurement
+              - cell "General Fund" [ref=f29e786]
+              - cell "₱350,000" [ref=f29e787]
+            - row [ref=f29e788]:
+              - cell "Procurement of Office Motor Vehicle PDF p. 3" [ref=f29e789]:
+                - generic [ref=f29e790]:
+                  - paragraph [ref=f29e792]: Procurement of Office Motor Vehicle
+                  - paragraph [ref=f29e793]:
+                    - generic [ref=f29e794]: PDF p. 3
+              - cell [ref=f29e795]:
+                - link "GSO" [ref=f29e797] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e798]:
+                - paragraph [ref=f29e799]: Goods
+                - paragraph [ref=f29e800]: Public Bidding
+              - cell "General Fund" [ref=f29e801]
+              - cell "₱1,500,000" [ref=f29e802]
+            - row [ref=f29e803]:
+              - cell "Construction of Warehouse for office supplies, other commodities, etc. PDF p. 3" [ref=f29e804]:
+                - generic [ref=f29e805]:
+                  - paragraph [ref=f29e807]: Construction of Warehouse for office supplies, other commodities, etc.
+                  - paragraph [ref=f29e808]:
+                    - generic [ref=f29e809]: PDF p. 3
+              - cell [ref=f29e810]:
+                - link "GSO" [ref=f29e812] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e813]:
+                - paragraph [ref=f29e814]: Infrastructure
+                - paragraph [ref=f29e815]: Public Bidding
+              - cell "General Fund" [ref=f29e816]
+              - cell "Not stated" [ref=f29e817]
+            - row [ref=f29e818]:
+              - cell "Purchase of one (1) unit Forklift PDF p. 3" [ref=f29e819]:
+                - generic [ref=f29e820]:
+                  - paragraph [ref=f29e822]: Purchase of one (1) unit Forklift
+                  - paragraph [ref=f29e823]:
+                    - generic [ref=f29e824]: PDF p. 3
+              - cell [ref=f29e825]:
+                - link "GSO" [ref=f29e827] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e828]:
+                - paragraph [ref=f29e829]: Goods
+                - paragraph [ref=f29e830]: Public Bidding
+              - cell "General Fund" [ref=f29e831]
+              - cell "Not stated" [ref=f29e832]
+            - row [ref=f29e833]:
+              - cell "Procurement and Installation of CCTV on New public market. Sangitan Market, and Paraphernalia Building PDF p. 3" [ref=f29e834]:
+                - generic [ref=f29e835]:
+                  - paragraph [ref=f29e837]: Procurement and Installation of CCTV on New public market. Sangitan Market, and Paraphernalia Building
+                  - paragraph [ref=f29e838]:
+                    - generic [ref=f29e839]: PDF p. 3
+              - cell [ref=f29e840]:
+                - link "GSO" [ref=f29e842] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e843]:
+                - paragraph [ref=f29e844]: Goods
+                - paragraph [ref=f29e845]: Public Bidding
+              - cell "General Fund" [ref=f29e846]
+              - cell "Not stated" [ref=f29e847]
+            - row [ref=f29e848]:
+              - cell "Establishment of Multi-purpose Building PDF p. 3" [ref=f29e849]:
+                - generic [ref=f29e850]:
+                  - paragraph [ref=f29e852]: Establishment of Multi-purpose Building
+                  - paragraph [ref=f29e853]:
+                    - generic [ref=f29e854]: PDF p. 3
+              - cell [ref=f29e855]:
+                - link "GSO" [ref=f29e857] [cursor=pointer]:
+                  - /url: /government/departments/gso
+              - cell [ref=f29e858]:
+                - paragraph [ref=f29e859]: Infrastructure
+                - paragraph [ref=f29e860]: Public Bidding
+              - cell "General Fund" [ref=f29e861]
+              - cell "₱20,000,000" [ref=f29e862]
+            - row [ref=f29e863]:
+              - cell "Acquisition of Office Equipment and Fixtures, IT Equipment, Other Supplies and Consumables PDF p. 3" [ref=f29e864]:
+                - generic [ref=f29e865]:
+                  - paragraph [ref=f29e867]: Acquisition of Office Equipment and Fixtures, IT Equipment, Other Supplies and Consumables
+                  - paragraph [ref=f29e868]:
+                    - generic [ref=f29e869]: PDF p. 3
+              - cell [ref=f29e870]:
+                - link "LCRO" [ref=f29e872] [cursor=pointer]:
+                  - /url: /government/departments/lcro
+              - cell [ref=f29e873]:
+                - paragraph [ref=f29e874]: Goods
+                - paragraph [ref=f29e875]: Public Bidding
+              - cell "General Fund" [ref=f29e876]
+              - cell "₱905,200" [ref=f29e877]
+            - row [ref=f29e878]:
+              - cell "Construction of Large Storage Room/ Building for Civil Registry Documents PDF p. 3" [ref=f29e879]:
+                - generic [ref=f29e880]:
+                  - paragraph [ref=f29e882]: Construction of Large Storage Room/ Building for Civil Registry Documents
+                  - paragraph [ref=f29e883]:
+                    - generic [ref=f29e884]: PDF p. 3
+              - cell [ref=f29e885]:
+                - link "LCRO" [ref=f29e887] [cursor=pointer]:
+                  - /url: /government/departments/lcro
+              - cell [ref=f29e888]:
+                - paragraph [ref=f29e889]: Infrastructure
+                - paragraph [ref=f29e890]: Public Bidding
+              - cell "General Fund" [ref=f29e891]
+              - cell "₱5,000,000" [ref=f29e892]
+            - row [ref=f29e893]:
+              - cell "Procurement of computer units with UPS PDF p. 3" [ref=f29e894]:
+                - generic [ref=f29e895]:
+                  - paragraph [ref=f29e897]: Procurement of computer units with UPS
+                  - paragraph [ref=f29e898]:
+                    - generic [ref=f29e899]: PDF p. 3
+              - cell [ref=f29e900]:
+                - link "City Legal Office" [ref=f29e902] [cursor=pointer]:
+                  - /url: /government/departments/city-legal-office
+              - cell [ref=f29e903]:
+                - paragraph [ref=f29e904]: Goods
+                - paragraph [ref=f29e905]: Small Value Procurement
+              - cell "General Fund" [ref=f29e906]
+              - cell "₱70,000" [ref=f29e907]
+            - row [ref=f29e908]:
+              - cell "Procurement of laptop PDF p. 4" [ref=f29e909]:
+                - generic [ref=f29e910]:
+                  - paragraph [ref=f29e912]: Procurement of laptop
+                  - paragraph [ref=f29e913]:
+                    - generic [ref=f29e914]: PDF p. 4
+              - cell [ref=f29e915]:
+                - link "City Legal Office" [ref=f29e917] [cursor=pointer]:
+                  - /url: /government/departments/city-legal-office
+              - cell [ref=f29e918]:
+                - paragraph [ref=f29e919]: Goods
+                - paragraph [ref=f29e920]: Small Value Procurement
+              - cell "General Fund" [ref=f29e921]
+              - cell "₱70,000" [ref=f29e922]
+            - row [ref=f29e923]:
+              - cell "Procurement of other supplies, equipment and fixtures. (Aircon., Office Chairs and Tables, etc.) PDF p. 4" [ref=f29e924]:
+                - generic [ref=f29e925]:
+                  - paragraph [ref=f29e927]: Procurement of other supplies, equipment and fixtures. (Aircon., Office Chairs and Tables, etc.)
+                  - paragraph [ref=f29e928]:
+                    - generic [ref=f29e929]: PDF p. 4
+              - cell "CICTO" [ref=f29e930]
+              - cell [ref=f29e933]:
+                - paragraph [ref=f29e934]: Goods
+                - paragraph [ref=f29e935]: Public Bidding
+              - cell "General Fund" [ref=f29e936]
+              - cell "₱491,000" [ref=f29e937]
+            - row [ref=f29e938]:
+              - cell "Procurement of ICT Equipment PDF p. 4" [ref=f29e939]:
+                - generic [ref=f29e940]:
+                  - paragraph [ref=f29e942]: Procurement of ICT Equipment
+                  - paragraph [ref=f29e943]:
+                    - generic [ref=f29e944]: PDF p. 4
+              - cell "CICTO" [ref=f29e945]
+              - cell [ref=f29e948]:
+                - paragraph [ref=f29e949]: Goods
+                - paragraph [ref=f29e950]: Public Bidding
+              - cell "General Fund" [ref=f29e951]
+              - cell "₱12,000,000" [ref=f29e952]
+            - row [ref=f29e953]:
+              - cell "Procurement of server and Network equipment PDF p. 4" [ref=f29e954]:
+                - generic [ref=f29e955]:
+                  - paragraph [ref=f29e957]: Procurement of server and Network equipment
+                  - paragraph [ref=f29e958]:
+                    - generic [ref=f29e959]: PDF p. 4
+              - cell "CICTO" [ref=f29e960]
+              - cell [ref=f29e963]:
+                - paragraph [ref=f29e964]: Goods
+                - paragraph [ref=f29e965]: Public Bidding
+              - cell "General Fund" [ref=f29e966]
+              - cell "₱3,500,000" [ref=f29e967]
+            - row [ref=f29e968]:
+              - cell "Procurement of Software Licenses(MS Office, Anti-Virus and Development Tools PDF p. 4" [ref=f29e969]:
+                - generic [ref=f29e970]:
+                  - paragraph [ref=f29e972]: Procurement of Software Licenses(MS Office, Anti-Virus and Development Tools
+                  - paragraph [ref=f29e973]:
+                    - generic [ref=f29e974]: PDF p. 4
+              - cell "CICTO" [ref=f29e975]
+              - cell [ref=f29e978]:
+                - paragraph [ref=f29e979]: Goods
+                - paragraph [ref=f29e980]: Public Bidding
+              - cell "General Fund" [ref=f29e981]
+              - cell "₱5,500,000" [ref=f29e982]
+            - row [ref=f29e983]:
+              - cell "Office renovation and rehabilitation PDF p. 4" [ref=f29e984]:
+                - generic [ref=f29e985]:
+                  - paragraph [ref=f29e987]: Office renovation and rehabilitation
+                  - paragraph [ref=f29e988]:
+                    - generic [ref=f29e989]: PDF p. 4
+              - cell "CICTO" [ref=f29e990]
+              - cell [ref=f29e993]:
+                - paragraph [ref=f29e994]: Infrastructure
+                - paragraph [ref=f29e995]: Public Bidding
+              - cell "General Fund" [ref=f29e996]
+              - cell "₱1,000,000" [ref=f29e997]
+            - row [ref=f29e998]:
+              - cell "Purchase of IT Equipment PDF p. 4" [ref=f29e999]:
+                - generic [ref=f29e1000]:
+                  - paragraph [ref=f29e1002]: Purchase of IT Equipment
+                  - paragraph [ref=f29e1003]:
+                    - generic [ref=f29e1004]: PDF p. 4
+              - cell "PNP, BFP" [ref=f29e1005]:
+                - generic [ref=f29e1006]:
+                  - generic [ref=f29e1007]: PNP,
+                  - generic [ref=f29e1008]: BFP
+              - cell [ref=f29e1009]:
+                - paragraph [ref=f29e1010]: Goods
+                - paragraph [ref=f29e1011]: Small Value Procurement
+              - cell "General Fund" [ref=f29e1012]
+              - cell "₱50,000" [ref=f29e1013]
+            - row [ref=f29e1014]:
+              - cell "Procurement of Protective and Tactical Equipment PDF p. 4" [ref=f29e1015]:
+                - generic [ref=f29e1016]:
+                  - paragraph [ref=f29e1018]: Procurement of Protective and Tactical Equipment
+                  - paragraph [ref=f29e1019]:
+                    - generic [ref=f29e1020]: PDF p. 4
+              - cell "PNP, BFP" [ref=f29e1021]:
+                - generic [ref=f29e1022]:
+                  - generic [ref=f29e1023]: PNP,
+                  - generic [ref=f29e1024]: BFP
+              - cell [ref=f29e1025]:
+                - paragraph [ref=f29e1026]: Goods
+                - paragraph [ref=f29e1027]: Public Bidding
+              - cell "General Fund" [ref=f29e1028]
+              - cell "₱1,200,000" [ref=f29e1029]
+            - row [ref=f29e1030]:
+              - cell "Procurement of office Equipment PDF p. 4" [ref=f29e1031]:
+                - generic [ref=f29e1032]:
+                  - paragraph [ref=f29e1034]: Procurement of office Equipment
+                  - paragraph [ref=f29e1035]:
+                    - generic [ref=f29e1036]: PDF p. 4
+              - cell "CBLIPO, CICTO" [ref=f29e1037]:
+                - generic [ref=f29e1038]:
+                  - link "CBLIPO," [ref=f29e1039] [cursor=pointer]:
+                    - /url: /government/departments/bplo
+                  - generic [ref=f29e1040]: CICTO
+              - cell [ref=f29e1041]:
+                - paragraph [ref=f29e1042]: Goods
+                - paragraph [ref=f29e1043]: Small Value Procurement
+              - cell "General Fund" [ref=f29e1044]
+              - cell "₱264,000" [ref=f29e1045]
+        - button "Show 50 more" [ref=f29e1047]
+  - contentinfo [ref=f29e1048]:
+    - generic [ref=f29e1049]:
+      - generic [ref=f29e1050]:
+        - generic [ref=f29e1051]:
+          - img "Better Cabanatuan" [ref=f29e1053]
+          - paragraph [ref=f29e1054]: A community portal providing Philippine citizens, businesses, and visitors with information and services.
+          - generic [ref=f29e1055]:
+            - link "Website" [ref=f29e1056] [cursor=pointer]:
+              - /url: https://bettercabanatuan.org
+            - link "Facebook" [ref=f29e1060] [cursor=pointer]:
+              - /url: https://www.facebook.com/bettercabanatuan.org
+            - link "Twitter" [ref=f29e1063] [cursor=pointer]:
+              - /url: https://twitter.com/bettercabanatuan
+            - link "Instagram" [ref=f29e1066] [cursor=pointer]:
+              - /url: https://instagram.com/bettercabanatuan
+            - link "Government Website":
+              - /url: https://www.cabanatuancity.gov.ph
+        - generic [ref=f29e1070]:
+          - heading "About" [level=3] [ref=f29e1071]
+          - list [ref=f29e1072]:
+            - listitem [ref=f29e1073]:
+              - link "About the Portal" [ref=f29e1074] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f29e1075]:
+              - link "Accessibility" [ref=f29e1076] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem [ref=f29e1077]:
+              - link "Contact Us" [ref=f29e1078] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=f29e1079]:
+              - link "Community Discord" [ref=f29e1080] [cursor=pointer]:
+                - /url: https://bettergov.ph/join-us
+        - generic [ref=f29e1081]:
+          - heading "Services" [level=3] [ref=f29e1082]
+          - list [ref=f29e1083]:
+            - listitem [ref=f29e1084]:
+              - link "All Services" [ref=f29e1085] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f29e1086]:
+              - link "Health Services" [ref=f29e1087] [cursor=pointer]:
+                - /url: /services/health-services
+            - listitem [ref=f29e1088]:
+              - link "Education" [ref=f29e1089] [cursor=pointer]:
+                - /url: /services/education
+            - listitem [ref=f29e1090]:
+              - link "Business and Livelihood" [ref=f29e1091] [cursor=pointer]:
+                - /url: /services/business
+            - listitem [ref=f29e1092]:
+              - link "Social Welfare" [ref=f29e1093] [cursor=pointer]:
+                - /url: /services/social-welfare
+            - listitem [ref=f29e1094]:
+              - link "Agriculture & Fisheries" [ref=f29e1095] [cursor=pointer]:
+                - /url: /services/agriculture-fisheries
+            - listitem [ref=f29e1096]:
+              - link "Infrastructure & Public Works" [ref=f29e1097] [cursor=pointer]:
+                - /url: /services/infrastructure-public-works
+            - listitem [ref=f29e1098]:
+              - link "Hotlines" [ref=f29e1099] [cursor=pointer]:
+                - /url: /hotlines
+            - listitem [ref=f29e1100]:
+              - link "Jeep & Tricycle Fares" [ref=f29e1101] [cursor=pointer]:
+                - /url: https://pamasahe.bettercabanatuan.org
+            - listitem [ref=f29e1102]:
+              - link "Holidays" [ref=f29e1103] [cursor=pointer]:
+                - /url: https://bettergov.ph/philippines/holidays
+        - generic [ref=f29e1104]:
+          - heading "Government" [level=3] [ref=f29e1105]
+          - list [ref=f29e1106]:
+            - listitem [ref=f29e1107]:
+              - link "Government" [ref=f29e1108] [cursor=pointer]:
+                - /url: /government
+            - listitem [ref=f29e1109]:
+              - link "Public Officials" [ref=f29e1110] [cursor=pointer]:
+                - /url: /government/officials
+            - listitem [ref=f29e1111]:
+              - link "Barangays" [ref=f29e1112] [cursor=pointer]:
+                - /url: /government/barangays
+            - listitem [ref=f29e1113]:
+              - link "Open Data" [ref=f29e1114] [cursor=pointer]:
+                - /url: https://data.gov.ph
+            - listitem [ref=f29e1115]:
+              - link "Freedom of Information" [ref=f29e1116] [cursor=pointer]:
+                - /url: https://www.foi.gov.ph
+            - listitem [ref=f29e1117]:
+              - link "Contact Center" [ref=f29e1118] [cursor=pointer]:
+                - /url: https://contactcenterngbayan.gov.ph
+            - listitem [ref=f29e1119]:
+              - link "Official Gazette" [ref=f29e1120] [cursor=pointer]:
+                - /url: https://www.officialgazette.gov.ph
+      - generic [ref=f29e1122]:
+        - generic [ref=f29e1123]:
+          - paragraph [ref=f29e1124]: © 2026 Better Cabanatuan. All content is public domain unless otherwise specified.
+          - paragraph [ref=f29e1125]: Built on the BetterGov open-source civic template.
+        - generic [ref=f29e1126]:
+          - link "BetterCabanatuan.org" [ref=f29e1127] [cursor=pointer]:
+            - /url: https://bettercabanatuan.org
+          - link "Facebook" [ref=f29e1128] [cursor=pointer]:
+            - /url: https://www.facebook.com/bettercabanatuan.org
+          - link "Contribute at GitHub" [ref=f29e1129] [cursor=pointer]:
+            - /url: https://github.com/BetterCabanatuan/bettercabanatuan
+          - link "Sitemap" [ref=f29e1130] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Accessibility" [ref=f29e1131] [cursor=pointer]:
+            - /url: /accessibility
+          - link "Privacy Notice" [ref=f29e1132] [cursor=pointer]:
+            - /url: /privacy

@@ -4,10 +4,11 @@ import { Text } from '../../../components/ui/Text';
 import Section from '../../../components/ui/Section';
 import SEO from '../../../components/SEO';
 import Breadcrumbs from '../../../components/ui/Breadcrumbs';
-import MapBanner from '../../../components/ui/MapBanner';
+import BarangayLocation from '../../../components/government/barangays/BarangayLocation';
 import { Card, CardContent } from '../../../components/ui/Card';
 import NotFoundGuard from '../../../components/shared/NotFoundGuard';
 import BarangayHealthCenterCard from '../../../components/government/barangays/BarangayHealthCenterCard';
+import { OfficialBarangayRoster } from '../../../components/government/barangays/OfficialBarangayRoster';
 import {
   getBarangayBySlug,
   allBarangays,
@@ -117,18 +118,11 @@ const BarangayDetail: React.FC = () => {
             {barangay.classification}
           </span>
 
-          {/*
-            The map anchor. A schematic band rather than a map: there is no
-            verified boundary geometry for any of the 89 barangays, and a
-            plausible-looking map would be a fabricated image on a civic site.
-            It is labelled, so it reads as "map goes here" instead of as a
-            failed image load. See docs/IMAGERY-SYSTEM.md.
-          */}
-          <MapBanner
-            className="mt-4"
+          <BarangayLocation
+            key={barangay.psgc_code}
+            psgcCode={barangay.psgc_code}
             label={`Barangay ${barangay.name}`}
             caption={`${barangay.classification} barangay, Cabanatuan City`}
-            size="sm"
           />
         </div>
 
@@ -262,6 +256,8 @@ const BarangayDetail: React.FC = () => {
             )}
           </CardContent>
         </Card>
+
+        <OfficialBarangayRoster barangaySlug={barangay.slug} />
 
         {relatedBarangays.length > 0 && (
           <div>

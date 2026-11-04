@@ -1,0 +1,1297 @@
+- generic [ref=f24e3]:
+  - region "Emergency hotlines" [ref=f24e4]:
+    - generic [ref=f24e6]:
+      - generic [ref=f24e7]: Hotlines
+      - list [ref=f24e12]:
+        - listitem [ref=f24e13]:
+          - generic [ref=f24e14]: "PNP:"
+          - generic [ref=f24e15]:
+            - link "(044)-463-1111" [ref=f24e17] [cursor=pointer]:
+              - /url: tel:+63444631111
+            - generic [ref=f24e18]:
+              - generic [aria-hidden] [ref=f24e19]: ·
+              - link "0920-611-2000" [ref=f24e20] [cursor=pointer]:
+                - /url: tel:+639206112000
+            - generic [ref=f24e21]:
+              - generic [aria-hidden] [ref=f24e22]: ·
+              - link "0935-522-2227" [ref=f24e23] [cursor=pointer]:
+                - /url: tel:+639355222227
+        - listitem [ref=f24e24]:
+          - generic [ref=f24e25]: "BFP:"
+          - generic [ref=f24e26]:
+            - link "(044)-958-3701" [ref=f24e28] [cursor=pointer]:
+              - /url: tel:+63449583701
+            - generic [ref=f24e29]:
+              - generic [aria-hidden] [ref=f24e30]: ·
+              - link "(044)-600-5696" [ref=f24e31] [cursor=pointer]:
+                - /url: tel:+63446005696
+            - generic [ref=f24e32]:
+              - generic [aria-hidden] [ref=f24e33]: ·
+              - link "0943-303-4279" [ref=f24e34] [cursor=pointer]:
+                - /url: tel:+639433034279
+        - listitem [ref=f24e35]:
+          - generic [ref=f24e36]: "CDRRMO:"
+          - generic [ref=f24e37]:
+            - link "0908-881-1010" [ref=f24e39] [cursor=pointer]:
+              - /url: tel:+639088811010
+            - generic [ref=f24e40]:
+              - generic [aria-hidden] [ref=f24e41]: ·
+              - link "0917-851-1320" [ref=f24e42] [cursor=pointer]:
+                - /url: tel:+639178511320
+            - generic [ref=f24e43]:
+              - generic [aria-hidden] [ref=f24e44]: ·
+              - link "(044)-940-0161" [ref=f24e45] [cursor=pointer]:
+                - /url: tel:+63449400161
+        - listitem [ref=f24e46]:
+          - generic [ref=f24e47]: "Community Affairs:"
+          - link "0919-081-3983" [ref=f24e50] [cursor=pointer]:
+            - /url: tel:+639190813983
+  - navigation [ref=f24e51]:
+    - generic [ref=f24e53]:
+      - link [ref=f24e55] [cursor=pointer]:
+        - /url: /
+        - img "Better Cabanatuan" [ref=f24e56]
+      - button "Open main menu" [ref=f24e58]
+  - main [ref=f24e61]:
+    - region [ref=f24e62]:
+      - generic [ref=f24e63]:
+        - navigation "Breadcrumb" [ref=f24e64]:
+          - link "Home" [ref=f24e69] [cursor=pointer]:
+            - /url: /
+          - link "Transparency" [ref=f24e73] [cursor=pointer]:
+            - /url: /transparency
+          - link "Annual Procurement Plan 2026" [ref=f24e77] [cursor=pointer]:
+            - /url: /transparency/procurement-plan
+        - generic [ref=f24e83]:
+          - paragraph [ref=f24e84]: Open Government
+          - heading "Annual Procurement Plan 2026" [level=1] [ref=f24e85]
+          - paragraph [ref=f24e86]: "What the city government plans to buy in 2026: each purchase and project in the plan, the office behind it, how it will be procured, and its estimated budget."
+    - generic [ref=f24e88]:
+      - note [ref=f24e89]:
+        - paragraph [ref=f24e90]: These are planned estimates, not contracts.
+        - paragraph [ref=f24e91]: The plan lists what each office intends to procure this year and the budget set aside for it. Purchases still go through bidding, so contracts can differ. Bid results and awarded contracts have not been located yet.
+        - paragraph [ref=f24e92]: "Source: Annual Procurement Plan F.Y. 2026, approved by the Bids and Awards Committee and the Head of the Procuring Entity on December 23, 2025 and posted on the city website on February 13, 2026."
+        - link "Open the PDF (49 pages) (External)" [ref=f24e93] [cursor=pointer]:
+          - /url: https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf
+          - text: Open the PDF (49 pages)
+          - generic [ref=f24e98]: (External)
+      - generic [ref=f24e99]:
+        - region "Service details" [ref=f24e101]:
+          - paragraph [ref=f24e106]: ₱5.7B
+          - paragraph [ref=f24e107]: Planned budget
+          - paragraph [ref=f24e108]: ₱5,697,991,404
+        - region "Service details" [ref=f24e110]:
+          - paragraph [ref=f24e115]: "500"
+          - paragraph [ref=f24e116]: Items
+          - paragraph [ref=f24e117]: Purchases and projects
+        - region "Service details" [ref=f24e119]:
+          - paragraph [ref=f24e126]: ₱3.37B
+          - paragraph [ref=f24e127]: Infrastructure
+          - paragraph [ref=f24e128]: 211 items, 59% of the total
+        - region "Service details" [ref=f24e130]:
+          - paragraph [ref=f24e136]: ₱2.33B
+          - paragraph [ref=f24e137]: Goods and services
+          - paragraph [ref=f24e138]: 289 items, 41% of the total
+      - region [ref=f24e139]:
+        - heading "By office" [level=2] [ref=f24e140]
+        - paragraph [ref=f24e141]: Planned budget by the office listed first on each row. A row that names several offices counts under the first.
+        - list [ref=f24e142]:
+          - listitem [ref=f24e143]:
+            - button "Show the items for Office of the City Engineer" [ref=f24e144]:
+              - generic [ref=f24e145]:
+                - generic [ref=f24e146]: Office of the City Engineer
+                - generic [ref=f24e147]: CEO
+              - generic [ref=f24e150]: ₱2,125,653,020132 items
+          - listitem [ref=f24e151]:
+            - button "Show the items for Office of the City Mayor" [ref=f24e152]:
+              - generic [ref=f24e153]:
+                - generic [ref=f24e154]: Office of the City Mayor
+                - generic [ref=f24e155]: CMO
+              - generic [ref=f24e158]: ₱687,070,52025 items
+          - listitem [ref=f24e159]:
+            - button "Show the items for Cabanatuan City Environment and Natural Resources Office" [ref=f24e160]:
+              - generic [ref=f24e161]:
+                - generic [ref=f24e162]: Cabanatuan City Environment and Natural Resources Office
+                - generic [ref=f24e163]: CCENRO
+              - generic [ref=f24e166]: ₱655,580,00013 items
+          - listitem [ref=f24e167]:
+            - button "Show the items for City Agriculture Office" [ref=f24e168]:
+              - generic [ref=f24e169]:
+                - generic [ref=f24e170]: City Agriculture Office
+                - generic [ref=f24e171]: CAgriO
+              - generic [ref=f24e174]: ₱380,623,04033 items
+          - listitem [ref=f24e175]:
+            - button "Show the items for City Motor Pool Office" [ref=f24e176]:
+              - generic [ref=f24e177]: City Motor Pool Office
+              - generic [ref=f24e181]: ₱376,183,11028 items
+          - listitem [ref=f24e182]:
+            - button "Show the items for City Health Office" [ref=f24e183]:
+              - generic [ref=f24e184]:
+                - generic [ref=f24e185]: City Health Office
+                - generic [ref=f24e186]: CHO
+              - generic [ref=f24e189]: ₱310,636,21040 items
+          - listitem [ref=f24e190]:
+            - button "Show the items for CTDPO" [ref=f24e191]:
+              - generic [ref=f24e192]: CTDPO
+              - generic [ref=f24e196]: ₱227,430,00017 items
+          - listitem [ref=f24e197]:
+            - button "Show the items for City Social Welfare and Development Office" [ref=f24e198]:
+              - generic [ref=f24e199]:
+                - generic [ref=f24e200]: City Social Welfare and Development Office
+                - generic [ref=f24e201]: CSWDO
+              - generic [ref=f24e204]: ₱188,648,31449 items
+          - listitem [ref=f24e205]:
+            - button "Show the items for CEEMO" [ref=f24e206]:
+              - generic [ref=f24e207]: CEEMO
+              - generic [ref=f24e211]: ₱155,837,00016 items
+          - listitem [ref=f24e212]:
+            - button "Show the items for MVG Cabanatuan City General Hospital" [ref=f24e213]:
+              - generic [ref=f24e214]:
+                - generic [ref=f24e215]: MVG Cabanatuan City General Hospital
+                - generic [ref=f24e216]: MVGCCGH
+              - generic [ref=f24e219]: ₱132,000,00026 items
+        - button "Show all 31 offices" [ref=f24e220]
+      - region [ref=f24e221]:
+        - heading "All items" [level=2] [ref=f24e222]
+        - generic [ref=f24e223]:
+          - generic [ref=f24e224]:
+            - generic [ref=f24e225]: Search items
+            - searchbox "Search items" [ref=f24e230]
+          - generic [ref=f24e231]:
+            - generic [ref=f24e232]: Office
+            - combobox "Office" [ref=f24e234]:
+              - option "All offices" [selected]
+              - option "Office of the City Engineer (CEO)"
+              - option "Office of the City Mayor (CMO)"
+              - option "Cabanatuan City Environment and Natural Resources Office (CCENRO)"
+              - option "City Agriculture Office (CAgriO)"
+              - option "City Motor Pool Office"
+              - option "City Health Office (CHO)"
+              - option "CTDPO"
+              - option "City Social Welfare and Development Office (CSWDO)"
+              - option "CEEMO"
+              - option "MVG Cabanatuan City General Hospital (MVGCCGH)"
+              - option "DENR"
+              - option "DepEd"
+              - option "CDRRMC"
+              - option "Sangguniang Panlungsod (SP)"
+              - option "City Veterinary Office (CVO)"
+              - option "City General Services Office (GSO)"
+              - option "CICTO"
+              - option "Office of the City Building Official (OCBO)"
+              - option "Office of the City Treasurer (CTO)"
+              - option "City Livelihood and Cooperatives Development Office (CLCDO)"
+              - option "City Disaster Risk Reduction and Management Office (CDRRMO)"
+              - option "City Civil Registry Office (LCRO)"
+              - option "City Planning and Development Office (CPDO)"
+              - option "City Human Resource Management Office (HRMO)"
+              - option "City Business Licensing and Investment Promotion Office (CBLIPO)"
+              - option "City Budget Office (CBO)"
+              - option "PNP"
+              - option "CHDMO"
+              - option "CAO"
+              - option "OCA"
+              - option "Office for City Legal Affairs"
+              - option "Barangay"
+              - option "BFAR"
+              - option "BFP"
+              - option "CAI"
+              - option "City Information and Tourism Office (CITO)"
+              - option "CMP"
+              - option "CMPO"
+              - option "CYDO"
+              - option "DA-RFO3"
+              - option "DBM"
+              - option "DILG"
+              - option "DOE"
+              - option "DOH"
+              - option "DOST"
+              - option "DPWH"
+              - option "LGU"
+              - option "NGO(s)"
+              - option "NIA"
+              - option "NSWMC"
+              - option "PhilMech"
+              - option "TMC"
+              - option "VMO"
+          - generic [ref=f24e235]:
+            - generic [ref=f24e236]: Category
+            - combobox "Category" [ref=f24e238]:
+              - option "All categories" [selected]
+              - option "Goods"
+              - option "Infrastructure"
+              - option "Goods / Infrastructure"
+              - option "Consulting Services"
+              - option "Services"
+          - generic [ref=f24e239]:
+            - generic [ref=f24e240]: Procurement mode
+            - combobox "Procurement mode" [ref=f24e242]:
+              - option "All modes" [selected]
+              - option "Public Bidding"
+              - option "Small Value Procurement"
+              - option "Small Value Procurement, Public Bidding"
+              - option "Direct Contracting"
+              - option "Small Value Procurement / Public Bidding"
+          - generic [ref=f24e243]:
+            - generic [ref=f24e244]: Sort
+            - combobox "Sort" [ref=f24e246]:
+              - option "Plan order" [selected]
+              - option "Largest budget first"
+        - paragraph [ref=f24e248]: 500 items, ₱5,697,991,404 in planned budget
+        - list [ref=f24e249]:
+          - listitem [ref=f24e250]:
+            - generic [ref=f24e251]:
+              - paragraph [ref=f24e253]: 2.1.1 Inter Barangay Sports Development (Uniform, Sports Supplies and Equipment, Prizes, Trophies and Medals)
+              - paragraph [ref=f24e254]:
+                - generic [ref=f24e255]: PDF p. 1
+            - generic [ref=f24e256]:
+              - generic [ref=f24e257]:
+                - term [ref=f24e258]: Office
+                - definition [ref=f24e259]:
+                  - link "CMO - LYDO" [ref=f24e261] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e262]:
+                - term [ref=f24e263]: Estimated budget
+                - definition [ref=f24e264]: ₱1,240,000
+              - generic [ref=f24e265]:
+                - term [ref=f24e266]: Category and mode
+                - definition [ref=f24e267]: Goods, Public Bidding
+              - generic [ref=f24e268]:
+                - term [ref=f24e269]: Fund
+                - definition [ref=f24e270]: General Fund
+          - listitem [ref=f24e271]:
+            - generic [ref=f24e272]:
+              - paragraph [ref=f24e274]: Procurement of Learning and Teaching Materials for youth in Different Barangays
+              - paragraph [ref=f24e275]:
+                - generic [ref=f24e276]: PDF p. 1
+            - generic [ref=f24e277]:
+              - generic [ref=f24e278]:
+                - term [ref=f24e279]: Office
+                - definition [ref=f24e280]:
+                  - link "CMO-LYDO" [ref=f24e282] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e283]:
+                - term [ref=f24e284]: Estimated budget
+                - definition [ref=f24e285]: ₱580,000
+              - generic [ref=f24e286]:
+                - term [ref=f24e287]: Category and mode
+                - definition [ref=f24e288]: Goods, Small Value Procurement
+              - generic [ref=f24e289]:
+                - term [ref=f24e290]: Fund
+                - definition [ref=f24e291]: General Fund
+          - listitem [ref=f24e292]:
+            - generic [ref=f24e293]:
+              - paragraph [ref=f24e295]: Procurement/ Printing of Youth related information Education Advocacy Campaign Materials (IEC's)
+              - paragraph [ref=f24e296]:
+                - generic [ref=f24e297]: PDF p. 1
+            - generic [ref=f24e298]:
+              - generic [ref=f24e299]:
+                - term [ref=f24e300]: Office
+                - definition [ref=f24e301]:
+                  - link "CMO-LYDO" [ref=f24e303] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e304]:
+                - term [ref=f24e305]: Estimated budget
+                - definition [ref=f24e306]: ₱100,000
+              - generic [ref=f24e307]:
+                - term [ref=f24e308]: Category and mode
+                - definition [ref=f24e309]: Goods, Small Value Procurement
+              - generic [ref=f24e310]:
+                - term [ref=f24e311]: Fund
+                - definition [ref=f24e312]: General Fund
+          - listitem [ref=f24e313]:
+            - generic [ref=f24e314]:
+              - paragraph [ref=f24e316]: Procurement of technology equipment such as computers, printers, scanners etc.
+              - paragraph [ref=f24e317]:
+                - generic [ref=f24e318]: PDF p. 1
+            - generic [ref=f24e319]:
+              - generic [ref=f24e320]:
+                - term [ref=f24e321]: Office
+                - definition [ref=f24e322]:
+                  - link "CMO-LYDO" [ref=f24e324] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e325]:
+                - term [ref=f24e326]: Estimated budget
+                - definition [ref=f24e327]: ₱1,000,000
+              - generic [ref=f24e328]:
+                - term [ref=f24e329]: Category and mode
+                - definition [ref=f24e330]: Goods, Public Bidding
+              - generic [ref=f24e331]:
+                - term [ref=f24e332]: Fund
+                - definition [ref=f24e333]: General Fund
+          - listitem [ref=f24e334]:
+            - generic [ref=f24e335]:
+              - paragraph [ref=f24e337]: Procurement of office equipment, furniture and fixtures, and IT equipment
+              - paragraph [ref=f24e338]:
+                - generic [ref=f24e339]: PDF p. 1
+            - generic [ref=f24e340]:
+              - generic [ref=f24e341]:
+                - term [ref=f24e342]: Office
+                - definition [ref=f24e343]:
+                  - link "CMO" [ref=f24e345] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e346]:
+                - term [ref=f24e347]: Estimated budget
+                - definition [ref=f24e348]: ₱11,300,000
+              - generic [ref=f24e349]:
+                - term [ref=f24e350]: Category and mode
+                - definition [ref=f24e351]: Goods, Public Bidding
+              - generic [ref=f24e352]:
+                - term [ref=f24e353]: Fund
+                - definition [ref=f24e354]: General Fund
+          - listitem [ref=f24e355]:
+            - generic [ref=f24e356]:
+              - paragraph [ref=f24e358]: Procurement of Tent
+              - paragraph [ref=f24e359]:
+                - generic [ref=f24e360]: PDF p. 1
+            - generic [ref=f24e361]:
+              - generic [ref=f24e362]:
+                - term [ref=f24e363]: Office
+                - definition [ref=f24e364]:
+                  - link "CMO" [ref=f24e366] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e367]:
+                - term [ref=f24e368]: Estimated budget
+                - definition [ref=f24e369]: ₱5,000,000
+              - generic [ref=f24e370]:
+                - term [ref=f24e371]: Category and mode
+                - definition [ref=f24e372]: Goods, Public Bidding
+              - generic [ref=f24e373]:
+                - term [ref=f24e374]: Fund
+                - definition [ref=f24e375]: General Fund
+          - listitem [ref=f24e376]:
+            - generic [ref=f24e377]:
+              - paragraph [ref=f24e379]: Procurement of Uniform, Gears, Paraphernalia, and Sports Equipment
+              - paragraph [ref=f24e380]:
+                - generic [ref=f24e381]: PDF p. 1
+            - generic [ref=f24e382]:
+              - generic [ref=f24e383]:
+                - term [ref=f24e384]: Office
+                - definition [ref=f24e385]:
+                  - link "CMO-CAD" [ref=f24e387] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e388]:
+                - term [ref=f24e389]: Estimated budget
+                - definition [ref=f24e390]: ₱500,000
+              - generic [ref=f24e391]:
+                - term [ref=f24e392]: Category and mode
+                - definition [ref=f24e393]: Goods, Small Value Procurement
+              - generic [ref=f24e394]:
+                - term [ref=f24e395]: Fund
+                - definition [ref=f24e396]: General Fund
+          - listitem [ref=f24e397]:
+            - generic [ref=f24e398]:
+              - paragraph [ref=f24e400]: Procurement of Traffic Signages
+              - paragraph [ref=f24e401]:
+                - generic [ref=f24e402]: PDF p. 1
+            - generic [ref=f24e403]:
+              - generic [ref=f24e404]:
+                - term [ref=f24e405]: Office
+                - definition [ref=f24e406]:
+                  - link "CMO-CAD" [ref=f24e408] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e409]:
+                - term [ref=f24e410]: Estimated budget
+                - definition [ref=f24e411]: ₱250,000
+              - generic [ref=f24e412]:
+                - term [ref=f24e413]: Category and mode
+                - definition [ref=f24e414]: Goods, Small Value Procurement
+              - generic [ref=f24e415]:
+                - term [ref=f24e416]: Fund
+                - definition [ref=f24e417]: General Fund
+          - listitem [ref=f24e418]:
+            - generic [ref=f24e419]:
+              - paragraph [ref=f24e421]: Procurement of fuel, lubricants, and other products for service vehicle
+              - paragraph [ref=f24e422]:
+                - generic [ref=f24e423]: PDF p. 2
+            - generic [ref=f24e424]:
+              - generic [ref=f24e425]:
+                - term [ref=f24e426]: Office
+                - definition [ref=f24e427]:
+                  - link "CMO" [ref=f24e429] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e430]:
+                - term [ref=f24e431]: Estimated budget
+                - definition [ref=f24e432]: ₱3,500,000
+              - generic [ref=f24e433]:
+                - term [ref=f24e434]: Category and mode
+                - definition [ref=f24e435]: Goods, Public Bidding
+              - generic [ref=f24e436]:
+                - term [ref=f24e437]: Fund
+                - definition [ref=f24e438]: General Fund
+          - listitem [ref=f24e439]:
+            - generic [ref=f24e440]:
+              - paragraph [ref=f24e442]: Communication Equipment
+              - paragraph [ref=f24e443]:
+                - generic [ref=f24e444]: PDF p. 2
+            - generic [ref=f24e445]:
+              - generic [ref=f24e446]:
+                - term [ref=f24e447]: Office
+                - definition [ref=f24e448]:
+                  - link "CMO" [ref=f24e450] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e451]:
+                - term [ref=f24e452]: Estimated budget
+                - definition [ref=f24e453]: ₱500,000
+              - generic [ref=f24e454]:
+                - term [ref=f24e455]: Category and mode
+                - definition [ref=f24e456]: Goods, Small Value Procurement
+              - generic [ref=f24e457]:
+                - term [ref=f24e458]: Fund
+                - definition [ref=f24e459]: General Fund
+          - listitem [ref=f24e460]:
+            - generic [ref=f24e461]:
+              - paragraph [ref=f24e463]: Other Machineries and Equipment
+              - paragraph [ref=f24e464]:
+                - generic [ref=f24e465]: PDF p. 2
+            - generic [ref=f24e466]:
+              - generic [ref=f24e467]:
+                - term [ref=f24e468]: Office
+                - definition [ref=f24e469]:
+                  - link "CMO" [ref=f24e471] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e472]:
+                - term [ref=f24e473]: Estimated budget
+                - definition [ref=f24e474]: ₱5,200,000
+              - generic [ref=f24e475]:
+                - term [ref=f24e476]: Category and mode
+                - definition [ref=f24e477]: Goods, Public Bidding
+              - generic [ref=f24e478]:
+                - term [ref=f24e479]: Fund
+                - definition [ref=f24e480]: General Fund
+          - listitem [ref=f24e481]:
+            - generic [ref=f24e482]:
+              - paragraph [ref=f24e484]: Military, Police, and Security Equipment
+              - paragraph [ref=f24e485]:
+                - generic [ref=f24e486]: PDF p. 2
+            - generic [ref=f24e487]:
+              - generic [ref=f24e488]:
+                - term [ref=f24e489]: Office
+                - definition [ref=f24e490]:
+                  - link "CMO" [ref=f24e492] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e493]:
+                - term [ref=f24e494]: Estimated budget
+                - definition [ref=f24e495]: ₱1,000,000
+              - generic [ref=f24e496]:
+                - term [ref=f24e497]: Category and mode
+                - definition [ref=f24e498]: Goods, Public Bidding
+              - generic [ref=f24e499]:
+                - term [ref=f24e500]: Fund
+                - definition [ref=f24e501]: General Fund
+          - listitem [ref=f24e502]:
+            - generic [ref=f24e503]:
+              - paragraph [ref=f24e505]: Consultancy Services
+              - paragraph [ref=f24e506]:
+                - generic [ref=f24e507]: PDF p. 2
+            - generic [ref=f24e508]:
+              - generic [ref=f24e509]:
+                - term [ref=f24e510]: Office
+                - definition [ref=f24e511]:
+                  - link "CMO" [ref=f24e513] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e514]:
+                - term [ref=f24e515]: Estimated budget
+                - definition [ref=f24e516]: ₱11,900,000
+              - generic [ref=f24e517]:
+                - term [ref=f24e518]: Category and mode
+                - definition [ref=f24e519]: Consulting Services
+              - generic [ref=f24e520]:
+                - term [ref=f24e521]: Fund
+                - definition [ref=f24e522]: General Fund
+          - listitem [ref=f24e523]:
+            - generic [ref=f24e524]:
+              - paragraph [ref=f24e526]: Purchase of Communication Equipment
+              - paragraph [ref=f24e527]:
+                - generic [ref=f24e528]: PDF p. 2
+            - generic [ref=f24e529]:
+              - generic [ref=f24e530]:
+                - term [ref=f24e531]: Office
+                - definition [ref=f24e532]:
+                  - link "CMO" [ref=f24e534] [cursor=pointer]:
+                    - /url: /government/departments/executive
+              - generic [ref=f24e535]:
+                - term [ref=f24e536]: Estimated budget
+                - definition [ref=f24e537]: ₱2,300,000
+              - generic [ref=f24e538]:
+                - term [ref=f24e539]: Category and mode
+                - definition [ref=f24e540]: Goods, Public Bidding
+              - generic [ref=f24e541]:
+                - term [ref=f24e542]: Fund
+                - definition [ref=f24e543]: General Fund
+          - listitem [ref=f24e544]:
+            - generic [ref=f24e545]:
+              - paragraph [ref=f24e547]: Purchase of Office Equipment (Tables, Steel Cabinets, etc.)
+              - paragraph [ref=f24e548]:
+                - generic [ref=f24e549]: PDF p. 2
+            - generic [ref=f24e550]:
+              - generic [ref=f24e551]:
+                - term [ref=f24e552]: Office
+                - definition [ref=f24e553]:
+                  - generic [ref=f24e554]:
+                    - link "SP," [ref=f24e555] [cursor=pointer]:
+                      - /url: /government/departments/legislative
+                    - generic [ref=f24e556]: VMO
+              - generic [ref=f24e557]:
+                - term [ref=f24e558]: Estimated budget
+                - definition [ref=f24e559]: ₱800,000
+              - generic [ref=f24e560]:
+                - term [ref=f24e561]: Category and mode
+                - definition [ref=f24e562]: Goods, Small Value Procurement
+              - generic [ref=f24e563]:
+                - term [ref=f24e564]: Fund
+                - definition [ref=f24e565]: General Fund
+          - listitem [ref=f24e566]:
+            - generic [ref=f24e567]:
+              - paragraph [ref=f24e569]: Procurement of Service Vehicle
+              - paragraph [ref=f24e570]:
+                - generic [ref=f24e571]: PDF p. 2
+            - generic [ref=f24e572]:
+              - generic [ref=f24e573]:
+                - term [ref=f24e574]: Office
+                - definition [ref=f24e575]:
+                  - generic [ref=f24e576]:
+                    - link "SP," [ref=f24e577] [cursor=pointer]:
+                      - /url: /government/departments/legislative
+                    - generic [ref=f24e578]: VMO
+              - generic [ref=f24e579]:
+                - term [ref=f24e580]: Estimated budget
+                - definition [ref=f24e581]: ₱15,000,000
+              - generic [ref=f24e582]:
+                - term [ref=f24e583]: Category and mode
+                - definition [ref=f24e584]: Goods, Public Bidding
+              - generic [ref=f24e585]:
+                - term [ref=f24e586]: Fund
+                - definition [ref=f24e587]: General Fund
+          - listitem [ref=f24e588]:
+            - generic [ref=f24e589]:
+              - paragraph [ref=f24e591]: Procurement of IT Equipment
+              - paragraph [ref=f24e592]:
+                - generic [ref=f24e593]: PDF p. 2
+            - generic [ref=f24e594]:
+              - generic [ref=f24e595]:
+                - term [ref=f24e596]: Office
+                - definition [ref=f24e597]:
+                  - generic [ref=f24e598]:
+                    - link "SP," [ref=f24e599] [cursor=pointer]:
+                      - /url: /government/departments/legislative
+                    - generic [ref=f24e600]: VMO
+              - generic [ref=f24e601]:
+                - term [ref=f24e602]: Estimated budget
+                - definition [ref=f24e603]: ₱1,500,000
+              - generic [ref=f24e604]:
+                - term [ref=f24e605]: Category and mode
+                - definition [ref=f24e606]: Goods, Public Bidding
+              - generic [ref=f24e607]:
+                - term [ref=f24e608]: Fund
+                - definition [ref=f24e609]: General Fund
+          - listitem [ref=f24e610]:
+            - generic [ref=f24e611]:
+              - paragraph [ref=f24e613]: Construction of Sangguniang Panlungsod Building
+              - paragraph [ref=f24e614]:
+                - generic [ref=f24e615]: PDF p. 2
+            - generic [ref=f24e616]:
+              - generic [ref=f24e617]:
+                - term [ref=f24e618]: Office
+                - definition [ref=f24e619]:
+                  - generic [ref=f24e620]:
+                    - link "SP," [ref=f24e621] [cursor=pointer]:
+                      - /url: /government/departments/legislative
+                    - generic [ref=f24e622]: VMO
+              - generic [ref=f24e623]:
+                - term [ref=f24e624]: Estimated budget
+                - definition [ref=f24e625]: ₱15,000,000
+              - generic [ref=f24e626]:
+                - term [ref=f24e627]: Category and mode
+                - definition [ref=f24e628]: Infrastructure, Public Bidding
+              - generic [ref=f24e629]:
+                - term [ref=f24e630]: Fund
+                - definition [ref=f24e631]: General Fund
+          - listitem [ref=f24e632]:
+            - generic [ref=f24e633]:
+              - paragraph [ref=f24e635]: Office Equipment
+              - paragraph [ref=f24e636]:
+                - generic [ref=f24e637]: PDF p. 2
+            - generic [ref=f24e638]:
+              - generic [ref=f24e639]:
+                - term [ref=f24e640]: Office
+                - definition [ref=f24e641]:
+                  - generic [ref=f24e642]:
+                    - link "SP," [ref=f24e643] [cursor=pointer]:
+                      - /url: /government/departments/legislative
+                    - generic [ref=f24e644]: VMO
+              - generic [ref=f24e645]:
+                - term [ref=f24e646]: Estimated budget
+                - definition [ref=f24e647]: ₱200,000
+              - generic [ref=f24e648]:
+                - term [ref=f24e649]: Category and mode
+                - definition [ref=f24e650]: Goods, Small Value Procurement
+              - generic [ref=f24e651]:
+                - term [ref=f24e652]: Fund
+                - definition [ref=f24e653]: General Fund
+          - listitem [ref=f24e654]:
+            - generic [ref=f24e655]:
+              - paragraph [ref=f24e657]: Motor Vehicles
+              - paragraph [ref=f24e658]:
+                - generic [ref=f24e659]: PDF p. 2
+            - generic [ref=f24e660]:
+              - generic [ref=f24e661]:
+                - term [ref=f24e662]: Office
+                - definition [ref=f24e663]:
+                  - generic [ref=f24e664]:
+                    - link "SP," [ref=f24e665] [cursor=pointer]:
+                      - /url: /government/departments/legislative
+                    - generic [ref=f24e666]: VMO
+              - generic [ref=f24e667]:
+                - term [ref=f24e668]: Estimated budget
+                - definition [ref=f24e669]: ₱300,000
+              - generic [ref=f24e670]:
+                - term [ref=f24e671]: Category and mode
+                - definition [ref=f24e672]: Goods, Small Value Procurement
+              - generic [ref=f24e673]:
+                - term [ref=f24e674]: Fund
+                - definition [ref=f24e675]: General Fund
+          - listitem [ref=f24e676]:
+            - generic [ref=f24e677]:
+              - paragraph [ref=f24e679]: Purchase of Office Equipment (Tables, Steel Cabinets, etc.)
+              - paragraph [ref=f24e680]:
+                - generic [ref=f24e681]: PDF p. 2
+            - generic [ref=f24e682]:
+              - generic [ref=f24e683]:
+                - term [ref=f24e684]: Office
+                - definition [ref=f24e685]:
+                  - link "CPDO" [ref=f24e687] [cursor=pointer]:
+                    - /url: /government/departments/cpdo
+              - generic [ref=f24e688]:
+                - term [ref=f24e689]: Estimated budget
+                - definition [ref=f24e690]: ₱298,000
+              - generic [ref=f24e691]:
+                - term [ref=f24e692]: Category and mode
+                - definition [ref=f24e693]: Goods, Small Value Procurement
+              - generic [ref=f24e694]:
+                - term [ref=f24e695]: Fund
+                - definition [ref=f24e696]: General Fund
+          - listitem [ref=f24e697]:
+            - generic [ref=f24e698]:
+              - paragraph [ref=f24e700]: Service Vehicle
+              - paragraph [ref=f24e701]:
+                - generic [ref=f24e702]: PDF p. 2
+            - generic [ref=f24e703]:
+              - generic [ref=f24e704]:
+                - term [ref=f24e705]: Office
+                - definition [ref=f24e706]:
+                  - link "CPDO" [ref=f24e708] [cursor=pointer]:
+                    - /url: /government/departments/cpdo
+              - generic [ref=f24e709]:
+                - term [ref=f24e710]: Estimated budget
+                - definition [ref=f24e711]: ₱1,500,000
+              - generic [ref=f24e712]:
+                - term [ref=f24e713]: Category and mode
+                - definition [ref=f24e714]: Goods, Public Bidding
+              - generic [ref=f24e715]:
+                - term [ref=f24e716]: Fund
+                - definition [ref=f24e717]: General Fund
+          - listitem [ref=f24e718]:
+            - generic [ref=f24e719]:
+              - paragraph [ref=f24e721]: Procurement of IT Equipment
+              - paragraph [ref=f24e722]:
+                - generic [ref=f24e723]: PDF p. 2
+            - generic [ref=f24e724]:
+              - generic [ref=f24e725]:
+                - term [ref=f24e726]: Office
+                - definition [ref=f24e727]:
+                  - link "CPDO" [ref=f24e729] [cursor=pointer]:
+                    - /url: /government/departments/cpdo
+              - generic [ref=f24e730]:
+                - term [ref=f24e731]: Estimated budget
+                - definition [ref=f24e732]: ₱1,145,800
+              - generic [ref=f24e733]:
+                - term [ref=f24e734]: Category and mode
+                - definition [ref=f24e735]: Goods, Public Bidding
+              - generic [ref=f24e736]:
+                - term [ref=f24e737]: Fund
+                - definition [ref=f24e738]: General Fund
+          - listitem [ref=f24e739]:
+            - generic [ref=f24e740]:
+              - paragraph [ref=f24e742]: Acquisition of IT Equipment and accessories
+              - paragraph [ref=f24e743]:
+                - generic [ref=f24e744]: PDF p. 2
+            - generic [ref=f24e745]:
+              - generic [ref=f24e746]:
+                - term [ref=f24e747]: Office
+                - definition [ref=f24e748]:
+                  - generic [ref=f24e749]: OCA
+              - generic [ref=f24e751]:
+                - term [ref=f24e752]: Estimated budget
+                - definition [ref=f24e753]: ₱384,000
+              - generic [ref=f24e754]:
+                - term [ref=f24e755]: Category and mode
+                - definition [ref=f24e756]: Goods, Public Bidding
+              - generic [ref=f24e757]:
+                - term [ref=f24e758]: Fund
+                - definition [ref=f24e759]: General Fund
+          - listitem [ref=f24e760]:
+            - generic [ref=f24e761]:
+              - paragraph [ref=f24e763]: Office Renovation
+              - paragraph [ref=f24e764]:
+                - generic [ref=f24e765]: PDF p. 2
+            - generic [ref=f24e766]:
+              - generic [ref=f24e767]:
+                - term [ref=f24e768]: Office
+                - definition [ref=f24e769]:
+                  - link "CTO" [ref=f24e771] [cursor=pointer]:
+                    - /url: /government/departments/city-treasurers-office
+              - generic [ref=f24e772]:
+                - term [ref=f24e773]: Estimated budget
+                - definition [ref=f24e774]: ₱5,300,000
+              - generic [ref=f24e775]:
+                - term [ref=f24e776]: Category and mode
+                - definition [ref=f24e777]: Infrastructure, Public Bidding
+              - generic [ref=f24e778]:
+                - term [ref=f24e779]: Fund
+                - definition [ref=f24e780]: General Fund
+          - listitem [ref=f24e781]:
+            - generic [ref=f24e782]:
+              - paragraph [ref=f24e784]: Procurement of Other Supplies and Equipment
+              - paragraph [ref=f24e785]:
+                - generic [ref=f24e786]: PDF p. 2
+            - generic [ref=f24e787]:
+              - generic [ref=f24e788]:
+                - term [ref=f24e789]: Office
+                - definition [ref=f24e790]:
+                  - link "CBO" [ref=f24e792] [cursor=pointer]:
+                    - /url: /government/departments/budget-office
+              - generic [ref=f24e793]:
+                - term [ref=f24e794]: Estimated budget
+                - definition [ref=f24e795]: ₱110,000
+              - generic [ref=f24e796]:
+                - term [ref=f24e797]: Category and mode
+                - definition [ref=f24e798]: Goods, Small Value Procurement
+              - generic [ref=f24e799]:
+                - term [ref=f24e800]: Fund
+                - definition [ref=f24e801]: General Fund
+          - listitem [ref=f24e802]:
+            - generic [ref=f24e803]:
+              - paragraph [ref=f24e805]: Improvement and renovation of City Budget Office
+              - paragraph [ref=f24e806]:
+                - generic [ref=f24e807]: PDF p. 3
+            - generic [ref=f24e808]:
+              - generic [ref=f24e809]:
+                - term [ref=f24e810]: Office
+                - definition [ref=f24e811]:
+                  - link "CBO" [ref=f24e813] [cursor=pointer]:
+                    - /url: /government/departments/budget-office
+              - generic [ref=f24e814]:
+                - term [ref=f24e815]: Estimated budget
+                - definition [ref=f24e816]: ₱500,000
+              - generic [ref=f24e817]:
+                - term [ref=f24e818]: Category and mode
+                - definition [ref=f24e819]: Infrastructure, Public Bidding
+              - generic [ref=f24e820]:
+                - term [ref=f24e821]: Fund
+                - definition [ref=f24e822]: General Fund
+          - listitem [ref=f24e823]:
+            - generic [ref=f24e824]:
+              - paragraph [ref=f24e826]: Other Supplies and Materials Expenses
+              - paragraph [ref=f24e827]:
+                - generic [ref=f24e828]: PDF p. 3
+            - generic [ref=f24e829]:
+              - generic [ref=f24e830]:
+                - term [ref=f24e831]: Office
+                - definition [ref=f24e832]:
+                  - generic [ref=f24e833]: CAO
+              - generic [ref=f24e835]:
+                - term [ref=f24e836]: Estimated budget
+                - definition [ref=f24e837]: ₱500,000
+              - generic [ref=f24e838]:
+                - term [ref=f24e839]: Category and mode
+                - definition [ref=f24e840]: Goods, Small Value Procurement
+              - generic [ref=f24e841]:
+                - term [ref=f24e842]: Fund
+                - definition [ref=f24e843]: General Fund
+          - listitem [ref=f24e844]:
+            - generic [ref=f24e845]:
+              - paragraph [ref=f24e847]: Procurement of Chairs, Tables, and Tents
+              - paragraph [ref=f24e848]:
+                - generic [ref=f24e849]: PDF p. 3
+            - generic [ref=f24e850]:
+              - generic [ref=f24e851]:
+                - term [ref=f24e852]: Office
+                - definition [ref=f24e853]:
+                  - link "GSO" [ref=f24e855] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e856]:
+                - term [ref=f24e857]: Estimated budget
+                - definition [ref=f24e858]: ₱600,000
+              - generic [ref=f24e859]:
+                - term [ref=f24e860]: Category and mode
+                - definition [ref=f24e861]: Goods, Small Value Procurement
+              - generic [ref=f24e862]:
+                - term [ref=f24e863]: Fund
+                - definition [ref=f24e864]: General Fund
+          - listitem [ref=f24e865]:
+            - generic [ref=f24e866]:
+              - paragraph [ref=f24e868]: Procurement of utility tools
+              - paragraph [ref=f24e869]:
+                - generic [ref=f24e870]: PDF p. 3
+            - generic [ref=f24e871]:
+              - generic [ref=f24e872]:
+                - term [ref=f24e873]: Office
+                - definition [ref=f24e874]:
+                  - link "GSO" [ref=f24e876] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e877]:
+                - term [ref=f24e878]: Estimated budget
+                - definition [ref=f24e879]: ₱200,000
+              - generic [ref=f24e880]:
+                - term [ref=f24e881]: Category and mode
+                - definition [ref=f24e882]: Goods, Small Value Procurement
+              - generic [ref=f24e883]:
+                - term [ref=f24e884]: Fund
+                - definition [ref=f24e885]: General Fund
+          - listitem [ref=f24e886]:
+            - generic [ref=f24e887]:
+              - paragraph [ref=f24e889]: Procurement of Office Equipment
+              - paragraph [ref=f24e890]:
+                - generic [ref=f24e891]: PDF p. 3
+            - generic [ref=f24e892]:
+              - generic [ref=f24e893]:
+                - term [ref=f24e894]: Office
+                - definition [ref=f24e895]:
+                  - link "GSO" [ref=f24e897] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e898]:
+                - term [ref=f24e899]: Estimated budget
+                - definition [ref=f24e900]: ₱154,000
+              - generic [ref=f24e901]:
+                - term [ref=f24e902]: Category and mode
+                - definition [ref=f24e903]: Goods, Small Value Procurement
+              - generic [ref=f24e904]:
+                - term [ref=f24e905]: Fund
+                - definition [ref=f24e906]: General Fund
+          - listitem [ref=f24e907]:
+            - generic [ref=f24e908]:
+              - paragraph [ref=f24e910]: Procurement of Office Furniture and Fixtures
+              - paragraph [ref=f24e911]:
+                - generic [ref=f24e912]: PDF p. 3
+            - generic [ref=f24e913]:
+              - generic [ref=f24e914]:
+                - term [ref=f24e915]: Office
+                - definition [ref=f24e916]:
+                  - link "GSO" [ref=f24e918] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e919]:
+                - term [ref=f24e920]: Estimated budget
+                - definition [ref=f24e921]: ₱355,000
+              - generic [ref=f24e922]:
+                - term [ref=f24e923]: Category and mode
+                - definition [ref=f24e924]: Goods, Small Value Procurement
+              - generic [ref=f24e925]:
+                - term [ref=f24e926]: Fund
+                - definition [ref=f24e927]: General Fund
+          - listitem [ref=f24e928]:
+            - generic [ref=f24e929]:
+              - paragraph [ref=f24e931]: Procurement of IT Equipment
+              - paragraph [ref=f24e932]:
+                - generic [ref=f24e933]: PDF p. 3
+            - generic [ref=f24e934]:
+              - generic [ref=f24e935]:
+                - term [ref=f24e936]: Office
+                - definition [ref=f24e937]:
+                  - link "GSO" [ref=f24e939] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e940]:
+                - term [ref=f24e941]: Estimated budget
+                - definition [ref=f24e942]: ₱350,000
+              - generic [ref=f24e943]:
+                - term [ref=f24e944]: Category and mode
+                - definition [ref=f24e945]: Goods, Small Value Procurement
+              - generic [ref=f24e946]:
+                - term [ref=f24e947]: Fund
+                - definition [ref=f24e948]: General Fund
+          - listitem [ref=f24e949]:
+            - generic [ref=f24e950]:
+              - paragraph [ref=f24e952]: Procurement of Office Motor Vehicle
+              - paragraph [ref=f24e953]:
+                - generic [ref=f24e954]: PDF p. 3
+            - generic [ref=f24e955]:
+              - generic [ref=f24e956]:
+                - term [ref=f24e957]: Office
+                - definition [ref=f24e958]:
+                  - link "GSO" [ref=f24e960] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e961]:
+                - term [ref=f24e962]: Estimated budget
+                - definition [ref=f24e963]: ₱1,500,000
+              - generic [ref=f24e964]:
+                - term [ref=f24e965]: Category and mode
+                - definition [ref=f24e966]: Goods, Public Bidding
+              - generic [ref=f24e967]:
+                - term [ref=f24e968]: Fund
+                - definition [ref=f24e969]: General Fund
+          - listitem [ref=f24e970]:
+            - generic [ref=f24e971]:
+              - paragraph [ref=f24e973]: Construction of Warehouse for office supplies, other commodities, etc.
+              - paragraph [ref=f24e974]:
+                - generic [ref=f24e975]: PDF p. 3
+            - generic [ref=f24e976]:
+              - generic [ref=f24e977]:
+                - term [ref=f24e978]: Office
+                - definition [ref=f24e979]:
+                  - link "GSO" [ref=f24e981] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e982]:
+                - term [ref=f24e983]: Estimated budget
+                - definition [ref=f24e984]: Not stated
+              - generic [ref=f24e985]:
+                - term [ref=f24e986]: Category and mode
+                - definition [ref=f24e987]: Infrastructure, Public Bidding
+              - generic [ref=f24e988]:
+                - term [ref=f24e989]: Fund
+                - definition [ref=f24e990]: General Fund
+          - listitem [ref=f24e991]:
+            - generic [ref=f24e992]:
+              - paragraph [ref=f24e994]: Purchase of one (1) unit Forklift
+              - paragraph [ref=f24e995]:
+                - generic [ref=f24e996]: PDF p. 3
+            - generic [ref=f24e997]:
+              - generic [ref=f24e998]:
+                - term [ref=f24e999]: Office
+                - definition [ref=f24e1000]:
+                  - link "GSO" [ref=f24e1002] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e1003]:
+                - term [ref=f24e1004]: Estimated budget
+                - definition [ref=f24e1005]: Not stated
+              - generic [ref=f24e1006]:
+                - term [ref=f24e1007]: Category and mode
+                - definition [ref=f24e1008]: Goods, Public Bidding
+              - generic [ref=f24e1009]:
+                - term [ref=f24e1010]: Fund
+                - definition [ref=f24e1011]: General Fund
+          - listitem [ref=f24e1012]:
+            - generic [ref=f24e1013]:
+              - paragraph [ref=f24e1015]: Procurement and Installation of CCTV on New public market. Sangitan Market, and Paraphernalia Building
+              - paragraph [ref=f24e1016]:
+                - generic [ref=f24e1017]: PDF p. 3
+            - generic [ref=f24e1018]:
+              - generic [ref=f24e1019]:
+                - term [ref=f24e1020]: Office
+                - definition [ref=f24e1021]:
+                  - link "GSO" [ref=f24e1023] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e1024]:
+                - term [ref=f24e1025]: Estimated budget
+                - definition [ref=f24e1026]: Not stated
+              - generic [ref=f24e1027]:
+                - term [ref=f24e1028]: Category and mode
+                - definition [ref=f24e1029]: Goods, Public Bidding
+              - generic [ref=f24e1030]:
+                - term [ref=f24e1031]: Fund
+                - definition [ref=f24e1032]: General Fund
+          - listitem [ref=f24e1033]:
+            - generic [ref=f24e1034]:
+              - paragraph [ref=f24e1036]: Establishment of Multi-purpose Building
+              - paragraph [ref=f24e1037]:
+                - generic [ref=f24e1038]: PDF p. 3
+            - generic [ref=f24e1039]:
+              - generic [ref=f24e1040]:
+                - term [ref=f24e1041]: Office
+                - definition [ref=f24e1042]:
+                  - link "GSO" [ref=f24e1044] [cursor=pointer]:
+                    - /url: /government/departments/gso
+              - generic [ref=f24e1045]:
+                - term [ref=f24e1046]: Estimated budget
+                - definition [ref=f24e1047]: ₱20,000,000
+              - generic [ref=f24e1048]:
+                - term [ref=f24e1049]: Category and mode
+                - definition [ref=f24e1050]: Infrastructure, Public Bidding
+              - generic [ref=f24e1051]:
+                - term [ref=f24e1052]: Fund
+                - definition [ref=f24e1053]: General Fund
+          - listitem [ref=f24e1054]:
+            - generic [ref=f24e1055]:
+              - paragraph [ref=f24e1057]: Acquisition of Office Equipment and Fixtures, IT Equipment, Other Supplies and Consumables
+              - paragraph [ref=f24e1058]:
+                - generic [ref=f24e1059]: PDF p. 3
+            - generic [ref=f24e1060]:
+              - generic [ref=f24e1061]:
+                - term [ref=f24e1062]: Office
+                - definition [ref=f24e1063]:
+                  - link "LCRO" [ref=f24e1065] [cursor=pointer]:
+                    - /url: /government/departments/lcro
+              - generic [ref=f24e1066]:
+                - term [ref=f24e1067]: Estimated budget
+                - definition [ref=f24e1068]: ₱905,200
+              - generic [ref=f24e1069]:
+                - term [ref=f24e1070]: Category and mode
+                - definition [ref=f24e1071]: Goods, Public Bidding
+              - generic [ref=f24e1072]:
+                - term [ref=f24e1073]: Fund
+                - definition [ref=f24e1074]: General Fund
+          - listitem [ref=f24e1075]:
+            - generic [ref=f24e1076]:
+              - paragraph [ref=f24e1078]: Construction of Large Storage Room/ Building for Civil Registry Documents
+              - paragraph [ref=f24e1079]:
+                - generic [ref=f24e1080]: PDF p. 3
+            - generic [ref=f24e1081]:
+              - generic [ref=f24e1082]:
+                - term [ref=f24e1083]: Office
+                - definition [ref=f24e1084]:
+                  - link "LCRO" [ref=f24e1086] [cursor=pointer]:
+                    - /url: /government/departments/lcro
+              - generic [ref=f24e1087]:
+                - term [ref=f24e1088]: Estimated budget
+                - definition [ref=f24e1089]: ₱5,000,000
+              - generic [ref=f24e1090]:
+                - term [ref=f24e1091]: Category and mode
+                - definition [ref=f24e1092]: Infrastructure, Public Bidding
+              - generic [ref=f24e1093]:
+                - term [ref=f24e1094]: Fund
+                - definition [ref=f24e1095]: General Fund
+          - listitem [ref=f24e1096]:
+            - generic [ref=f24e1097]:
+              - paragraph [ref=f24e1099]: Procurement of computer units with UPS
+              - paragraph [ref=f24e1100]:
+                - generic [ref=f24e1101]: PDF p. 3
+            - generic [ref=f24e1102]:
+              - generic [ref=f24e1103]:
+                - term [ref=f24e1104]: Office
+                - definition [ref=f24e1105]:
+                  - link "City Legal Office" [ref=f24e1107] [cursor=pointer]:
+                    - /url: /government/departments/city-legal-office
+              - generic [ref=f24e1108]:
+                - term [ref=f24e1109]: Estimated budget
+                - definition [ref=f24e1110]: ₱70,000
+              - generic [ref=f24e1111]:
+                - term [ref=f24e1112]: Category and mode
+                - definition [ref=f24e1113]: Goods, Small Value Procurement
+              - generic [ref=f24e1114]:
+                - term [ref=f24e1115]: Fund
+                - definition [ref=f24e1116]: General Fund
+          - listitem [ref=f24e1117]:
+            - generic [ref=f24e1118]:
+              - paragraph [ref=f24e1120]: Procurement of laptop
+              - paragraph [ref=f24e1121]:
+                - generic [ref=f24e1122]: PDF p. 4
+            - generic [ref=f24e1123]:
+              - generic [ref=f24e1124]:
+                - term [ref=f24e1125]: Office
+                - definition [ref=f24e1126]:
+                  - link "City Legal Office" [ref=f24e1128] [cursor=pointer]:
+                    - /url: /government/departments/city-legal-office
+              - generic [ref=f24e1129]:
+                - term [ref=f24e1130]: Estimated budget
+                - definition [ref=f24e1131]: ₱70,000
+              - generic [ref=f24e1132]:
+                - term [ref=f24e1133]: Category and mode
+                - definition [ref=f24e1134]: Goods, Small Value Procurement
+              - generic [ref=f24e1135]:
+                - term [ref=f24e1136]: Fund
+                - definition [ref=f24e1137]: General Fund
+          - listitem [ref=f24e1138]:
+            - generic [ref=f24e1139]:
+              - paragraph [ref=f24e1141]: Procurement of other supplies, equipment and fixtures. (Aircon., Office Chairs and Tables, etc.)
+              - paragraph [ref=f24e1142]:
+                - generic [ref=f24e1143]: PDF p. 4
+            - generic [ref=f24e1144]:
+              - generic [ref=f24e1145]:
+                - term [ref=f24e1146]: Office
+                - definition [ref=f24e1147]:
+                  - generic [ref=f24e1148]: CICTO
+              - generic [ref=f24e1150]:
+                - term [ref=f24e1151]: Estimated budget
+                - definition [ref=f24e1152]: ₱491,000
+              - generic [ref=f24e1153]:
+                - term [ref=f24e1154]: Category and mode
+                - definition [ref=f24e1155]: Goods, Public Bidding
+              - generic [ref=f24e1156]:
+                - term [ref=f24e1157]: Fund
+                - definition [ref=f24e1158]: General Fund
+          - listitem [ref=f24e1159]:
+            - generic [ref=f24e1160]:
+              - paragraph [ref=f24e1162]: Procurement of ICT Equipment
+              - paragraph [ref=f24e1163]:
+                - generic [ref=f24e1164]: PDF p. 4
+            - generic [ref=f24e1165]:
+              - generic [ref=f24e1166]:
+                - term [ref=f24e1167]: Office
+                - definition [ref=f24e1168]:
+                  - generic [ref=f24e1169]: CICTO
+              - generic [ref=f24e1171]:
+                - term [ref=f24e1172]: Estimated budget
+                - definition [ref=f24e1173]: ₱12,000,000
+              - generic [ref=f24e1174]:
+                - term [ref=f24e1175]: Category and mode
+                - definition [ref=f24e1176]: Goods, Public Bidding
+              - generic [ref=f24e1177]:
+                - term [ref=f24e1178]: Fund
+                - definition [ref=f24e1179]: General Fund
+          - listitem [ref=f24e1180]:
+            - generic [ref=f24e1181]:
+              - paragraph [ref=f24e1183]: Procurement of server and Network equipment
+              - paragraph [ref=f24e1184]:
+                - generic [ref=f24e1185]: PDF p. 4
+            - generic [ref=f24e1186]:
+              - generic [ref=f24e1187]:
+                - term [ref=f24e1188]: Office
+                - definition [ref=f24e1189]:
+                  - generic [ref=f24e1190]: CICTO
+              - generic [ref=f24e1192]:
+                - term [ref=f24e1193]: Estimated budget
+                - definition [ref=f24e1194]: ₱3,500,000
+              - generic [ref=f24e1195]:
+                - term [ref=f24e1196]: Category and mode
+                - definition [ref=f24e1197]: Goods, Public Bidding
+              - generic [ref=f24e1198]:
+                - term [ref=f24e1199]: Fund
+                - definition [ref=f24e1200]: General Fund
+          - listitem [ref=f24e1201]:
+            - generic [ref=f24e1202]:
+              - paragraph [ref=f24e1204]: Procurement of Software Licenses(MS Office, Anti-Virus and Development Tools
+              - paragraph [ref=f24e1205]:
+                - generic [ref=f24e1206]: PDF p. 4
+            - generic [ref=f24e1207]:
+              - generic [ref=f24e1208]:
+                - term [ref=f24e1209]: Office
+                - definition [ref=f24e1210]:
+                  - generic [ref=f24e1211]: CICTO
+              - generic [ref=f24e1213]:
+                - term [ref=f24e1214]: Estimated budget
+                - definition [ref=f24e1215]: ₱5,500,000
+              - generic [ref=f24e1216]:
+                - term [ref=f24e1217]: Category and mode
+                - definition [ref=f24e1218]: Goods, Public Bidding
+              - generic [ref=f24e1219]:
+                - term [ref=f24e1220]: Fund
+                - definition [ref=f24e1221]: General Fund
+          - listitem [ref=f24e1222]:
+            - generic [ref=f24e1223]:
+              - paragraph [ref=f24e1225]: Office renovation and rehabilitation
+              - paragraph [ref=f24e1226]:
+                - generic [ref=f24e1227]: PDF p. 4
+            - generic [ref=f24e1228]:
+              - generic [ref=f24e1229]:
+                - term [ref=f24e1230]: Office
+                - definition [ref=f24e1231]:
+                  - generic [ref=f24e1232]: CICTO
+              - generic [ref=f24e1234]:
+                - term [ref=f24e1235]: Estimated budget
+                - definition [ref=f24e1236]: ₱1,000,000
+              - generic [ref=f24e1237]:
+                - term [ref=f24e1238]: Category and mode
+                - definition [ref=f24e1239]: Infrastructure, Public Bidding
+              - generic [ref=f24e1240]:
+                - term [ref=f24e1241]: Fund
+                - definition [ref=f24e1242]: General Fund
+          - listitem [ref=f24e1243]:
+            - generic [ref=f24e1244]:
+              - paragraph [ref=f24e1246]: Purchase of IT Equipment
+              - paragraph [ref=f24e1247]:
+                - generic [ref=f24e1248]: PDF p. 4
+            - generic [ref=f24e1249]:
+              - generic [ref=f24e1250]:
+                - term [ref=f24e1251]: Office
+                - definition [ref=f24e1252]:
+                  - generic [ref=f24e1253]:
+                    - generic [ref=f24e1254]: PNP,
+                    - generic [ref=f24e1255]: BFP
+              - generic [ref=f24e1256]:
+                - term [ref=f24e1257]: Estimated budget
+                - definition [ref=f24e1258]: ₱50,000
+              - generic [ref=f24e1259]:
+                - term [ref=f24e1260]: Category and mode
+                - definition [ref=f24e1261]: Goods, Small Value Procurement
+              - generic [ref=f24e1262]:
+                - term [ref=f24e1263]: Fund
+                - definition [ref=f24e1264]: General Fund
+          - listitem [ref=f24e1265]:
+            - generic [ref=f24e1266]:
+              - paragraph [ref=f24e1268]: Procurement of Protective and Tactical Equipment
+              - paragraph [ref=f24e1269]:
+                - generic [ref=f24e1270]: PDF p. 4
+            - generic [ref=f24e1271]:
+              - generic [ref=f24e1272]:
+                - term [ref=f24e1273]: Office
+                - definition [ref=f24e1274]:
+                  - generic [ref=f24e1275]:
+                    - generic [ref=f24e1276]: PNP,
+                    - generic [ref=f24e1277]: BFP
+              - generic [ref=f24e1278]:
+                - term [ref=f24e1279]: Estimated budget
+                - definition [ref=f24e1280]: ₱1,200,000
+              - generic [ref=f24e1281]:
+                - term [ref=f24e1282]: Category and mode
+                - definition [ref=f24e1283]: Goods, Public Bidding
+              - generic [ref=f24e1284]:
+                - term [ref=f24e1285]: Fund
+                - definition [ref=f24e1286]: General Fund
+          - listitem [ref=f24e1287]:
+            - generic [ref=f24e1288]:
+              - paragraph [ref=f24e1290]: Procurement of office Equipment
+              - paragraph [ref=f24e1291]:
+                - generic [ref=f24e1292]: PDF p. 4
+            - generic [ref=f24e1293]:
+              - generic [ref=f24e1294]:
+                - term [ref=f24e1295]: Office
+                - definition [ref=f24e1296]:
+                  - generic [ref=f24e1297]:
+                    - link "CBLIPO," [ref=f24e1298] [cursor=pointer]:
+                      - /url: /government/departments/bplo
+                    - generic [ref=f24e1299]: CICTO
+              - generic [ref=f24e1300]:
+                - term [ref=f24e1301]: Estimated budget
+                - definition [ref=f24e1302]: ₱264,000
+              - generic [ref=f24e1303]:
+                - term [ref=f24e1304]: Category and mode
+                - definition [ref=f24e1305]: Goods, Small Value Procurement
+              - generic [ref=f24e1306]:
+                - term [ref=f24e1307]: Fund
+                - definition [ref=f24e1308]: General Fund
+        - button "Show 50 more" [ref=f24e1310]
+  - contentinfo [ref=f24e1311]:
+    - generic [ref=f24e1312]:
+      - generic [ref=f24e1314]:
+        - img "Better Cabanatuan" [ref=f24e1316]
+        - paragraph [ref=f24e1317]: A community portal providing Philippine citizens, businesses, and visitors with information and services.
+        - generic [ref=f24e1318]:
+          - link "Website" [ref=f24e1319] [cursor=pointer]:
+            - /url: https://bettercabanatuan.org
+          - link "Facebook" [ref=f24e1323] [cursor=pointer]:
+            - /url: https://www.facebook.com/bettercabanatuan.org
+          - link "Twitter" [ref=f24e1326] [cursor=pointer]:
+            - /url: https://twitter.com/bettercabanatuan
+          - link "Instagram" [ref=f24e1329] [cursor=pointer]:
+            - /url: https://instagram.com/bettercabanatuan
+          - link "Government Website":
+            - /url: https://www.cabanatuancity.gov.ph
+      - generic [ref=f24e1333]:
+        - group [ref=f24e1334]:
+          - generic "About" [ref=f24e1335] [cursor=pointer]:
+            - text: About
+            - generic [aria-hidden] [ref=f24e1336]: +
+        - group [ref=f24e1337]:
+          - generic "Services" [ref=f24e1338] [cursor=pointer]:
+            - text: Services
+            - generic [aria-hidden] [ref=f24e1339]: +
+        - group [ref=f24e1340]:
+          - generic "Government" [ref=f24e1341] [cursor=pointer]:
+            - text: Government
+            - generic [aria-hidden] [ref=f24e1342]: +
+      - generic [ref=f24e1344]:
+        - generic [ref=f24e1345]:
+          - paragraph [ref=f24e1346]: © 2026 Better Cabanatuan. All content is public domain unless otherwise specified.
+          - paragraph [ref=f24e1347]: Built on the BetterGov open-source civic template.
+        - generic [ref=f24e1348]:
+          - link "BetterCabanatuan.org" [ref=f24e1349] [cursor=pointer]:
+            - /url: https://bettercabanatuan.org
+          - link "Facebook" [ref=f24e1350] [cursor=pointer]:
+            - /url: https://www.facebook.com/bettercabanatuan.org
+          - link "Contribute at GitHub" [ref=f24e1351] [cursor=pointer]:
+            - /url: https://github.com/BetterCabanatuan/bettercabanatuan
+          - link "Sitemap" [ref=f24e1352] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Accessibility" [ref=f24e1353] [cursor=pointer]:
+            - /url: /accessibility
+          - link "Privacy Notice" [ref=f24e1354] [cursor=pointer]:
+            - /url: /privacy

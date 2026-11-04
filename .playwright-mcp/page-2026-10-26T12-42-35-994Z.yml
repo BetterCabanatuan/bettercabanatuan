@@ -1,0 +1,499 @@
+- generic [ref=f16e3]:
+  - region "Emergency hotlines" [ref=f16e4]:
+    - generic [ref=f16e6]:
+      - generic [ref=f16e7]: Emergency Hotlines
+      - list [ref=f16e12]:
+        - listitem [ref=f16e13]:
+          - generic [ref=f16e14]: "PNP:"
+          - generic [ref=f16e15]:
+            - link "(044)-463-1111" [ref=f16e17] [cursor=pointer]:
+              - /url: tel:+63444631111
+            - generic [ref=f16e18]:
+              - generic [aria-hidden] [ref=f16e19]: ·
+              - link "0920-611-2000" [ref=f16e20] [cursor=pointer]:
+                - /url: tel:+639206112000
+            - generic [ref=f16e21]:
+              - generic [aria-hidden] [ref=f16e22]: ·
+              - link "0935-522-2227" [ref=f16e23] [cursor=pointer]:
+                - /url: tel:+639355222227
+        - listitem [ref=f16e24]:
+          - generic [ref=f16e25]: "BFP:"
+          - generic [ref=f16e26]:
+            - link "(044)-958-3701" [ref=f16e28] [cursor=pointer]:
+              - /url: tel:+63449583701
+            - generic [ref=f16e29]:
+              - generic [aria-hidden] [ref=f16e30]: ·
+              - link "(044)-600-5696" [ref=f16e31] [cursor=pointer]:
+                - /url: tel:+63446005696
+            - generic [ref=f16e32]:
+              - generic [aria-hidden] [ref=f16e33]: ·
+              - link "0943-303-4279" [ref=f16e34] [cursor=pointer]:
+                - /url: tel:+639433034279
+        - listitem [ref=f16e35]:
+          - generic [ref=f16e36]: "CDRRMO:"
+          - generic [ref=f16e37]:
+            - link "0908-881-1010" [ref=f16e39] [cursor=pointer]:
+              - /url: tel:+639088811010
+            - generic [ref=f16e40]:
+              - generic [aria-hidden] [ref=f16e41]: ·
+              - link "0917-851-1320" [ref=f16e42] [cursor=pointer]:
+                - /url: tel:+639178511320
+            - generic [ref=f16e43]:
+              - generic [aria-hidden] [ref=f16e44]: ·
+              - link "(044)-940-0161" [ref=f16e45] [cursor=pointer]:
+                - /url: tel:+63449400161
+        - listitem [ref=f16e46]:
+          - generic [ref=f16e47]: "Community Affairs:"
+          - link "0919-081-3983" [ref=f16e50] [cursor=pointer]:
+            - /url: tel:+639190813983
+  - navigation [ref=f16e51]:
+    - generic [ref=f16e54]:
+      - link "Join Us" [ref=f16e55] [cursor=pointer]:
+        - /url: https://bettergov.ph/join-us
+      - link "About BetterGov" [ref=f16e56] [cursor=pointer]:
+        - /url: https://bettergov.ph/about
+      - link "Official Gov.ph" [ref=f16e57] [cursor=pointer]:
+        - /url: https://www.cabanatuancity.gov.ph
+      - link "Hotlines" [ref=f16e58] [cursor=pointer]:
+        - /url: https://bettergov.ph/philippines/hotlines
+      - link "Fares" [ref=f16e59] [cursor=pointer]:
+        - /url: https://pamasahe.bettercabanatuan.org
+      - combobox "Language" [ref=f16e61]:
+        - option "English" [selected]
+        - option "Filipino/Tagalog"
+    - generic [ref=f16e63]:
+      - link [ref=f16e65] [cursor=pointer]:
+        - /url: /
+        - img "Better Cabanatuan" [ref=f16e66]
+      - generic [ref=f16e67]:
+        - generic [ref=f16e69]:
+          - link "Services" [ref=f16e70] [cursor=pointer]:
+            - /url: /services
+          - button "Toggle Services menu" [ref=f16e71]
+        - link "Government" [ref=f16e76] [cursor=pointer]:
+          - /url: /government
+        - link "Statistics" [ref=f16e79] [cursor=pointer]:
+          - /url: /statistics
+        - link "Transparency" [ref=f16e82] [cursor=pointer]:
+          - /url: /transparency
+      - generic [ref=f16e83]:
+        - link "About" [ref=f16e84] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f16e85] [cursor=pointer]:
+          - /url: /contact
+        - link "Search" [ref=f16e86] [cursor=pointer]:
+          - /url: /search
+  - main [ref=f16e90]:
+    - region [ref=f16e91]:
+      - generic [ref=f16e92]:
+        - navigation "Breadcrumb" [ref=f16e93]:
+          - link "Home" [ref=f16e98] [cursor=pointer]:
+            - /url: /
+          - link "Transparency" [ref=f16e102] [cursor=pointer]:
+            - /url: /transparency
+        - generic [ref=f16e108]:
+          - paragraph [ref=f16e109]: Open Government
+          - heading "Transparency" [level=1] [ref=f16e110]
+          - paragraph [ref=f16e111]: Access Freedom of Information releases, public documents, reports, and accountability resources for Cabanatuan City.
+    - generic [ref=f16e113]:
+      - paragraph [ref=f16e114]: Browse public documents, reports, and open-government resources for Cabanatuan City. Links on this portal open here unless marked as external.
+      - generic [ref=f16e115]:
+        - region [ref=f16e116]:
+          - heading "On This Portal" [level=2] [ref=f16e117]
+          - paragraph [ref=f16e118]: Transparency content published through the Cabanatuan City community portal.
+          - generic [ref=f16e119]:
+            - link [ref=f16e121] [cursor=pointer]:
+              - /url: /government/transparency-documents
+              - region "Service details" [ref=f16e123]:
+                - heading "Transparency Documents" [level=3] [ref=f16e129]
+                - paragraph [ref=f16e130]: Freedom of Information releases and accountability documents from the city government.
+                - generic [ref=f16e131]: View resource
+            - link [ref=f16e136] [cursor=pointer]:
+              - /url: /government/reports-and-statistics
+              - region "Service details" [ref=f16e138]:
+                - heading "Reports and Statistics" [level=3] [ref=f16e143]
+                - paragraph [ref=f16e144]: Local government reports, performance data, and statistical publications.
+                - generic [ref=f16e145]: View resource
+            - link [ref=f16e150] [cursor=pointer]:
+              - /url: /government/projects
+              - region "Service details" [ref=f16e152]:
+                - heading "Government Projects" [level=3] [ref=f16e160]
+                - paragraph [ref=f16e161]: Track infrastructure and community development projects across the city.
+                - generic [ref=f16e162]: View resource
+            - link [ref=f16e167] [cursor=pointer]:
+              - /url: /statistics
+              - region "Service details" [ref=f16e169]:
+                - heading "City Statistics" [level=3] [ref=f16e175]
+                - paragraph [ref=f16e176]: Population, barangays, services, and other public data for Cabanatuan City.
+                - generic [ref=f16e177]: View resource
+            - link [ref=f16e182] [cursor=pointer]:
+              - /url: /transparency/flood-controls
+              - region "Service details" [ref=f16e184]:
+                - heading "Flood Control Projects" [level=3] [ref=f16e190]
+                - paragraph [ref=f16e191]: Flood mitigation structures and drainage canals completed across Cabanatuan City barangays.
+                - generic [ref=f16e192]: View resource
+            - link [ref=f16e197] [cursor=pointer]:
+              - /url: /transparency/procurement-plan
+              - region "Service details" [ref=f16e199]:
+                - heading "Annual Procurement Plan 2026" [level=3] [ref=f16e205]
+                - paragraph [ref=f16e206]: Search the 500 purchases and projects the city plans for 2026 by office, category and fund, with their estimated budgets.
+                - generic [ref=f16e207]: View resource
+            - link [ref=f16e212] [cursor=pointer]:
+              - /url: /transparency/legislation
+              - region "Service details" [ref=f16e214]:
+                - heading "Laws and Legislation" [level=3] [ref=f16e221]
+                - paragraph [ref=f16e222]: Republic Acts, Supreme Court rulings, and pending bills that shape governance and public services.
+                - generic [ref=f16e223]: View resource
+        - region [ref=f16e227]:
+          - heading "Citizen's Charter" [level=2] [ref=f16e228]
+          - paragraph [ref=f16e229]: "The city government's official list of services: the requirements, fees, processing time and responsible office for each one. Service guides on this portal cite it by page."
+          - link [ref=f16e232] [cursor=pointer]:
+            - /url: https://www.cabanatuancity.gov.ph/uploads/photos/detail/61d7d8890742f0.14414526.pdf
+            - region "Service details" [ref=f16e234]:
+              - generic [ref=f16e235]: External
+              - heading "Citizen's Charter 2022 (2nd Edition)" [level=3] [ref=f16e244]
+              - paragraph [ref=f16e245]: 2022, 2nd Edition, uploaded 2022-01-07. PDF, 345 pages, on the official city website.
+              - generic [ref=f16e246]: View resource
+        - region [ref=f16e250]:
+          - heading "Full Disclosure Policy documents" [level=2] [ref=f16e251]
+          - paragraph [ref=f16e252]: "DILG Memorandum Circular 2024-021 (15 February 2024) requires every local government to post 14 core financial documents each quarter. This list is partial until the circular's annex is obtained: it covers the documents named so far and whether each has been found on the official city website."
+          - note [ref=f16e253]: Status as of 2026-10-11. "Posted" means this portal located the document on cabanatuancity.gov.ph. "Not yet located" means the portal has not located it there yet; it does not mean the city has not produced it.
+          - list [ref=f16e254]:
+            - listitem [ref=f16e255]:
+              - generic [ref=f16e256]:
+                - generic [ref=f16e257]:
+                  - heading "Annual budget" [level=3] [ref=f16e258]
+                  - generic [ref=f16e259]: Not yet located
+                - paragraph [ref=f16e260]: The approved budget for the year.
+                - paragraph [ref=f16e261]: The city website posts SEF Annual Budgets 2025, which covers the Special Education Fund only. The general annual budget was not located.
+            - listitem [ref=f16e262]:
+              - generic [ref=f16e263]:
+                - generic [ref=f16e264]:
+                  - heading "Statement of receipts and expenditures" [level=3] [ref=f16e265]
+                  - generic [ref=f16e266]: Not yet located
+                - paragraph [ref=f16e267]: What the city collected and what it spent.
+            - listitem [ref=f16e268]:
+              - generic [ref=f16e269]:
+                - generic [ref=f16e270]:
+                  - heading "Special Education Fund utilisation" [level=3] [ref=f16e271]
+                  - generic [ref=f16e272]: Posted
+                - paragraph [ref=f16e273]: How the Special Education Fund was spent.
+                - paragraph [ref=f16e274]: Posted on the city website as "SEF Utilization Q1-Q4 2024". No direct file link was captured; the link opens the official website.
+              - link "View resource (External)" [ref=f16e276] [cursor=pointer]:
+                - /url: https://www.cabanatuancity.gov.ph/
+                - text: View resource
+                - generic [ref=f16e281]: (External)
+            - listitem [ref=f16e282]:
+              - generic [ref=f16e283]:
+                - generic [ref=f16e284]:
+                  - heading "20% development fund utilisation" [level=3] [ref=f16e285]
+                  - generic [ref=f16e286]: Not yet located
+                - paragraph [ref=f16e287]: How the share of internal revenue set aside for development projects was spent.
+            - listitem [ref=f16e288]:
+              - generic [ref=f16e289]:
+                - generic [ref=f16e290]:
+                  - heading "Trust fund utilisation" [level=3] [ref=f16e291]
+                  - generic [ref=f16e292]: Not yet located
+                - paragraph [ref=f16e293]: How funds held in trust for specific purposes were spent.
+            - listitem [ref=f16e294]:
+              - generic [ref=f16e295]:
+                - generic [ref=f16e296]:
+                  - heading "Bid results and awarded contracts" [level=3] [ref=f16e297]
+                  - generic [ref=f16e298]: Not yet located
+                - paragraph [ref=f16e299]: Who won each public bidding and for how much.
+            - listitem [ref=f16e300]:
+              - generic [ref=f16e301]:
+                - generic [ref=f16e302]:
+                  - heading "Annual procurement plan" [level=3] [ref=f16e303]
+                  - generic [ref=f16e304]: Posted
+                - paragraph [ref=f16e305]: What the city plans to buy during the year.
+                - paragraph [ref=f16e306]: Annual Procurement Plan FY 2026, PDF, posted 2026-02-13.
+              - generic [ref=f16e307]:
+                - link "Browse on this portal" [ref=f16e308] [cursor=pointer]:
+                  - /url: /transparency/procurement-plan
+                - link "View resource (External)" [ref=f16e311] [cursor=pointer]:
+                  - /url: https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf
+                  - text: View resource
+                  - generic [ref=f16e316]: (External)
+            - listitem [ref=f16e317]:
+              - generic [ref=f16e318]:
+                - generic [ref=f16e319]:
+                  - heading "Manpower complement" [level=3] [ref=f16e320]
+                  - generic [ref=f16e321]: Not yet located
+                - paragraph [ref=f16e322]: The number of positions in the city government and how many are filled.
+          - link [ref=f16e325] [cursor=pointer]:
+            - /url: https://fdpp.dilg.gov.ph/
+            - region "Service details" [ref=f16e327]:
+              - generic [ref=f16e328]: External
+              - heading "Full Disclosure Policy Portal (DILG)" [level=3] [ref=f16e337]
+              - paragraph [ref=f16e338]: The national portal where local governments upload their 14 core documents each quarter. Check it for Cabanatuan City filings.
+              - generic [ref=f16e339]: View resource
+        - region [ref=f16e343]:
+          - heading "Transparency Seal" [level=2] [ref=f16e344]
+          - paragraph [ref=f16e345]: The General Appropriations Act for FY 2026 (Republic Act No. 12314, section 112) directs all government agencies to keep a Transparency Seal on their websites with the items below. The rows show what has been found for Cabanatuan City.
+          - note [ref=f16e346]: Applicability of the current GAA text to local governments is not confirmed. The FY 2015 GAA named LGUs explicitly; the FY 2026 wording covers "all agencies of the government".
+          - list [ref=f16e347]:
+            - listitem [ref=f16e348]:
+              - generic [ref=f16e349]:
+                - generic [ref=f16e350]:
+                  - heading "Mandate, functions and officials with contact details" [level=3] [ref=f16e351]
+                  - generic [ref=f16e352]: Posted
+                - paragraph [ref=f16e353]: The agency's mandate and the names and contact details of its officials.
+                - paragraph [ref=f16e354]: Citizen's Charter 2022, p. 5 (Mandate, Vision, Mission, Service Pledge) and pp. 342-345 (every office with address and contact numbers). Pages 342-345 list offices, not named officials.
+              - link "View resource (External)" [ref=f16e356] [cursor=pointer]:
+                - /url: https://www.cabanatuancity.gov.ph/uploads/photos/detail/61d7d8890742f0.14414526.pdf
+                - text: View resource
+                - generic [ref=f16e361]: (External)
+            - listitem [ref=f16e362]:
+              - generic [ref=f16e363]:
+                - generic [ref=f16e364]:
+                  - heading "Approved budgets and targets" [level=3] [ref=f16e365]
+                  - generic [ref=f16e366]: Not yet located
+                - paragraph [ref=f16e367]: The approved budget and the performance targets it funds.
+                - paragraph [ref=f16e368]: The city website posts SEF Annual Budgets 2025. The general budget and performance targets were not located.
+            - listitem [ref=f16e369]:
+              - generic [ref=f16e370]:
+                - generic [ref=f16e371]:
+                  - heading "Annual procurement plan and awarded contracts" [level=3] [ref=f16e372]
+                  - generic [ref=f16e373]: Posted
+                - paragraph [ref=f16e374]: What the agency plans to buy and the contracts it has awarded.
+                - paragraph [ref=f16e375]: Annual Procurement Plan FY 2026, posted 2026-02-13. Awarded contracts were not located.
+              - generic [ref=f16e376]:
+                - link "Browse on this portal" [ref=f16e377] [cursor=pointer]:
+                  - /url: /transparency/procurement-plan
+                - link "View resource (External)" [ref=f16e380] [cursor=pointer]:
+                  - /url: https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf
+                  - text: View resource
+                  - generic [ref=f16e385]: (External)
+            - listitem [ref=f16e386]:
+              - generic [ref=f16e387]:
+                - generic [ref=f16e388]:
+                  - heading "Major programmes and projects with beneficiaries" [level=3] [ref=f16e389]
+                  - generic [ref=f16e390]: Not yet located
+                - paragraph [ref=f16e391]: The main programmes and projects and who they serve.
+            - listitem [ref=f16e392]:
+              - generic [ref=f16e393]:
+                - generic [ref=f16e394]:
+                  - heading "Status reports on programmes and projects" [level=3] [ref=f16e395]
+                  - generic [ref=f16e396]: Not yet located
+                - paragraph [ref=f16e397]: Progress and evaluation reports on the programmes and projects above.
+            - listitem [ref=f16e398]:
+              - generic [ref=f16e399]:
+                - generic [ref=f16e400]:
+                  - heading "Subsidy programmes" [level=3] [ref=f16e401]
+                  - generic [ref=f16e402]: Not yet located
+                - paragraph [ref=f16e403]: Subsidies the agency gives and who receives them.
+            - listitem [ref=f16e404]:
+              - generic [ref=f16e405]:
+                - generic [ref=f16e406]:
+                  - heading "Budget and Financial Accountability Reports (BFARs)" [level=3] [ref=f16e407]
+                  - generic [ref=f16e408]: Not yet located
+                - paragraph [ref=f16e409]: The periodic financial reports filed with the Department of Budget and Management.
+            - listitem [ref=f16e410]:
+              - generic [ref=f16e411]:
+                - generic [ref=f16e412]:
+                  - heading "Retained income" [level=3] [ref=f16e413]
+                  - generic [ref=f16e414]: Not yet located
+                - paragraph [ref=f16e415]: Income the agency keeps and how it is used.
+            - listitem [ref=f16e416]:
+              - generic [ref=f16e417]:
+                - generic [ref=f16e418]:
+                  - heading "News" [level=3] [ref=f16e419]
+                  - generic [ref=f16e420]: Not yet located
+                - paragraph [ref=f16e421]: Current announcements from the city government.
+                - paragraph [ref=f16e422]: The official website links Facebook pages for CITO Cabanatuan, PESO Cabanatuan and CDRRMO. No news section was located on the website itself.
+          - link [ref=f16e425] [cursor=pointer]:
+            - /url: https://www.phcc.gov.ph/transparency-seal
+            - region "Service details" [ref=f16e427]:
+              - generic [ref=f16e428]: External
+              - heading "GAA FY 2026, section 112 (Transparency Seal)" [level=3] [ref=f16e437]
+              - paragraph [ref=f16e438]: The Transparency Seal provision as reproduced by the Philippine Competition Commission; the reference for the item list above.
+              - generic [ref=f16e439]: View resource
+        - region [ref=f16e443]:
+          - heading "City Government" [level=2] [ref=f16e444]
+          - paragraph [ref=f16e445]: Official channels for records, consultations, and public information.
+          - generic [ref=f16e446]:
+            - link [ref=f16e448] [cursor=pointer]:
+              - /url: /government/public-consultations
+              - region "Service details" [ref=f16e450]:
+                - heading "Public Consultations" [level=3] [ref=f16e456]
+                - paragraph [ref=f16e457]: Participate in consultations and provide feedback on local government decisions.
+                - generic [ref=f16e458]: View resource
+            - link [ref=f16e463] [cursor=pointer]:
+              - /url: /government/departments
+              - region "Service details" [ref=f16e465]:
+                - heading "Departments and Offices" [level=3] [ref=f16e472]
+                - paragraph [ref=f16e473]: Mandates, services, and contact details for city departments.
+                - generic [ref=f16e474]: View resource
+            - link [ref=f16e479] [cursor=pointer]:
+              - /url: https://www.cabanatuancity.gov.ph
+              - region "Service details" [ref=f16e481]:
+                - generic [ref=f16e482]: External
+                - heading "Official City Website" [level=3] [ref=f16e492]
+                - paragraph [ref=f16e493]: Visit the official Cabanatuan City government website for transactions and announcements.
+                - generic [ref=f16e494]: View resource
+        - region [ref=f16e498]:
+          - heading "National Resources" [level=2] [ref=f16e499]
+          - paragraph [ref=f16e500]: Philippine government platforms for open data, FOI requests, and public records.
+          - generic [ref=f16e501]:
+            - link [ref=f16e503] [cursor=pointer]:
+              - /url: https://www.foi.gov.ph
+              - region "Service details" [ref=f16e505]:
+                - generic [ref=f16e506]: External
+                - heading "Freedom of Information (FOI)" [level=3] [ref=f16e517]
+                - paragraph [ref=f16e518]: Submit and track Freedom of Information requests through the national FOI portal.
+                - generic [ref=f16e519]: View resource
+            - link [ref=f16e524] [cursor=pointer]:
+              - /url: https://data.gov.ph
+              - region "Service details" [ref=f16e526]:
+                - generic [ref=f16e527]: External
+                - heading "Open Data Philippines" [level=3] [ref=f16e538]
+                - paragraph [ref=f16e539]: Browse open datasets published by national government agencies.
+                - generic [ref=f16e540]: View resource
+            - link [ref=f16e545] [cursor=pointer]:
+              - /url: https://www.officialgazette.gov.ph
+              - region "Service details" [ref=f16e547]:
+                - generic [ref=f16e548]: External
+                - heading "Official Gazette" [level=3] [ref=f16e558]
+                - paragraph [ref=f16e559]: Official public journal of laws, issuances, and government notices.
+                - generic [ref=f16e560]: View resource
+            - link [ref=f16e565] [cursor=pointer]:
+              - /url: https://contactcenterngbayan.gov.ph
+              - region "Service details" [ref=f16e567]:
+                - generic [ref=f16e568]: External
+                - heading "Contact Center ng Bayan" [level=3] [ref=f16e577]
+                - paragraph [ref=f16e578]: National citizen complaint and feedback hotline for government services.
+                - generic [ref=f16e579]: View resource
+  - contentinfo [ref=f16e583]:
+    - generic [ref=f16e584]:
+      - generic [ref=f16e585]:
+        - generic [ref=f16e586]:
+          - img "Better Cabanatuan" [ref=f16e588]
+          - paragraph [ref=f16e589]: A community portal providing Philippine citizens, businesses, and visitors with information and services.
+          - generic [ref=f16e590]:
+            - link "Website" [ref=f16e591] [cursor=pointer]:
+              - /url: https://bettercabanatuan.org
+            - link "Facebook" [ref=f16e595] [cursor=pointer]:
+              - /url: https://www.facebook.com/bettercabanatuan.org
+            - link "Twitter" [ref=f16e598] [cursor=pointer]:
+              - /url: https://twitter.com/bettercabanatuan
+            - link "Instagram" [ref=f16e601] [cursor=pointer]:
+              - /url: https://instagram.com/bettercabanatuan
+            - link "Government Website":
+              - /url: https://www.cabanatuancity.gov.ph
+        - generic [ref=f16e605]:
+          - heading "About" [level=3] [ref=f16e606]
+          - list [ref=f16e607]:
+            - listitem [ref=f16e608]:
+              - link "About the Portal" [ref=f16e609] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f16e610]:
+              - link "Accessibility" [ref=f16e611] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem [ref=f16e612]:
+              - link "Contact Us" [ref=f16e613] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=f16e614]:
+              - link "Community Discord" [ref=f16e615] [cursor=pointer]:
+                - /url: https://bettergov.ph/join-us
+        - generic [ref=f16e616]:
+          - heading "Services" [level=3] [ref=f16e617]
+          - list [ref=f16e618]:
+            - listitem [ref=f16e619]:
+              - link "All Services" [ref=f16e620] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f16e621]:
+              - link "Health Services" [ref=f16e622] [cursor=pointer]:
+                - /url: /services/health-services
+            - listitem [ref=f16e623]:
+              - link "Education" [ref=f16e624] [cursor=pointer]:
+                - /url: /services/education
+            - listitem [ref=f16e625]:
+              - link "Business and Livelihood" [ref=f16e626] [cursor=pointer]:
+                - /url: /services/business
+            - listitem [ref=f16e627]:
+              - link "Social Welfare" [ref=f16e628] [cursor=pointer]:
+                - /url: /services/social-welfare
+            - listitem [ref=f16e629]:
+              - link "Agriculture & Fisheries" [ref=f16e630] [cursor=pointer]:
+                - /url: /services/agriculture-fisheries
+            - listitem [ref=f16e631]:
+              - link "Infrastructure & Public Works" [ref=f16e632] [cursor=pointer]:
+                - /url: /services/infrastructure-public-works
+            - listitem [ref=f16e633]:
+              - link "Hotlines" [ref=f16e634] [cursor=pointer]:
+                - /url: /hotlines
+            - listitem [ref=f16e635]:
+              - link "Jeep & Tricycle Fares" [ref=f16e636] [cursor=pointer]:
+                - /url: https://pamasahe.bettercabanatuan.org
+            - listitem [ref=f16e637]:
+              - link "Holidays" [ref=f16e638] [cursor=pointer]:
+                - /url: https://bettergov.ph/philippines/holidays
+        - generic [ref=f16e639]:
+          - heading "Government" [level=3] [ref=f16e640]
+          - list [ref=f16e641]:
+            - listitem [ref=f16e642]:
+              - link "Government" [ref=f16e643] [cursor=pointer]:
+                - /url: /government
+            - listitem [ref=f16e644]:
+              - link "Public Officials" [ref=f16e645] [cursor=pointer]:
+                - /url: /government/officials
+            - listitem [ref=f16e646]:
+              - link "Barangays" [ref=f16e647] [cursor=pointer]:
+                - /url: /government/barangays
+            - listitem [ref=f16e648]:
+              - link "Open Data" [ref=f16e649] [cursor=pointer]:
+                - /url: https://data.gov.ph
+            - listitem [ref=f16e650]:
+              - link "Freedom of Information" [ref=f16e651] [cursor=pointer]:
+                - /url: https://www.foi.gov.ph
+            - listitem [ref=f16e652]:
+              - link "Contact Center" [ref=f16e653] [cursor=pointer]:
+                - /url: https://contactcenterngbayan.gov.ph
+            - listitem [ref=f16e654]:
+              - link "Official Gazette" [ref=f16e655] [cursor=pointer]:
+                - /url: https://www.officialgazette.gov.ph
+      - generic [ref=f16e657]:
+        - generic [ref=f16e658]:
+          - paragraph [ref=f16e659]: © 2026 Better Cabanatuan. All content is public domain unless otherwise specified.
+          - paragraph [ref=f16e660]: Built on the BetterGov open-source civic template.
+        - generic [ref=f16e661]:
+          - link "BetterCabanatuan.org" [ref=f16e662] [cursor=pointer]:
+            - /url: https://bettercabanatuan.org
+          - link "Facebook" [ref=f16e663] [cursor=pointer]:
+            - /url: https://www.facebook.com/bettercabanatuan.org
+          - link "Contribute at GitHub" [ref=f16e664] [cursor=pointer]:
+            - /url: https://github.com/BetterCabanatuan/bettercabanatuan
+          - link "Sitemap" [ref=f16e665] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Accessibility" [ref=f16e666] [cursor=pointer]:
+            - /url: /accessibility
+          - link "Privacy Notice" [ref=f16e667] [cursor=pointer]:
+            - /url: /privacy
+  - dialog [ref=f16e669]:
+    - generic [ref=f16e670]:
+      - img "Better Cabanatuan" [ref=f16e674]
+      - button "Close volunteer invitation" [ref=f16e675]
+      - heading "Be Part of Something Greater" [level=2] [ref=f16e679]
+      - paragraph [ref=f16e680]: Cabanatuan City deserves a world-class digital government. Help us build it.
+    - generic [ref=f16e681]:
+      - paragraph [ref=f16e682]:
+        - text: We are looking for passionate
+        - strong [ref=f16e683]: Cabanatueños
+        - text: who want to serve their community through their craft.
+      - list [ref=f16e684]:
+        - listitem [ref=f16e685]:
+          - generic [ref=f16e686]: Software Dev
+        - listitem [ref=f16e690]:
+          - generic [ref=f16e691]: UI/UX Design
+        - listitem [ref=f16e696]:
+          - generic [ref=f16e697]: Graphic Design
+        - listitem [ref=f16e704]:
+          - generic [ref=f16e705]: Content Creation
+        - listitem [ref=f16e708]:
+          - generic [ref=f16e709]: Research
+        - listitem [ref=f16e713]:
+          - generic [ref=f16e714]: Digital Marketing
+      - link "I Want to Volunteer" [ref=f16e718] [cursor=pointer]:
+        - /url: mailto:bettercabanatuan@gmail.com?subject=Volunteer%20for%20Better%20Cabanatuan
+      - button "Maybe Later" [ref=f16e722]
