@@ -8,6 +8,7 @@ import MapBanner from '../../../components/ui/MapBanner';
 import { Card, CardContent } from '../../../components/ui/Card';
 import NotFoundGuard from '../../../components/shared/NotFoundGuard';
 import BarangayHealthCenterCard from '../../../components/government/barangays/BarangayHealthCenterCard';
+import { OfficialBarangayRoster } from '../../../components/government/barangays/OfficialBarangayRoster';
 import {
   getBarangayBySlug,
   allBarangays,
@@ -262,6 +263,8 @@ const BarangayDetail: React.FC = () => {
             )}
           </CardContent>
         </Card>
+
+        <OfficialBarangayRoster barangaySlug={barangay.slug} />
 
         {relatedBarangays.length > 0 && (
           <div>
