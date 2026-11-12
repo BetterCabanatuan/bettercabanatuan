@@ -1,0 +1,428 @@
+- generic [ref=f34e2]:
+  - generic [ref=f34e3]:
+    - link "Skip to content" [ref=f34e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=f34e9]:
+      - heading "Navigation Menu" [level=2] [ref=f34e10]
+      - generic [ref=f34e11]:
+        - link "Homepage" [ref=f34e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f34e16]:
+          - navigation "Global" [ref=f34e17]:
+            - list [ref=f34e18]:
+              - listitem [ref=f34e19]:
+                - button "Platform" [ref=f34e21] [cursor=pointer]
+              - listitem [ref=f34e24]:
+                - button "Solutions" [ref=f34e26] [cursor=pointer]
+              - listitem [ref=f34e29]:
+                - button "Resources" [ref=f34e31] [cursor=pointer]
+              - listitem [ref=f34e34]:
+                - button "Open Source" [ref=f34e36] [cursor=pointer]
+              - listitem [ref=f34e39]:
+                - button "Enterprise" [ref=f34e41] [cursor=pointer]
+              - listitem [ref=f34e44]:
+                - link "Pricing" [ref=f34e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=f34e46]:
+            - button "Search or jump to, type / to search" [ref=f34e48] [cursor=pointer]:
+              - generic [ref=f34e51]:
+                - generic [ref=f34e52]: Search
+                - generic [aria-hidden] [ref=f34e53]: /
+            - generic [ref=f34e54]:
+              - link "Sign in" [ref=f34e56] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FBetterCabanatuan%2Fbettercabanatuan%2Fpull%2F35
+              - link "Sign up" [ref=f34e59] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fvoltron%2Fpull_requests_fragments%2Fpull_request_layout&source=header-repo&source_repo=BetterCabanatuan%2Fbettercabanatuan
+              - button "Appearance settings" [ref=f34e62] [cursor=pointer]
+  - main [ref=f34e69]:
+    - generic "Global navigation menu" [ref=f34e72]:
+      - navigation "Breadcrumbs" [ref=f34e75]:
+        - list [ref=f34e76]:
+          - listitem [ref=f34e77]:
+            - link "BetterCabanatuan" [ref=f34e78] [cursor=pointer]:
+              - /url: /BetterCabanatuan
+          - listitem [ref=f34e80]:
+            - link "bettercabanatuan" [ref=f34e81] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan
+      - heading "Repository navigation" [level=2] [ref=f34e84]
+      - navigation "Repository" [ref=f34e85]:
+        - list [ref=f34e86]:
+          - listitem [ref=f34e87]:
+            - link "Code" [ref=f34e88] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan
+          - listitem [ref=f34e93]:
+            - link "Issues" [ref=f34e94] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan/issues
+          - listitem [ref=f34e100]:
+            - link "Pull requests (2)" [ref=f34e101] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan/pulls
+              - generic [ref=f34e105]: Pull requests
+              - generic [ref=f34e106]:
+                - generic [aria-hidden] [ref=f34e107]: "2"
+                - generic [ref=f34e108]: (2)
+          - listitem [ref=f34e109]:
+            - link "Actions" [ref=f34e110] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan/actions
+          - listitem [ref=f34e115]:
+            - link "Projects" [ref=f34e116] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan/projects
+          - listitem [ref=f34e121]:
+            - link "Security and quality" [ref=f34e122] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan/security
+          - listitem [ref=f34e127]:
+            - link "Insights" [ref=f34e128] [cursor=pointer]:
+              - /url: /BetterCabanatuan/bettercabanatuan/pulse
+    - generic [ref=f34e139]:
+      - generic [ref=f34e143]:
+        - generic [ref=f34e145]:
+          - 'heading "feat(transparency): browse the FY 2026 Annual Procurement Plan - #35" [level=1] [ref=f34e146]':
+            - text: "feat(transparency): browse the FY 2026 Annual Procurement Plan"
+            - generic [ref=f34e147]: "- #35"
+          - generic [aria-hidden] [ref=f34e149]: "#35"
+        - generic [ref=f34e151]:
+          - generic [ref=f34e153]:
+            - img "Pull request" [ref=f34e154]
+            - text: Open
+          - generic [ref=f34e157]:
+            - link "joshuagemvicente" [ref=f34e158] [cursor=pointer]:
+              - /url: /joshuagemvicente
+            - text: wants to merge 1 commit into
+            - generic [ref=f34e159]:
+              - link "main" [ref=f34e160] [cursor=pointer]:
+                - /url: /BetterCabanatuan/bettercabanatuan/tree/main
+              - generic [ref=f34e161]: from
+              - generic [ref=f34e162]:
+                - link "feat/procurement-plan-2026" [ref=f34e163] [cursor=pointer]:
+                  - /url: /BetterCabanatuan/bettercabanatuan/tree/feat/procurement-plan-2026
+                - button "Copy head branch name to clipboard" [ref=f34e164] [cursor=pointer]
+        - generic [ref=f34e168]:
+          - generic [ref=f34e170]:
+            - generic [aria-hidden] [ref=f34e171]: +2,743
+            - generic [aria-hidden] [ref=f34e172]: "-248"
+            - generic [ref=f34e173]: "Lines changed: 2743 additions & 248 deletions"
+          - navigation "Pull request navigation" [ref=f34e181]:
+            - generic [ref=f34e182]:
+              - link "Conversation (0)" [ref=f34e183] [cursor=pointer]:
+                - /url: /BetterCabanatuan/bettercabanatuan/pull/35
+                - text: Conversation
+                - generic [aria-hidden] [ref=f34e186]: "0"
+                - generic [ref=f34e187]: (0)
+              - link "Commits (1)" [ref=f34e188] [cursor=pointer]:
+                - /url: /BetterCabanatuan/bettercabanatuan/pull/35/commits
+                - text: Commits
+                - generic [aria-hidden] [ref=f34e191]: "1"
+                - generic [ref=f34e192]: (1)
+              - link "Checks (8)" [ref=f34e193] [cursor=pointer]:
+                - /url: /BetterCabanatuan/bettercabanatuan/pull/35/checks
+                - text: Checks
+                - generic [aria-hidden] [ref=f34e196]: "8"
+                - generic [ref=f34e197]: (8)
+              - link "Files changed (22)" [ref=f34e198] [cursor=pointer]:
+                - /url: /BetterCabanatuan/bettercabanatuan/pull/35/files
+                - text: Files changed
+                - generic [aria-hidden] [ref=f34e201]: "22"
+                - generic [ref=f34e202]: (22)
+      - generic [ref=f34e207]:
+        - generic [ref=f34e209]:
+          - heading "Conversation" [level=2] [ref=f34e210]
+          - generic [ref=f34e211]:
+            - generic [ref=f34e212]:
+              - generic [ref=f34e214]:
+                - link [ref=f34e215] [cursor=pointer]:
+                  - /url: /joshuagemvicente
+                  - img "@joshuagemvicente" [ref=f34e216]
+                - generic [ref=f34e218]:
+                  - generic [ref=f34e219]:
+                    - heading [level=3] [ref=f34e220]:
+                      - generic [ref=f34e221]:
+                        - strong [ref=f34e222]:
+                          - link "joshuagemvicente" [ref=f34e223] [cursor=pointer]:
+                            - /url: /joshuagemvicente
+                        - text: commented
+                        - link "Oct 26, 2026now" [ref=f34e224] [cursor=pointer]:
+                          - /url: "#issue-6040275139"
+                    - generic [ref=f34e225]:
+                      - group [ref=f34e227]:
+                        - button [ref=f34e228] [cursor=pointer]:
+                          - img "Show options" [ref=f34e231]
+                      - generic "This user is a member of the BetterCabanatuan organization." [ref=f34e234]: Member
+                  - generic [ref=f34e239]:
+                    - heading "Summary" [level=2] [ref=f34e240]
+                    - paragraph [ref=f34e241]:
+                      - text: The city's
+                      - link "Annual Procurement Plan FY 2026" [ref=f34e242] [cursor=pointer]:
+                        - /url: https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf
+                      - text: was only linked from
+                      - code [ref=f34e243]: /transparency
+                      - text: as a 149-page PDF. This puts its 500 rows on the portal at
+                      - code [ref=f34e244]: /transparency/procurement-plan
+                      - text: . Residents can search them, filter by office, category and procurement mode, and see the planned budget by office. The page says up front that the amounts are
+                      - strong [ref=f34e245]: planned estimates, not contracts
+                      - text: .
+                    - generic [ref=f34e246]:
+                      - generic [ref=f34e247]:
+                        - text: /transparency On This Portal
+                        - generic [ref=f34e248]: + [Annual Procurement Plan 2026] card
+                        - text: Full Disclosure Policy → "Annual procurement plan" [View resource ↗]
+                        - generic [ref=f34e249]: + [Browse on this portal →]
+                        - text: Transparency Seal → "Annual procurement plan and…" [View resource ↗]
+                        - generic [ref=f34e250]: + [Browse on this portal →]
+                        - generic [ref=f34e251]: +/transparency/procurement-plan
+                        - generic [ref=f34e252]: "+ note: planned estimates, not contracts · source PDF · approval/posting dates"
+                        - generic [ref=f34e253]: "+ stat tiles: total · items · infrastructure · goods and services"
+                        - generic [ref=f34e254]: "+ by office: ranked bars, click to filter"
+                        - generic [ref=f34e255]: "+ all items: search · office · category · mode · sort (filters live in the URL)"
+                      - button "Copy code to clipboard" [ref=f34e257] [cursor=pointer]
+                    - paragraph [ref=f34e261]: "The data comes from the PDF, not hand entry:"
+                    - generic [ref=f34e262]:
+                      - code [ref=f34e264]: "npm run import:app -- <APP pdf> pdftotext -bbox words with positions (the PDF is an Excel export) words → 12 columns by x; columns sit at the same x on every page lines → rows each cell matched to its row's start-date cell: centred on it, or top-aligned in it check rows must add up to every printed total, else no write → src/data/procurement-plan.json (generated, one row per line)"
+                      - button "Copy code to clipboard" [ref=f34e266] [cursor=pointer]
+                    - generic [ref=f34e270]:
+                      - code [ref=f34e272]: "scripts/import-procurement-plan.mjs # PDF → JSON, with the total checks src/data/procurement-plan.json # generated: 500 rows + source metadata src/data/procurementPlan.ts # types, office codes → department pages src/components/transparency/procurement/ # office breakdown, items table src/pages/transparency/procurement-plan/ # the page"
+                      - button "Copy code to clipboard" [ref=f34e274] [cursor=pointer]
+                    - paragraph [ref=f34e278]:
+                      - text: Offices show exactly as printed (
+                      - code [ref=f34e279]: CMO - LYDO
+                      - text: ). They link to a department page only where that page confirms the office. Codes nothing on the portal confirms (
+                      - code [ref=f34e280]: CEEMO
+                      - text: ","
+                      - code [ref=f34e281]: CTDPO
+                      - text: ","
+                      - code [ref=f34e282]: CAO
+                      - text: ", national agencies) stay as plain text."
+                    - heading "Evidence" [level=2] [ref=f34e283]
+                    - paragraph [ref=f34e284]:
+                      - strong [ref=f34e285]: Before
+                      - text: (bettercabanatuan.org, same as
+                      - code [ref=f34e286]: main
+                      - text: "): the route doesn't exist."
+                    - table [ref=f34e288]:
+                      - rowgroup [ref=f34e289]:
+                        - row [ref=f34e290]:
+                          - columnheader "Desktop" [ref=f34e291]
+                          - columnheader "Mobile" [ref=f34e292]
+                      - rowgroup [ref=f34e293]:
+                        - row [ref=f34e294]:
+                          - cell [ref=f34e295]:
+                            - link [ref=f34e296] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/before-3-route-404.png
+                          - cell [ref=f34e298]:
+                            - link [ref=f34e299] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/before-4-route-404-mobile.png
+                    - paragraph [ref=f34e301]:
+                      - strong [ref=f34e302]: "After:"
+                      - text: the page.
+                    - table [ref=f34e304]:
+                      - rowgroup [ref=f34e305]:
+                        - row [ref=f34e306]:
+                          - columnheader "Desktop" [ref=f34e307]
+                          - columnheader "Mobile" [ref=f34e308]
+                      - rowgroup [ref=f34e309]:
+                        - row [ref=f34e310]:
+                          - cell [ref=f34e311]:
+                            - link [ref=f34e312] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-4-page-desktop-top.png
+                          - cell [ref=f34e314]:
+                            - link [ref=f34e315] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-8-mobile-top.png
+                        - row [ref=f34e317]:
+                          - cell [ref=f34e318]:
+                            - link [ref=f34e319] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-5-page-stats-and-offices.png
+                          - cell [ref=f34e321]:
+                            - link [ref=f34e322] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-9-mobile-items.png
+                        - row [ref=f34e324]:
+                          - cell [ref=f34e325]:
+                            - link [ref=f34e326] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-6-page-items-table.png
+                          - cell [ref=f34e328]
+                    - paragraph [ref=f34e329]:
+                      - text: Filtered to CCENRO, largest budget first, one long item expanded (
+                      - code [ref=f34e330]: "?office=CCENRO&sort=budget"
+                      - text: "). This includes rows where CCENRO is listed after other offices:"
+                    - paragraph [ref=f34e331]:
+                      - link [ref=f34e332] [cursor=pointer]:
+                        - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-7-page-filtered-ccenro.png
+                    - paragraph [ref=f34e334]:
+                      - link "Full-page capture (desktop)" [ref=f34e335] [cursor=pointer]:
+                        - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-3-page-desktop-full.png
+                    - paragraph [ref=f34e336]:
+                      - strong [ref=f34e337]:
+                        - code [ref=f34e338]: /transparency
+                        - text: hub, before → after
+                    - table [ref=f34e340]:
+                      - rowgroup [ref=f34e341]:
+                        - row [ref=f34e342]:
+                          - columnheader "Before" [ref=f34e343]
+                          - columnheader "After" [ref=f34e344]
+                      - rowgroup [ref=f34e345]:
+                        - row [ref=f34e346]:
+                          - cell [ref=f34e347]:
+                            - link [ref=f34e348] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/before-1-hub-portal-cards.png
+                          - cell [ref=f34e350]:
+                            - link [ref=f34e351] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-1-hub-portal-cards.png
+                        - row [ref=f34e353]:
+                          - cell [ref=f34e354]:
+                            - link [ref=f34e355] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/before-2-hub-full-disclosure.png
+                          - cell [ref=f34e357]:
+                            - link [ref=f34e358] [cursor=pointer]:
+                              - /url: https://raw.githubusercontent.com/BetterCabanatuan/bettercabanatuan/pr-assets/procurement-plan-2026/after-2-hub-full-disclosure.png
+                    - paragraph [ref=f34e360]: The site's sticky navbar shows up in the middle of the two tall hub captures, both before and after. That's an artifact of element screenshots, not a layout bug.
+                    - paragraph [ref=f34e361]:
+                      - strong [ref=f34e362]: The import adds up to the plan's own totals
+                    - generic [ref=f34e363]:
+                      - code [ref=f34e365]: "$ npm run import:app -- 6a5878e43d7118.12679050.pdf 500 rows, total 5697991404 general: 477 rows, printed total 5665509464 direct-acquisition: 2 rows, printed total 7200000 common-use-supplies: 21 rows, printed total 25281940 Warnings (in the source document, not the parse): early procurement: flagged rows add up to 30500000.00, plan prints 226263698.50"
+                      - button "Copy code to clipboard" [ref=f34e367] [cursor=pointer]
+                    - paragraph [ref=f34e371]: "I compared page 13 cell by cell against the rendered PDF: all 12 rows match. That page has a long bulleted title, top-aligned offices and a row with no amount."
+                    - paragraph [ref=f34e372]:
+                      - strong [ref=f34e373]: "Tests:"
+                      - text: "600/600 pass, including new ones:"
+                    - generic [ref=f34e374]:
+                      - code [ref=f34e376]: "procurement plan data ✓ adds up to every total the plan prints (each section + PHP 5,697,991,404) ✓ keeps group headings on the rows they cover (\"Purchase of: IT Equipment and Software\") officeCodes ✓ reads \"CPDO / GSO CCENRO / DENR\" (printed with only a space between two codes) ✓ links only to department pages that exist ProcurementPlanPage ✓ says the amounts are planned estimates and links the source PDF ✓ filters to one office from the URL, counting rows it shares ✓ filters the table when an office is picked from the breakdown TransparencyPage ✓ links a posted row to its document … (now also \"Browse on this portal\")"
+                      - button "Copy code to clipboard" [ref=f34e378] [cursor=pointer]
+                    - paragraph [ref=f34e382]:
+                      - code [ref=f34e383]: npm run lint
+                      - text: ","
+                      - code [ref=f34e384]: npm run typecheck
+                      - text: ","
+                      - code [ref=f34e385]: npm run check:contrast
+                      - text: and
+                      - code [ref=f34e386]: npm run build
+                      - text: pass.
+                    - paragraph [ref=f34e387]:
+                      - strong [ref=f34e388]: "Found in the source PDF, not fixed here:"
+                    - list [ref=f34e389]:
+                      - listitem [ref=f34e390]: The sign-off prints an early-procurement total of PHP 226,263,698.50. Only two rows are flagged (PHP 30.5M), and no combination of rows makes that figure. The page doesn't show it.
+                      - listitem [ref=f34e391]: Three fund labels read "1% RA 9344 / 9345 / 9346", which looks like an Excel autofill slip. They're kept as printed.
+                    - heading "Merge Danger" [level=2] [ref=f34e392]
+                    - paragraph [ref=f34e393]:
+                      - strong [ref=f34e394]: "Door:"
+                      - text: two-way
+                    - paragraph [ref=f34e395]: A new route and new data. Nothing existing is removed, and reverting the commit takes it all back out.
+                    - paragraph [ref=f34e396]:
+                      - strong [ref=f34e397]: "Blast Radius:"
+                      - text: contained
+                    - list [ref=f34e398]:
+                      - listitem [ref=f34e399]:
+                        - strong [ref=f34e400]: "Bundle size:"
+                        - code [ref=f34e401]: procurement-plan.json
+                        - text: adds about 20 KB gzipped to the main bundle, because every route is imported statically. That's the same pattern as
+                        - code [ref=f34e402]: news.facebook.json
+                        - text: .
+                      - listitem [ref=f34e403]:
+                        - strong [ref=f34e404]: "Shared types:"
+                        - code [ref=f34e405]: TransparencyDocument
+                        - text: gains an optional
+                        - code [ref=f34e406]: portalHref
+                        - text: ", and the hub row renders it beside the PDF link."
+                      - listitem [ref=f34e407]:
+                        - strong [ref=f34e408]: "Filipino strings:"
+                        - text: the new
+                        - code [ref=f34e409]: fil
+                        - text: translations need a check from a Filipino speaker.
+                    - paragraph [ref=f34e410]:
+                      - text: Screenshots live on the
+                      - code [ref=f34e411]: pr-assets/procurement-plan-2026
+                      - text: branch, which is not for merging. Delete it after this PR merges.
+              - generic [ref=f34e412]:
+                - generic [ref=f34e423]:
+                  - link [ref=f34e426] [cursor=pointer]:
+                    - /url: /joshuagemvicente
+                    - img "@joshuagemvicente" [ref=f34e427]
+                  - generic [ref=f34e428]:
+                    - code [ref=f34e429]:
+                      - 'link "feat(transparency): browse the FY 2026 Annual Procurement Plan" [ref=f34e430] [cursor=pointer]':
+                        - /url: /BetterCabanatuan/bettercabanatuan/pull/35/commits/922e65142b0d9212f7bcc4482dcd91b53319f20d
+                    - button "Commit message body" [ref=f34e432] [cursor=pointer]: …
+                  - group [ref=f34e436]:
+                    - img "1 / 8 checks OK" [ref=f34e438] [cursor=pointer]
+                  - code [ref=f34e441]:
+                    - link "922e651" [ref=f34e442] [cursor=pointer]:
+                      - /url: /BetterCabanatuan/bettercabanatuan/pull/35/commits/922e65142b0d9212f7bcc4482dcd91b53319f20d
+                - generic [ref=f34e449]:
+                  - link "Copilot PR reviewer" [ref=f34e451] [cursor=pointer]:
+                    - /url: /apps/copilot-pull-request-reviewer
+                  - generic [ref=f34e457]:
+                    - link "Copilot" [ref=f34e458] [cursor=pointer]:
+                      - /url: /apps/copilot-pull-request-reviewer
+                    - generic [ref=f34e459]: AI
+                    - text: balanced review requested due to automatic review settings
+                    - link "October 26, 2026 13:07now" [ref=f34e460] [cursor=pointer]:
+                      - /url: "#event-34261013064"
+            - generic [ref=f34e464]:
+              - link "Sign up for free" [ref=f34e465] [cursor=pointer]:
+                - /url: /join?source=comment-repo
+              - strong [ref=f34e466]: to join this conversation on GitHub
+              - text: . Already have an account?
+              - link "Sign in to comment" [ref=f34e467] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FBetterCabanatuan%2Fbettercabanatuan%2Fpull%2F35
+        - generic [ref=f34e471]:
+          - form "Select reviewers" [ref=f34e473]:
+            - heading "Reviewers" [level=3] [ref=f34e474]
+            - generic [ref=f34e476]:
+              - generic [ref=f34e477]:
+                - link "Copilot code review" [ref=f34e478] [cursor=pointer]:
+                  - /url: /apps/copilot-pull-request-reviewer
+                - link "Copilot" [ref=f34e484] [cursor=pointer]:
+                  - /url: /apps/copilot-pull-request-reviewer
+              - button "Reviewing at balanced effort" [ref=f34e485] [cursor=pointer]
+          - form "Select assignees" [ref=f34e490]:
+            - heading "Assignees" [level=3] [ref=f34e491]
+            - text: No one assigned
+          - generic [ref=f34e492]:
+            - heading "Labels" [level=3] [ref=f34e493]
+            - generic [ref=f34e494]: None yet
+          - form "Select projects" [ref=f34e496]:
+            - heading "Projects" [level=3] [ref=f34e497]
+            - text: None yet
+          - form "Select milestones" [ref=f34e499]:
+            - heading "Milestone" [level=3] [ref=f34e500]
+            - text: No milestone
+          - form "Link issues" [ref=f34e506]:
+            - heading "Development" [level=3] [ref=f34e507]
+            - paragraph [ref=f34e508]: Successfully merging this pull request may close these issues.
+            - paragraph [ref=f34e510]: None yet
+          - generic [ref=f34e512]:
+            - heading "1 participant" [level=3] [ref=f34e513]
+            - link [ref=f34e515] [cursor=pointer]:
+              - /url: /joshuagemvicente
+              - img "@joshuagemvicente" [ref=f34e516]
+  - contentinfo [ref=f34e517]:
+    - heading "Footer" [level=2] [ref=f34e518]
+    - generic [ref=f34e519]:
+      - generic [ref=f34e520]:
+        - link "GitHub Homepage" [ref=f34e521] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=f34e524]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=f34e525]:
+        - heading "Footer navigation" [level=3] [ref=f34e526]
+        - list "Footer navigation" [ref=f34e527]:
+          - listitem [ref=f34e528]:
+            - link "Terms" [ref=f34e529] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=f34e530]:
+            - link "Privacy" [ref=f34e531] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=f34e532]:
+            - link "Security" [ref=f34e533] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=f34e534]:
+            - link "Status" [ref=f34e535] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=f34e536]:
+            - link "Community" [ref=f34e537] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=f34e538]:
+            - link "Docs" [ref=f34e539] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=f34e540]:
+            - link "Contact" [ref=f34e541] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=f34e542]:
+            - button "Manage cookies" [ref=f34e544] [cursor=pointer]
+          - listitem [ref=f34e545]:
+            - button "Do not share my personal information" [ref=f34e547] [cursor=pointer]

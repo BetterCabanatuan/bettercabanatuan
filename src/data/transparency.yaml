@@ -34,6 +34,10 @@ sections:
         description: 'Flood mitigation structures and drainage canals completed across Cabanatuan City barangays.'
         href: '/transparency/flood-controls'
         icon: 'Droplets'
+      - title: 'Annual Procurement Plan 2026'
+        description: 'Search the 500 purchases and projects the city plans for 2026 by office, category and fund, with their estimated budgets.'
+        href: '/transparency/procurement-plan'
+        icon: 'ClipboardList'
       - title: 'Laws and Legislation'
         description: 'Republic Acts, Supreme Court rulings, and pending bills that shape governance and public services.'
         href: '/transparency/legislation'
@@ -81,6 +85,7 @@ sections:
         status: 'posted'
         href: 'https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf'
         external: true
+        portalHref: '/transparency/procurement-plan'
         sourceNote: 'Annual Procurement Plan FY 2026, PDF, posted 2026-02-13.'
       - title: 'Manpower complement'
         description: 'The number of positions in the city government and how many are filled.'
@@ -112,6 +117,7 @@ sections:
         status: 'posted'
         href: 'https://www.cabanatuancity.gov.ph/uploads/files/procurement/6a5878e43d7118.12679050.pdf'
         external: true
+        portalHref: '/transparency/procurement-plan'
         sourceNote: 'Annual Procurement Plan FY 2026, posted 2026-02-13. Awarded contracts were not located.'
       - title: 'Major programmes and projects with beneficiaries'
         description: 'The main programmes and projects and who they serve.'

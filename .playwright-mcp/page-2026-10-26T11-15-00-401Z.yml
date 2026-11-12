@@ -1,0 +1,16 @@
+- generic [ref=f4e3]:
+  - link:
+    - /url: https://www.facebook.com/lgucabanatuan?ref=embed_page
+  - generic [ref=f4e6]:
+    - generic [ref=f4e8]:
+      - generic [ref=f4e9]:
+        - link [ref=f4e10] [cursor=pointer]:
+          - /url: https://www.facebook.com/316473078562868?ref=embed_page
+        - generic [ref=f4e11]:
+          - generic [ref=f4e12]:
+            - link "City Government of Cabanatuan" [ref=f4e13] [cursor=pointer]:
+              - /url: https://www.facebook.com/316473078562868?ref=embed_page
+            - generic "Verified Page" [ref=f4e14]
+          - generic [ref=f4e15]: 209,638 followers
+      - button "Follow Page" [ref=f4e20] [cursor=pointer]
+    - progressbar [ref=f4e27]

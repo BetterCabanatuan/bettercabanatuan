@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink, FileText } from 'lucide-react';
+import { ArrowRight, ExternalLink, FileText } from 'lucide-react';
 import SEO from '../../components/SEO';
 import Section from '../../components/ui/Section';
 import { Text } from '../../components/ui/Text';
@@ -74,26 +75,37 @@ function TransparencyDocumentRow({
           </p>
         )}
       </div>
-      {document.href &&
-        (isExternal ? (
-          <a
-            href={document.href}
-            target="_blank"
-            rel="noopener noreferrer"
+      <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-2">
+        {document.portalHref && (
+          <Link
+            to={document.portalHref}
             className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded"
           >
-            {t('transparency.viewResource')}
-            <ExternalLink className="size-4" aria-hidden="true" />
-            <span className="sr-only">({t('transparency.external')})</span>
-          </a>
-        ) : (
-          <a
-            href={document.href}
-            className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded"
-          >
-            {t('transparency.viewResource')}
-          </a>
-        ))}
+            {t('transparency.browseOnPortal')}
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </Link>
+        )}
+        {document.href &&
+          (isExternal ? (
+            <a
+              href={document.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded"
+            >
+              {t('transparency.viewResource')}
+              <ExternalLink className="size-4" aria-hidden="true" />
+              <span className="sr-only">({t('transparency.external')})</span>
+            </a>
+          ) : (
+            <a
+              href={document.href}
+              className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded"
+            >
+              {t('transparency.viewResource')}
+            </a>
+          ))}
+      </div>
     </li>
   );
 }

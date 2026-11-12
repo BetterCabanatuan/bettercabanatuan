@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -36,6 +37,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -51,6 +53,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -66,6 +69,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -85,6 +89,7 @@ jobs:
           # strips TypeScript types when importing the token registry. Both need
           # a newer Node than the other jobs.
           node-version: 24
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -102,6 +107,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci
@@ -113,13 +119,17 @@ jobs:
 
   routes:
     name: Route integrity audit
-    runs-on: ubuntu-latest
+    # Pinned, not ubuntu-latest: that moved to 26.04, which Playwright 1.60
+    # cannot install Chromium's system dependencies on. Revisit once a
+    # Playwright release lists 26.04 as supported.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          check-latest: true
           cache: npm
 
       - run: npm ci

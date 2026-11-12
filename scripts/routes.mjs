@@ -44,6 +44,10 @@ export const ROUTES = [
   { path: '/transparency', name: 'transparency' },
   { path: '/transparency/flood-controls', name: 'transparency-flood-controls' },
   { path: '/transparency/legislation', name: 'transparency-legislation' },
+  {
+    path: '/transparency/procurement-plan',
+    name: 'transparency-procurement-plan',
+  },
   { path: '/about', name: 'about' },
   { path: '/contact', name: 'contact' },
   { path: '/hotlines', name: 'hotlines' },

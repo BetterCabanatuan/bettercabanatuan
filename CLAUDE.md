@@ -21,6 +21,7 @@ npm run qa:shots         # Screenshot every route at every breakpoint
 npm run qa:inspect       # Screenshot one scroll region, for pinning a defect
 npm run update:copy      # Apply reviewed copy changes to the locale files
 npm run import:posts -- <dir>  # Regenerate src/data/news.facebook.json from scraped FB posts
+npm run import:app -- <pdf>    # Regenerate src/data/procurement-plan.json from the APP PDF (needs pdftotext)
 ```
 
 Pre-commit hook runs `lint-staged` automatically (ESLint + Prettier on staged files).

@@ -38,7 +38,11 @@ export const emergencyHotlines: EmergencyHotline[] = [
     shortLabel: 'PNP',
     icon: Shield,
     inBanner: true,
-    phones: [{ number: '(044)-463-1111' }, { number: '0920-611-2000' }],
+    phones: [
+      { number: '(044)-463-1111' },
+      { number: '0920-611-2000' },
+      { number: '0935-522-2227' },
+    ],
   },
   {
     id: 'bfp',

@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Youtube, Globe } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import BetterCabanatuanLogo from '/LogoDark.svg';
+import BetterCabanatuanLogo from '/LogoDarkOne.svg';
 import { BRAND_NAME } from '../../lib/siteConfig';
 
 const Footer: React.FC = () => {
@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
               <img
                 src={BetterCabanatuanLogo}
                 alt="Better Cabanatuan"
-                width={18156}
-                height={6580}
+                width={3649}
+                height={1284}
                 className="h-12 w-auto mr-3"
               />
               {/* <CheckCircle2 className="h-12 w-12 mr-3" /> */}

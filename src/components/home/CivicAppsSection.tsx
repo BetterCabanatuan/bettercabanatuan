@@ -1,4 +1,4 @@
-import { Bus, type LucideIcon } from 'lucide-react';
+import { Bus, Landmark, type LucideIcon } from 'lucide-react';
 import { useTranslation } from '../../hooks/useTranslation';
 import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
@@ -25,6 +25,12 @@ const CIVIC_APPS: CivicApp[] = [
     href: 'https://pamasahe.bettercabanatuan.org',
     icon: Bus,
     tone: 'accent',
+  },
+  {
+    key: 'transparencyPortal',
+    href: 'https://transparency.bettercabanatuan.org',
+    icon: Landmark,
+    tone: 'primary',
   },
 ];
 

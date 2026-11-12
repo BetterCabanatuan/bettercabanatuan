@@ -18,6 +18,7 @@ import NotFoundPage from './pages/NotFound';
 import TransparencyPage from './pages/transparency';
 import FloodControlsPage from './pages/transparency/flood-controls';
 import LegislationPage from './pages/transparency/legislation';
+import ProcurementPlanPage from './pages/transparency/procurement-plan';
 
 import ServicesIndexPage from './pages/services/index';
 import ServiceCategoryPage from './pages/services/$categoryId';
@@ -117,6 +118,10 @@ function App() {
                 <Route
                   path="/transparency/legislation"
                   element={<LegislationPage />}
+                />
+                <Route
+                  path="/transparency/procurement-plan"
+                  element={<ProcurementPlanPage />}
                 />
                 <Route path="/transparency" element={<TransparencyPage />} />
 
