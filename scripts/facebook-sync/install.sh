@@ -1,7 +1,8 @@
 #!/bin/bash
 # Installs the Facebook sync on this Mac: a launchd agent that, every 4 hours,
 # scrapes the pages in pages.json, merges the posts into data/facebook/,
-# regenerates src/data/news.facebook.json, and pushes to main. See README.md.
+# regenerates src/data/news.facebook.json, and opens a PR that it merges once
+# GitHub says it has no conflicts. See README.md.
 #
 #   bash scripts/facebook-sync/install.sh
 #
@@ -59,11 +60,12 @@ fi
 cat >"$SERVICE_HOME/run.sh" <<'EOF'
 #!/bin/bash
 # One sync: scrape -> data/facebook/ -> src/data/news.facebook.json -> test and
-# build -> commit -> push to main. launchd starts it with --scheduled; run it
+# build -> commit -> PR -> merge. launchd starts it with --scheduled; run it
 # by hand to sync now.
 set -uo pipefail
 SERVICE_HOME="$(cd "$(dirname "$0")" && pwd)"
 REPO="$SERVICE_HOME/repo"
+SLUG=BetterCabanatuan/bettercabanatuan
 LOGS="$SERVICE_HOME/logs"
 SUMMARY="$SERVICE_HOME/summary.txt"
 # Consecutive failed runs before a desktop notification.
@@ -89,21 +91,43 @@ notify() {
   osascript -e "display notification \"$1\" with title \"BetterCabanatuan Facebook sync\"" || true
 }
 
-# Pushes once, and once more on top of a main that moved during the run.
-# A conflict means someone regenerated the same files; the next run redoes it.
-push() {
-  git push --quiet origin HEAD:main && return 0
-  if git pull --quiet --rebase origin main && git push --quiet origin HEAD:main; then
-    return 0
-  fi
-  git rebase --abort 2>/dev/null
-  echo "Push failed; the next run will redo this sync"
-  return 1
+# Opens a PR from the sync branch and merges it. The branch was cut from a
+# fresh origin/main, so it only conflicts if main moved during the run; then
+# rebase once, and otherwise close the PR and let the next run redo the sync.
+publish() {
+  local branch="$1" title="$2" pr state
+  git push --quiet origin "$branch" || return 1
+  pr=$(gh pr create -R "$SLUG" --base main --head "$branch" --title "$title" \
+    --body "$(cat "$SUMMARY")") || return 1
+  for attempt in 1 2 3; do
+    state=$(gh pr view "$pr" -R "$SLUG" --json mergeable -q .mergeable)
+    if [ "$state" = CONFLICTING ] && [ "$attempt" = 1 ]; then
+      if git pull --quiet --rebase origin main && git push --quiet --force-with-lease origin "$branch"; then
+        continue
+      fi
+      git rebase --abort 2>/dev/null
+    fi
+    # UNKNOWN means GitHub is still computing it; wait and ask again.
+    [ "$state" = UNKNOWN ] && { sleep 10; continue; }
+    [ "$state" = MERGEABLE ] && break
+    gh pr close "$pr" -R "$SLUG" --delete-branch --comment "Conflicts with main; the next sync redoes it." || true
+    echo "$pr has conflicts; closed, the next run will redo this sync"
+    return 1
+  done
+  # --auto covers a repo that requires checks before merging.
+  gh pr merge "$pr" -R "$SLUG" --squash --delete-branch ||
+    gh pr merge "$pr" -R "$SLUG" --squash --delete-branch --auto || return 1
+  echo "Merged $pr"
 }
 
 sync() {
   cd "$REPO" || return 1
   git fetch --quiet origin main && git reset --quiet --hard origin/main && git clean --quiet -fd || return 1
+  # A PR a past run could not merge is stale: its sync is redone below.
+  gh pr list -R "$SLUG" --state open --search "head:sync/facebook-" --json number -q '.[].number' |
+    while read -r old; do gh pr close "$old" -R "$SLUG" --delete-branch || true; done
+  local branch="sync/facebook-$(date +%Y%m%d-%H%M%S)"
+  git checkout --quiet -B "$branch" origin/main || return 1
   local lock_sum
   lock_sum=$(shasum package-lock.json | cut -d' ' -f1)
   if [ ! -d node_modules ] || [ "$lock_sum" != "$(cat "$SERVICE_HOME/npm-lock.sha" 2>/dev/null)" ]; then
@@ -115,7 +139,7 @@ sync() {
   uv run --quiet scripts/facebook-sync/sync.py \
     --error-log "$LOGS/scrape-errors.jsonl" --summary "$SUMMARY" || status=1
   if [ -z "$(git status --porcelain -- data)" ]; then
-    echo "Archive unchanged; nothing to push"
+    echo "Archive unchanged; nothing to publish"
     return $status
   fi
 
@@ -123,7 +147,7 @@ sync() {
   archives=$(node -p "require('./scripts/facebook-sync/pages.json').map(p => 'data/facebook/' + p.handle).join(' ')")
   # shellcheck disable=SC2086 # one argument per archive
   if ! npm run --silent import:posts -- $archives; then
-    echo "Import failed; pushing the raw archive only"
+    echo "Import failed; keeping the raw archive only"
     git checkout -- src/data/news.facebook.json
     status=1
   fi
@@ -135,19 +159,18 @@ sync() {
       git add -- src/data/news.facebook.json
       message="chore(news): sync Facebook posts"
     else
-      echo "Tests or build failed; pushing the raw archive only"
+      echo "Tests or build failed; keeping the raw archive only"
       git checkout -- src/data/news.facebook.json
       status=1
     fi
   fi
 
   git commit --quiet --no-verify -m "$message" -m "$(cat "$SUMMARY")" || return 1
-  push || return 1
-  echo "Pushed $(git rev-parse --short HEAD): $message"
+  publish "$branch" "$message" || return 1
   local new
   new=$(grep -Eo '[0-9]+ new' "$SUMMARY" | awk '{n += $1} END {print n + 0}')
   if [ "$new" -gt 0 ] && [ "$message" = "chore(news): sync Facebook posts" ]; then
-    notify "$new new post(s) pushed to the site"
+    notify "$new new post(s) merged to the site"
   fi
   return $status
 }

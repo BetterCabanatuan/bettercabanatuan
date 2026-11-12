@@ -2,7 +2,7 @@
 
 A background service for macOS. Every 4 hours it scrapes the Facebook pages in
 `pages.json`, merges the posts into `data/facebook/`, regenerates
-`src/data/news.facebook.json`, and pushes to `main`, which deploys the site.
+`src/data/news.facebook.json`, and opens a PR that it merges itself once GitHub reports no conflicts. Merging to `main` deploys the site.
 
 ```sh
 bash scripts/facebook-sync/install.sh     # install, or update after changing install.sh
@@ -24,7 +24,7 @@ name and email.
    `src/data/news.facebook.json`.
 4. If the news feed changed, `npm test` and `npm run build` must pass. If they
    fail, only `data/` is pushed and the feed waits for a fix.
-5. Commit and push to `main`. If `main` moved meanwhile, rebase once and retry.
+5. Commit on a `sync/facebook-<time>` branch cut from that fresh `main`, open a PR, and merge it (squash). If `main` moved and the PR conflicts, rebase once; if it still conflicts, close the PR and let the next run redo the sync. Stale open `sync/facebook-*` PRs are closed at the start of each run.
 
 A commit that touches only `data/` does not deploy (`ignoreCommand` in
 `vercel.json`) or run CI (`paths-ignore`).
