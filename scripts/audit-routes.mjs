@@ -45,7 +45,7 @@ const C = {
 
 /** Markers that identify a guard state rather than a working page. */
 const GUARDS = {
-  'not found': /not\s*found|does not exist|404|no longer available/i,
+  'not found': /not\s*found|does not exist|(?<![\d,.])404(?![\d,.])|no longer available/i,
   'coming soon': /coming soon|being prepared|not published here yet/i,
   empty: /nothing (here )?yet|no (results|items|entries) (yet|found)/i,
 };
@@ -125,7 +125,7 @@ const PROBES = [
  */
 function probeInPage() {
   const GUARD_RE = {
-    'not found': /not\s*found|does not exist|404|no longer available/i,
+    'not found': /not\s*found|does not exist|(?<![\d,.])404(?![\d,.])|no longer available/i,
     'coming soon': /coming soon|being prepared|not published here yet/i,
     empty: /nothing (here )?yet|no (results|items|entries) (yet|found)/i,
   };
